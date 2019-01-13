@@ -476,6 +476,12 @@ theocracy = {
 		theocratic_diplomacy = {
 			reforms = {
 				unrestricted_diplomacy_reform
+				support_the_true_faith_reform
+				combat_infidel_democracy_reform
+				propagate_our_faith_reform
+				harmonize_with_other_faiths_reform
+				liberate_the_faithful_reform
+				religious_spies_reform
 			}
 		}
 		divine_cause = {
