@@ -1,0 +1,137 @@
+teuton_navy = {
+	icon = "soldiers_5"
+	allow_normal_conversion = yes
+	potential = { 
+		tag = TEU 
+		}
+	modifiers = {
+		galley_power = 0.10
+		galley_cost = -0.15
+		ship_durability = 0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+teuton_army = {
+	icon = Teuton_2
+	allow_normal_conversion = yes
+	potential = {
+		tag = TEU
+		}
+	modifiers = {
+		infantry_power = 0.05
+		discipline = 0.025
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+teuton_drill = {
+	icon = Teuton_1
+	allow_normal_conversion = yes
+	potential = {
+		tag = TEU
+		}
+	modifiers = {
+		infantry_power = 0.05
+		warscore_cost_vs_other_religion = -0.10
+		drill_gain_modifier = 0.20
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+teuton_priest = {
+	icon = Teuton_3
+	allow_normal_conversion = yes
+	potential = {
+		tag = TEU
+		}
+	modifiers = {
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.25
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+expel_heathens_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		development_cost = -0.10
+		culture_conversion_cost = -0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+the_holy_office_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = {
+		tag = PAP
+		}
+	modifiers = {
+		yearly_corruption = -0.05
+		institution_spread_from_true_faith = 0.5
+		adm_advisor_cost = -0.1
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+great_law_of_peace_reform = {
+	icon = great_law_of_peace
+	allow_normal_conversion = yes
+	potential = {
+		tag = IRO
+	}
+	modifiers = {
+		global_unrest = -2
+		max_states = 3
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+haudenosaunee_reform = {
+	icon = iroquois_longhouse
+	allow_normal_conversion = yes
+	potential = {
+		tag = IRO
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		num_accepted_cultures = 2
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+
+
+sheikhdom_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = turko_semitic
+		NOT = { primary_culture = turkish }
+	}
+	modifiers = {
+		tolerance_own = 1
+		warscore_cost_vs_other_religion = -0.10
+	}
+	ai = {
+		factor = 2
+	}
+}

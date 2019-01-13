@@ -1,0 +1,306 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_feudalism"
+		texturefile = "gfx//interface//government_reform_icons//feudalism.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_ancien_regime"
+		texturefile = "gfx//interface//government_reform_icons//ancien_regime.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_florentine_republic"
+		texturefile = "gfx//interface//government_reform_icons//florentine_republic.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_de_medici"
+		texturefile = "gfx//interface//government_reform_icons//de_medici.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_dutch_guilds"
+		texturefile = "gfx//interface//government_reform_icons//dutch_guilds.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_kingdom_of_portugal"
+		texturefile = "gfx//interface//government_reform_icons//kingdom_of_portugal.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_portuguese_thassalocracy"
+		texturefile = "gfx//interface//government_reform_icons//portuguese_thassalocracy.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_beylik"
+		texturefile = "gfx//interface//government_reform_icons//beylik.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_manrent"
+		texturefile = "gfx//interface//government_reform_icons//manrent.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_banker"
+		texturefile = "gfx//interface//government_reform_icons//banker.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_colonial_rule"
+		texturefile = "gfx//interface//government_reform_icons//colonial_rule.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_italian_mercenary"
+		texturefile = "gfx//interface//government_reform_icons//italian_mercenary.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_landsknecht"
+		texturefile = "gfx//interface//government_reform_icons//landsknecht.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_noble_diplomat"
+		texturefile = "gfx//interface//government_reform_icons//noble_diplomat.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_casimirs_code"
+		texturefile = "gfx//interface//government_reform_icons//casimirs_code.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_papal_embassy"
+		texturefile = "gfx//interface//government_reform_icons//papal_embassy.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_French_Reformed"
+		texturefile = "gfx//interface//government_reform_icons//French_Reformed.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_French_Absolutism"
+		texturefile = "gfx//interface//government_reform_icons//French_Absolutism.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_march"
+		texturefile = "gfx//interface//government_reform_icons//march.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Spanish_Crown"
+		texturefile = "gfx//interface//government_reform_icons//Spanish_Crown.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_GE_trader"
+		texturefile = "gfx//interface//government_reform_icons//GE_trader.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_fort"
+		texturefile = "gfx//interface//government_reform_icons//fort.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_bishop"
+		texturefile = "gfx//interface//government_reform_icons//bishop.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_casa_de_contraction"
+		texturefile = "gfx//interface//government_reform_icons//casa_de_contraction.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_casa_de_india"
+		texturefile = "gfx//interface//government_reform_icons//casa_de_india.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_diocletian"
+		texturefile = "gfx//interface//government_reform_icons//diocletian.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_constitution"
+		texturefile = "gfx//interface//government_reform_icons//constitution.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_freedom_of_religion"
+		texturefile = "gfx//interface//government_reform_icons//freedom_of_religion.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_bourbon_reform"
+		texturefile = "gfx//interface//government_reform_icons//bourbon_reform.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_imperial_army"
+		texturefile = "gfx//interface//government_reform_icons//imperial_army.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Tatar_raid"
+		texturefile = "gfx//interface//government_reform_icons//Tatar_raid.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Turkish_iqta"
+		texturefile = "gfx//interface//government_reform_icons//Turkish_iqta.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Teuton_1"
+		texturefile = "gfx//interface//government_reform_icons//Teuton_1.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Teuton_2"
+		texturefile = "gfx//interface//government_reform_icons//Teuton_2.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Teuton_3"
+		texturefile = "gfx//interface//government_reform_icons//Teuton_3.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_Stadholder"
+		texturefile = "gfx//interface//government_reform_icons//Stadholder.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_nueva_planta"
+		texturefile = "gfx//interface//government_reform_icons//nueva_planta.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_order_of_swan"
+		texturefile = "gfx//interface//government_reform_icons//order_of_swan.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_oprichnina"
+		texturefile = "gfx//interface//government_reform_icons//oprichnina.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_table_of_ranks"
+		texturefile = "gfx//interface//government_reform_icons//table_of_ranks.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_toleration_edict"
+		texturefile = "gfx//interface//government_reform_icons//toleration_edict.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_constitutio_joachimica"
+		texturefile = "gfx//interface//government_reform_icons//constitutio_joachimica.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_peter_the_great"
+		texturefile = "gfx//interface//government_reform_icons//peter_the_great.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_koprulu_dynasty"
+		texturefile = "gfx//interface//government_reform_icons//koprulu_dynasty.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_selim_3"
+		texturefile = "gfx//interface//government_reform_icons//selim_3.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_millet_system"
+		texturefile = "gfx//interface//government_reform_icons//millet_system.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_iroquois_longhouse"
+		texturefile = "gfx//interface//government_reform_icons//iroquois_longhouse.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_great_law_of_peace"
+		texturefile = "gfx//interface//government_reform_icons//great_law_of_peace.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_crown_of_saint_wenceslaus"
+		texturefile = "gfx//interface//government_reform_icons//crown_of_saint_wenceslaus.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_russian_noble"
+		texturefile = "gfx//interface//government_reform_icons//russian_noble.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_new_order_regiments"
+		texturefile = "gfx//interface//government_reform_icons//new_order_regiments.dds"
+	}
+}

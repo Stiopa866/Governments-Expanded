@@ -1,0 +1,102 @@
+country_decisions = {
+
+	reforms_me_french_reformed_feudalism = {
+	
+		potential = {
+			tag = FRA
+			has_reform = french_feudalism
+		}
+		allow = {
+			stability = 2
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 60
+				}
+			}
+		}
+		effect = {
+			add_stability = -1
+			add_government_reform = french_reformed_feudalism
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	
+	reforms_me_french_absolutism = {
+	
+		potential = {
+			tag = FRA
+			has_reform = french_reformed_feudalism
+		}
+		allow = {
+			absolutism = 50
+		}
+		
+		effect = {
+			add_government_reform = french_absolutism
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	reforms_GE_lithuanian_kingdom = {
+		
+		potential = {
+			tag = LIT
+			is_subject = no
+			NOT = { has_reform = lithuania_warlord_duke }
+		}
+		allow = {
+		prestige = 75
+		legitimacy = 100
+		papal_influence = 25
+		religion = catholic
+		}
+		effect = {
+			add_government_reform = lithuania_warlord_duke
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	reforms_GE_consulate_of_the_sea = {
+		
+		potential = {
+			OR = {
+				220 = { owned_by = ROOT }
+				213 = { owned_by = ROOT }
+				101 = { owned_by = ROOT }
+				116 = { owned_by = ROOT }
+				121 = { owned_by = ROOT }
+				112 = { owned_by = ROOT }
+			}
+			NOT = { has_reform = consulate_of_the_sea }
+			government = monarchy
+		}
+		allow = {
+			220 = { owned_by = ROOT }
+			213 = { owned_by = ROOT }
+			101 = { owned_by = ROOT }
+			116 = { owned_by = ROOT }
+			121 = { owned_by = ROOT }
+			112 = { owned_by = ROOT }
+			num_of_light_ship = 100
+			1297 = { # Genua
+				is_strongest_trade_power = ROOT
+			}
+			1308 = { # Venice
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_government_reform = consulate_of_the_sea
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

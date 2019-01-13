@@ -1,0 +1,9 @@
+﻿l_english:
+ reform_me_events.1.t:0 "The Cortes of [GetYear]"
+ reform_me_events.1.d: "The King has summoned the annual Cortes, how should he spend his time?"
+ reform_me_events.1.a: "Listen to the burghers"
+ reform_me_events.1.b: "Debate the nobles"
+ reform_me_events.1.c: "Convince the clergy"
+ reform_me_events.2.t:0 "The Reforms of John 2"
+ reform_me_events.2.d: "John 2 'The Perfect' restored the policies of Atlantic exploration, reviving the work of his great-uncle, Henry the Navigator. The Portuguese explorations were his main priority in government, pushing south the known coast of Africa with the purpose of discovering the maritime route to India and breaking into the spice trade.""
+ reform_me_events.2.a: "A new era for Portugal"
