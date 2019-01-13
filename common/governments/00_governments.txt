@@ -477,7 +477,7 @@ theocracy = {
 			reforms = {
 				unrestricted_diplomacy_reform
 				support_the_true_faith_reform
-				combat_infidel_democracy_reform
+				combat_infidel_diplomacy_reform
 				propagate_our_faith_reform
 				harmonize_with_other_faiths_reform
 				liberate_the_faithful_reform
