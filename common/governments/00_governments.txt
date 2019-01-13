@@ -473,6 +473,11 @@ theocracy = {
 				teuton_drill
 			}
 		}
+		theocratic_diplomacy = {
+			reforms = {
+				unrestricted_diplomacy_reform
+			}
+		}
 		divine_cause = {
 			reforms = {
 				safeguard_holy_sites_reform
