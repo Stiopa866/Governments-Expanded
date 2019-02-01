@@ -88,6 +88,42 @@ the_holy_office_reform = {
 	}
 }
 
+holy_orthodoxy_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.05
+		devotion = 0.25
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+inquisition_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_heretic_missionary_strength = 0.03
+		prestige_per_development_from_conversion = 0.5
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+religious_pragmatism_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		religious_unity = 0.20
+		advisor_cost = -0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 great_law_of_peace_reform = {
 	icon = great_law_of_peace
 	allow_normal_conversion = yes
@@ -134,4 +170,108 @@ sheikhdom_reform = {
 	ai = {
 		factor = 2
 	}
+}
+
+royal_society_reform = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = kongo_group
+	}
+	modifiers = {
+		global_autonomy = -0.05
+		state_maintenance_modifier = -0.25
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+adoption_of_christianity_reform = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = kongo_group
+	}
+	modifiers = {
+		tolerance_heathen = 2
+	}
+	ai = { factor = 5 }
+}
+
+unite_the_royal_houses_reform = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = kongo_group
+	}
+	modifiers = {
+		legitimacy = 1
+		yearly_absolutism = 1
+		max_absolutism = 15
+	}
+}
+
+iranian_bureacracy_reform = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 5
+			culture_group = iranian
+		}
+	}
+	modifiers = {
+		max_states = 5
+		global_autonomy = -0.025
+	}
+	ai_chance = { factor = 5 }
+}
+
+slave_raids_reform = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = tartar
+	}
+	trigger = {
+		has_port = yes
+	}
+	modifiers = {
+		production_efficiency = 0.05
+	}
+	custom_attributes = {
+		enables_slave_raids = yes
+	}
+	ai_chance = { factor = 2 }
+}
+
+great_code_of_nomads = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = steppe_horde
+		religion_group = eastern
+	}
+	modifiers = {
+		global_trade_power = 0.2
+		tolerance_own = 1
+	}
+	ai_chance = { factor = 100 }
+}
+
+herders_of_the_steppe = {
+	icon = tribal_council
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = tribal_federation
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		min_autonomy_in_territories = -0.1
+	}
+	ai_chance = { factor = 2 }
 }

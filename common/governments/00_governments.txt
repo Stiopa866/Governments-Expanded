@@ -27,6 +27,10 @@ monarchy = {
 				english_monarchy
 				mandala_reform
 				revolutionary_empire_reform
+				#ME
+				crusader_kingdom
+				khaganate
+				#GE
 				french_feudalism
 				french_reformed_feudalism
 				french_absolutism
@@ -51,11 +55,16 @@ monarchy = {
 				khalsa_reform
 				deccani_society_reform
 				mughal_government
+				#ME
+				incan_society_reform
+				aztec_society_reform
+				maya_society_reform
+				zoroastrian_first_reform
+				sharia_reform
+				#GE
 				papal_embassy_reform
 				state_church_reform
 				metropolian_bishop_reform
-				muslim_legal_reform
-				muslim_piety_reform
 				diplomatic_positions_reform
 				lithuania_law_reform
 				guild_dominance_reform
@@ -69,6 +78,7 @@ monarchy = {
 				nieszawa_privileges_reform
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
+				blood_tax_reform
 			}
 		}
 		bureaucracy = {
@@ -78,6 +88,10 @@ monarchy = {
 				sidhi_recruitment
 				mansabdari_reform
 				council_of_the_indies_reform
+				#ME
+				imperial_reform
+				colonial_reform
+				#GE
 				regional_forts_reform
 				theocratic_bureacrats_reform
 				diocletian_reforms_reform
@@ -88,6 +102,7 @@ monarchy = {
 				constitutio_joachimica_reform
 				millet_reform
 				great_law_of_peace_reform
+				ancien_regime_reform
 			}
 		}
 		military_organisation = {
@@ -106,6 +121,7 @@ monarchy = {
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
+				general_war_commissariat_reform
 			}
 		}
 		growth_of_administration = {
@@ -115,13 +131,20 @@ monarchy = {
 				meritocratic_focus_reform
 				dakhni_culture_reform
 				zabt_reform
-				ancien_regime_reform
+				#ME
+				integration_reform
+				isolationist_reform
+				incan_administration_reform
+				zoroastrian_second_reform
+				#GE
 				integrate_moneyloaners_reform
 				advanced_bookkeeping_reform
 				colonial_govenors_reform
 				sulu_administration_reform
 				academy_of_science_reform
 				koprulu_dynasty_reform
+				fredrickan_reforms_reform
+				conseil_du_roi_reform
 			}
 		}
 		deliberative_assembly = {
@@ -131,19 +154,23 @@ monarchy = {
 				aristocratic_court_reform
 				general_estates_reform
 				states_general_reform
+				#GE
 				table_of_ranks_reform
 				haudenosaunee_reform
-				general_war_commissariat_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
 			reforms = {
 				letat_cest_moi_reform
 				regional_representation_reform
+				#ME
+				coptic_religious_reform
+				#GE
 				freedom_of_religion_reform
 				constitutional_equality_reform
 				nueva_planta_decrees_reform
 				toleration_of_all_faiths_edict_reform
+				regulations_for_state_officials_reform
 			}
 		}
 		separation_of_power = {
@@ -196,6 +223,7 @@ monarchy = {
 		english_monarchy
 		states_general_reform
 		crown_of_saint_wenceslaus
+		khaganate
 	}
 
 	#States General works with few others
@@ -237,6 +265,7 @@ republic = {
 		administrative_republic
 		noble_republic
 		oligarchic_republic
+		pirate_republic
 		merchant_republic
 		venetian_merchant_republic
 		imperial_city
@@ -249,6 +278,11 @@ republic = {
 		peasants_republic_legacy
 		veche_republic_legacy
 		cossacks_legacy_reform
+		pirate_kingdom
+		war_against_the_world_government
+		black_market_consortium_government
+		# ME Legacy Governments:
+		caliphate_sunni_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -270,6 +304,9 @@ republic = {
 				revolutionary_republic_reform
 				presidential_despot_reform
 				cossacks_reform
+				# ME Reforms:
+				caliphate_reform_sunni
+				#GE
 				florentine_republic
 			}
 		}
@@ -281,6 +318,9 @@ republic = {
 				council_of_captains_reform
 				articles_of_agreement_reform
 				smugglers_haven_reform
+				# ME Reforms:
+				sharia_reform
+				#GE
 				demedici_dynasty_reform
 				support_borghese_reform
 				guild_dominance_reform
@@ -326,6 +366,9 @@ republic = {
 				pirate_king_reform
 				war_against_the_world_doctrine_reform
 				black_market_consortium_reform
+				# ME Reforms:
+				imperial_reform
+				#GE
 				stadholder_reform
 			}
 		}
@@ -405,26 +448,42 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
+				# ME Reforms:
+				incan_society_reform
+				aztec_society_reform
+				maya_society_reform
 			}
 		}
 		tribal_cultural_values = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
+				# ME Reforms:
+				sharia_reform
+				#GE
 				great_law_of_peace_reform
+				royal_society_reform
+				slave_raids_reform
+				herders_of_the_steppe
 			}
 		}
 		tribal_religion = {
 			reforms = {
 				religious_societies_reform
-				lip_service_reform
+				lip_service_reform 
+				#GE
 				sheikhdom_reform
+				adoption_of_christianity_reform
+				great_code_of_nomads
 			}
 		}
 		tribal_modernization = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
+				#GE
+				unite_the_royal_houses_reform
+				iranian_bureacracy_reform
 			}
 		}
 		tribal_reformation = {
@@ -473,17 +532,6 @@ theocracy = {
 				teuton_drill
 			}
 		}
-		theocratic_diplomacy = {
-			reforms = {
-				unrestricted_diplomacy_reform
-				support_the_true_faith_reform
-				combat_infidel_diplomacy_reform
-				propagate_our_faith_reform
-				harmonize_with_other_faiths_reform
-				liberate_the_faithful_reform
-				religious_spies_reform
-			}
-		}
 		divine_cause = {
 			reforms = {
 				safeguard_holy_sites_reform
@@ -498,6 +546,13 @@ theocracy = {
 				religious_administrators_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+			}
+		}
+		religious_enforcement = {
+			reforms = {
+				holy_orthodoxy_reform
+				inquisition_reform
+				religious_pragmatism_reform
 				teuton_priest
 			}
 		}
@@ -703,5 +758,18 @@ pre_dharma_mapping = {
 	all_mechanics = {
 		government = monarchy
 		legacy_government = despotic_monarchy
+	}
+	# ME Legacy Governments:
+	crusader_kingdom = { #added for religious missions (catholic)
+		government = monarchy
+		legacy_government = crusader_kingdom_legacy
+	}
+	caliphate_reform_sunni = { #added for religious missions (sunni)
+		government = republic
+		legacy_government = caliphate_sunni_legacy
+	}
+	khaganate = { #added for tartarstan
+		government = monarchy
+		legacy_government = khaganate_legacy
 	}
 }

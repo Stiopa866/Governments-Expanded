@@ -20,6 +20,7 @@
  Mil_2_Leader: "Noble Cadets"
  Mil_2_Main: "Extra Supplies"
  
+ Russian_Manorialism: "Manorial Maintenance"
  
  
  EST_VAL_ANCIEN_REGIME_REFORM:0 "Ancien Regime: §Y$VAL$%§!"
@@ -36,6 +37,9 @@
  EST_VAL_COUNCIL_OF_SHEIKHS_REFORM:0 "Council of Sheikhs: §Y$VAL$%§!"
  EST_VAL_ABOLISH_CLERGY_PRIVILEGES_REFORM:0 "Abolish Ecclesiastical privileges: §Y$VAL$%§!"
  EST_VAL_CONSTITUTIO_JOACHIMICA:0 "Constitutio Joachimica: §Y$VAL$%§!"
+ EST_VAL_BASTARD_FEUDALISM:0 "Bastard Feudalism: §Y$VAL$%§!"
+ EST_VAL_TRADE_PRINCES:0 "Trade Princes: §Y$VAL$%§!"
+ 
  
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"

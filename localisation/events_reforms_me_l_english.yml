@@ -7,3 +7,85 @@
  reform_me_events.2.t:0 "The Reforms of John 2"
  reform_me_events.2.d: "John 2 'The Perfect' restored the policies of Atlantic exploration, reviving the work of his great-uncle, Henry the Navigator. The Portuguese explorations were his main priority in government, pushing south the known coast of Africa with the purpose of discovering the maritime route to India and breaking into the spice trade.""
  reform_me_events.2.a: "A new era for Portugal"
+ 
+ #GE Reform Cycle
+ metropolian_bishop_reform.1.t: "Seek First His Kingdom"
+ metropolian_bishop_reform.1.d: "A preacher of firey ambition and fanatical temperament has approached us with a promise: In exchange for being made a Patriarch, he will bring a zeal to the church, and an increased devotion to the population."
+ metropolian_bishop_reform.1.a: "This man was sent to us for just such a purpose, we cannot deny him."
+ metropolian_bishop_reform.1.b: "His ambition exceeds his faith, clearly. A man of ambition cannot truly serve god before himself."
+ metropolian_bishop_reform.2.t: "Through the Eye of a Needle"
+ metropolian_bishop_reform.2.d: "We have invested great power in the church and the bishops as an apparatus of the state, and trusted them implicity with it. However, there is a dire truth coming to light about the church; men of god have been pocketing the tithe for their own ends, and the people are out for blood."
+ metropolian_bishop_reform.2.a: "The church has allowed its greed to overcome its spiritual strength; reduce tithes."
+ metropolian_bishop_reform.2.b: "This is a problem of the clergy; they will handle it or we will be forced to handle them."
+ metropolian_bishop_reform.2.c: "If the church insists on doing the job of the nobility, then they will pay for the privilege as the nobility does."
+ papal_embassy_reform.3.t: "Men of the Cloth and Men of the Robe"
+ papal_embassy_reform.3.d: "One of our noble delegates to the church has managed to build a network of loyal friends and dependants within it. However, even with such deep roots, the church is fickle, and he can only obviously serve us over God so much. What shall we ask of him?"
+ papal_embassy_reform.3.a: "Let him speak of $COUNTRY$, and of our glorious, heavenly reign."
+ papal_embassy_reform.3.b: "Have some of those loyal friends and dependants insinuate themselves into our local churches."
+ papal_embassy_reform.3.c: "Our dedication to the church is clear enough: Perhaps they might deign to grant us a cardinal?"
+ papal_embassy_reform.4.t: "False Relic"
+ papal_embassy_reform.4.d: "One of our noble delegates has been caught trying to pawn off a commoner's fingerbone as belong to St John! Worse yet, the scoundrel has tried to claim that our $MONARCHTITLE$ is to blame for his own stupidity and greed in this matter. What shall we do with this scandal?"
+ papal_embassy_reform.4.a: "Apologize on behalf of the delegate and take responsibility."
+ papal_embassy_reform.4.b: "Deny all responsibility: His mess, his burden, not ours."
+ diplomatic_positions.5.t: "A Silver Spoon Breeds a Silver Tongue"
+ diplomatic_positions.5.d: "Our noble scions are expected to be capable diplomats; it is the purpose they are bred for after all. However, one such scion has proven himself particularly capable in his assigned work. This one deserves elevation, and special responsibility appropriate to his skills."
+ diplomatic_positions.5.a: "Let him travel foreign courts and show the charismatic majesty of our nation."
+ diplomatic_positions.5.b: "Make him an envoy to neighboring lands; show them our dedication to diplomacy."
+ diplomatic_positions.5.c: "We have no need to impress foreigners; he shall make his peers bend the knee gladly."
+ diplomatic_positions.6.t: "A Silver Spoon in a Sour Mouth"
+ diplomatic_positions.6.d: "Our nobles exist for the sake of diplomacy, but some are just not cut out for such work. One such individual seems dedicated to doing the worst possible work in his field that he is capable of doing."
+ diplomatic_positions.6.a: "The crown will have to apologise personally for such incompetence..."
+ diplomatic_positions.6.b: "We cannot admit failure or incompentence; there will be no apology."
+ promote_nobles.7.t: "A New House, Noble and Sovreign"
+ promote_nobles.7.d: "As a new noble house proves itself worth of greater privilege, we will promote them by bestowing those new privileges upon them. For this, they will owe us. How do we wish to collect?" 
+ promote_nobles.7.a: "The purpose of the nobility is to provide the nation with capable soldiers." 
+ promote_nobles.7.b: "Forgive the debt they owe us; let their loyalty be our reward." 
+ promote_nobles.7.c: "The nobility knows its places and serves gladly; let them surrender their heir to our cause." 
+ promote_nobles.8.t: "Give an inch..." 
+ promote_nobles.8.d: "By creating a hierarchy of nobility we have created an ambitious atmosphere. However, rather than turning their ambitions on eachother, the nobility now looks to us, demanding even more privileges and power to justify their position over the lesser nobles."
+ promote_nobles.8.a: "They forget themselves; we rule, they serve, no matter how gilded their collars." 
+ promote_nobles.8.b: "Very well, grant them what they desire; their service is invaluable, after all."
+ curtail_nobles.9.t:
+ curtail_nobles.9.d:
+ curtail_nobles.9.a:
+ curtail_nobles.9.b:
+ curtail_nobles.10.t:
+ curtail_nobles.10.d:
+ curtail_nobles.10.a:
+ curtail_nobles.10.b:
+ curtail_nobles.10.c:
+ guild_dominance.11.t:
+ guild_dominance.11.d:
+ guild_dominance.11.a:
+ guild_dominance.11.b:
+ guild_dominance.11.c:
+ guild_dominance.12.t:
+ guild_dominance.12.d:
+ guild_dominance.12.a:
+ guild_dominance.12.b:
+ trade_princes.13.t:
+ trade_princes.13.d:
+ trade_princes.13.a:
+ trade_princes.13.b:
+ trade_princes.14.t:
+ trade_princes.14.d:
+ trade_princes.14.a:
+ trade_princes.14.b:
+ trade_princes.14.c:
+ state_church.15.t:
+ state_church.15.d:
+ state_church.15.a:
+ state_church.15.b:
+ state_church.16.t:
+ state_church.16.d:
+ state_church.16.a:
+ state_church.16.b:
+ dhimmi_nobles.17.t:
+ dhimmi_nobles.17.d:
+ dhimmi_nobles.17.a:
+ dhimmi_nobles.17.b:
+ dhimmi_nobles.18.t:
+ dhimmi_nobles.18.d:
+ dhimmi_nobles.18.a:
+ dhimmi_nobles.18.b:
+ 

@@ -1,0 +1,997 @@
+namespace = GE_reform_cycle
+
+country_event = {
+	id = GE_reform_cycle.1
+	title = metropolian_bishop_reform.1.t
+	desc = metropolian_bishop_reform.1.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = metropolian_bishop_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = metropolian_bishop_reform.1.a
+		add_patriarch_authority = 0.05
+	}
+	option = {
+		name = metropolian_bishop_reform.1.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.2
+	title = metropolian_bishop_reform.2.t
+	desc = metropolian_bishop_reform.2.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+	
+	trigger = {
+		has_reform = metropolian_bishop_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = metropolian_bishop_reform.2.a
+		add_patriarch_authority = -0.05
+	}
+	option = {
+		name = metropolian_bishop_reform.2.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+	option = {
+		name = metropolian_bishop_reform.2.c
+		highlight = yes
+		trigger = {
+			ruler_has_personality = greedy_personality
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_years_of_income = 0.1
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.3
+	title = papal_embassy_reform.3.t
+	desc = papal_embassy_reform.3.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = papal_embassy_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = papal_embassy_reform.3.a
+		add_papal_influence = 10
+	}
+	option = {
+		name = papal_embassy_reform.3.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+	option = {
+		name = papal_embassy_reform.3.c
+		highlight = yes
+		trigger = {
+			OR = {
+				has_reform = theocratic_bureacrats_reform
+				AND = {
+					estate_influence = {
+						estate = estate_church
+						influence = 75
+					}
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 60
+					}
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_cardinal = no
+			}
+			add_cardinal = yes
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.4
+	title = papal_embassy_reform.4.t
+	desc = papal_embassy_reform.4.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+	
+	trigger = {
+		has_reform = papal_embassy_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = papal_embassy_reform.4.a
+		add_papal_influence = -10
+	}
+	option = {
+		name = papal_embassy_reform.4.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.5
+	title = diplomatic_positions.5.t
+	desc = diplomatic_positions.5.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = diplomatic_positions_reform
+			has_reform = respect_union_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = diplomatic_positions.5.a
+		add_prestige = 10
+	}
+	option = {
+		name = diplomatic_positions.5.b
+		every_neighbor_country = {
+			limit = {
+				NOT = { war_with = ROOT }
+			}
+			add_opinion = { who = ROOT modifier = opinion_diplomatic_positions }
+		}	
+	}
+	option = {
+		name = diplomatic_positions.5.c
+		highlight = yes
+		trigger = { prestige = 50 }
+		add_legitimacy = 10
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.6
+	title = diplomatic_positions.6.t
+	desc = diplomatic_positions.6.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = diplomatic_positions_reform
+			has_reform = respect_union_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = diplomatic_positions.6.a
+		if = {
+			limit = { government_rank = 3 }
+		add_prestige = -20
+		}
+		else_if = {
+			limit = { government_rank = 2 }
+		add_prestige = -15
+		}
+		else = {
+		add_prestige = -10
+		}
+	}
+	option = {
+		name = diplomatic_positions.6.b
+		every_neighbor_country = {
+			limit = {
+				NOT = { war_with = ROOT }
+			}
+			add_opinion = { who = ROOT modifier = opinion_diplomatic_positions_negative }
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.7
+	title = promote_nobles.7.t
+	desc = promote_nobles.7.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = enforce_privileges_reform
+			has_reform = growth_signoria_reform
+			has_reform = akritai_privileges_reform
+			has_reform = council_of_sheikhs_reform
+			has_reform = blood_tax_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = promote_nobles.7.a
+		add_yearly_manpower = 0.5
+	}
+	option = {
+		name = promote_nobles.7.b
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+	option = {
+		name = promote_nobles.7.c
+		highlight = yes
+		trigger = {
+			OR = {
+				has_reform = of_noble_bearing_reform
+				has_reform = koprulu_dynasty_reform
+				AND = {	
+					estate_influence = {
+						estate = estate_nobles
+						influence = 75
+					}
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 60
+					}
+				}
+			}
+		}
+		create_general = { tradition = 60 }
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.8
+	title = promote_nobles.8.t
+	desc = promote_nobles.8.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = enforce_privileges_reform
+			has_reform = growth_signoria_reform
+			has_reform = akritai_privileges_reform
+			has_reform = council_of_sheikhs_reform
+			has_reform = blood_tax_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = promote_nobles.8.a
+		random_owned_province = {
+				limit = {
+					is_capital = no
+					is_overseas = no
+					is_colony = no
+					is_territory = no
+				}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+	option = {
+		name = promote_nobles.8.b
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = 20
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.9
+	title = curtail_nobles.9.t
+	desc = curtail_nobles.9.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = quash_noble_power_reform
+			has_reform = lithuania_law_reform
+			has_reform = portuguese_cortes_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = curtail_nobles.9.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+	option = {
+		name = curtail_nobles.9.b
+		add_reform_progress_small_effect = yes
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.10
+	title = curtail_nobles.10.t
+	desc = curtail_nobles.10.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = quash_noble_power_reform
+			has_reform = lithuania_law_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = curtail_nobles.10.a
+		random_owned_province = {
+				limit = {
+					is_capital = no
+					is_overseas = no
+					is_colony = no
+					is_territory = no
+				}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+	}
+	option = {
+		name = curtail_nobles.10.b
+		add_years_of_income = -0.2
+	}
+	option = {
+		name = curtail_nobles.10.c
+		remove_government_reform = quash_noble_power_reform
+		reduce_reform_progress_small_effect
+		ai = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.11
+	title = guild_dominance.11.t
+	desc = guild_dominance.11.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = guild_dominance_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = guild_dominance.11.a
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_base_production = 1
+		}
+		ai = {
+			factor = 1
+		}
+	}
+	option = {
+		name = guild_dominance.11.b
+		add_years_of_income = 0.1
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+	option = {
+		name = guild_dominance.11.c
+		trigger = {
+			OR = {
+				tag = NED
+				AND = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 75
+					}
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 50
+					}
+				}
+			}
+		}
+		highlight = yes
+		add_years_of_income = -0.2
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_base_production = 1
+		}
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_base_tax = 1
+		}
+		ai = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.12
+	title = guild_dominance.12.t
+	desc = guild_dominance.12.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = guild_dominance_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = guild_dominance.12.a
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_ADVANCE
+			influence = 15
+			duration = 7300
+		}
+		ai = {
+			factor = 1
+			modifier = {
+				factor = 0
+					estate_influence = {
+						estate = estate_burghers
+						influence = 70
+					}
+			}
+		}
+	}
+	option = {
+		name = guild_dominance.12.b
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+		ai = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.13
+	title = trade_princes.13.t
+	desc = trade_princes.13.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = trade_princes_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = trade_princes.13.a
+		add_mercantilism = 1
+	}
+	option = {
+		name = trade_princes.13.b
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		ai = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.14
+	title = trade_princes.14.t
+	desc = trade_princes.14.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = trade_princes_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = trade_princes.14.a
+		add_mercantilism = -1
+	}
+	option = {
+		name = trade_princes.14.b
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+		ai = {
+			factor = 1
+		}
+	}
+	option = {
+		name = trade_princes.14.c
+		trigger = {
+			estate_influence = {
+				estate = estate_burghers
+				influence = 75
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 50
+			}
+		}
+		highlight = yes
+		random_owned_province = {
+			limit = {
+				province_has_center_of_trade_of_level = 1
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+	}		
+}
+
+country_event = {
+	id = GE_reform_cycle.15
+	title = state_church.15.t
+	desc = state_church.15.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = state_church_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = state_church.15.a
+		add_legitimacy = 10
+	}
+	option = {
+		name = state_church.15.b
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CLERGY_ADVANCES
+			influence = -10
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.16
+	title = state_church.16.t
+	desc = state_church.16.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = state_church_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = state_church.16.a
+		add_legitimacy = -10
+		ai = {
+			factor = 1
+		}
+	}
+	option = {
+		name = state_church.16.b
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CLERGY_ADVANCES
+			influence = 10
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		ai = {
+			factor = 1
+			modifier = {
+				factor = 0
+					estate_influence = {
+						estate = estate_church
+						influence = 70
+					}
+			}
+		}
+				
+		
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.17
+	title = dhimmi_nobles.17.t
+	desc = dhimmi_nobles.17.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = dhimmi_nobles_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = dhimmi_nobles.17.a
+		every_owned_province = { 
+			limit = {
+				has_estate = estate_dhimmi
+			}
+			add_local_autonomy = -5
+		}
+	}
+	option = {
+		name = dhimmi_nobles.17.b
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = 10
+		}
+	}
+	option = {
+		name = dhimmi_nobles.18.c
+		trigger = {
+			estate_loyalty = {
+				estate = estate_dhimmi
+				loyalty = 60
+			}
+		}
+		highlight = yes
+		random_owned_province = {
+			limit = {
+				has_estate = estate_dhimmi
+			}
+		add_base_tax = 1
+		}
+		ai = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.18
+	title = dhimmi_nobles.18.t
+	desc = dhimmi_nobles.18.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = dhimmi_nobles_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = dhimmi_nobles.18.a
+		every_owned_province = {
+			limit = {
+				has_estate = estate_dhimmi
+			}
+			add_unrest = 5
+		}
+	}
+	option = {
+		name = dhimmi_nobles.18.b
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = -10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.19
+	title = muscovite_manorialism.19.t
+	desc = muscovite_manorialism.19.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = muscovite_manorialism_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = muscovite_manorialism.19.a
+		add_country_modifier = {
+		name = "Russian_Manorialism"
+		duration = 3650
+		}
+	}
+	option = {
+		name = muscovite_manorialism.19.b
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+	}
+	option = {
+		name = muscovite_manorialism.19.c
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 60
+				}
+			}
+		}
+		highlight = yes
+		random_owned_province = {
+			limit = {
+				region = russia_region
+			}
+		add_base_tax = 1
+		}
+		ai = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.20
+	title = muscovite_manorialism.20.t
+	desc = muscovite_manorialism.20.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = muscovite_manorialism_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = muscovite_manorialism.20.a
+		corruption = 1
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.21
+	title = order_of_the_swan.21.t
+	desc = order_of_the_swan.21.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = order_of_the_swan_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = order_of_the_swan.21.a
+		prestige = 10
+	}
+	option = {
+		name = order_of_the_swan.21.b
+		random_neighbor_country = {
+			limit = {
+				NOT = { war_with = ROOT }
+				religion = catholic
+			}
+			add_opinion = { who = ROOT modifier = opinion_order_of_the_swan }
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.22
+	title = order_of_the_swan.22.t
+	desc = order_of_the_swan.22.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = order_of_the_swan_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = order_of_the_swan.22.a
+		legitimacy = -10
+	}
+	option = {
+		name = order_of_the_swan.22.b
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}

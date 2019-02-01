@@ -241,7 +241,6 @@ crown_of_saint_wenceslaus = {
 			tag = BOH
 			have_had_reform = crown_of_saint_wenceslaus
 		}
-		is_subject = no
 	}
 	modifiers = {
 		legitimacy = 0.5
@@ -249,8 +248,8 @@ crown_of_saint_wenceslaus = {
 	}
 	conditional = {
 		allow = { has_dlc = "Res Publica" }
-		queen = no
-		heir = no
+		queen = yes
+		heir = yes
 		duration = 100
 		has_term_election = yes
 		states_general_mechanic = {
@@ -290,8 +289,8 @@ metropolian_bishop_reform = {
 		religion = orthodox
 		}
 	modifiers = {
-		global_missionary_strength = 0.01
 		prestige_per_development_from_conversion = 0.1
+		state_maintenance_modifier = -0.10
 		}
 	effect = {
 		add_patriarch_authority = 0.10
@@ -319,37 +318,6 @@ state_church_reform = {
 		factor = 1
 	}
 }
-
-muslim_piety_reform = {
-	icon = muslim
-	allow_normal_conversion = yes
-	potential = {
-		religion_group = muslim
-	}
-	modifiers = {
-		tolerance_own = 0.5
-		monthly_piety = -0.005
-		}
-	ai = {
-		factor = 1
-	}
-}
-
-muslim_legal_reform = {
-	icon = noble_muslim
-	allow_normal_conversion = yes
-	potential = {
-		religion_group = muslim
-	}
-	modifiers = {
-		tolerance_heathen = 0.5
-		monthly_piety = 0.005
-		}
-	ai = {
-		factor = 1
-	}
-}
-
 
 #Tier2
 
@@ -382,7 +350,7 @@ lithuania_law_reform = {
 		yearly_corruption = -0.05
 		}
 	ai = {
-		factor = 100
+		factor = 5
 	}
 }
 
@@ -534,7 +502,7 @@ council_of_sheikhs_reform = {
 	}
 	modifiers = {
 		legitimacy = 0.5
-		manpower_recovery_speed = 0.2
+		manpower_recovery_speed = 0.15
 	}
 	ai = {
 		factor = 2
@@ -601,6 +569,36 @@ order_of_the_swan_reform = {
 	#10% noble loyalty
 }
 
+blood_tax_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	modifiers = {
+		mil_advisor_cost = -0.10
+		global_manpower_modifier = 0.10
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+bastard_feudalism_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = english
+	}
+	modifiers = {
+		global_manpower_modifier = 0.20
+		global_unrest = 1
+	}
+	ai = {
+		factor = 5
+	}
+	#10% noble influence
+}
 		
 #Tier3
 
@@ -674,7 +672,7 @@ casa_de_contraction_reform = {
 		global_colonial_growth = 10
 	}
 	ai = {
-		factor = 100
+		factor = 5
 	}
 }
 
@@ -689,7 +687,7 @@ casa_de_india_reform = {
 		global_ship_cost = -0.10
 	}
 	ai = {
-		factor = 100
+		factor = 5
 	}
 }	
 
@@ -719,6 +717,7 @@ constitutio_joachimica_reform = {
 		OR = {
 			tag = PRU
 			tag = BRA
+			tag = NGF
 			have_had_reform = constitutio_joachimica_reform
 		}
 	}
@@ -745,6 +744,25 @@ millet_reform = {
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_unrest = -1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+ancien_regime_reform = {
+	icon = ancien_regime
+	allow_normal_conversion = no
+	potential = { 
+		tag = FRA
+		}
+	modifiers = {
+		global_autonomy = -0.05
+		state_maintenance_modifier = -0.10
+		max_states = 3
+		}
+	ai = {
+		factor = 5
 	}
 }
 
@@ -782,21 +800,7 @@ advanced_bookkeeping_reform = {
 	}
 }
 
-ancien_regime_reform = {
-	icon = ancien_regime
-	allow_normal_conversion = no
-	potential = { 
-		tag = FRA
-		}
-	modifiers = {
-		global_autonomy = -0.05
-		state_maintenance_modifier = -0.10
-		max_states = 3
-		}
-	ai = {
-		factor = 100
-	}
-}
+
 	
 colonial_govenors_reform = {
 	icon = colonial_rule
@@ -877,8 +881,43 @@ koprulu_dynasty_reform = {
 		factor = 100
 	}
 }
-		
-	
+
+fredrickan_reforms_reform = {
+	icon = king
+	potential = {
+		OR = {
+			tag = PRU
+			tag = BRA
+			tag = NGF
+			have_had_reform = general_war_commissariat_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		build_cost = -0.10
+		interest = -0.5
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+conseil_du_roi_reform = {
+	icon = judge
+	allow_normal_conversion = no
+	potential = { 
+		tag = FRA
+		}
+	modifiers = {
+		reform_progress_growth = 0.05
+		advisor_cost = -0.1
+		advisor_pool = 1
+		}
+	ai = {
+		factor = 5
+	}
+}
+
 #Tier5
 
 
@@ -903,24 +942,7 @@ table_of_ranks_reform = {
 	}
 }
 
-general_war_commissariat_reform = {
-	icon = "king"
-	allow_normal_conversion= yes
-	potential = {
-		OR = {
-			tag = PRU
-			tag = BRA
-			have_had_reform = general_war_commissariat_reform
-		}
-	}
-	modifiers = {
-		global_tax_modifier = 0.10
-		global_regiment_cost = -0.05
-		}
-	ai = {
-		factor = 100
-	}
-}
+
 
 #Tier6
 
@@ -993,11 +1015,12 @@ regulations_for_state_officials_reform = {
 		OR = {
 			tag = PRU
 			tag = BRA
+			tag = NGF
 			have_had_reform = regulations_for_state_officials_reform
 		}
 	}
 	modifiers = {
-		advisor_cost = -0.25
+		adm_advisor_cost = -0.25
 		yearly_corruption = -0.1
 	}
 	ai = {
@@ -1098,7 +1121,7 @@ professional_army_reform = {
 	potential = { }
 	modifiers = {
 		discipline = 0.05
-		possible_mercenaries = -1
+		possible_mercenaries = -1.25
 		land_maintenance_modifier = 0.05
 	}
 	ai = {
@@ -1284,3 +1307,24 @@ foreign_formation_regiments_reform = {
 		factor = 100
 	}
 }
+
+general_war_commissariat_reform = {
+	icon = "king"
+	allow_normal_conversion= yes
+	potential = {
+		OR = {
+			tag = PRU
+			tag = BRA
+			tag = NGF
+			have_had_reform = general_war_commissariat_reform
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+		global_regiment_cost = -0.05
+		}
+	ai = {
+		factor = 100
+	}
+}
+

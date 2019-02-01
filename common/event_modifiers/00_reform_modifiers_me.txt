@@ -61,4 +61,7 @@ Mil_2_Main = {
 Mil_2_Leader = {
 	general_cost = -0.2
 	}
+Russian_Manorialism = {
+	fort_maintenance_modifier = -0.2
+	}
 	

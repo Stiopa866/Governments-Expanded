@@ -197,6 +197,13 @@ estate_burghers =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_TRADE_PRINCES
+		trigger = {
+			has_reform = trade_princes_reform
+		}	
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_NAHUATL
 		trigger = {
 			religion = nahuatl
