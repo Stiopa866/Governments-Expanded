@@ -45,28 +45,28 @@
  promote_nobles.8.d: "By creating a hierarchy of nobility we have created an ambitious atmosphere. However, rather than turning their ambitions on eachother, the nobility now looks to us, demanding even more privileges and power to justify their position over the lesser nobles."
  promote_nobles.8.a: "They forget themselves; we rule, they serve, no matter how gilded their collars." 
  promote_nobles.8.b: "Very well, grant them what they desire; their service is invaluable, after all."
- curtail_nobles.9.t:
- curtail_nobles.9.d:
- curtail_nobles.9.a:
- curtail_nobles.9.b:
- curtail_nobles.10.t:
- curtail_nobles.10.d:
- curtail_nobles.10.a:
- curtail_nobles.10.b:
- curtail_nobles.10.c:
- guild_dominance.11.t:
- guild_dominance.11.d:
- guild_dominance.11.a:
- guild_dominance.11.b:
- guild_dominance.11.c:
+ curtail_nobles.9.t: "In Capable Hands"
+ curtail_nobles.9.d: "By definition curtailing the power and the influence of the nobility requires the introduction of non-hereditary bureaucratic offices. However, just because they are no longer hereditary positions does not mean the nobility should be denied the right to serve in them. The question becomes do we use the offices as a carrot to control the nobles, or as a method towards meritocracy?"
+ curtail_nobles.9.a: "The nobles are asses, and the carrot will be mandatory."
+ curtail_nobles.9.b: "Why would we strip them of office just to return them to it?"
+ curtail_nobles.10.t: "Collaring the Rabid Dogs"
+ curtail_nobles.10.d: "Our efforts to curtail the powers of the nobility have not been without reactionary backlash. Even now an assorted and assembled group of noblemen, indignant with their present position, march on the capital, ready to raise hell if their ancient privileges are not returned to them.
+ curtail_nobles.10.a: "Rabid curs must be put down, and examples must be made."
+ curtail_nobles.10.b: "Let us guild their cages and weaken their resolve."
+ curtail_nobles.10.c: "How could we be so foolish; these men are what make this nation."
+ guild_dominance.11.t: "The Wealth of the Guild and the Need of the Nation"
+ guild_dominance.11.d: "The guilds bring a lot of wealth into the nation, and due to our closeness to the guilds, it is our place to see how that wealth is best utilised. Recently the guilds have been benefitting from an economic boom, and we must decide how the surplus is dealt with."
+ guild_dominance.11.a: "Allow the guilds to invest it where they please."
+ guild_dominance.11.b: "Raise guild taxes, that surplus belong to the state."
+ guild_dominance.11.c: "Guild investments are state investments; wherever they invest, our infrastructure grows."
  guild_dominance.12.t:
  guild_dominance.12.d:
  guild_dominance.12.a:
  guild_dominance.12.b:
  trade_princes.13.t:
- trade_princes.13.d:
- trade_princes.13.a:
- trade_princes.13.b:
+ trade_princes.13.d: #Recently a new trinket/product became popular amongst our merchants, should it fall under our tariff policy?
+ trade_princes.13.a: #Anything that goes in or out of our borders is within the state perogative
+ trade_princes.13.b: #Free Trade will grant much prosperity to our people, we should not control it
  trade_princes.14.t:
  trade_princes.14.d:
  trade_princes.14.a:

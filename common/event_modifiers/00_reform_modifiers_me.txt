@@ -61,7 +61,23 @@ Mil_2_Main = {
 Mil_2_Leader = {
 	general_cost = -0.2
 	}
+	
+#GE Reform Cycle
 Russian_Manorialism = {
 	fort_maintenance_modifier = -0.2
 	}
-	
+Stop_Centralization = {
+	global_autonomy = 0.1
+	}
+Beneficial_Self_Rule = {
+	tax_income = 1.20
+	local_development_cost = -0.10
+	}
+Decentralized_Rule = {
+	global_unrest = -1
+	state_maintenance_modifier = -0.25
+	}
+Unpaid_Garrison = {
+	defensiveness = -0.20
+	garrison_size = -0.25
+}

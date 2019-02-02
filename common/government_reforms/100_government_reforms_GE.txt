@@ -171,7 +171,7 @@ beylik = {
 	nation_designer_cost = 0
 	modifiers = {
 		army_tradition = 0.50
-		unjustified_demands = -0.15
+		unjustified_demands = -0.25
 		}
 }
 

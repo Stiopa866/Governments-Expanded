@@ -404,6 +404,7 @@ country_event = {
 		OR = {
 			has_reform = quash_noble_power_reform
 			has_reform = lithuania_law_reform
+			has_reform = portuguese_cortes_reform
 		}
 	}
 
@@ -418,10 +419,7 @@ country_event = {
 		name = curtail_nobles.10.a
 		random_owned_province = {
 				limit = {
-					is_capital = no
-					is_overseas = no
-					is_colony = no
-					is_territory = no
+					is_capital = yes
 				}
 			spawn_rebels = {
 				type = noble_rebels
@@ -436,6 +434,8 @@ country_event = {
 	option = {
 		name = curtail_nobles.10.c
 		remove_government_reform = quash_noble_power_reform
+		remove_government_reform = lithuania_law_reform
+		remove_government_reform = portuguese_cortes_reform
 		reduce_reform_progress_small_effect
 		ai = {
 			factor = 0
@@ -476,10 +476,10 @@ country_event = {
 	}
 	option = {
 		name = guild_dominance.11.b
-		add_years_of_income = 0.1
+		add_years_of_income = 0.4
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = 5
+			loyalty = -5
 		}
 	}
 	option = {
@@ -992,6 +992,331 @@ country_event = {
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -10
+		}
+	}
+}
+
+#T3
+
+country_event = {
+	id = GE_reform_cycle.23
+	title = centralized.23.t
+	desc = centralized.23.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = centralize_reform
+			has_reform = diocletian_reforms_reform
+			has_reform = kyoho_reforms_reform
+			has_reform = oprichnina_reform
+			has_reform = constitutio_joachimica_reform
+			has_reform = ancien_regime_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = centralized.23.a
+		add_years_of_income = 0.1
+	}
+	option = {
+		name = centralized.23.b
+		define_advisor = {
+			type = treasurer
+			skill = 2
+			cost_multiplier = 0.50
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.24
+	title = centralized.24.t
+	desc = centralized.24.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = centralize_reform
+			has_reform = diocletian_reforms_reform
+			has_reform = kyoho_reforms_reform
+			has_reform = oprichnina_reform
+			has_reform = constitutio_joachimica_reform
+			has_reform = ancien_regime_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = centralized.24.a
+		add_country_modifier = {
+			name = "Stop_Centralization"
+			duration = 7300
+		}
+		every_owned_province = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_local_autonomy = 25
+		}
+	}
+	option = {
+		name = centralized.24.b
+		trigger = {
+			NOT = {
+				OR = {
+					has_reform = enforce_privileges_reform
+					has_reform = growth_signoria_reform
+					has_reform = akritai_privileges_reform
+					has_reform = council_of_sheikhs_reform
+					has_reform = blood_tax_reform
+					has_reform = quash_noble_power_reform
+					has_reform = lithuania_law_reform
+				}
+			}	
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				is_overseas = no
+				is_colony = no
+				is_territory = no
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+	option = {
+		name = centralized.24.c
+		trigger = {
+			OR = {
+				has_reform = enforce_privileges_reform
+				has_reform = growth_signoria_reform
+				has_reform = akritai_privileges_reform
+				has_reform = council_of_sheikhs_reform
+				has_reform = blood_tax_reform
+			}	
+		}
+		highlight = yes
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				is_overseas = no
+				is_colony = no
+				is_territory = no
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+	}
+	option = {
+		name = centralized.24.e
+		trigger = {
+			OR = {
+				has_reform = quash_noble_power_reform
+				has_reform = lithuania_law_reform
+			}	
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				is_overseas = no
+				is_colony = no
+				is_territory = no
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.25
+	title = decentralized.25.t
+	desc = decentralized.25.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = decentralize_reform
+			has_reform = millet_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = decentralized.25.a
+		every_owned_province = {
+			limit = {
+				culture = 
+			}
+			add_province_modifier = {
+				name = "Beneficial_Self_Rule"
+				duration = 7300
+			}
+		}
+	}
+	option = {
+		name = decentralized.25.b
+		add_country_modifier = {
+			name = "Decentralized_Rule"
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.26
+	title = decentralized.26.t
+	desc = decentralized.26.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = decentralize_reform
+			has_reform = millet_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = decentralized.26.a
+		every_owned_province = {
+			limit = {
+				culture = 
+			}
+			add_local_autonomy = 25
+		}
+	}
+	option = {
+		name = decentralized.26.b
+		random_owned_province = {
+			limit = {
+				culture = 
+			}
+			spawn_rebels = {
+				type = nationalist_rebels 
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.27
+	title = regional_fort.27.t
+	desc = regional_fort.27.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = regional_forts_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = regional_fort.27.a
+		add_army_tradition = 10
+	}
+	option = {
+		name = regional_fort.27.b
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+	option = {
+		name = regional_fort.27.c
+		trigger = {
+			limit = {
+				OR = {
+					has_reform = les_vieux_corps_reform
+					has_reform = professional_army_reform
+					has_reform = general_war_commissariat_reform
+				}
+			}
+		}
+		highlight = yes
+		add_army_tradition = 15
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.28
+	title = decentralized.28.t
+	desc = decentralized.28.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = decentralize_reform
+			has_reform = millet_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = decentralized.28.a
+		add_years_of_income = -0.5
+	}
+	option = {
+		name = decentralized.28.b
+		random_owned_province = {
+			limit = {
+				fort_level = 1
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+		add_country_modifier = {
+			name = "Unpaid_Garrison"
+			duration = 3650
 		}
 	}
 }
