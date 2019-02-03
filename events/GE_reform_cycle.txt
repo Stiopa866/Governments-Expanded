@@ -602,6 +602,27 @@ country_event = {
 			factor = 1
 		}
 	}
+	option = {
+		name = trade_princes.13.c
+		trigger = {
+			estate_influence = {
+				estate = estate_burghers
+				influence = 75
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 50
+			}
+		}
+		highlight = yes
+		random_owned_province = {
+			limit = {
+				province_has_center_of_trade_of_level = 1
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+	}
 }
 
 country_event = {
@@ -637,27 +658,6 @@ country_event = {
 			factor = 1
 		}
 	}
-	option = {
-		name = trade_princes.14.c
-		trigger = {
-			estate_influence = {
-				estate = estate_burghers
-				influence = 75
-			}
-			estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 50
-			}
-		}
-		highlight = yes
-		random_owned_province = {
-			limit = {
-				province_has_center_of_trade_of_level = 1
-				NOT = { province_has_center_of_trade_of_level = 3 }
-			}
-			add_center_of_trade_level = 1
-		}
-	}		
 }
 
 country_event = {
@@ -692,7 +692,7 @@ country_event = {
 			duration = 3650
 		}
 		add_estate_loyalty = {
-			estate = estate_nobles
+			estate = estate_church
 			loyalty = 10
 		}
 	}
@@ -733,7 +733,7 @@ country_event = {
 			duration = 3650
 		}
 		add_estate_loyalty = {
-			estate = estate_nobles
+			estate = estate_church
 			loyalty = -10
 		}
 		ai = {
@@ -789,9 +789,12 @@ country_event = {
 	option = {
 		name = dhimmi_nobles.18.c
 		trigger = {
-			estate_loyalty = {
-				estate = estate_dhimmi
-				loyalty = 60
+			OR = {
+				has_reform = millet_reform
+				estate_loyalty = {
+					estate = estate_dhimmi
+					loyalty = 60
+				}
 			}
 		}
 		highlight = yes

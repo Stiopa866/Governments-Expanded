@@ -67,25 +67,26 @@
  trade_princes.13.d: #Recently a new trinket/product became popular amongst our merchants, should it fall under our tariff policy?
  trade_princes.13.a: #Anything that goes in or out of our borders is within the state perogative
  trade_princes.13.b: #Free Trade will grant much prosperity to our people, we should not control it
+ trade_princes.13.c: #Only in designated trade hubs
  trade_princes.14.t:
- trade_princes.14.d:
- trade_princes.14.a:
- trade_princes.14.b:
- trade_princes.14.c:
+ trade_princes.14.d: #A downturn in the demand of a product has decreased the price, some influencial merchants are asking for a reduction of tariffs
+ trade_princes.14.a: #Loosen our grip on the markets and reduce the tariffs
+ trade_princes.14.b: #Not our problem. OR. Mere merchants dare question our state policies.
  state_church.15.t:
- state_church.15.d:
- state_church.15.a:
- state_church.15.b:
+ state_church.15.d: #Our monarch has shown that under his guidance, we walk the path of god.
+ state_church.15.a: #Hail to lord on earth, as god is the lord in heaven.
+ state_church.15.b: #Centralize the church around me
  state_church.16.t:
- state_church.16.d:
- state_church.16.a:
- state_church.16.b:
+ state_church.16.d: #Bad omens, talk of monsters, evil and war spreads through the land, the people are frightfull and wonder why your guidance does not bring safety
+ state_church.16.a: #I have failed, may the lord forgive me, but the path is rightious (publically admit your guilt and intention to improve)
+ state_church.16.b: #Let priests face this backlash on their own
  dhimmi_nobles.17.t:
- dhimmi_nobles.17.d:
- dhimmi_nobles.17.a:
- dhimmi_nobles.17.b:
+ dhimmi_nobles.17.d: #A old dhimmi govenor has passed on without an heir, we should select a new govenor
+ dhimmi_nobles.17.a: #A loyal muslim from court to strengthen your hold
+ dhimmi_nobles.17.b: #A dhimmi noble from a influencial family
+ dhimmi_nobles.17.c: #Let the local community pick a successor. OR. Grant the office to a wealthy local family
  dhimmi_nobles.18.t:
- dhimmi_nobles.18.d:
- dhimmi_nobles.18.a:
- dhimmi_nobles.18.b:
+ dhimmi_nobles.18.d: #Some of our dhimmi nobles have angered the populace and now seek our support in pacifying the people
+ dhimmi_nobles.18.a: #Pacify the people. OR. let them rage
+ dhimmi_nobles.18.b: #replace the nobles. OR. bring the guilty ones to justice
  
