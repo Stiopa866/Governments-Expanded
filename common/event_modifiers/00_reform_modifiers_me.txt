@@ -81,3 +81,9 @@ Unpaid_Garrison = {
 	defensiveness = -0.20
 	garrison_size = -0.25
 }
+Pious_Clergy = {
+	tolerance_own = 1
+}
+Pragmatic_Clergy = {
+	global_tax_modifier = 0.10
+}

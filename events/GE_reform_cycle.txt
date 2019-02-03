@@ -1284,14 +1284,13 @@ country_event = {
 
 country_event = { 
 	id = GE_reform_cycle.28
-	title = decentralized.28.t
-	desc = decentralized.28.d
+	title = regional_fort.28.t
+	desc = regional_fort.28.d
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
 		OR = {
-			has_reform = decentralize_reform
-			has_reform = millet_reform
+			has_reform = regional_forts_reform
 		}
 	}
 
@@ -1303,11 +1302,11 @@ country_event = {
 	
 	
 	option = {
-		name = decentralized.28.a
+		name = regional_fort.28.a
 		add_years_of_income = -0.5
 	}
 	option = {
-		name = decentralized.28.b
+		name = regional_fort.28.b
 		random_owned_province = {
 			limit = {
 				fort_level = 1
@@ -1320,6 +1319,268 @@ country_event = {
 		add_country_modifier = {
 			name = "Unpaid_Garrison"
 			duration = 3650
+		}
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.29
+	title = theocrat.29.t
+	desc = theocrat.29.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = theocratic_bureacrats_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = theocrat.29.a
+		define_advisor = {
+			type = theologian
+			skill = 2
+			cost_multiplier = 0.50
+		}
+	}
+	option = {
+		name = theocrat.29.b
+		add_legitimacy = 5
+		add_papal_influence = 5
+		add_fervor = 10
+		add_church_power = 10
+	}
+	option = {
+		name = theocrat.29.c
+		trigger = {
+			OR = {
+				has_reform = papal_embassy_reform
+				has_reform = state_church_reform
+				has_reform = metropolian_bishop_reform
+			}
+			has_reform = clergy_in_administration_reform
+		}
+		highlight = yes
+		add_stability = 1
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.30
+	title = theocrat.30.t
+	desc = theocrat.30.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = theocratic_bureacrats_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = theocrat.30.a
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+			}
+			spawn_rebels = {
+				type = heretic_rebels 
+				size = 2
+			}
+		}
+	}
+	option = {
+		name = theocrat.30.b
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = -15
+		}
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.31
+	title = casa_de_india.31.t
+	desc = casa_de_india.31.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = council_of_the_indies_reform
+			has_reform = casa_de_india_reform
+			has_reform = casa_de_contraction_reform
+		}
+		any_owned_province = {
+			is_colony = yes
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = casa_de_india.31.a
+		random_owned_province = {
+			limit = {
+				is_colony = yes
+			}
+			add_base_manpower = 1
+		}
+	}
+	option = {
+		name = casa_de_india.31.b
+		random_owned_province = {
+			limit = {
+				is_colony = yes
+			}
+			add_colonysize = 150
+		}
+	}
+	option = {
+		name = casa_de_india.31.c
+		trigger = {
+			has_reform = colonial_govenors_reform
+		}
+		highlight = yes
+		add_corruption = -1
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.32
+	title = casa_de_india.32.t
+	desc = casa_de_india.32.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = council_of_the_indies_reform
+			has_reform = casa_de_india_reform
+			has_reform = casa_de_contraction_reform
+		}
+		any_owned_province = {
+			is_colony = yes
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = casa_de_india.32.a
+		add_corruption = 0.5
+	}
+	option = {
+		name = casa_de_india.32.b
+		random_owned_province = {
+			limit = {
+				is_colony = yes
+			}
+			add_colonysize = -100
+		}
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.33
+	title = administrative_clergy.33.t
+	desc = administrative_clergy.33.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = clergy_in_administration_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = administrative_clergy.33.a
+		add_country_modifier = {
+			name = "Pious_Clergy"
+			duration = 7300
+		}
+	}
+	option = {
+		name = administrative_clergy.33.b
+		add_country_modifier = {
+			name = "Pragmatic_Clergy"
+			duration = 7300
+		}
+	}
+	option = {
+		name = administrative_clergy.33.c
+		trigger = {
+			OR = {
+				has_reform = papal_embassy_reform
+				has_reform = state_church_reform
+				has_reform = metropolian_bishop_reform
+				has_reform = theocratic_bureacrats_reform
+			}
+		}
+		add_patriarch_authority = 5
+		add_papal_influence = 10
+		add_fervor = 20
+		add_church_power = 20
+	}
+}
+
+country_event = { 
+	id = GE_reform_cycle.34
+	title = administrative_clergy.34.t
+	desc = administrative_clergy.34.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = clergy_in_administration_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = administrative_clergy.34.a
+		add_years_of_income = -0.25
+	}
+	option = {
+		name = administrative_clergy.34.b
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = -10
 		}
 	}
 }

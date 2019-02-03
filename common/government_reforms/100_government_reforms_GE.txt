@@ -249,7 +249,7 @@ crown_of_saint_wenceslaus = {
 	conditional = {
 		allow = { has_dlc = "Res Publica" }
 		queen = yes
-		heir = yes
+		heir = no
 		duration = 100
 		has_term_election = yes
 		states_general_mechanic = {
