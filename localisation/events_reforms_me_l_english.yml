@@ -59,34 +59,34 @@
  guild_dominance.11.a: "Allow the guilds to invest it where they please."
  guild_dominance.11.b: "Raise guild taxes, that surplus belong to the state."
  guild_dominance.11.c: "Guild investments are state investments; wherever they invest, our infrastructure grows."
- guild_dominance.12.t:
- guild_dominance.12.d:
- guild_dominance.12.a:
- guild_dominance.12.b:
- trade_princes.13.t:
- trade_princes.13.d: #Recently a new trinket/product became popular amongst our merchants, should it fall under our tariff policy?
- trade_princes.13.a: #Anything that goes in or out of our borders is within the state perogative
- trade_princes.13.b: #Free Trade will grant much prosperity to our people, we should not control it
- trade_princes.13.c: #Only in designated trade hubs
- trade_princes.14.t:
- trade_princes.14.d: #A downturn in the demand of a product has decreased the price, some influencial merchants are asking for a reduction of tariffs
- trade_princes.14.a: #Loosen our grip on the markets and reduce the tariffs
- trade_princes.14.b: #Not our problem. OR. Mere merchants dare question our state policies.
- state_church.15.t:
- state_church.15.d: #Our monarch has shown that under his guidance, we walk the path of god.
- state_church.15.a: #Hail to lord on earth, as god is the lord in heaven.
- state_church.15.b: #Centralize the church around me
- state_church.16.t:
- state_church.16.d: #Bad omens, talk of monsters, evil and war spreads through the land, the people are frightfull and wonder why your guidance does not bring safety
- state_church.16.a: #I have failed, may the lord forgive me, but the path is rightious (publically admit your guilt and intention to improve)
- state_church.16.b: #Let priests face this backlash on their own
- dhimmi_nobles.17.t:
- dhimmi_nobles.17.d: #A old dhimmi govenor has passed on without an heir, we should select a new govenor
- dhimmi_nobles.17.a: #A loyal muslim from court to strengthen your hold
- dhimmi_nobles.17.b: #A dhimmi noble from a influencial family
- dhimmi_nobles.17.c: #Let the local community pick a successor. OR. Grant the office to a wealthy local family
- dhimmi_nobles.18.t:
- dhimmi_nobles.18.d: #Some of our dhimmi nobles have angered the populace and now seek our support in pacifying the people
- dhimmi_nobles.18.a: #Pacify the people. OR. let them rage
- dhimmi_nobles.18.b: #replace the nobles. OR. bring the guilty ones to justice
+ guild_dominance.12.t: "Greased Palms Lose Grip"
+ guild_dominance.12.d: "The guild merchants have recently been making a concerted effort to use their money and influence to force their way into our administration. While we are grateful to the guilds, and friends to their merchants, there is the question of whether such plutocratic promotion is to our benefit."
+ guild_dominance.12.a: "If a man has wealth, he has earned it, and earned a place among us."
+ guild_dominance.12.b: "Our administration must remain pure; this is corruption, plain and simple."
+ trade_princes.13.t: "Trinkets and Baubles"
+ trade_princes.13.d: "There has come to be a significant market for certain knick-knacks among our merchants and our people, and it is rapidly becoming a part of our cultural and trade identities. The question stands on whether to tax these new goods, to enjoy the benefits of this boom."
+ trade_princes.13.a: "If it belongs to our identity, the proceeds from it belong to us."
+ trade_princes.13.b: "If we can sell it freely, we can sell it better. Let it grow unimpeded."
+ trade_princes.13.c: "Let us designate where 'legitimate' versions come from, our trade hubs perhaps..."
+ trade_princes.14.t: "Elasticity of Price"
+ trade_princes.14.d: "A major product of our nation has lost demand, and the princes are pressuring us into reducing tariffs so that their remaining stock will not gather dust."
+ trade_princes.14.a: "If we must loosen our grip to loose our cargo, fine."
+ trade_princes.14.b: "It's not our fault the princes weren't watching the market closer."
+ state_church.15.t: "The Mark of the $MONARCHTITLE$ is the Mark of God"
+ state_church.15.d: "Under our $MONARCHTITLE$, we walk the path of the heavens, and this much is clear from the righteousness and beauty of their reign."
+ state_church.15.a: "The $MONARCHTITLE$ is the lord of this earth, but God is the Lord of Heaven."
+ state_church.15.b: "A cult of personality around the $MONARCHTITLE$ will help us."
+ state_church.16.t: "The Fisher $MONARCHTITLE$"
+ state_church.16.d: "Bad omens plague our land, and talk of monsters, war and plague impending frighten the people. When they turn to you they find you wanting. Why have you failed to protect your people, mighty sovreign and vicar of God?"
+ state_church.16.a: "This is is my failure, I accept that. May God and Man forgive me."
+ state_church.16.b: "The Clergy are the church, and I am the state; the fault is with them."
+ dhimmi_nobles.17.t: "The Dhimmi and Their Place"
+ dhimmi_nobles.17.d: "A loyal dhimmi governor has passed away without an heir, and the land and title falls to the $MONARCHTITLE$ to reassign. To whom shall those lands go?"
+ dhimmi_nobles.17.a: "One of the faithful will serve us loyally."
+ dhimmi_nobles.17.b: "We trusted the dhimmi before; we will trust them again."
+ dhimmi_nobles.17.c: "Let the dhimmi select who reigns over them."
+ dhimmi_nobles.18.t: "The Dhimmi and Their People"
+ dhimmi_nobles.18.d: "Tensions between the populace and the dhimmi nobles we have assigned to them have reached a fever pitch. The dhimmi now turn to us for help in this matter." 
+ dhimmi_nobles.18.a: "The rage of the people is the rage of the almighty."
+ dhimmi_nobles.18.b: "The dhimmi no longer please the almighty or the people; replace them."
  
