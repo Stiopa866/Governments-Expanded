@@ -10,6 +10,7 @@ estate_nobles =
 	# If true, country will get estate
 	trigger = {
 		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { government = native }
@@ -18,6 +19,8 @@ estate_nobles =
 		NOT = { has_reform = revolutionary_republic_reform }
 		NOT = { has_reform = revolutionary_empire_reform }
 		NOT = { has_reform = peasants_republic }
+		NOT = { has_reform = american_republic }
+		NOT = { has_reform = federal_republic }
 		if = {
 			limit = {
 				NOT = { religion_group = muslim }
@@ -41,6 +44,12 @@ estate_nobles =
 				NOT = { has_reform = english_monarchy }
 				NOT = { has_reform = parliamentary_reform }	
 			}
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Dharma" }
+			}
+			has_parliament = no
 		}
 	}
 	

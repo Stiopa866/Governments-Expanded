@@ -149,9 +149,19 @@ country_event = {
 				is_tribal = no 
 				government = republic
 				NOT = { republican_tradition = 20 }				
+				NOT = { has_reform = revolutionary_republic_reform }
 				has_dlc = "Res Publica"
 			}
 			add_government_reform = presidential_despot_reform	
+		}
+		else_if = {
+			limit = {
+				government = republic
+				NOT = { republican_tradition = 20 }	
+				has_reform = revolutionary_republic_reform
+			}
+			change_government = monarchy
+			add_government_reform = revolutionary_empire_reform
 		}
 		if = {
 			limit = {
@@ -160,7 +170,7 @@ country_event = {
 				NOT = { republican_tradition = 20 }
 				NOT = { has_dlc = "Res Publica" }
 			}
-			change_government_via_reform = monarchy
+			change_government = monarchy
 			set_legacy_government = despotic_monarchy
 		}
 		add_scaled_republican_tradition = -10
@@ -1073,6 +1083,9 @@ country_event = {
 					min_age = 50
 					max_age = 75
 					adm = 2
+					dip = -1
+					mil = -1
+					option = 0
 				}
 			}
 			else = {
@@ -1081,6 +1094,9 @@ country_event = {
 					min_age = 50
 					max_age = 75
 					adm = 2
+					dip = -1
+					mil = -1
+					option = 0
 				}
 			}
 			if = {
@@ -1092,8 +1108,11 @@ country_event = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
 					max_age = 75
+					adm = -1
 					dip = 2
+					mil = -1
 					random_gender = yes
+					option = 1
 				}
 			}
 			else = {
@@ -1101,7 +1120,10 @@ country_event = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
 					max_age = 75
+					adm = -1
 					dip = 2
+					mil = -1
+					option = 1
 				}
 			}
 			if = {
@@ -1113,8 +1135,11 @@ country_event = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
 					max_age = 75
+					adm = -1
+					dip = -1
 					mil = 2
 					random_gender = yes
+					option = 2
 				}
 			}
 			else = {
@@ -1122,7 +1147,10 @@ country_event = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
 					max_age = 75
+					adm = -1
+					dip = -1
 					mil = 2
+					option = 2
 				}
 			}
 		}
@@ -1150,6 +1178,7 @@ country_event = {
 				influence = 20
 			}				
 		}
+		custom_tooltip = lottery_candidate_bonus_one
 	}
 	option = {
 		name = elections.800.b
@@ -1167,6 +1196,7 @@ country_event = {
 				influence = 20
 			}				
 		}
+		custom_tooltip = lottery_candidate_bonus_one
 	}
 	option = {
 		name = elections.800.c
@@ -1184,6 +1214,7 @@ country_event = {
 				influence = 20
 			}				
 		}
+		custom_tooltip = lottery_candidate_bonus_one
 	}
 	option = { # lottery
 		name = elections.800.da
@@ -1255,6 +1286,7 @@ country_event = {
 				}
 			}
 		}
+		custom_tooltip = lottery_candidate_bonus_plural
 	}
 	option = { # nepotism
 		name = elections.800.e

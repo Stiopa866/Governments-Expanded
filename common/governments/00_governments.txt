@@ -314,7 +314,7 @@ republic = {
 			reforms = {
 				republican_authoritarianism_reform
 				nepotism_reform
-				republicanism_reform 
+				republicanism_reform
 				council_of_captains_reform
 				articles_of_agreement_reform
 				smugglers_haven_reform
@@ -417,11 +417,13 @@ republic = {
 		trading_city
 		american_republic
 		revolutionary_republic_reform
+		pirate_republic_reform
 	}
 	exclusive_reforms = {
 		lottery_reform
 		venice_merchants_reform
 		dutch_republic
+		pirate_republic_reform
 	}
 }
 
@@ -470,7 +472,7 @@ tribal = {
 		tribal_religion = {
 			reforms = {
 				religious_societies_reform
-				lip_service_reform 
+				lip_service_reform
 				#GE
 				sheikhdom_reform
 				adoption_of_christianity_reform

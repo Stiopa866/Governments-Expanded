@@ -1546,6 +1546,7 @@ country_event = {
 				has_reform = theocratic_bureacrats_reform
 			}
 		}
+		highlight = yes
 		add_patriarch_authority = 5
 		add_papal_influence = 10
 		add_fervor = 20

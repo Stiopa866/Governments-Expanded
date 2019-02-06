@@ -18,6 +18,7 @@ estate_church =
 			}
 			NOT = { has_estate = estate_brahmins }
 		}
+		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = trading_city }
@@ -77,9 +78,11 @@ estate_church =
 		local_missionary_strength = 0.02
 		local_tax_modifier = 0.1
 		local_unrest = -2
+		local_missionary_maintenance_cost = -0.25
 	}
 	province_modifier_neutral = {
 		local_unrest = -2
+		local_missionary_maintenance_cost = -0.10
 	}	
 	province_modifier_angry = {
 		local_unrest = 5
@@ -879,7 +882,7 @@ estate_church =
 					type = inquisitor
 					skill = 3
 					culture = event_target:church_estate_province
-					religion = event_target:church_estate_province
+					religion = ROOT
 					location = event_target:church_estate_province
 					cost_multiplier = 0.5
 				}
@@ -896,6 +899,7 @@ estate_church =
 				define_advisor = {
 					type = inquisitor
 					skill = 3
+					religion = ROOT
 					cost_multiplier = 0.5
 				}
 			}
@@ -918,7 +922,7 @@ estate_church =
 					type = inquisitor
 					skill = 3
 					culture = event_target:church_estate_province
-					religion = event_target:church_estate_province
+					religion = ROOT
 					location = event_target:church_estate_province
 					cost_multiplier = 0.75
 				}
@@ -941,6 +945,7 @@ estate_church =
 				define_advisor = {
 					type = inquisitor
 					skill = 3
+					religion = ROOT
 					cost_multiplier = 0.75
 				}
 			}
@@ -959,7 +964,7 @@ estate_church =
 					type = inquisitor
 					skill = 3
 					culture = event_target:church_estate_province
-					religion = event_target:church_estate_province
+					religion = ROOT
 					location = event_target:church_estate_province
 				}
 			}
@@ -977,6 +982,7 @@ estate_church =
 				define_advisor = {
 					type = inquisitor
 					skill = 3
+					religion = ROOT
 				}
 			}
 			else_if = {
@@ -993,7 +999,7 @@ estate_church =
 					skill = 2
 					cost_multiplier = 0.5
 					culture = event_target:church_estate_province
-					religion = event_target:church_estate_province
+					religion = ROOT
 					location = event_target:church_estate_province
 					
 				}
@@ -1010,6 +1016,7 @@ estate_church =
 				define_advisor = {
 					type = inquisitor
 					skill = 2
+					religion = ROOT
 					cost_multiplier = 0.5
 				}
 			}
@@ -1033,7 +1040,7 @@ estate_church =
 					skill = 2
 					cost_multiplier = 0.75
 					culture = event_target:church_estate_province
-					religion = event_target:church_estate_province
+					religion = ROOT
 					location = event_target:church_estate_province
 					
 				}
@@ -1056,6 +1063,7 @@ estate_church =
 				define_advisor = {
 					type = inquisitor
 					skill = 2
+					religion = ROOT
 					cost_multiplier = 0.75
 				}
 			}
@@ -1074,7 +1082,7 @@ estate_church =
 					type = inquisitor
 					skill = 2
 					culture = event_target:church_estate_province
-					religion = event_target:church_estate_province
+					religion = ROOT
 					location = event_target:church_estate_province
 				}
 			}
@@ -1092,6 +1100,7 @@ estate_church =
 				define_advisor = {
 					type = inquisitor
 					skill = 2
+					religion = ROOT
 				}
 			}
 			add_estate_influence_modifier = {
