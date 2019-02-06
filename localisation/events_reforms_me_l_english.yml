@@ -89,4 +89,97 @@
  dhimmi_nobles.18.d: "Tensions between the dhimmi populace and the dhimmi nobility we have assigned to them have reached a fever pitch. The dhimmi nobles now turn to us for help in this matter." 
  dhimmi_nobles.18.a: "Who cares for the needs of the dhimmi, if not the dhimmi?"
  dhimmi_nobles.18.b: "The nobility no longer please the people; replace them."
+ muscovite_manorialism.19.t:
+ muscovite_manorialism.19.d: #The crown recently aquired some additional lands, in line with our policy we shall settle the lands with veterans of our campaigns, who shall they serve?
+ muscovite_manorialism.19.a: #Serve in the local garrisons
+ muscovite_manorialism.19.b: #They shall serve the local minor lords and administrators
+ muscovite_manorialism.19.c: #They shall serve us. OR. They shall be independent(available if there is less then 60% noble influence)
+ muscovite_manorialism.20.t:
+ muscovite_manorialism.20.d: #It turns out that some of the lands we reserved for our soldier colonists actually belong to the crown, but were the result of some shady administrator
+ muscovite_manorialism.20.a: #Hunt the administrator down
+ muscovite_manorialism.20.b: #Take the land anyway
+ 
+ order_of_the_swan.21.t:
+ order_of_the_swan.21.d: #Glorious action by a foreign member of the Order of the Swan
+ order_of_the_swan.21.a: #More proof that *rulername* is a good grand master
+ order_of_the_swan.21.b: #Praise his lord for employing such fine knights
+
+ order_of_the_swan.22.t:
+ order_of_the_swan.22.d: #A Noble serving as a member of the order has acted badly/dishonorably. OR. feel free to come up with a fun reason for the disgrace, wildcard event.
+ order_of_the_swan.22.a: #If the *rulertitle* can't rule his order, what will become of our nation?
+ order_of_the_swan.22.b: #kick the noble out and strip him of his rank
+
+ centralized.23.t: 
+ centralized.23.d: #During our centralization one of the administrators found a exclusion from taxation that was due to expire ages ago.
+ centralized.23.a: #Collect the money
+ centralized.23.b: #Promote the clerk and give him a bonus
+ 
+ centralized.24.t: 
+ centralized.24.d: #Nobles demand we stop slowly reducing their rights and autonomy, and threaten to revolt if we don't stop and reverse our policies
+ centralized.24.a: #We'll accept their demands
+ centralized.24.b: #Sword in hand, Medium rebels
+ centralized.24.c: #Sword in hand, Major rebels
+ centralized.24.e: #Sword in hand, Minor rebels
+					#Could do the same localization for each option?
+ decentralized.25.t
+ decentralized.25.d
+ decentralized.25.a
+ decentralized.25.b
+ 
+ decentralized.26.t
+ decentralized.26.d
+ decentralized.26.a
+ decentralized.26.b
+ 
+ regional_fort.27.t
+ regional_fort.27.d
+ regional_fort.27.a
+ regional_fort.27.b
+ 
+ regional_fort.28.t
+ regional_fort.28.d
+ regional_fort.28.a
+ regional_fort.28.b
+ regional_fort.28.c
+ 
+ theocrat.29.t
+ theocrat.29.d
+ theocrat.29.a
+ theocrat.29.b
+ theocrat.29.c
+ 
+ theocrat.30.t
+ theocrat.30.d
+ theocrat.30.a
+ theocrat.30.b
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  

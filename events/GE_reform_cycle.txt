@@ -928,7 +928,14 @@ country_event = {
 	
 	option = {
 		name = muscovite_manorialism.20.a
-		corruption = 1
+		corruption = 0.5
+	}
+	option = {
+		name = muscovite_manorialism.20.b
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
 	}
 }
 
