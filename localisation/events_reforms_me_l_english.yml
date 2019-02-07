@@ -106,7 +106,7 @@
 
  order_of_the_swan.22.t:
  order_of_the_swan.22.d: #A Noble serving as a member of the order has acted badly/dishonorably. OR. feel free to come up with a fun reason for the disgrace, wildcard event.
- order_of_the_swan.22.a: #If the *rulertitle* can't rule his order, what will become of our nation?
+ order_of_the_swan.22.a: #If the *rulertitle* can't rule his order, what makes you think he can rule of our nation?
  order_of_the_swan.22.b: #kick the noble out and strip him of his rank
 
  centralized.23.t: 
@@ -120,41 +120,51 @@
  centralized.24.b: #Sword in hand, Medium rebels
  centralized.24.c: #Sword in hand, Major rebels
  centralized.24.e: #Sword in hand, Minor rebels
-					#Could do the same localization for each option?
- decentralized.25.t
- decentralized.25.d
- decentralized.25.a
- decentralized.25.b
+					###Could do the same localization for each option, Or different depending on strength?
+					
+ decentralized.25.t:
+ decentralized.25.d: #We some of the nobles feel that the <culture> lands should be governed by nobles instead local govenors, caused a heated discussion, who is right?
+ decentralized.25.a: #The <culture> can take care of their own
+ decentralized.25.b: #The Nobility
  
- decentralized.26.t
- decentralized.26.d
- decentralized.26.a
- decentralized.26.b
+ decentralized.26.t:
+ decentralized.26.d: #Due to our liberal policies of self rule and local government, one of our regions has grown increasingly independent, and the govenor demands more concessions, and threatens to secede.
+ decentralized.26.a: #We can't afford to lose <culture> support. OR. Some concessions aren't worth a war.
+ decentralized.26.b: #Call his bluff. OR. Bring it on!
  
- regional_fort.27.t
- regional_fort.27.d
- regional_fort.27.a
- regional_fort.27.b
+ regional_fort.27.t:
+ regional_fort.27.d: #A noble embassador visited to ask for some relief from the upkeep of the regional fortifications
+ regional_fort.27.a: #Keep the garrisons in a state of combat readiness
+ regional_fort.27.b: #Allow the nobles to get some R&R and let their guard down
+ regional_fort.27.c: #Recruit the garrison veterans as sargeants and elite troops
  
- regional_fort.28.t
- regional_fort.28.d
- regional_fort.28.a
- regional_fort.28.b
- regional_fort.28.c
+ regional_fort.28.t:
+ regional_fort.28.d: #Unpaid garrison riots
+ regional_fort.28.a: #pay them
+ regional_fort.28.b: #Crush them
  
- theocrat.29.t
- theocrat.29.d
- theocrat.29.a
- theocrat.29.b
- theocrat.29.c
+ theocrat.29.t:
+ theocrat.29.d: #Organizing our realm through the bishopries and clergy has granted us many connections in the religious world, where we found:
+ theocrat.29.a: #A pious inquisitor, willing to serve us
+ theocrat.29.b: #Many friends to support our rule and acknowledge our rule
+ theocrat.29.c: #Stability under gods protection(requires administrative clergy and a T2 religious reform, essentially a bonus for going balls deep religious.)
  
- theocrat.30.t
- theocrat.30.d
- theocrat.30.a
- theocrat.30.b
+ theocrat.30.t:
+ theocrat.30.d: #The clergy recently has been calling for more persecution of religious minorities and sinners, their unfiltered zeal raised thousands to rally to their would-be holy war
+ theocrat.30.a: #Crush this would-be holy war
+ theocrat.30.b: #Call in all favors, bribes and friends to have the clergy disperse the crowd.
  
- 
- 
+ casa_de_india.31.t: 
+ casa_de_india.31.d: #The <colony> has finished some additional buildings/settlements
+ casa_de_india.31.a: #Send some veterans
+ casa_de_india.31.b: #Send some settlers
+ casa_de_india.31.c: #Send some corrupt officials into exile
+
+ casa_de_india.32.t: 
+ casa_de_india.32.d: #It appeared 
+ casa_de_india.32.a: #
+ casa_de_india.32.b: #
+ casa_de_india.32.c: 
  
  
  

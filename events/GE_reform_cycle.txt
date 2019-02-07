@@ -1193,9 +1193,9 @@ country_event = {
 	}
 	option = {
 		name = decentralized.25.b
-		add_country_modifier = {
-			name = "Decentralized_Rule"
-			duration = 7300
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
 		}
 	}
 }
@@ -1409,6 +1409,7 @@ country_event = {
 				size = 2
 			}
 		}
+		add_years_of_income = -0.05
 	}
 	option = {
 		name = theocrat.30.b
@@ -1561,7 +1562,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = {
 	id = GE_reform_cycle.34
 	title = administrative_clergy.34.t
 	desc = administrative_clergy.34.d
