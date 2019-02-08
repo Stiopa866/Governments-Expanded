@@ -2551,6 +2551,16 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.20
 		100 = GE_reform_cycle.21 #order_of_the_swan
 		100 = GE_reform_cycle.22
+		100 = GE_reform_cycle.23 #centralization
+		100 = GE_reform_cycle.24
+		100 = GE_reform_cycle.25 #decentralisation
+		100 = GE_reform_cycle.26
+		100 = GE_reform_cycle.27 #regional_forts
+		100 = GE_reform_cycle.28
+		100 = GE_reform_cycle.29 #theocrat
+		100 = GE_reform_cycle.30
+		100 = GE_reform_cycle.31 #casa_de_india
+		100 = GE_reform_cycle.32
 	}
 }
 

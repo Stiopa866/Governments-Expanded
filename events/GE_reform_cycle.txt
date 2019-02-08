@@ -787,7 +787,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = dhimmi_nobles.18.c
+		name = dhimmi_nobles.17.c
 		trigger = {
 			OR = {
 				has_reform = millet_reform
@@ -1177,13 +1177,26 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_owner_accepted_culture = yes
+						has_owner_culture = yes
+					}
+				}
+				save_event_target_as = decentralize_cycle_GE_pos
+			}
+		}
+	}
 	
 	option = {
 		name = decentralized.25.a
 		every_owned_province = {
 			limit = {
-				culture = 
+				culture = event_target:decentralize_cycle_GE_pos
 			}
 			add_province_modifier = {
 				name = "Beneficial_Self_Rule"
@@ -1219,12 +1232,23 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_accepted_culture = no
+					has_owner_culture = no
+				}
+				save_event_target_as = decentralize_cycle_GE_neg
+			}
+		}
+	}
 	
 	option = {
 		name = decentralized.26.a
 		every_owned_province = {
 			limit = {
-				culture = 
+				culture = event_target:decentralize_cycle_GE_neg
 			}
 			add_local_autonomy = 25
 		}
@@ -1233,7 +1257,7 @@ country_event = {
 		name = decentralized.26.b
 		random_owned_province = {
 			limit = {
-				culture = 
+				culture = event_target:decentralize_cycle_GE_neg
 			}
 			spawn_rebels = {
 				type = nationalist_rebels 

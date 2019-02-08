@@ -89,6 +89,7 @@
  dhimmi_nobles.18.d: "Tensions between the dhimmi populace and the dhimmi nobility we have assigned to them have reached a fever pitch. The dhimmi nobles now turn to us for help in this matter." 
  dhimmi_nobles.18.a: "Who cares for the needs of the dhimmi, if not the dhimmi?"
  dhimmi_nobles.18.b: "The nobility no longer please the people; replace them."
+ 
  muscovite_manorialism.19.t:
  muscovite_manorialism.19.d: #The crown recently aquired some additional lands, in line with our policy we shall settle the lands with veterans of our campaigns, who shall they serve?
  muscovite_manorialism.19.a: #Serve in the local garrisons
@@ -161,10 +162,9 @@
  casa_de_india.31.c: #Send some corrupt officials into exile
 
  casa_de_india.32.t: 
- casa_de_india.32.d: #It appeared 
- casa_de_india.32.a: #
- casa_de_india.32.b: #
- casa_de_india.32.c: 
+ casa_de_india.32.d: #It appeared the records are forged and the amount of settlers in <colony> are much lower then expected
+ casa_de_india.32.a: #As long as they pay, who cares
+ casa_de_india.32.b: #Rewrite the records
  
  
  

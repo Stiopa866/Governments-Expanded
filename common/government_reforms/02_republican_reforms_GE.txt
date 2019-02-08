@@ -37,7 +37,7 @@ demedici_dynasty_reform = {
 	custom_attributes = {
 		enables_demedici = yes
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -52,7 +52,7 @@ support_borghese_reform = {
 	modifiers = {
 		republican_tradition = 0.3
 	}
-	ai = {
+	ai_chance = {
 		factor = 2
 	}
 }
@@ -67,7 +67,7 @@ factional_elections_reform = {
 	custom_attributes = {
 		enable_factional_elections = yes
 	}
-	ai = {
+	ai_chance = {
 		factor = 0
 	}
 }
@@ -85,7 +85,7 @@ stadholder_reform = {
 	}
 	royal_marriage = yes
 	#15nobleinfluence
-	ai = {
+	ai_chance = {
 		factor = 0.1
 	}
 }

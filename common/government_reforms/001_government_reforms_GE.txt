@@ -9,7 +9,7 @@ teuton_navy = {
 		galley_cost = -0.15
 		ship_durability = 0.05
 	}
-	ai = {
+	ai_chance = {
 		factor = 2
 	}
 }
@@ -24,7 +24,7 @@ teuton_army = {
 		infantry_power = 0.05
 		discipline = 0.025
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -40,7 +40,7 @@ teuton_drill = {
 		warscore_cost_vs_other_religion = -0.10
 		drill_gain_modifier = 0.20
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -55,7 +55,7 @@ teuton_priest = {
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.25
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -67,7 +67,7 @@ expel_heathens_reform = {
 		development_cost = -0.10
 		culture_conversion_cost = -0.10
 	}
-	ai = {
+	ai_chance = {
 		factor = 1
 	}
 }
@@ -83,7 +83,7 @@ the_holy_office_reform = {
 		institution_spread_from_true_faith = 0.5
 		adm_advisor_cost = -0.1
 	}
-	ai = {
+	ai_chance = {
 		factor = 2
 	}
 }
@@ -95,7 +95,7 @@ holy_orthodoxy_reform = {
 		yearly_corruption = -0.05
 		devotion = 0.25
 	}
-	ai = {
+	ai_chance = {
 		factor = 1
 	}
 }
@@ -107,7 +107,7 @@ inquisition_reform = {
 		global_heretic_missionary_strength = 0.03
 		prestige_per_development_from_conversion = 0.5
 	}
-	ai = {
+	ai_chance = {
 		factor = 1
 	}
 }
@@ -119,7 +119,7 @@ religious_pragmatism_reform = {
 		religious_unity = 0.20
 		advisor_cost = -0.10
 	}
-	ai = {
+	ai_chance = {
 		factor = 1
 	}
 }
@@ -134,7 +134,7 @@ great_law_of_peace_reform = {
 		global_unrest = -2
 		max_states = 3
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -149,7 +149,7 @@ haudenosaunee_reform = {
 		years_of_nationalism = -5
 		num_accepted_cultures = 2
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -167,7 +167,7 @@ sheikhdom_reform = {
 		tolerance_own = 1
 		warscore_cost_vs_other_religion = -0.10
 	}
-	ai = {
+	ai_chance = {
 		factor = 2
 	}
 }
@@ -182,7 +182,7 @@ royal_society_reform = {
 		global_autonomy = -0.05
 		state_maintenance_modifier = -0.25
 	}
-	ai = {
+	ai_chance = {
 		factor = 5
 	}
 }
@@ -196,7 +196,7 @@ adoption_of_christianity_reform = {
 	modifiers = {
 		tolerance_heathen = 2
 	}
-	ai = { factor = 5 }
+	ai_chance = { factor = 5 }
 }
 
 unite_the_royal_houses_reform = {
