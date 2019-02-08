@@ -16,13 +16,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = metropolian_bishop_reform.1.a
+		
 		add_patriarch_authority = 0.05
 	}
+	
 	option = {
 		name = metropolian_bishop_reform.1.b
+		
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -46,24 +48,30 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = metropolian_bishop_reform.2.a
+		
 		add_patriarch_authority = -0.05
 	}
+	
 	option = {
 		name = metropolian_bishop_reform.2.b
+		
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
 		}
 	}
+	
 	option = {
 		name = metropolian_bishop_reform.2.c
+		
 		highlight = yes
+		
 		trigger = {
 			ruler_has_personality = greedy_personality
 		}
+		
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
@@ -88,21 +96,26 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = papal_embassy_reform.3.a
+		
 		add_papal_influence = 10
 	}
+	
 	option = {
 		name = papal_embassy_reform.3.b
+		
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
 		}
 	}
+	
 	option = {
 		name = papal_embassy_reform.3.c
+		
 		highlight = yes
+		
 		trigger = {
 			OR = {
 				has_reform = theocratic_bureacrats_reform
@@ -118,6 +131,7 @@ country_event = {
 				}
 			}
 		}
+		
 		random_owned_province = {
 			limit = {
 				has_cardinal = no
@@ -143,13 +157,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = papal_embassy_reform.4.a
+		
 		add_papal_influence = -10
 	}
+	
 	option = {
 		name = papal_embassy_reform.4.b
+		
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
@@ -176,13 +192,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = diplomatic_positions.5.a
+		
 		add_prestige = 10
 	}
+	
 	option = {
 		name = diplomatic_positions.5.b
+		
 		every_neighbor_country = {
 			limit = {
 				NOT = { war_with = ROOT }
@@ -190,10 +208,14 @@ country_event = {
 			add_opinion = { who = ROOT modifier = opinion_diplomatic_positions }
 		}	
 	}
+	
 	option = {
 		name = diplomatic_positions.5.c
+		
 		highlight = yes
+		
 		trigger = { prestige = 50 }
+		
 		add_legitimacy = 10
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -221,23 +243,25 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = diplomatic_positions.6.a
+		
 		if = {
 			limit = { government_rank = 3 }
-		add_prestige = -20
+			add_prestige = -20
 		}
 		else_if = {
 			limit = { government_rank = 2 }
-		add_prestige = -15
+			add_prestige = -15
 		}
 		else = {
-		add_prestige = -10
+			add_prestige = -10
 		}
 	}
+	
 	option = {
 		name = diplomatic_positions.6.b
+		
 		every_neighbor_country = {
 			limit = {
 				NOT = { war_with = ROOT }
@@ -269,21 +293,26 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = promote_nobles.7.a
+		
 		add_yearly_manpower = 0.5
 	}
+	
 	option = {
 		name = promote_nobles.7.b
+		
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
 		}
 	}
+	
 	option = {
 		name = promote_nobles.7.c
+		
 		highlight = yes
+		
 		trigger = {
 			OR = {
 				has_reform = of_noble_bearing_reform
@@ -300,6 +329,7 @@ country_event = {
 				}
 			}
 		}
+		
 		create_general = { tradition = 60 }
 	}
 }
@@ -328,13 +358,14 @@ country_event = {
 	
 	option = {
 		name = promote_nobles.8.a
+		
 		random_owned_province = {
-				limit = {
-					is_capital = no
-					is_overseas = no
-					is_colony = no
-					is_territory = no
-				}
+			limit = {
+				is_capital = no
+				is_overseas = no
+				is_colony = no
+				is_territory = no
+			}
 			spawn_rebels = {
 				type = noble_rebels
 				size = 2
@@ -345,8 +376,10 @@ country_event = {
 			loyalty = -10
 		}
 	}
+	
 	option = {
 		name = promote_nobles.8.b
+		
 		add_estate_influence_modifier = {
 			estate = estate_nobles
 			desc = EST_VAL_NOBILITY_ADVANCES
@@ -380,16 +413,18 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = curtail_nobles.9.a
+		
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
 		}
 	}
+	
 	option = {
 		name = curtail_nobles.9.b
+		
 		add_reform_progress_small_effect = yes
 	}
 }
@@ -414,32 +449,32 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = curtail_nobles.10.a
-		random_owned_province = {
-				limit = {
-					is_capital = yes
-				}
+		
+		capital_scope = {
 			spawn_rebels = {
 				type = noble_rebels
 				size = 1
 			}
 		}
 	}
+	
 	option = {
 		name = curtail_nobles.10.b
+		
 		add_years_of_income = -0.2
 	}
+	
 	option = {
 		name = curtail_nobles.10.c
+		
+		ai_chance = { factor = 0 }
+		
 		remove_government_reform = quash_noble_power_reform
 		remove_government_reform = lithuania_law_reform
 		remove_government_reform = portuguese_cortes_reform
 		reduce_reform_progress_small_effect
-		ai = {
-			factor = 0
-		}
 	}
 }
 
@@ -461,29 +496,34 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = guild_dominance.11.a
+		
+		ai_chance = { factor = 1 }
+		
 		random_owned_province = {
 			limit = {
 				region = low_countries_region
 			}
 			add_base_production = 1
 		}
-		ai = {
-			factor = 1
-		}
 	}
+	
 	option = {
 		name = guild_dominance.11.b
+		
 		add_years_of_income = 0.4
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -5
 		}
 	}
+	
 	option = {
 		name = guild_dominance.11.c
+		
+		ai_chance = { factor = 5 }
+		
 		trigger = {
 			OR = {
 				tag = NED
@@ -499,7 +539,9 @@ country_event = {
 				}
 			}
 		}
+		
 		highlight = yes
+		
 		add_years_of_income = -0.2
 		random_owned_province = {
 			limit = {
@@ -512,9 +554,6 @@ country_event = {
 				region = low_countries_region
 			}
 			add_base_tax = 1
-		}
-		ai = {
-			factor = 5
 		}
 	}
 }
@@ -537,34 +576,37 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = guild_dominance.12.a
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_burghers
+					influence = 70
+				}
+			}
+		}
+		
 		add_estate_influence_modifier = {
 			estate = estate_burghers
 			desc = EST_VAL_BURGHERS_ADVANCE
 			influence = 15
 			duration = 7300
 		}
-		ai = {
-			factor = 1
-			modifier = {
-				factor = 0
-					estate_influence = {
-						estate = estate_burghers
-						influence = 70
-					}
-			}
-		}
 	}
+	
 	option = {
 		name = guild_dominance.12.b
+		
+		ai_chance = { factor = 1 }
+		
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -10
-		}
-		ai = {
-			factor = 1
 		}
 	}
 }
@@ -587,23 +629,26 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = trade_princes.13.a
+		
 		add_mercantilism = 1
 	}
+	
 	option = {
 		name = trade_princes.13.b
+		
+		ai_chance = { factor = 1 }
+		
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 10
 		}
-		ai = {
-			factor = 1
-		}
 	}
+	
 	option = {
 		name = trade_princes.13.c
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_burghers
@@ -614,7 +659,9 @@ country_event = {
 				loyalty = 50
 			}
 		}
+		
 		highlight = yes
+		
 		random_owned_province = {
 			limit = {
 				province_has_center_of_trade_of_level = 1
@@ -643,19 +690,20 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = trade_princes.14.a
+		
 		add_mercantilism = -1
 	}
+	
 	option = {
 		name = trade_princes.14.b
+		
+		ai_chance = { factor = 1 }
+		
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -10
-		}
-		ai = {
-			factor = 1
 		}
 	}
 }
@@ -678,13 +726,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = state_church.15.a
+		
 		add_legitimacy = 10
 	}
+	
 	option = {
 		name = state_church.15.b
+		
 		add_estate_influence_modifier = {
 			estate = estate_church
 			desc = EST_VAL_CLERGY_ADVANCES
@@ -716,16 +766,29 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = state_church.16.a
+		
+		ai_chance = { factor = 1 }
+		
 		add_legitimacy = -10
-		ai = {
-			factor = 1
-		}
 	}
+	
 	option = {
 		name = state_church.16.b
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_church
+					influence = 70
+				}
+			}
+		}
+		
 		add_estate_influence_modifier = {
 			estate = estate_church
 			desc = EST_VAL_CLERGY_ADVANCES
@@ -736,18 +799,6 @@ country_event = {
 			estate = estate_church
 			loyalty = -10
 		}
-		ai = {
-			factor = 1
-			modifier = {
-				factor = 0
-					estate_influence = {
-						estate = estate_church
-						influence = 70
-					}
-			}
-		}
-				
-		
 	}
 }
 
@@ -769,25 +820,29 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = dhimmi_nobles.17.a
-		every_owned_province = { 
+		
+		every_owned_province = {
 			limit = {
 				has_estate = estate_dhimmi
 			}
 			add_local_autonomy = -5
 		}
 	}
+	
 	option = {
 		name = dhimmi_nobles.17.b
+		
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 10
 		}
 	}
+	
 	option = {
 		name = dhimmi_nobles.17.c
+		
 		trigger = {
 			OR = {
 				has_reform = millet_reform
@@ -797,15 +852,16 @@ country_event = {
 				}
 			}
 		}
+		
 		highlight = yes
+		
+		ai_chance = { factor = 1 }
+		
 		random_owned_province = {
 			limit = {
 				has_estate = estate_dhimmi
 			}
-		add_base_tax = 1
-		}
-		ai = {
-			factor = 1
+			add_base_tax = 1
 		}
 	}
 }
@@ -828,9 +884,9 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = dhimmi_nobles.18.a
+		
 		every_owned_province = {
 			limit = {
 				has_estate = estate_dhimmi
@@ -838,8 +894,10 @@ country_event = {
 			add_unrest = 5
 		}
 	}
+	
 	option = {
 		name = dhimmi_nobles.18.b
+		
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = -10
@@ -865,16 +923,18 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = muscovite_manorialism.19.a
+		
 		add_country_modifier = {
-		name = "Russian_Manorialism"
-		duration = 3650
+			name = "Russian_Manorialism"
+			duration = 3650
 		}
 	}
+	
 	option = {
 		name = muscovite_manorialism.19.b
+		
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
@@ -884,8 +944,10 @@ country_event = {
 			loyalty = 5
 		}
 	}
+	
 	option = {
 		name = muscovite_manorialism.19.c
+		
 		trigger = {
 			NOT = {
 				estate_influence = {
@@ -894,15 +956,16 @@ country_event = {
 				}
 			}
 		}
+		
 		highlight = yes
+		
+		ai_chance = { factor = 1 }
+		
 		random_owned_province = {
 			limit = {
 				region = russia_region
 			}
-		add_base_tax = 1
-		}
-		ai = {
-			factor = 1
+			add_base_tax = 1
 		}
 	}
 }
@@ -925,13 +988,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = muscovite_manorialism.20.a
-		corruption = 0.5
+		
+		add_corruption = 0.5
 	}
+	
 	option = {
 		name = muscovite_manorialism.20.b
+		
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 5
@@ -957,13 +1022,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = order_of_the_swan.21.a
-		prestige = 10
+		
+		add_prestige = 10
 	}
+	
 	option = {
 		name = order_of_the_swan.21.b
+		
 		random_neighbor_country = {
 			limit = {
 				NOT = { war_with = ROOT }
@@ -992,13 +1059,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = order_of_the_swan.22.a
-		legitimacy = -10
+		
+		add_legitimacy = -10
 	}
+	
 	option = {
 		name = order_of_the_swan.22.b
+		
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -10
@@ -1031,13 +1100,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = centralized.23.a
+		
 		add_years_of_income = 0.1
 	}
+	
 	option = {
 		name = centralized.23.b
+		
 		define_advisor = {
 			type = treasurer
 			skill = 2
@@ -1069,9 +1140,9 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = centralized.24.a
+		
 		add_country_modifier = {
 			name = "Stop_Centralization"
 			duration = 7300
@@ -1083,8 +1154,10 @@ country_event = {
 			add_local_autonomy = 25
 		}
 	}
+	
 	option = {
 		name = centralized.24.b
+		
 		trigger = {
 			NOT = {
 				OR = {
@@ -1098,6 +1171,7 @@ country_event = {
 				}
 			}	
 		}
+		
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -1111,8 +1185,10 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = centralized.24.c
+		
 		trigger = {
 			OR = {
 				has_reform = enforce_privileges_reform
@@ -1122,7 +1198,9 @@ country_event = {
 				has_reform = blood_tax_reform
 			}	
 		}
+		
 		highlight = yes
+		
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -1136,14 +1214,17 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = centralized.24.e
+		
 		trigger = {
 			OR = {
 				has_reform = quash_noble_power_reform
 				has_reform = lithuania_law_reform
 			}	
 		}
+		
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -1177,7 +1258,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-
+	
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -1194,6 +1275,7 @@ country_event = {
 	
 	option = {
 		name = decentralized.25.a
+		
 		every_owned_province = {
 			limit = {
 				culture = event_target:decentralize_cycle_GE_pos
@@ -1204,6 +1286,7 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = decentralized.25.b
 		add_estate_loyalty = {
@@ -1246,6 +1329,7 @@ country_event = {
 	
 	option = {
 		name = decentralized.26.a
+		
 		every_owned_province = {
 			limit = {
 				culture = event_target:decentralize_cycle_GE_neg
@@ -1253,8 +1337,10 @@ country_event = {
 			add_local_autonomy = 25
 		}
 	}
+	
 	option = {
 		name = decentralized.26.b
+		
 		random_owned_province = {
 			limit = {
 				culture = event_target:decentralize_cycle_GE_neg
@@ -1285,30 +1371,34 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = regional_fort.27.a
+		
 		add_army_tradition = 10
 	}
+	
 	option = {
 		name = regional_fort.27.b
+		
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
 		}
 	}
+	
 	option = {
 		name = regional_fort.27.c
+		
 		trigger = {
-			limit = {
-				OR = {
-					has_reform = les_vieux_corps_reform
-					has_reform = professional_army_reform
-					has_reform = general_war_commissariat_reform
-				}
+			OR = {
+				has_reform = les_vieux_corps_reform
+				has_reform = professional_army_reform
+				has_reform = general_war_commissariat_reform
 			}
 		}
+		
 		highlight = yes
+		
 		add_army_tradition = 15
 	}
 }
@@ -1331,13 +1421,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = regional_fort.28.a
+		
 		add_years_of_income = -0.5
 	}
+	
 	option = {
 		name = regional_fort.28.b
+		
 		random_owned_province = {
 			limit = {
 				fort_level = 1
@@ -1372,24 +1464,28 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = theocrat.29.a
+		
 		define_advisor = {
 			type = theologian
 			skill = 2
 			cost_multiplier = 0.50
 		}
 	}
+	
 	option = {
 		name = theocrat.29.b
+		
 		add_legitimacy = 5
 		add_papal_influence = 5
 		add_fervor = 10
 		add_church_power = 10
 	}
+	
 	option = {
 		name = theocrat.29.c
+		
 		trigger = {
 			OR = {
 				has_reform = papal_embassy_reform
@@ -1398,7 +1494,9 @@ country_event = {
 			}
 			has_reform = clergy_in_administration_reform
 		}
+		
 		highlight = yes
+		
 		add_stability = 1
 	}
 }
@@ -1421,9 +1519,9 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = theocrat.30.a
+		
 		random_owned_province = {
 			limit = {
 				has_owner_religion = yes
@@ -1435,8 +1533,10 @@ country_event = {
 		}
 		add_years_of_income = -0.05
 	}
+	
 	option = {
 		name = theocrat.30.b
+		
 		add_estate_loyalty = {
 			estate = estate_clergy
 			loyalty = -15
@@ -1467,9 +1567,9 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = casa_de_india.31.a
+		
 		random_owned_province = {
 			limit = {
 				is_colony = yes
@@ -1477,8 +1577,10 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
+	
 	option = {
 		name = casa_de_india.31.b
+		
 		random_owned_province = {
 			limit = {
 				is_colony = yes
@@ -1486,12 +1588,16 @@ country_event = {
 			add_colonysize = 150
 		}
 	}
+	
 	option = {
 		name = casa_de_india.31.c
+		
 		trigger = {
 			has_reform = colonial_govenors_reform
 		}
+		
 		highlight = yes
+		
 		add_corruption = -1
 	}
 }
@@ -1519,13 +1625,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = casa_de_india.32.a
+		
 		add_corruption = 0.5
 	}
+	
 	option = {
 		name = casa_de_india.32.b
+		
 		random_owned_province = {
 			limit = {
 				is_colony = yes
@@ -1553,23 +1661,27 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = administrative_clergy.33.a
+		
 		add_country_modifier = {
 			name = "Pious_Clergy"
 			duration = 7300
 		}
 	}
+	
 	option = {
 		name = administrative_clergy.33.b
+		
 		add_country_modifier = {
 			name = "Pragmatic_Clergy"
 			duration = 7300
 		}
 	}
+	
 	option = {
 		name = administrative_clergy.33.c
+		
 		trigger = {
 			OR = {
 				has_reform = papal_embassy_reform
@@ -1578,7 +1690,9 @@ country_event = {
 				has_reform = theocratic_bureacrats_reform
 			}
 		}
+		
 		highlight = yes
+		
 		add_patriarch_authority = 5
 		add_papal_influence = 10
 		add_fervor = 20
@@ -1604,13 +1718,15 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = administrative_clergy.34.a
+		
 		add_years_of_income = -0.25
 	}
+	
 	option = {
 		name = administrative_clergy.34.b
+		
 		add_estate_loyalty = {
 			estate = estate_clergy
 			loyalty = -10
