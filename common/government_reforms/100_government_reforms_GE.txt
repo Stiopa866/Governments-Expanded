@@ -18,7 +18,7 @@ french_reformed_feudalism = {
 	allow_normal_conversion = no
 	potential = {
 		tag = FRA
-		}
+	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
@@ -119,7 +119,7 @@ lithuania_warlord_duke = {
 		years_of_nationalism = -5
 		promote_culture_cost = -0.5
 		max_states = 4
-		}
+	}
 }
 
 
@@ -166,13 +166,13 @@ beylik = {
 		primary_culture = turkish
 		NOT = { tag = TUR }
 		NOT = { tag = RUM }
-		}
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
 		army_tradition = 0.50
 		unjustified_demands = -0.25
-		}
+	}
 }
 
 kingdom_of_portugal = {
@@ -191,7 +191,7 @@ kingdom_of_portugal = {
 		min_autonomy = 10
 		papal_influence = 1.0
 		land_morale = 0.05
-		}
+	}
 }
 
 kingdom_of_portugal_and_azures = {
@@ -202,14 +202,14 @@ kingdom_of_portugal_and_azures = {
 	}
 	trigger = {
 		is_year = 1481
-		}
+	}
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
 		global_autonomy = -0.025
 		trade_steering = 0.10
 		navy_tradition = 1
-		}
+	}
 	ai_chance = {
 		factor = 100
 	}
@@ -273,10 +273,10 @@ papal_embassy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		religion = catholic
-		}
+	}
 	modifiers = {
 		papal_influence = 1.5
-		}
+	}
 	ai_chance = {
 		factor = 1
 	}
@@ -287,14 +287,14 @@ metropolian_bishop_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		religion = orthodox
-		}
+	}
 	modifiers = {
 		prestige_per_development_from_conversion = 0.1
 		state_maintenance_modifier = -0.10
-		}
+	}
 	effect = {
 		add_patriarch_authority = 0.10
-		}
+	}
 	ai_chance = {
 		factor = 1
 	}
@@ -313,7 +313,7 @@ state_church_reform = {
 	modifiers = {
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		}
+	}
 	ai_chance = {
 		factor = 1
 	}
@@ -327,7 +327,7 @@ diplomatic_positions_reform = {
 	
 	modifiers = {
 		diplomatic_reputation = 1
-		}
+	}
 	custom_attributes = {
 		enables_noble_diplomats = yes
 	}
@@ -348,7 +348,7 @@ lithuania_law_reform = {
 	modifiers = {
 		global_unrest = -1
 		yearly_corruption = -0.05
-		}
+	}
 	ai_chance = {
 		factor = 5
 	}
@@ -367,7 +367,7 @@ guild_dominance_reform = {
 	modifiers = {
 		province_trade_power_modifier = 0.2
 		navy_tradition = 0.5
-		}
+	}
 	ai_chance = {
 		factor = 5
 	}
@@ -380,7 +380,7 @@ growth_signoria_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
-		}
+	}
 	modifiers = {
 		stability_cost_modifier = -0.15
 		army_tradition = 0.25
@@ -422,7 +422,7 @@ portuguese_cortes_reform = {
 	}
 	custom_attributes = {
 		enables_cortes = yes
-		}
+	}
 	ai_chance = {
 		factor = 100
 	}
@@ -630,7 +630,7 @@ diocletian_reforms_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = BYZ
-		}
+	}
 	modifiers = { 
 		yearly_corruption = -0.05
 		num_accepted_cultures = 1
@@ -647,7 +647,7 @@ kyoho_reforms_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = japanese
-		}
+	}
 	modifiers = { 
 		global_tax_modifier = 0.10
 		trade_efficiency = 0.05
@@ -755,12 +755,12 @@ ancien_regime_reform = {
 	allow_normal_conversion = no
 	potential = { 
 		tag = FRA
-		}
+	}
 	modifiers = {
 		global_autonomy = -0.05
 		state_maintenance_modifier = -0.10
 		max_states = 3
-		}
+	}
 	ai_chance = {
 		factor = 5
 	}
@@ -787,7 +787,7 @@ advanced_bookkeeping_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
-		}
+	}
 	trigger = {
 		full_idea_group = economic_ideas
 	}
@@ -907,12 +907,12 @@ conseil_du_roi_reform = {
 	allow_normal_conversion = no
 	potential = { 
 		tag = FRA
-		}
+	}
 	modifiers = {
 		reform_progress_growth = 0.05
 		advisor_cost = -0.1
 		advisor_pool = 1
-		}
+	}
 	ai_chance = {
 		factor = 5
 	}
@@ -978,7 +978,7 @@ nueva_planta_decrees_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = SPA
-		}
+	}
 	modifiers = {
 		global_autonomy = -0.075
 		global_unrest = -1
@@ -1035,7 +1035,7 @@ abolish_clergy_privileges_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = SPA
-		}
+	}
 	modifiers = {
 		administrative_efficiency = 0.05
 		global_tax_modifier = 0.10
@@ -1093,7 +1093,7 @@ feudal_levies_reform = {
 	potential = { }
 	modifiers = {
 		war_taxes_cost_modifier = -1
-		}
+	}
 	custom_attributes = {
 		enables_grand_captain = yes
 	}
@@ -1132,10 +1132,10 @@ professional_army_reform = {
 		}
 		modifier = {
 			factor = 5
-				OR = {
-					tag = PRU
-					tag = BRA
-				}
+			OR = {
+				tag = PRU
+				tag = BRA
+			}
 		}
 	}
 }
@@ -1145,7 +1145,7 @@ italian_mercenaries_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
-		}
+	}
 	modifiers = {
 		mercenary_discipline = 0.05
 		war_exhaustion = -0.01
@@ -1164,7 +1164,7 @@ turkish_iqta_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		primary_culture = turkish
-		}
+	}
 	modifiers = {
 		cavalry_cost = -0.15
 		land_maintenance_modifier = -0.05
@@ -1238,7 +1238,7 @@ les_vieux_corps_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = FRA 
-		}
+	}
 	modifiers = {
 		infantry_power = 0.10
 		global_regiment_recruit_speed = -0.1
@@ -1259,12 +1259,12 @@ portugese_marines_reform = {
 	}
 	trigger = {
 		has_reform = kingdom_of_portugal_and_azures
-		}
+	}
 	modifiers = {
 		discipline = 0.025
 		shock_damage_received = -0.05
 		fire_damage_received = -0.05
-		}
+	}
 	ai_chance = {
 		factor = 100
 	}
@@ -1277,12 +1277,12 @@ abolish_manrent_reform = {
 		OR = {
 			tag = SCO
 			have_had_reform = abolish_manrent_reform
-			}
 		}
+	}
 	modifiers = {
 		land_morale = 0.10
 		global_manpower_modifier = 0.05
-		}
+	}
 	ai_chance = {
 		factor = 100
 	}
@@ -1322,9 +1322,8 @@ general_war_commissariat_reform = {
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_regiment_cost = -0.05
-		}
+	}
 	ai_chance = {
 		factor = 100
 	}
 }
-

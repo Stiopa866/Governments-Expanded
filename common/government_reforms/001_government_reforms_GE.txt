@@ -3,7 +3,7 @@ teuton_navy = {
 	allow_normal_conversion = yes
 	potential = { 
 		tag = TEU 
-		}
+	}
 	modifiers = {
 		galley_power = 0.10
 		galley_cost = -0.15
@@ -19,7 +19,7 @@ teuton_army = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = TEU
-		}
+	}
 	modifiers = {
 		infantry_power = 0.05
 		discipline = 0.025
@@ -34,7 +34,7 @@ teuton_drill = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = TEU
-		}
+	}
 	modifiers = {
 		infantry_power = 0.05
 		warscore_cost_vs_other_religion = -0.10
@@ -50,7 +50,7 @@ teuton_priest = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = TEU
-		}
+	}
 	modifiers = {
 		global_missionary_strength = 0.02
 		missionary_maintenance_cost = -0.25
@@ -77,7 +77,7 @@ the_holy_office_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = PAP
-		}
+	}
 	modifiers = {
 		yearly_corruption = -0.05
 		institution_spread_from_true_faith = 0.5
@@ -235,7 +235,9 @@ slave_raids_reform = {
 		culture_group = tartar
 	}
 	trigger = {
-		has_port = yes
+		any_owned_province = {
+			has_port = yes
+		}
 	}
 	modifiers = {
 		production_efficiency = 0.05
