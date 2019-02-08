@@ -1,0 +1,27 @@
+##### GE Government Reform Events #####
+on_five_year_pulse_4 = {
+	random_events = {
+		100 = GE_reform_cycle.1 #metropolian_bishop_reform
+		100 = GE_reform_cycle.2
+		100 = GE_reform_cycle.3 #papal_embassy_reform
+		100 = GE_reform_cycle.4
+		100 = GE_reform_cycle.5 #diplomatic_positions
+		100 = GE_reform_cycle.6
+		100 = GE_reform_cycle.7 #promote_nobles
+		100 = GE_reform_cycle.8
+		100 = GE_reform_cycle.9 #curtail_nobles
+		100 = GE_reform_cycle.10
+		100 = GE_reform_cycle.11 #guild_dominance
+		100 = GE_reform_cycle.12
+		100 = GE_reform_cycle.13 #trade_princes
+		100 = GE_reform_cycle.14
+		100 = GE_reform_cycle.15 #state_church
+		100 = GE_reform_cycle.16
+		100 = GE_reform_cycle.17 #dhimmi_nobles
+		100 = GE_reform_cycle.18
+		100 = GE_reform_cycle.19 #muscovite_manorialism
+		100 = GE_reform_cycle.20
+		100 = GE_reform_cycle.21 #order_of_the_swan
+		100 = GE_reform_cycle.22
+	}
+}
