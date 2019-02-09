@@ -1733,3 +1733,219 @@ country_event = {
 		}
 	}
 }
+	option = {
+		name = administrative_nobles.35.a
+		define_advisor = {
+			type = commandant
+			skill = 3
+			age = 45
+			cost_multiplier = 0.25
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+	}
+	option = {
+		name = administrative_nobles.35.b
+		define_advisor = {
+			type = army_organiser
+			skill = 1
+			age = 40
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.36
+	title = administrative_nobles.36.t
+	desc = administrative_nobles.36.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = of_noble_bearing_reform
+			has_reform = koprulu_dynasty_reform
+			has_reform = conseil_du_roi_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = administrative_nobles.36.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+	option = {
+		name = administrative_nobles.36.b
+		add_country_modifier = {
+			name = "Lower_Nobility"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.37
+	title = administrative_civilians.37.t
+	desc = administrative_civilians.37.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = meritocratic_focus_reform
+			has_reform = koprulu_dynasty_reform
+			has_reform = sulu_administration_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = administrative_civilians.37.a
+		define_advisor = {
+			type = trader
+			skill = 3
+			age = 45
+			cost_multiplier = 0.25
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_ADVANCE
+			influence = 5
+			duration = 3650
+		}
+	}
+	option = {
+		name = administrative_civilians.37.b
+		add_country_modifier = {
+			name = "Meritocrac_recruitment"
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.38
+	title = administrative_civilians.38.t
+	desc = administrative_civilians.38.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = meritocratic_focus_reform
+			has_reform = koprulu_dynasty_reform
+			has_reform = sulu_administration_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = administrative_civilians.38.a
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+	option = {
+		name = administrative_civilians.38.b
+		add_corruption = 0.5
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.39
+	title = integrate_bankers.39.t
+	desc = integrate_bankers.39.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = advanced_bookkeeping_reform
+			has_reform = integrate_moneyloaners_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = integrate_bankers.39.a
+		add_mercantilism = 1
+	}
+	option = {
+		name = integrate_bankers.39.b
+		add_country_modifier = {
+			name = "Efficient_Governance"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.40
+	title = integrate_bankers.40.t
+	desc = integrate_bankers.40.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = advanced_bookkeeping_reform
+			has_reform = integrate_moneyloaners_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = integrate_bankers.40.a
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = -10
+		}
+	}
+	option = {
+		name = integrate_bankers.40.b
+		add_country_modifier = {
+			name = "Church_Donations"
+			duration = 7300
+		}
+		add_years_of_income = -0.2
+	}
+}

@@ -87,3 +87,17 @@ Pious_Clergy = {
 Pragmatic_Clergy = {
 	global_tax_modifier = 0.10
 }
+Lower_Nobility = {
+	advisor_cost = 0.15
+	advisor_pool = -1
+}
+Meritocrac_Recruitment = {
+	advisor_pool = 2
+}
+Efficient_Governance = {
+	state_maintenance_modifier = -0.25
+	global_autonomy = -0.05
+}
+Church_Donations = {
+	interest = 2
+}
