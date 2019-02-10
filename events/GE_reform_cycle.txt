@@ -1949,3 +1949,82 @@ country_event = {
 		add_years_of_income = -0.2
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.41
+	title = colonial_gov.41.t
+	desc = colonial_gov.41.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = colonial_govenors_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = colonial_gov.41.a
+		add_country_modifier = {
+			name = "Colonial_Contacts"
+			duration = 3650
+		}
+	}
+	option = {
+		name = colonial_gov.41.b
+		add_yearly_manpower = 0.2
+	}
+	option = {
+		name = colonial_gov.41.c
+		trigger = {
+			OR = {
+				has_reform = council_of_the_indies_reform
+				has_reform = casa_de_india_reform
+				has_reform = casa_de_contraction_reform
+			}
+		}
+		highlight = yes
+		add_country_modifier = {
+			name = "Colonial_Friends"
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.42
+	title = colonial_gov.42.t
+	desc = colonial_gov.42.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = colonial_govenors_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = colonial_gov.42.a
+		add_country_modifier = {
+			name = "Colonial_Failures"
+			duration = 3650
+		}
+	}
+	option = {
+		name = colonial_gov.42.b
+		add_corruption = 0.5
+	}
+}

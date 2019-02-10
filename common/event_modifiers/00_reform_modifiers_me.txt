@@ -101,3 +101,13 @@ Efficient_Governance = {
 Church_Donations = {
 	interest = 2
 }
+Colonial_Contacts = {
+	global_colonial_growth = 20
+}
+Colonial_Friends = {
+	global_colonial_growth = 30
+	global_tariffs = 0.15
+}
+Colonial_Failures = {
+	global_tariffs = -0.15
+}
