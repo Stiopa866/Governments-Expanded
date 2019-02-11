@@ -2028,3 +2028,153 @@ country_event = {
 		add_corruption = 0.5
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.43
+	title = fredrickan_reforms.43.t
+	desc = fredrickan_reforms.43.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = fredrickan_reforms_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = fredrickan_reforms.43.a
+		add_country_modifier = {
+			name = "Trade_Deals"
+			duration = 10950
+		}
+	}
+	option = {
+		name = fredrickan_reforms.43.b
+		random_owned_province = {
+			limit = {
+				region = north_german_region 
+			}
+			add_base_tax = 1
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.44
+	title = fredrickan_reforms.44.t
+	desc = fredrickan_reforms.44.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = fredrickan_reforms_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = fredrickan_reforms.44.a
+		add_country_modifier = {
+			name = "Invester_Crisis"
+			duration = 3650
+		}
+	}
+	option = {
+		name = fredrickan_reforms.44.b
+		add_years_of_income = -0.5
+	}
+	option = {
+		name = fredrickan_reforms.44.b
+		trigger = {
+			OR = {
+				has_reform = papal_embassy_reform
+				has_reform = state_church_reform
+				has_reform = metropolian_bishop_reform
+				has_reform = theocratic_bureacrats_reform
+			}
+		}
+		highlight = yes
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = -20
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.45
+	title = academy_of_science.45.t
+	desc = academy_of_science.45.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = academy_of_science_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = academy_of_science.45.a
+		add_country_modifier = {
+			name = "State_Funded_Research"
+			duration = 3650
+		}
+	}
+	option = {
+		name = academy_of_science.45.b
+		add_reform_progress_big_effect
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.46
+	title = academy_of_science.46.t
+	desc = academy_of_science.46.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = academy_of_science_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = academy_of_science.46.a
+		add_years_of_income = -0.4
+	}
+	option = {
+		name = academy_of_science.46.b
+		add_years_of_income = -0.1
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+}

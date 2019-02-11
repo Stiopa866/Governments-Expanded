@@ -111,3 +111,13 @@ Colonial_Friends = {
 Colonial_Failures = {
 	global_tariffs = -0.15
 }
+Trade_Deals = {
+	trade_efficiency = 0.05
+}
+Invester_Crisis = {
+	development_cost = -0.20
+	interest = 0.5
+}
+State_Funded_Research = {
+	idea_cost = -0.05
+}
