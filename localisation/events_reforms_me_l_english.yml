@@ -107,13 +107,13 @@
 
  order_of_the_swan.22.t: "Clipped Wings"
  order_of_the_swan.22.d: "For shame! A member of our glorious order has dishonoured the name of the swan by drunkenly spitting on an image of the Virgin Mary!"
- order_of_the_swan.22.a: "If $RULERNAME$ cannot keep the knights in check, how can their subjects in check?"
+ order_of_the_swan.22.a: "If $RULERNAME$ cannot keep the knights in check, how can they keep their subjects in check?"
  order_of_the_swan.22.b: "A disgrace to order has no place in it; out, thou blackguard!"
 
- centralized.23.t: 
- centralized.23.d: #During our centralization one of the administrators found a exclusion from taxation that was due to expire ages ago.
- centralized.23.a: #Collect the money
- centralized.23.b: #Promote the clerk and give him a bonus
+ centralized.23.t: "Legislation and Centralisation"
+ centralized.23.d: "The process of centralisation brings up matters that would've been forgotten in outdated legal code and deferred legislation; a tax exemption that expired years ago has been found by an administrator working in this field."
+ centralized.23.a: "Take what we are owed; it is only right."
+ centralized.23.b: "Clever fellow; let us elevate him to the court."
  
  centralized.24.t: 
  centralized.24.d: #Nobles demand we stop slowly reducing their rights and autonomy, and threaten to revolt if we don't stop and reverse our policies
