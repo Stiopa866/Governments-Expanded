@@ -90,25 +90,25 @@
  dhimmi_nobles.18.a: "Who cares for the needs of the dhimmi, if not the dhimmi?"
  dhimmi_nobles.18.b: "The nobility no longer please the people; replace them."
  
- muscovite_manorialism.19.t:
- muscovite_manorialism.19.d: #The crown recently aquired some additional lands, in line with our policy we shall settle the lands with veterans of our campaigns, who shall they serve?
- muscovite_manorialism.19.a: #Serve in the local garrisons
- muscovite_manorialism.19.b: #They shall serve the local minor lords and administrators
- muscovite_manorialism.19.c: #They shall serve us. OR. They shall be independent(available if there is less then 60% noble influence)
- muscovite_manorialism.20.t:
- muscovite_manorialism.20.d: #It turns out that some of the lands we reserved for our soldier colonists actually belong to the crown, but were the result of some shady administrator
- muscovite_manorialism.20.a: #Hunt the administrator down
- muscovite_manorialism.20.b: #Take the land anyway
+ muscovite_manorialism.19.t: "Praemia of the Third Rome"
+ muscovite_manorialism.19.d: "Just as the first Rome gave the spoils of their conquests and empire to their veterans as pension, so too shall we. In their new settled state, what use will these veterans serve?"
+ muscovite_manorialism.19.a: "Why give a veteran land if he cannot protect it?"
+ muscovite_manorialism.19.b: "They are free men, and shall work as free men do."
+ muscovite_manorialism.19.c: "They are free men; they shall do as they please."
+ muscovite_manorialism.20.t: "What's Yours Is Mine"
+ muscovite_manorialism.20.d: "Some of the land reserved for heroic returning soldiers...should not have been. An administrator of low character seemed to be making a bid to weaken the crown whilst ensuring we could not reverse his action without incurring the wroth of our veterans."
+ muscovite_manorialism.20.a: "I'll have his head on a spike!"
+ muscovite_manorialism.20.b: "Do we really fear upsetting lowly soldiers?"
  
- order_of_the_swan.21.t:
- order_of_the_swan.21.d: #Glorious action by a foreign member of the Order of the Swan
- order_of_the_swan.21.a: #More proof that *rulername* is a good grand master
- order_of_the_swan.21.b: #Praise his lord for employing such fine knights
+ order_of_the_swan.21.t: "The Swan Ascendant"
+ order_of_the_swan.21.d: "A foreign member of our glorious order has honoured the name of the Swan and its members."
+ order_of_the_swan.21.a: "$RULERNAME$ leads our order well, producing such wonderful knights."
+ order_of_the_swan.21.b: "Praise his homeland, for creating such a fine knight!"
 
- order_of_the_swan.22.t:
- order_of_the_swan.22.d: #A Noble serving as a member of the order has acted badly/dishonorably. OR. feel free to come up with a fun reason for the disgrace, wildcard event.
- order_of_the_swan.22.a: #If the *rulertitle* can't rule his order, what makes you think he can rule of our nation?
- order_of_the_swan.22.b: #kick the noble out and strip him of his rank
+ order_of_the_swan.22.t: "Clipped Wings"
+ order_of_the_swan.22.d: "For shame! A member of our glorious order has dishonoured the name of the swan by drunkenly spitting on an image of the Virgin Mary!"
+ order_of_the_swan.22.a: "If $RULERNAME$ cannot keep the knights in check, how can their subjects in check?"
+ order_of_the_swan.22.b: "A disgrace to order has no place in it; out, thou blackguard!"
 
  centralized.23.t: 
  centralized.23.d: #During our centralization one of the administrators found a exclusion from taxation that was due to expire ages ago.
