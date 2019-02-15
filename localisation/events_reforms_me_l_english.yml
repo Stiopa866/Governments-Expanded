@@ -115,15 +115,14 @@
  centralized.23.a: "Take what we are owed; it is only right."
  centralized.23.b: "Clever fellow; let us elevate him to the court."
  
- centralized.24.t: 
- centralized.24.d: #Nobles demand we stop slowly reducing their rights and autonomy, and threaten to revolt if we don't stop and reverse our policies
- centralized.24.a: #We'll accept their demands
- centralized.24.b: #Sword in hand, Medium rebels
- centralized.24.c: #Sword in hand, Major rebels
- centralized.24.e: #Sword in hand, Minor rebels
-					###Could do the same localization for each option, Or different depending on strength?
+ centralized.24.t: "Like Frogs in a Pot"
+ centralized.24.d: "Centralisation by definition requires reducing the rights of the nobility. This less of power and privilege has caused quite a stir among our noble classes, and they are threatening open revolt if we do not accede to their demands."
+ centralized.24.a: "The heat must be gentle for the frogs to boil willingly."
+ centralized.24.b: "If we must endure rebellion to bring revolutionary change, so be it."
+ centralized.24.c: "'Open Revolt'? We'll give them a civil bloody war!"
+ centralized.24.e: "'Open Revolt'? Hah, with what army?"
 					
- decentralized.25.t:
+ decentralized.25.t: 
  decentralized.25.d: #We some of the nobles feel that the <culture> lands should be governed by nobles instead local govenors, caused a heated discussion, who is right?
  decentralized.25.a: #The <culture> can take care of their own
  decentralized.25.b: #The Nobility
