@@ -122,26 +122,26 @@
  centralized.24.c: "'Open Revolt'? We'll give them a civil bloody war!"
  centralized.24.e: "'Open Revolt'? Hah, with what army?"
 					
- decentralized.25.t: 
- decentralized.25.d: #We some of the nobles feel that the <culture> lands should be governed by nobles instead local govenors, caused a heated discussion, who is right?
- decentralized.25.a: #The <culture> can take care of their own
- decentralized.25.b: #The Nobility
+ decentralized.25.t: "Rites and Responsibilities"
+ decentralized.25.d: "Tensions have arisen between local nobles and local governors in [decentralize_cycle_GE_pos.Culture.GetName] lands over whose authority has priority. The time has come to decide; do we favour those who know the cultures and traditions of those places, or those whose authority is the foundation stone of our nation?"
+ decentralized.25.a: "The governors know the people and what they need."
+ decentralized.25.b: "The power of the nobility is the power of the state."
  
- decentralized.26.t:
- decentralized.26.d: #Due to our liberal policies of self rule and local government, one of our regions has grown increasingly independent, and the govenor demands more concessions, and threatens to secede.
- decentralized.26.a: #We can't afford to lose <culture> support. OR. Some concessions aren't worth a war.
- decentralized.26.b: #Call his bluff. OR. Bring it on!
+ decentralized.26.t: "Inching Closer to Freedom"
+ decentralized.26.d: "You know what they say about giving inches, and the inches our progressive policies of self-determination and self-rule have stacked up a fair few miles by this point. The local governors have become quite full of themselves, and are starting demand more and more concessions, even going so far as to start whispering of secession."
+ decentralized.26.a: "Rather a few concessions to a civil war; they are our people too, after all."
+ decentralized.26.b: "Let those whisphers become shouts, we shall silence them all!"
  
- regional_fort.27.t:
- regional_fort.27.d: #A noble embassador visited to ask for some relief from the upkeep of the regional fortifications
- regional_fort.27.a: #Keep the garrisons in a state of combat readiness
- regional_fort.27.b: #Allow the nobles to get some R&R and let their guard down
- regional_fort.27.c: #Recruit the garrison veterans as sargeants and elite troops
+ regional_fort.27.t: "Zones of Control"
+ regional_fort.27.d: "An ambassador from the nobility has request that we relax the upkeep of the forts and allow the forts to form a symbolic rather than literal lynchpin of regional control."
+ regional_fort.27.a: "If a fort cannot defend a people, how can it control them?"
+ regional_fort.27.b: "The symbol is the sacrament, and the nobility can be trusted to maintain the symbol."
+ regional_fort.27.c: "The forts should be training grounds as much as they are bastions of our authority."
  
- regional_fort.28.t:
- regional_fort.28.d: #Unpaid garrison riots
- regional_fort.28.a: #pay them
- regional_fort.28.b: #Crush them
+ regional_fort.28.t: "Payroll and Control"
+ regional_fort.28.d: "Nobles have been underpaying or simply not paying the garrisons of our local forts, and as a result those garrisons, armed to the teeth and already in control of the symbolic and literal centres of our authority, are demanding their salaries under threat of open and bloody revolt."
+ regional_fort.28.a: "If the nobles will not pay them, the state will."
+ regional_fort.28.b: "Our armies crush dozens of fort garrisons in war; what is one or two at peace?"
  
  theocrat.29.t:
  theocrat.29.d: #Organizing our realm through the bishopries and clergy has granted us many connections in the religious world, where we found:
