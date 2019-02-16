@@ -2168,7 +2168,6 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = academy_of_science.46.a
 		add_years_of_income = -0.4
@@ -2176,6 +2175,225 @@ country_event = {
 	option = {
 		name = academy_of_science.46.b
 		add_years_of_income = -0.1
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.47
+	title = royal_decree.47.t
+	desc = royal_decree.47.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = royal_decree_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = royal_decree.47.a
+		add_country_modifier = {
+			name = "Absolute_Success"
+			duration = 7300
+		}
+		add_absolutism = 5
+	}
+	option = {
+		name = royal_decree.47.b
+		add_reform_progress_small_effect
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.48
+	title = royal_decree.48.t
+	desc = royal_decree.48.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = royal_decree_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = royal_decree.48.a
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = -15
+		}
+		add_absolutism = 5
+	}
+	option = {
+		name = royal_decree.48.b
+		add_country_modifier = {
+			name = "Absolute_Failture"
+			duration = 3650
+		}
+		add_absolutism = -5
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.49
+	title = aristocratic_court.49.t
+	desc = aristocratic_court.49.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = aristocratic_court_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = aristocratic_court.49.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_years_of_income = 0.3
+	}
+	option = {
+		name = aristocratic_court.49.b
+		add_country_modifier = {
+			name = "Jingoist_Coalition"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.50
+	title = aristocratic_court.50.t
+	desc = aristocratic_court.50.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = aristocratic_court_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = aristocratic_court.50.a
+		add_corruption = 1
+	}
+	option = {
+		name = aristocratic_court.50.b
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 20
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.51
+	title = general_estates.51.t
+	desc = general_estates.51.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = general_estates_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = general_estates.51.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+	option = {
+		name = general_estates.51.b
+		add_country_modifier = {
+			name = "Supportive_Estates"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.52
+	title = general_estates.52.t
+	desc = general_estates.52.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = general_estates_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = general_estates.52.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		every_owned_province = {
+			limit = {
+				estate = estate_nobles
+			}
+			add_province_modifier = {
+				name = "Properly_Taxed"
+				duration = 9125
+			}
+		}
+	}
+	option = {
+		name = general_estates.52.b
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -10

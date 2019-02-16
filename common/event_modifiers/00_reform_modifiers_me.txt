@@ -121,3 +121,21 @@ Invester_Crisis = {
 State_Funded_Research = {
 	idea_cost = -0.05
 }
+Absolute_Success = {
+	max_absolutism = 5
+}
+Absolute_Failture = {
+	global_tax_modifier = -0.10
+}
+Jingoist_Coalition = {
+	province_warscore_cost = -0.05
+	core_creation = -0.1
+}
+Supportive_Estates = {
+	global_tax_modifier = 0.05
+	global_manpower_modifier = 0.10
+	global_prov_trade_power_modifier = 0.05
+}
+Properly_Taxed = {
+	local_tax_modifier = 0.2
+}
