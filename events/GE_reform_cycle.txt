@@ -1286,7 +1286,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = "Beneficial_Self_Rule"
-				duration = 7300
+				duration = 3650
 			}
 		}
 	}
