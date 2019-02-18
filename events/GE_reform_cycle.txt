@@ -116,6 +116,15 @@ country_event = {
 		
 		highlight = yes
 		
+		if = {
+			limit = {
+				has_reform = theocratic_bureacrats_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_THEOCRATIC_BUREACRATS
+		}
+		else = {
+		custom_tooltip = AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY
+		
 		trigger = {
 			OR = {
 				has_reform = theocratic_bureacrats_reform
@@ -213,6 +222,8 @@ country_event = {
 		name = diplomatic_positions.5.c
 		
 		highlight = yes
+
+		custom_tooltip = AVAILABLE_BECAUSE_OF_PRESTIGE
 		
 		trigger = { prestige = 50 }
 		
@@ -313,11 +324,27 @@ country_event = {
 		
 		highlight = yes
 		
+		if = {
+			limit = {
+				has_reform = of_noble_bearing_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_OF_NOBLE_BEARING
+		}
+		else_if = {
+			limit = {
+				has_reform = koprulu_dynasty_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_KOPRULU_DYNASTY
+		}
+		else = {
+		custom_tooltip = AVAILABLE_BECAUSE_OF_NOBLES_LOYALTY
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = of_noble_bearing_reform
 				has_reform = koprulu_dynasty_reform
-				AND = {	
+				AND = {
 					estate_influence = {
 						estate = estate_nobles
 						influence = 75
@@ -330,7 +357,7 @@ country_event = {
 			}
 		}
 		
-		create_general = { tradition = 60 }
+		create_general = { tradition = 40 }
 	}
 }
 
@@ -524,6 +551,16 @@ country_event = {
 		
 		ai_chance = { factor = 5 }
 		
+		if = {
+			limit = {
+				tag = NED
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_TAG_NED
+		}
+		else = {
+		custom_tooltip = AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY
+		}
+		
 		trigger = {
 			OR = {
 				tag = NED
@@ -534,7 +571,7 @@ country_event = {
 					}
 					estate_loyalty = {
 						estate = estate_burghers
-						loyalty = 50
+						loyalty = 60
 					}
 				}
 			}
@@ -649,6 +686,8 @@ country_event = {
 	option = {
 		name = trade_princes.13.c
 		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_burghers
@@ -656,7 +695,7 @@ country_event = {
 			}
 			estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 50
+				loyalty = 60
 			}
 		}
 		
@@ -843,6 +882,16 @@ country_event = {
 	option = {
 		name = dhimmi_nobles.17.c
 		
+		if = {
+			limit = {
+				has_reform = millet_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_MILLET
+		}
+		else = {
+		custom_tooltip = AVAILABLE_BECAUSE_OF_DHIMMI_LOYALTY
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = millet_reform
@@ -947,6 +996,8 @@ country_event = {
 	
 	option = {
 		name = muscovite_manorialism.19.c
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_NOBLES_WEAKNESS
 		
 		trigger = {
 			NOT = {
@@ -1193,6 +1244,36 @@ country_event = {
 	option = {
 		name = centralized.24.c
 		
+		if = {
+			limit = {
+				has_reform = enforce_privileges_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_ENFORCE_PRIVILEGES
+		}
+		else_if = {
+			limit = {
+				has_reform = growth_signoria_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_GROWTH_SIGNORIA
+		}
+		else_if = {
+			limit = {
+				has_reform = akritai_privileges_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_AKRITAI_PRIVILEGES
+		}
+		else_if = {
+			limit = {
+				has_reform = council_of_sheikhs_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_COUNCIL_OF_SHEIKHS
+		}
+		else_if = {
+			limit = {
+				has_reform = blood_tax_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
+		}
 		trigger = {
 			OR = {
 				has_reform = enforce_privileges_reform
@@ -1222,12 +1303,27 @@ country_event = {
 	option = {
 		name = centralized.24.e
 		
+		if = {
+			limit = {
+				has_reform = quash_noble_power_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
+		}
+		else_if = {
+			limit = {
+				has_reform = lithuania_law_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_LITHUANIA_LAW
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = quash_noble_power_reform
 				has_reform = lithuania_law_reform
 			}	
 		}
+		
+		highlight = yes
 		
 		random_owned_province = {
 			limit = {
@@ -1393,11 +1489,23 @@ country_event = {
 	option = {
 		name = regional_fort.27.c
 		
+		if = {
+			limit = {
+				has_reform = les_vieux_corps_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_LES_VIEUX_CORPS
+		}
+		else_if = {
+			limit = {
+				has_reform = professional_army_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_PROFESSIONAL_ARMY
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = les_vieux_corps_reform
 				has_reform = professional_army_reform
-				has_reform = general_war_commissariat_reform
 			}
 		}
 		
@@ -1489,6 +1597,25 @@ country_event = {
 	
 	option = {
 		name = theocrat.29.c
+		
+		if = {
+			limit = {
+				has_reform = metropolian_bishop_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_BISHOP
+		}
+		else_if = {
+			limit = {
+				has_reform = state_church_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_STATE
+		}
+		else_if = {
+			limit = {
+				has_reform = papal_embassy_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_POPE
+		}
 		
 		trigger = {
 			OR = {
@@ -1596,6 +1723,8 @@ country_event = {
 	option = {
 		name = casa_de_india.31.c
 		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_COLONIAL_GOVENORS
+		
 		trigger = {
 			has_reform = colonial_govenors_reform
 		}
@@ -1686,6 +1815,31 @@ country_event = {
 	option = {
 		name = administrative_clergy.33.c
 		
+		if = {
+			limit = {
+				has_reform = papal_embassy_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_PAPAL_EMBASSY
+		}
+		else_if = {
+			limit = {
+				has_reform = state_church_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_STATE_CHURCH
+		}
+		else_if = {
+			limit = {
+				has_reform = metropolian_bishop_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_METROPOLIAN_BISHOP
+		}
+		if = {
+			limit = {
+				has_reform = theocratic_bureacrats_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_THEOCRATIC_BUREACRATS
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = papal_embassy_reform
@@ -1737,6 +1891,27 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.36
+	title = administrative_nobles.36.t
+	desc = administrative_nobles.36.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = of_noble_bearing_reform
+			has_reform = koprulu_dynasty_reform
+			has_reform = conseil_du_roi_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = {
 		name = administrative_nobles.35.a
 		define_advisor = {
@@ -1986,6 +2161,26 @@ country_event = {
 	}
 	option = {
 		name = colonial_gov.41.c
+		
+		if = {
+			limit = {
+				has_reform = council_of_the_indies_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_COUNCIL_OF_THE_INDIES
+		}
+		else_if = {
+			limit = {
+				has_reform = casa_de_india_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_INDIA
+		}
+		else_if = {
+			limit = {
+				has_reform = casa_de_contraction_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_CONTRACTION
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = council_of_the_indies_reform
@@ -2102,6 +2297,32 @@ country_event = {
 	}
 	option = {
 		name = fredrickan_reforms.44.b
+		
+		if = {
+			limit = {
+				has_reform = metropolian_bishop_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_METROPOLIAN_BISHOP
+		}
+		else_if = {
+			limit = {
+				has_reform = state_church_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_STATE_CHURCH
+		}
+		else_if = {
+			limit = {
+				has_reform = papal_embassy_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_PAPAL_EMBASSY
+		}
+		if = {
+			limit = {
+				has_reform = theocratic_bureacrats_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_THEOCRATIC_BUREACRATS
+		}
+		
 		trigger = {
 			OR = {
 				has_reform = papal_embassy_reform
