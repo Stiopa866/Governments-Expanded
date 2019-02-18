@@ -57,6 +57,8 @@
  consulate_of_the_sea_desc: "The political, commercial and juridical power of the Consulate has been growing stronger in the entire Mediterranean. Where it was once just a set of customs and laws for our merchants, it has now become a major player in our kingdom’s internal affairs, so much so that even the king must bow to its will sometimes. The Consuls of Genoa, Venice and Napoli have come forward with a proposal to legalise the Consulate as the de facto rulers of the Mediterranean, while our king would still maintain the highest authority, matters of commerce and maritime law would fall under the complete control of the Consuls."
  crown_of_saint_wenceslaus: "Crown of Saint Wencleslaus"
  crown_of_saint_wenceslaus_desc: "The Crown of Bohemia is a elective title, as such, our monarch has a much better claim to rule then our rivals, as we were chosen not by luck, but by the people."
+ crown_of_saint_wenceslaus_2: "Crown of Saint Wencleslaus"
+ crown_of_saint_wenceslaus_2_desc: "The Crown of Bohemia is a elective title, as such, our monarch has a much better claim to rule then our rivals, as we were chosen not by luck, but by the people."
  metropolian_bishop_reform: "Metropolian Bishops"
  metropolian_bishop_reform_desc: "The Patriarchy in Moscow is the symbol of our culture. With the Western Slavs abandoning us to the Church of Rome, and the Patriarch of Constantinople falling under Ottoman hands we stand alone. Our bishops are ready to spread the Orthodox world to the uncultured masses."
  state_church_reform: "State Churches"
@@ -135,6 +137,9 @@
  millet_reform_desc: "By establishing the Millet System we can organize our subjects into communities tied together by faith. These communities are granted judgement by their own laws and their own tax collectors, allowing for a much more stable region in both local peace and taxation."
  koprulu_dynasty_reform: "Koprülü Dynasty"
  koprulu_dynasty_reform_desc: "The Koprülü dynasty has provided us with several Grand Viziers and generals, by making some of these titles inheritable to their line, we don't have to spend as much time and effort in finding capable leaders, instead we can pass this responsibility off to their lineage."
+ blood_tax_reform: "Blood Tax"
+ blood_tax_reform_desc: The Nobility is a special class, with special privileges and special responsibilities. Chief among these is the blood tax, where the nobility pays their taxes not in money or goods, but in the form of soldiers, knights and generals. No gold for the treasury or grain for the granary, but blood ready to be spilled."
+ 
  
  
  military_organisation: "Military Organisation"
@@ -185,6 +190,15 @@
  
  Catholics_MECHANIC_TOOLTIP:0 "Catholics"
  Ultraquists_MECHANIC_TOOLTIP:0 "Ultraquists"
+ 
+ GE_ultraquists: "Ultraquists"
+ GE_ultraquists_influence: "Ultraquist Influence"
+ GE_ultraquists_FACTION_DESC: "The Ultraquists are hardline followers of the teachings of Jan Hus, a Catholic Czech Theologian who preached against the decadence of the church. But got betrayed and executed."
+ GE_catholics: "Catholics"
+ GE_catholics_influence: "Catholic Influence"
+ GE_catholics_FACTION_DESC: "The Catholics support the Catholic doctrine set up by the pope and consider him the highest religious figure on earth, and his words as gospel."
+ 
+ 
  
  reforms_me_french_absolutism_title:1 "Institute Royaume de Soleil"
  reforms_me_french_absolutism_desc:1 "Our right to rule is not derived from the people, nor is it enforced by our armies, It is by God's will that we rule, as he has chosen us as shepherds for our people."

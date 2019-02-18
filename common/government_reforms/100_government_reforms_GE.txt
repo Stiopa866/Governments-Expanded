@@ -238,7 +238,6 @@ crown_of_saint_wenceslaus = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = BOH
 			have_had_reform = crown_of_saint_wenceslaus
 		}
 	}
@@ -266,6 +265,26 @@ crown_of_saint_wenceslaus = {
 	}
 }
 
+crown_of_saint_wenceslaus_2 = {
+	icon = crown_of_saint_wenceslaus
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = BOH
+			have_had_reform = crown_of_saint_wenceslaus_2
+		}
+	}
+	modifiers = {
+		legitimacy = 0.5
+		max_absolutism = -20
+	}
+	factions = {
+		GE_ultraquists
+		GE_catholics
+	}
+}
+
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -276,6 +295,7 @@ papal_embassy_reform = {
 	}
 	modifiers = {
 		papal_influence = 1.5
+		GE_catholics_influence = 0.25
 	}
 	ai_chance = {
 		factor = 1
@@ -313,6 +333,7 @@ state_church_reform = {
 	modifiers = {
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
+		GE_ultraquists_influence = 0.25
 	}
 	ai_chance = {
 		factor = 1

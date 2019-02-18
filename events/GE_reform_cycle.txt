@@ -100,6 +100,7 @@ country_event = {
 		name = papal_embassy_reform.3.a
 		
 		add_papal_influence = 10
+		GE_catholics_influence = 10
 	}
 	
 	option = {
@@ -170,6 +171,7 @@ country_event = {
 		name = papal_embassy_reform.4.a
 		
 		add_papal_influence = -10
+		GE_ultraquists_influence = 10
 	}
 	
 	option = {

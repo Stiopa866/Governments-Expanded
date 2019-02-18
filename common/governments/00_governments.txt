@@ -42,6 +42,7 @@ monarchy = {
 				margrave_reform
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus
+				crown_of_saint_wenceslaus_2
 			}
 		}
 		hereditary_vs_nobility = {
