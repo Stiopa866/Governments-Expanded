@@ -309,6 +309,7 @@ republic = {
 				caliphate_reform_sunni
 				#GE
 				florentine_republic
+				american_government
 			}
 		}
 		republican_virtues = {

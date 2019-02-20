@@ -162,4 +162,25 @@ spriteTypes = {
         name = "GFX_faction_GE_catholics"	
         texturefile = "gfx//interface//papal_influence.dds"
     }
+	
+	#USA
+	
+    spriteType = {
+        name = "GFX_faction_bg_GE_federalists"	
+        texturefile = "gfx//interface//faction_red_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_GE_federalists"	
+        texturefile = "gfx//interface//icon_catholic_reform_desire.dds"
+    }
+    spriteType = {
+        name = "GFX_faction_bg_GE_republicans"	
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_GE_republicans"	
+        texturefile = "gfx//interface//papal_influence.dds"
+    }
 }
