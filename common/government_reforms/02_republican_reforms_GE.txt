@@ -26,15 +26,6 @@ american_government = {
 	duration = 4
 }
 
-
-
-
-
-
-
-
-
-
 florentine_republic = {
 	icon = florentine_republic
 	allow_normal_conversion = yes

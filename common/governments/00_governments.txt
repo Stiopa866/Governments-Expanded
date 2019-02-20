@@ -146,6 +146,7 @@ monarchy = {
 				koprulu_dynasty_reform
 				fredrickan_reforms_reform
 				conseil_du_roi_reform
+				table_of_ranks_reform
 			}
 		}
 		deliberative_assembly = {
@@ -156,7 +157,6 @@ monarchy = {
 				general_estates_reform
 				states_general_reform
 				#GE
-				table_of_ranks_reform
 				haudenosaunee_reform
 			}
 		}
@@ -171,7 +171,6 @@ monarchy = {
 				constitutional_equality_reform
 				nueva_planta_decrees_reform
 				toleration_of_all_faiths_edict_reform
-				regulations_for_state_officials_reform
 			}
 		}
 		separation_of_power = {

@@ -922,10 +922,6 @@ conseil_du_roi_reform = {
 	}
 }
 
-#Tier5
-
-
-
 table_of_ranks_reform = {
 	icon = table_of_ranks
 	allow_normal_conversion = yes
@@ -945,6 +941,9 @@ table_of_ranks_reform = {
 		factor = 5
 	}
 }
+
+#Tier5
+
 
 
 
@@ -1009,26 +1008,6 @@ toleration_of_all_faiths_edict_reform = {
 	}
 	ai_chance = {
 		factor = 100
-	}
-}
-
-regulations_for_state_officials_reform = {
-	icon = paper_with_seal
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = PRU
-			tag = BRA
-			tag = NGF
-			have_had_reform = regulations_for_state_officials_reform
-		}
-	}
-	modifiers = {
-		adm_advisor_cost = -0.25
-		yearly_corruption = -0.1
-	}
-	ai_chance = {
-		factor = 5
 	}
 }
 

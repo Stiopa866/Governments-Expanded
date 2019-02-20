@@ -172,7 +172,7 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_faction_GE_federalists"	
-        texturefile = "gfx//interface//icon_catholic_reform_desire.dds"
+        texturefile = "gfx//interface//aristocrats_icon.dds"
     }
     spriteType = {
         name = "GFX_faction_bg_GE_republicans"	
@@ -181,6 +181,6 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_faction_GE_republicans"	
-        texturefile = "gfx//interface//papal_influence.dds"
+        texturefile = "gfx//interface//guilds_icon.dds"
     }
 }
