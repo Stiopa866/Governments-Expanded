@@ -1,0 +1,47 @@
+1.1
+
+crown_of_saint_wenceslaus; BOH
+state_church_reform; PROTESTANT/REFORMED
+metropolian_bishop_reform; ORTHODOX
+Muslim Piety; Muslim
+Muslim Legal; Muslim
+
+nieszawa; POL
+
+Oprichnina; RUS
+Academy of Science; RUS
+Table of Ranks; RUS
+Toleration of All Faiths Edict; RUS
+Peter's Council; RUS
+Muscovite Manorialism; RUS
+Foreign Formation Regiments; RUS
+
+constitutio_joachimica_reform; PRU
+order_of_the_swan_reform; PRU
+
+millet_reform; TUR
+nizam_i_jedid_reform; TUR
+koprulu_dynasty_reform; TUR
+
+great_law_of_peace_reform; IRO
+haudenosaunee_reform; IRO
+
+1.2
+
+fredrickan_reforms_reform; PRU
+
+blood_tax_reform; FRA
+conseil_du_roi_reform; FRA
+
+#holy_orthodoxy_reform; THEOCRACY
+#inquisition_reform; THEOCRACY
+#religious_pragmatism_reform; THEOCRACY
+
+royal_society_reform; KON
+adoption_of_christianity_reform; KON
+unite_the_royal_houses_reform; KON
+
+iranian_bureacracy_reform ; Turkoman
+slave_raids_reform ; Crimean
+great_code_of_nomads ; Oirat
+herders_of_the_steppe ; Horde

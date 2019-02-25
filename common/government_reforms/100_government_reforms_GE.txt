@@ -1041,7 +1041,7 @@ peters_council_reform = {
 	}
 	modifiers = {
 		diplomatic_reputation = 1
-		envoy_travel_time = -0.25
+		global_unrest = -1
 	}
 	ai_chance = {
 		factor = 100

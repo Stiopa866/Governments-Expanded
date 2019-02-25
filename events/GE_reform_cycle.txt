@@ -1905,6 +1905,7 @@ country_event = {
 			has_reform = of_noble_bearing_reform
 			has_reform = koprulu_dynasty_reform
 			has_reform = conseil_du_roi_reform
+			has_reform = table_of_ranks_reform
 		}
 	}
 
@@ -1952,6 +1953,7 @@ country_event = {
 			has_reform = of_noble_bearing_reform
 			has_reform = koprulu_dynasty_reform
 			has_reform = conseil_du_roi_reform
+			has_reform = table_of_ranks_reform
 		}
 	}
 
@@ -2621,5 +2623,531 @@ country_event = {
 			estate = estate_burghers
 			loyalty = -10
 		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.53
+	title = letat.53.t
+	desc = letat.53.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = letat_cest_moi_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_territory = no
+					local_autonomy = 50
+				}
+				save_event_target_as = letat_cycle_GE_pos
+			}
+		}
+	}
+	
+	option = {
+		name = letat.53.a
+		
+		every_owned_province = {
+			limit = {
+				area = event_target:letat_cycle_GE_pos
+			}
+			add_local_autonomy = -25
+		}
+	}
+	
+	option = {
+		name = letat.53.b
+		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.54
+	title = letat.54.t
+	desc = letat.54.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = letat_cest_moi_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_territory = no
+				}
+				save_event_target_as = letat_cycle_GE_neg
+			}
+		}
+	}
+	
+	option = {
+		name = letat.54.a
+		
+		every_owned_province = {
+			limit = {
+				area = event_target:letat_cycle_GE_neg
+			}
+			add_unrest = 15
+		}
+	}
+	
+	option = {
+		name = letat.54.b
+		
+		add_absolutism = -5
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.55
+	title = regional_representation.55.t
+	desc = regional_representation.55.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = regional_representation_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = regional_representation.55.a
+		
+		add_stability = 1
+	}
+	
+	option = {
+		name = regional_representation.55.b
+		
+		add_legitimacy = 20
+		add_absolutism = 5
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.56
+	title = regional_representation.56.t
+	desc = regional_representation.56.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = regional_representation_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_territory = no
+				}
+				save_event_target_as = regional_representation_cycle_GE_neg
+			}
+		}
+	}
+	
+	option = {
+		name = regional_representation.56.a
+		
+		every_owned_province = {
+			limit = {
+				region = event_target:letat_cycle_GE_neg
+			}
+			add_unrest = 5
+			add_local_autonomy = 10
+		}
+		add_stability = -1
+	}
+	
+	option = {
+		name = regional_representation.56.b
+		
+		add_absolutism = -15
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.57
+	title = freedom_of_religion.57.t
+	desc = freedom_of_religion.57.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = freedom_of_religion_reform
+			has_reform = toleration_of_all_faiths_edict_reform 
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = freedom_of_religion.57.a
+		
+		define_advisor = {
+			type = natural_scientist
+			skill = 4
+			cost_multiplier = 0.25
+			age = 40
+		}
+	}
+	
+	option = {
+		name = freedom_of_religion.57.b
+		
+		add_country_modifier = {
+			name = "Innovative_Production"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.58
+	title = freedom_of_religion.58.t
+	desc = freedom_of_religion.58.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = freedom_of_religion_reform
+			has_reform = toleration_of_all_faiths_edict_reform 
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_territory = no
+				}
+				save_event_target_as =  freedom_of_religion_cycle_GE_neg
+			}
+		}
+	}
+	
+	option = {
+		name = freedom_of_religion.58.a
+		
+		random_owned_province = {
+			limit = {
+				event_target:freedom_of_religion_cycle_GE_neg
+			}
+			spawn_rebels = {
+				type = heretic_rebels 
+				size = 3
+			}
+		}
+	}
+	
+	option = {
+		name = freedom_of_religion.58.b
+		
+		add_country_modifier = {
+			name = "Zealous_Persecution"
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.59
+	title = constitution.59.t
+	desc = constitution.59.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = constitutional_equality_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = constitution.59.a
+		
+		add_country_modifier = {
+			name = "Fair_Laws"
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.60
+	title = constitution.60.t
+	desc = constitution.60.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = constitutional_equality_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = constitution.60.a
+		
+		add_legitimacy = -10
+	}
+	
+	option = {
+		name = constitution.60.b
+		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.61
+	title = nueva_planta.61.t
+	desc = nueva_planta.61.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = nueva_planta_decrees_reform
+		}
+		has_country_flag = Pacified_Aragon
+		has_country_flag = Pacified_Catalonia
+		has_country_flag = Pacified_Valencia
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = nueva_planta.61.a
+		
+		add_country_modifier = {
+			name = "Nueva_Planta_Decree"
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.62
+	title = nueva_planta.62.t
+	desc = nueva_planta.62.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = nueva_planta_decrees_reform
+		}
+		NOT = { has_country_flag = Pacified_Aragon }
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = nueva_planta.62.a
+		
+		random_owned_province = {
+			limit = {
+				area = aragon_area
+			}
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				area = aragon_area
+			}
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+		set_country_flag = Pacified_Aragon
+	}
+	
+	option = { 
+		name = nueva_planta.62.b
+		
+		remove_government_reform = nueva_planta_decrees_reform
+		clr_country_flag = Pacified_Aragon
+		clr_country_flag = Pacified_Valencia
+		clr_country_flag = Pacified_Catalonia
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.63
+	title = nueva_planta.63.t
+	desc = nueva_planta.63.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = nueva_planta_decrees_reform
+		}
+		NOT = { has_country_flag = Pacified_Valencia }
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = nueva_planta.63.a
+		
+		random_owned_province = {
+			limit = {
+				area = valencia_area
+			}
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				area = valencia_area
+			}
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+		set_country_flag = Pacified_Valencia
+	}
+	
+	option = { 
+		name = nueva_planta.63.b
+		
+		remove_government_reform = nueva_planta_decrees_reform
+		clr_country_flag = Pacified_Aragon
+		clr_country_flag = Pacified_Valencia
+		clr_country_flag = Pacified_Catalonia
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.64
+	title = nueva_planta.64.t
+	desc = nueva_planta.64.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = nueva_planta_decrees_reform
+		}
+		NOT = { has_country_flag = Pacified_Catalonia }
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = nueva_planta.64.a
+		
+		random_owned_province = {
+			limit = {
+				area = catalonia_area
+			}
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				area = catalonia_area
+			}
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+		set_country_flag = Pacified_Catalonia
+	}
+	
+	option = { 
+		name = nueva_planta.64.b
+		
+		remove_government_reform = nueva_planta_decrees_reform
+		clr_country_flag = Pacified_Aragon
+		clr_country_flag = Pacified_Valencia
+		clr_country_flag = Pacified_Catalonia
 	}
 }

@@ -139,3 +139,10 @@ Supportive_Estates = {
 Properly_Taxed = {
 	local_tax_modifier = 0.2
 }
+Innovative_Production = {
+	production_efficiency = 0.10
+}
+Zealous_Persecution = {
+	tolerance_heretic = -2
+	tolerance_heathen = -2
+}
