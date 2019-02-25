@@ -1664,7 +1664,6 @@ country_event = {
 				size = 2
 			}
 		}
-		add_years_of_income = -0.05
 	}
 	
 	option = {
@@ -1672,8 +1671,9 @@ country_event = {
 		
 		add_estate_loyalty = {
 			estate = estate_clergy
-			loyalty = -15
+			loyalty = -10
 		}
+		add_years_of_income = -0.05
 	}
 }
 
@@ -1700,13 +1700,21 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_colony = yes
+				}
+				save_event_target_as = casa_de_india_cycle_GE_pos
+			}
+		}
+	}
+	
 	option = {
 		name = casa_de_india.31.a
 		
-		random_owned_province = {
-			limit = {
-				is_colony = yes
-			}
+		event_target:casa_de_india_cycle_GE_pos = {
 			add_base_manpower = 1
 		}
 	}
@@ -1714,10 +1722,7 @@ country_event = {
 	option = {
 		name = casa_de_india.31.b
 		
-		random_owned_province = {
-			limit = {
-				is_colony = yes
-			}
+		event_target:casa_de_india_cycle_GE_pos = {
 			add_colonysize = 150
 		}
 	}
@@ -1775,6 +1780,7 @@ country_event = {
 			}
 			add_colonysize = -100
 		}
+		add_treasury = -25
 	}
 }
 
@@ -1857,6 +1863,10 @@ country_event = {
 		add_papal_influence = 10
 		add_fervor = 20
 		add_church_power = 20
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = 5
+		}
 	}
 }
 
@@ -2659,9 +2669,11 @@ country_event = {
 	option = {
 		name = letat.53.a
 		
-		every_owned_province = {
-			limit = {
-				area = event_target:letat_cycle_GE_pos
+		event_target:letat_cycle_GE_pos = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
 			}
 			add_local_autonomy = -25
 		}
@@ -2709,9 +2721,11 @@ country_event = {
 	option = {
 		name = letat.54.a
 		
-		every_owned_province = {
-			limit = {
-				area = event_target:letat_cycle_GE_neg
+		event_target:letat_cycle_GE_neg = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
 			}
 			add_unrest = 15
 		}
@@ -2721,6 +2735,39 @@ country_event = {
 		name = letat.54.b
 		
 		add_absolutism = -5
+	}
+
+	option = {
+		name = letat.54.c
+		
+		trigger = {
+			OR = {
+				has_reform = decentralize_reform
+				has_reform = millet_reform
+			}
+		}
+		
+		if = {
+			limit = {
+				has_reform = millet_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_MILLET
+		}
+		if = {
+			limit = {
+				has_reform = decentralize_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_DECENTRALIZE
+		}
+		
+		event_target:letat_cycle_GE_neg = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+			}
+			add_local_autonomy = 15
+		}
 	}
 }
 
@@ -2788,10 +2835,7 @@ country_event = {
 	option = {
 		name = regional_representation.56.a
 		
-		every_owned_province = {
-			limit = {
-				region = event_target:letat_cycle_GE_neg
-			}
+		event_target:regional_representation_cycle_GE_neg = {
 			add_unrest = 5
 			add_local_autonomy = 10
 		}
@@ -2879,10 +2923,7 @@ country_event = {
 	option = {
 		name = freedom_of_religion.58.a
 		
-		random_owned_province = {
-			limit = {
-				event_target:freedom_of_religion_cycle_GE_neg
-			}
+		event_target:freedom_of_religion_cycle_GE_neg = {
 			spawn_rebels = {
 				type = heretic_rebels 
 				size = 3

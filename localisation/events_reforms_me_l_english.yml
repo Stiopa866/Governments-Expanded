@@ -143,31 +143,40 @@
  regional_fort.28.a: "If the nobles will not pay them, the state will."
  regional_fort.28.b: "Our armies crush dozens of fort garrisons in war; what is one or two at peace?"
  
- theocrat.29.t:
- theocrat.29.d: #Organizing our realm through the bishopries and clergy has granted us many connections in the religious world, where we found:
- theocrat.29.a: #A pious inquisitor, willing to serve us
- theocrat.29.b: #Many friends to support our rule and acknowledge our rule
- theocrat.29.c: #Stability under gods protection(requires administrative clergy and a T2 religious reform, essentially a bonus for going balls deep religious.)
+ #Line Between Good and Placeholder Loc
  
- theocrat.30.t:
- theocrat.30.d: #The clergy recently has been calling for more persecution of religious minorities and sinners, their unfiltered zeal raised thousands to rally to their would-be holy war
- theocrat.30.a: #Crush this would-be holy war
- theocrat.30.b: #Call in all favors, bribes and friends to have the clergy disperse the crowd.
+ theocrat.29.t: "The Grace of God"
+ theocrat.29.d: "Organizing our realm through the bishopries and clergy has granted us many connections in the religious world, where we found ..."
+ theocrat.29.a: "A pious inquisitor, willing to serve us."
+ theocrat.29.b: "Many friends to support our rule and acknowledge our rule."
+ theocrat.29.c: "Stability under gods protection."
  
- casa_de_india.31.t: 
- casa_de_india.31.d: #The <colony> has finished some additional buildings/settlements
- casa_de_india.31.a: #Send some veterans
- casa_de_india.31.b: #Send some settlers
- casa_de_india.31.c: #Send some corrupt officials into exile
+ theocrat.30.t: "In the Name of God"
+ theocrat.30.d: "The clergy recently has been calling for more persecution of religious minorities and sinners, their unfiltered zeal raised thousands to rally to their would-be holy war."
+ theocrat.30.a: "Crush this would-be holy war."
+ theocrat.30.b: "Use favors and bribes to have the clergy disperse the crowd."
+ 
+ casa_de_india.31.t: "Ahead of Schedule"
+ casa_de_india.31.d: "The $PROVINCENAME$ colony has finished some additional buildings ahead of time. Our overseas administration is preparing additional voyages to $PROVINCENAME$ to fill the homes as soon as possible."
+ casa_de_india.31.a: "Send some veterans over there."
+ casa_de_india.31.b: "Offer families a new start."
+ casa_de_india.31.c: "Exile some corrupt officials."
 
- casa_de_india.32.t: 
- casa_de_india.32.d: #It appeared the records are forged and the amount of settlers in <colony> are much lower then expected
- casa_de_india.32.a: #As long as they pay, who cares
- casa_de_india.32.b: #Rewrite the records
+ casa_de_india.32.t: "Cooked Books"
+ casa_de_india.32.d: "It appears some records in our overseas administration are forged and the amount of settlers in $PROVINCENAME$ are much lower then we were led to believe."
+ casa_de_india.32.a: "As long as they pay their taxes."
+ casa_de_india.32.b: "Update our records and find the official."
  
+ administrative_clergy.33.t: "Fortunate Son"
+ administrative_clergy.33.d: "Our policy of using clergical personel as our administrators has led to a pious and austere administration. Due to this, the administration happens to have some spare budget lying around."
+ administrative_clergy.33.a: "Organize additional services for the faithfull."
+ administrative_clergy.33.b: "Hire some additional tax collectors."
+ administrative_clergy.33.c: "Grant some additional funding for the $COUNTRY_RELIGION$ Clergy."
  
- 
- 
+ administrative_clergy.34.t: 
+ administrative_clergy.34.d: 
+ administrative_clergy.34.a: 
+ administrative_clergy.34.b: 
  
  
  
