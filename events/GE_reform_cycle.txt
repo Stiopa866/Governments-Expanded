@@ -1905,9 +1905,9 @@ country_event = {
 }
 
 country_event = {
-	id = GE_reform_cycle.36
-	title = administrative_nobles.36.t
-	desc = administrative_nobles.36.d
+	id = GE_reform_cycle.35
+	title = administrative_nobles.35.t
+	desc = administrative_nobles.35.d
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
@@ -1943,8 +1943,8 @@ country_event = {
 		define_advisor = {
 			type = army_organiser
 			skill = 1
-			age = 40
 		}
+		add_prestige = 5
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 5

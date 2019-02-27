@@ -173,14 +173,20 @@
  administrative_clergy.33.b: "Hire some additional tax collectors."
  administrative_clergy.33.c: "Grant some additional funding for the $COUNTRY_RELIGION$ Clergy."
  
- administrative_clergy.34.t: 
- administrative_clergy.34.d: 
- administrative_clergy.34.a: 
- administrative_clergy.34.b: 
+ administrative_clergy.34.t: "Church in Disrepair"
+ administrative_clergy.34.d: "Due to us drawing our administrators from the clergy, it seems that the local churches and bishopries are getting undermanned and underfunded."
+ administrative_clergy.34.a: "Let us compensate the church and fund their recruitment."
+ administrative_clergy.34.b: "The church can handle their own personel issues."
  
+ administrative_nobles.35.t: "Minister of Peace"
+ administrative_nobles.35.d: "A key member of our military staff has recently retired, The nobility has approached us with a candidate of great prestige and connections. Even though our policy suggests promoting commoners on basis of skill."
+ administrative_nobles.35.a: "Let us promote a veteran captain to the post."
+ administrative_nobles.35.b: "The Noble son deserves the post."
  
- 
- 
+ administrative_nobles.36.t: "
+ administrative_nobles.36.d: "
+ administrative_nobles.36.a: "
+ administrative_nobles.36.b: "
  
  
  
