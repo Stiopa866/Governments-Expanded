@@ -2032,9 +2032,13 @@ country_event = {
 			name = "Meritocrac_recruitment"
 			duration = 3650
 		}
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 5
+		random_list = {
+			75 = 0
+			25 = define_advisor = {
+				type = trader
+				skill = 3
+				age = 45
+			}
 		}
 	}
 }

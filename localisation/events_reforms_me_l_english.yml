@@ -183,16 +183,30 @@
  administrative_nobles.35.a: "Let us promote a veteran captain to the post."
  administrative_nobles.35.b: "The Noble son deserves the post."
  
- administrative_nobles.36.t: "
- administrative_nobles.36.d: "
- administrative_nobles.36.a: "
- administrative_nobles.36.b: "
+ administrative_nobles.36.t: "Men of Quality"
+ administrative_nobles.36.d: "Some members of the older nobility have been clashing with some of the younger nobility, who earned their titles through service. The older nobility demands that the higher positions in the government and all governorships go to members of the older nobility, and the younger nobility be excluded."
+ administrative_nobles.36.a: "Make way for the new generation you leeches."
+ administrative_nobles.36.b: "Ancient blood has proven itself before, it shall prove itself again."
  
+ administrative_civilians.37.t: "Trading Places"
+ administrative_civilians.37.d: "A highly succesfull merchant wishes to embed himself in our government as a advisor to the king, with his vast wealth he secured backing from the merchant guilds at large. Our policy is to hired based on merit though, should we appoint him?"
+ administrative_civilians.37.a: "We can make an exception."
+ administrative_civilians.37.b: "He will have to go through the normal channels."
  
+ administrative_civilians.38.t: "Friends in High Places"
+ administrative_civilians.38.d: "It turns out that, regardless of our efforts to improve this, corruption and nepotism is still commonplace in our government. Recently our recruitment office has stopped pretending to even promote meritocracy and straight up demand payment in order to apply for a position in our government."
+ administrative_civilians.38.a: "Clean out the entire department."
+ administrative_civilians.38.b: "Let it slip."
  
+ integrate_bankers.39.t: 
+ integrate_bankers.39.d: 
+ integrate_bankers.39.a: 
+ integrate_bankers.39.b: 
  
- 
- 
+ integrate_bankers.40.t: 
+ integrate_bankers.40.d: 
+ integrate_bankers.40.a: 
+ integrate_bankers.40.b: 
  
  
  
