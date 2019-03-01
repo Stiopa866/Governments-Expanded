@@ -207,7 +207,7 @@ unite_the_royal_houses_reform = {
 	}
 	modifiers = {
 		legitimacy = 1
-		yearly_absolutism = 1
+		yearly_absolutism = 0.25
 		max_absolutism = 15
 	}
 }

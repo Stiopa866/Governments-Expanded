@@ -198,20 +198,31 @@
  administrative_civilians.38.a: "Clean out the entire department."
  administrative_civilians.38.b: "Let it slip."
  
- integrate_bankers.39.t: 
- integrate_bankers.39.d: 
- integrate_bankers.39.a: 
- integrate_bankers.39.b: 
+ integrate_bankers.39.t: "The Money Flows"
+ integrate_bankers.39.d: "The integrated bankers have organized our finance industry rather well, and now some diligent administrators have offered to take a look at related sectors."
+ integrate_bankers.39.a: "Support the merchant houses and smooth things out."
+ integrate_bankers.39.b: "Send them to the regional centers of administration."
  
- integrate_bankers.40.t: 
- integrate_bankers.40.d: 
- integrate_bankers.40.a: 
- integrate_bankers.40.b: 
+ integrate_bankers.40.t: "The Sin of Greed"
+ integrate_bankers.40.d: "Usury is a sin, a greedy way of stealing money from hard working peasants and labourers. And thus, most people look down upon those that work with it, as well as those that associate themselves with such sinners. One of the court priests has gotten rather worked up about this, and has started to speak about how we will fall from gods grace if we continue such works."
+ integrate_bankers.40.a: "Let the fool ramble."
+ integrate_bankers.40.b: "Make amends with the church."
  
+ colonial_gov.41.t: "Overseas Volunteers"
+ colonial_gov.41.d: "One of our colonial govenors has been speaking of the homeland so much that it lit a fire in some of the sons of already established colonies. They are experienced scouts and survivalists, hardened by a life on the fronteer."
+ colonial_gov.41.a: "Give them permission to settle a new fronteer and continue their family legacy."
+ colonial_gov.41.b: "Such strong and proud men will form the backbone of an expeditionary corps."
+ colonial_gov.42.c: "Let the Casa de India organize them towards new shores."
  
+ colonial_gov.42.t: "Missing Shipments"
+ colonial_gov.42.d: "It appears that shipments that are organized by a specific govenor seem to have a much higher rate of falling to piracy and bad weather then other ships on the same route."
+ colonial_gov.42.a: "Delay any further shipments untill he and his ilk are brought to justice."
+ colonial_gov.42.b: "What an odd coincidence."
  
- 
- 
+ fredrickan_reforms.43.t: "
+ fredrickan_reforms.43.d: 
+ fredrickan_reforms.43.a: 
+ fredrickan_reforms.43.b: 
  
  
  
