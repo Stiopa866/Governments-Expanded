@@ -2264,7 +2264,6 @@ country_event = {
 		days = 1
 	}
 	
-	
 	option = {
 		name = fredrickan_reforms.43.a
 		add_country_modifier = {
@@ -2352,7 +2351,7 @@ country_event = {
 		highlight = yes
 		add_estate_loyalty = {
 			estate = estate_clergy
-			loyalty = -20
+			loyalty = -10
 		}
 	}
 }
@@ -2417,6 +2416,22 @@ country_event = {
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -10
+		}
+	}
+
+	option = {
+		name = academy_of_science.46.c
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_INNOVATIVENESS
+		
+		trigger = {
+			innovativeness = 50
+		}
+		highlight = yes
+		add_innovativeness_big_effect
+		add_country_modifier = {
+			name = "New_Tech"
+			duration = 3650
 		}
 	}
 }

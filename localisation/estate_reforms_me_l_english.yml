@@ -237,7 +237,8 @@
  AVAILABLE_BECAUSE_OF_DHIMMI_LOYALTY: "Available due to high §YDhimmi§ Loyalty."
  AVAILABLE_BECAUSE_OF_NOBLE_WEAKNESS: "Available due to low §YNoble§ influence."
  
- AVAILABLE_BECAUSE_OF_PRESTIGE: "Available due to more then §Y50§ prestige."
+ AVAILABLE_BECAUSE_OF_INNOVATIVENESS: "Available due to more then §Y50§ Innovativeness."
+ AVAILABLE_BECAUSE_OF_PRESTIGE: "Available due to more then §Y50§ Prestige."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_BISHOP: "Available due to §YMetropolian Bishops§ and §YAdministrative Clergy§."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_STATE: "Available due to §YState Church§ and §YAdministrative Clergy§."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_POPE: "Available due to §YPapal Embassy§ and §YAdministrative Clergy§."

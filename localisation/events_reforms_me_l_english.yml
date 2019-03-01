@@ -219,10 +219,57 @@
  colonial_gov.42.a: "Delay any further shipments untill he and his ilk are brought to justice."
  colonial_gov.42.b: "What an odd coincidence."
  
- fredrickan_reforms.43.t: "
- fredrickan_reforms.43.d: 
- fredrickan_reforms.43.a: 
- fredrickan_reforms.43.b: 
+ fredrickan_reforms.43.t: "Drumpf Deals"
+ fredrickan_reforms.43.d: "Recent developments funded through the Fredrickan banks have led to a significant growth of the cloth production, some of the older trade deals were based on a lower production, we should update our trade policies."
+ fredrickan_reforms.43.a: "I make the best trade deals, maybe ever."
+ fredrickan_reforms.43.b: "let the locals make their own deals."
+ 
+ fredrickan_reforms.44.t: "Black Thursday"
+ fredrickan_reforms.44.d: "Our great economic policies led to massive growth, although it seems a lot of said growth was artificially pumped up, and now the bubble has bursted, many people are falling to bankrupcy and banks are threatening to collapse."
+ fredrickan_reforms.44.a: "Looks like we'll have to ride out this downward trend."
+ fredrickan_reforms.44.b: "The King will guarentee the banks."
+ fredrickan_reforms.44.c: "The Church will guarentee our banks."
+ 
+ academy_of_science.45.t: "Empty Forum"
+ academy_of_science.45.d: "A recent expansion of the Imperial Academy of Sciences has opened op some additional space for extra lectures and debates. Oh Tsar, what do you wish to do?."
+ academy_of_science.45.a: "Promote civil and military theories."
+ academy_of_science.45.b: "Promote the philosophical arts."
+
+ academy_of_science.46.t: "Not an Exact Science"
+ academy_of_science.46.d: "One of our student organisations performed research into new explosives for the armies. Their secret project was supposed to blow us away and secure the future of our state. Unfortunately, the explosives worked a bit too well, and massive damages both to the university and the city have been sustained through the explosive device and the subsequent fires."
+ academy_of_science.46.a: "We'll pay for all suffered damages."
+ academy_of_science.46.b: "Let us rebuild the university."
+ academy_of_science.46.c: "They most certainly deserve promotions to professors."
+ 
+ royal_decree.47.t: "Droit Divine"
+ royal_decree.47.d: "My decision to rule almighty and that my word should be law has proven to work. My country is doing well, the people are happy, the army is loyal. Truly God has chosen me."
+ royal_decree.47.a: "Its good to be the king."
+ royal_decree.47.b: "Lets keep a level head, and keep my advisors close."
+ 
+ royal_decree.48.t: "Mere Peasants"
+ royal_decree.48.d: "Some among the Clergy are doubting our divine right to rule and decree the law. Appearently allocating funds to me as a representative of the Lord is considered blasphemy according to some less enlightened groups within the clergy."
+ royal_decree.48.a: "I'll have your head heretic."
+ royal_decree.48.b: "Lets back off from the clergy and its finances."
+ 
+ aristocratic_court.49.t: "Two Birds in the Air"
+ aristocratic_court.49.d: "The court of nobles have gotten into a conflict between two major factions, the hawkish party wishes to prepare for a war and offers concessions and preparations for extending the administration, the doves wish to maintain the status quo and with their deep coffers have offered bribes and favors in order to keep the ambitious hawks at bay"
+ aristocratic_court.49.a: "Internal peace is important, let us ignore the hawks."
+ aristocratic_court.49.b: "Doves are cowards, onwards to victory!."
+ 
+ aristocratic_court.50.t: "Birds of a Feather"
+ aristocratic_court.50.d: "The noble factions were scheming once again, but this time it appears they have united against the crown, demanding concessions and more influence on how the country is run."
+ aristocratic_court.50.a: "Bribe part of the coalition in order to break the ranks."
+ aristocratic_court.50.b: "It seems we have no other choice."
+ 
+ general_estates.51.t: "Plan of Action"
+ general_estates.51.d: "The estates are all part of the country, as $MONARCHTITLE$ its important to guide them for the national interest. Making them compete for our favor, increasing their loyalty in a bid to achieve influence, or have them coöperate in order to guide the country through history."
+ general_estates.51.a: "Competition is key for a healthy society."
+ general_estates.51.b: "Cooperation shall bring us wealth and stability."
+
+ general_estates.52.t: "Blue Blood, Big Wallet"
+ general_estates.52.d: "The matter of tax evasion by the nobles is being brought up by the burghers, and they demand the load is spread more fairly."
+ general_estates.52.a: "Time to pay up."
+ general_estates.52.b: "They pay with their loyalty."
  
  
  
