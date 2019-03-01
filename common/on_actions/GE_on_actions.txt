@@ -34,7 +34,26 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.31 #casa_de_india
 		100 = GE_reform_cycle.32
 		100 = GE_reform_cycle.33 #administrative_clergy
-		1000 = 0
+		100 = GE_reform_cycle.34
+		100 = GE_reform_cycle.35 #administrative_nobles
+		100 = GE_reform_cycle.36
+		100 = GE_reform_cycle.37 #administrative_civilians
+		100 = GE_reform_cycle.38
+		100 = GE_reform_cycle.39 #integrate_bankers
+		100 = GE_reform_cycle.40 
+		100 = GE_reform_cycle.41 #colonial_gov
+		100 = GE_reform_cycle.42
+		100 = GE_reform_cycle.43 #fredrickan_reforms
+		100 = GE_reform_cycle.44
+		100 = GE_reform_cycle.45 #academy_of_science
+		100 = GE_reform_cycle.46 
+		100 = GE_reform_cycle.47 #royal_decree
+		100 = GE_reform_cycle.48
+		100 = GE_reform_cycle.49 #aristocratic_court
+		100 = GE_reform_cycle.50
+		100 = GE_reform_cycle.51 #general_estates
+		100 = GE_reform_cycle.52
+		200 = 0
 	}
 }
 
