@@ -143,7 +143,8 @@ Properly_Taxed = {
 	local_tax_modifier = 0.2
 }
 Innovative_Production = {
-	production_efficiency = 0.10
+	production_efficiency = 0.15
+	technology_cost = -0.05
 }
 Zealous_Persecution = {
 	tolerance_heretic = -2

@@ -271,6 +271,57 @@
  general_estates.52.a: "Time to pay up."
  general_estates.52.b: "They pay with their loyalty."
  
+ letat.53.t: "Within my Grasp"
+ letat.53.d: "The Policy of Absolute Royal Power caused us to have a stronger grasp of a local area."
+ letat.53.a: "Very well."
+ letat.53.b: "Maybe we should let up the pressure a bit."
+ 
+ letat.54.t: "Trump Card"
+ letat.54.d: "The Monarch's word seems to oppose local law, which law trumps the other?"
+ letat.54.a: "Silly peasants with their barbaric practices."
+ letat.54.b: "This is the peoples domain."
+ letat.54.c: "We could make a exception this one time."
+ 
+ regional_representation.55.t: "Credit where Credit is Due"
+ regional_representation.55.d: "Our regional policies work, who do we praise for the peacefull and grand organization of our glorious state and its outlying territories."
+ regional_representation.55.a: "This is the work of all our peoples."
+ regional_representation.55.b: "Long live $MONARCHTITLE$ $MONARCH$."
+ 
+ regional_representation.56.t: "Credit where Credit is Due"
+ regional_representation.56.d: "Political Deadlock is preventing us from passing a law to limit autonomy in one of our nation's regions, throwing a wrench in the works of our representative system."
+ regional_representation.56.a: "Force it through anyway."
+ regional_representation.56.b: "Back down, and repeal the law."
+ 
+ freedom_of_religion.57.t: "Tolerance Sparks Genius"
+ freedom_of_religion.57.d: "Our decision to grant peoples of all walks of life a bit more freedom, as long as they respect our god and monarch has led to a previously set aside professor to be discovered. He appears to be a genius and increasing productivity wherever he goes."
+ freedom_of_religion.57.a: "He shall council our $MONARCHTITLE$."
+ freedom_of_religion.57.b: "Grant him a prominent wing in the $CAPITAL$ University."
+ 
+ freedom_of_religion.58.t: "The True Faith"
+ freedom_of_religion.58.d: "A growing movement of zealous peasants are opposing our tolerant and peacefull ways, they believe our $MONARCHTITLE$ is a coward who is so afraid of making enemies he'd rather bow his head to heretics and heathens who are just waiting to take advantage of his weakness."
+ freedom_of_religion.58.a: "Zealots with no understanding of the finer parts of statecraft."
+ freedom_of_religion.58.b: "Oh God, have i truly been led astray?"
+
+ constitution.59.t: "Constitutionalism"
+ constitution.59.d: "Our Laws are just, and this has stabilized our realm. Knowing what key principles of the law are has spread , bringing understanding even to the uneducated."
+ constitution.59.a: "Excellent."
+ 
+ constitution.60.t: "Special Rights?"
+ constitution.60.d: "The Constitution restricts our Nobles power, they claim to have the right to make their own laws and do as they please on their own lands."
+ constitution.60.a: "Well of course you have those rights."
+ constitution.60.b: "What part of universal law do you not understand?"
+ 
+ nueva_planta.61.t: "Was it Worth it?"
+ nueva_planta.61.d: "
+ nueva_planta.61.a
+ nueva_planta.61.b
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

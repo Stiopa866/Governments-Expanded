@@ -3009,7 +3009,8 @@ country_event = {
 	option = {
 		name = constitution.60.a
 		
-		add_legitimacy = -10
+		add_legitimacy = -25
+		add_prestige = -10
 	}
 	
 	option = {
