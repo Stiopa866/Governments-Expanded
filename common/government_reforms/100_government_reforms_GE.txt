@@ -229,8 +229,9 @@ consulate_of_the_sea = {
 		naval_forcelimit_modifier = 0.20
 		max_absolutism = -20
 	}
-	trade_city_reform = trading_city
 	can_use_trade_post = yes
+	can_form_trade_league = yes
+	trade_city_reform = trading_city
 }
 
 crown_of_saint_wenceslaus = {
