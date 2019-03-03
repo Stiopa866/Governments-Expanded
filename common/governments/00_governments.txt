@@ -76,7 +76,6 @@ monarchy = {
 				trade_princes_reform
 				dhimmi_nobles_reform
 				council_of_sheikhs_reform
-				nieszawa_privileges_reform
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				blood_tax_reform

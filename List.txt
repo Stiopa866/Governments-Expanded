@@ -1,12 +1,12 @@
 1.1
 
-crown_of_saint_wenceslaus; BOH
+crown_of_saint_wenceslaus; BOH		#Fixed
 state_church_reform; PROTESTANT/REFORMED
 metropolian_bishop_reform; ORTHODOX
-Muslim Piety; Muslim
-Muslim Legal; Muslim
+Muslim Piety; Muslim		#Removed
+Muslim Legal; Muslim		#Removed
 
-nieszawa; POL
+nieszawa; POL		#Removed
 
 Oprichnina; RUS
 Academy of Science; RUS
