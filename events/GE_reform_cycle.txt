@@ -125,7 +125,7 @@ country_event = {
 		}
 		else = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY
-		
+		}
 		trigger = {
 			OR = {
 				has_reform = theocratic_bureacrats_reform
@@ -1670,7 +1670,7 @@ country_event = {
 		name = theocrat.30.b
 		
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -10
 		}
 		add_years_of_income = -0.05
@@ -1864,7 +1864,7 @@ country_event = {
 		add_fervor = 20
 		add_church_power = 20
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = 5
 		}
 	}
@@ -1898,7 +1898,7 @@ country_event = {
 		name = administrative_clergy.34.b
 		
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -10
 		}
 	}
@@ -2133,7 +2133,7 @@ country_event = {
 	option = {
 		name = integrate_bankers.40.a
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -10
 		}
 	}
@@ -2350,7 +2350,7 @@ country_event = {
 		}
 		highlight = yes
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -10
 		}
 	}
@@ -2489,7 +2489,7 @@ country_event = {
 	option = {
 		name = royal_decree.48.a
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = -15
 		}
 		add_absolutism = 5
@@ -2595,7 +2595,7 @@ country_event = {
 			loyalty = 5
 		}
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = 5
 		}
 		add_estate_loyalty = {

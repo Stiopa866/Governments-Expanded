@@ -237,9 +237,9 @@
  
  AVAILABLE_BECAUSE_OF_INNOVATIVENESS: "Available due to more then §Y50§ Innovativeness."
  AVAILABLE_BECAUSE_OF_PRESTIGE: "Available due to more then §Y50§ Prestige."
- AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_BISHOP: "Available due to §YMetropolian Bishops§ and §YAdministrative Clergy§."
- AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_STATE: "Available due to §YState Church§ and §YAdministrative Clergy§."
- AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_POPE: "Available due to §YPapal Embassy§ and §YAdministrative Clergy§."
+ AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_BISHOP: "Available due to §YMetropolian Bishops§  and §YAdministrative Clergy§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_STATE: "Available due to §YState Church§  and §YAdministrative Clergy§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_POPE: "Available due to §YPapal Embassy§  and §YAdministrative Clergy§ ."
  
  AVAILABLE_BECAUSE_OF_REFORM_OF_NOBLE_BEARING: "Available due to §YNobles of the Robe§."
  AVAILABLE_BECAUSE_OF_REFORM_KOPRULU_DYNASTY: "Available due to the §YKoprulu Dynasty§."
