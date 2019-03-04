@@ -503,7 +503,7 @@ country_event = {
 		remove_government_reform = quash_noble_power_reform
 		remove_government_reform = lithuania_law_reform
 		remove_government_reform = portuguese_cortes_reform
-		reduce_reform_progress_small_effect
+		reduce_reform_progress_small_effect = yes
 	}
 }
 
