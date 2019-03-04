@@ -2033,11 +2033,13 @@ country_event = {
 			duration = 3650
 		}
 		random_list = {
-			75 = 0
-			25 = define_advisor = {
-				type = trader
-				skill = 3
-				age = 45
+			75 = { 0 }
+			25 = { 
+				define_advisor = {
+					type = trader
+					skill = 3
+					age = 45
+				}
 			}
 		}
 	}
