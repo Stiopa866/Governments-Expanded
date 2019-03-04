@@ -1,7 +1,12 @@
 american_government = {
 	icon = "parliament"
 	allow_normal_conversion = yes
-	potential = { }
+	potential = { 
+		OR = {
+			have_had_reform = american_government
+			tag = USA
+		}
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
@@ -106,6 +111,11 @@ stadholder_reform = {
 	icon = Stadholder
 	allow_normal_conversion = yes
 	potential = {}
+	trigger = { 
+		NOT = {
+			has_reform = dutch_republic
+		}
+	}
 	modifiers = {
 		republican_tradition = -0.5
 		max_absolutism = 10
