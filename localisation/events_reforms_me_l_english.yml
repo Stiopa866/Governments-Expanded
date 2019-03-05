@@ -313,9 +313,23 @@
  
  nueva_planta.61.t: "Was it Worth it?"
  nueva_planta.61.d: "
- nueva_planta.61.a
- nueva_planta.61.b
+ nueva_planta.61.a: "
+ nueva_planta.61.b: "
  
+ nueva_planta.62.t: "Aragonese Resistance"
+ nueva_planta.62.d: "
+ nueva_planta.62.a: "
+ nueva_planta.62.b: "
+ 
+ nueva_planta.63.t: "Valencian Resistance"
+ nueva_planta.63.d: "
+ nueva_planta.63.a: "
+ nueva_planta.63.b: "
+ 
+ nueva_planta.64.t: "Catalonian Resistance"
+ nueva_planta.64.d: "The Principality of Catalonia has long been a part of the Spanish monarchy, however, its always been a bit of an odd state. With its people having their own legal and cultural systems. The Nueva Planta reforms will remove these systems and their privileges, there is a bit of resistance."
+ nueva_planta.64.a: "My country, my rules."
+ nueva_planta.64.b: "We can not risk a major uprising."
  
  
  

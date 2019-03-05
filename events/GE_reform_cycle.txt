@@ -1859,7 +1859,7 @@ country_event = {
 		
 		highlight = yes
 		
-		add_patriarch_authority = 5
+		add_patriarch_authority = 0.05
 		add_papal_influence = 10
 		add_fervor = 20
 		add_church_power = 20
@@ -2032,15 +2032,10 @@ country_event = {
 			name = "Meritocrac_recruitment"
 			duration = 3650
 		}
-		random_list = {
-			75 = { 0 }
-			25 = { 
-				define_advisor = {
-					type = trader
-					skill = 3
-					age = 45
-				}
-			}
+		define_advisor = {
+			type = trader
+			skill = 3
+			age = 45
 		}
 	}
 }

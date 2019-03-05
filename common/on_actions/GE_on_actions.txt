@@ -23,6 +23,7 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.20
 		100 = GE_reform_cycle.21 #order_of_the_swan
 		100 = GE_reform_cycle.22
+		#T3
 		100 = GE_reform_cycle.23 #centralized
 		100 = GE_reform_cycle.24
 		100 = GE_reform_cycle.25 #decentralized
@@ -33,6 +34,7 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.30
 		100 = GE_reform_cycle.31 #casa_de_india
 		100 = GE_reform_cycle.32
+		#T4
 		100 = GE_reform_cycle.33 #administrative_clergy
 		100 = GE_reform_cycle.34
 		100 = GE_reform_cycle.35 #administrative_nobles
@@ -47,12 +49,15 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.44
 		100 = GE_reform_cycle.45 #academy_of_science
 		100 = GE_reform_cycle.46 
+		#T5
 		100 = GE_reform_cycle.47 #royal_decree
 		100 = GE_reform_cycle.48
 		100 = GE_reform_cycle.49 #aristocratic_court
 		100 = GE_reform_cycle.50
 		100 = GE_reform_cycle.51 #general_estates
 		100 = GE_reform_cycle.52
+		#T6
+		
 		200 = 0
 	}
 }
