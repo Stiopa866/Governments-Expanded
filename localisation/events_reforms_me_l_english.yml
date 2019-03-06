@@ -312,19 +312,18 @@
  constitution.60.b: "What part of universal law do you not understand?"
  
  nueva_planta.61.t: "Was it Worth it?"
- nueva_planta.61.d: "
- nueva_planta.61.a: "
- nueva_planta.61.b: "
+ nueva_planta.61.d: "The Nueva Planta Decrees have been succesfully integrated in the Spanish Empire, now, let us reap the rewards."
+ nueva_planta.61.a: "Peace be upon us."
  
  nueva_planta.62.t: "Aragonese Resistance"
- nueva_planta.62.d: "
- nueva_planta.62.a: "
- nueva_planta.62.b: "
+ nueva_planta.62.d: "The Kingdom of Aragon was once a major power in iberia, after the Iberian Wedding and the colonization of the Americas, its been in decline. Let us incorporate it fully under the spanish crown."
+ nueva_planta.62.a: "Unity at last."
+ nueva_planta.62.b: "We can not risk a major uprising."
  
  nueva_planta.63.t: "Valencian Resistance"
- nueva_planta.63.d: "
- nueva_planta.63.a: "
- nueva_planta.63.b: "
+ nueva_planta.63.d: "The Kingdom of Valencia has been wrecked by plague and civil unrest, now, let us use the division and chaos to integrate them fully."
+ nueva_planta.63.a: "Heir to Rodrigo de Vivar."
+ nueva_planta.63.b: "We can not risk a major uprising."
  
  nueva_planta.64.t: "Catalonian Resistance"
  nueva_planta.64.d: "The Principality of Catalonia has long been a part of the Spanish monarchy, however, its always been a bit of an odd state. With its people having their own legal and cultural systems. The Nueva Planta reforms will remove these systems and their privileges, there is a bit of resistance."

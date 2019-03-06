@@ -3088,7 +3088,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = noble_rebels 
-				size = 2
+				size = 3
 			}
 		}
 		set_country_flag = Pacified_Aragon
@@ -3141,7 +3141,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = noble_rebels 
-				size = 2
+				size = 3
 			}
 		}
 		set_country_flag = Pacified_Valencia
@@ -3194,7 +3194,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = noble_rebels 
-				size = 2
+				size = 3
 			}
 		}
 		set_country_flag = Pacified_Catalonia
