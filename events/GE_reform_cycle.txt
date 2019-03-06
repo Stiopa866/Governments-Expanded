@@ -2381,7 +2381,7 @@ country_event = {
 	}
 	option = {
 		name = academy_of_science.45.b
-		add_reform_progress_big_effect
+		add_reform_progress_small_effect = yes
 	}
 }
 
@@ -2425,7 +2425,7 @@ country_event = {
 			innovativeness = 50
 		}
 		highlight = yes
-		add_innovativeness_big_effect
+		add_innovativeness_big_effect = yes
 		add_country_modifier = {
 			name = "New_Tech"
 			duration = 3650
@@ -2461,7 +2461,7 @@ country_event = {
 	}
 	option = {
 		name = royal_decree.47.b
-		add_reform_progress_small_effect
+		add_reform_progress_small_effect = yes
 	}
 }
 
