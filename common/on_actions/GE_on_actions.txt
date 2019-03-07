@@ -57,7 +57,18 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.51 #general_estates
 		100 = GE_reform_cycle.52
 		#T6
-		
+		100 = GE_reform_cycle.53 #Letat
+		100 = GE_reform_cycle.54 
+		100 = GE_reform_cycle.55 #Regional_representation
+		100 = GE_reform_cycle.56 
+		100 = GE_reform_cycle.57 #Freedom_of_religion
+		100 = GE_reform_cycle.58 
+		100 = GE_reform_cycle.59 #Constitution
+		100 = GE_reform_cycle.60
+		100 = GE_reform_cycle.61 #Nueva_planta
+		1000 = GE_reform_cycle.62
+		1000 = GE_reform_cycle.63
+		1000 = GE_reform_cycle.64
 		200 = 0
 	}
 }
