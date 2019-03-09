@@ -154,3 +154,32 @@ Fair_Laws = {
 	state_maintenance_modifier = -0.10
 	stability_cost_modifier = -0.10
 }
+Nueva_Planta_Decree = {
+	global_trade_goods_size_modifier = 0.10
+	global_tax_modifier = 0.15
+}
+Noble_Host = {
+	cavalry_power = 0.10
+}
+Cannon_Fodder = {
+	infantry_power = -0.05
+}
+Garrison_Duty = {
+	defensiveness = 0.05
+}
+Quality_Recruits = {
+	mercenary_discipline = 0.025
+}
+Excellent_Connections = {
+	mercenary_cost = -0.10
+}
+Additional_Payments = {
+	merc_maintenance_modifier = 0.15
+}
+Well_Trained = {
+	leader_land_manuever = 1
+}
+Aristocrat_Officers = {
+	discipline = -0.025
+}
+

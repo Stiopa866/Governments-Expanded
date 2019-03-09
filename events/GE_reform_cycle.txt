@@ -3209,3 +3209,333 @@ country_event = {
 		clr_country_flag = Pacified_Catalonia
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.65
+	title = feudal_levy.65.t
+	desc = feudal_levy.65.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = feudal_levies_reform
+			has_reform = turkish_iqta_reform
+			has_reform = imperial_circles_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = feudal_levy.65.a
+		
+		add_country_modifier = {
+			name = "Noble_Host"
+			duration = 3650
+		}
+
+	}
+	
+	option = { 
+		name = feudal_levy.65.b
+		
+		add_prestige = 10
+
+	}
+	
+	option = { 
+		name = feudal_levy.65.c
+		
+		if = {
+			limit = {
+				has_reform = enforce_privileges_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_ENFORCE_PRIVILEGES
+		}
+		else_if = {
+			limit = {
+				has_reform = growth_signoria_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_GROWTH_SIGNORIA
+		}
+		else_if = {
+			limit = {
+				has_reform = akritai_privileges_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_AKRITAI_PRIVILEGES
+		}
+		else_if = {
+			limit = {
+				has_reform = council_of_sheikhs_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_COUNCIL_OF_SHEIKHS
+		}
+		else_if = {
+			limit = {
+				has_reform = blood_tax_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
+		}
+		trigger = {
+			OR = {
+				has_reform = enforce_privileges_reform
+				has_reform = growth_signoria_reform
+				has_reform = akritai_privileges_reform
+				has_reform = council_of_sheikhs_reform
+				has_reform = blood_tax_reform
+			}	
+		}
+		
+		highlight = yes
+		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.66
+	title = feudal_levy.66.t
+	desc = feudal_levy.66.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = feudal_levies_reform
+			has_reform = turkish_iqta_reform
+			has_reform = imperial_circles_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = feudal_levy.66.a
+		
+		add_country_modifier = {
+			name = "Cannon_Fodder"
+			duration = 3650
+		}
+
+	}
+	
+	option = { 
+		name = feudal_levy.66.b
+		
+		add_yearly_manpower = -0.1
+
+	}
+
+	option = {
+		name = feudal_levy.66.c
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
+		
+		trigger = {
+			has_reform = regional_forts_reform
+		}
+		
+		highlight = yes
+		
+		add_country_modifier = {
+			name = "Garrison_Duty"
+			duration = 3650
+		}
+
+	}	
+	
+}
+
+country_event = {
+	id = GE_reform_cycle.67
+	title = mercenary_corps.67.t
+	desc = mercenary_corps.67.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = mercenary_corps_reform
+			has_reform = italian_mercenaries_reform
+			has_reform = tatar_mercenaries_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = mercenary_corps.67.a
+		
+		add_country_modifier = {
+			name = "Quality_Recruits"
+			duration = 3650
+		}
+
+	}
+	
+	option = { 
+		name = mercenary_corps.67.b
+		
+		add_country_modifier = {
+			name = "Excellent_Connections"
+			duration = 9125
+		}
+
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.68
+	title = mercenary_corps.68.t
+	desc = mercenary_corps.68.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = mercenary_corps_reform
+			has_reform = italian_mercenaries_reform
+			has_reform = tatar_mercenaries_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = mercenary_corps.68.a
+		
+		add_country_modifier = {
+			name = "Additional_Payments"
+			duration = 3650
+		}
+
+	}
+	
+	option = { 
+		name = mercenary_corps.68.b
+		
+		add_mil_power = -50
+
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.69
+	title = professional_army.69.t
+	desc = professional_army.69.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = professional_army_reform
+			has_reform = les_vieux_corps_reform
+			has_reform = portugese_marines_reform
+			has_reform = foreign_formation_regiments_reform
+			has_reform = general_war_commissariat_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = professional_army.69.a
+		
+		add_country_modifier = {
+			name = "Well_Trained"
+			duration = 3650
+		}
+
+	}
+	
+	option = { 
+		name = professional_army.69.b
+		
+		add_army_professionalism = 2
+
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.70
+	title = professional_army.70.t
+	desc = professional_army.70.d
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = professional_army_reform
+			has_reform = les_vieux_corps_reform
+			has_reform = portugese_marines_reform
+			has_reform = foreign_formation_regiments_reform
+			has_reform = general_war_commissariat_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = professional_army.70.a
+		
+		add_country_modifier = {
+			name = "Aristocrat_Officers"
+			duration = 3650
+		}
+		add_army_tradition = -10
+
+	}
+	
+	option = {
+		name = professional_army.70.b
+		
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels 
+				size = 2
+			}
+		}
+	}
+	
+	option = {
+		name = professional_army.70.c
+		
+		trigger = {
+			OR = {
+				has_reform = quash_noble_power_reform
+				has_reform = lithuania_law_reform
+				has_reform = portuguese_cortes_reform
+			}
+		}
+		
+		highlight = yes
+		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}

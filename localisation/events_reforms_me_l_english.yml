@@ -330,13 +330,38 @@
  nueva_planta.64.a: "My country, my rules."
  nueva_planta.64.b: "We can not risk a major uprising."
  
+ feudal_levy.65.t: "The Cavalry Arrives"
+ feudal_levy.65.d: "A new unit arrived at our rallying point, a glorious host of armor clad horsemen has shown up. It's noble leader gracefully dismounted and kneeled in fron of our $MONARCH$."
+ feudal_levy.65.a: "Rise, Knight of $COUNTRY$."
+ feudal_levy.65.b: "Service worthy of me."
+ feudal_levy.65.c: "A Noble worthy of privileges."
  
+ feudal_levy.66.t: "Unwashed Peasants"
+ feudal_levy.66.d: "One of our Lords has shown up for our military with regiments of barely trained peasants instead of the expected battle ready forces. A mob of men is as much a army as a pile of building materials is a house."
+ feudal_levy.66.a: "Soldiers are soldiers."
+ feudal_levy.66.b: "Just... send them home."
+ feudal_levy.66.c: "I guess they are suited for garrison duty?"
  
+ mercenary_corps.67.t: "Veteran Captain"
+ mercenary_corps.67.d: "A veteran mercenary captain has recently been hired by one of our generals in order to improve our military and our synergy between the native fighting styles of our mercenaries and our homegrown troops."
+ mercenary_corps.67.a: "Send him to improve discipline."
+ mercenary_corps.67.b: "Put him in charge of the mercenary payments."
  
+ mercenary_corps.68.t: "Black Mail"
+ mercenary_corps.68.d: "We recieved a blackened letter from one of our mercenary captains, demanding additional payments and threatening to leave with his regiment unless he recieves said payment."
+ mercenary_corps.68.a: "Increase his wages."
+ mercenary_corps.68.b: "Looks like hes gonna have an accident."
  
+ professional_army.69.t: "Foreign Expert"
+ professional_army.69.d: "A foreign military teacher has been recruited to revolutionize our officer training, what direction should we take the training into?"
+ professional_army.69.a: "Add additional courses for the most promising students."
+ professional_army.69.b: "Open up the academy for the lower officers."
  
- 
- 
+ professional_army.70.t: "Ancient Office"
+ professional_army.70.d: "Several nobles are complaining about their reduced influence over the nations army, and that their levies are less relevant then the king's own professional army."
+ professional_army.70.a: "Grant them some posts to keep them happy."
+ professional_army.70.b: "Come at me bruh."
+ professional_army.70.c: "Wait, what makes you think you still had those rights?"
  
  
  
