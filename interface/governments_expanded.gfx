@@ -203,4 +203,44 @@ spriteTypes = {
 		name = "government_reform_new_order_regiments"
 		texturefile = "gfx//interface//government_reform_icons//new_order_regiments.dds"
 	}
+	spriteType = {
+		name = "government_reform_kongolese_king"
+		texturefile = "gfx//interface//government_reform_icons//kongolese_king.dds"
+	}
+	spriteType = {
+		name = "government_reform_kongolese_cross"
+		texturefile = "gfx//interface//government_reform_icons//kongolese_cross.dds"
+	}
+	spriteType = {
+		name = "government_reform_kongolese_king_2"
+		texturefile = "gfx//interface//government_reform_icons//kongolese_king_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_iranian_bureaucracy"
+		texturefile = "gfx//interface//government_reform_icons//iranian_bureaucracy.dds"
+	}
+	spriteType = {
+		name = "government_reform_tatar_slave_raid"
+		texturefile = "gfx//interface//government_reform_icons//tatar_slave_raid.dds"
+	}
+	spriteType = {
+		name = "government_reform_steppe_buddhists"
+		texturefile = "gfx//interface//government_reform_icons//steppe_buddhists.dds"
+	}
+	spriteType = {
+		name = "government_reform_steppe_shepherds"
+		texturefile = "gfx//interface//government_reform_icons//steppe_shepherds.dds"
+	}
+	spriteType = {
+		name = "government_reform_conseil_du_roi"
+		texturefile = "gfx//interface//government_reform_icons//conseil_du_roi.dds"
+	}
+	spriteType = {
+		name = "government_reform_frederick"
+		texturefile = "gfx//interface//government_reform_icons//frederick.dds"
+	}
+	spriteType = {
+		name = "government_reform_blood_tax"
+		texturefile = "gfx//interface//government_reform_icons//blood_tax.dds"
+	}
 }

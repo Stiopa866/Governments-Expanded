@@ -127,7 +127,7 @@ New_Tech = {
 Absolute_Success = {
 	max_absolutism = 5
 }
-Absolute_Failture = {
+Absolute_Failure = {
 	global_tax_modifier = -0.10
 }
 Jingoist_Coalition = {

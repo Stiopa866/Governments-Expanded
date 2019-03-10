@@ -573,7 +573,7 @@ order_of_the_swan_reform = {
 }
 
 blood_tax_reform = {
-	icon = soldiers
+	icon = blood_tax
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = french
@@ -870,7 +870,8 @@ koprulu_dynasty_reform = {
 }
 
 fredrickan_reforms_reform = {
-	icon = king
+	icon = frederick
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			tag = PRU
@@ -889,8 +890,8 @@ fredrickan_reforms_reform = {
 }
 
 conseil_du_roi_reform = {
-	icon = judge
-	allow_normal_conversion = no
+	icon = conseil_du_roi
+	allow_normal_conversion = yes
 	potential = { 
 		tag = FRA
 	}

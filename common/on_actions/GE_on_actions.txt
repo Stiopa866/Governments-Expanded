@@ -70,11 +70,11 @@ on_five_year_pulse_4 = {
 		1000 = GE_reform_cycle.63
 		1000 = GE_reform_cycle.64
 		#T3.5
-		100 = GE_reform_cycle.65
+		100 = GE_reform_cycle.65 #Feudal_levy
 		100 = GE_reform_cycle.66
-		100 = GE_reform_cycle.67
+		100 = GE_reform_cycle.67 #Mercenary_corps
 		100 = GE_reform_cycle.68
-		100 = GE_reform_cycle.69
+		100 = GE_reform_cycle.69 #Professional_army
 		100 = GE_reform_cycle.70
 		#T7
 		400 = 0

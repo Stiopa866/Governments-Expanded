@@ -173,7 +173,7 @@ sheikhdom_reform = {
 }
 
 royal_society_reform = {
-	icon = tribal_council
+	icon = kongolese_king
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = kongo_group
@@ -188,7 +188,7 @@ royal_society_reform = {
 }
 
 adoption_of_christianity_reform = {
-	icon = tribal_council
+	icon = kongolese_cross
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = kongo_group
@@ -200,7 +200,7 @@ adoption_of_christianity_reform = {
 }
 
 unite_the_royal_houses_reform = {
-	icon = tribal_council
+	icon = kongolese_king_2
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = kongo_group
@@ -213,7 +213,7 @@ unite_the_royal_houses_reform = {
 }
 
 iranian_bureacracy_reform = {
-	icon = tribal_council
+	icon = iranian_bureaucracy
 	allow_normal_conversion = yes
 	potential = {
 		num_of_owned_provinces_with = {
@@ -229,7 +229,7 @@ iranian_bureacracy_reform = {
 }
 
 slave_raids_reform = {
-	icon = tribal_council
+	icon = tatar_slave_raid
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = tartar
@@ -241,15 +241,16 @@ slave_raids_reform = {
 	}
 	modifiers = {
 		production_efficiency = 0.05
+		global_trade_goods_size_modifier = 0.10
 	}
-	custom_attributes = {
-		enables_slave_raids = yes
-	}
+	#custom_attributes = {
+	#	enables_slave_raids = yes
+	#}
 	ai_chance = { factor = 2 }
 }
 
 great_code_of_nomads = {
-	icon = tribal_council
+	icon = steppe_buddhists
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = steppe_horde
@@ -263,7 +264,7 @@ great_code_of_nomads = {
 }
 
 herders_of_the_steppe = {
-	icon = tribal_council
+	icon = steppe_shepherds
 	allow_normal_conversion = yes
 	potential = {
 		OR = {

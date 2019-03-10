@@ -288,7 +288,7 @@ country_event = {
 	id = GE_reform_cycle.7
 	title = promote_nobles.7.t
 	desc = promote_nobles.7.d
-	picture = ADVISOR_eventPicture
+	picture = TOURNAMENT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -367,7 +367,7 @@ country_event = {
 	id = GE_reform_cycle.8
 	title = promote_nobles.8.t
 	desc = promote_nobles.8.d
-	picture = ADVISOR_eventPicture
+	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -426,7 +426,7 @@ country_event = {
 	id = GE_reform_cycle.9
 	title = curtail_nobles.9.t
 	desc = curtail_nobles.9.d
-	picture = ADVISOR_eventPicture
+	picture = COURT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -462,7 +462,7 @@ country_event = {
 	id = GE_reform_cycle.10
 	title = curtail_nobles.10.t
 	desc = curtail_nobles.10.d
-	picture = ADVISOR_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	trigger = {
 		OR = {
@@ -511,7 +511,7 @@ country_event = {
 	id = GE_reform_cycle.11
 	title = guild_dominance.11.t
 	desc = guild_dominance.11.d
-	picture = ADVISOR_eventPicture
+	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
 		OR = {
@@ -601,7 +601,7 @@ country_event = {
 	id = GE_reform_cycle.12
 	title = guild_dominance.12.t
 	desc = guild_dominance.12.d
-	picture = ADVISOR_eventPicture
+	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
 		OR = {
@@ -654,7 +654,7 @@ country_event = {
 	id = GE_reform_cycle.13
 	title = trade_princes.13.t
 	desc = trade_princes.13.d
-	picture = ADVISOR_eventPicture
+	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
 		OR = {
@@ -717,7 +717,7 @@ country_event = {
 	id = GE_reform_cycle.14
 	title = trade_princes.14.t
 	desc = trade_princes.14.d
-	picture = ADVISOR_eventPicture
+	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
 		OR = {
@@ -753,7 +753,7 @@ country_event = {
 	id = GE_reform_cycle.15
 	title = state_church.15.t
 	desc = state_church.15.d
-	picture = ADVISOR_eventPicture
+	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -793,7 +793,7 @@ country_event = {
 	id = GE_reform_cycle.16
 	title = state_church.16.t
 	desc = state_church.16.d
-	picture = ADVISOR_eventPicture
+	picture = REFORM_eventPicture
 	
 	trigger = {
 		OR = {
@@ -847,7 +847,7 @@ country_event = {
 	id = GE_reform_cycle.17
 	title = dhimmi_nobles.17.t
 	desc = dhimmi_nobles.17.d
-	picture = ADVISOR_eventPicture
+	picture = FARMING_eventPicture
 	
 	trigger = {
 		OR = {
@@ -921,7 +921,7 @@ country_event = {
 	id = GE_reform_cycle.18
 	title = dhimmi_nobles.18.t
 	desc = dhimmi_nobles.18.d
-	picture = ADVISOR_eventPicture
+	picture = FAMINE_eventPicture
 	
 	trigger = {
 		OR = {
@@ -960,7 +960,7 @@ country_event = {
 	id = GE_reform_cycle.19
 	title = muscovite_manorialism.19.t
 	desc = muscovite_manorialism.19.d
-	picture = ADVISOR_eventPicture
+	picture = FORT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1027,7 +1027,7 @@ country_event = {
 	id = GE_reform_cycle.20
 	title = muscovite_manorialism.20.t
 	desc = muscovite_manorialism.20.d
-	picture = ADVISOR_eventPicture
+	picture = FAMINE_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1065,7 +1065,7 @@ country_event = {
 	id = GE_reform_cycle.21
 	title = order_of_the_swan.21.t
 	desc = order_of_the_swan.21.d
-	picture = ADVISOR_eventPicture
+	picture = TOURNAMENT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1102,7 +1102,7 @@ country_event = {
 	id = GE_reform_cycle.22
 	title = order_of_the_swan.22.t
 	desc = order_of_the_swan.22.d
-	picture = ADVISOR_eventPicture
+	picture = BANKRUPTCY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1138,7 +1138,7 @@ country_event = {
 	id = GE_reform_cycle.23
 	title = centralized.23.t
 	desc = centralized.23.d
-	picture = ADVISOR_eventPicture
+	picture = COURT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1178,7 +1178,7 @@ country_event = {
 	id = GE_reform_cycle.24
 	title = centralized.24.t
 	desc = centralized.24.d
-	picture = ADVISOR_eventPicture
+	picture = LIBERUM_VETO_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1346,7 +1346,7 @@ country_event = {
 	id = GE_reform_cycle.25
 	title = decentralized.25.t
 	desc = decentralized.25.d
-	picture = ADVISOR_eventPicture
+	picture = CULTURE_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1402,7 +1402,7 @@ country_event = {
 	id = GE_reform_cycle.26
 	title = decentralized.26.t
 	desc = decentralized.26.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1459,7 +1459,7 @@ country_event = {
 	id = GE_reform_cycle.27
 	title = regional_fort.27.t
 	desc = regional_fort.27.d
-	picture = ADVISOR_eventPicture
+	picture = FORT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1521,7 +1521,7 @@ country_event = {
 	id = GE_reform_cycle.28
 	title = regional_fort.28.t
 	desc = regional_fort.28.d
-	picture = ADVISOR_eventPicture
+	picture = FORT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1564,7 +1564,7 @@ country_event = {
 	id = GE_reform_cycle.29
 	title = theocrat.29.t
 	desc = theocrat.29.d
-	picture = ADVISOR_eventPicture
+	picture = RELIGION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1638,7 +1638,7 @@ country_event = {
 	id = GE_reform_cycle.30
 	title = theocrat.30.t
 	desc = theocrat.30.d
-	picture = ADVISOR_eventPicture
+	picture = RELIGION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1681,7 +1681,7 @@ country_event = {
 	id = GE_reform_cycle.31
 	title = casa_de_india.31.t
 	desc = casa_de_india.31.d
-	picture = ADVISOR_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1746,7 +1746,7 @@ country_event = {
 	id = GE_reform_cycle.32
 	title = casa_de_india.32.t
 	desc = casa_de_india.32.d
-	picture = ADVISOR_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1788,7 +1788,7 @@ country_event = {
 	id = GE_reform_cycle.33
 	title = administrative_clergy.33.t
 	desc = administrative_clergy.33.d
-	picture = ADVISOR_eventPicture
+	picture = PRAYING_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1874,7 +1874,7 @@ country_event = {
 	id = GE_reform_cycle.34
 	title = administrative_clergy.34.t
 	desc = administrative_clergy.34.d
-	picture = ADVISOR_eventPicture
+	picture = PRAYING_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1956,7 +1956,7 @@ country_event = {
 	id = GE_reform_cycle.36
 	title = administrative_nobles.36.t
 	desc = administrative_nobles.36.d
-	picture = ADVISOR_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -1994,7 +1994,7 @@ country_event = {
 	id = GE_reform_cycle.37
 	title = administrative_civilians.37.t
 	desc = administrative_civilians.37.d
-	picture = ADVISOR_eventPicture
+	picture = WESTERNISATION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2044,7 +2044,7 @@ country_event = {
 	id = GE_reform_cycle.38
 	title = administrative_civilians.38.t
 	desc = administrative_civilians.38.d
-	picture = ADVISOR_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2078,7 +2078,7 @@ country_event = {
 	id = GE_reform_cycle.39
 	title = integrate_bankers.39.t
 	desc = integrate_bankers.39.d
-	picture = ADVISOR_eventPicture
+	picture = OVEREXTENSION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2111,7 +2111,7 @@ country_event = {
 	id = GE_reform_cycle.40
 	title = integrate_bankers.40.t
 	desc = integrate_bankers.40.d
-	picture = ADVISOR_eventPicture
+	picture = CORRUPTION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2148,7 +2148,7 @@ country_event = {
 	id = GE_reform_cycle.41
 	title = colonial_gov.41.t
 	desc = colonial_gov.41.d
-	picture = ADVISOR_eventPicture
+	picture = COLONIZATION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2215,7 +2215,7 @@ country_event = {
 	id = GE_reform_cycle.42
 	title = colonial_gov.42.t
 	desc = colonial_gov.42.d
-	picture = ADVISOR_eventPicture
+	picture = COLONIZATION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2247,7 +2247,7 @@ country_event = {
 	id = GE_reform_cycle.43
 	title = fredrickan_reforms.43.t
 	desc = fredrickan_reforms.43.d
-	picture = ADVISOR_eventPicture
+	picture = ECONOMY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2283,7 +2283,7 @@ country_event = {
 	id = GE_reform_cycle.44
 	title = fredrickan_reforms.44.t
 	desc = fredrickan_reforms.44.d
-	picture = ADVISOR_eventPicture
+	picture = ECONOMY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2357,7 +2357,7 @@ country_event = {
 	id = GE_reform_cycle.45
 	title = academy_of_science.45.t
 	desc = academy_of_science.45.d
-	picture = ADVISOR_eventPicture
+	picture = UNIVERSITY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2389,7 +2389,7 @@ country_event = {
 	id = GE_reform_cycle.46
 	title = academy_of_science.46.t
 	desc = academy_of_science.46.d
-	picture = ADVISOR_eventPicture
+	picture = UNIVERSITY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2437,7 +2437,7 @@ country_event = {
 	id = GE_reform_cycle.47
 	title = royal_decree.47.t
 	desc = royal_decree.47.d
-	picture = ADVISOR_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2469,7 +2469,7 @@ country_event = {
 	id = GE_reform_cycle.48
 	title = royal_decree.48.t
 	desc = royal_decree.48.d
-	picture = ADVISOR_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2494,7 +2494,7 @@ country_event = {
 	option = {
 		name = royal_decree.48.b
 		add_country_modifier = {
-			name = "Absolute_Failture"
+			name = "Absolute_Failure"
 			duration = 3650
 		}
 		add_absolutism = -5
@@ -2505,7 +2505,7 @@ country_event = {
 	id = GE_reform_cycle.49
 	title = aristocratic_court.49.t
 	desc = aristocratic_court.49.d
-	picture = ADVISOR_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2540,7 +2540,7 @@ country_event = {
 	id = GE_reform_cycle.50
 	title = aristocratic_court.50.t
 	desc = aristocratic_court.50.d
-	picture = ADVISOR_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2571,7 +2571,7 @@ country_event = {
 	id = GE_reform_cycle.51
 	title = general_estates.51.t
 	desc = general_estates.51.d
-	picture = ADVISOR_eventPicture
+	picture = STREET_SPEECH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2613,7 +2613,7 @@ country_event = {
 	id = GE_reform_cycle.52
 	title = general_estates.52.t
 	desc = general_estates.52.d
-	picture = ADVISOR_eventPicture
+	picture = STREET_SPEECH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2656,7 +2656,7 @@ country_event = {
 	id = GE_reform_cycle.53
 	title = letat.53.t
 	desc = letat.53.d
-	picture = ADVISOR_eventPicture
+	picture = PAINTER_ARTIST_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2709,7 +2709,7 @@ country_event = {
 	id = GE_reform_cycle.54
 	title = letat.54.t
 	desc = letat.54.d
-	picture = ADVISOR_eventPicture
+	picture = PAINTER_ARTIST_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2791,7 +2791,7 @@ country_event = {
 	id = GE_reform_cycle.55
 	title = regional_representation.55.t
 	desc = regional_representation.55.d
-	picture = ADVISOR_eventPicture
+	picture = COURT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2823,7 +2823,7 @@ country_event = {
 	id = GE_reform_cycle.56
 	title = regional_representation.56.t
 	desc = regional_representation.56.d
-	picture = ADVISOR_eventPicture
+	picture = COURT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2869,7 +2869,7 @@ country_event = {
 	id = GE_reform_cycle.57
 	title = freedom_of_religion.57.t
 	desc = freedom_of_religion.57.d
-	picture = ADVISOR_eventPicture
+	picture = REFORM_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2910,7 +2910,7 @@ country_event = {
 	id = GE_reform_cycle.58
 	title = freedom_of_religion.58.t
 	desc = freedom_of_religion.58.d
-	picture = ADVISOR_eventPicture
+	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2961,7 +2961,7 @@ country_event = {
 	id = GE_reform_cycle.59
 	title = constitution.59.t
 	desc = constitution.59.d
-	picture = ADVISOR_eventPicture
+	picture = BIG_BOOK_eventPicture
 	
 	trigger = {
 		OR = {
@@ -2989,7 +2989,7 @@ country_event = {
 	id = GE_reform_cycle.60
 	title = constitution.60.t
 	desc = constitution.60.d
-	picture = ADVISOR_eventPicture
+	picture = BIG_BOOK_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3024,7 +3024,7 @@ country_event = {
 	id = GE_reform_cycle.61
 	title = nueva_planta.61.t
 	desc = nueva_planta.61.d
-	picture = ADVISOR_eventPicture
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3055,7 +3055,7 @@ country_event = {
 	id = GE_reform_cycle.62
 	title = nueva_planta.62.t
 	desc = nueva_planta.62.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3108,7 +3108,7 @@ country_event = {
 	id = GE_reform_cycle.63
 	title = nueva_planta.63.t
 	desc = nueva_planta.63.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3161,7 +3161,7 @@ country_event = {
 	id = GE_reform_cycle.64
 	title = nueva_planta.64.t
 	desc = nueva_planta.64.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3214,7 +3214,7 @@ country_event = {
 	id = GE_reform_cycle.65
 	title = feudal_levy.65.t
 	desc = feudal_levy.65.d
-	picture = ADVISOR_eventPicture
+	picture = TOURNAMENT_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3304,7 +3304,7 @@ country_event = {
 	id = GE_reform_cycle.66
 	title = feudal_levy.66.t
 	desc = feudal_levy.66.d
-	picture = ADVISOR_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3361,7 +3361,7 @@ country_event = {
 	id = GE_reform_cycle.67
 	title = mercenary_corps.67.t
 	desc = mercenary_corps.67.d
-	picture = ADVISOR_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3402,7 +3402,7 @@ country_event = {
 	id = GE_reform_cycle.68
 	title = mercenary_corps.68.t
 	desc = mercenary_corps.68.d
-	picture = ADVISOR_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3440,7 +3440,7 @@ country_event = {
 	id = GE_reform_cycle.69
 	title = professional_army.69.t
 	desc = professional_army.69.d
-	picture = ADVISOR_eventPicture
+	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3471,7 +3471,7 @@ country_event = {
 	option = { 
 		name = professional_army.69.b
 		
-		add_army_professionalism = 2
+		add_army_professionalism = 0.02
 
 	}
 }
@@ -3480,7 +3480,7 @@ country_event = {
 	id = GE_reform_cycle.70
 	title = professional_army.70.t
 	desc = professional_army.70.d
-	picture = ADVISOR_eventPicture
+	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
 		OR = {
