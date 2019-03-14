@@ -143,30 +143,30 @@
  regional_fort.28.a: "If the nobles will not pay them, the state will."
  regional_fort.28.b: "Our armies crush dozens of fort garrisons in war; what is one or two at peace?"
  
- #Line Between Good and Placeholder Loc
+ theocrat.29.t: "The Heavenly Host"
+ theocrat.29.d: "By allowing the clergy to be the organisational force of our realm, with command and order transmitted and maintained by the theocratic structure, we have benefitted from deeper connections to and command of that heavenly estate. Which of these connections shall we focus on exploiting?"
+ theocrat.29.a: "Find me a pious inquisitor, a man of righteously spilled blood."
+ theocrat.29.b: "Our new friends all have their part to play; and all shall justify our reign."
+ theocrat.29.c: "When the heavens rule the nation, all know will know heavenly peace."
  
- theocrat.29.t: "The Grace of God"
- theocrat.29.d: "Organizing our realm through the bishopries and clergy has granted us many connections in the religious world, where we found ..."
- theocrat.29.a: "A pious inquisitor, willing to serve us."
- theocrat.29.b: "Many friends to support our rule and acknowledge our rule."
- theocrat.29.c: "Stability under gods protection."
- 
- theocrat.30.t: "In the Name of God"
- theocrat.30.d: "The clergy recently has been calling for more persecution of religious minorities and sinners, their unfiltered zeal raised thousands to rally to their would-be holy war."
- theocrat.30.a: "Crush this would-be holy war."
- theocrat.30.b: "Use favors and bribes to have the clergy disperse the crowd."
+ theocrat.30.t: "A Layman's Crusade"
+ theocrat.30.d: "The clergy, with the powers and privileges allowed to them, have become overfed and fattened on zeal and self-importance. They have even gone so far as to rally thousands of troops to their banner for an unsanctioned holy war against the religious minorities of our nation."
+ theocrat.30.a: "If it is a holy war they want, it is a holy war we will give them."
+ theocrat.30.b: "Call in our favours and connections in the clergy to quell this fervorous mass."
  
  casa_de_india.31.t: "Ahead of Schedule"
- casa_de_india.31.d: "The $PROVINCENAME$ colony has finished some additional buildings ahead of time. Our overseas administration is preparing additional voyages to $PROVINCENAME$ to fill the homes as soon as possible."
- casa_de_india.31.a: "Send some veterans over there."
- casa_de_india.31.b: "Offer families a new start."
- casa_de_india.31.c: "Exile some corrupt officials."
+ casa_de_india.31.d: "Our colony in $PROVINCENAME$ has more infrastructure than it has population as a result of the organisational prowess of the Casa Da India. Our overseas administration is preparing additional voyages to $PROVINCENAME$ to fill the homes as soon as possible."
+ casa_de_india.31.a: "Send only the most industrious craftsmen."
+ casa_de_india.31.b: "Send all the down on the luck families we can."
+ casa_de_india.31.c: "'Reassign' our untrustworthy administrators."
 
- casa_de_india.32.t: "Cooked Books"
- casa_de_india.32.d: "It appears some records in our overseas administration are forged and the amount of settlers in $PROVINCENAME$ are much lower then we were led to believe."
- casa_de_india.32.a: "As long as they pay their taxes."
- casa_de_india.32.b: "Update our records and find the official."
+ casa_de_india.32.t: "Cooked Books and Paper Towns"
+ casa_de_india.32.d: "The Casa has been forging records of colonists in $PROVINCENAME$ so that the crown will not question their current inefficiency and incapability, and as such the actual population in the colony is less than we expected. How do we wish to confront the Casa on this?"
+ casa_de_india.32.a: "The Casa is too important to confront with this; bury it."
+ casa_de_india.32.b: "Hunt down those responsible and update the records to be accurate."
  
+  #Line Between Good and Placeholder Loc
+  
  administrative_clergy.33.t: "Fortunate Son"
  administrative_clergy.33.d: "Our policy of using clergical personel as our administrators has led to a pious and austere administration. Due to this, the administration happens to have some spare budget lying around."
  administrative_clergy.33.a: "Organize additional services for the faithfull."
