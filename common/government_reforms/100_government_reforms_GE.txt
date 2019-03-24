@@ -372,7 +372,7 @@ lithuania_law_reform = {
 		yearly_corruption = -0.05
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -408,7 +408,7 @@ growth_signoria_reform = {
 		army_tradition = 0.25
 	}
 	ai_chance = {
-		factor = 2
+		factor = 5
 	}
 }
 
@@ -426,7 +426,7 @@ akritai_privileges_reform = {
 		fort_maintenance_modifier = -0.1
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -446,7 +446,7 @@ portuguese_cortes_reform = {
 		enables_cortes = yes
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -466,7 +466,7 @@ respect_union_reform = {
 		num_accepted_cultures = 1
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -485,7 +485,7 @@ trade_princes_reform = {
 	}
 	can_use_trade_post = yes
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -510,7 +510,7 @@ dhimmi_nobles_reform = {
 		global_tax_modifier = 0.05
 	}
 	ai_chance = {
-		factor = 2
+		factor = 5
 	}
 	#20% dhimmi influence
 	#10% dhimmi loyalty
@@ -527,7 +527,7 @@ council_of_sheikhs_reform = {
 		manpower_recovery_speed = 0.15
 	}
 	ai_chance = {
-		factor = 2
+		factor = 5
 	}
 	#5% clergy influence
 	#5% noble influence
@@ -548,7 +548,7 @@ muscovite_manorialism_reform = {
 		infantry_cost = -0.10
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -567,7 +567,7 @@ order_of_the_swan_reform = {
 		prestige = 0.5
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 	#10% noble loyalty
 }
@@ -583,10 +583,30 @@ blood_tax_reform = {
 		global_manpower_modifier = 0.10
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
-		
+
+office_of_lord_regent_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+	}
+	modifiers = {
+		liberty_desire = 15
+		legitimacy = 0.5
+		prestige = 0.5
+		war_exhaustion = -0.025
+	}
+	ai_chance = {
+		factor = 10
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -623,7 +643,7 @@ diocletian_reforms_reform = {
 		num_accepted_cultures = 1
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -640,7 +660,7 @@ kyoho_reforms_reform = {
 		trade_efficiency = 0.05
 	}
 	ai_chance = {
-		factor = 2
+		factor = 5
 	}
 }
 
@@ -659,7 +679,7 @@ casa_de_contraction_reform = {
 		global_colonial_growth = 10
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -674,7 +694,7 @@ casa_de_india_reform = {
 		global_ship_cost = -0.10
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }	
 
@@ -693,7 +713,7 @@ oprichnina_reform = {
 		global_autonomy = -0.025
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -713,7 +733,7 @@ constitutio_joachimica_reform = {
 		global_unrest = -1
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 	#-10 influence nobles
 }
@@ -733,7 +753,7 @@ millet_reform = {
 		global_unrest = -1
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -749,7 +769,25 @@ ancien_regime_reform = {
 		max_states = 3
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
+	}
+}
+
+the_red_book_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.10
+		tolerance_heretic = 1
+	}
+	ai_chance = {
+		factor = 10
 	}
 }
 
@@ -827,7 +865,7 @@ sulu_administration_reform = {
         advisor_pool = 1
     }
     ai_chance = {
-        factor = 5
+        factor = 10
     }
 }
 
@@ -846,7 +884,7 @@ academy_of_science_reform = {
 		prestige = 0.25
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -865,7 +903,7 @@ koprulu_dynasty_reform = {
 		leader_cost = -0.10
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -885,7 +923,7 @@ fredrickan_reforms_reform = {
 		interest = -0.5
 	}
 	ai_chance = {
-		factor = 100
+		factor = 10
 	}
 }
 
@@ -901,7 +939,7 @@ conseil_du_roi_reform = {
 		advisor_cost = -0.05
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
 	}
 }
 
@@ -921,13 +959,49 @@ table_of_ranks_reform = {
 		max_states = 3
 	}
 	ai_chance = {
-		factor = 5
+		factor = 10
+	}
+}
+
+the_judicature_ordinance_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+	}
+	modifiers = {
+		reform_progress_growth = 0.10
+		global_unrest = -1
+	}
+	ai_chance = {
+		factor = 10
 	}
 }
 
 #Tier5
 
-
+parliamentary_order_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.10
+	}
+	custom_attributes = {
+		enables_peasant_estate = yes
+	}
+	ai_chance = {
+		factor = 10
+	}
+}
 
 
 #Tier6
@@ -1276,7 +1350,7 @@ foreign_formation_regiments_reform = {
 
 general_war_commissariat_reform = {
 	icon = "king"
-	allow_normal_conversion= yes
+	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			tag = PRU
@@ -1288,6 +1362,24 @@ general_war_commissariat_reform = {
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_regiment_cost = -0.05
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+gustavan_artillery_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+	}
+	modifiers = {
+		movement_speed = 0.05
+		artillery_power = 0.10
 	}
 	ai_chance = {
 		factor = 100

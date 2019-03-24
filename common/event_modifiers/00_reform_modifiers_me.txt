@@ -115,7 +115,7 @@ Trade_Deals = {
 	trade_efficiency = 0.05
 }
 Invester_Crisis = {
-	development_cost = -0.20
+	development_cost = 0.20
 	interest = 1
 }
 State_Funded_Research = {
