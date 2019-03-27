@@ -12,6 +12,7 @@ estate_peasants =
 		OR = {
 			has_reform = parliamentary_order_reform
 			has_government_attribute = enables_peasant_estate
+			has_government_attribute = enables_cortes
 		}
 	}
 	
@@ -30,15 +31,15 @@ estate_peasants =
 	 autonomy_does_not_affect = local_manpower_modifier
 
 	country_modifier_happy = {
-		state_maintenance_modifier = -0.20
+		state_maintenance_modifier = -0.40
 		production_efficiency = 0.20
 	}
 	country_modifier_neutral = {
-		production_efficiency = 0.10
+		production_efficiency = 0.20
 	}	
 	country_modifier_angry = {
-		state_maintenance_modifier = 0.20
-		production_efficiency = -0.10
+		state_maintenance_modifier = 0.40
+		production_efficiency = -0.20
 	}
 	
 	# These do not scale, but only applied in provinces owned by the estate
