@@ -1134,7 +1134,7 @@ pirates_become_republic_reform = {
 		remove_government_reform = pirate_republic_reform
 		set_country_flag = populists_in_government
 	}
-	ai_chance = {
+	ai = {
 		factor = 0
 	}
 }
@@ -1181,7 +1181,7 @@ proclaim_divine_guidance_reform = {
 		lose_reforms = 8
 		change_government = theocracy
 	}
-	ai_chance = {
+	ai = {
 		factor = 0
 	}
 }
@@ -1204,7 +1204,7 @@ reinforce_republican_values_reform = {
 		free_adm_policy = 1
 		reelection_cost = -0.1
 	}
-	ai_chance = {
-		factor = 1
+	ai = {
+		factor = 0
 	}
 }

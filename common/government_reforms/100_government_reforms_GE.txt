@@ -132,6 +132,10 @@ margrave_reform = {
 		any_neighbor_country = {
 			is_part_of_hre = no
 		}
+		NOT = { total_development = 200 }
+	}
+	trigger = {
+		NOT = { total_development = 100 }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -177,10 +181,9 @@ beylik = {
 
 kingdom_of_portugal = {
 	icon = kingdom_of_portugal
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	potential = {
 		tag = POR
-		NOT = { is_year = 1481 }
 	}
 	trigger = {
 		NOT = { is_year = 1481 }
@@ -196,7 +199,7 @@ kingdom_of_portugal = {
 
 kingdom_of_portugal_and_azures = {
 	icon = portuguese_thassalocracy
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	potential = {
 		tag = POR
 	}
@@ -372,7 +375,7 @@ lithuania_law_reform = {
 		yearly_corruption = -0.05
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -387,11 +390,11 @@ guild_dominance_reform = {
 		}
 	}
 	modifiers = {
-		province_trade_power_modifier = 0.2
+		global_prov_trade_power_modifier = 0.2
 		navy_tradition = 0.5
 	}
 	ai_chance = {
-		factor = 5
+		factor = 100
 	}
 }
 
@@ -426,7 +429,7 @@ akritai_privileges_reform = {
 		fort_maintenance_modifier = -0.1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -446,7 +449,7 @@ portuguese_cortes_reform = {
 		enables_cortes = yes
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -466,7 +469,7 @@ respect_union_reform = {
 		num_accepted_cultures = 1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -485,7 +488,7 @@ trade_princes_reform = {
 	}
 	can_use_trade_post = yes
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -527,7 +530,7 @@ council_of_sheikhs_reform = {
 		manpower_recovery_speed = 0.15
 	}
 	ai_chance = {
-		factor = 5
+		factor = 100
 	}
 	#5% clergy influence
 	#5% noble influence
@@ -548,7 +551,7 @@ muscovite_manorialism_reform = {
 		infantry_cost = -0.10
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -567,7 +570,7 @@ order_of_the_swan_reform = {
 		prestige = 0.5
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 	#10% noble loyalty
 }
@@ -583,7 +586,7 @@ blood_tax_reform = {
 		global_manpower_modifier = 0.10
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -603,7 +606,7 @@ office_of_lord_regent_reform = {
 		war_exhaustion = -0.025
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -643,7 +646,7 @@ diocletian_reforms_reform = {
 		num_accepted_cultures = 1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -679,7 +682,7 @@ casa_de_contraction_reform = {
 		global_colonial_growth = 10
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -694,7 +697,7 @@ casa_de_india_reform = {
 		global_ship_cost = -0.10
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }	
 
@@ -713,7 +716,7 @@ oprichnina_reform = {
 		global_autonomy = -0.025
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -733,7 +736,7 @@ constitutio_joachimica_reform = {
 		global_unrest = -1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 	#-10 influence nobles
 }
@@ -753,7 +756,7 @@ millet_reform = {
 		global_unrest = -1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -769,7 +772,7 @@ ancien_regime_reform = {
 		max_states = 3
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -787,7 +790,7 @@ the_red_book_reform = {
 		tolerance_heretic = 1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -864,9 +867,9 @@ sulu_administration_reform = {
         advisor_cost = -0.20
         advisor_pool = 1
     }
-    ai_chance = {
-        factor = 10
-    }
+	ai_chance = {
+		factor = 100
+	}
 }
 
 academy_of_science_reform = {
@@ -884,7 +887,7 @@ academy_of_science_reform = {
 		prestige = 0.25
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -903,7 +906,7 @@ koprulu_dynasty_reform = {
 		leader_cost = -0.10
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -923,7 +926,7 @@ fredrickan_reforms_reform = {
 		interest = -0.5
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -939,7 +942,7 @@ conseil_du_roi_reform = {
 		advisor_cost = -0.05
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -959,7 +962,7 @@ table_of_ranks_reform = {
 		max_states = 3
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -977,7 +980,7 @@ the_judicature_ordinance_reform = {
 		global_unrest = -1
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -999,7 +1002,7 @@ parliamentary_order_reform = {
 		enables_peasant_estate = yes
 	}
 	ai_chance = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -1117,7 +1120,6 @@ nizam_i_jedid_reform = {
 	}
 	modifiers = {
 		max_absolutism = 10
-		yearly_absolutism = 1
 		free_adm_policy = 1
 	}
 	ai_chance = {

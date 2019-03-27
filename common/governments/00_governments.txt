@@ -79,7 +79,7 @@ monarchy = {
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				blood_tax_reform
-				office_of_lord_regent_reform
+				#office_of_lord_regent_reform
 			}
 		}
 		bureaucracy = {
@@ -104,7 +104,7 @@ monarchy = {
 				millet_reform
 				great_law_of_peace_reform
 				ancien_regime_reform
-				the_red_book_reform
+				#the_red_book_reform
 			}
 		}
 		military_organisation = {
@@ -124,7 +124,7 @@ monarchy = {
 				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
-				gustavan_artillery_reform
+				#gustavan_artillery_reform
 			}
 		}
 		growth_of_administration = {
@@ -149,7 +149,7 @@ monarchy = {
 				fredrickan_reforms_reform
 				conseil_du_roi_reform
 				table_of_ranks_reform
-				the_judicature_ordinance_reform
+				#the_judicature_ordinance_reform
 			}
 		}
 		deliberative_assembly = {
@@ -161,7 +161,7 @@ monarchy = {
 				states_general_reform
 				#GE
 				haudenosaunee_reform
-				parliamentary_order_reform
+				#parliamentary_order_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

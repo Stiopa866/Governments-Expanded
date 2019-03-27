@@ -1373,7 +1373,7 @@ become_a_republic_reform = {
 		lose_reforms = 3
 		change_government = republic
 	}
-	ai_chance = {
+	ai = {
 		factor = 0
 	}
 }
@@ -1391,7 +1391,7 @@ install_theocratic_government_reform = {
 		lose_reforms = 6
 		change_government = theocracy
 	}
-	ai_chance = {
+	ai = {
 		factor = 0
 	}
 }
