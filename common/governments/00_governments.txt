@@ -545,24 +545,25 @@ theocracy = {
 				combat_heresy_reform
 				expel_heathens_reform
 				the_holy_office_reform
-			}
-		}
-		clergy_in_administration = {
-			reforms = {
-				subservient_administrators_reform
-				religious_administrators_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
 				teuton_priest
 			}
 		}
-		#religious_enforcement = {
+		#clergy_in_administration = {
 		#	reforms = {
-		#		holy_orthodoxy_reform
-		#		inquisition_reform
-		#		religious_pragmatism_reform
+		#		subservient_administrators_reform
+		#		religious_administrators_reform
+		#		permanent_marathas_council_reform
+		#		governmental_purbias_register_reform
+		#		teuton_priest
 		#	}
 		#}
+		religious_enforcement = {
+			reforms = {
+				holy_orthodoxy_reform
+				inquisition_reform
+				religious_pragmatism_reform
+			}
+		}
 		secularization = {
 			reforms = {
 				maintain_religious_head_reform
@@ -572,6 +573,37 @@ theocracy = {
 				battle_pope_reform
 				teuton_army
 				teuton_navy
+			}
+		}
+		judiciary = {
+			reforms = {
+				secular_law_reform
+				theocratic_law_reform
+				the_bishops_law_reform
+				roman_law_reform
+				jizja_tax_reform
+				harmonious_law_reform
+				pagan_law_reform
+				
+			}
+		}
+		diplomacy = {
+			reforms = {
+				unrestricted_diplomacy_reform
+				the_resilient_faithfull_reform
+				holy_claims_reform
+				network_of_faithful_allies_reform
+				the_bishops_diplomacy_reform
+			}
+		}
+		mobilize_the_faithful = {
+			reforms = {
+				holy_war_reform
+				militarized_monasteries_reform
+				brothers_in_arms_reform
+				the_bishops_army_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 			}
 		}
 	}
