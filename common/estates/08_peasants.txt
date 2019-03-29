@@ -32,7 +32,6 @@ estate_peasants =
 
 	country_modifier_happy = {
 		state_maintenance_modifier = -0.20
-		production_efficiency = 0.20
 	}
 	country_modifier_neutral = {
 		production_efficiency = 0.10
