@@ -72,6 +72,262 @@ expel_heathens_reform = {
 	}
 }
 
+the_holy_office_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = {
+		tag = PAP
+	}
+	modifiers = {
+		yearly_corruption = -0.05
+		institution_spread_from_true_faith = 0.5
+		adm_advisor_cost = -0.1
+	}
+	ai_chance = {
+		factor = 2
+	}
+}
+
+holy_orthodoxy_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.05
+		devotion = 0.25
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+inquisition_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_heretic_missionary_strength = 0.03
+		prestige_per_development_from_conversion = 0.5
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+religious_pragmatism_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		religious_unity = 0.20
+		advisor_cost = -0.10
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+#T4.5
+
+secular_law_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+theocratic_law_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.15
+		devotion = 0.5
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+the_bishops_law_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_adm_policy = 1
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+roman_law_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	potential = {
+		religion = catholic
+	}
+	trigger = {
+		religion = catholic
+	}
+	modifiers = {
+		papal_influence = 1
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+jizja_tax_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+	}
+	trigger = {
+		religion_group = muslim
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+harmonious_law_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	potential = {
+		religion = confucianism
+	}
+	trigger = {
+		religion = confucianism
+	}
+	modifiers = {
+		harmonization_speed = 0.1
+		yearly_harmony = 0.5
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+pagan_law_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = pagan
+	}
+	trigger = {
+		religion_group = pagan
+	}
+	modifiers = {
+		core_creation = -0.1
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+#T6 Diplomacy
+
+unrestricted_diplomacy_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		improve_relation_modifier = 0.15
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+holy_claims_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		claim_duration = 0.25
+		unjustified_demands = -0.15
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+network_of_faithful_allies_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		vassal_income = 0.2
+		reduced_liberty_desire = 0.05
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+the_bishops_diplomacy_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_dip_policy = 1
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+#T7 Mobilize the faithful
+
+holy_war_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		manpower_recovery_speed = 0.10
+	}
+	custom_attributes = {
+		enables_holy_war = yes
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+militarized_monasteries_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		army_tradition = 0.5
+		defensiveness = 0.10
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+brothers_in_arms_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_regiment_cost = -0.05
+		merc_maintenance_modifier = -0.15
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+the_bishops_army_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_mil_policy = 1
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
 #TRIBAL
 
 great_law_of_peace_reform = {
