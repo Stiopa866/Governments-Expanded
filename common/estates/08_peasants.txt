@@ -113,5 +113,105 @@ estate_peasants =
 			}			
 		}
 	}
+	interaction = {
+		name = "TAX_PEASANTS"
+		icon = 17
+		
+		years_between_use = 10
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_peasants
+				influence = 40
+			}
+			any_owned_province = {
+				has_estate = estate_peasants
+			}
+		}
+		
+		effect = {
+			custom_tooltip = tax_peasants_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_estate = estate_peasants }
+					add_province_modifier = {
+						name = tax_peasants
+						duration = 3650
+					}
+				}
+			}
+			add_estate_loyalty = {
+				estate = estate_peasants
+				loyalty = -5
+			}
+			add_estate_influence_modifier = {
+				estate = estate_peasants
+				desc = EST_VAL_TAX_PEASANTS
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}				
+			}
+		}
+	}
+	interaction = {
+		name = "REGISTER_PEASANTS"
+		icon = 12
+		
+		years_between_use = 10
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_dhimmi
+				influence = 40
+			}
+			any_owned_province = {
+				has_estate = estate_dhimmi
+			}
+		}
+		
+		effect = {
+			custom_tooltip = register_peasants_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_estate = estate_peasants }
+					add_province_modifier = {
+						name = register_peasants
+						duration = 3650
+					}
+				}
+			}
+			add_estate_loyalty = {
+				estate = estate_peasants
+				loyalty = -5
+			}
+			add_estate_influence_modifier = {
+				estate = estate_peasants
+				desc = EST_VAL_REGISTER_PEASANTS
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}				
+			}
+		}
+	}
 
 }

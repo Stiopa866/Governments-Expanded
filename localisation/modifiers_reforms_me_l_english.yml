@@ -73,7 +73,11 @@
  EST_VAL_BASTARD_FEUDALISM:0 "Bastard Feudalism: §Y$VAL$%§!"
  EST_VAL_TRADE_PRINCES:0 "Trade Princes: §Y$VAL$%§!"
  
+ EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
+ EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
  
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"
  EST_VAL_DHIMMI_NOBLES_REFORM_LOY:0 "Dhimmi Nobles: §G$VAL$§!"
+ 
+ 

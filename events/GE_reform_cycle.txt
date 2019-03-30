@@ -1004,7 +1004,7 @@ country_event = {
 	option = {
 		name = muscovite_manorialism.19.c
 		
-		custom_tooltip = AVAILABLE_BECAUSE_OF_NOBLES_WEAKNESS
+		custom_tooltip = AVAILABLE_BECAUSE_OF_NOBLE_WEAKNESS
 		
 		trigger = {
 			NOT = {
@@ -1383,13 +1383,16 @@ country_event = {
 	option = {
 		name = decentralized.25.a
 		
-		every_owned_province = {
-			limit = {
-				culture = event_target:decentralize_cycle_GE_pos
-			}
-			add_province_modifier = {
-				name = "Beneficial_Self_Rule"
-				duration = 3650
+		custom_tooltip = decentralized_25_a_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = event_target:decentralize_cycle_GE_pos
+				}
+				add_province_modifier = {
+					name = "Beneficial_Self_Rule"
+					duration = 3650
+				}
 			}
 		}
 	}

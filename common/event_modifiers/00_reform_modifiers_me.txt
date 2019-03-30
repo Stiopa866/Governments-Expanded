@@ -1,6 +1,17 @@
+#Estates
 NobleDiplomat = {
 	improve_relation_modifier = 0.1
 }
+register_peasants = {
+	local_manpower_modifier = 0.10
+	local_manpower = 0.10
+}
+tax_peasants = {
+	local_tax_modifier = 0.10
+	tax_income = 0.6
+}
+
+#Cortez
 Cortes_Piety = {
 	tolerance_own = 1
 	global_missionary_strength = 0.01
@@ -26,6 +37,8 @@ Cortes_Navy = {
 	global_ship_trade_power = 0.25
 	naval_maintenance_modifier = -0.1
 }
+
+#Factional Elections
 Adm_Stabcost = {
 	stability_cost_modifier = -0.15
 }
@@ -61,7 +74,7 @@ Mil_2_Main = {
 Mil_2_Leader = {
 	general_cost = -0.2
 }
-	
+
 #GE Reform Cycle
 Russian_Manorialism = {
 	fort_maintenance_modifier = -0.2
