@@ -3553,3 +3553,35 @@ country_event = {
 #################################################################
 ### Theocracy Events
 #################################################################
+
+country_event = {
+	id = GE_reform_cycle.71
+	title = leading_clergy.71.t #Devout Clergymen
+	desc = leading_clergy.71.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = leading_clergy_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = leading_clergy.71.a
+		
+		add_devotion = 5
+		
+	}
+	
+	option = {
+		name = leading_clergy.71.b
+		
+		add_prestige = 15
+	}
+}
+
+
