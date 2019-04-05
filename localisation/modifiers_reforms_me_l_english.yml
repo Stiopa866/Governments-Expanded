@@ -58,6 +58,9 @@
  absent_priest_administrator: "Absent Administrator"
  publications_against_faith: "Hostile Publications"
  a_great_man_killed: "A Great Man Killed"
+ Set_Aside_Alms: "Set Aside Alms"
+ Purged_Govenor: "Purged Govenor"
+ Maintain_Current_Govenor: "Maintain Status Quo"
  
  EST_VAL_ANCIEN_REGIME_REFORM:0 "Ancien Regime: §Y$VAL$%§!"
  EST_VAL_REGIONAL_FORTS_REFORM:0 "Regional Forts: §Y$VAL$%§!"

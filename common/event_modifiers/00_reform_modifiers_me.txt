@@ -207,3 +207,10 @@ publications_against_faith = {
 Set_Aside_Alms = {
 	global_tax_modifier = -0.05
 }
+Purged_Govenor = {
+	yearly_corruption = -0.05
+}
+Maintain_Current_Govenor = {
+	stability_cost_modifier = -0.15
+	devotion = -0.1
+}

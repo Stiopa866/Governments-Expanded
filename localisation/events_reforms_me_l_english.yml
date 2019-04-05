@@ -378,6 +378,8 @@
  leading_clergy.73.a: "I'm sure he can't be that dangerous?"
  leading_clergy.73.b: "Burn him at the stake."
  
+ ##Stiopi Space##
+ 
  monastic_order.76.t: "Alms For The Poor"
  monastic_order.76.d: "Our duty as a Monastic Order demands that we both defend the faithfull and protect the faith. It seems the poor in [From.Capital.GetCapitalName] are starving and in serious need of help."
  monastic_order.76.a: "Let us set aside additional funds to provide for the faithfull."
@@ -386,3 +388,8 @@
  monastic_order.77.t: "Seasonal Volunteers"
  monastic_order.77.d: "As a Monastic Order much of our knightly forces are filled up by second sons of noble houses, pious veterans, but also of soldiers and captains looking to serve the faith during times of peace and prosperity."
  monastic_order.77.a: "Excellent, more warriors to serve the lord."
+
+ monastic_order.77.t: "Less Then Noble Ideals"
+ monastic_order.77.d: "We are a Monastic Order, although it appears a govenor from [monastic_order_cycle_GE.GetName] has joined our ranks for less noble ideals then our order is build upon, and is amassing wealth and luxuries."
+ monastic_order.77.a: "Such greed is unbecoming of our order."
+ monastic_order.77.b: "I mean, the province is running rather well isn't it?"

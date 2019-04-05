@@ -3706,4 +3706,51 @@ country_event = {
 		name = monastic_order.77.a
 		
 		add_yearly_manpower = 0.750
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.78
+	title = monastic_order.78.t #Alms for the poor
+	desc = monastic_order.78.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = monastic_order_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state_core = ROOT
+				}
+				save_event_target_as = monastic_order_cycle_GE
+			}
+		}
+	}
+	
+	option = {
+		name = monastic_order.78.a
+		
+		add_country_modifier = {
+			name = "Purged_Govenor"
+			duration = 3650
+		}
+	}
+	
+	option = {
+		name = monastic_order.78.b
+		
+		add_country_modifier = {
+			name = "Maintain_Current_Govenor"
+			duration = 3650
+		}
+	}
 }
