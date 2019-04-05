@@ -364,13 +364,16 @@
  professional_army.70.c: "Wait, what makes you think you still had those rights?"
  
  leading_clergy.71.t: "Devout Clergymen"
- leading_clergy.71.d: "The Clergy running our country is very devout and listens to our lord. This can be exploited to promote and boast about our devoutness on international stage or we can modestly not exalt ourselves amonther others.
+ leading_clergy.71.d: "The Clergy running our country is very devout and listens to our lord. This can be exploited to promote and boast about our devoutness on international stage or we can modestly not exalt ourselves amonther others."
  leading_clergy.71.a: "Pride is one of the deadly sins."
  leading_clergy.71.b: "Prestige will definitely help us."
  
  leading_clergy.72.t: "Possessed Priest"
- leading_clergy.72.d: "It seems that one of the clergymen in administration appears to have been possessed by some kind of evil spirit. He has been acting very strangely lately and it is obvious that we must act.
+ leading_clergy.72.d: "It seems that one of the clergymen in administration appears to have been possessed by some kind of evil spirit. He has been acting very strangely lately and it is obvious that we must act."
  leading_clergy.72.a: "Let's pray the evil spirit leaves him"
  leading_clergy.72.b: "Remove him from our administration"
  
- 
+ leading_clergy.73.t: "A Heretic?"
+ leading_clergy.73.d: "There is a man in our realm spreading information some may consider to be against the basic principles of our faith. He claims to be some kind of "scientist" and is trying to disprove basic laws of Earth. There were many before him, and there will be many after him. What do we do with this man?"
+ leading_clergy.73.a: "I'm sure he can't be that dangerous?"
+ leading_clergy.73.b: "Burn him at the stake."
