@@ -3619,4 +3619,37 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = GE_reform_cycle.73
+	title = leading_clergy.73.t #A Great Man
+	desc = leading_clergy.73.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = leading_clergy_reform
+	}
 
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = leading_clergy.73.a
+		
+		add_country_modifier = {
+			name = publications_against_faith
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = leading_clergy.73.b
+		
+		add_country_modifier = {
+			name = a_great_man_killed
+			duration = 7300
+		}
+	}
+}
