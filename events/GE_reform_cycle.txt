@@ -3554,6 +3554,9 @@ country_event = {
 ### Theocracy Events
 #################################################################
 
+
+#Leading Clergy
+
 country_event = {
 	id = GE_reform_cycle.71
 	title = leading_clergy.71.t #Devout Clergymen
@@ -3583,5 +3586,37 @@ country_event = {
 		add_prestige = 15
 	}
 }
+country_event = {
+	id = GE_reform_cycle.72
+	title = leading_clergy.72.t #Possessed Priest
+	desc = leading_clergy.72.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = leading_clergy_reform
+	}
 
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = leading_clergy.72.a
+		
+		add_devotion = 5
+		add_adm_power = -50
+		
+	}
+	
+	option = {
+		name = leading_clergy.72.b
+		
+		add_country_modifier = {
+			name = absent_priest_administrator
+			duration = 365
+		}
+	}
+}
 
