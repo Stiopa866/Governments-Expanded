@@ -56,6 +56,8 @@
  Well_Trained: "Well Trained"
  Aristocrat_Officers: "Aristocrat Officers"
  absent_priest_administrator: "Absent Administrator"
+ publications_against_faith: "Hostile Publications"
+ a_great_man_killed: "A Great Man Killed"
  
  EST_VAL_ANCIEN_REGIME_REFORM:0 "Ancien Regime: §Y$VAL$%§!"
  EST_VAL_REGIONAL_FORTS_REFORM:0 "Regional Forts: §Y$VAL$%§!"
