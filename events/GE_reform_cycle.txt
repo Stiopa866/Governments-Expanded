@@ -3653,3 +3653,57 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.76
+	title = monastic_order.76.t #Alms for the poor
+	desc = monastic_order.76.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = monastic_order_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = monastic_order.76.a
+		
+		add_country_modifier = {
+			name = "Set_Aside_Alms"
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = monastic_order.76.b
+		
+		devotion = -10
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.77
+	title = monastic_order.77.t #Alms for the poor
+	desc = monastic_order.77.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = monastic_order_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = monastic_order.77.a
+		
+		add_yearly_manpower = 0.750
+}

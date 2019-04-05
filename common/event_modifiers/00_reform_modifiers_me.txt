@@ -204,3 +204,6 @@ a_great_man_killed = {
 publications_against_faith = {
 	tolerance_own = -1
 }
+Set_Aside_Alms = {
+	global_tax_modifier = -0.05
+}
