@@ -195,4 +195,6 @@ Well_Trained = {
 Aristocrat_Officers = {
 	discipline = -0.025
 }
-
+absent_priest_administrator = {
+	global_autonomy = 0.2
+}
