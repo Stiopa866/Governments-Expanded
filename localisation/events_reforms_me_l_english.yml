@@ -378,6 +378,10 @@
  leading_clergy.73.a: "I'm sure he can't be that dangerous?"
  leading_clergy.73.b: "Burn him at the stake."
  
+ leading_clergy.74.t: "A New Holy Site"
+ leading_clergy.74.d: "We've been given a chance to build a place for worship at a cheap price. The money of course, could be spent elsewhere helping the poorest in our state. But wouldn't more places to worship benefit the state more?"
+ leading_clergy.74.a: "Funding Temples is nice..."
+ leading_clergy.74.b: "...but giving Alms to the poor is better."
  ##Stiopi Space##
  
  monastic_order.76.t: "Alms For The Poor"
