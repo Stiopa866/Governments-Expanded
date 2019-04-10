@@ -245,6 +245,13 @@
  EVTOPTF700:1 "Let us elect a scion of the de'Medici family."
  EVTOPTF800f:1 "Let us elect a scion of the de'Medici family."
  CALL_CORTES: "Call Cortez"
+ estate_peasants: "Peasant Estate"
+ estate_peasants_desc: "The Peasant Estate represents the peasants of sweden."
+ HOLD_LANDTAG: "Hold Landtag"
+ TAX_PEASANTS: "Update Tax Registers"
+ REGISTER_PEASANTS: "Increase Recruitment"
+ 
+ 
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."

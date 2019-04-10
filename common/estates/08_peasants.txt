@@ -1,8 +1,8 @@
 estate_peasants =
 {
-	icon = 2
+	icon = 12
 	
-	color = { 200 0 50 }
+	color = { 250 200 0 }
 	
 	# Is estate kept in control of province on conquest?
 	keep_on_conquest = no
@@ -72,7 +72,7 @@ estate_peasants =
 	
 	# Special interactions
 	interaction = {
-		name = "CALL_DIET"
+		name = "HOLD_LANDTAG"
 		icon = 1
 		
 		years_between_use = 20
