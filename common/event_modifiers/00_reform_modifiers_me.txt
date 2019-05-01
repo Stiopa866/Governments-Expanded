@@ -214,3 +214,15 @@ Maintain_Current_Govenor = {
 	stability_cost_modifier = -0.15
 	devotion = -0.1
 }
+Pure_Order = {
+	devotion = 0.25
+	yearly_corruption = -0.1
+}
+Decadent_Decay = {
+	devotion = -0.5
+	global_manpower_modifier = 0.15
+}
+Militarized_Order = {
+	max_states = -3
+	army_tradition = 0.25
+}
