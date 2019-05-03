@@ -3875,4 +3875,35 @@ country_event = {
 	
 }
 
+country_event = {
+	id = GE_reform_cycle.81
+	title = internal_mission.81.t #Militarize the Order
+	desc = internal_mission.81.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_reform = internal_mission_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = internal_mission.81.a
+		
+	}
+
+	option = {
+		name = internal_mission.81.a
+		
+	}
+	
+}
 
