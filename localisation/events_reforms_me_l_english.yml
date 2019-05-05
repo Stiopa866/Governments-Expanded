@@ -409,3 +409,11 @@
  monastic_order.80.d: "We are the descendants of centuries of holy warriors, brave crusaders and pious heroes. Let us not go quietly into the good night and give up our purpose, Let our Monastic Order remain pure and devoted to the lord, and not fall to decadence and a life of administration and rulership."
  monastic_order.80.a: "Poor landless crusaders we were, and so shall we remain."
  monastic_order.80.b: "We have to adapt to the modern times, the age of landless crusaders is over."
+ 
+ internal_mission.81.t: "Faithfull Adherance"
+ internal_mission.81.d: "Our internal mission led to additional focus on the souls of our own flock, and our flock has prospered ever since. Our domain is growing into a proper part of the heavenly kingdom on earth."
+ internal_mission.81.a: "Ave Maria."
+ 
+ internal_mission.82.t: "Failure of Duty"
+ internal_mission.82.d: "Our Internal mission has been to protect our flock and have them spread across the lands, however, it seems we have failed in our duty. Huge numbers of heretics and heathens are running amock, damaging the belief people have in our capacity to protect them."
+ internal_mission.82.a: "We have to restore the trust of the people."

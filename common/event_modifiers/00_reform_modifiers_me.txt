@@ -226,3 +226,10 @@ Militarized_Order = {
 	max_states = -3
 	army_tradition = 0.25
 }
+Ave_Maria = {
+	development_cost = -0.05
+	state_maintenance_modifier = -0.25
+}
+Losing_Faith = {
+	tolerance_own = -2
+}

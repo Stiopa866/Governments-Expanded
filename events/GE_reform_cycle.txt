@@ -3877,9 +3877,9 @@ country_event = {
 
 country_event = {
 	id = GE_reform_cycle.81
-	title = internal_mission.81.t #Militarize the Order
+	title = internal_mission.81.t #Faithfull Adherance
 	desc = internal_mission.81.d
-	picture = LAND_MILITARY_eventPicture
+	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
 		has_reform = internal_mission_reform
@@ -3897,13 +3897,42 @@ country_event = {
 	
 	option = {
 		name = internal_mission.81.a
-		
-	}
-
-	option = {
-		name = internal_mission.81.a
-		
+		add_country_modifier = {
+			name = "Ave_Maria"
+			duration = 3650
+		}
 	}
 	
 }
 
+country_event = {
+	id = GE_reform_cycle.82
+	title = internal_mission.82.t #Failure of Duty
+	desc = internal_mission.82.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = internal_mission_reform
+		NOT = { religious_unity = 75 }
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = internal_mission.82.a
+		
+		add_country_modifier = {
+			name = "Losing_Faith"
+			duration = 3650
+		}
+	}
+	
+}
