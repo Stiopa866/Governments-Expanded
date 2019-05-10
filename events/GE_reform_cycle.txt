@@ -3936,3 +3936,73 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = GE_reform_cycle.82
+	title = external_mission.83.t #Deus Vult
+	desc = external_mission.83.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = external_mission_reform
+		at_war_with_religious_enemy = yes
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = external_mission.83.a
+	
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_base_manpower = -1
+		}
+	}
+	
+}
+
+country_event = {
+	id = GE_reform_cycle.84
+	title = external_mission.84.t #Sins of the Human Heart
+	desc = external_mission.84.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = external_mission_reform
+		has_border_with_religious_enemy = yes
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = external_mission.84.a
+		
+		any_owned_province = 
+	}
+
+	option = {
+		name = external_mission.84.b
+		
+		add_war_exhaustion = 2
+	}
+}

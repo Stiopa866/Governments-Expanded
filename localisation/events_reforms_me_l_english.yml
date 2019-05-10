@@ -411,9 +411,19 @@
  monastic_order.80.b: "We have to adapt to the modern times, the age of landless crusaders is over."
  
  internal_mission.81.t: "Faithfull Adherance"
- internal_mission.81.d: "Our internal mission led to additional focus on the souls of our own flock, and our flock has prospered ever since. Our domain is growing into a proper part of the heavenly kingdom on earth."
+ internal_mission.81.d: "Our Internal Mission led to additional focus on the souls of our own flock, and our flock has prospered ever since. Our domain is growing into a proper part of the heavenly kingdom on earth."
  internal_mission.81.a: "Ave Maria."
  
  internal_mission.82.t: "Failure of Duty"
- internal_mission.82.d: "Our Internal mission has been to protect our flock and have them spread across the lands, however, it seems we have failed in our duty. Huge numbers of heretics and heathens are running amock, damaging the belief people have in our capacity to protect them."
+ internal_mission.82.d: "Our Internal Mission has been to protect our flock and have them spread across the lands, however, it seems we have failed in our duty. Huge numbers of heretics and heathens are running amock, damaging the belief people have in our capacity to protect them."
  internal_mission.82.a: "We have to restore the trust of the people."
+ 
+ external_mission.83.t: "Deus Vult"
+ external_mission.83.d: "Our External Mission has been to spread the faith to the heretics beyond our borders, right now we are in a fatal struggle with the faithless. Let us rally our people for a heroic holy war!"
+ external_mission.83.a: "Deus Vult."
+ 
+ external_mission.84.t: "Sins of the Human Heart"
+ external_mission.84.d: "The External Mission has led us to pursue a highly militaristic and ruthless foreign and domestic policy. This has led to some of our troops invading a border town and massacring the inhabitants. Even though they were faithfull members of our state."
+ external_mission.84.a: "What... What have we become."
+ external_mission.84.b: "Blame the attack on bandits."
+ 

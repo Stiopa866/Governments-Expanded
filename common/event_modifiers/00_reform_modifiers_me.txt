@@ -233,3 +233,8 @@ Ave_Maria = {
 Losing_Faith = {
 	tolerance_own = -2
 }
+Deus_Vult = {
+	manpower_recovery_speed = 0.15
+	prestige_from_land = 1
+	war_exhaustion = -0.01
+}
