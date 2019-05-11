@@ -427,3 +427,13 @@
  external_mission.84.a: "What... What have we become."
  external_mission.84.b: "Blame the attack on bandits."
  
+ holy_sites.85.t: "Wave of Piety"
+ holy_sites.85.d: "The Holy Sites we've been Saveguarding have recently experienced a huge uptick in visitation and popularity. Pelgrims are coming from across the continent to visit the final resting place of a revered saint."
+ holy_sites.85.a: "The church will support these pelgrims."
+ holy_sites.85.b: "Allow the merchants to monetize the influx of pelgrims."
+ 
+ holy_sites.86.t: "A Hidden Truth"
+ holy_sites.86.d: "Our purpose is the preservation and Safeguarding of Holy Sites, Although it appears one of the holy relics we piously defend is actually heretical in origin according to recent church orthodoxy."
+ holy_sites.86.a: "Keep our people in ignorance."
+ holy_sites.86.b: "Unrest be damned, the truth must prevail."
+ 

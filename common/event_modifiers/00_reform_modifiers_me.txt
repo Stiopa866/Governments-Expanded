@@ -238,3 +238,6 @@ Deus_Vult = {
 	prestige_from_land = 1
 	war_exhaustion = -0.01
 }
+Tourist_Tax = {
+	trade_efficiency = 0.15
+}

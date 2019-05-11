@@ -3961,13 +3961,9 @@ country_event = {
 	option = {
 		name = external_mission.83.a
 	
-		random_owned_province = {
-			limit = {
-				any_neighbor_province = {
-					NOT = { owned_by = ROOT }
-				}
-			}
-			add_base_manpower = -1
+		add_country_modifier = {
+			name = "Deus_Vult"
+			duration = 3650
 		}
 	}
 	
@@ -3997,12 +3993,112 @@ country_event = {
 	option = {
 		name = external_mission.84.a
 		
-		any_owned_province = 
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_base_manpower = -1
+		}
 	}
 
 	option = {
 		name = external_mission.84.b
 		
 		add_war_exhaustion = 2
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.85
+	title = holy_sites.85.t #
+	desc = holy_sites.85.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = safeguard_holy_sites_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = holy_sites.85.a
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_papal_influence = 15
+		add_fervor = 10
+		add_church_power = 20
+	}
+
+	option = {
+		name = holy_sites.85.b
+		
+		add_country_modifier = {
+			name = "Tourist_Tax"
+			duration = 1825
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.86
+	title = holy_sites.86.t #A Hidden Truth
+	desc = holy_sites.86.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = safeguard_holy_sites_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = holy_sites.86.a
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+
+	option = {
+		name = holy_sites.86.b
+		
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				is_overseas = no
+				is_colony = no
+				is_territory = no
+			}
+			spawn_rebels = {
+				type = heretic_rebels
+				size = 1
+			}
+		}
 	}
 }
