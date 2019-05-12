@@ -3940,7 +3940,7 @@ country_event = {
 }
 
 country_event = {
-	id = GE_reform_cycle.82
+	id = GE_reform_cycle.83
 	title = external_mission.83.t #Deus Vult
 	desc = external_mission.83.d
 	picture = CHURCH_ESTATE_1_eventPicture
@@ -4090,16 +4090,21 @@ country_event = {
 	option = {
 		name = holy_sites.86.b
 		
-		random_owned_province = {
-			limit = {
-				is_capital = no
-				is_overseas = no
-				is_colony = no
-				is_territory = no
-			}
-			spawn_rebels = {
-				type = heretic_rebels
-				size = 1
+		random_list = {
+			50 = { }
+			50 = {
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						is_overseas = no
+						is_colony = no
+						is_territory = no
+					}
+					spawn_rebels = {
+						type = heretic_rebels
+						size = 1
+					}
+				}
 			}
 		}
 	}
@@ -4182,7 +4187,7 @@ country_event = {
 				province_id = event_target:expel_heathens_cycle_GE_pos
 			}
 			add_province_modifier = {
-				name = "Promote_Tolerance" #-20% dev cost, +25% goods produced, 50% Min autonomy
+				name = "Promote_Tolerance" #-10% dev cost, +15% goods produced, 25% Min autonomy
 				duration = 9125
 			}
 		}
@@ -4191,7 +4196,7 @@ country_event = {
 
 country_event = {
 	id = GE_reform_cycle.88
-	title = expel_heathens.88.t #
+	title = expel_heathens.88.t # 
 	desc = expel_heathens.88.d
 	picture = CHURCH_ESTATE_1_eventPicture
 	
@@ -4240,5 +4245,100 @@ country_event = {
 			name = "Reduced_Immigration" #+10% Development Cost
 			duration = 3650
 		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.89
+	title = combat_heresy.89.t #Purity Spiral
+	desc = combat_heresy.89.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = combat_heresy_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = combat_heresy.89.a
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+	}
+
+	option = {
+		name = combat_heresy.89.b
+		
+		random_list = {
+			90 = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+				add_devotion = 25
+			}
+			10 = {
+				add_stability = -1
+				kill_ruler = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.90
+	title = combat_heresy.90.t #
+	desc = combat_heresy.90.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = combat_heresy_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = combat_heresy.90.a
+		
+		add_country_modifier = {
+			name = "Fearfull_Populace"
+			duration = 3650
+		}
+		
+	}
+
+	option = {
+		name = combat_heresy.90.b
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CLERGY_ADVANCES
+			influence = 10
+			duration = 3650
+		}
+		
 	}
 }

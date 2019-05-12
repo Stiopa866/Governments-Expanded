@@ -437,7 +437,7 @@
  holy_sites.86.a: "Keep our people in ignorance."
  holy_sites.86.b: "Unrest be damned, the truth must prevail."
  
- expel_heathens.87.t: "Repopulate Lebensraum"
+ expel_heathens.87.t: "Attracting Settlers"
  expel_heathens.87.d: "We have found and judged a group of Heathens from [expel_heathens_cycle_GE_pos.GetName] to be Expelled from our nation. Let us resettle the place with proper members of the faith, but what incentive should we grant them?"
  expel_heathens.87.a: "Seize the possesions of the heathens and grant them to the immigrants."
  expel_heathens.87.b: "Grant them special privileges."
@@ -445,5 +445,14 @@
  expel_heathens.88.t: "Eminent Domain"
  expel_heathens.88.d: "A decline in the amount of Expelled Heathens has led to less land then usual being available for settlement by pious immigrants, To alleviate this we could either send them back to their place of origin or seize some of the land of our clergy and nobility to make space for the potential citizens."
  expel_heathens.88.a: "The powers will have to accomodate these newcomers."
- expel_heathens.88.b: "Adieu mon ami's"
+ expel_heathens.88.b: "Adieu mes amis"
  
+ combat_heresy.89.t: "Purity Spiral"
+ combat_heresy.89.d: "In our attempt to Combat Heretics our standards of piety have risen rapidly. To the point that even our $RULERTITLE$'s piety has come into question. Do we risk an inquisition?"
+ combat_heresy.89.a: "Halt the inquisition at once."
+ combat_heresy.89.b: "I have nothing to fear.
+ 
+ combat_heresy.90.t: "Reign of Terror"
+ combat_heresy.90.d: "As a unexpected side effect of our divine cause of Combatting Heresy, our peasants and merchant are fearful of acting in a way that can be interpreted as heretical. And thus a lot of decisions are being run through the church for validation. This seems to be hindering the economy."
+ combat_heresy.90.a: "Maintain vigilance."
+ combat_heresy.90.b: "lighten orthodoxy."
