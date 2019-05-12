@@ -1555,10 +1555,12 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				fort_level = 1
+				is_capital = no
 			}
 			spawn_rebels = {
 				type = noble_rebels
 				size = 1
+				win = yes
 			}
 		}
 		add_country_modifier = {
@@ -4012,7 +4014,7 @@ country_event = {
 
 country_event = {
 	id = GE_reform_cycle.85
-	title = holy_sites.85.t #
+	title = holy_sites.85.t #Wave of Piety
 	desc = holy_sites.85.d
 	picture = CHURCH_ESTATE_1_eventPicture
 	
@@ -4099,6 +4101,144 @@ country_event = {
 				type = heretic_rebels
 				size = 1
 			}
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.87
+	title = expel_heathens.87.t #
+	desc = expel_heathens.87.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = expel_heathens_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_overseas = no
+					is_colony = no
+					is_territory = no
+				}
+				save_event_target_as = expel_heathens_cycle_GE_pos
+			}
+		}
+	}
+	
+	option = {
+		name = expel_heathens.87.a
+		
+		every_owned_province = {
+			limit = {
+				province_id = event_target:expel_heathens_cycle_GE_pos
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		
+		random_list = {
+			55 = {}
+			30 = {
+				every_owned_province = {
+					limit = {
+						province_id = event_target:expel_heathens_cycle_GE_pos
+					}
+					spawn_rebels = {
+						type = heretic_rebels
+						size = 1
+					}
+				}
+			}
+			15 = {
+				every_owned_province = {
+					limit = {
+						province_id = event_target:expel_heathens_cycle_GE_pos
+					}
+					spawn_rebels = {
+						type = heretic_rebels
+						size = 2
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = expel_heathens.87.b
+		
+		every_owned_province = {
+			limit = {
+				province_id = event_target:expel_heathens_cycle_GE_pos
+			}
+			add_province_modifier = {
+				name = "Promote_Tolerance" #-20% dev cost, +25% goods produced, 50% Min autonomy
+				duration = 9125
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.88
+	title = expel_heathens.88.t #
+	desc = expel_heathens.88.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		has_reform = expel_heathens_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = expel_heathens.88.a
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		random_owned_province = {
+			limit = {
+				is_territory = no
+				NOT = { has_province_modifier = "Land_Clearance" }
+			}
+			add_province_modifier = {
+				name = "Land_Clearance" #+1 Building Slut, -5% Development Cost
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = expel_heathens.88.b
+		
+		add_prestige = -10
+		add_country_modifier = {
+			name = "Reduced_Immigration" #+10% Development Cost
+			duration = 3650
 		}
 	}
 }
