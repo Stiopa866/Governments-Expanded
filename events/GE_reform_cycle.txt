@@ -3566,7 +3566,10 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		has_reform = leading_clergy_reform
+		OR = {
+			has_reform = leading_clergy_reform
+			has_reform = papacy_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3595,7 +3598,10 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		has_reform = leading_clergy_reform
+		OR = {
+			has_reform = leading_clergy_reform
+			has_reform = papacy_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3628,7 +3634,10 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		has_reform = leading_clergy_reform
+		OR = {
+			has_reform = leading_clergy_reform
+			has_reform = papacy_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3662,7 +3671,10 @@ province_event = {
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		has_reform = leading_clergy_reform
+		OR = {
+			has_reform = leading_clergy_reform
+			has_reform = papacy_reform
+		}
 		any_owned_province = {
 			NOT = { has_building = temple }
 		}
@@ -3946,7 +3958,10 @@ country_event = {
 	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
-		has_reform = external_mission_reform
+		OR = {
+			has_reform = external_mission_reform
+			has_reform = teuton_army
+		}
 		at_war_with_religious_enemy = yes
 	}
 
@@ -3978,7 +3993,10 @@ country_event = {
 	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
-		has_reform = external_mission_reform
+		OR = {
+			has_reform = external_mission_reform
+			has_reform = teuton_army
+		}
 		has_border_with_religious_enemy = yes
 	}
 
@@ -4019,7 +4037,10 @@ country_event = {
 	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
-		has_reform = safeguard_holy_sites_reform
+		OR = {
+			has_reform = safeguard_holy_sites_reform
+			has_reform = teuton_priest
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -4065,7 +4086,10 @@ country_event = {
 	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
-		has_reform = safeguard_holy_sites_reform
+		OR = {
+			has_reform = safeguard_holy_sites_reform
+			has_reform = teuton_priest
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -4255,7 +4279,10 @@ country_event = {
 	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
-		has_reform = combat_heresy_reform
+		OR = {
+			has_reform = the_holy_office_reform
+			has_reform = combat_heresy_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -4303,7 +4330,10 @@ country_event = {
 	picture = CHURCH_ESTATE_1_eventPicture
 	
 	trigger = {
-		has_reform = combat_heresy_reform
+		OR = {
+			has_reform = the_holy_office_reform
+			has_reform = combat_heresy_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse

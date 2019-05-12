@@ -78,6 +78,32 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.70
 		#T7
 		400 = 0
+		
+		
+		#T1
+		100 = GE_reform_cycle.70 #Leading_Clergy
+		100 = GE_reform_cycle.71
+		100 = GE_reform_cycle.72
+		100 = GE_reform_cycle.73
+		100 = GE_reform_cycle.74
+
+		100 = GE_reform_cycle.76 #Monastic_Order
+		100 = GE_reform_cycle.77
+		100 = GE_reform_cycle.78
+		100 = GE_reform_cycle.79
+		100 = GE_reform_cycle.80
+		#T2
+		100 = GE_reform_cycle.81 #Internal_Mission
+		100 = GE_reform_cycle.82
+		100 = GE_reform_cycle.83 #External_Mission
+		100 = GE_reform_cycle.84
+		#T3
+		100 = GE_reform_cycle.85 # Holy_Sites
+		100 = GE_reform_cycle.86
+		100 = GE_reform_cycle.87 # Expell_Heathens
+		100 = GE_reform_cycle.88
+		100 = GE_reform_cycle.89 # Combat_Heretics
+		100 = GE_reform_cycle.90
 	}
 }
 
