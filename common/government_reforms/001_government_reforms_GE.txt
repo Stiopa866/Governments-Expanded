@@ -88,6 +88,8 @@ the_holy_office_reform = {
 	}
 }
 
+#T4 Theocracy
+
 holy_orthodoxy_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
@@ -124,7 +126,7 @@ religious_pragmatism_reform = {
 	}
 }
 
-#T4.5
+#T6
 
 secular_law_reform = {
 	icon = "landscape"
@@ -229,7 +231,7 @@ pagan_law_reform = {
 	}
 }
 
-#T6 Diplomacy
+#T7 Diplomacy
 
 unrestricted_diplomacy_reform = {
 	icon = "landscape"
@@ -277,7 +279,7 @@ the_bishops_diplomacy_reform = {
 	}
 }
 
-#T7 Mobilize the faithful
+#T8 Mobilize the faithful
 
 holy_war_reform = {
 	icon = "landscape"

@@ -142,7 +142,7 @@ maintain_religious_head_reform = {
 		yearly_absolutism = 0.1
 	}
 	ai_chance = {
-		factor = 1
+		factor = 5
 	}
 }
 
@@ -158,7 +158,7 @@ hereditary_religious_leadership_reform = {
 		add_government_reform = feudal_theocracy
 	}
 	ai_chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -174,7 +174,7 @@ crown_leader_reform = {
 		change_government = monarchy
 	}
 	ai_chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -189,7 +189,7 @@ proclaim_republic_reform = {
 		lose_reforms = 1
 		change_government = republic
 	}
-	ai_chance = {
+	ai = {
 		factor = 0
 	}
 }
