@@ -104,6 +104,8 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.88
 		100 = GE_reform_cycle.89 # Combat_Heretics
 		100 = GE_reform_cycle.90
+		#T4
+		
 	}
 }
 

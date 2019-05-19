@@ -328,5 +328,12 @@
  AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_CONTRACTION: "Available due to the §YCasa de Contraction§ ."
  AVAILABLE_BECAUSE_OF_REFORM_DECENTRALIZE: "Available due to §YDecentralized Bureaucracy§ ."
  AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS: "Available due to §YRegional Forts§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_INTERNAL_MISSION: "Available due to §YInternal Mission§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_EXTERNAL_MISSION: "Available due to §YExternal Mission§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_SAFEGUARD_HOLY_SITES: "Available due to §YSafeguard Holy Sites§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_EXPELL_HEATHENS: "Available due to §YExpell Heathens§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_COMBAT_HERESY: "Available due to §YCombat Heresy§ ."
+ 
+ 
  
  AVAILABLE_BECAUSE_OF_TAG_NED: "Available due to being the §YNetherlands§ ."

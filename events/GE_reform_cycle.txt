@@ -4372,3 +4372,261 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.91
+	title = holy_orthodoxy.91.t #
+	desc = holy_orthodoxy.91.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = holy_orthodoxy_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_colony = no
+					is_territory = no
+				}
+				save_event_target_as = holy_orthodoxy_cycle_GE_pos
+			}
+		}
+	}
+	
+	option = {
+		name = holy_orthodoxy.91.a
+		
+		add_country_modifier = {
+			name = "Rewriting_No"
+			duration = 9125
+		}
+		
+	}
+
+	option = {
+		name = holy_orthodoxy.91.b
+		
+		highlight = yes
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_INTERNAL_MISSION
+		
+		trigger = {
+			has_reform = internal_mission_reform
+		}
+		
+		add_corruption = 1
+		add_country_modifier = {
+			name = "Rewrite_Diligence"
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = holy_orthodoxy.91.c
+		
+		highlight = yes
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_EXTERNAL_MISSION
+		
+		trigger = {
+			has_reform = external_mission_reform
+		}
+		
+		add_corruption = 1
+		add_country_modifier = {
+			name = "Rewrite_Vigilance"
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = holy_orthodoxy.91.e
+		
+		highlight = yes
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_SAFEGUARD_HOLY_SITES
+		
+		trigger = {
+			has_reform = safeguard_holy_sites_reform
+		}
+		
+		add_corruption = 1
+		add_country_modifier = {
+			name = "Rewrite_Devotion"
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = holy_orthodoxy.91.f
+		
+		highlight = yes
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_EXPELL_HEATHENS
+		
+		trigger = {
+			has_reform = expel_heathens_reform
+		}
+		
+		add_corruption = 1
+		every_owned_province = {
+			limit = {
+				area = event_target:holy_orthodoxy_cycle_GE_pos
+			}
+			add_base_tax = 1
+		}
+	}
+	
+	option = {
+		name = holy_orthodoxy.91.g
+		
+		highlight = yes
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_COMBAT_HERESY
+		
+		trigger = {
+			has_reform = combat_heresy_reform
+		}
+		
+		add_corruption = 1
+		add_country_modifier = {
+			name = "Rewrite_Duty"
+			duration = 9125
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.92
+	title = holy_orthodoxy.92.t #
+	desc = holy_orthodoxy.92.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = holy_orthodoxy_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = holy_orthodoxy.92.a
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		
+	}
+
+	option = {
+		name = holy_orthodoxy.92.b
+		
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.93
+	title = inquisition.93.t #
+	desc = inquisition.93.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = inquisition_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = inquisition.93.a
+		
+		add_country_modifier = {
+			name = "Resistant_Population"
+			duration = 3650
+		}
+		
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.94
+	title = inquisition.94.t #
+	desc = inquisition.94.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = inquisition_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = inquisition.94.a
+		
+		add_prestige = 5
+		
+	}
+
+	option = {
+		name = inquisition.94.b
+		
+		add_ruler_modifier = {
+			name = "Mercyfull_Ruler"
+			duration = 3650
+		}
+
+	}
+}

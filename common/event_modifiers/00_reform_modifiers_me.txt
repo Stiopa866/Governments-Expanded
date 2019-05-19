@@ -256,3 +256,27 @@ Reduced_Immigration = {
 Fearfull_Populace = {
 	production_efficiency = -0.10
 }
+Rewriting_No = {
+	stability_cost_modifier = -0.05
+	global_unrest = -1
+}
+Rewrite_Diligence = {
+	global_trade_goods_size_modifier = 0.10
+}
+Rewrite_Vigilance = {
+	army_tradition = 0.5
+}
+Rewrite_Devotion = {
+	diplomatic_reputation = 2
+}
+Rewrite_Duty = {
+	fort_maintenance_modifier = -0.1
+	defensiveness = 0.15
+}
+Resistant_Population = {
+	global_missionary_strength = -0.02
+}
+Mercyfull_Ruler = {
+	tolerance_own = 1
+	stability_cost_modifier = -0.15
+}

@@ -445,7 +445,7 @@
  expel_heathens.88.t: "Eminent Domain"
  expel_heathens.88.d: "A decline in the amount of Expelled Heathens has led to less land then usual being available for settlement by pious immigrants, To alleviate this we could either send them back to their place of origin or seize some of the land of our clergy and nobility to make space for the potential citizens."
  expel_heathens.88.a: "The powers will have to accomodate these newcomers."
- expel_heathens.88.b: "Adieu mes amis"
+ expel_heathens.88.b: "Adieu mes amis."
  
  combat_heresy.89.t: "Purity Spiral"
  combat_heresy.89.d: "In our attempt to Combat Heretics our standards of piety have risen rapidly. To the point that even our $RULERTITLE$'s piety has come into question. Do we risk an inquisition?"
@@ -456,3 +456,39 @@
  combat_heresy.90.d: "As a unexpected side effect of our divine cause of Combatting Heresy, our peasants and merchant are fearful of acting in a way that can be interpreted as heretical. And thus a lot of decisions are being run through the church for validation. This seems to be hindering the economy."
  combat_heresy.90.a: "Maintain vigilance."
  combat_heresy.90.b: "lighten orthodoxy."
+ 
+ holy_orthodoxy.91.t: "New Edition"
+ holy_orthodoxy.91.d: "Whilst administering a new translated scripture for the Holy Orthodoxy, we could add some new texts favoring certain traits to be promoted by the clergy. even though it doesn't quite follow the lord's written word."
+ holy_orthodoxy.91.a: "Remain Pure."
+ holy_orthodoxy.91.b: "Diligence."
+ holy_orthodoxy.91.c: "Vigilance."
+ holy_orthodoxy.91.e: "Devotion."
+ holy_orthodoxy.91.f: "Civility."
+ holy_orthodoxy.91.g: "Duty."
+ 
+ holy_orthodoxy.92.t: "Conflict of Opinion"
+ holy_orthodoxy.92.d: "Even within our Holy Orthodoxy it appears there are multiple opinions on what exactly is meant with interpretations of the Lord's word. The noble estate claims that the primary role of protecting the faithfull falls to their swords, the clergy claims the primary role of protecting the faithfull falls to their prayer."
+ holy_orthodoxy.92.a: "What good are swords against the terrors of the heart?"
+ holy_orthodoxy.92.b: "The knights shall provide a bulwork against fear and despair."
+ 
+ inquisition.93.t: "Inquisitorial Excess"
+ inquisition.93.d: "While our Inquisitors are hunting for heretics and false converts, their ruthlessness is leading to a more resistant and less cooperative population."
+ inquisition.93.a: "Such is life"
+ 
+ inquisition.94.t: "Hidden Cult"
+ inquisition.94.d: "Our fanatical Inquisitors have uncovered a cult centered around debauchery and the sacrifice of animals to some natural spirit. We managed to catch all of them, what should be do with them?"
+ inquisition.94.a: "Execute them."
+ inquisition.94.b: "Offer them the chance to repent."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
