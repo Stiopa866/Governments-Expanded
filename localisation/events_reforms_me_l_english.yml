@@ -480,10 +480,23 @@
  inquisition.94.a: "Execute them."
  inquisition.94.b: "Offer them the chance to repent."
  
+ religious_pragmatism.95.t: "Local Expert"
+ religious_pragmatism.95.d: "From a less pious region, a incredibly successful banker has offered to serve as our master of coin in gratitude for our mercy upon his people, as they were persecuted in foreign nations. It appears our Religious Pragmatism has paid off.
+ religious_pragmatism.95.a: "The unworthy can serve."
  
+ religious_pragmatism.96.t: "Grassroots inquisition"
+ religious_pragmatism.96.d: "Our Religious Pragmatism has led to the establishment of small heretic and heathen communities, which we kindly tolerate. Some of our local nobles don't take to kindly to what they percieve to be new strongholds that are more loyal to the ruler then to their local Lords, and demand the communities disarm."
+ religious_pragmatism.96.a: "Disarm them."
+ religious_pragmatism.96.b: "Guarentee their rights."
  
+ secular_law.97.t: "Minorities Prosper"
+ secular_law.97.d: "Our Secular Law and local courts have led to nationwide peace and growth, especially in one of the areas that does not conform to our faith."
+ secular_law.97.a: "I suppose their taxes still serve the lord."
  
- 
+ secular_law.98.t: "Church Fifi's are hurt"
+ secular_law.98.d: "Our Secular Law allows for local courts and control, this system has led to the celebration of a festival that was formerly dedicated to pagan gods. The church demands that we crack down upon the festival and prevent such pagan worship."
+ secular_law.98.a: "My law trumps the clergical law."
+ secular_law.98.b: "This is a $RELIGION$ nation, we have no place for pagan worship."
  
  
  

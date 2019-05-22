@@ -484,7 +484,8 @@ trade_princes_reform = {
 		}
 	}
 	modifiers = {
-		placed_merchant_power = 5
+		placed_merchant_power = 20
+		merchants = 1
 	}
 	can_use_trade_post = yes
 	ai_chance = {
