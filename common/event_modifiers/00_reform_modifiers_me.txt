@@ -285,8 +285,11 @@ Heretical_Law = {
 	papal_influence = -0.5
 	local_autonomy = -0.10
 }
-
 Divine_Justice = {
 	global_unrest = -2
 	global_autonomy = -0.1
+}
+Good_Ruler = {
+	tolerance_own = 1
+	missionary_maintenance_cost = -0.1
 }

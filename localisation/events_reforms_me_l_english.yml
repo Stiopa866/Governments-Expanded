@@ -509,7 +509,15 @@
  theocratic_law.100.b: "This kind of fervor can't be wasted. Let us use it now."
  theocratic_law.100.c: "Divine guidance and laws will be known throughout the land."
  
+ bishops_law.101.t: "Inspirational Rule"
+ bishops_law.101.d: "The empowered governance of our Bishop inspires the faithful. His justice has spread across the land, bringing an end to many conflicts and injustices across the land. For political gain we could claim this is the bishop's work instead of the Lord's justice."
+ bishops_law.101.a: "This is the result of piety and the word of God."
+ bishops_law.101.b: "$RULERNAME$ is the true architect of this."
  
+ bishops_law.102.t: "Nobody else to blame"
+ bishops_law.102.d: "With our faith placed firmly in the Bishop, he is given not only praise for the things he does well - but blame for when things go poorly.  His rule has been poor lately, and shifting the blame somewhere else would be difficult."
+ bishops_law.102.a: "Admit to your mistakes."
+ bishops_law.102.b: "Desperately shift the blame."
  
  
  

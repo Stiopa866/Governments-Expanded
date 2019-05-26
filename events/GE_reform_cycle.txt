@@ -4928,3 +4928,74 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = GE_reform_cycle.101
+	title = bishops_law.101.t #
+	desc = bishops_law.101.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = the_bishops_law_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = bishops_law.101.a
+		
+		add_country_modifier = {
+			name = "Good_Ruler" #+1 TOTF, -10% Missionary strength
+			name = 5475
+		}
+	}
+	
+	option = {
+		name = bishops_law.101.b
+		
+		add_prestige = 10
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.102
+	title = bishops_law.102.t #
+	desc = bishops_law.102.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = the_bishops_law_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = bishops_law.102.a
+		
+		add_devotion = -15
+	}
+	
+	option = {
+		name = bishops_law.102.b
+		
+		add_prestige = -10
+	}
+}
