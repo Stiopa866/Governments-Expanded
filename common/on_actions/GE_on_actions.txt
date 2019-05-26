@@ -105,6 +105,23 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.89 # Combat_Heretics
 		100 = GE_reform_cycle.90
 		#T4
+		100 = GE_reform_cycle.91 # Holy_Orthodoxy
+		100 = GE_reform_cycle.92
+		100 = GE_reform_cycle.93 # Inquisition
+		100 = GE_reform_cycle.94
+		100 = GE_reform_cycle.95 # Religious_Pragmatism
+		100 = GE_reform_cycle.96
+		#T5
+
+		#T6
+		100 = GE_reform_cycle.97 # Secular_Law
+		100 = GE_reform_cycle.98
+		100 = GE_reform_cycle.99 # Theocratic_Law
+		100 = GE_reform_cycle.100
+		100 = GE_reform_cycle.101 # Bishops_Law
+		100 = GE_reform_cycle.102
+		
+		#7
 		
 	}
 }

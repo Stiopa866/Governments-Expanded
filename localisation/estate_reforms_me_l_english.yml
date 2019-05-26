@@ -302,6 +302,8 @@
  
  AVAILABLE_BECAUSE_OF_INNOVATIVENESS: "Available due to more then §Y50§ Innovativeness ."
  AVAILABLE_BECAUSE_OF_PRESTIGE: "Available due to more then §Y50§ Prestige ."
+ AVAILABLE_BECAUSE_OF_TOLERANCE: "Available due to §Y5+ Tolerance§ ."
+ AVAILABLE_BECAUSE_OF_TOLERANCE10: "Available due to §Y10+ Tolerance§ ."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_BISHOP: "Available due to §YMetropolian Bishops§  and §YAdministrative Clergy§ ."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_STATE: "Available due to §YState Church§  and §YAdministrative Clergy§ ."
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY_AND_POPE: "Available due to §YPapal Embassy§  and §YAdministrative Clergy§ ."

@@ -4167,7 +4167,7 @@ country_event = {
 	option = {
 		name = expel_heathens.87.a
 		
-		every_owned_province = {
+		random_owned_province = {
 			limit = {
 				province_id = event_target:expel_heathens_cycle_GE_pos
 			}
@@ -4177,7 +4177,7 @@ country_event = {
 		}
 		
 		random_list = {
-			55 = {}
+			60 = {}
 			30 = {
 				every_owned_province = {
 					limit = {
@@ -4189,7 +4189,7 @@ country_event = {
 					}
 				}
 			}
-			15 = {
+			10 = {
 				every_owned_province = {
 					limit = {
 						province_id = event_target:expel_heathens_cycle_GE_pos
@@ -4805,5 +4805,126 @@ country_event = {
 			add_unrest = 5
 		}
 		
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.99
+	title = theocratic_law.99.t #
+	desc = theocratic_law.99.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = theocratic_law_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_colony = no
+					is_territory = no
+				}
+				save_event_target_as = theocratic_law_cycle_GE_neg
+			}
+		}
+	}
+	
+	option = {
+		name = theocratic_law.99.a
+		
+		random_owned_province = {
+			limit = {
+				province_id = event_target:theocratic_law_cycle_GE_neg
+			}
+			add_unrest = 8
+			random_list = {
+				50 = 0
+				50 = 
+					spawn_rebels = {
+						type = heretic_rebels_rebels
+						size = 2
+					}
+			}
+		}
+	}
+	
+	option = {
+		name = theocratic_law.99.b
+		
+		random_owned_province = {
+			limit = {
+				province_id = event_target:theocratic_law_cycle_GE_neg
+			}
+			add_province_modifier = {
+				name = "Heretical_Law"
+				duration = 3650
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle.100
+	title = theocratic_law.100.t #
+	desc = theocratic_law.100.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = theocratic_law_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = theocratic_law.100.a
+		
+		add_devotion = 10
+		
+	}
+	
+	option = {
+		name = theocratic_law.100.b
+		
+		highlight = yes
+		custom_tooltip = AVAILABLE_BECAUSE_OF_TOLERANCE5
+		trigger = {
+			tolerance_to_this = 5
+		}
+		add_stability = 1
+	}
+
+	option = {
+		name = theocratic_law.100.b
+		
+		highlight = yes
+		custom_tooltip = AVAILABLE_BECAUSE_OF_TOLERANCE10
+		trigger = {
+			tolerance_to_this = 10
+			NOT = { has_country_modifier = Divine_Protection }
+		}
+		add_country_modifier = {
+			name = "Divine_Justice" #	global_unrest = -2,	global_autonomy = -0.1
+			duration = -1
+		}
 	}
 }

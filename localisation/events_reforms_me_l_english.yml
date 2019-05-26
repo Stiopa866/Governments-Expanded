@@ -498,7 +498,16 @@
  secular_law.98.a: "My law trumps the clergical law."
  secular_law.98.b: "This is a $RELIGION$ nation, we have no place for pagan worship."
  
+ theocratic_law.99.t: "Rumors of Blasphemy"
+ theocratic_law.99.d: "Rumor has it that the people in the province of x are meeting in secret to denounce God and his Holy Law in our country. We cannot tolerate sinners, but we don't want to risk a full blown rebellion either. What do we do?"
+ theocratic_law.99.a: "Kill them and let God sort them out."
+ theocratic_law.99.b: Option B: "Remain silent on the issue."
  
+ theocratic_law.100.t: "Devotion to the Lord's Law"
+ theocratic_law.100.d: "Since the implementation and enforcement of our most holy laws, we have been able to see a rise in obedience to the sacred word and a greater devotion to the central and divinely guided authority in our nation. But still, we believe we can reach further, can we not? There is always more ways to be devoted, and an ever expanding variety of methods to show devotion whilst also adhering to the sacred texts and holy laws of our land."
+ theocratic_law.100.a: "We are pious, but we can still be more!"
+ theocratic_law.100.b: "This kind of fervor can't be wasted. Let us use it now."
+ theocratic_law.100.c: "Divine guidance and laws will be known throughout the land."
  
  
  

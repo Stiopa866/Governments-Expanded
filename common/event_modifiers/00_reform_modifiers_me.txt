@@ -280,3 +280,13 @@ Mercyfull_Ruler = {
 	tolerance_own = 1
 	stability_cost_modifier = -0.15
 }
+Heretical_Law = {
+	tolerance_own = -1
+	papal_influence = -0.5
+	local_autonomy = -0.10
+}
+
+Divine_Justice = {
+	global_unrest = -2
+	global_autonomy = -0.1
+}
