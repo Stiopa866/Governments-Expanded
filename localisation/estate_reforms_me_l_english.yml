@@ -152,7 +152,18 @@
  fredrickan_reforms_reform: "Frederick's Reforms"
  fredrickan_reforms_reform_desc: "Frederick the Great reorganized the Prussian economy, by establishing additionl protection for religious minorities, a national bank, tax reforms and industrial investments. As a direct result from these policies and reforms, Many immigrants came into the less developed parts of the nation, and both the industrial output and the state solvency soared."
  
- 
+ office_of_lord_regent_reform: "Office of Lord Regent"
+ office_of_lord_regent_reform_desc: "The Lord Regent was a position held to the head govenor of the highly autonomous Kingdom of Sweden. Danish Kings often tried to abolish or weaken this position, only to be met with fierce resistance or independence wars to restore Swedish Autonomy."
+ house_of_knights_reform: "House of Knights"
+ house_of_knights_reform_desc: "The Swedish Hereditary Nobility was established following Eric the 14th's formalization of nobility. By 1626 the House of Knights represented the nobility and maintained their records and geneology. Following the practice of ennobling officers instead of paying them, many houses of lesser nobility can trace their lineage back through this system, registered in the House of Knights."
+ the_red_book_reform: "Swedish Church Order"
+ the_red_book_reform_desc: "The 'Swedish Church Order' was a Swedish reformation of Lutherianism that allowed some catholic practices as well as allow catholic orders to grow again by taking on new novices."
+ the_judicature_ordinance_reform: "The Judicature Ordinance"
+ the_judicature_ordinance_reform_desc: "The Judicature Ordinance established the Supreme Court. Later additions relaxed the process of appeal somewhat by restoring the king's authority and giving him the exclusive right to administer death sentences. The continuance of the local jury and a culture of respecting the law allowed for protected civil liberties."
+ parliamentary_order_reform: "Parliamentary Order"
+ parliamentary_order_reform_desc: "The Parliamentary Order set up the Parliament of Sweden, where the four represented estates, the nobles, clergy, burghers and peasants, could work together to propose new laws to increase the prosperity of the nation."
+ gustavan_artillery_reform: "Gustavan Artillery"
+ gustavan_artillery_reform_desc: "Field artillery has long been a static emplacement for firing before the battle starts. Let us use lighter pieces on the battlefield itself for additional firepower and mobility, let us shred the Imperial Tercios to pieces!"
  
  military_organisation: "Military Organisation"
  feudal_levies_reform: "Feudal Levies"

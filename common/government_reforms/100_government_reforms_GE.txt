@@ -601,7 +601,6 @@ office_of_lord_regent_reform = {
 		}
 	}
 	modifiers = {
-		liberty_desire = 15
 		legitimacy = 0.5
 		prestige = 0.5
 		war_exhaustion = -0.025
@@ -801,7 +800,8 @@ integrate_moneyloaners_reform = {
 	icon = banker
 	allow_normal_conversion = yes
 	modifiers = {
-		interest = -0.5
+		interest = -1
+		inflation_reduction = -0.05
 	}
 	custom_attributes = { 
 		enables_moneyloaners = yes
