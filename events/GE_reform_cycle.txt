@@ -2952,7 +2952,7 @@ country_event = {
 		event_target:freedom_of_religion_cycle_GE_neg = {
 			spawn_rebels = {
 				type = heretic_rebels 
-				size = 3
+				size = 2
 			}
 		}
 	}
@@ -3595,7 +3595,7 @@ country_event = {
 	id = GE_reform_cycle.72
 	title = leading_clergy.72.t #Possessed Priest
 	desc = leading_clergy.72.d
-	picture = LAND_MILITARY_eventPicture
+	picture = CHURCH_ESTATE_UPSET_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3631,7 +3631,7 @@ country_event = {
 	id = GE_reform_cycle.73
 	title = leading_clergy.73.t #A Great Man
 	desc = leading_clergy.73.d
-	picture = LAND_MILITARY_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3668,7 +3668,7 @@ province_event = {
 	id = GE_reform_cycle.74
 	title = leading_clergy.74.t #Construction of new Temple
 	desc = leading_clergy.74.d
-	picture = LAND_MILITARY_eventPicture
+	picture = CITY_VIEW_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3715,7 +3715,7 @@ country_event = {
 	id = GE_reform_cycle.76
 	title = monastic_order.76.t #Alms for the poor
 	desc = monastic_order.76.d
-	picture = LAND_MILITARY_eventPicture
+	picture = CORRUPTION_eventPicture
 	
 	trigger = {
 		has_reform = monastic_order_reform
@@ -3747,7 +3747,7 @@ country_event = {
 	id = GE_reform_cycle.77
 	title = monastic_order.77.t #Seasonal Volunteers
 	desc = monastic_order.77.d
-	picture = LAND_MILITARY_eventPicture
+	picture = STREET_SPEECH_eventPicture
 	
 	trigger = {
 		has_reform = monastic_order_reform
@@ -3770,7 +3770,7 @@ country_event = {
 	id = GE_reform_cycle.78
 	title = monastic_order.78.t #Less then noble ideals
 	desc = monastic_order.78.d
-	picture = LAND_MILITARY_eventPicture
+	picture = SPY_eventPicture
 	
 	trigger = {
 		has_reform = monastic_order_reform
@@ -3816,7 +3816,7 @@ country_event = {
 	id = GE_reform_cycle.79
 	title = monastic_order.79.t #Lack of Piety
 	desc = monastic_order.79.d
-	picture = LAND_MILITARY_eventPicture
+	picture = WOUNDED_SOLDIERS_eventPicture
 	
 	trigger = {
 		has_reform = monastic_order_reform
@@ -3856,7 +3856,7 @@ country_event = {
 	id = GE_reform_cycle.80
 	title = monastic_order.80.t #Militarize the Order
 	desc = monastic_order.80.d
-	picture = LAND_MILITARY_eventPicture
+	picture = FORT_eventPicture
 	
 	trigger = {
 		has_reform = monastic_order_reform
@@ -3923,7 +3923,7 @@ country_event = {
 	id = GE_reform_cycle.82
 	title = internal_mission.82.t #Failure of Duty
 	desc = internal_mission.82.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = CHURCH_ESTATE_2_eventPicture
 	
 	trigger = {
 		has_reform = internal_mission_reform
@@ -3955,7 +3955,7 @@ country_event = {
 	id = GE_reform_cycle.83
 	title = external_mission.83.t #Deus Vult
 	desc = external_mission.83.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = BATTLE_eventPicture
 	
 	trigger = {
 		OR = {
@@ -3990,7 +3990,7 @@ country_event = {
 	id = GE_reform_cycle.84
 	title = external_mission.84.t #Sins of the Human Heart
 	desc = external_mission.84.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4034,7 +4034,7 @@ country_event = {
 	id = GE_reform_cycle.85
 	title = holy_sites.85.t #Wave of Piety
 	desc = holy_sites.85.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = MERCHANTS_TALKING_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4083,7 +4083,7 @@ country_event = {
 	id = GE_reform_cycle.86
 	title = holy_sites.86.t #A Hidden Truth
 	desc = holy_sites.86.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = STREET_SPEECH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4138,7 +4138,7 @@ country_event = {
 	id = GE_reform_cycle.87
 	title = expel_heathens.87.t #
 	desc = expel_heathens.87.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
 		has_reform = expel_heathens_reform
@@ -4222,7 +4222,7 @@ country_event = {
 	id = GE_reform_cycle.88
 	title = expel_heathens.88.t # 
 	desc = expel_heathens.88.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = FARMING_eventPicture
 	
 	trigger = {
 		has_reform = expel_heathens_reform
@@ -4276,7 +4276,7 @@ country_event = {
 	id = GE_reform_cycle.89
 	title = combat_heresy.89.t #Purity Spiral
 	desc = combat_heresy.89.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4327,7 +4327,7 @@ country_event = {
 	id = GE_reform_cycle.90
 	title = combat_heresy.90.t #
 	desc = combat_heresy.90.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4377,7 +4377,7 @@ country_event = {
 	id = GE_reform_cycle.91
 	title = holy_orthodoxy.91.t #
 	desc = holy_orthodoxy.91.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = PRAYING_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4511,7 +4511,7 @@ country_event = {
 	id = GE_reform_cycle.92
 	title = holy_orthodoxy.92.t #
 	desc = holy_orthodoxy.92.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4562,7 +4562,7 @@ country_event = {
 	id = GE_reform_cycle.93
 	title = inquisition.93.t #
 	desc = inquisition.93.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4595,7 +4595,7 @@ country_event = {
 	id = GE_reform_cycle.94
 	title = inquisition.94.t #
 	desc = inquisition.94.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4635,7 +4635,7 @@ country_event = {
 	id = GE_reform_cycle.95
 	title = religious_pragmatism.95.t #
 	desc = religious_pragmatism.95.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = ADVISOR_eventPicture
 	
 	trigger = {
 		OR = {
@@ -4670,7 +4670,7 @@ country_event = {
 	id = GE_reform_cycle.96
 	title = religious_pragmatism.96.t #
 	desc = religious_pragmatism.96.d
-	picture = CHURCH_ESTATE_1_eventPicture
+	picture = LIBERUM_VETO_eventPicture
 	
 	trigger = {
 		OR = {

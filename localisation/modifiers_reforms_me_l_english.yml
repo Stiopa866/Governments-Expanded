@@ -20,6 +20,11 @@
  Mil_2_Leader: "Noble Cadets"
  Mil_2_Main: "Extra Supplies"
  
+ tax_peasants: "Peasant Tax"
+ tax_peasants_desc: "Levy an additional tax upon the peasantry."
+ register_peasants: "Peasant Register"
+ register_peasants_desc: "Update the peasant register for easier recruitment or conscription."
+ 
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"
  Beneficial_Self_Rule: "Beneficial Self Rule"
@@ -61,6 +66,37 @@
  Set_Aside_Alms: "Set Aside Alms"
  Purged_Govenor: "Purged Govenor"
  Maintain_Current_Govenor: "Maintain Status Quo"
+ Pure_Order: "Pure Order"
+ Decadent_Decay: "Decadent Decay"
+ Militarized_Order: "Militarized Order"
+ Militarized_Order_desc: "Our Monastic Order has went through some increasingly militaristic internal reforms, and dedicates itself to fighting the outside threat, and shall liberate and educate, but not rule, the heathens and heretics."
+ Ave_Maria: "Ave Maria"
+ Losing_Faith: "Losing Faith"
+ Losing_Faith_desc: "Our peacefull interactions and lack of war with heathens is leaving some of our people to think that we're not taking our duty seriously."
+ Deus_Vult: "Deus Vult"
+ Deus_Vult_desc: "Our nation comes together to fight and destroy the heretic and the heathens."
+ Tourist_Tax: "Tourist Tax"
+ Tourist_Tax_desc: "A small price to pay for salvation."
+ Promote_Tolerance: "Promote Tolerance"
+ Land_Clearance: "Land Clearance"
+ Land_Clearance_desc: "The additional space created allows for the local population to grow and additional industries to be founded here."
+ Reduced_Immigration: "Reduced Immigration"
+ Fearfull_Populace: "Fearfull Populace"
+ Rewriting_No: "Maintain the Scripture"
+ Rewrite_Diligence: "Promote Diligence"
+ Rewrite_Vigilance: "Promote Vigilance"
+ Rewrite_Devotion: "Promote Devotion"
+ Rewrite_Duty: "Promote Duty"
+ Resistant_Population: "Resistant Population"
+ Mercyfull_Ruler: "Mercyfull Ruler"
+ Heretical_Law: "Heretical Law"
+ Divine_Justice: "Divine Justice"
+ Good_Ruler: "Good and Kind Ruler"
+ 
+ 
+ 
+ 
+ 
  
  EST_VAL_ANCIEN_REGIME_REFORM:0 "Ancien Regime: §Y$VAL$%§!"
  EST_VAL_REGIONAL_FORTS_REFORM:0 "Regional Forts: §Y$VAL$%§!"
@@ -85,5 +121,5 @@
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"
  EST_VAL_DHIMMI_NOBLES_REFORM_LOY:0 "Dhimmi Nobles: §G$VAL$§!"
- 
+ EST_VAL_HOUSE_OF_KNIGHTS_LOY:0 "House of Knights: §G$VAL$§!"
  

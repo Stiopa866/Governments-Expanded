@@ -43,6 +43,7 @@ monarchy = {
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus
 				crown_of_saint_wenceslaus_2
+				office_of_lord_regent_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -79,7 +80,7 @@ monarchy = {
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				blood_tax_reform
-				office_of_lord_regent_reform
+				house_of_knights_reform
 			}
 		}
 		bureaucracy = {

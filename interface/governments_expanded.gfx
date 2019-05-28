@@ -243,4 +243,24 @@ spriteTypes = {
 		name = "government_reform_blood_tax"
 		texturefile = "gfx//interface//government_reform_icons//blood_tax.dds"
 	}
+	spriteType = {
+		name = "government_reform_gustavus_adolphus"
+		texturefile = "gfx//interface//government_reform_icons//gustavus_adolphus.dds"
+	}
+	spriteType = {
+		name = "government_reform_swedish_church_ordinance"
+		texturefile = "gfx//interface//government_reform_icons//swedish_church_ordinance.dds"
+	}
+	spriteType = {
+		name = "government_reform_gustavan_artillery"
+		texturefile = "gfx//interface//government_reform_icons//gustavan_artillery.dds"
+	}
+	spriteType = {
+		name = "government_reform_house_of_knights"
+		texturefile = "gfx//interface//government_reform_icons//house_of_knights.dds"
+	}
+	spriteType = {
+		name = "government_reform_sten_sture"
+		texturefile = "gfx//interface//government_reform_icons//sten_sture.dds"
+	}
 }
