@@ -1048,7 +1048,7 @@ estate_nobles =
 				custom_tooltip = estate_diplomat.tooltip
 				add_country_modifier = {
 					name = "NobleDiplomat"
-					duration = 5475
+					duration = 10950
 					}
 				
 			}

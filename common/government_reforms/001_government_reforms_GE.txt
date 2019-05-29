@@ -264,7 +264,7 @@ network_of_faithful_allies_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		vassal_income = 0.2
-		reduced_liberty_desire = 0.10
+		reduced_liberty_desire = 10
 	}
 	ai_chance = {
 		factor = 1

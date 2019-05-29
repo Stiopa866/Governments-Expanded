@@ -317,8 +317,7 @@ papal_embassy_reform = {
 		religion = catholic
 	}
 	modifiers = {
-		papal_influence = 1.5
-		GE_catholics_influence = 0.25
+		papal_influence = 2
 	}
 	ai_chance = {
 		factor = 1
@@ -333,7 +332,7 @@ metropolian_bishop_reform = {
 	}
 	modifiers = {
 		prestige_per_development_from_conversion = 0.1
-		state_maintenance_modifier = -0.10
+		state_maintenance_modifier = -0.25
 	}
 	effect = {
 		add_patriarch_authority = 0.10
@@ -354,9 +353,9 @@ state_church_reform = {
 		}
 	}
 	modifiers = {
+		tolerance_own = 0.5
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		GE_ultraquists_influence = 0.25
 	}
 	ai_chance = {
 		factor = 1
@@ -1025,6 +1024,7 @@ parliamentary_order_reform = {
 	ai_chance = {
 		factor = 100
 	}
+	#No events, add later?
 }
 
 
