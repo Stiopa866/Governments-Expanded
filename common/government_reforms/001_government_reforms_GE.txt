@@ -91,7 +91,7 @@ the_holy_office_reform = {
 #T4 Theocracy
 
 holy_orthodoxy_reform = {
-	icon = "landscape"
+	icon = "holy_orthodoxy"
 	allow_normal_conversion = yes
 	modifiers = {
 		yearly_corruption = -0.05
@@ -103,7 +103,7 @@ holy_orthodoxy_reform = {
 }
 
 inquisition_reform = {
-	icon = "landscape"
+	icon = "inquisition"
 	allow_normal_conversion = yes
 	modifiers = {
 		global_heretic_missionary_strength = 0.03
@@ -115,7 +115,7 @@ inquisition_reform = {
 }
 
 religious_pragmatism_reform = {
-	icon = "landscape"
+	icon = "religious_pragmatism"
 	allow_normal_conversion = yes
 	modifiers = {
 		religious_unity = 0.20
@@ -129,7 +129,7 @@ religious_pragmatism_reform = {
 #T6
 
 secular_law_reform = {
-	icon = "landscape"
+	icon = "secular_law"
 	allow_normal_conversion = yes
 	modifiers = {
 		global_unrest = -1
@@ -140,7 +140,7 @@ secular_law_reform = {
 }
 
 theocratic_law_reform = {
-	icon = "landscape"
+	icon = "theocratic_law"
 	allow_normal_conversion = yes
 	modifiers = {
 		stability_cost_modifier = -0.15
@@ -152,7 +152,7 @@ theocratic_law_reform = {
 }
 
 the_bishops_law_reform = {
-	icon = "landscape"
+	icon = "bishop's_law"
 	allow_normal_conversion = yes
 	modifiers = {
 		free_adm_policy = 1
@@ -163,7 +163,7 @@ the_bishops_law_reform = {
 }
 
 roman_law_reform = {
-	icon = "landscape"
+	icon = "roman_law"
 	allow_normal_conversion = yes
 	potential = {
 		religion = catholic
@@ -180,7 +180,7 @@ roman_law_reform = {
 }
 
 jizja_tax_reform = {
-	icon = "landscape"
+	icon = "jizja_law"
 	allow_normal_conversion = yes
 	potential = {
 		religion_group = muslim
@@ -197,7 +197,7 @@ jizja_tax_reform = {
 }
 
 harmonious_law_reform = {
-	icon = "landscape"
+	icon = "harmonious_law"
 	allow_normal_conversion = yes
 	potential = {
 		religion = confucianism
@@ -215,7 +215,7 @@ harmonious_law_reform = {
 }
 
 pagan_law_reform = {
-	icon = "landscape"
+	icon = "pagan_law"
 	allow_normal_conversion = yes
 	potential = {
 		religion_group = pagan
@@ -234,7 +234,7 @@ pagan_law_reform = {
 #T7 Diplomacy
 
 unrestricted_diplomacy_reform = {
-	icon = "landscape"
+	icon = "unrestricted_diplomacy"
 	allow_normal_conversion = yes
 	modifiers = {
 		improve_relation_modifier = 0.15
@@ -245,7 +245,7 @@ unrestricted_diplomacy_reform = {
 }
 
 holy_claims_reform = {
-	icon = "landscape"
+	icon = "holy_claims"
 	allow_normal_conversion = yes
 	modifiers = {
 		unjustified_demands = -0.25
@@ -260,7 +260,7 @@ holy_claims_reform = {
 }
 
 network_of_faithful_allies_reform = {
-	icon = "landscape"
+	icon = "network_of_faithful_allies"
 	allow_normal_conversion = yes
 	modifiers = {
 		vassal_income = 0.2
@@ -272,7 +272,7 @@ network_of_faithful_allies_reform = {
 }
 
 the_bishops_diplomacy_reform = {
-	icon = "landscape"
+	icon = "bishops_diplomacy"
 	allow_normal_conversion = yes
 	modifiers = {
 		free_dip_policy = 1
@@ -285,7 +285,7 @@ the_bishops_diplomacy_reform = {
 #T8 Mobilize the faithful
 
 holy_war_reform = {
-	icon = "landscape"
+	icon = "holy_war"
 	allow_normal_conversion = yes
 	modifiers = {
 		manpower_recovery_speed = 0.10
@@ -299,7 +299,7 @@ holy_war_reform = {
 }
 
 militarized_monasteries_reform = {
-	icon = "landscape"
+	icon = "militarized_monasteries"
 	allow_normal_conversion = yes
 	modifiers = {
 		army_tradition = 0.5
@@ -311,10 +311,8 @@ militarized_monasteries_reform = {
 }
 
 brothers_in_arms_reform = {
-	icon = "landscape"
+	icon = "brothers_in_arms"
 	allow_normal_conversion = yes
-	
-	rulers_can_be_generals = yes
 	
 	modifiers = {
 		mercenary_discipline = 0.025
@@ -326,7 +324,7 @@ brothers_in_arms_reform = {
 }
 
 the_bishops_army_reform = {
-	icon = "landscape"
+	icon = "bishops_army"
 	allow_normal_conversion = yes
 	modifiers = {
 		free_mil_policy = 1

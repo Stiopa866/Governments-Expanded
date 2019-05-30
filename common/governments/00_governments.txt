@@ -572,8 +572,6 @@ theocracy = {
 				crown_leader_reform
 				proclaim_republic_reform
 				battle_pope_reform
-				teuton_army
-				teuton_navy
 			}
 		}
 		judiciary = {
@@ -585,7 +583,6 @@ theocracy = {
 				jizja_tax_reform
 				harmonious_law_reform
 				pagan_law_reform
-				
 			}
 		}
 		diplomacy = {
@@ -594,6 +591,7 @@ theocracy = {
 				holy_claims_reform
 				network_of_faithful_allies_reform
 				the_bishops_diplomacy_reform
+				teuton_navy
 			}
 		}
 		mobilize_the_faithful = {
@@ -604,6 +602,7 @@ theocracy = {
 				the_bishops_army_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				teuton_army
 			}
 		}
 	}

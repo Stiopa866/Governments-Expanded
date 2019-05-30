@@ -16,7 +16,7 @@
  beylik: "Beylik"
  beylik_desc: "Heirs of the former Suljuk sultanate, we serve no longer, and will establish our own empire!"
  kingdom_of_portugal: "Kingdom of Portugal"
- kingdom_of_portugal_desc: "From the chaos of the Re-Conquista our great leader Afonso the Qonqueror emerged, after a war to claim his inheritance he became a pious servant of the holy see, and spend much of his life reclaiming the western lands of Iberia in the name of the Lord."
+ kingdom_of_portugal_desc: "From the chaos of the Re-Conquista our great leader Afonso the Conqueror emerged, after a war to claim his inheritance he became a pious servant of the holy see, and spend much of his life reclaiming the western lands of Iberia in the name of the Lord."
  kingdom_of_portugal_and_azures: "Portuguese Thassalocracy"
  kingdom_of_portugal_and_azures_desc: "John 2 'The Perfect' restored the policies of Atlantic exploration, reviving the work of his great-uncle, Henry the Navigator. The Portuguese explorations were his main priority in government, pushing south the known coast of Africa with the purpose of discovering the maritime route to India and breaking into the spice trade."
  american_government: "American Government"
@@ -194,6 +194,7 @@
  teuton_drill_desc: "We are the bastion of Pure Christianity. A beacon for believers that shines amidst the horrors of unbelievers and heretics. Our spears and swords shall carry our oaths: In Deo speramus."
  
  #Theocracies T4.5
+ religious_enforcement: "Religious Enforcement"
  holy_orthodoxy_reform: "Holy Orthodoxy"
  holy_orthodoxy_reform_desc: "Our nation is a bastion of faith and purity, we are in no need of internal inquisitors that would just clog up our administration."
  inquisition_reform: "Inquisition"
@@ -202,6 +203,7 @@
  religious_pragmatism_reform_desc: "Just because the unbelievers don't follow the Lord, that should not disqualify them from serving him and his flock."
  
  #Theocracies T6
+ judiciary: "Judiciary"
  secular_law_reform: "Secular Law"
  secular_law_reform_desc: "Let us base our laws on the cultural rules and customs of our herd, it is not the shepherd's job to choose their rules, its about guiding them spiritually."
  theocratic_law_reform: "Theocratic Law"
@@ -218,16 +220,18 @@
  pagan_law_reform_desc: "The only laws we need are natural laws of our gods, even if they may be too militant at first."
  
  #Theocracies T7
+ diplomacy: "Diplomacy"
  unrestricted_diplomacy_reform: "Unrestricted Diplomacy"
  unrestricted_diplomacy_reform_desc: "Our diplomats should remember that their job is to acquire allies and maintain diplomatic relations regardless of religious background. They should be working in our interest."
  holy_claims_reform: "Holy Claims"
  holy_claims_reform_desc: "The lands the lord chooses for us are ours to take, we know this, and the world shall know this too."
- network_of_faithful_allies_reform: "Network of Faithfull Allies"
+ network_of_faithful_allies_reform: "Network of Faithful Allies"
  network_of_faithful_allies_reform_desc: "Let us set up a network of tributary allies around our borders to defend our flock from raids and heretical cults."
  the_bishops_diplomacy_reform: "Bishop's Diplomacy"
  the_bishops_diplomacy_reform_desc: "Let us place our faith in the Bishop, for he is guided by the lord, and shall bring us allies and peace."
  
  #Theocracies T8
+ mobilize_the_faithful: "Mobilize the Faithful"
  holy_war_reform: "Holy War"
  holy_war_reform_desc: "Are you a man of peace, or man of holy war? Too many sides to you, don't know which anymore. So many full of life, but also filled with pain. don't know just how many will live to breath again. A life that's made to breathe, Destruction or defense. A mind that's vain corruption, Bad or good intent. A wolf in sheep's clothing, Or saintly or sinner. Or some that would believe A holy war winner."
  militarized_monasteries_reform: "Militarized Monasteries."
@@ -247,6 +251,7 @@
  mechanic_enables_noble_diplomats_yes:0 "The Noble Estate Interaction Recruit Minister will instead grant §G10%§! Improve relations."
  mechanic_enables_cortes_yes:0 "Enable The Cortes Interaction in the Noble Estate."
  mechanic_enables_demedici_yes:0 "Enables Florentine Mechanics."
+ mechanic_enables_holy_war_yes:0 "Enables Holy Wars."
 
  elections.721.dc: "<ruler name>'s reign has come to an end, serving his nation with great deeds. A new question now arises, who will be the next ruler of Bohemia? On the left hand there are the traditionalist Hussites, seeking to strengthen the ideas of Jan Hus. On the other hand there are the Catholic Canidates, men ready to cooperate with the church in Rome. The fate of Bohemia is in your hands."
  elections.720.e: "A Catholic Noble."

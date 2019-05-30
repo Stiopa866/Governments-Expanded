@@ -806,7 +806,7 @@ the_red_book_reform = {
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.10
-		tolerance_heretic = 1
+		tolerance_heretic = 0.5
 	}
 	ai_chance = {
 		factor = 100
@@ -847,8 +847,6 @@ advanced_bookkeeping_reform = {
 		factor = 5
 	}
 }
-
-
 	
 colonial_govenors_reform = {
 	icon = colonial_rule
@@ -954,7 +952,10 @@ conseil_du_roi_reform = {
 	icon = conseil_du_roi
 	allow_normal_conversion = yes
 	potential = { 
-		tag = FRA
+		OR = {
+			tag = FRA
+			have_had_reform = conseil_du_roi_reform
+		}
 	}
 	modifiers = {
 		max_absolutism = 5

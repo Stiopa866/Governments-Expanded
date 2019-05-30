@@ -263,4 +263,76 @@ spriteTypes = {
 		name = "government_reform_sten_sture"
 		texturefile = "gfx//interface//government_reform_icons//sten_sture.dds"
 	}
+	spriteType = {
+		name = "government_reform_holy_orthodoxy"
+		texturefile = "gfx//interface//government_reform_icons//holy_orthodoxy.dds"
+	}
+	spriteType = {
+		name = "government_reform_inquisition"
+		texturefile = "gfx//interface//government_reform_icons//inquisition.dds"
+	}
+	spriteType = {
+		name = "government_reform_religious_pragmatism"
+		texturefile = "gfx//interface//government_reform_icons//religious_pragmatism.dds"
+	}
+	spriteType = {
+		name = "government_reform_secular_law"
+		texturefile = "gfx//interface//government_reform_icons//secular_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_theocratic_law"
+		texturefile = "gfx//interface//government_reform_icons//theocratic_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_bishop's_law"
+		texturefile = "gfx//interface//government_reform_icons//bishop's_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_roman_law"
+		texturefile = "gfx//interface//government_reform_icons//roman_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_jizja_law"
+		texturefile = "gfx//interface//government_reform_icons//jizja_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_harmonious_law"
+		texturefile = "gfx//interface//government_reform_icons//harmonious_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_pagan_law"
+		texturefile = "gfx//interface//government_reform_icons//pagan_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_unrestricted_diplomacy"
+		texturefile = "gfx//interface//government_reform_icons//unrestricted_diplomacy.dds"
+	}
+	spriteType = {
+		name = "government_reform_holy_claims"
+		texturefile = "gfx//interface//government_reform_icons//holy_claims.dds"
+	}
+	spriteType = {
+		name = "government_reform_bishops_diplomacy"
+		texturefile = "gfx//interface//government_reform_icons//bishops_diplomacy.dds"
+	}
+	spriteType = {
+		name = "government_reform_holy_war"
+		texturefile = "gfx//interface//government_reform_icons//holy_war.dds"
+	}
+	spriteType = {
+		name = "government_reform_network_of_faithful_allies"
+		texturefile = "gfx//interface//government_reform_icons//network_of_faithful_allies.dds"
+	}
+	spriteType = {
+		name = "government_reform_militarized_monasteries"
+		texturefile = "gfx//interface//government_reform_icons//militarized_monasteries.dds"
+	}
+	spriteType = {
+		name = "government_reform_brothers_in_arms"
+		texturefile = "gfx//interface//government_reform_icons//brothers_in_arms.dds"
+	}
+	spriteType = {
+		name = "government_reform_bishops_army"
+		texturefile = "gfx//interface//government_reform_icons//bishops_army.dds"
+	}
 }
