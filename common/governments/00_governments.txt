@@ -578,11 +578,11 @@ theocracy = {
 			reforms = {
 				secular_law_reform
 				theocratic_law_reform
-				the_bishops_law_reform
 				roman_law_reform
 				jizja_tax_reform
 				harmonious_law_reform
 				pagan_law_reform
+				the_bishops_law_reform
 			}
 		}
 		diplomacy = {
