@@ -426,7 +426,7 @@ growth_signoria_reform = {
 	}
 	modifiers = {
 		stability_cost_modifier = -0.15
-		army_tradition = 0.25
+		army_tradition = 0.5
 	}
 	ai_chance = {
 		factor = 5

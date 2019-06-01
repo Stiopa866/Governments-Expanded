@@ -335,4 +335,16 @@ spriteTypes = {
 		name = "government_reform_bishops_army"
 		texturefile = "gfx//interface//government_reform_icons//bishops_army.dds"
 	}
+	spriteType = {
+		name = "government_reform_papal_law"
+		texturefile = "gfx//interface//government_reform_icons//papal_law.dds"
+	}
+	spriteType = {
+		name = "government_reform_curia_decree"
+		texturefile = "gfx//interface//government_reform_icons//curia_decree.dds"
+	}
+	spriteType = {
+		name = "government_reform_colonial_church"
+		texturefile = "gfx//interface//government_reform_icons//colonial_church.dds"
+	}
 }

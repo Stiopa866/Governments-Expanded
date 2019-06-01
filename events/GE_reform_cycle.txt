@@ -1703,6 +1703,7 @@ country_event = {
 			has_reform = council_of_the_indies_reform
 			has_reform = casa_de_india_reform
 			has_reform = casa_de_contraction_reform
+			has_reform = colonial_mission_reform
 		}
 		any_owned_province = {
 			is_colony = yes
@@ -1768,6 +1769,7 @@ country_event = {
 			has_reform = council_of_the_indies_reform
 			has_reform = casa_de_india_reform
 			has_reform = casa_de_contraction_reform
+			has_reform = colonial_mission_reform
 		}
 		any_owned_province = {
 			is_colony = yes
@@ -4391,6 +4393,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = holy_orthodoxy_reform
+			has_reform = papal_curia_reform
 		}
 	}
 
@@ -4525,6 +4528,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = holy_orthodoxy_reform
+			has_reform = papal_curia_reform
 		}
 	}
 

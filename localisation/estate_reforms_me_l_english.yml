@@ -192,6 +192,8 @@
  teuton_priest_desc: "By funding our missionaries to be well-equipped and educated as well as allowing them into our administration, we save a substantial amount in salaries and at the same time obtain better results in conversion"
  teuton_drill: "Militant Monastic Order"
  teuton_drill_desc: "We are the bastion of Pure Christianity. A beacon for believers that shines amidst the horrors of unbelievers and heretics. Our spears and swords shall carry our oaths: In Deo speramus."
+ colonial_mission_reform: "Colonial Mission"
+ colonial_mission_reform_desc: "Our most holy mission is to spread the faith beyond the borders of the known world, and to bring the Word of God, as well as His love and salvation to the heathens beyond the horizon."
  
  #Theocracies T4.5
  religious_enforcement: "Religious Enforcement"
@@ -201,6 +203,8 @@
  inquisition_reform_desc: "Let us hunt down the unbelievers with fire and sword. Our nation shall be purified!"
  religious_pragmatism_reform: "Religious Pragmatism"
  religious_pragmatism_reform_desc: "Just because the unbelievers don't follow the Lord, that should not disqualify them from serving him and his flock."
+ papal_curia_reform: "Papal Curia"
+ papal_curia_reform_desc: "Where there is human intervention, there is error and misjudgment; where there is divine intervention, there is truth and righteousness. Such is the nature of laws that from the flow from the Papal Curia in the Holy See, that they are rightly guided by God's intermediaries and founded in doctrines of piety as opposed to the fallibility of those outside the Holy See."
  
  #Theocracies T6
  judiciary: "Judiciary"
@@ -218,6 +222,8 @@
  harmonious_law_reform_desc: "Please contact the developer and tell him how you managed to unlock this reform, sounds like an interesting story."
  pagan_law_reform: "Pagan Law"
  pagan_law_reform_desc: "The only laws we need are natural laws of our gods, even if they may be too militant at first."
+ papal_law_reform: "Papal Decree"
+ papal_law_reform_desc: "By the order of the most divine in our land, the Pontifex Maximus, the Bishop of Rome, our words will be heard in all realms across the regions of Europe and beyond. Faithful Catholics will know that their is truth and authenticity in the orders that flow from the Holy See and with each succeeding Pope, the good relations with Catholics will only compound further."
  
  #Theocracies T7
  diplomacy: "Diplomacy"
@@ -252,7 +258,14 @@
  mechanic_enables_cortes_yes:0 "Enable The Cortes Interaction in the Noble Estate."
  mechanic_enables_demedici_yes:0 "Enables Florentine Mechanics."
  mechanic_enables_holy_war_yes:0 "Enables Holy Wars."
+ kingdom_of_god_tooltip:0 "Has established the Kingdom of God."
+ mechanic_enables_unrestricted_diplomats_yes:0 "Grants a permanent §G25%§! opinion boost with all known countries."
 
+ opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
+ opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
+ opinion_order_of_the_swan:0 "Order of the Swan Membership"
+ opinion_unrestricted_diplomacy:0 "Unrestricted Diplomacy"
+ 
  elections.721.dc: "<ruler name>'s reign has come to an end, serving his nation with great deeds. A new question now arises, who will be the next ruler of Bohemia? On the left hand there are the traditionalist Hussites, seeking to strengthen the ideas of Jan Hus. On the other hand there are the Catholic Canidates, men ready to cooperate with the church in Rome. The fate of Bohemia is in your hands."
  elections.720.e: "A Catholic Noble."
  elections.720.d: "A Hussite Noble."
