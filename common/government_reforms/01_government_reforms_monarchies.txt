@@ -1107,6 +1107,7 @@ decentralize_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		num_accepted_cultures = 2
+		harsh_treatment_cost = -0.10
 	}
 	ai_chance = {
 		factor = 1

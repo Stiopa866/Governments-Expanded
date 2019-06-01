@@ -635,8 +635,8 @@ regional_forts_reform = {
 	icon = fort
 	allow_normal_conversion = yes
 	modifiers = {
-		defensiveness = 0.10
-		state_maintenance_modifier = -0.15
+		garrison_size = 0.20
+		state_maintenance_modifier = -0.25
 	}
 	ai_chance = {
 		factor = 1
@@ -648,6 +648,7 @@ theocratic_bureacrats_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		tolerance_own = 1
+		development_cost = -0.05
 	}
 	ai_chance = {
 		factor = 1
