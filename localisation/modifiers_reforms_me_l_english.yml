@@ -114,6 +114,8 @@
  EST_VAL_CONSTITUTIO_JOACHIMICA:0 "Constitutio Joachimica: §Y$VAL$%§!"
  EST_VAL_BASTARD_FEUDALISM:0 "Bastard Feudalism: §Y$VAL$%§!"
  EST_VAL_TRADE_PRINCES:0 "Trade Princes: §Y$VAL$%§!"
+ EST_VAL_COMMONER_OFFICIALS_REFORM:0 "Commoner Officials: §Y$VAL$%§!"
+ EST_VAL_ABOLISH_THE_HAANDFAESTNING_REFORM:0 "Abolish The Haandfaestning: §Y$VAL$%§!"
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"

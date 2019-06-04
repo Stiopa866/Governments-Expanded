@@ -44,6 +44,7 @@ monarchy = {
 				crown_of_saint_wenceslaus
 				crown_of_saint_wenceslaus_2
 				office_of_lord_regent_reform
+				arch_king_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -81,6 +82,8 @@ monarchy = {
 				order_of_the_swan_reform
 				blood_tax_reform
 				house_of_knights_reform
+				constitutio_valdemariana_reform
+				riksradet_norway_reform
 			}
 		}
 		bureaucracy = {
@@ -106,6 +109,7 @@ monarchy = {
 				great_law_of_peace_reform
 				ancien_regime_reform
 				the_red_book_reform
+				commoner_officials_reform
 			}
 		}
 		military_organisation = {
@@ -126,6 +130,7 @@ monarchy = {
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
 				gustavan_artillery_reform
+				the_black_guard_reform
 			}
 		}
 		growth_of_administration = {
@@ -151,6 +156,7 @@ monarchy = {
 				conseil_du_roi_reform
 				table_of_ranks_reform
 				the_judicature_ordinance_reform
+				christian_four_merchantile_reform
 			}
 		}
 		deliberative_assembly = {
@@ -163,6 +169,7 @@ monarchy = {
 				#GE
 				haudenosaunee_reform
 				parliamentary_order_reform
+				king_and_duke_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -176,6 +183,7 @@ monarchy = {
 				constitutional_equality_reform
 				nueva_planta_decrees_reform
 				toleration_of_all_faiths_edict_reform
+				abolish_the_haandfaestning_reform
 			}
 		}
 		separation_of_power = {
@@ -576,16 +584,15 @@ theocracy = {
 				battle_pope_reform
 			}
 		}
-		judiciary = {
+		mobilize_the_faithful = {
 			reforms = {
-				secular_law_reform
-				theocratic_law_reform
-				roman_law_reform
-				papal_law_reform
-				jizja_tax_reform
-				harmonious_law_reform
-				pagan_law_reform
-				the_bishops_law_reform
+				holy_war_reform
+				militarized_monasteries_reform
+				brothers_in_arms_reform
+				the_bishops_army_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				teuton_army
 			}
 		}
 		diplomacy = {
@@ -597,15 +604,16 @@ theocracy = {
 				teuton_navy
 			}
 		}
-		mobilize_the_faithful = {
+		judiciary = {
 			reforms = {
-				holy_war_reform
-				militarized_monasteries_reform
-				brothers_in_arms_reform
-				the_bishops_army_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
-				teuton_army
+				secular_law_reform
+				theocratic_law_reform
+				roman_law_reform
+				papal_law_reform
+				jizja_tax_reform
+				harmonious_law_reform
+				pagan_law_reform
+				the_bishops_law_reform
 			}
 		}
 	}

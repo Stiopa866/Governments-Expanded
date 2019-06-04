@@ -547,7 +547,10 @@ cb_heretic = {
 
 	prerequisites = {
 		is_neighbor_of = FROM
-		cb_on_religious_enemies = yes
+		OR = {
+			cb_on_religious_enemies = yes
+			has_reform = holy_war_reform
+		}
 		religion_group = from
 		NOT = {	has_matching_religion = FROM }
 		OR = {

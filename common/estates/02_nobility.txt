@@ -138,6 +138,20 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_COMMONER_OFFICIALS_REFORM
+		trigger = {
+			has_reform = commoner_officials_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
+		desc = EST_VAL_ABOLISH_THE_HAANDFAESTNING_REFORM
+		trigger = {
+			has_reform = abolish_the_haandfaestning_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_LITHUANIA_LAW_REFORM
 		trigger = {
 			has_reform = lithuania_law_reform

@@ -1582,7 +1582,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = theocratic_bureacrats_reform
-			has_reform = house_of_knights_reform
+			has_reform = the_red_book_reform
 		}
 	}
 
@@ -1657,7 +1657,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = theocratic_bureacrats_reform
-			has_reform = house_of_knights_reform
+			has_reform = the_red_book_reform
 		}
 	}
 
@@ -3894,7 +3894,7 @@ country_event = {
 	}
 
 	option = {
-		name = monastic_order.80.a
+		name = monastic_order.80.b
 		
 	}
 	
@@ -4708,14 +4708,15 @@ country_event = {
 		name = religious_pragmatism.96.a
 		
 		random_list = {
-			60 = 0
-			30 = 	random_owned_province = {
+			60 = { }
+			30 = { random_owned_province = {
 						limit = {
 							has_owner_religion = no
 						}
 						add_base_tax = -1
 					}
-			10 = 	random_owned_province = {
+				}
+			10 = { random_owned_province = {
 						limit = {
 							has_owner_religion = no
 						}
@@ -4723,6 +4724,7 @@ country_event = {
 						add_base_manpower = -1
 						add_base_production = -1
 					}
+				}
 		}
 		
 	}
