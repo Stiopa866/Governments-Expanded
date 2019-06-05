@@ -568,7 +568,7 @@ dhimmi_nobles_reform = {
 		}
 	}
 	modifiers = {
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.10
 	}
 	ai_chance = {
 		factor = 5
@@ -1423,6 +1423,7 @@ tatar_mercenaries_reform = {
 	potential = {
 		any_neighbor_country = {
 			has_reform = steppe_horde
+			culture_group = tartar	
 		}
 	}
 	modifiers = {

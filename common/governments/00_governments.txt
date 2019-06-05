@@ -539,6 +539,8 @@ theocracy = {
 				leading_clergy_reform
 				monastic_order_reform
 				papacy_reform
+				ajuraan_theocracy_reform
+				dynastic_theocracy_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -556,6 +558,7 @@ theocracy = {
 				expel_heathens_reform
 				the_holy_office_reform
 				teuton_priest
+				fighting_for_israel_reform
 			}
 		}
 		#clergy_in_administration = {
@@ -582,6 +585,7 @@ theocracy = {
 				crown_leader_reform
 				proclaim_republic_reform
 				battle_pope_reform
+				restore_the_davidic_line_reform
 			}
 		}
 		mobilize_the_faithful = {
@@ -593,6 +597,8 @@ theocracy = {
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				teuton_army
+				mamluk_soldiers_reform
+				tradition_of_masada_and_bar_kochba_reform
 			}
 		}
 		diplomacy = {
@@ -602,6 +608,7 @@ theocracy = {
 				network_of_faithful_allies_reform
 				the_bishops_diplomacy_reform
 				teuton_navy
+				yeshiva_scholarship_reform
 			}
 		}
 		judiciary = {

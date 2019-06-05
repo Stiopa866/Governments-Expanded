@@ -1,8 +1,11 @@
 teuton_navy = {
 	icon = "soldiers_5"
 	allow_normal_conversion = yes
-	potential = { 
-		tag = TEU 
+	potential = {
+		OR = {	
+			tag = TEU
+			tag = LIV
+		}
 	}
 	modifiers = {
 		galley_power = 0.10
@@ -18,7 +21,10 @@ teuton_army = {
 	icon = Teuton_2
 	allow_normal_conversion = yes
 	potential = {
-		tag = TEU
+		OR = {	
+			tag = TEU
+			tag = LIV
+		}
 	}
 	modifiers = {
 		infantry_power = 0.05
@@ -33,7 +39,10 @@ teuton_drill = {
 	icon = Teuton_1
 	allow_normal_conversion = yes
 	potential = {
-		tag = TEU
+		OR = {	
+			tag = TEU
+			tag = LIV
+		}
 	}
 	modifiers = {
 		infantry_power = 0.05
@@ -49,7 +58,10 @@ teuton_priest = {
 	icon = Teuton_3
 	allow_normal_conversion = yes
 	potential = {
-		tag = TEU
+		OR = {	
+			tag = TEU
+			tag = LIV
+		}
 	}
 	modifiers = {
 		global_missionary_strength = 0.02
@@ -104,14 +116,92 @@ colonial_mission_reform = {
 	}
 }
 
+ajuraan_theocracy_reform = {
+	icon = muslim_highlighted
+	allow_normal_conversion = yes
+	
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	
+	potential = {
+		culture = somali
+	}
+	modifiers = {
+		global_trade_power = 0.10
+		trade_range_modifier = 0.25
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+dynastic_theocracy_reform = {
+	allow_normal_conversion = yes
+	icon = "feudal_theocracy"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	modifiers = {
+		devotion = 0.25
+	}
+	custom_attributes = {
+		enables_hereditary_theocracy = yes
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+fighting_for_israel_reform = {
+	icon = landscape
+	allow_normal_conversion = yes
+	potential = {
+		religion = jewish
+	}
+	trigger = {
+		religion = jewish
+	}
+	modifiers = {
+		land_morale = 0.15
+	}
+	effect = {
+		palestine_area = {
+			add_permanent_claim = ROOT
+		}
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+restore_the_davidic_line_reform = {
+	icon = crown
+	allow_normal_conversion = yes
+	potential = {
+		religion = jewish
+	}
+	trigger = {
+		religion = jewish
+	}
+	modifiers = {
+		max_absolutism = 25
+	}
+	custom_attributes = {
+		enables_davidic_line = yes
+	}
+}
+
 #T4 Theocracy
 
 holy_orthodoxy_reform = {
 	icon = "holy_orthodoxy"
 	allow_normal_conversion = yes
 	modifiers = {
-		yearly_corruption = -0.05
-		devotion = 0.25
+		yearly_corruption = -0.10
+		devotion = 0.5
 	}
 	ai_chance = {
 		factor = 1
@@ -135,7 +225,7 @@ religious_pragmatism_reform = {
 	icon = "religious_pragmatism"
 	allow_normal_conversion = yes
 	modifiers = {
-		religious_unity = 0.20
+		religious_unity = 0.10
 		advisor_cost = -0.10
 	}
 	ai_chance = {
@@ -167,6 +257,163 @@ papal_curia_reform = {
 }
 
 #T6
+
+holy_war_reform = {
+	icon = "holy_war"
+	allow_normal_conversion = yes
+	modifiers = {
+		manpower_recovery_speed = 0.10
+	}
+	custom_attributes = {
+		enables_holy_war = yes
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+militarized_monasteries_reform = {
+	icon = "militarized_monasteries"
+	allow_normal_conversion = yes
+	modifiers = {
+		army_tradition = 0.5
+		defensiveness = 0.10
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+brothers_in_arms_reform = {
+	icon = "brothers_in_arms"
+	allow_normal_conversion = yes
+	
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+		mercenary_discipline = 0.025
+		leader_cost = -0.25
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+mamluk_soldiers_reform = {
+	icon = feudal_theocracy
+	allow_normal_conversion = yes
+	potential = {
+		culture = somali
+	}
+	trigger = {
+		culture = somali
+	}
+	modifiers = {
+		discipline = 0.025
+		drill_gain_modifier = 0.25
+		yearly_army_professionalism = 0.002
+		land_maintenance_modifier = 0.1
+	}
+	ai_chance = {
+		factor = 10
+	}
+}
+
+tradition_of_masada_and_bar_kochba_reform = {
+	icon = fort
+	allow_normal_conversion = yes
+	potential = {
+		religion = jewish
+	}
+	trigger = {
+		religion = jewish
+	}
+	modifiers = {
+		defensiveness = 0.25
+		hostile_attrition = 1
+	}
+}
+
+the_bishops_army_reform = {
+	icon = "bishops_army"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_mil_policy = 1
+		max_absolutism = 5
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+#T7 Diplomacy
+
+unrestricted_diplomacy_reform = {
+	icon = "unrestricted_diplomacy"
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_reputation = 1
+	}
+	custom_attributes = {
+		enables_unrestricted_diplomats = yes
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+holy_claims_reform = {
+	icon = "holy_claims"
+	allow_normal_conversion = yes
+	modifiers = {
+		ae_impact = -0.10
+	}
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		claim_states = yes
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+network_of_faithful_allies_reform = {
+	icon = "network_of_faithful_allies"
+	allow_normal_conversion = yes
+	modifiers = {
+		vassal_income = 0.2
+		vassal_forcelimit_bonus = 0.50
+		reduced_liberty_desire = 10
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+yeshiva_scholarship_reform = {
+	icon = constitution
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = -0.10
+		technology_cost = -0.05
+		tolerance_own = 1
+	}
+}
+
+the_bishops_diplomacy_reform = {
+	icon = "bishops_diplomacy"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_dip_policy = 1
+		max_absolutism = 5
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+#T8 Mobilize the faithful
 
 secular_law_reform = {
 	icon = "secular_law"
@@ -289,118 +536,6 @@ papal_law_reform = {
 	}
 	ai_chance = {
 		factor = 1000
-	}
-}
-
-#T7 Diplomacy
-
-unrestricted_diplomacy_reform = {
-	icon = "unrestricted_diplomacy"
-	allow_normal_conversion = yes
-	modifiers = {
-		diplomatic_reputation = 1
-	}
-	custom_attributes = {
-		enables_unrestricted_diplomats = yes
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-holy_claims_reform = {
-	icon = "holy_claims"
-	allow_normal_conversion = yes
-	modifiers = {
-		ae_impact = -0.10
-	}
-	conditional = {
-		allow = { has_dlc = "Third Rome" }
-		claim_states = yes
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-network_of_faithful_allies_reform = {
-	icon = "network_of_faithful_allies"
-	allow_normal_conversion = yes
-	modifiers = {
-		vassal_income = 0.2
-		vassal_forcelimit_bonus = 0.50
-		reduced_liberty_desire = 10
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-the_bishops_diplomacy_reform = {
-	icon = "bishops_diplomacy"
-	allow_normal_conversion = yes
-	modifiers = {
-		free_dip_policy = 1
-		max_absolutism = 5
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-#T8 Mobilize the faithful
-
-holy_war_reform = {
-	icon = "holy_war"
-	allow_normal_conversion = yes
-	modifiers = {
-		manpower_recovery_speed = 0.10
-	}
-	custom_attributes = {
-		enables_holy_war = yes
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-militarized_monasteries_reform = {
-	icon = "militarized_monasteries"
-	allow_normal_conversion = yes
-	modifiers = {
-		army_tradition = 0.5
-		defensiveness = 0.10
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-brothers_in_arms_reform = {
-	icon = "brothers_in_arms"
-	allow_normal_conversion = yes
-	
-	rulers_can_be_generals = yes
-	heirs_can_be_generals = yes
-	
-	modifiers = {
-		mercenary_discipline = 0.025
-		leader_cost = -0.25
-	}
-	ai_chance = {
-		factor = 1
-	}
-}
-
-the_bishops_army_reform = {
-	icon = "bishops_army"
-	allow_normal_conversion = yes
-	modifiers = {
-		free_mil_policy = 1
-		max_absolutism = 5
-	}
-	ai_chance = {
-		factor = 1
 	}
 }
 

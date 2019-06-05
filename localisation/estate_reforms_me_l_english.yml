@@ -211,6 +211,16 @@
  teuton_drill_desc: "We are the bastion of Pure Christianity. A beacon for believers that shines amidst the horrors of unbelievers and heretics. Our spears and swords shall carry our oaths: In Deo speramus."
  colonial_mission_reform: "Colonial Mission"
  colonial_mission_reform_desc: "Our most holy mission is to spread the faith beyond the borders of the known world, and to bring the Word of God, as well as His love and salvation to the heathens beyond the horizon."
+ ajuraan_theocracy_reform: "Ajuraan Sultanate"
+ ajuraan_theocracy_reform_desc: "The Ajuraan Sultanate was islamic theocratic state, and a key part of the indian oceanic trade, their traders traveled across the entirety of it. Their wealth was beyond measure, bringing exotic goods and animals as far as the court of the chinese emperor. Not only were their pockets deep and their armies formidable, the Ajuraan Sultans also held monopolies on the management and distribution of water."
+ mamluk_soldiers_reform: "Mamluk Soldiers"
+ mamluk_soldiers_reform_desc: "With their military might and abundance of wealth. The Ajuran Empire became a respected power. The Ajuran State had a strong standing and professionally organized army with which the Garen imams and the governors ruled and protected their subjects. The bulk of the army consisted of mamluke soldiers, who did not have any loyalties to the traditional Somali clan system, thereby making them more reliable. The Ajuran soldier would wear protective helmets and advanced steel armour that covered their body. The Ajuran army would also be paid decently which was enough to financially suppprt their family and house, and during their retirement for serving the kingdom for 25 years would receive large acers of farmland and pension with plenty of livestock animals as a reward for their honourable loyalty for serving and protecting their kingdom."
+ fighting_for_israel_reform: "Fighting for Israel"
+ fighting_for_israel_reform_desc: "Here O Israel, the Lord is Our God.  The Lord is One"
+ restore_the_davidic_line_reform: "Restore the Davidic Line"
+ restore_the_davidic_line_reform_desc: "The Sanhedrin has met and accepted the lineage of the Nassi.  The House of David is restored to Power once Again!"
+ dynastic_theocracy_reform: "Dynastic Theocracies"
+ dynastic_theocracy_reform_desc: "A form of government where the dynasty is the representative of God, and the protector of the people."
  
  #Theocracies T4.5
  religious_enforcement: "Religious Enforcement"
@@ -233,14 +243,16 @@
  the_bishops_law_reform_desc: "Let us place our faith in the Bishop, for he is guided by the lord, and shall bring us the lord's justice."
  roman_law_reform: "Roman Law"
  roman_law_reform_desc: "Back when the Roman Empire still existed, stability and prosperity were commonplace. Let us base our laws on Rome's laws, and bring the same stability and prosperity to our flock."
- jizja_tax_reform: "Jizja Tax"
- jizja_tax_reform_desc: "Pay up, Dhimmi."
+ jizja_tax_reform: "Jizya Tax"
+ jizja_tax_reform_desc: "Fight those who believe not in God and in the Last Day, and who do not forbid what God and His Messenger have forbidden, and who follow not the Religion of Truth among those who were given the Book, till they pay the jizyah with a willing hand, being humbled."
  harmonious_law_reform: "Harmonious Law"
  harmonious_law_reform_desc: "Please contact the developer and tell him how you managed to unlock this reform, sounds like an interesting story."
  pagan_law_reform: "Pagan Law"
  pagan_law_reform_desc: "The only laws we need are natural laws of our gods, even if they may be too militant at first."
  papal_law_reform: "Papal Decree"
  papal_law_reform_desc: "By the order of the most divine in our land, the Pontifex Maximus, the Bishop of Rome, our words will be heard in all realms across the regions of Europe and beyond. Faithful Catholics will know that their is truth and authenticity in the orders that flow from the Holy See and with each succeeding Pope, the good relations with Catholics will only compound further."
+ tradition_of_masada_and_bar_kochba_reform: "Tradition of Masada and Bar Kochba"
+ tradition_of_masada_and_bar_kochba_reform_desc: "The land is ours.  We will not surrender."
  
  #Theocracies T7
  diplomacy: "Diplomacy"
@@ -252,6 +264,8 @@
  network_of_faithful_allies_reform_desc: "Let us set up a network of tributary allies around our borders to defend our flock from raids and heretical cults."
  the_bishops_diplomacy_reform: "Bishop's Diplomacy"
  the_bishops_diplomacy_reform_desc: "Let us place our faith in the Bishop, for he is guided by the lord, and shall bring us allies and peace."
+ yeshiva_scholarship_reform: "Yeshiva Scholarship"
+ yeshiva_scholarship_reform_desc: "We will fund houses of learning across the land."
  
  #Theocracies T8
  mobilize_the_faithful: "Mobilize the Faithful"
@@ -277,6 +291,8 @@
  mechanic_enables_holy_war_yes:0 "Enables Holy Wars."
  kingdom_of_god_tooltip:0 "Has established the Kingdom of God."
  mechanic_enables_unrestricted_diplomats_yes:0 "Grants a permanent §G25§! opinion boost with all known countries."
+ mechanic_enables_davidic_line_yes:0 "Restores the Davidic Line."
+ mechanic_enables_hereditary_theocracy_yes:0 "Enables Hereditary Theocracy."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

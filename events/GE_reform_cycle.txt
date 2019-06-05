@@ -2581,7 +2581,9 @@ country_event = {
 		name = aristocratic_court.50.b
 		add_estate_influence_modifier = {
 			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
 			influence = 20
+			duration = 3650
 		}
 	}
 }
@@ -3116,6 +3118,9 @@ country_event = {
 	option = { 
 		name = nueva_planta.62.b
 		
+		add_prestige = -25
+		add_legitimacy = -10
+		add_absolutism = -10
 		remove_government_reform = nueva_planta_decrees_reform
 		clr_country_flag = Pacified_Aragon
 		clr_country_flag = Pacified_Valencia
@@ -3169,6 +3174,9 @@ country_event = {
 	option = { 
 		name = nueva_planta.63.b
 		
+		add_prestige = -25
+		add_legitimacy = -10
+		add_absolutism = -10
 		remove_government_reform = nueva_planta_decrees_reform
 		clr_country_flag = Pacified_Aragon
 		clr_country_flag = Pacified_Valencia
@@ -3222,6 +3230,9 @@ country_event = {
 	option = { 
 		name = nueva_planta.64.b
 		
+		add_prestige = -25
+		add_legitimacy = -10
+		add_absolutism = -10
 		remove_government_reform = nueva_planta_decrees_reform
 		clr_country_flag = Pacified_Aragon
 		clr_country_flag = Pacified_Valencia
@@ -4708,15 +4719,15 @@ country_event = {
 		name = religious_pragmatism.96.a
 		
 		random_list = {
-			60 = { }
+			65 = { }
 			30 = { random_owned_province = {
 						limit = {
 							has_owner_religion = no
 						}
-						add_base_tax = -1
+						add_devastation = 50
 					}
 				}
-			10 = { random_owned_province = {
+			5 = { random_owned_province = {
 						limit = {
 							has_owner_religion = no
 						}
@@ -4863,12 +4874,13 @@ country_event = {
 			}
 			add_unrest = 8
 			random_list = {
-				50 = 0
-				50 = 
+				50 = { 0 }
+				50 = {
 					spawn_rebels = {
 						type = heretic_rebels_rebels
 						size = 2
 					}
+				}
 			}
 		}
 	}
