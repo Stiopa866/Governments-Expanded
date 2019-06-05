@@ -3949,7 +3949,7 @@ country_event = {
 	
 	trigger = {
 		has_reform = internal_mission_reform
-		NOT = { religious_unity = 75 }
+		NOT = { religious_unity = 0.75 }
 	}
 
 	is_triggered_only = yes #Pulse
