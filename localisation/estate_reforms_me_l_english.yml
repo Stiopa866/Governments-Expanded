@@ -22,6 +22,8 @@
  american_government: "American Government"
  american_government_desc: "USA USA USA USA USA"
  
+ ulema_guidance_reform: "Ulema Guidance"
+ ulema_guidance_reform_desc: "But those of them who who are firmly rooted in knowledge, the believers, believe in what has been sent down to you and what has been sent down to those before you: those who perform prayer and give the charity, believe in Allah and the Last Day. We will give such people an immense reward."
  lithuania_law_reform: "Casimir's Code"
  lithuania_law_reform_desc: "By codifying Lithuanian law we will curb the abuse our subjects suffer from robber barons imposing corrupted and local laws to extort money from them."
  portuguese_cortes_reform: "Portuguese Cortes"
@@ -293,6 +295,7 @@
  mechanic_enables_unrestricted_diplomats_yes:0 "Grants a permanent §G25§! opinion boost with all known countries."
  mechanic_enables_davidic_line_yes:0 "Restores the Davidic Line."
  mechanic_enables_hereditary_theocracy_yes:0 "Enables Hereditary Theocracy."
+ mechanic_enables_peasant_estate_yes:0 "Enables the Peasant Estate."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

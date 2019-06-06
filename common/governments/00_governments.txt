@@ -99,6 +99,7 @@ monarchy = {
 				#GE
 				regional_forts_reform
 				theocratic_bureacrats_reform
+				ulema_guidance_reform 
 				diocletian_reforms_reform
 				kyoho_reforms_reform
 				casa_de_contraction_reform
@@ -576,6 +577,7 @@ theocracy = {
 				inquisition_reform
 				religious_pragmatism_reform
 				papal_curia_reform
+				ulema_guidance_reform 
 			}
 		}
 		secularization = {

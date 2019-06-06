@@ -119,6 +119,13 @@ estate_church =
 		influence = -10
 	}
 	influence_modifier = {
+		desc = EST_VAL_ULEMA_GUIDANCE_REFORM
+		trigger = {
+			has_reform = ulema_guidance_reform 
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_THEOCRACY
 		trigger = {
 			government = theocracy
@@ -281,6 +288,13 @@ estate_church =
 			has_reform = feudal_theocracy
 		}
 		loyalty = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_ULEMA_GUIDANCE_REFORM
+		trigger = {
+			has_reform = ulema_guidance_reform 
+		}
+		influence = 10
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_SHEIKH_UL_ISLAM

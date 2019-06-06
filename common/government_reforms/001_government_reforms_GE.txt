@@ -125,7 +125,7 @@ ajuraan_theocracy_reform = {
 	royal_marriage = yes
 	
 	potential = {
-		culture = somali
+		primary_culture = somali
 	}
 	modifiers = {
 		global_trade_power = 0.10
@@ -304,10 +304,10 @@ mamluk_soldiers_reform = {
 	icon = feudal_theocracy
 	allow_normal_conversion = yes
 	potential = {
-		culture = somali
+		culture_group = cushitic 
 	}
 	trigger = {
-		culture = somali
+		primary_culture = somali
 	}
 	modifiers = {
 		discipline = 0.025

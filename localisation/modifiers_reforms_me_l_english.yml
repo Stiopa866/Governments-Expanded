@@ -107,6 +107,7 @@
  EST_VAL_GUILD_DOMINANCE_REFORM:0 "Guild Dominance: §Y$VAL$%§!"
  EST_VAL_SUPPORT_BORGHESE_REFORM:0 "Support Borghese: §Y$VAL$%§!"
  EST_VAL_THEOCRATIC_BUREACRATS_REFORM:0 "Theocratic Bureacrats: §Y$VAL$%§!"
+ EST_VAL_ULEMA_GUIDANCE_REFORM:0 "Ulema Guidance: §Y$VAL$%§!"
  EST_VAL_STADHOLDER_REFORM:0 "The office of Stadhouder: §Y$VAL$%§!"
  EST_VAL_DHIMMI_NOBLES_REFORM:0 "Dhimmi Nobles: §Y$VAL$%§!"
  EST_VAL_COUNCIL_OF_SHEIKHS_REFORM:0 "Council of Sheikhs: §Y$VAL$%§!"
@@ -116,6 +117,7 @@
  EST_VAL_TRADE_PRINCES:0 "Trade Princes: §Y$VAL$%§!"
  EST_VAL_COMMONER_OFFICIALS_REFORM:0 "Commoner Officials: §Y$VAL$%§!"
  EST_VAL_ABOLISH_THE_HAANDFAESTNING_REFORM:0 "Abolish The Haandfaestning: §Y$VAL$%§!"
+ 
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"

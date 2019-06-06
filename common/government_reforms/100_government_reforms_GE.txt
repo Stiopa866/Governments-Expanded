@@ -722,9 +722,33 @@ regional_forts_reform = {
 theocratic_bureacrats_reform = {
 	icon = bishop
 	allow_normal_conversion = yes
+	potential = {
+		religion_group = christian
+	}
+	trigger = {
+		religion_group = christian
+	}
 	modifiers = {
 		tolerance_own = 1
 		development_cost = -0.05
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+ulema_guidance_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+	}
+	trigger = {
+		religion_group = muslim
+	}
+	modifiers = {
+		tolerance_own = 1
+		global_missionary_strength = 0.01
 	}
 	ai_chance = {
 		factor = 1
