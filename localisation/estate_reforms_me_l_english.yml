@@ -286,7 +286,7 @@
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Replaces the Noble Estate Interaction Raise Additional Levies Loyalty Cost with an influence cost and grants a General with §G20§! tradition."
- mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction."
+ mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
  mechanic_enables_noble_diplomats_yes:0 "The Noble Estate Interaction Recruit Minister will instead grant §G10%§! Improve relations."
  mechanic_enables_cortes_yes:0 "Enable The Cortes Interaction in the Noble Estate."
  mechanic_enables_demedici_yes:0 "Enables Florentine Mechanics."
@@ -395,11 +395,14 @@
  AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_CONTRACTION: "Available due to the §YCasa de Contraction§ ."
  AVAILABLE_BECAUSE_OF_REFORM_DECENTRALIZE: "Available due to §YDecentralized Bureaucracy§ ."
  AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS: "Available due to §YRegional Forts§ ."
+ 
  AVAILABLE_BECAUSE_OF_REFORM_INTERNAL_MISSION: "Available due to §YInternal Mission§ ."
  AVAILABLE_BECAUSE_OF_REFORM_EXTERNAL_MISSION: "Available due to §YExternal Mission§ ."
  AVAILABLE_BECAUSE_OF_REFORM_SAFEGUARD_HOLY_SITES: "Available due to §YSafeguard Holy Sites§ ."
  AVAILABLE_BECAUSE_OF_REFORM_EXPELL_HEATHENS: "Available due to §YExpell Heathens§ ."
  AVAILABLE_BECAUSE_OF_REFORM_COMBAT_HERESY: "Available due to §YCombat Heresy§ ."
+ 
+ AVAILABLE_BECAUSE_OF_REFORM_FREQUENT_ELECTIONS: "Available due to §YFrequent Elections§ ."
  
  
  

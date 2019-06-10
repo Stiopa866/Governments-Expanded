@@ -293,3 +293,28 @@ Good_Ruler = {
 	tolerance_own = 1
 	missionary_maintenance_cost = -0.1
 }
+####
+Additional_Taxes = {
+	global_unrest = 2
+}
+Lowered_Taxes = {
+	global_tax_modifier = -0.15
+}
+Maintain_Situation = {
+	production_efficiency = 0.25
+	stability_cost_modifier = -0.15
+	global_unrest = -1
+}
+Maintain_Taxes = {
+	global_tax_modifier = 0.10
+}
+Maintain_Income = {
+	global_unrest = -1
+}
+Optimized_Taxation = {
+	global_trade_goods_size_modifier = 0.05
+	global_tax_modifier = 0.05
+}
+
+
+

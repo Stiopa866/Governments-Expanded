@@ -996,7 +996,7 @@ estate_burghers =
 					}
 				}
 				add_loan = {
-					interest_modifier = -0.5
+					interest_modifier = -1
 					fixed_interest = yes
 					duration = 60
 				}
@@ -1009,7 +1009,7 @@ estate_burghers =
 					}
 				}
 				add_loan = {
-					interest_modifier = -1
+					interest_modifier = -2
 					fixed_interest = yes
 					duration = 60
 				}

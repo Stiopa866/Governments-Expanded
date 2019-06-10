@@ -131,6 +131,21 @@ on_five_year_pulse_4 = {
 		
 		#T8
 		#119-126
+		
+		###Republics###
+		
+		##T2##
+		
+		#Authoritarianism#
+		100 = GE_reform_cycle_republic.201
+		100 = GE_reform_cycle_republic.202
+		
+		
+		##T4##
+		
+		#Administrative Divisions#
+		100 = GE_reform_cycle_republic.401
+		100 = GE_reform_cycle_republic.402
 	}
 }
 
