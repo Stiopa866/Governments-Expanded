@@ -165,6 +165,26 @@ support_borghese_reform = {
 	}
 }
 
+moedernegotie_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.25
+		navy_tradition = 0.5
+		ship_power_propagation = 0.15
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#5% Burgher Influence, 10% Burgher Loyalty
+}
+
 factional_elections_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
@@ -188,6 +208,43 @@ factional_elections_reform = {
 	}
 }
 
+vroedschappen_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		stability_cost_modifier = -0.10
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#10% Burgher Influence
+}
+
+reforms_of_william_3_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		reinforce_speed = 0.25
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
 communal_territories_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
@@ -204,6 +261,26 @@ communal_territories_reform = {
 	ai_chance = {
 		factor = 5
 	}
+}
+
+united_indian_companies_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.20
+		trade_efficiency = 0.10
+		trade_company_investment_cost = -0.25
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#10% Burgher Loyalty
 }
 
 andrea_doria_constitution_reform = {
@@ -233,6 +310,25 @@ andrea_doria_constitution_reform = {
 	}
 }
 
+ware_vrijheid_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.25
+		reform_progress_growth = 0.15
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#-10 Noble Influence, -10% Noble Loyalty
+}
+
 stadholder_reform = {
 	icon = Stadholder
 	allow_normal_conversion = yes
@@ -251,5 +347,83 @@ stadholder_reform = {
 	#15nobleinfluence
 	ai_chance = {
 		factor = 0.1
+	}
+}
+
+confederation_of_states_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.15
+		max_absolutism = -10
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+tolerant_principle_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		religious_unity = 0.20
+		advisor_cost = -0.10
+		advisor_pool = 1
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#-10 Church Influence, -10% Church Loyalty
+}
+
+regents_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		development_cost = -0.10
+	}
+	custom_attributes = {
+		enables_regent_investments = yes
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#5 Burgher Influence, 10% Burgher Loyalty
+}
+
+raadspensionaris_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		free_dip_policy = 1
+		global_autonomy = -0.025
+	}
+	ai_chance = {
+		factor = 100
 	}
 }

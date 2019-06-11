@@ -103,6 +103,13 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_WARE_VRIJHEID_REFORM
+		trigger = {
+			has_reform = ware_vrijheid_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_STADHOLDER_REFORM
 		trigger = {
 			has_reform = stadholder_reform
@@ -294,6 +301,13 @@ estate_nobles =
 			has_reform = french_absolutism
 		}
 		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_WARE_VRIJHEID_REFORM_LOY
+		trigger = {
+			has_reform = ware_vrijheid_reform
+		}
+		loyalty = -10
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_PERMANENT_MARATHAS_COUNTIL_LOY

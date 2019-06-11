@@ -11,6 +11,13 @@ tax_peasants = {
 	tax_income = 0.6
 }
 
+#Reforms
+
+Regent_Investments = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.10
+}
+
 #Cortez
 Cortes_Piety = {
 	tolerance_own = 1

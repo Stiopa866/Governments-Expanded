@@ -339,8 +339,9 @@ republic = {
 				#GE
 				demedici_dynasty_reform
 				support_borghese_reform
-				guild_dominance_reform
+				#guild_dominance_reform
 				rule_by_consent_reform
+				moedernegotie_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -349,7 +350,9 @@ republic = {
 				consolidation_of_power_reform
 				lottery_reform
 				council_of_the_indies_reform
+				#GE
 				factional_elections_reform
+				vroedschappen_reform
 			}
 		}
 		military_organisation = {
@@ -365,6 +368,7 @@ republic = {
 				portugese_marines_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				reforms_of_william_3_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -374,6 +378,7 @@ republic = {
 				union_of_states_reform
 				advanced_bookkeeping_reform
 				communal_territories_reform
+				united_indian_companies_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -388,24 +393,28 @@ republic = {
 				#GE
 				stadholder_reform
 				andrea_doria_constitution_reform
+				ware_vrijheid_reform
 			}
 		}
 		consolidation_of_power_category = {
 			reforms = {
 				broaden_executive_powers_reform
 				devolution_of_powers_reform
+				confederation_of_states_reform
 			}
 		}
 		guiding_principle_of_administration = {
 			reforms = {
 				political_principle_reform
 				moral_principle_reform
+				tolerant_principle_reform
 			}
 		}
 		electorate = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
+				regents_reform
 			}
 		}
 		office_selection = {
@@ -413,6 +422,7 @@ republic = {
 				appointment_by_committee_reform
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
+				raadspensionaris_reform
 			}
 		}
 		question_of_dictatorship = {

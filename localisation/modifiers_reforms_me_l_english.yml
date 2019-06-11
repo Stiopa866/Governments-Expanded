@@ -24,6 +24,7 @@
  tax_peasants_desc: "Levy an additional tax upon the peasantry."
  register_peasants: "Peasant Register"
  register_peasants_desc: "Update the peasant register for easier recruitment or conscription."
+ Regent_Investments: "Regent Investments"
  
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"
@@ -123,7 +124,11 @@
  EST_VAL_TRADE_PRINCES:0 "Trade Princes: §Y$VAL$%§!"
  EST_VAL_COMMONER_OFFICIALS_REFORM:0 "Commoner Officials: §Y$VAL$%§!"
  EST_VAL_ABOLISH_THE_HAANDFAESTNING_REFORM:0 "Abolish The Haandfaestning: §Y$VAL$%§!"
- 
+ EST_VAL_MOEDERNEGOTIE_REFORM:0 "Moedernegotie: §Y$VAL$%§!"
+ EST_VAL_VROEDSCHAPPEN_REFORM:0 "Vroedschappen: §Y$VAL$%§!"
+ EST_VAL_WARE_VRIJHEID_REFORM:0 "Ware Vrijheid: §Y$VAL$%§!"
+ EST_VAL_TOLERANT_PRINCIPLE_REFORM:0 "Tolerance Principle: §Y$VAL$%§!"
+ EST_VAL_REGENTS_REFORM:0 "Regents: §Y$VAL$%§!"
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
@@ -132,4 +137,9 @@
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"
  EST_VAL_DHIMMI_NOBLES_REFORM_LOY:0 "Dhimmi Nobles: §G$VAL$§!"
  EST_VAL_HOUSE_OF_KNIGHTS_LOY:0 "House of Knights: §G$VAL$§!"
+ EST_VAL_MOEDERNEGOTIE_REFORM_LOY:0 "Moedernegotie: §G$VAL$%§!"
+ EST_VAL_UNITED_INDIAN_COMPANIES_REFORM_LOY:0 "Verenigde Indische Companies: §G$VAL$%§!"
+ EST_VAL_WARE_VRIJHEID_REFORM_LOY:0 "Ware Vrijheid: §G$VAL$%§!"
+ EST_VAL_TOLERANT_PRINCIPLE_REFORM_LOY:0 "Tolerance Principle: §G$VAL$%§!"
+ EST_VAL_REGENTS_REFORM_LOY:0 "Regents: §G$VAL$%§!"
  
