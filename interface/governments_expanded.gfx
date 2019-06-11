@@ -347,4 +347,12 @@ spriteTypes = {
 		name = "government_reform_colonial_church"
 		texturefile = "gfx//interface//government_reform_icons//colonial_church.dds"
 	}
+	spriteType = {
+		name = "government_reform_genoa"
+		texturefile = "gfx//interface//government_reform_icons//genoa.dds"
+	}
+	spriteType = {
+		name = "government_reform_andrea_doria"
+		texturefile = "gfx//interface//government_reform_icons//andrea_doria.dds"
+	}
 }

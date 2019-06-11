@@ -189,7 +189,7 @@ country_event = {
 			
 		add_country_modifier = {
 			name = "Maintain_Taxes" #+10% Tax
-			duration = 10950
+			duration = 9125
 		}
 	}
 	
@@ -198,7 +198,7 @@ country_event = {
 		
 		add_country_modifier = {
 			name = "Maintain_Income" #-1 Unrest
-			duration = 10950
+			duration = 9125
 		}
 	}
 	
@@ -228,7 +228,7 @@ country_event = {
 		
 		add_country_modifier = {
 			name = "Optimized_Taxation" #+5% Goods Produced, +5% Tax
-			duration = 10950
+			duration = 9125
 		}
 
 	}

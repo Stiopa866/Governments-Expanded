@@ -7,6 +7,20 @@
  reform_me_events.2.t:0 "The Reforms of John 2"
  reform_me_events.2.d: "John 2 'The Perfect' restored the policies of Atlantic exploration, reviving the work of his great-uncle, Henry the Navigator. The Portuguese explorations were his main priority in government, pushing south the known coast of Africa with the purpose of discovering the maritime route to India and breaking into the spice trade.""
  reform_me_events.2.a: "A new era for Portugal"
+ reform_me_events.7.t: "Political Deposition"
+ reform_me_events.7.d: "As the political machinations of the Genoese elite continues, it appears they have united and are demanding my resignation from the post of Doge."
+ reform_me_events.7.a: "Time to retire."
+ reform_me_events.7.b: "This is MY city."
+ reform_me_events.8.t: "Popular Deposition"
+ reform_me_events.8.d: "It appears something has angered the citizenry, leading them to demand my head or my post, and allow new elections to be called so that a better man might resolve their problems."
+ reform_me_events.8.a: "Hand over the post."
+ reform_me_events.8.b: "Come and get my head if you can."
+ reform_me_events.9.t: "Noble Deposition"
+ reform_me_events.9.d: "A string of aristocratic marriages has created a mostly unified block the nobility, I have been told that handing over the post to their chosen successor is not as much a request as an order."
+ reform_me_events.9.a: "Peace over justice."
+ reform_me_events.9.b: "I guess you'll have to take no as an answer."
+ 
+ 
  
  #GE Reform Cycle
  metropolian_bishop_reform.1.t: "Seek First His Kingdom"

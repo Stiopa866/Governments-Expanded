@@ -325,3 +325,113 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.7
+	title = reform_me_events.7.t
+	desc = reform_me_events.7.d
+	picture = BURGHER_ESTATE_UPSET_eventPicture
+
+	trigger = {
+		has_reform = rule_by_consent_reform
+		NOT = { has_reform = andrea_doria_constitution_reform }
+	}
+	
+	mean_time_to_happen = {
+		days = 10950
+	}
+	
+	option = {
+		name = reform_me_events.7.a
+		
+		define_ruler = {
+			hide_skills = yes
+			dip = 1
+		}
+	}
+	
+	option = {
+		name = reform_me_events.7.b
+		
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				win = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = reform_me_events.8
+	title = reform_me_events.8.t
+	desc = reform_me_events.8.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_reform = rule_by_consent_reform
+		NOT = { has_reform = andrea_doria_constitution_reform }
+	}
+	
+	mean_time_to_happen = {
+		days = 10950
+	}
+	
+	option = {
+		name = reform_me_events.8.a
+		
+		kill_ruler = yes
+		add_republican_tradition = 3
+	}
+	
+	option = {
+		name = reform_me_events.8.b
+		
+		capital_scope = {
+			spawn_rebels = {
+				type = anti_tax_rebels 
+				size = 3
+				win = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = reform_me_events.9
+	title = reform_me_events.9.t
+	desc = reform_me_events.9.d
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+	
+	trigger = {
+		has_reform = rule_by_consent_reform
+		NOT = { has_reform = andrea_doria_constitution_reform }
+	}
+	
+	mean_time_to_happen = {
+		days = 10950
+	}
+	
+	option = {
+		name = reform_me_events.9.a
+		
+		define_ruler = {
+			hide_skills = yes
+			mil = 1
+		}
+		add_republican_tradition = -3
+	}
+	
+	option = {
+		name = reform_me_events.9.b
+		
+		capital_scope = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+				win = yes
+			}
+		}
+	}
+}

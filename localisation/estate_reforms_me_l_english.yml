@@ -280,7 +280,14 @@
  the_bishops_army_reform: "Bishop's Military"
  the_bishops_army_reform_desc: "Let us place our faith in the Bishop, for he is guided by the lord, and shall bring strength to our men under arms."
  
-
+ genoan_republic_reform: "Genoese Republic"
+ genoan_republic_reform_desc: "The Merchantile Republic of Genoa has been a powerfull force in the mediterean, born during the 11th century amidst crusades and as a communal republic for self-defence and self-determination. Our merchants and fleets go wherever there is profit to be made, setting up trade posts from north africa to the black sea, bringing wealth and prosperity to all. Wars and Disease have hurt our state, leading to a decline and a reduction in our might, being dominated by the italian and francien powers. With our silk weavers, bankers and daring merchants. The Republic that recognizes no superior!"
+ rule_by_consent_reform: "Rule by Consent"
+ rule_by_consent_reform_desc: "The Doges of Genoa were elected for life, but rarely served their full term, often being ousted by political, popular or military coups. While this greatly served in keeping the Doges honest and out of corruption, this restricted the executive power to the near limit of use."
+ communal_territories_reform: "Communal Territories"
+ communal_territories_reform_desc: "By establishing local communes under our guidance instead of formally annexing them to our direct control, we can prevent the outright revolts that come with forcefully integrating newly conquered lands."
+ andrea_doria_constitution_reform: "Andrea Doria's Constitution"
+ andrea_doria_constitution_reform_desc: "To stop the endless factional infighting, Andrea Doria created 28 new public Alberghi, these political organisations were comprised of multiple, sometimes rival, families. By uniting them under a single banner Andrea forced them to align behind their shared political goals. Thus putting an end to the cycle of major coups and blood feuds that had dominated the Genoan Republic and were driving it to the brink of non-existance."
  
  
  
@@ -296,6 +303,8 @@
  mechanic_enables_davidic_line_yes:0 "Restores the Davidic Line."
  mechanic_enables_hereditary_theocracy_yes:0 "Enables Hereditary Theocracy."
  mechanic_enables_peasant_estate_yes:0 "Enables the Peasant Estate."
+ mechanic_enables_deposition_yes:0 "Enables Depositions."
+ mechanic_enables_disables_deposition_yes:0 "Disables Depositions."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

@@ -323,6 +323,7 @@ republic = {
 				#GE
 				florentine_republic
 				american_government
+				genoan_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -339,7 +340,7 @@ republic = {
 				demedici_dynasty_reform
 				support_borghese_reform
 				guild_dominance_reform
-				
+				rule_by_consent_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -372,6 +373,7 @@ republic = {
 				administrative_divisions_reform
 				union_of_states_reform
 				advanced_bookkeeping_reform
+				communal_territories_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -385,6 +387,7 @@ republic = {
 				imperial_reform
 				#GE
 				stadholder_reform
+				andrea_doria_constitution_reform
 			}
 		}
 		consolidation_of_power_category = {
