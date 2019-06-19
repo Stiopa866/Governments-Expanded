@@ -103,6 +103,13 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_WARE_VRIJHEID_REFORM
+		trigger = {
+			has_reform = ware_vrijheid_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_STADHOLDER_REFORM
 		trigger = {
 			has_reform = stadholder_reform
@@ -136,6 +143,20 @@ estate_nobles =
 			has_reform = feudal_levies_reform
 		}
 		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_COMMONER_OFFICIALS_REFORM
+		trigger = {
+			has_reform = commoner_officials_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
+		desc = EST_VAL_ABOLISH_THE_HAANDFAESTNING_REFORM
+		trigger = {
+			has_reform = abolish_the_haandfaestning_reform
+		}
+		influence = -10
 	}
 	influence_modifier = {
 		desc = EST_VAL_LITHUANIA_LAW_REFORM
@@ -282,6 +303,13 @@ estate_nobles =
 		loyalty = 10
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_WARE_VRIJHEID_REFORM_LOY
+		trigger = {
+			has_reform = ware_vrijheid_reform
+		}
+		loyalty = -10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_PERMANENT_MARATHAS_COUNTIL_LOY
 		trigger = {
 			has_reform = permanent_marathas_council_reform
@@ -329,6 +357,14 @@ estate_nobles =
 		desc = EST_VAL_ORDER_OF_SWAN_LOY
 		trigger = {
 			has_reform = order_of_the_swan_reform
+		}
+		loyalty = 10
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_HOUSE_OF_KNIGHTS_LOY
+		trigger = {
+			has_reform = house_of_knights_reform
 		}
 		loyalty = 10
 	}
@@ -1040,7 +1076,7 @@ estate_nobles =
 				custom_tooltip = estate_diplomat.tooltip
 				add_country_modifier = {
 					name = "NobleDiplomat"
-					duration = 5475
+					duration = 10950
 					}
 				
 			}

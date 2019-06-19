@@ -54,6 +54,60 @@ florentine_republic = {
 	duration = 4
 }
 
+genoan_republic_reform = {
+	icon = "genoa"
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = -50
+		global_trade_goods_size_modifier = 0.10
+		merchants = 1
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = merchant_republic
+	potential = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+	}
+	boost_income = yes
+	duration = 4
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		is_merchant_republic = yes
+	}
+}
 
 demedici_dynasty_reform = {
 	icon = de_medici
@@ -75,6 +129,27 @@ demedici_dynasty_reform = {
 	}
 }
 
+rule_by_consent_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.5
+		stability_cost_modifier = 0.1
+		max_absolutism = -10
+	}
+	custom_attributes = {
+		enables_deposition = yes
+	}
+	ai_chance = {
+		factor = 5
+	}
+}
 
 support_borghese_reform = {
 	icon = "peasants"
@@ -88,6 +163,26 @@ support_borghese_reform = {
 	ai_chance = {
 		factor = 2
 	}
+}
+
+moedernegotie_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.25
+		navy_tradition = 0.5
+		ship_power_propagation = 0.15
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#5% Burgher Influence, 10% Burgher Loyalty
 }
 
 factional_elections_reform = {
@@ -113,7 +208,126 @@ factional_elections_reform = {
 	}
 }
 
+vroedschappen_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		stability_cost_modifier = -0.10
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#10% Burgher Influence
+}
 
+reforms_of_william_3_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		reinforce_speed = 0.25
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+communal_territories_reform = {
+	icon = "map_2"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		min_autonomy_in_territories = -0.1
+	}
+	ai_chance = {
+		factor = 5
+	}
+}
+
+united_indian_companies_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.20
+		trade_efficiency = 0.10
+		trade_company_investment_cost = -0.25
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#10% Burgher Loyalty
+}
+
+andrea_doria_constitution_reform = {
+	icon = andrea_doria
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		NOT = { has_reform = frequent_elections_reform }
+	}
+	trigger = {
+		NOT = { has_reform = frequent_elections_reform }
+		has_reform = rule_by_consent_reform
+	}
+	modifiers = {
+		stability_cost_modifier = -0.25
+		max_absolutism = 10
+		election_cycle = -2
+	}
+	custom_attributes = {
+		enables_disables_deposition = yes
+	}
+	ai_chance = {
+		factor = 1
+	}
+}
+
+ware_vrijheid_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.25
+		reform_progress_growth = 0.15
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#-10 Noble Influence, -10% Noble Loyalty
+}
 
 stadholder_reform = {
 	icon = Stadholder
@@ -133,5 +347,83 @@ stadholder_reform = {
 	#15nobleinfluence
 	ai_chance = {
 		factor = 0.1
+	}
+}
+
+confederation_of_states_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.15
+		max_absolutism = -10
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+tolerant_principle_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		religious_unity = 0.20
+		advisor_cost = -0.10
+		advisor_pool = 1
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#-10 Church Influence, -10% Church Loyalty
+}
+
+regents_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		development_cost = -0.10
+	}
+	custom_attributes = {
+		enables_regent_investments = yes
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#5 Burgher Influence, 10% Burgher Loyalty
+}
+
+raadspensionaris_reform = {
+	icon = dutch_flag
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+		}
+	}
+	modifiers = {
+		free_dip_policy = 1
+		global_autonomy = -0.025
+	}
+	ai_chance = {
+		factor = 100
 	}
 }

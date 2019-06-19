@@ -1,6 +1,11 @@
 ##### GE Government Reform Events #####
 on_five_year_pulse_4 = {
 	random_events = {
+		400 = 0
+			
+		#Monarchy
+		
+		#T2
 		100 = GE_reform_cycle.1 #metropolian_bishop_reform
 		100 = GE_reform_cycle.2
 		100 = GE_reform_cycle.3 #papal_embassy_reform
@@ -77,7 +82,70 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.69 #Professional_army
 		100 = GE_reform_cycle.70
 		#T7
-		400 = 0
+		
+		#Theocracies
+		
+		#T1
+		100 = GE_reform_cycle.70 #Leading_Clergy
+		100 = GE_reform_cycle.71
+		100 = GE_reform_cycle.72
+		100 = GE_reform_cycle.73
+		100 = GE_reform_cycle.74
+
+		100 = GE_reform_cycle.76 #Monastic_Order
+		100 = GE_reform_cycle.77
+		100 = GE_reform_cycle.78
+		100 = GE_reform_cycle.79
+		100 = GE_reform_cycle.80
+		#T2
+		100 = GE_reform_cycle.81 #Internal_Mission
+		100 = GE_reform_cycle.82
+		100 = GE_reform_cycle.83 #External_Mission
+		100 = GE_reform_cycle.84
+		#T3
+		100 = GE_reform_cycle.85 # Holy_Sites
+		100 = GE_reform_cycle.86
+		100 = GE_reform_cycle.87 # Expell_Heathens
+		100 = GE_reform_cycle.88
+		100 = GE_reform_cycle.89 # Combat_Heretics
+		100 = GE_reform_cycle.90
+		#T4
+		100 = GE_reform_cycle.91 # Holy_Orthodoxy
+		100 = GE_reform_cycle.92
+		100 = GE_reform_cycle.93 # Inquisition
+		100 = GE_reform_cycle.94
+		100 = GE_reform_cycle.95 # Religious_Pragmatism
+		100 = GE_reform_cycle.96
+		#T5
+
+		#T6
+		#100 = GE_reform_cycle.97 # Secular_Law
+		#100 = GE_reform_cycle.98
+		#100 = GE_reform_cycle.99 # Theocratic_Law
+		#100 = GE_reform_cycle.100
+		#100 = GE_reform_cycle.101 # Bishops_Law
+		#100 = GE_reform_cycle.102
+		
+		#7
+		#111-118
+		
+		#T8
+		#119-126
+		
+		###Republics###
+		
+		##T2##
+		
+		#Authoritarianism#
+		100 = GE_reform_cycle_republic.201
+		100 = GE_reform_cycle_republic.202
+		
+		
+		##T4##
+		
+		#Administrative Divisions#
+		100 = GE_reform_cycle_republic.401
+		100 = GE_reform_cycle_republic.402
 	}
 }
 

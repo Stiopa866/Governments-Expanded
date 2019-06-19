@@ -1,6 +1,24 @@
+#Estates
 NobleDiplomat = {
 	improve_relation_modifier = 0.1
 }
+register_peasants = {
+	local_manpower_modifier = 0.10
+	local_manpower = 0.10
+}
+tax_peasants = {
+	local_tax_modifier = 0.10
+	tax_income = 0.6
+}
+
+#Reforms
+
+Regent_Investments = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.10
+}
+
+#Cortez
 Cortes_Piety = {
 	tolerance_own = 1
 	global_missionary_strength = 0.01
@@ -26,6 +44,8 @@ Cortes_Navy = {
 	global_ship_trade_power = 0.25
 	naval_maintenance_modifier = -0.1
 }
+
+#Factional Elections
 Adm_Stabcost = {
 	stability_cost_modifier = -0.15
 }
@@ -61,7 +81,7 @@ Mil_2_Main = {
 Mil_2_Leader = {
 	general_cost = -0.2
 }
-	
+
 #GE Reform Cycle
 Russian_Manorialism = {
 	fort_maintenance_modifier = -0.2
@@ -182,4 +202,126 @@ Well_Trained = {
 Aristocrat_Officers = {
 	discipline = -0.025
 }
+absent_priest_administrator = {
+	global_autonomy = 0.2
+}
+a_great_man_killed = {
+	technology_cost = 0.05
+}
+publications_against_faith = {
+	tolerance_own = -1
+}
+Set_Aside_Alms = {
+	global_tax_modifier = -0.05
+}
+Purged_Govenor = {
+	yearly_corruption = -0.05
+}
+Maintain_Current_Govenor = {
+	stability_cost_modifier = -0.15
+	devotion = -0.1
+}
+Pure_Order = {
+	devotion = 0.25
+	yearly_corruption = -0.1
+}
+Decadent_Decay = {
+	devotion = -0.5
+	global_manpower_modifier = 0.15
+}
+Militarized_Order = {
+	max_states = -3
+	army_tradition = 0.25
+}
+Ave_Maria = {
+	development_cost = -0.05
+	state_maintenance_modifier = -0.25
+}
+Losing_Faith = {
+	tolerance_own = -2
+}
+Deus_Vult = {
+	manpower_recovery_speed = 0.15
+	prestige_from_land = 1
+	war_exhaustion = -0.01
+}
+Tourist_Tax = {
+	trade_efficiency = 0.15
+}
+Promote_Tolerance = {
+	local_development_cost = -0.10
+	trade_goods_size_modifier = 0.15
+	min_local_autonomy = 25
+}
+Land_Clearance = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.05
+}
+Reduced_Immigration = {
+	development_cost = 0.10
+}
+Fearfull_Populace = {
+	production_efficiency = -0.10
+}
+Rewriting_No = {
+	stability_cost_modifier = -0.05
+	global_unrest = -1
+}
+Rewrite_Diligence = {
+	global_trade_goods_size_modifier = 0.10
+}
+Rewrite_Vigilance = {
+	army_tradition = 0.5
+}
+Rewrite_Devotion = {
+	diplomatic_reputation = 2
+}
+Rewrite_Duty = {
+	fort_maintenance_modifier = -0.1
+	defensiveness = 0.15
+}
+Resistant_Population = {
+	global_missionary_strength = -0.02
+}
+Mercyfull_Ruler = {
+	tolerance_own = 1
+	stability_cost_modifier = -0.15
+}
+Heretical_Law = {
+	tolerance_own = -1
+	papal_influence = -0.5
+	local_autonomy = -0.10
+}
+Divine_Justice = {
+	global_unrest = -2
+	global_autonomy = -0.1
+}
+Good_Ruler = {
+	tolerance_own = 1
+	missionary_maintenance_cost = -0.1
+}
+####
+Additional_Taxes = {
+	global_unrest = 2
+}
+Lowered_Taxes = {
+	global_tax_modifier = -0.15
+}
+Maintain_Situation = {
+	production_efficiency = 0.25
+	stability_cost_modifier = -0.15
+	global_unrest = -1
+}
+Maintain_Taxes = {
+	global_tax_modifier = 0.10
+}
+Maintain_Income = {
+	global_unrest = -1
+}
+Optimized_Taxation = {
+	global_trade_goods_size_modifier = 0.05
+	global_tax_modifier = 0.05
+}
+
+
 

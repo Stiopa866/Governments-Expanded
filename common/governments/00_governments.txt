@@ -43,6 +43,8 @@ monarchy = {
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus
 				crown_of_saint_wenceslaus_2
+				office_of_lord_regent_reform
+				arch_king_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -79,7 +81,9 @@ monarchy = {
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				blood_tax_reform
-				#office_of_lord_regent_reform
+				house_of_knights_reform
+				constitutio_valdemariana_reform
+				riksradet_norway_reform
 			}
 		}
 		bureaucracy = {
@@ -95,6 +99,7 @@ monarchy = {
 				#GE
 				regional_forts_reform
 				theocratic_bureacrats_reform
+				ulema_guidance_reform 
 				diocletian_reforms_reform
 				kyoho_reforms_reform
 				casa_de_contraction_reform
@@ -104,7 +109,8 @@ monarchy = {
 				millet_reform
 				great_law_of_peace_reform
 				ancien_regime_reform
-				#the_red_book_reform
+				the_red_book_reform
+				commoner_officials_reform
 			}
 		}
 		military_organisation = {
@@ -124,7 +130,8 @@ monarchy = {
 				governmental_purbias_register_reform
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
-				#gustavan_artillery_reform
+				gustavan_artillery_reform
+				the_black_guard_reform
 			}
 		}
 		growth_of_administration = {
@@ -149,7 +156,8 @@ monarchy = {
 				fredrickan_reforms_reform
 				conseil_du_roi_reform
 				table_of_ranks_reform
-				#the_judicature_ordinance_reform
+				the_judicature_ordinance_reform
+				christian_four_merchantile_reform
 			}
 		}
 		deliberative_assembly = {
@@ -161,7 +169,8 @@ monarchy = {
 				states_general_reform
 				#GE
 				haudenosaunee_reform
-				#parliamentary_order_reform
+				parliamentary_order_reform
+				king_and_duke_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -175,6 +184,7 @@ monarchy = {
 				constitutional_equality_reform
 				nueva_planta_decrees_reform
 				toleration_of_all_faiths_edict_reform
+				abolish_the_haandfaestning_reform
 			}
 		}
 		separation_of_power = {
@@ -313,6 +323,7 @@ republic = {
 				#GE
 				florentine_republic
 				american_government
+				genoan_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -328,8 +339,9 @@ republic = {
 				#GE
 				demedici_dynasty_reform
 				support_borghese_reform
-				guild_dominance_reform
-				
+				#guild_dominance_reform
+				rule_by_consent_reform
+				moedernegotie_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -338,7 +350,9 @@ republic = {
 				consolidation_of_power_reform
 				lottery_reform
 				council_of_the_indies_reform
+				#GE
 				factional_elections_reform
+				vroedschappen_reform
 			}
 		}
 		military_organisation = {
@@ -354,6 +368,7 @@ republic = {
 				portugese_marines_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				reforms_of_william_3_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -362,6 +377,8 @@ republic = {
 				administrative_divisions_reform
 				union_of_states_reform
 				advanced_bookkeeping_reform
+				communal_territories_reform
+				united_indian_companies_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -375,24 +392,29 @@ republic = {
 				imperial_reform
 				#GE
 				stadholder_reform
+				andrea_doria_constitution_reform
+				ware_vrijheid_reform
 			}
 		}
 		consolidation_of_power_category = {
 			reforms = {
 				broaden_executive_powers_reform
 				devolution_of_powers_reform
+				confederation_of_states_reform
 			}
 		}
 		guiding_principle_of_administration = {
 			reforms = {
 				political_principle_reform
 				moral_principle_reform
+				tolerant_principle_reform
 			}
 		}
 		electorate = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
+				regents_reform
 			}
 		}
 		office_selection = {
@@ -400,6 +422,7 @@ republic = {
 				appointment_by_committee_reform
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
+				raadspensionaris_reform
 			}
 		}
 		question_of_dictatorship = {
@@ -530,12 +553,15 @@ theocracy = {
 				leading_clergy_reform
 				monastic_order_reform
 				papacy_reform
+				ajuraan_theocracy_reform
+				dynastic_theocracy_reform
 			}
 		}
 		internal_vs_external_mission = {
 			reforms = {
 				internal_mission_reform
 				external_mission_reform
+				colonial_mission_reform
 				teuton_drill
 			}
 		}
@@ -545,24 +571,28 @@ theocracy = {
 				combat_heresy_reform
 				expel_heathens_reform
 				the_holy_office_reform
-			}
-		}
-		clergy_in_administration = {
-			reforms = {
-				subservient_administrators_reform
-				religious_administrators_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
 				teuton_priest
+				fighting_for_israel_reform
 			}
 		}
-		#religious_enforcement = {
+		#clergy_in_administration = {
 		#	reforms = {
-		#		holy_orthodoxy_reform
-		#		inquisition_reform
-		#		religious_pragmatism_reform
+		#		subservient_administrators_reform
+		#		religious_administrators_reform
+		#		permanent_marathas_council_reform
+		#		governmental_purbias_register_reform
+		#		teuton_priest
 		#	}
 		#}
+		religious_enforcement = {
+			reforms = {
+				holy_orthodoxy_reform
+				inquisition_reform
+				religious_pragmatism_reform
+				papal_curia_reform
+				ulema_guidance_reform 
+			}
+		}
 		secularization = {
 			reforms = {
 				maintain_religious_head_reform
@@ -570,8 +600,42 @@ theocracy = {
 				crown_leader_reform
 				proclaim_republic_reform
 				battle_pope_reform
+				restore_the_davidic_line_reform
+			}
+		}
+		mobilize_the_faithful = {
+			reforms = {
+				holy_war_reform
+				militarized_monasteries_reform
+				brothers_in_arms_reform
+				the_bishops_army_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 				teuton_army
+				mamluk_soldiers_reform
+				tradition_of_masada_and_bar_kochba_reform
+			}
+		}
+		diplomacy = {
+			reforms = {
+				unrestricted_diplomacy_reform
+				holy_claims_reform
+				network_of_faithful_allies_reform
+				the_bishops_diplomacy_reform
 				teuton_navy
+				yeshiva_scholarship_reform
+			}
+		}
+		judiciary = {
+			reforms = {
+				secular_law_reform
+				theocratic_law_reform
+				roman_law_reform
+				papal_law_reform
+				jizja_tax_reform
+				harmonious_law_reform
+				pagan_law_reform
+				the_bishops_law_reform
 			}
 		}
 	}

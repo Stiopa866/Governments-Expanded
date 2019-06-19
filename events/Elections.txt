@@ -736,7 +736,7 @@ country_event = {
 		name = "EVTOPTE700"
 		trigger = {
 			has_government_attribute = enables_nepotism
-			NOT { has_reform = demedici_dynasty_reform }
+			NOT = { has_reform = demedici_dynasty_reform }
 		}
 		ai_chance = { factor = 10 }
 		add_scaled_republican_tradition = -4

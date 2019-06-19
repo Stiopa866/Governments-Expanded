@@ -98,6 +98,13 @@ estate_church =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_TOLERANT_PRINCIPLE_REFORM
+		trigger = {
+			has_reform = tolerant_principle_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_COUNCIL_OF_SHEIKHS_REFORM
 		trigger = {
 			has_reform = council_of_sheikhs_reform
@@ -117,6 +124,13 @@ estate_church =
 			has_reform = ancien_regime_reform
 		}
 		influence = -10
+	}
+	influence_modifier = {
+		desc = EST_VAL_ULEMA_GUIDANCE_REFORM
+		trigger = {
+			has_reform = ulema_guidance_reform 
+		}
+		influence = 10
 	}
 	influence_modifier = {
 		desc = EST_VAL_THEOCRACY
@@ -230,6 +244,13 @@ estate_church =
 		loyalty = 5
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_TOLERANT_PRINCIPLE_REFORM_LOY
+		trigger = {
+			has_reform = tolerant_principle_reform
+		}
+		loyalty = -10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_VERY_PIOUS
 		trigger = {
 			religion_group = muslim
@@ -281,6 +302,13 @@ estate_church =
 			has_reform = feudal_theocracy
 		}
 		loyalty = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_ULEMA_GUIDANCE_REFORM
+		trigger = {
+			has_reform = ulema_guidance_reform 
+		}
+		influence = 10
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_SHEIKH_UL_ISLAM

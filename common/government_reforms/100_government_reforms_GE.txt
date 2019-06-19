@@ -174,8 +174,8 @@ beylik = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		army_tradition = 0.50
-		unjustified_demands = -0.25
+		army_tradition = 0.25
+		unjustified_demands = -0.15
 	}
 }
 
@@ -288,6 +288,64 @@ crown_of_saint_wenceslaus_2 = {
 	}
 }
 
+office_of_lord_regent_reform = {
+	icon = sten_sture
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+	}
+	modifiers = {
+		legitimacy = 0.5
+		prestige = 0.5
+		war_exhaustion = -0.025
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+arch_king_reform = {
+	icon = crown_highlighted
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+			tag = SCA
+		}
+		1 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		12 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		17 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	trigger = {
+		1 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		12 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		17 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	modifiers = {
+		prestige = 1
+		liberty_desire = 5
+		diplomatic_annexation_cost = -0.05
+	}
+	ai_chance = {
+		factor = 1000
+	}
+}
 
 #ReligiousT2
 
@@ -298,8 +356,7 @@ papal_embassy_reform = {
 		religion = catholic
 	}
 	modifiers = {
-		papal_influence = 1.5
-		GE_catholics_influence = 0.25
+		papal_influence = 2
 	}
 	ai_chance = {
 		factor = 1
@@ -314,7 +371,7 @@ metropolian_bishop_reform = {
 	}
 	modifiers = {
 		prestige_per_development_from_conversion = 0.1
-		state_maintenance_modifier = -0.10
+		state_maintenance_modifier = -0.25
 	}
 	effect = {
 		add_patriarch_authority = 0.10
@@ -335,9 +392,9 @@ state_church_reform = {
 		}
 	}
 	modifiers = {
+		tolerance_own = 0.5
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		GE_ultraquists_influence = 0.25
 	}
 	ai_chance = {
 		factor = 1
@@ -484,7 +541,8 @@ trade_princes_reform = {
 		}
 	}
 	modifiers = {
-		placed_merchant_power = 5
+		placed_merchant_power = 20
+		merchants = 1
 	}
 	can_use_trade_post = yes
 	ai_chance = {
@@ -510,7 +568,7 @@ dhimmi_nobles_reform = {
 		}
 	}
 	modifiers = {
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.10
 	}
 	ai_chance = {
 		factor = 5
@@ -590,8 +648,8 @@ blood_tax_reform = {
 	}
 }
 
-office_of_lord_regent_reform = {
-	icon = castle
+house_of_knights_reform = {
+	icon = house_of_knights
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -600,10 +658,47 @@ office_of_lord_regent_reform = {
 		}
 	}
 	modifiers = {
-		liberty_desire = 15
-		legitimacy = 0.5
 		prestige = 0.5
-		war_exhaustion = -0.025
+		leader_cost = -0.20
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#10% noble loyalty
+}
+
+constitutio_valdemariana_reform = {
+	icon = nobleman
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		global_manpower_modifier = 0.10
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+riksradet_norway_reform = {
+	icon = nobleman
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = NOR
+			was_tag = NOR
+		}
+	}
+	modifiers = {
+		papal_influence = 1
+		church_power_modifier = 0.10
+		fort_maintenance_modifier = -0.10
+		legitimacy = 0.5
 	}
 	ai_chance = {
 		factor = 100
@@ -616,8 +711,8 @@ regional_forts_reform = {
 	icon = fort
 	allow_normal_conversion = yes
 	modifiers = {
-		defensiveness = 0.10
-		state_maintenance_modifier = -0.15
+		garrison_size = 0.15
+		state_maintenance_modifier = -0.25
 	}
 	ai_chance = {
 		factor = 1
@@ -627,12 +722,38 @@ regional_forts_reform = {
 theocratic_bureacrats_reform = {
 	icon = bishop
 	allow_normal_conversion = yes
+	potential = {
+		religion_group = christian
+	}
+	trigger = {
+		religion_group = christian
+	}
 	modifiers = {
 		tolerance_own = 1
+		development_cost = -0.05
 	}
 	ai_chance = {
 		factor = 1
 	}
+}
+
+ulema_guidance_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+	}
+	trigger = {
+		religion_group = muslim
+	}
+	modifiers = {
+		tolerance_own = 1
+		global_missionary_strength = 0.01
+	}
+	ai_chance = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty
 }
 
 diocletian_reforms_reform = {
@@ -777,7 +898,7 @@ ancien_regime_reform = {
 }
 
 the_red_book_reform = {
-	icon = castle
+	icon = swedish_church_ordinance
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -785,13 +906,35 @@ the_red_book_reform = {
 			was_tag = SWE
 		}
 	}
+	trigger = {
+		NOT = { religion = catholic }
+	}
 	modifiers = {
 		manpower_recovery_speed = 0.10
-		tolerance_heretic = 1
+		tolerance_heretic = 0.5
 	}
 	ai_chance = {
 		factor = 100
 	}
+}
+
+commoner_officials_reform = {
+	icon = peasants
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+		}
+	}
+	modifiers = {
+		ship_power_propagation = 0.25
+		dip_advisor_cost = -0.25
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#-10% Noble Influence
 }
 
 #Tier4
@@ -800,7 +943,8 @@ integrate_moneyloaners_reform = {
 	icon = banker
 	allow_normal_conversion = yes
 	modifiers = {
-		interest = -0.5
+		interest = -1
+		inflation_reduction = 0.05
 	}
 	custom_attributes = { 
 		enables_moneyloaners = yes
@@ -827,8 +971,6 @@ advanced_bookkeeping_reform = {
 		factor = 5
 	}
 }
-
-
 	
 colonial_govenors_reform = {
 	icon = colonial_rule
@@ -934,7 +1076,10 @@ conseil_du_roi_reform = {
 	icon = conseil_du_roi
 	allow_normal_conversion = yes
 	potential = { 
-		tag = FRA
+		OR = {
+			tag = FRA
+			have_had_reform = conseil_du_roi_reform
+		}
 	}
 	modifiers = {
 		max_absolutism = 5
@@ -967,7 +1112,7 @@ table_of_ranks_reform = {
 }
 
 the_judicature_ordinance_reform = {
-	icon = castle
+	icon = gustavus_adolphus
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -984,10 +1129,31 @@ the_judicature_ordinance_reform = {
 	}
 }
 
+christian_four_merchantile_reform = {
+	icon = merchant_ship
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+		}
+	}
+	modifiers = {
+		range = 0.25
+		global_prov_trade_power_modifier = 0.15
+	}
+	effect = {
+		add_mercantilism = 5
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
 #Tier5
 
 parliamentary_order_reform = {
-	icon = castle
+	icon = parliament_highlighted
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1004,8 +1170,25 @@ parliamentary_order_reform = {
 	ai_chance = {
 		factor = 100
 	}
+	#No events, add later?
 }
 
+king_and_duke_reform = {
+	icon = assembly_hall
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.15
+		yearly_absolutism = 0.20
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
 
 #Tier6
 
@@ -1069,6 +1252,26 @@ toleration_of_all_faiths_edict_reform = {
 	ai_chance = {
 		factor = 100
 	}
+}
+
+abolish_the_haandfaestning_reform = {
+	icon = paper_with_seal
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+		heir_chance = 0.25
+		global_unrest = -1
+	}
+	ai_chance = {
+		factor = 100
+	}
+	#-15% Noble Influence
 }
 
 #Tier7
@@ -1245,6 +1448,7 @@ tatar_mercenaries_reform = {
 	potential = {
 		any_neighbor_country = {
 			has_reform = steppe_horde
+			culture_group = tartar	
 		}
 	}
 	modifiers = {
@@ -1364,6 +1568,7 @@ general_war_commissariat_reform = {
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_regiment_cost = -0.05
+		global_autonomy = -0.025
 	}
 	ai_chance = {
 		factor = 100
@@ -1371,7 +1576,7 @@ general_war_commissariat_reform = {
 }
 
 gustavan_artillery_reform = {
-	icon = castle
+	icon = gustavan_artillery
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1382,6 +1587,24 @@ gustavan_artillery_reform = {
 	modifiers = {
 		movement_speed = 0.05
 		artillery_power = 0.10
+	}
+	ai_chance = {
+		factor = 100
+	}
+}
+
+the_black_guard_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DAN
+			was_tag = DAN
+		}
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		possible_mercenaries = 0.25
 	}
 	ai_chance = {
 		factor = 100

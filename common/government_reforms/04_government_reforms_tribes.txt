@@ -259,6 +259,9 @@ tribe_becomes_monarchy_reform = {
 		}
 		change_government = monarchy
 	}
+	ai_chance = {
+		factor = 20
+	}
 }
 
 tribe_becomes_republic_reform = {
@@ -304,6 +307,9 @@ tribe_becomes_republic_reform = {
 			change_unit_type = chinese
 		}
 		change_government = republic
+	}
+	ai_chance = {
+		factor = 5
 	}
 }
 
@@ -352,7 +358,7 @@ tribe_becomes_theocracy_reform = {
 		change_government = theocracy
 	}
 	ai_chance = {
-		factor = 0
+		factor = 5
 	}
 }
 
@@ -374,6 +380,6 @@ tribe_becomes_horde_reform = {
 		NOT = { has_reform = great_mongol_state_reform }
 	}
 	ai_chance = {
-		factor = 0
+		factor = 10
 	}
 }

@@ -81,6 +81,27 @@ estate_burghers =
 		}
 		influence = -10
 	}
+	influence_modifier = {
+		desc = EST_VAL_MOEDERNEGOTIE_REFORM
+		trigger = {
+			has_reform = moedernegotie_reform
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_REGENTS_REFORM
+		trigger = {
+			has_reform = regents_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_VROEDSCHAPPEN_REFORM
+		trigger = {
+			has_reform = vroedschappen_reform
+		}
+		influence = 5
+	}
 	influence_modifier = {	
 		desc = EST_HIGH_DEVELOPMENT_PROVINCE
 		trigger = {
@@ -278,6 +299,28 @@ estate_burghers =
 		}
 		loyalty = 5
 	}
+	loyalty_modifier = {
+		desc = EST_VAL_MOEDERNEGOTIE_REFORM_LOY
+		trigger = {
+			has_reform = moedernegotie_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_UNITED_INDIAN_COMPANIES_REFORM_LOY
+		trigger = {
+			has_reform = united_indian_companies_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_REGENTS_REFORM_LOY
+		trigger = {
+			has_reform = regents_reform
+		}
+		loyalty = 10
+	}
+	
 	
 	#Custom Names
 	custom_name = {
@@ -996,7 +1039,7 @@ estate_burghers =
 					}
 				}
 				add_loan = {
-					interest_modifier = -0.5
+					interest_modifier = -1
 					fixed_interest = yes
 					duration = 60
 				}
@@ -1009,7 +1052,7 @@ estate_burghers =
 					}
 				}
 				add_loan = {
-					interest_modifier = -1
+					interest_modifier = -2
 					fixed_interest = yes
 					duration = 60
 				}

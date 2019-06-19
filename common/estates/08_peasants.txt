@@ -1,8 +1,8 @@
 estate_peasants =
 {
-	icon = 2
+	icon = 12
 	
-	color = { 200 0 50 }
+	color = { 250 200 0 }
 	
 	# Is estate kept in control of province on conquest?
 	keep_on_conquest = no
@@ -25,21 +25,21 @@ estate_peasants =
 	start_territory_weight = 0
 	
 	# Min autonomy in estate provinces
-	min_autonomy = 25
+	min_autonomy = 10
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
 	 autonomy_does_not_affect = local_manpower_modifier
 
 	country_modifier_happy = {
-		state_maintenance_modifier = -0.40
+		state_maintenance_modifier = -0.20
 		production_efficiency = 0.20
 	}
 	country_modifier_neutral = {
-		production_efficiency = 0.20
+		production_efficiency = 0.10
 	}	
 	country_modifier_angry = {
-		state_maintenance_modifier = 0.40
-		production_efficiency = -0.20
+		state_maintenance_modifier = 0.20
+		production_efficiency = -0.10
 	}
 	
 	# These do not scale, but only applied in provinces owned by the estate
@@ -72,7 +72,7 @@ estate_peasants =
 	
 	# Special interactions
 	interaction = {
-		name = "CALL_DIET"
+		name = "HOLD_LANDTAG"
 		icon = 1
 		
 		years_between_use = 20
@@ -111,6 +111,106 @@ estate_peasants =
 					loyalty = 30
 				}				
 			}			
+		}
+	}
+	interaction = {
+		name = "TAX_PEASANTS"
+		icon = 17
+		
+		years_between_use = 10
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_peasants
+				influence = 40
+			}
+			any_owned_province = {
+				has_estate = estate_peasants
+			}
+		}
+		
+		effect = {
+			custom_tooltip = tax_peasants_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_estate = estate_peasants }
+					add_province_modifier = {
+						name = tax_peasants
+						duration = 3650
+					}
+				}
+			}
+			add_estate_loyalty = {
+				estate = estate_peasants
+				loyalty = -5
+			}
+			add_estate_influence_modifier = {
+				estate = estate_peasants
+				desc = EST_VAL_TAX_PEASANTS
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}				
+			}
+		}
+	}
+	interaction = {
+		name = "REGISTER_PEASANTS"
+		icon = 12
+		
+		years_between_use = 10
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_peasants
+				influence = 40
+			}
+			any_owned_province = {
+				has_estate = estate_peasants
+			}
+		}
+		
+		effect = {
+			custom_tooltip = register_peasants_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_estate = estate_peasants }
+					add_province_modifier = {
+						name = register_peasants
+						duration = 3650
+					}
+				}
+			}
+			add_estate_loyalty = {
+				estate = estate_peasants
+				loyalty = -5
+			}
+			add_estate_influence_modifier = {
+				estate = estate_peasants
+				desc = EST_VAL_REGISTER_PEASANTS
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}				
+			}
 		}
 	}
 

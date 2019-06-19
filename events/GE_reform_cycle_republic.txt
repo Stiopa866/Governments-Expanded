@@ -1,0 +1,235 @@
+namespace = GE_reform_cycle_republic
+
+country_event = {
+	id = GE_reform_cycle_republic.201
+	title = GE_reform_cycle_republic.201.t
+	desc = GE_reform_cycle_republic.201.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		has_reform = republican_authoritarianism_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.201.a
+			
+		add_country_modifier = {
+			name = "Additional_Taxes" #+2 Unrest
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.201.b
+		
+		add_country_modifier = {
+			name = "Lowered_Taxes" #-15% Tax Income
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.201.c
+		
+		kill_advisor = random
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle_republic.202
+	title = GE_reform_cycle_republic.202.t
+	desc = GE_reform_cycle_republic.202.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		has_reform = republican_authoritarianism_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.202.a
+			
+		add_prestige = 5
+		add_years_of_income = 0.25
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.202.b
+		
+		add_country_modifier = {
+			name = "Maintain_Situation" #-15% Stability, +25% Production Income, -1 Unrest
+			duration = 5475
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.202.c
+		
+		highlight = yes
+
+		trigger = {
+			has_reform = frequent_elections_reform
+		}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_FREQUENT_ELECTIONS
+		
+		add_republican_tradition = 5
+		
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle_republic.401
+	title = GE_reform_cycle_republic.401.t
+	desc = GE_reform_cycle_republic.401.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		has_reform = administrative_divisions_reform
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_colony = no
+					is_territory = no
+					is_capital = no
+				}
+				save_event_target_as = GE_reform_cycle_republic.401
+			}
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.401.a
+			
+		random_owned_province = {
+			limit = {
+				province_id = event_target:GE_reform_cycle_republic.401
+			}
+			random_list = {
+				50 = { 0 }
+				50 = {
+					spawn_rebels = {
+						type = anti_tax_rebels
+						size = 2
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.401.b
+		
+		every_owned_province = {
+			limit = {
+				area = event_target:holy_orthodoxy_cycle_GE_pos
+			}
+			add_local_autonomy = 15
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.401.c
+		
+		highlight = yes
+		
+		every_owned_province = {
+			limit = {
+				area = event_target:holy_orthodoxy_cycle_GE_pos
+			}
+			add_unrest = 8
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle_republic.402
+	title = GE_reform_cycle_republic.402.t
+	desc = GE_reform_cycle_republic.402.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		has_reform = administrative_divisions_reform
+		NOT = { has_country_modifier = Maintain_Taxes }
+		NOT = { has_country_modifier = Maintain_Income }
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.402.a
+			
+		add_country_modifier = {
+			name = "Maintain_Taxes" #+10% Tax
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.402.b
+		
+		add_country_modifier = {
+			name = "Maintain_Income" #-1 Unrest
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.402.c
+		
+		highlight = yes
+		
+		trigger = {
+			OR = {
+				ruler_has_personality = midas_touched_personality
+				ruler_has_personality = entrepreneur_personality
+			}
+		}
+		if = {
+			limit = {
+				ruler_has_personality = midas_touched_personality
+			}
+		required_personality = midas_touched_personality
+		}
+		else_if = {
+			limit = {
+				ruler_has_personality = entrepreneur_personality
+			}
+		required_personality = entrepreneur_personality
+		}
+		
+		add_country_modifier = {
+			name = "Optimized_Taxation" #+5% Goods Produced, +5% Tax
+			duration = 9125
+		}
+
+	}
+}
