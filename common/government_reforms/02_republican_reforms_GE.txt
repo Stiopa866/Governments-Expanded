@@ -334,9 +334,6 @@ stadholder_reform = {
 	allow_normal_conversion = yes
 	potential = {}
 	trigger = { 
-		NOT = {
-			has_reform = dutch_republic
-		}
 	}
 	modifiers = {
 		republican_tradition = -0.5

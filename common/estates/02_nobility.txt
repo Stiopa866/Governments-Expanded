@@ -370,6 +370,14 @@ estate_nobles =
 	}
 	
 	loyalty_modifier = {
+		desc = EST_VAL_DIVERSE_ESTATES_REFORM_LOY
+		trigger = {
+			has_reform = diverse_estates_reform 
+		}
+		loyalty = 10
+	}
+	
+	loyalty_modifier = {
 		desc = EST_VAL_JUNKERS
 		trigger = {
 			has_reform = prussian_monarchy
@@ -1114,7 +1122,7 @@ estate_nobles =
 		name = "DEMAND_MORE_TROOPS"
 		icon = 12
 		
-		years_between_use = 25
+		years_between_use = 20
 		
 		potential = {
 			NOT = { has_disaster = estate_church_disaster }
@@ -1198,9 +1206,9 @@ estate_nobles =
 				create_general = { tradition = 20 }
 				add_estate_influence_modifier = {
 					estate = estate_nobles
-					desc = EST_VAL_GRANTED_GENERALSHIP
+					desc = EST_VAL_LEVIED_TROOPS
 					influence = 10
-					duration = 9125
+					duration = 7300
 				}
 				}
 		}

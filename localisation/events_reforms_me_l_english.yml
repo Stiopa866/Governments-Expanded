@@ -19,7 +19,11 @@
  reform_me_events.9.d: "A coalition within the nation's nobility has brought forth a proposition: dispose of my current heir and proclaim my support for their chosen candidate, or die trying. This doesn't seem to be a proposition as much as it is a threat. Such threats are not uncommon, but this time they seem to be serious."
  reform_me_events.9.a: "Peace over justice."
  reform_me_events.9.b: "I guess you'll have to take no as an answer."
- 
+ reform_me_events.11.t: "The King is Dead, Long Live the King"
+ reform_me_events.11.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
+ reform_me_events.11.a: "The Prince of Course!"
+ reform_me_events.11.b: "One of the late king's brothers."
+ reform_me_events.11.c: "A member of a foreign dynasty."
  
  
  #GE Reform Cycle
@@ -464,7 +468,7 @@
  combat_heresy.89.t: "Purity Spiral"
  combat_heresy.89.d: "In our attempt to combat heretics our standards of piety have risen rapidly. To the point that even our $RULERTITLE$'s piety has come into question. Do we risk an inquisition?"
  combat_heresy.89.a: "Halt the inquisition at once."
- combat_heresy.89.b: "I have nothing to fear.
+ combat_heresy.89.b: "I have nothing to fear."
  
  combat_heresy.90.t: "Reign of Terror"
  combat_heresy.90.d: "As a unexpected side effect of our divine cause of combatting heresy, our peasants and merchant are fearful of acting in a way that can be interpreted as heretical. And thus a lot of decisions are being run through the church for validation. This seems to be hindering the economy."

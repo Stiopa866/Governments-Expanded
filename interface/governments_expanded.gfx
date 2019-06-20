@@ -355,4 +355,36 @@ spriteTypes = {
 		name = "government_reform_andrea_doria"
 		texturefile = "gfx//interface//government_reform_icons//andrea_doria.dds"
 	}
+	spriteType = {
+		name = "government_reform_archduchy"
+		texturefile = "gfx//interface//government_reform_icons//archduchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_habsburg_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//habsburg_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_austrian_empire"
+		texturefile = "gfx//interface//government_reform_icons//austrian_empire.dds"
+	}
+	spriteType = {
+		name = "government_reform_ladislaus_posthumous"
+		texturefile = "gfx//interface//government_reform_icons//ladislaus_posthumous.dds"
+	}
+	spriteType = {
+		name = "government_reform_imperial_inquisition"
+		texturefile = "gfx//interface//government_reform_icons//imperial_inquisition.dds"
+	}
+	spriteType = {
+		name = "government_reform_ferdinants_declaration"
+		texturefile = "gfx//interface//government_reform_icons//ferdinants_declaration.dds"
+	}
+	spriteType = {
+		name = "government_reform_diverse_estates"
+		texturefile = "gfx//interface//government_reform_icons//diverse_estates.dds"
+	}
+	spriteType = {
+		name = "government_reform_austrian_army"
+		texturefile = "gfx//interface//government_reform_icons//austrian_army.dds"
+	}
 }

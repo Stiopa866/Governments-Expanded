@@ -17,6 +17,27 @@ Regent_Investments = {
 	allowed_num_of_buildings = 1
 	local_development_cost = -0.10
 }
+Feudal_Power = {
+	local_manpower_modifier = 0.15
+}
+Religious_Domination = {
+	tolerance_own = 1
+}
+Blood_Tax_1 = {
+	global_manpower_modifier = 0.05
+}
+Blood_Tax_2 = {
+	global_manpower_modifier = 0.10
+}
+Blood_Tax_3 = {
+	global_manpower_modifier = 0.15
+}
+Blood_Tax_4 = {
+	global_manpower_modifier = 0.20
+}
+Blood_Tax_5 = {
+	global_manpower_modifier = 0.25
+}
 
 #Cortez
 Cortes_Piety = {

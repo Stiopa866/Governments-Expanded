@@ -303,12 +303,19 @@ estate_church =
 		}
 		loyalty = 5
 	}
-	influence_modifier = {
-		desc = EST_VAL_ULEMA_GUIDANCE_REFORM
+	loyalty_modifier = {
+		desc = EST_VAL_ULEMA_GUIDANCE_REFORM_LOY
 		trigger = {
 			has_reform = ulema_guidance_reform 
 		}
-		influence = 10
+		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_DIVERSE_ESTATES_REFORM_LOY
+		trigger = {
+			has_reform = diverse_estates_reform 
+		}
+		loyalty = 10
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_SHEIKH_UL_ISLAM

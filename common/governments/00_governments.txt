@@ -45,6 +45,11 @@ monarchy = {
 				crown_of_saint_wenceslaus_2
 				office_of_lord_regent_reform
 				arch_king_reform
+				elective_monarchy_reform
+				arch_monarchy_reform
+				arch_duchy_reform
+				habsburg_monarchy_reform
+				austrian_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -84,6 +89,7 @@ monarchy = {
 				house_of_knights_reform
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
+				albertine_line_reform
 			}
 		}
 		bureaucracy = {
@@ -111,6 +117,7 @@ monarchy = {
 				ancien_regime_reform
 				the_red_book_reform
 				commoner_officials_reform
+				imperial_inquisition_reform
 			}
 		}
 		military_organisation = {
@@ -132,6 +139,7 @@ monarchy = {
 				general_war_commissariat_reform
 				gustavan_artillery_reform
 				the_black_guard_reform
+				reorganize_the_imperial_army
 			}
 		}
 		growth_of_administration = {
@@ -158,6 +166,7 @@ monarchy = {
 				table_of_ranks_reform
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
+				declario_ferdinandei_reform
 			}
 		}
 		deliberative_assembly = {
@@ -171,6 +180,7 @@ monarchy = {
 				haudenosaunee_reform
 				parliamentary_order_reform
 				king_and_duke_reform
+				diverse_estates_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
