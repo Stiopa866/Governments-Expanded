@@ -165,6 +165,20 @@ support_borghese_reform = {
 	}
 }
 
+mixed_republic_reform = {
+	icon = peasants
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		reform_progress_growth = 0.05
+		stability_cost_modifier = -0.10
+	}
+	ai_chance = {
+		factor = 2
+	}
+}
+
 moedernegotie_reform = {
 	icon = dutch_flag
 	allow_normal_conversion = yes

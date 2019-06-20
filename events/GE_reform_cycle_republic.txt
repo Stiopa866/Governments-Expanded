@@ -95,7 +95,10 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		has_reform = nepotism_reform
+		OR = {
+			has_reform = nepotism_reform
+			has_reform = demedici_dynasty_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -205,7 +208,10 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		has_reform = nepotism_reform
+		OR = {
+			has_reform = nepotism_reform
+			has_reform = demedici_dynasty_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -290,7 +296,11 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		has_reform = republicanism_reform
+		OR = {
+			has_reform = republicanism_reform
+			has_reform = support_borghese_reform
+			has_reform = rule_by_consent_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -389,7 +399,11 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		has_reform = republicanism_reform
+		OR = {
+			has_reform = republicanism_reform
+			has_reform = support_borghese_reform
+			has_reform = rule_by_consent_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse

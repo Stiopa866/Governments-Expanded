@@ -352,6 +352,7 @@ republic = {
 				#guild_dominance_reform
 				rule_by_consent_reform
 				moedernegotie_reform
+				mixed_republic_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
