@@ -559,6 +559,35 @@
  GE_reform_cycle_republic.202.b: "There is no need to change the situation."
  GE_reform_cycle_republic.202.c: "Fiddle with the system to ensure the dictator's power is limited."
  
+ GE_reform_cycle_republic.203.t: "Family Feud"
+ GE_reform_cycle_republic.203.d: "Upon the election of our new ruler, violence broke out between several family members of our leader. It seems to have started out as a plot to overthrow our rightfully elected ruler, but an argument over how the new power should be delegated has turned into a seeming civil war among the dynasty. If the situation is not resolved and resolved soon, we may experience open revolt among the higher nobles in support of the various pretenders."
+ GE_reform_cycle_republic.203.a: "Wage war upon the family."
+ GE_reform_cycle_republic.203.b: "Attempt to mediate the fight."
+ GE_reform_cycle_republic.203.c: "Grant concessions to the major dissenters."
+ GE_reform_cycle_republic.203.e: "Duel for the throne."
+ GE_reform_cycle_republic.203.f: "Appeal to familial bonds."
+
+ GE_reform_cycle_republic.204.t: "Familial Bonds"
+ GE_reform_cycle_republic.204.d: "At the top of the human hierarchy lies one man: the dictator. Though past dictators have been prone to overspending or selfish behavior, our current ruler seems to have nothing but purity in his heart as he gives freely to his subjects as they rejoice, but is a feared and efficient man if need be. The recent legislation passed seems to be working incredibly well; it is the kind of policy that would have been stopped by a convoluted governmental setup. Our simple and effective system is working great."
+ GE_reform_cycle_republic.204.a: "Put it in the treasury."
+ GE_reform_cycle_republic.204.b: "Deny these gifts; the family would spend it better."
+ GE_reform_cycle_republic.204.c: "Invest the money in the nation's infrastructure."
+ GE_reform_cycle_republic.204.e: "Convince the supporters to sabotage the opponents in the next election."
+ GE_reform_cycle_republic.204.f: "Ask for more generosity."
+ 
+ GE_reform_cycle_republic.205.t: "Election Tampering"
+ GE_reform_cycle_republic.205.d: "A recent slew of complaints over the recent shift in leadership have brought forth allegations of election tampering from our peasantry. It would seem as though election results were, by some unknown entity and to an unknown degree, tampered with to match the perpetrator's desired outcome. Though we cannot reverse the damage that has already been done, a few dedicated branches of the dissenting peasants are threatening revolt if we do not provide the culprit. Who shall we present as a scapegoat?"
+ GE_reform_cycle_republic.205.a: "The burghers have been acting shady lately."
+ GE_reform_cycle_republic.205.b: "A few nobles seem a bit too friendly with the fraudulent candidate."
+ GE_reform_cycle_republic.205.c: "Might as well pin it on a heretical branch of clergy."
+ GE_reform_cycle_republic.205.e: "It was the cultists I tell you!"
+ GE_reform_cycle_republic.205.f: "I must step down knowing I obtained my position through corrupt means."
+ 
+ GE_reform_cycle_republic.206.t: "Electoral Participation"
+ GE_reform_cycle_republic.206.d: "The aggressive debates that can be heard in our in our town halls might scare some foreigners that are more used to the polite politics of the nobles. Unlike those that believe blood is the main ingredient in political power, our nation is build on the belief that a wider electorate with fitting members provides a much more stable realm."
+ GE_reform_cycle_republic.206.a: "Attempt to restrict the subjects of debate to calm foreigners."
+ GE_reform_cycle_republic.206.b: "Encourage the political participation."
+ GE_reform_cycle_republic.206.c: "Invite them to settle down and join in."
  
  ##T4##
  

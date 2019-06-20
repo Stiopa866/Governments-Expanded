@@ -139,7 +139,12 @@ on_five_year_pulse_4 = {
 		#Authoritarianism#
 		100 = GE_reform_cycle_republic.201
 		100 = GE_reform_cycle_republic.202
-		
+		#Political Dynasties#
+		100 = GE_reform_cycle_republic.203
+		100 = GE_reform_cycle_republic.204
+		#Republicanism#
+		100 = GE_reform_cycle_republic.205
+		100 = GE_reform_cycle_republic.206
 		
 		##T4##
 		

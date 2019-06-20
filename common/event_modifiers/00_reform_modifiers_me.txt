@@ -343,6 +343,16 @@ Optimized_Taxation = {
 	global_trade_goods_size_modifier = 0.05
 	global_tax_modifier = 0.05
 }
-
-
+Heretical_Panic = {
+	production_efficiency = -0.10
+	global_missionary_strength = -0.02
+}
+Calmed_Foreigners = {
+	global_trade_power = 0.15
+	improve_relation_modifier = 0.10
+}
+New_Blood = {
+	stability_cost_modifier = 0.10
+	development_cost = -0.05
+}
 

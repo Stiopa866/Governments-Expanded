@@ -345,10 +345,10 @@
  mechanic_enables_disables_deposition_yes:0 "Disables Depositions."
  mechanic_enables_regent_investments_yes:0 "Enables Regent Investments in Dutch provinces over 20 Development."
  mechanic_enables_independent_nobles_yes:0 "Independant Nobles: Noble Estate provinces have an additional §G15%§! more manpower."
- mechanic_enables_elective_monarchy_yes: "Elective Monarchy; Calls for an election upon a monarchs death."
+ mechanic_enables_elective_monarchy_yes: "Elective Monarchy: Calls for an election upon a monarchs death."
  mechanic_enables_blood_tax_yes: "Blood Tax: Gain §G5%§! Manpower per vassal state."
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
- mechanic_enables_germanization_yes: "Germanization: Slowly convert states to [Root.Culture.GetName] culture."
+ mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -456,6 +456,7 @@
  AVAILABLE_BECAUSE_OF_REFORM_COMBAT_HERESY: "Available due to §YCombat Heresy§ ."
  
  AVAILABLE_BECAUSE_OF_REFORM_FREQUENT_ELECTIONS: "Available due to §YFrequent Elections§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_DEVOLUTION_OF_POWERS: "Available due to §YDevolution of Powers§ ."
  
  
  
