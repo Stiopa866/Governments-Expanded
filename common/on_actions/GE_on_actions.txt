@@ -145,7 +145,9 @@ on_five_year_pulse_4 = {
 		#Republicanism#
 		100 = GE_reform_cycle_republic.205
 		100 = GE_reform_cycle_republic.206
-		
+		#Mixed Republic
+		50 = GE_reform_cycle_republic.207 #Julius Caesar Event
+		150 = GE_reform_cycle_republic.208
 		##T4##
 		
 		#Administrative Divisions#

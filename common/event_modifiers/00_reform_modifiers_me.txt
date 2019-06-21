@@ -355,4 +355,8 @@ New_Blood = {
 	stability_cost_modifier = 0.10
 	development_cost = -0.05
 }
+Enjoying_The_Peace = {
+	stability_cost_modifier = -0.10
+	republican_tradition = 0.1
+}
 

@@ -163,7 +163,7 @@ country_event = {
 				mil = 5
 			}
 			random_list = {
-				75 = { 0 }
+				75 = { }
 				25 = { kill_ruler = yes }
 			}
 		}
@@ -172,13 +172,13 @@ country_event = {
 				mil = 3
 			}
 			random_list = {
-				50 = { 0 }
+				50 = { }
 				50 = { kill_ruler = yes }
 			}
 		}
 		else = {
 			random_list = {
-				25 = { 0 }
+				25 = { }
 				75 = { kill_ruler = yes }
 			}
 		}
@@ -195,7 +195,7 @@ country_event = {
 		required_personality = silver_tongue_personality
 		
 		add_estate_loyalty = {
-			estate = estate_burgers
+			estate = estate_burghers
 			loyalty = 5
 		}
 	}
@@ -254,6 +254,8 @@ country_event = {
 	
 	option = {
 		name = GE_reform_cycle_republic.204.e
+		
+		highlight = yes
 
 		trigger = {
 			ruler_has_personality = intricate_web_weaver_personality
@@ -261,10 +263,13 @@ country_event = {
 		required_personality = intricate_web_weaver_personality
 
 		add_republican_tradition = 2
+		
 	}
 	
 	option = {
 		name = GE_reform_cycle_republic.204.f
+		
+		highlight = yes
 
 		trigger = {
 			OR = {
@@ -313,7 +318,7 @@ country_event = {
 		name = GE_reform_cycle_republic.205.a
 			
 		add_estate_loyalty = {
-			estate = estate_burgers
+			estate = estate_burghers
 			loyalty = -10
 		}
 	}
@@ -326,7 +331,7 @@ country_event = {
 			loyalty = -5
 		}
 		random_list = {
-			80 = { 0 }
+			80 = { }
 			20 = {
 				random_owned_province = {
 					limit = {
@@ -353,6 +358,8 @@ country_event = {
 	
 	option = {
 		name = GE_reform_cycle_republic.205.e
+		
+		highlight = yes
 
 		trigger = {
 			ruler_has_personality = sinner_personality
@@ -367,6 +374,8 @@ country_event = {
 	
 	option = {
 		name = GE_reform_cycle_republic.205.f
+		
+		highlight = yes
 
 		trigger = {
 			OR = {
@@ -441,6 +450,212 @@ country_event = {
 			}
 			add_base_manpower = 1
 		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle_republic.207
+	title = GE_reform_cycle_republic.207.t
+	desc = GE_reform_cycle_republic.207.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = mixed_republic_reform
+		}
+		NOT = { republican_tradition = 75 }
+		army_size_percentage = 0.90
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_saved_name = {
+			key = general_coup
+			type = advisor
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.207.a
+			
+		random_owned_province = {
+			limit = {
+				is_territory = no
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader = general_coup
+			}
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.207.b
+		
+		add_republican_tradition = -3
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.207.c
+		
+		hidden_effect = {
+			define_general = {
+				name = general_coup
+				shock = 4
+				fire = 2
+				manuever = 4
+				siege = 2
+			}
+		}
+		
+		add_republican_tradition = -15
+		add_government_reform = presidential_despot_reform
+		define_ruler = {
+			name = general_coup
+			MIL = 3
+			attach_leader = general_coup
+		}
+		hidden_effect = { add_ruler_personality = bold_fighter_personality }
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.207.e
+		
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = secretive_personality
+				ruler_has_personality = righteous_personality
+				ruler_has_personality = intricate_web_weaver_personality
+			}
+		}
+		if = {
+			limit = {
+				ruler_has_personality = intricate_web_weaver_personality
+			}
+		required_personality = intricate_web_weaver_personality
+		}
+		else_if = {
+			limit = {
+				ruler_has_personality = righteous_personality
+			}
+		required_personality = righteous_personality
+		}
+		else_if = {
+			limit = {
+				ruler_has_personality = secretive_personality
+			}
+		required_personality = secretive_personality
+		}
+		
+		add_republican_tradition = 3
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.207.f
+		
+		highlight = yes
+
+		trigger = {
+			ruler_has_personality = naive_personality
+		}
+		required_personality = naive_personality
+
+		random_list = {
+			10 = { add_corruption = -1 }
+			90 = {
+				hidden_effect = {
+					define_general = {
+						name = general_coup
+						shock = 4
+						fire = 2
+						manuever = 4
+						siege = 2
+					}
+				}
+				
+				add_republican_tradition = -15
+				add_government_reform = presidential_despot_reform
+				define_ruler = {
+					name = general_coup
+					MIL = 3
+					attach_leader = general_coup
+				}
+				hidden_effect = { add_ruler_personality = bold_fighter_personality }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GE_reform_cycle_republic.208
+	title = GE_reform_cycle_republic.208.t
+	desc = GE_reform_cycle_republic.208.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = mixed_republic_reform
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.208.a
+			
+		add_country_modifier = {
+			name = "Enjoying_The_Peace" #-10% Stability Cost, +0.1 Republican tradition
+			duration = 3650
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.208.b
+		
+		add_years_of_income = 0.25
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_ADVANCE
+			influence = 10
+			duration = 3650
+		}
+		if = {
+			limit = {
+				has_faction = mr_aristocrats
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 10
+			}
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_republic.208.c
+
+		
+		highlight = yes
+
+		trigger = {
+			ruler_has_personality = embezzler_personality
+		}
+		required_personality = embezzler_personality
+
+		add_years_of_income = 1
+		add_corruption = -1
 	}
 }
 

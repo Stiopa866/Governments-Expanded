@@ -589,6 +589,20 @@
  GE_reform_cycle_republic.206.b: "Encourage the political participation."
  GE_reform_cycle_republic.206.c: "Invite them to settle down and join in."
  
+ GE_reform_cycle_republic.207.t: "Popular Powergrab"
+ GE_reform_cycle_republic.207.d: "A highly succesfull general has been amassing fame, fortune and a loyal army. He has increasingly been aligning himself with the popular factions in our capital, threatening to disturb the balance of powers. As he crossed the Rubicon and is marching on the capital, we need to decide how to deal with this NOW."
+ GE_reform_cycle_republic.207.a: "Face him in open battle."
+ GE_reform_cycle_republic.207.b: "Submit and grant him a ceremonial position."
+ GE_reform_cycle_republic.207.c: "Elect him as dictator."
+ GE_reform_cycle_republic.207.e: "Et Tu?"
+ GE_reform_cycle_republic.207.f: "Hes just going after the corrupt elite."
+ 
+ GE_reform_cycle_republic.208.t: "Balance of Power"
+ GE_reform_cycle_republic.208.d: "The balance between the patrician parties, the wealty aristocrats and the populace seems to be pretty stable at the moment. We could take advantage of this to accept a bribe from one of the parties without upsetting the balance of power too much. "
+ GE_reform_cycle_republic.208.a: "Lets enjoy the peace while it lasts."
+ GE_reform_cycle_republic.208.b: "Take a bribe from the Aristocrats."
+ GE_reform_cycle_republic.208.c: "take bribes from everyone."
+ 
  ##T4##
  
  #Administrative Divisions#
