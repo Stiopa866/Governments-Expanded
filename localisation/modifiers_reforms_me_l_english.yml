@@ -25,6 +25,15 @@
  register_peasants: "Peasant Register"
  register_peasants_desc: "Update the peasant register for easier recruitment or conscription."
  Regent_Investments: "Regent Investments"
+ Feudal_Power: "Powerfull Nobles"
+ Feudal_Power_desc: "Local powerfull nobles dominate the local politics, fiercely resisting any attempts at proper integration."
+ Religious_Domination: "Religious Domination"
+ Blood_Tax_1: "Blood Tax"
+ Blood_Tax_2: "Blood Tax"
+ Blood_Tax_3: "Blood Tax"
+ Blood_Tax_4: "Blood Tax"
+ Blood_Tax_5: "Blood Tax"
+ 
  
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"
@@ -99,6 +108,10 @@
  Maintain_Taxes: "Maintain Tax Rate"
  Maintain_Income: "Maintain Income"
  Optimized_Taxation: "Optimized Tax Rate"
+ Heretical_Panic: "Heretical Panic"
+ Calmed_Foreigners: "Calmed Foreigners"
+ New_Blood: "New Blood"
+ Enjoying_The_Peace: "Enjoying the Peace"
  
  
  
@@ -132,6 +145,7 @@
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
+ EST_VAL_LEVIED_TROOPS:0 "Levied Troops: §Y$VAL$%§!"
  
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"
@@ -142,4 +156,6 @@
  EST_VAL_WARE_VRIJHEID_REFORM_LOY:0 "Ware Vrijheid: §G$VAL$%§!"
  EST_VAL_TOLERANT_PRINCIPLE_REFORM_LOY:0 "Tolerance Principle: §G$VAL$%§!"
  EST_VAL_REGENTS_REFORM_LOY:0 "Regents: §G$VAL$%§!"
+ EST_VAL_ULEMA_GUIDANCE_REFORM_LOY:0 "Ulema Guidance: §G$VAL$%§!"
+ EST_VAL_DIVERSE_ESTATES_REFORM_LOY:0 "Diverse Estates: §G$VAL$%§!"
  

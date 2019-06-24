@@ -19,7 +19,11 @@
  reform_me_events.9.d: "A coalition within the nation's nobility has brought forth a proposition: dispose of my current heir and proclaim my support for their chosen candidate, or die trying. This doesn't seem to be a proposition as much as it is a threat. Such threats are not uncommon, but this time they seem to be serious."
  reform_me_events.9.a: "Peace over justice."
  reform_me_events.9.b: "I guess you'll have to take no as an answer."
- 
+ reform_me_events.11.t: "The King is Dead, Long Live the King"
+ reform_me_events.11.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
+ reform_me_events.11.a: "The Prince of Course!"
+ reform_me_events.11.b: "One of the late king's brothers."
+ reform_me_events.11.c: "A member of a foreign dynasty."
  
  
  #GE Reform Cycle
@@ -464,7 +468,7 @@
  combat_heresy.89.t: "Purity Spiral"
  combat_heresy.89.d: "In our attempt to combat heretics our standards of piety have risen rapidly. To the point that even our $RULERTITLE$'s piety has come into question. Do we risk an inquisition?"
  combat_heresy.89.a: "Halt the inquisition at once."
- combat_heresy.89.b: "I have nothing to fear.
+ combat_heresy.89.b: "I have nothing to fear."
  
  combat_heresy.90.t: "Reign of Terror"
  combat_heresy.90.d: "As a unexpected side effect of our divine cause of combatting heresy, our peasants and merchant are fearful of acting in a way that can be interpreted as heretical. And thus a lot of decisions are being run through the church for validation. This seems to be hindering the economy."
@@ -555,6 +559,49 @@
  GE_reform_cycle_republic.202.b: "There is no need to change the situation."
  GE_reform_cycle_republic.202.c: "Fiddle with the system to ensure the dictator's power is limited."
  
+ GE_reform_cycle_republic.203.t: "Family Feud"
+ GE_reform_cycle_republic.203.d: "Upon the election of our new ruler, violence broke out between several family members of our leader. It seems to have started out as a plot to overthrow our rightfully elected ruler, but an argument over how the new power should be delegated has turned into a seeming civil war among the dynasty. If the situation is not resolved and resolved soon, we may experience open revolt among the higher nobles in support of the various pretenders."
+ GE_reform_cycle_republic.203.a: "Wage war upon the family."
+ GE_reform_cycle_republic.203.b: "Attempt to mediate the fight."
+ GE_reform_cycle_republic.203.c: "Grant concessions to the major dissenters."
+ GE_reform_cycle_republic.203.e: "Duel for the throne."
+ GE_reform_cycle_republic.203.f: "Appeal to familial bonds."
+
+ GE_reform_cycle_republic.204.t: "Familial Bonds"
+ GE_reform_cycle_republic.204.d: "At the top of the human hierarchy lies one man: the dictator. Though past dictators have been prone to overspending or selfish behavior, our current ruler seems to have nothing but purity in his heart as he gives freely to his subjects as they rejoice, but is a feared and efficient man if need be. The recent legislation passed seems to be working incredibly well; it is the kind of policy that would have been stopped by a convoluted governmental setup. Our simple and effective system is working great."
+ GE_reform_cycle_republic.204.a: "Put it in the treasury."
+ GE_reform_cycle_republic.204.b: "Deny these gifts; the family would spend it better."
+ GE_reform_cycle_republic.204.c: "Invest the money in the nation's infrastructure."
+ GE_reform_cycle_republic.204.e: "Convince the supporters to sabotage the opponents in the next election."
+ GE_reform_cycle_republic.204.f: "Ask for more generosity."
+ 
+ GE_reform_cycle_republic.205.t: "Election Tampering"
+ GE_reform_cycle_republic.205.d: "A recent slew of complaints over the recent shift in leadership have brought forth allegations of election tampering from our peasantry. It would seem as though election results were, by some unknown entity and to an unknown degree, tampered with to match the perpetrator's desired outcome. Though we cannot reverse the damage that has already been done, a few dedicated branches of the dissenting peasants are threatening revolt if we do not provide the culprit. Who shall we present as a scapegoat?"
+ GE_reform_cycle_republic.205.a: "The burghers have been acting shady lately."
+ GE_reform_cycle_republic.205.b: "A few nobles seem a bit too friendly with the fraudulent candidate."
+ GE_reform_cycle_republic.205.c: "Might as well pin it on a heretical branch of clergy."
+ GE_reform_cycle_republic.205.e: "It was the cultists I tell you!"
+ GE_reform_cycle_republic.205.f: "I must step down knowing I obtained my position through corrupt means."
+ 
+ GE_reform_cycle_republic.206.t: "Electoral Participation"
+ GE_reform_cycle_republic.206.d: "The aggressive debates that can be heard in our in our town halls might scare some foreigners that are more used to the polite politics of the nobles. Unlike those that believe blood is the main ingredient in political power, our nation is build on the belief that a wider electorate with fitting members provides a much more stable realm."
+ GE_reform_cycle_republic.206.a: "Attempt to restrict the subjects of debate to calm foreigners."
+ GE_reform_cycle_republic.206.b: "Encourage the political participation."
+ GE_reform_cycle_republic.206.c: "Invite them to settle down and join in."
+ 
+ GE_reform_cycle_republic.207.t: "Popular Powergrab"
+ GE_reform_cycle_republic.207.d: "A highly succesfull general has been amassing fame, fortune and a loyal army. He has increasingly been aligning himself with the popular factions in our capital, threatening to disturb the balance of powers. As he crossed the Rubicon and is marching on the capital, we need to decide how to deal with this NOW."
+ GE_reform_cycle_republic.207.a: "Face him in open battle."
+ GE_reform_cycle_republic.207.b: "Submit and grant him a ceremonial position."
+ GE_reform_cycle_republic.207.c: "Elect him as dictator."
+ GE_reform_cycle_republic.207.e: "Et Tu?"
+ GE_reform_cycle_republic.207.f: "Hes just going after the corrupt elite."
+ 
+ GE_reform_cycle_republic.208.t: "Balance of Power"
+ GE_reform_cycle_republic.208.d: "The balance between the patrician parties, the wealty aristocrats and the populace seems to be pretty stable at the moment. We could take advantage of this to accept a bribe from one of the parties without upsetting the balance of power too much. "
+ GE_reform_cycle_republic.208.a: "Lets enjoy the peace while it lasts."
+ GE_reform_cycle_republic.208.b: "Take a bribe from the Aristocrats."
+ GE_reform_cycle_republic.208.c: "take bribes from everyone."
  
  ##T4##
  

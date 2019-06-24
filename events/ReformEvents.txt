@@ -482,3 +482,607 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.11
+	title = reform_me_events.11.t
+	desc = reform_me_events.11.d
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	trigger = {
+		has_reform = elective_monarchy_reform
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = {
+					government = monarchy
+				}
+				save_event_target_as = noble_candidate
+			}
+		}
+	}
+	
+	option = {
+		name = "reform_me_events.11.a"	# Maintain Hereditary Rule
+		
+		add_legitimacy = 10
+		add_prestige = 5
+		custom_tooltip = born_to_rule_tooltip
+	}
+	
+	option = {
+		name = "reform_me_events.11.b"	# A Pretender
+		
+		define_ruler = {
+			culture = ROOT
+			dynasty = ROOT
+			age = 25
+			male = yes
+			adm = -1
+			dip = -1
+			mil = -1
+			claim = 50
+		}
+	}
+	
+	option = {
+		name = "reform_me_events.11.c"	# Challenger to the crown
+		
+		define_ruler = {
+			culture = event_target:noble_candidate
+			religion = event_target:noble_candidate
+			dynasty = event_target:noble_candidate
+			hide_skills = yes
+			age = 40
+			claim = 20
+		}
+	}
+}
+
+country_event = {
+	id = reform_me_events.12
+	title = reform_me_events.12.t
+	desc = reform_me_events.12.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_reform = feudalism_reform
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_nobles
+					NOT = { has_province_modifier = Feudal_Power }
+				}
+				AND = {
+					NOT = { has_estate = estate_nobles }
+					has_province_modifier = Feudal_Power
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_nobles
+				NOT = {	has_province_modifier = Feudal_Power }
+            }
+			add_province_modifier = {
+				name = "Feudal_Power"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_estate = estate_nobles }
+				has_province_modifier = Feudal_Power
+            }
+			remove_province_modifier = Feudal_Power
+		}
+	}
+	
+	option = {
+		name = reform_me_events.12.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.13
+	title = reform_me_events.13.t
+	desc = reform_me_events.13.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_reform = feudalism_reform }
+		any_owned_province = {
+			has_province_modifier = Feudal_Power
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Feudal_Power
+            }
+			remove_province_modifier = Feudal_Power
+		}
+	}
+	
+	option = {
+		name = reform_me_events.13.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.14
+	title = reform_me_events.14.t
+	desc = reform_me_events.14.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_blood_tax
+		OR = {
+			AND = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 1
+				}
+				NOT = { has_country_modifier = Blood_Tax_1 }
+			}
+			AND = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 2
+				}
+				NOT = { has_country_modifier = Blood_Tax_2 }
+			}
+			AND = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 3
+				}
+				NOT = { has_country_modifier = Blood_Tax_3 }
+			}
+			AND = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 4
+				}
+				NOT = { has_country_modifier = Blood_Tax_4 }
+			}
+			AND = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 5
+				}
+				NOT = { has_country_modifier = Blood_Tax_5 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 1
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							OR = {
+								is_march = yes
+								is_vassal = yes
+								is_lesser_in_union = yes
+							}
+						}
+						amount = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Blood_Tax_1
+				duration = -1
+			}
+			remove_country_modifier = Blood_Tax_2
+			remove_country_modifier = Blood_Tax_3
+			remove_country_modifier = Blood_Tax_4
+			remove_country_modifier = Blood_Tax_5
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 2
+				}
+				NOT = { 				
+					calc_true_if = {
+						all_subject_country = {
+							OR = {
+								is_march = yes
+								is_vassal = yes
+								is_lesser_in_union = yes
+							}
+						}
+						amount = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Blood_Tax_2
+				duration = -1
+			}
+			remove_country_modifier = Blood_Tax_1
+			remove_country_modifier = Blood_Tax_3
+			remove_country_modifier = Blood_Tax_4
+			remove_country_modifier = Blood_Tax_5
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 3
+				}
+				NOT = { 				
+					calc_true_if = {
+						all_subject_country = {
+							OR = {
+								is_march = yes
+								is_vassal = yes
+								is_lesser_in_union = yes
+							}
+						}
+						amount = 4
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Blood_Tax_3
+				duration = -1
+			}
+			remove_country_modifier = Blood_Tax_1
+			remove_country_modifier = Blood_Tax_2
+			remove_country_modifier = Blood_Tax_4
+			remove_country_modifier = Blood_Tax_5
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 4
+				}
+				NOT = { 				
+					calc_true_if = {
+						all_subject_country = {
+							OR = {
+								is_march = yes
+								is_vassal = yes
+								is_lesser_in_union = yes
+							}
+						}
+						amount = 5
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Blood_Tax_4
+				duration = -1
+			}
+			remove_country_modifier = Blood_Tax_1
+			remove_country_modifier = Blood_Tax_2
+			remove_country_modifier = Blood_Tax_3
+			remove_country_modifier = Blood_Tax_5
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+							is_lesser_in_union = yes
+						}
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = {
+				name = Blood_Tax_5
+				duration = -1
+			}
+			remove_country_modifier = Blood_Tax_1
+			remove_country_modifier = Blood_Tax_2
+			remove_country_modifier = Blood_Tax_3
+			remove_country_modifier = Blood_Tax_4
+		}
+	}
+	
+	option = {
+		name = reform_me_events.14.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.15
+	title = reform_me_events.15.t
+	desc = reform_me_events.15.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_blood_tax }
+		OR = {
+			has_country_modifier = Blood_Tax_1
+			has_country_modifier = Blood_Tax_2
+			has_country_modifier = Blood_Tax_3
+			has_country_modifier = Blood_Tax_4
+			has_country_modifier = Blood_Tax_5
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_modifier = Blood_Tax_1
+		remove_country_modifier = Blood_Tax_2
+		remove_country_modifier = Blood_Tax_3
+		remove_country_modifier = Blood_Tax_4
+		remove_country_modifier = Blood_Tax_5
+	}
+	
+	option = {
+		name = reform_me_events.15.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.16
+	title = reform_me_events.16.t
+	desc = reform_me_events.16.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_reform = habsburg_monarchy_reform
+		any_subject_country = {
+			OR = {
+				AND = {
+					religion = catholic
+					NOT = { has_country_modifier = Religious_Domination }
+				}
+				AND = {
+					NOT = { religion = catholic }
+					has_country_modifier = Religious_Domination
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_subject_country = {
+			limit = {
+				religion = catholic
+				NOT = { has_country_modifier = Religious_Domination }
+            }
+			add_country_modifier = {
+				name = "Religious_Domination"
+				duration = -1
+			}
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { religion = catholic }
+				has_country_modifier = Religious_Domination
+            }
+			remove_country_modifier = Religious_Domination
+		}
+	}
+	
+	option = {
+		name = reform_me_events.16.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.17
+	title = reform_me_events.17.t
+	desc = reform_me_events.17.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_reform = habsburg_monarchy_reform }
+		has_country_modifier = Religious_Domination
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_subject_country = {
+			limit = {
+				religion = catholic
+				NOT = { has_country_modifier = Religious_Domination }
+            }
+			add_country_modifier = {
+				name = "Religious_Domination"
+				duration = -1
+			}
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { religion = catholic }
+				has_country_modifier = Religious_Domination
+            }
+			remove_country_modifier = Religious_Domination
+		}
+	}
+	
+	option = {
+		name = reform_me_events.17.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.18
+	title = reform_me_events.18.t
+	desc = reform_me_events.18.d
+	picture = FARMING_eventPicture
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+
+	trigger = {
+		OR = {
+			has_reform = austrian_empire_reform
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7300
+			
+		modifier = {
+			factor = 2
+			has_reform = decentralize_reform
+		}
+		modifier = {
+			factor = 0.75
+			has_reform = centralize_reform
+		}
+		modifier = {
+			factor = 0.90
+			has_reform = letat_cest_moi_reform
+		}
+		modifier = {
+			factor = 0.75
+			full_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 1.25
+			full_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 0.75
+			had_active_policy = {
+				policy = cultural_unity
+				days = 365
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_territory = no
+					NOT = { culture = ROOT }
+				}
+				change_culture = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.18.a
+		
+	}
+}

@@ -165,8 +165,22 @@ support_borghese_reform = {
 	}
 }
 
+mixed_republic_reform = {
+	icon = peasants
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		reform_progress_growth = 0.05
+		stability_cost_modifier = -0.10
+	}
+	ai_chance = {
+		factor = 2
+	}
+}
+
 moedernegotie_reform = {
-	icon = dutch_flag
+	icon = hansa_trade
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -209,7 +223,7 @@ factional_elections_reform = {
 }
 
 vroedschappen_reform = {
-	icon = dutch_flag
+	icon = vroedschap
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -228,7 +242,7 @@ vroedschappen_reform = {
 }
 
 reforms_of_william_3_reform = {
-	icon = dutch_flag
+	icon = william_3
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -264,7 +278,7 @@ communal_territories_reform = {
 }
 
 united_indian_companies_reform = {
-	icon = dutch_flag
+	icon = voc_ship
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -311,7 +325,7 @@ andrea_doria_constitution_reform = {
 }
 
 ware_vrijheid_reform = {
-	icon = dutch_flag
+	icon = dutch_tulip_field
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -334,9 +348,6 @@ stadholder_reform = {
 	allow_normal_conversion = yes
 	potential = {}
 	trigger = { 
-		NOT = {
-			has_reform = dutch_republic
-		}
 	}
 	modifiers = {
 		republican_tradition = -0.5
@@ -351,7 +362,7 @@ stadholder_reform = {
 }
 
 confederation_of_states_reform = {
-	icon = dutch_flag
+	icon = confederation_of_states
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -370,7 +381,7 @@ confederation_of_states_reform = {
 }
 
 tolerant_principle_reform = {
-	icon = dutch_flag
+	icon = dutch_tolerance
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -390,7 +401,7 @@ tolerant_principle_reform = {
 }
 
 regents_reform = {
-	icon = dutch_flag
+	icon = regents
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -411,7 +422,7 @@ regents_reform = {
 }
 
 raadspensionaris_reform = {
-	icon = dutch_flag
+	icon = raadspensionaris
 	allow_normal_conversion = yes
 	potential = {
 		OR = {

@@ -131,6 +131,9 @@ ajuraan_theocracy_reform = {
 		global_trade_power = 0.10
 		trade_range_modifier = 0.25
 	}
+	custom_attributes = {
+		enables_hereditary_theocracy = yes
+	}
 	ai_chance = {
 		factor = 100
 	}

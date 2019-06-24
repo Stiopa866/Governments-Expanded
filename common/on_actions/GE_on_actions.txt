@@ -137,15 +137,48 @@ on_five_year_pulse_4 = {
 		##T2##
 		
 		#Authoritarianism#
-		100 = GE_reform_cycle_republic.201
-		100 = GE_reform_cycle_republic.202
-		
-		
+		#100 = GE_reform_cycle_republic.201
+		#100 = GE_reform_cycle_republic.202
+		#Political Dynasties#
+		#100 = GE_reform_cycle_republic.203
+		#100 = GE_reform_cycle_republic.204
+		#Republicanism#
+		#100 = GE_reform_cycle_republic.205
+		#100 = GE_reform_cycle_republic.206
+		#Mixed Republic
+		#50 = GE_reform_cycle_republic.207 #Julius Caesar Event
+		#150 = GE_reform_cycle_republic.208
 		##T4##
 		
 		#Administrative Divisions#
-		100 = GE_reform_cycle_republic.401
-		100 = GE_reform_cycle_republic.402
+		#100 = GE_reform_cycle_republic.401
+		#100 = GE_reform_cycle_republic.402
+	}
+}
+
+# country
+on_monarch_death = {
+	if = {
+		limit = {
+			tag = ANS
+			BRA = {
+				has_country_flag = albrecht_achilles_flag
+			}
+		}
+		BRA = {
+			clr_country_flag = albrecht_achilles_flag #Just to be sure
+			kill_heir = yes #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
+		}
+	}
+	if = {
+		limit = { has_country_modifier = sought_after_bachelor }
+		remove_country_modifier = sought_after_bachelor
+	}
+	events = {
+		reform_me_events.11
+		flavor_tus.16 #Savanorola Leaves This World
+		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
+		flavor_nav.4 # Navarra succession event
 	}
 }
 
