@@ -137,22 +137,22 @@ on_five_year_pulse_4 = {
 		##T2##
 		
 		#Authoritarianism#
-		100 = GE_reform_cycle_republic.201
-		100 = GE_reform_cycle_republic.202
+		#100 = GE_reform_cycle_republic.201
+		#100 = GE_reform_cycle_republic.202
 		#Political Dynasties#
-		100 = GE_reform_cycle_republic.203
-		100 = GE_reform_cycle_republic.204
+		#100 = GE_reform_cycle_republic.203
+		#100 = GE_reform_cycle_republic.204
 		#Republicanism#
-		100 = GE_reform_cycle_republic.205
-		100 = GE_reform_cycle_republic.206
+		#100 = GE_reform_cycle_republic.205
+		#100 = GE_reform_cycle_republic.206
 		#Mixed Republic
-		50 = GE_reform_cycle_republic.207 #Julius Caesar Event
-		150 = GE_reform_cycle_republic.208
+		#50 = GE_reform_cycle_republic.207 #Julius Caesar Event
+		#150 = GE_reform_cycle_republic.208
 		##T4##
 		
 		#Administrative Divisions#
-		100 = GE_reform_cycle_republic.401
-		100 = GE_reform_cycle_republic.402
+		#100 = GE_reform_cycle_republic.401
+		#100 = GE_reform_cycle_republic.402
 	}
 }
 

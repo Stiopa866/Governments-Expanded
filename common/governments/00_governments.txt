@@ -30,6 +30,10 @@ monarchy = {
 				#ME
 				crusader_kingdom
 				khaganate
+				portuguese_reform
+				athenian_monarchy
+				german_kaiserreich
+				caliphate_reform_sunni
 				#GE
 				french_feudalism
 				french_reformed_feudalism
@@ -102,6 +106,8 @@ monarchy = {
 				#ME
 				imperial_reform
 				colonial_reform
+				tur_reform_beylerbeys
+				tur_reform_eyalets
 				#GE
 				regional_forts_reform
 				theocratic_bureacrats_reform

@@ -71,7 +71,7 @@ french_reformed_feudalism = {
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
-		unjustified_demands = -0.1
+		unjustified_demands = -0.15
 		cavalry_cost = -0.05
 	}
 }
@@ -279,9 +279,6 @@ consulate_of_the_sea = {
 		global_sailors_modifier = 0.15
 		naval_forcelimit_modifier = 0.20
 	}
-	can_use_trade_post = yes
-	can_form_trade_league = yes
-	trade_city_reform = trading_city
 }
 
 crown_of_saint_wenceslaus = {
@@ -294,7 +291,6 @@ crown_of_saint_wenceslaus = {
 	}
 	modifiers = {
 		legitimacy = 0.5
-		max_absolutism = -20
 	}
 	conditional = {
 		allow = { has_dlc = "Res Publica" }
@@ -327,7 +323,6 @@ crown_of_saint_wenceslaus_2 = {
 	}
 	modifiers = {
 		legitimacy = 0.5
-		max_absolutism = -20
 	}
 	factions = {
 		GE_ultraquists
@@ -432,6 +427,7 @@ habsburg_monarchy_reform = {
 			senior_union_with = HUN
 			owns = 153
 		}
+		have_had_reform = habsburg_monarchy_reform
 	}
 	modifiers = {
 		tolerance_own = 1
@@ -460,6 +456,7 @@ austrian_empire_reform = {
 		owns = 266
 		owns = 153
 		total_development = 500
+		have_had_reform = austrian_empire_reform
 	}
 	modifiers = {
 		harsh_treatment_cost = -0.15
@@ -668,7 +665,7 @@ trade_princes_reform = {
 		}
 	}
 	modifiers = {
-		placed_merchant_power = 20
+		placed_merchant_power = 8
 		merchants = 1
 	}
 	can_use_trade_post = yes

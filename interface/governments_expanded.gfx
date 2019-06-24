@@ -387,4 +387,40 @@ spriteTypes = {
 		name = "government_reform_austrian_army"
 		texturefile = "gfx//interface//government_reform_icons//austrian_army.dds"
 	}
+	spriteType = {
+		name = "government_reform_regents"
+		texturefile = "gfx//interface//government_reform_icons//regents.dds"
+	}
+	spriteType = {
+		name = "government_reform_dutch_tolerance"
+		texturefile = "gfx//interface//government_reform_icons//dutch_tolerance.dds"
+	}
+	spriteType = {
+		name = "government_reform_confederation_of_states"
+		texturefile = "gfx//interface//government_reform_icons//confederation_of_states.dds"
+	}
+	spriteType = {
+		name = "government_reform_dutch_tulip_field"
+		texturefile = "gfx//interface//government_reform_icons//dutch_tulip_field.dds"
+	}
+	spriteType = {
+		name = "government_reform_raadspensionaris"
+		texturefile = "gfx//interface//government_reform_icons//raadspensionaris.dds"
+	}
+	spriteType = {
+		name = "government_reform_voc_ship"
+		texturefile = "gfx//interface//government_reform_icons//voc_ship.dds"
+	}
+	spriteType = {
+		name = "government_reform_william_3"
+		texturefile = "gfx//interface//government_reform_icons//william_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_vroedschap"
+		texturefile = "gfx//interface//government_reform_icons//vroedschap.dds"
+	}
+	spriteType = {
+		name = "government_reform_hansa_trade"
+		texturefile = "gfx//interface//government_reform_icons//hansa_trade.dds"
+	}
 }
