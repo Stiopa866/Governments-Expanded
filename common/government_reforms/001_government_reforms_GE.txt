@@ -397,8 +397,13 @@ network_of_faithful_allies_reform = {
 yeshiva_scholarship_reform = {
 	icon = constitution
 	allow_normal_conversion = yes
+	potential = {
+		religion = jewish
+	}
+	trigger = {
+		religion = jewish
+	}
 	modifiers = {
-		global_tax_modifier = -0.10
 		technology_cost = -0.05
 		tolerance_own = 1
 	}

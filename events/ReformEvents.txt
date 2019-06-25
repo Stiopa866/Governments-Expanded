@@ -217,7 +217,6 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = reform_me_events.4
 	title = reform_me_events.4.t
@@ -311,7 +310,7 @@ country_event = {
 	
 	immediate = {
 		define_heir = {
-			name = "lastname"
+			dynasty = ROOT
 			age = 0
 			claim = 100
 			male = yes
