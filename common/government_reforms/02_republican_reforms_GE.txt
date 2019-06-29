@@ -171,7 +171,7 @@ mixed_republic_reform = {
 	potential = {
 	}
 	modifiers = {
-		reform_progress_growth = 0.05
+		reform_progress_growth = 0.10
 		stability_cost_modifier = -0.10
 	}
 	ai_chance = {
