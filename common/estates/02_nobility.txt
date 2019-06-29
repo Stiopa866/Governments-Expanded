@@ -659,7 +659,15 @@ estate_nobles =
 		}
 		
 		effect = {
-			create_general = { tradition = 40 }
+			if = {
+				limit = {
+					has_government_attribute = enables_szlachta_general
+				}
+				create_general = { tradition = 60 }
+			}
+			else = {
+				create_general = { tradition = 40 }
+			}
 			add_estate_influence_modifier = {
 				estate = estate_nobles
 				desc = EST_VAL_GRANTED_GENERALSHIP

@@ -94,6 +94,8 @@ monarchy = {
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
 				albertine_line_reform
+				magnate_law_reform
+				imperial_knights_reform
 			}
 		}
 		bureaucracy = {
@@ -124,6 +126,7 @@ monarchy = {
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
+				magnate_govenors_reform
 			}
 		}
 		military_organisation = {
@@ -173,6 +176,8 @@ monarchy = {
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
 				declario_ferdinandei_reform
+				imperial_circles_administration_reform
+				szlachta_recruits_reform
 			}
 		}
 		deliberative_assembly = {
@@ -201,6 +206,7 @@ monarchy = {
 				nueva_planta_decrees_reform
 				toleration_of_all_faiths_edict_reform
 				abolish_the_haandfaestning_reform
+				revoke_reichsfreiheit_reform
 			}
 		}
 		separation_of_power = {

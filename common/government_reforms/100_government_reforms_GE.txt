@@ -429,6 +429,7 @@ habsburg_monarchy_reform = {
 		}
 		have_had_reform = habsburg_monarchy_reform
 	}
+	fixed_rank = 3
 	modifiers = {
 		tolerance_own = 1
 		mil_advisor_cost = -0.15
@@ -482,7 +483,7 @@ papal_embassy_reform = {
 	modifiers = {
 		papal_influence = 2
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -500,7 +501,7 @@ metropolian_bishop_reform = {
 	effect = {
 		add_patriarch_authority = 0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -520,7 +521,7 @@ state_church_reform = {
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -537,7 +538,7 @@ diplomatic_positions_reform = {
 	custom_attributes = {
 		enables_noble_diplomats = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -555,7 +556,7 @@ lithuania_law_reform = {
 		global_unrest = -1
 		yearly_corruption = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -574,8 +575,8 @@ guild_dominance_reform = {
 		global_prov_trade_power_modifier = 0.2
 		navy_tradition = 0.5
 	}
-	ai_chance = {
-		factor = 100
+	ai = {
+		factor = 10
 	}
 }
 
@@ -592,7 +593,7 @@ growth_signoria_reform = {
 		army_tradition = 0.25
 	}
 	ai_chance = {
-		factor = 5
+		factor = 100
 	}
 }
 
@@ -609,7 +610,7 @@ akritai_privileges_reform = {
 		defensiveness = 0.15
 		fort_maintenance_modifier = -0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -629,7 +630,7 @@ portuguese_cortes_reform = {
 	custom_attributes = {
 		enables_cortes = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -649,8 +650,8 @@ respect_union_reform = {
 		diplomatic_upkeep = 1
 		num_accepted_cultures = 1
 	}
-	ai_chance = {
-		factor = 100
+	ai = {
+		factor = 10
 	}
 }
 
@@ -669,7 +670,7 @@ trade_princes_reform = {
 		merchants = 1
 	}
 	can_use_trade_post = yes
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -694,8 +695,8 @@ dhimmi_nobles_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 10
 	}
 	#20% dhimmi influence
 	#10% dhimmi loyalty
@@ -711,8 +712,8 @@ council_of_sheikhs_reform = {
 		legitimacy = 0.5
 		manpower_recovery_speed = 0.15
 	}
-	ai_chance = {
-		factor = 100
+	ai = {
+		factor = 10
 	}
 	#5% clergy influence
 	#5% noble influence
@@ -732,7 +733,7 @@ muscovite_manorialism_reform = {
 		development_cost = -0.05
 		infantry_cost = -0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -751,7 +752,7 @@ order_of_the_swan_reform = {
 		papal_influence = 1
 		prestige = 0.5
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#10% noble loyalty
@@ -769,7 +770,7 @@ blood_tax_reform = {
 	custom_attributes = {
 		enables_blood_tax = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -787,7 +788,7 @@ house_of_knights_reform = {
 		prestige = 0.5
 		leader_cost = -0.20
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#10% noble loyalty
@@ -806,7 +807,7 @@ constitutio_valdemariana_reform = {
 		diplomatic_upkeep = 1
 		global_manpower_modifier = 0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -826,7 +827,7 @@ riksradet_norway_reform = {
 		fort_maintenance_modifier = -0.10
 		legitimacy = 0.5
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -846,8 +847,47 @@ albertine_line_reform = {
 		legitimacy = 0.5
 		global_manpower_modifier = 0.10
 	}
-	ai_chance = {
-		factor = 1000
+	ai = {
+		factor = 100
+	}
+}
+
+magnate_law_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	potential = {
+		technology_group = eastern
+	}
+	trigger = {
+	}
+	modifiers = {
+		global_tax_modifier = 0.15
+	}
+	custom_attributes = { 
+		enables_magnate_law = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+imperial_knights_reform = {
+	icon = soldiers_5
+	allow_normal_conversion = yes
+	potential = {
+		is_part_of_hre = yes
+		NOT = { total_development = 150 }
+	}
+	trigger = {
+		NOT = { total_development = 75 }
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.10
+		min_autonomy = 15
+		leader_land_shock = 1
+	}
+	ai = {
+		factor = 10
 	}
 }
 
@@ -856,12 +896,30 @@ albertine_line_reform = {
 regional_forts_reform = {
 	icon = fort
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { technology_group = eastern }
+	}
 	modifiers = {
 		garrison_size = 0.15
 		state_maintenance_modifier = -0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
+	}
+}
+	
+magnate_govenors_reform = {
+	icon = soldiers_2
+	allow_normal_conversion = yes
+	potential = {
+		technology_group = eastern
+	}
+	modifiers = {
+		max_states = 2
+		state_maintenance_modifier = -0.25
+	}
+	ai = {
+		factor = 10
 	}
 }
 	
@@ -878,7 +936,7 @@ theocratic_bureacrats_reform = {
 		tolerance_own = 1
 		development_cost = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -896,7 +954,7 @@ ulema_guidance_reform = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 	#10 Clergy Influence and Loyalty
@@ -912,7 +970,7 @@ diocletian_reforms_reform = {
 		yearly_corruption = -0.05
 		num_accepted_cultures = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -929,8 +987,8 @@ kyoho_reforms_reform = {
 		global_tax_modifier = 0.10
 		trade_efficiency = 0.05
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 10
 	}
 }
 
@@ -948,7 +1006,7 @@ casa_de_contraction_reform = {
 		global_ship_trade_power = 0.2
 		global_colonial_growth = 10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -963,7 +1021,7 @@ casa_de_india_reform = {
 		global_prov_trade_power_modifier = 0.15
 		global_ship_cost = -0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }	
@@ -982,7 +1040,7 @@ oprichnina_reform = {
 		unjustified_demands = -0.10
 		global_autonomy = -0.025
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1002,7 +1060,7 @@ constitutio_joachimica_reform = {
 		global_autonomy = -0.025
 		global_unrest = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-10 influence nobles
@@ -1022,7 +1080,7 @@ millet_reform = {
 		global_tax_modifier = 0.10
 		global_unrest = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1038,7 +1096,7 @@ ancien_regime_reform = {
 		state_maintenance_modifier = -0.10
 		max_states = 3
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1059,7 +1117,7 @@ the_red_book_reform = {
 		manpower_recovery_speed = 0.10
 		tolerance_heretic = 0.5
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1077,7 +1135,7 @@ commoner_officials_reform = {
 		ship_power_propagation = 0.25
 		dip_advisor_cost = -0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-10% Noble Influence
@@ -1099,8 +1157,8 @@ imperial_inquisition_reform = {
 		papal_influence = 1
 		prestige_per_development_from_conversion = 0.1
 	}
-	ai_chance = {
-		factor = 1000
+	ai = {
+		factor = 100
 	}
 }
 
@@ -1109,6 +1167,9 @@ imperial_inquisition_reform = {
 integrate_moneyloaners_reform = {
 	icon = banker
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { culture_group = latin }
+	}
 	modifiers = {
 		interest = -1
 		inflation_reduction = 0.05
@@ -1116,7 +1177,7 @@ integrate_moneyloaners_reform = {
 	custom_attributes = { 
 		enables_moneyloaners = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1128,14 +1189,57 @@ advanced_bookkeeping_reform = {
 		culture_group = latin
 	}
 	trigger = {
-		full_idea_group = economic_ideas
+		culture_group = latin
 	}
 	modifiers = {
 		interest = -1.0
 		yearly_corruption = -0.05
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 10
+	}
+}
+
+szlachta_recruits_reform = {
+	icon = soldiers_3
+	allow_normal_conversion = yes
+	potential = {
+		technology_group = eastern
+	}
+	trigger = {
+	}
+	modifiers = {
+		army_tradition = 0.25
+	}
+	custom_attributes = { 
+		enables_szlachta_general = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+imperial_circles_administration_reform = {
+	icon = "soldiers_4"
+	allow_normal_conversion = yes
+	potential = {
+		is_part_of_hre = yes
+		NOT = { culture_group = latin }
+		NOT = { primary_culture = swiss }
+		NOT = { tag = DTT }
+		NOT = { tag = BOH }
+		NOT = { tag = SIL }
+	}
+	trigger = {
+		total_development = 75
+	}
+	modifiers = {
+		global_unrest = -1
+		development_cost = -0.05
+		global_tax_modifier = 0.10
+	}
+	ai = {
+		factor = 10
 	}
 }
 	
@@ -1161,8 +1265,8 @@ colonial_govenors_reform = {
 		global_tariffs = 0.25
 		liberty_desire = -5
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1176,7 +1280,7 @@ sulu_administration_reform = {
         advisor_cost = -0.20
         advisor_pool = 1
     }
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1195,7 +1299,7 @@ academy_of_science_reform = {
 		technology_cost = -0.05
 		prestige = 0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1214,7 +1318,7 @@ koprulu_dynasty_reform = {
 		advisor_cost = -0.05
 		leader_cost = -0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1234,7 +1338,7 @@ fredrickan_reforms_reform = {
 		build_cost = -0.10
 		interest = -0.5
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1253,7 +1357,7 @@ conseil_du_roi_reform = {
 		legitimacy = 0.25
 		advisor_cost = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1273,7 +1377,7 @@ table_of_ranks_reform = {
 		naval_tradition_from_battle = 0.5
 		max_states = 3
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1291,7 +1395,7 @@ the_judicature_ordinance_reform = {
 		reform_progress_growth = 0.10
 		global_unrest = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1312,7 +1416,7 @@ christian_four_merchantile_reform = {
 	effect = {
 		add_mercantilism = 5
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1332,8 +1436,8 @@ declario_ferdinandei_reform = {
 		religious_unity = 0.20
 		imperial_authority = 0.025
 	}
-	ai_chance = {
-		factor = 1000
+	ai = {
+		factor = 100
 	}
 }
 
@@ -1354,7 +1458,7 @@ parliamentary_order_reform = {
 	custom_attributes = {
 		enables_peasant_estate = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#No events, add later?
@@ -1372,7 +1476,7 @@ king_and_duke_reform = {
 		stability_cost_modifier = -0.15
 		yearly_absolutism = 0.20
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1391,8 +1495,8 @@ diverse_estates_reform = {
 	modifiers = {
 		diplomats = 1
 	}
-	ai_chance = {
-		factor = 1000
+	ai = {
+		factor = 100
 	}
 	#+10% All Estate loyalty
 }
@@ -1407,7 +1511,7 @@ freedom_of_religion_reform = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1421,8 +1525,26 @@ constitutional_equality_reform = {
 		global_unrest = -2
 		legitimacy = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
+	}
+}
+
+revoke_reichsfreiheit_reform = {
+	icon = noble_diplomat
+	allow_normal_conversion = yes
+	potential = {
+		is_part_of_hre = yes
+	}
+	trigger = {
+		total_development = 150
+	}
+	modifiers = {
+		diplomatic_annexation_cost = -0.10
+		ae_impact = -0.10
+	}
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1437,8 +1559,8 @@ nueva_planta_decrees_reform = {
 		global_unrest = -1
 		max_states = 5
 	}
-	ai_chance = {
-		factor = 100
+	ai = {
+		factor = 0 #lets not kill spain with revolts
 	}
 }
 
@@ -1456,7 +1578,7 @@ toleration_of_all_faiths_edict_reform = {
 		build_cost = -0.10
 		state_maintenance_modifier = -0.20
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1475,7 +1597,7 @@ abolish_the_haandfaestning_reform = {
 		heir_chance = 0.25
 		global_unrest = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-15% Noble Influence
@@ -1494,7 +1616,7 @@ abolish_clergy_privileges_reform = {
 		global_tax_modifier = 0.10
 		global_unrest = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-20% clergy influence
@@ -1513,7 +1635,7 @@ peters_council_reform = {
 		diplomatic_reputation = 1
 		global_unrest = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1532,7 +1654,7 @@ nizam_i_jedid_reform = {
 		max_absolutism = 10
 		free_adm_policy = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1549,8 +1671,8 @@ feudal_levies_reform = {
 	custom_attributes = {
 		enables_grand_captain = yes
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 1
 	}
 }
 
@@ -1562,8 +1684,8 @@ mercenary_corps_reform = {
 		loot_amount = 0.50
 		merc_maintenance_modifier = -0.25
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 1
 	}
 }
 
@@ -1576,14 +1698,18 @@ professional_army_reform = {
 		possible_mercenaries = -1.25
 		land_maintenance_modifier = 0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 		modifier = {
-			factor = 3
+			factor = 0
+			NOT = { has_idea_group = quantity_ideas }
+		}
+		modifier = {
+			factor = 10
 			has_idea_group = quantity_ideas
 		}
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				tag = PRU
 				tag = BRA
@@ -1602,8 +1728,8 @@ italian_mercenaries_reform = {
 		mercenary_discipline = 0.05
 		war_exhaustion = -0.01
 	}
-	ai_chance = {
-		factor = 3
+	ai = {
+		factor = 10
 		modifier = {
 			factor = 2
 			has_idea_group = plutocratic_ideas
@@ -1621,7 +1747,7 @@ turkish_iqta_reform = {
 		cavalry_cost = -0.15
 		land_maintenance_modifier = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 10
 	}
 }
@@ -1644,8 +1770,8 @@ imperial_circles_reform = {
 		land_forcelimit_modifier = 0.15
 		land_maintenance_modifier = -0.05
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1662,8 +1788,8 @@ tatar_mercenaries_reform = {
 		cavalry_power = 0.10
 		mercenary_discipline = 0.025
 	}
-	ai_chance = {
-		factor = 3
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1681,8 +1807,8 @@ south_east_asian_elephants_reform = {
 		cavalry_power = 0.05
 		land_morale = 0.05
 	}
-	ai_chance = {
-		factor = 3
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1696,7 +1822,7 @@ les_vieux_corps_reform = {
 		infantry_power = 0.10
 		global_regiment_recruit_speed = -0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1711,14 +1837,14 @@ portugese_marines_reform = {
 		}
 	}
 	trigger = {
-		has_reform = kingdom_of_portugal_and_azures
+		have_had_reform = kingdom_of_portugal_and_azures
 	}
 	modifiers = {
 		discipline = 0.025
 		shock_damage_received = -0.05
 		fire_damage_received = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1736,7 +1862,7 @@ abolish_manrent_reform = {
 		land_morale = 0.10
 		global_manpower_modifier = 0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1756,7 +1882,7 @@ foreign_formation_regiments_reform = {
 		drill_gain_modifier = 0.25
 		mil_tech_cost_modifier = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1777,7 +1903,7 @@ general_war_commissariat_reform = {
 		global_regiment_cost = -0.05
 		global_autonomy = -0.025
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1795,7 +1921,7 @@ gustavan_artillery_reform = {
 		movement_speed = 0.05
 		artillery_power = 0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1813,7 +1939,7 @@ the_black_guard_reform = {
 		mercenary_discipline = 0.05
 		possible_mercenaries = 0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -1834,7 +1960,7 @@ reorganize_the_imperial_army = {
 		global_supply_limit_modifier = 0.25
 		loot_amount = 0.25
 	}
-	ai_chance = {
-		factor = 1000
+	ai = {
+		factor = 100
 	}
 }

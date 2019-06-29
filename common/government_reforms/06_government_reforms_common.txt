@@ -16,7 +16,7 @@ parliamentary_reform = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -37,8 +37,8 @@ permanent_marathas_council_reform = {
 	custom_attributes = {
 		maratha_general_interaction = yes
 	}
-	ai_chance = {
-		factor = 1
+	ai = {
+		factor = 10
 	}
 }
 
@@ -55,8 +55,8 @@ governmental_purbias_register_reform = {
 	custom_attributes = {
 		better_purbias_interaction = yes
 	}
-	ai_chance = {
-		factor = 1
+	ai = {
+		factor = 10
 	}
 }
 
@@ -81,7 +81,7 @@ council_of_the_indies_reform = {
 	modifiers = {
 		expel_minorities_cost = -0.3
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }

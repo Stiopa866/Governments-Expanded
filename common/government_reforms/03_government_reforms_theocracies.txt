@@ -68,7 +68,7 @@ internal_mission_reform = {
 	modifiers = {
 		tolerance_own = 2
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -79,7 +79,7 @@ external_mission_reform = {
 	modifiers = {
 		warscore_cost_vs_other_religion = -0.2
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -92,7 +92,7 @@ safeguard_holy_sites_reform = {
 	modifiers = {
 		prestige = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -103,7 +103,7 @@ combat_heresy_reform = {
 	modifiers = {
 		land_morale = 0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -117,7 +117,7 @@ subservient_administrators_reform = {
 	modifiers = {
 		free_policy = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -128,7 +128,7 @@ religious_administrators_reform = {
 	modifiers = {
 		stability_cost_modifier = -0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -141,8 +141,8 @@ maintain_religious_head_reform = {
 	modifiers = {
 		yearly_absolutism = 0.1
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 1
 	}
 }
 
@@ -157,8 +157,8 @@ hereditary_religious_leadership_reform = {
 		change_government = monarchy
 		add_government_reform = feudal_theocracy
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 1
 	}
 }
 
@@ -173,8 +173,8 @@ crown_leader_reform = {
 		lose_reforms = 2
 		change_government = monarchy
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 1
 	}
 }
 
@@ -206,7 +206,7 @@ battle_pope_reform = {
 	modifiers = {
 		leader_land_fire = 1
 	}
-	ai_chance = {
-		factor = 10
+	ai = {
+		factor = 100
 	}
 }
