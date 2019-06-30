@@ -341,8 +341,14 @@
  imperial_circles_administration_reform_desc: "Let us take up the duty to administer our Imperial Circle, Enforcing the imperial laws, and making sure customs and coinage is properly supervised."
  revoke_reichsfreiheit_reform: "Revoke Reichsfreiheit"
  revoke_reichsfreiheit_reform_desc: "For too long we have granted our lands to dukes, barons and knights in exchange for personal loyalties, only for their heirs to forget about the servitude they owe us. Let is reverse this practice and start re-integrating the lands we de jure own, but have de facto lost control over."
- 
- 
+ old_swiss_confederation_reform: "Old Swiss Confederacy"
+ old_swiss_confederation_reform_desc: "The Alte Eidgenossenschaft, or Old Swiss Confederacy, was a loose confederation of independent small states (cantons) within the Holy Roman Empire. It is the precursor of the modern state of Switzerland. It formed during the 14th century, from a nucleus in what is now Central Switzerland, expanding to include the cities of Zürich and Berne by the middle of the century. This formed a rare union of rural and urban communes, all of which enjoyed imperial immediacy in the Holy Roman Empire."
+ independence_reform: "Independence"
+ independence_reform_desc: "The key Virtue of the Swiss confederacy is its firm belief in independence and self governance, as such we will endure and recover as many times as is needed."
+ reform_the_condotierri_reform: "Reform the Condotierri"
+ reform_the_condotierri_reform_desc: "Since the rise of the landsknechts we have lost our edge in military power, let us restore the tradition of renting out our armies and improve the military experience of our forces."
+ confederation_of_cantons_reform: "Confederation of Cantons"
+ confederation_of_cantons_reform_desc: "The local control organized by individual cantons means that problems are fixed locally, lands can be developed locally, and each region is responsible for its own fortifications, leading them to make the best use of natural resources and advantages."
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Replaces the Noble Estate Interaction Raise Additional Levies Loyalty Cost with an influence cost and grants a General with §G20§! tradition."
@@ -366,6 +372,7 @@
  mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
  mechanic_enables_magnate_law_yes: "Magnate Law: Noble Estate provinces have §G-1§! unrest."
  mechanic_enables_szlachta_general_yes: "Szlachta Recruits: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
+ mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -390,7 +397,7 @@
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
- born_to_rule_tooltip:1 "[Root.Ruler.GetName] will be elected, as is his birthright."
+ born_to_rule_tooltip:1 "[Ruler.Name] will be elected, as is his birthright."
  decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
  
  elections.EVTNAME7001:1 "American Elections"

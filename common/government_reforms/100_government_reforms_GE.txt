@@ -853,7 +853,7 @@ albertine_line_reform = {
 }
 
 magnate_law_reform = {
-	icon = soldiers
+	icon = magnates
 	allow_normal_conversion = yes
 	potential = {
 		technology_group = eastern
@@ -872,14 +872,14 @@ magnate_law_reform = {
 }
 
 imperial_knights_reform = {
-	icon = soldiers_5
+	icon = reichsritter
 	allow_normal_conversion = yes
 	potential = {
 		is_part_of_hre = yes
-		NOT = { total_development = 150 }
+		NOT = { total_development = 100 }
 	}
 	trigger = {
-		NOT = { total_development = 75 }
+		NOT = { total_development = 50 }
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.10
@@ -909,7 +909,7 @@ regional_forts_reform = {
 }
 	
 magnate_govenors_reform = {
-	icon = soldiers_2
+	icon = magnates_2
 	allow_normal_conversion = yes
 	potential = {
 		technology_group = eastern
@@ -1201,7 +1201,7 @@ advanced_bookkeeping_reform = {
 }
 
 szlachta_recruits_reform = {
-	icon = soldiers_3
+	icon = szlachta
 	allow_normal_conversion = yes
 	potential = {
 		technology_group = eastern
@@ -1220,7 +1220,7 @@ szlachta_recruits_reform = {
 }
 
 imperial_circles_administration_reform = {
-	icon = "soldiers_4"
+	icon = "administer_imperial_circle"
 	allow_normal_conversion = yes
 	potential = {
 		is_part_of_hre = yes
@@ -1531,7 +1531,7 @@ constitutional_equality_reform = {
 }
 
 revoke_reichsfreiheit_reform = {
-	icon = noble_diplomat
+	icon = politician
 	allow_normal_conversion = yes
 	potential = {
 		is_part_of_hre = yes
@@ -1919,7 +1919,7 @@ gustavan_artillery_reform = {
 	}
 	modifiers = {
 		movement_speed = 0.05
-		artillery_power = 0.10
+		artillery_power = 0.05
 	}
 	ai = {
 		factor = 100

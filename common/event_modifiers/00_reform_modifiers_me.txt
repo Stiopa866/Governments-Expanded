@@ -23,6 +23,9 @@ Feudal_Power = {
 Magnate_Law = {
 	global_unrest = -1
 }
+Mountain_Towns = {
+	local_development_cost = -0.25
+}
 Religious_Domination = {
 	tolerance_own = 1
 }

@@ -423,4 +423,40 @@ spriteTypes = {
 		name = "government_reform_hansa_trade"
 		texturefile = "gfx//interface//government_reform_icons//hansa_trade.dds"
 	}
+	spriteType = {
+		name = "government_reform_administer_imperial_circle"
+		texturefile = "gfx//interface//government_reform_icons//administer_imperial_circle.dds"
+	}
+	spriteType = {
+		name = "government_reform_swiss_army"
+		texturefile = "gfx//interface//government_reform_icons//swiss_army.dds"
+	}
+	spriteType = {
+		name = "government_reform_swiss_cantons"
+		texturefile = "gfx//interface//government_reform_icons//swiss_cantons.dds"
+	}
+	spriteType = {
+		name = "government_reform_swiss_mercenaries"
+		texturefile = "gfx//interface//government_reform_icons//swiss_mercenaries.dds"
+	}
+	spriteType = {
+		name = "government_reform_old_confederacy"
+		texturefile = "gfx//interface//government_reform_icons//old_confederacy.dds"
+	}
+	spriteType = {
+		name = "government_reform_reichsritter"
+		texturefile = "gfx//interface//government_reform_icons//reichsritter.dds"
+	}
+	spriteType = {
+		name = "government_reform_szlachta"
+		texturefile = "gfx//interface//government_reform_icons//szlachta.dds"
+	}
+	spriteType = {
+		name = "government_reform_magnates_2"
+		texturefile = "gfx//interface//government_reform_icons//magnates_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_magnates"
+		texturefile = "gfx//interface//government_reform_icons//magnates.dds"
+	}
 }
