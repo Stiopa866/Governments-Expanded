@@ -365,7 +365,7 @@
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
  mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
  mechanic_enables_magnate_law_yes: "Magnate Law: Noble Estate provinces have §G-1§! unrest."
- mechanic_enables_szlachta_general_yes: "Szlachta Recruits: Replaces the §G40§ tradition general from the noble estate with a §G60§ tradition general."
+ mechanic_enables_szlachta_general_yes: "Szlachta Recruits: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -418,7 +418,8 @@
  GE_catholics_FACTION_DESC: "The Catholics support the Catholic doctrine set up by the pope and consider him the highest religious figure on earth, and his words as gospel."
  
  
- 
+ reforms_me_feudal_reform_title:1 "Reform Monarchy"
+ reforms_me_feudal_reform_desc:1 "Our monarchy is dominated by nobles and aristocrats that posess too much influence. We could reform our monarchy to fulfill ours needs."
  reforms_me_french_absolutism_title:1 "Institute Royaume de Soleil"
  reforms_me_french_absolutism_desc:1 "Our right to rule is not derived from the people, nor is it enforced by our armies, It is by God's will that we rule, as he has chosen us as shepherds for our people."
  reforms_GE_lithuanian_kingdom_title:1 "Declare the Kingdom of Lithuania"
@@ -429,7 +430,6 @@
  reforms_me_habsburg_monarchy_desc:1 "The union of crowns on the Habsburg head has led to a governmental infrastructure much more diverse then just the rule of the archduchy."
  reforms_me_austrian_empire_title:1 "Declare the Austrian Empire"
  reforms_me_austrian_empire_desc:1 "The Austrian Empire was part of the Habsburg attempt to germanize and centralize the vast lands of the Austrian Habsburgs into a proper nation state, with a unified culture, language and administrative system."
- 
  reforms_me_french_reformed_feudalism_title:1 "Reform the French Feudal System"
  reforms_me_french_reformed_feudalism_desc:1 "By reducing the power of the french nobility and stabilizing our realm, we can finally reduce their privileges and power, no longer will we be bound by their whims!"
  

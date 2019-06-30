@@ -347,6 +347,7 @@ country_event = {
 			hide_skills = yes
 			dip = 1
 		}
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
@@ -382,6 +383,7 @@ country_event = {
 		
 		kill_ruler = yes
 		add_republican_tradition = 3
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
@@ -420,6 +422,7 @@ country_event = {
 			mil = 1
 		}
 		add_republican_tradition = -3
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
@@ -516,6 +519,7 @@ country_event = {
 		add_legitimacy = 10
 		add_prestige = 5
 		custom_tooltip = born_to_rule_tooltip
+		ai_chance = { factor = 50 }
 	}
 	
 	option = {
@@ -531,6 +535,7 @@ country_event = {
 			mil = -1
 			claim = 50
 		}
+		ai_chance = { factor = 25 }
 	}
 	
 	option = {
@@ -544,6 +549,7 @@ country_event = {
 			age = 40
 			claim = 20
 		}
+		ai_chance = { factor = 25 }
 	}
 }
 

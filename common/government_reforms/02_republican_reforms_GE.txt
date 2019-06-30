@@ -124,8 +124,8 @@ demedici_dynasty_reform = {
 	custom_attributes = {
 		enables_demedici = yes
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 100
 	}
 }
 
@@ -146,8 +146,8 @@ rule_by_consent_reform = {
 	custom_attributes = {
 		enables_deposition = yes
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 100
 	}
 }
 
@@ -160,8 +160,8 @@ support_borghese_reform = {
 	modifiers = {
 		republican_tradition = 0.3
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 10
 	}
 }
 
@@ -172,10 +172,10 @@ mixed_republic_reform = {
 	}
 	modifiers = {
 		reform_progress_growth = 0.10
-		stability_cost_modifier = -0.10
+		stability_cost_modifier = -0.15
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 1
 	}
 }
 
@@ -193,7 +193,7 @@ moedernegotie_reform = {
 		navy_tradition = 0.5
 		ship_power_propagation = 0.15
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#5% Burgher Influence, 10% Burgher Loyalty
@@ -217,8 +217,8 @@ factional_elections_reform = {
 	custom_attributes = {
 		enable_factional_elections = yes
 	}
-	ai_chance = {
-		factor = 0
+	ai = {
+		factor = 100
 	}
 }
 
@@ -235,7 +235,7 @@ vroedschappen_reform = {
 		candidate_random_bonus = 1
 		stability_cost_modifier = -0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#10% Burgher Influence
@@ -254,7 +254,7 @@ reforms_of_william_3_reform = {
 		mercenary_discipline = 0.05
 		reinforce_speed = 0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -272,8 +272,8 @@ communal_territories_reform = {
 		years_of_nationalism = -5
 		min_autonomy_in_territories = -0.1
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 100
 	}
 }
 
@@ -291,7 +291,7 @@ united_indian_companies_reform = {
 		trade_efficiency = 0.10
 		trade_company_investment_cost = -0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#10% Burgher Loyalty
@@ -319,8 +319,8 @@ andrea_doria_constitution_reform = {
 	custom_attributes = {
 		enables_disables_deposition = yes
 	}
-	ai_chance = {
-		factor = 1
+	ai = {
+		factor = 100
 	}
 }
 
@@ -337,7 +337,7 @@ ware_vrijheid_reform = {
 		republican_tradition = 0.25
 		reform_progress_growth = 0.15
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-10 Noble Influence, -10% Noble Loyalty
@@ -356,8 +356,8 @@ stadholder_reform = {
 	}
 	royal_marriage = yes
 	#15nobleinfluence
-	ai_chance = {
-		factor = 0.1
+	ai = {
+		factor = 100
 	}
 }
 
@@ -375,7 +375,7 @@ confederation_of_states_reform = {
 		improve_relation_modifier = 0.15
 		max_absolutism = -10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -394,7 +394,7 @@ tolerant_principle_reform = {
 		advisor_cost = -0.10
 		advisor_pool = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-10 Church Influence, -10% Church Loyalty
@@ -415,7 +415,7 @@ regents_reform = {
 	custom_attributes = {
 		enables_regent_investments = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#5 Burgher Influence, 10% Burgher Loyalty
@@ -434,7 +434,7 @@ raadspensionaris_reform = {
 		free_dip_policy = 1
 		global_autonomy = -0.025
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
-	}
+	}	
 }

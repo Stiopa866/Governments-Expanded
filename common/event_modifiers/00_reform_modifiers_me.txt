@@ -20,6 +20,9 @@ Regent_Investments = {
 Feudal_Power = {
 	local_manpower_modifier = 0.15
 }
+Magnate_Law = {
+	global_unrest = -1
+}
 Religious_Domination = {
 	tolerance_own = 1
 }
