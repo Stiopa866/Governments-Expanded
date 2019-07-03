@@ -353,6 +353,17 @@
  reform_the_condotierri_reform_desc: "Since the rise of the landsknechts we have lost our edge in military power, let us restore the tradition of renting out our armies and improve the military experience of our forces."
  confederation_of_cantons_reform: "Confederation of Cantons"
  confederation_of_cantons_reform_desc: "The local control organized by individual cantons means that problems are fixed locally, lands can be developed locally, and each region is responsible for its own fortifications, leading them to make the best use of natural resources and advantages."
+ mamluk_privileges_reform: "Mamluk Privileges"
+ mamluk_privileges_reform_desc: "The foreign born pseudo-nobility that dominated the mamluk sultanate were distinguished from their egyptian lessers through a multitude of laws and privileges. Such as the right to bear arms or to rise to the higher civic positions."
+ revive_the_hisbah_reform: "Revive the Hisbah"
+ revive_the_hisbah_reform_desc: "The Hisbah was founded during the early mamluk rule, in order to root out corruption amongst merchants and bankers. Later it started to also apply to the iqta system, which had slowly become heriditary and thus less effective. Under later rule this system became corrupt itself, as nobles attempted to become one of the muhtasib, or inspector generals, of this organization to wield to organization for political goals. Let is revive this organization and bring it back to the weeding out of corrupt merchants and the removal of local hereditary iqta holders."
+ turkicized_elite_reform: "Turkicized Elite"
+ turkicized_elite_reform_desc: "The Mamluk Elite distinguised itself from their arabic-speaking subjects through their own turkic language, names and ethnicity. With Turkic Mamluks enjoying a higher status, and many fresh Mamluks being turkicized during their education. With the sons of Mamluks often serving in the Sultanate's civil administration"
+ arabian_horses_reform: "Arabian Horses"
+ arabian_horses_reform_desc: "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
+ foreign_recruitment_reform: "Foreign Recruitment"
+ foreign_recruitment_reform_desc: "By sending our merchants off to many foreign places we can ensure our supply of new Mamluks will never be cut off again as it was during the mongol and crusader invasions."
+ 
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Replaces the Noble Estate Interaction Raise Additional Levies Loyalty Cost with an influence cost and grants a General with §G20§! tradition."
@@ -377,6 +388,8 @@
  mechanic_enables_magnate_law_yes: "Magnate Law: Noble Estate provinces have §G-1§! unrest."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
  mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains."
+ mechanic_enables_arabian_horses_yes: "Arabian Horses: Gain §G5%§! Cavalry Combat Ability per Arabian vassal."
+ mechanic_enables_mercenary_markets_yes: "Mercenary Markets: §G5%§! Available Mercenaries and §G1%§! Mercenary Discipline per merchant"
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

@@ -96,6 +96,7 @@ monarchy = {
 				albertine_line_reform
 				magnate_law_reform
 				imperial_knights_reform
+				mamluk_privileges_reform
 			}
 		}
 		bureaucracy = {
@@ -127,6 +128,7 @@ monarchy = {
 				commoner_officials_reform
 				imperial_inquisition_reform
 				magnate_govenors_reform
+				revive_the_hisbah_reform
 			}
 		}
 		military_organisation = {
@@ -149,6 +151,7 @@ monarchy = {
 				gustavan_artillery_reform
 				the_black_guard_reform
 				reorganize_the_imperial_army
+				arabian_horses_reform
 			}
 		}
 		growth_of_administration = {
@@ -180,6 +183,7 @@ monarchy = {
 				szlachta_recruits_reform
 				voivode_captains_reform
 				boyar_scions_reform
+				turkicized_elite_reform
 			}
 		}
 		deliberative_assembly = {
@@ -194,6 +198,7 @@ monarchy = {
 				parliamentary_order_reform
 				king_and_duke_reform
 				diverse_estates_reform
+				foreign_recruitment_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

@@ -891,6 +891,27 @@ imperial_knights_reform = {
 	}
 }
 
+mamluk_privileges_reform = {
+	icon = mamluk_government
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = mamluk_privileges_reform
+			tag = MAM
+			was_tag = MAM
+		}
+	}
+	trigger = { 
+	}
+	modifiers = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -1159,6 +1180,27 @@ imperial_inquisition_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+revive_the_hisbah_reform = {
+	icon = mamluk_government
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = revive_the_hisbah_reform
+			tag = MAM
+			was_tag = MAM
+		}
+	}
+	trigger = { 
+	}
+	modifiers = {
+		global_autonomy = -0.025
+		yearly_corruption = -0.05
+	}
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1510,6 +1552,27 @@ declario_ferdinandei_reform = {
 	}
 }
 
+turkicized_elite_reform = {
+	icon = mamluk_government
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = turkicized_elite_reform
+			tag = MAM
+			was_tag = MAM
+		}
+	}
+	trigger = { 
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+		max_states = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 #Tier5
 
 parliamentary_order_reform = {
@@ -1568,6 +1631,29 @@ diverse_estates_reform = {
 		factor = 100
 	}
 	#+10% All Estate loyalty
+}
+
+foreign_recruitment_reform = {
+	icon = mamluk_government
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = foreign_recruitment_reform
+			tag = MAM
+			was_tag = MAM
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		mercenary_cost = 0.25
+	}
+	custom_attributes = {
+		enables_mercenary_markets = yes
+	}
+	ai = {
+		factor = 100
+	}
 }
 
 #Tier6
@@ -2028,6 +2114,30 @@ reorganize_the_imperial_army = {
 		global_regiment_cost = -0.10
 		global_supply_limit_modifier = 0.25
 		loot_amount = 0.25
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+arabian_horses_reform = {
+	icon = mamluk_government
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = MAM
+			was_tag = MAM
+			have_had_reform = arabian_horses_reform
+		}
+	}
+	trigger = { 
+	}
+	modifiers = {
+		cavalry_flanking = 0.5
+		shock_damage = 0.10
+	}
+	custom_attributes = {
+		enables_arabian_horses = yes
 	}
 	ai = {
 		factor = 100
