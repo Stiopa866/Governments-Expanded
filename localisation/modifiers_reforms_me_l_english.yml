@@ -145,6 +145,9 @@
  EST_VAL_WARE_VRIJHEID_REFORM:0 "Ware Vrijheid: §Y$VAL$%§!"
  EST_VAL_TOLERANT_PRINCIPLE_REFORM:0 "Tolerance Principle: §Y$VAL$%§!"
  EST_VAL_REGENTS_REFORM:0 "Regents: §Y$VAL$%§!"
+ EST_VAL_SZLACHTA_RECRUITS_REFORM:0 "Szlachta Recruits: §Y$VAL$%§!"
+ EST_VAL_VOIVODE_CAPTAINS_REFORM:0 "Voivode Captains:  §Y$VAL$%§!"
+ EST_VAL_BOYAR_SCIONS_REFORM:0 "Boyar Scions:  §Y$VAL$%§!"
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
@@ -161,4 +164,7 @@
  EST_VAL_REGENTS_REFORM_LOY:0 "Regents: §G$VAL$%§!"
  EST_VAL_ULEMA_GUIDANCE_REFORM_LOY:0 "Ulema Guidance: §G$VAL$%§!"
  EST_VAL_DIVERSE_ESTATES_REFORM_LOY:0 "Diverse Estates: §G$VAL$%§!"
+ EST_VAL_SZLACHTA_RECRUITS_REFORM_LOY:0 "Szlachta Recruits: §Y$VAL$%§!"
+ EST_VAL_VOIVODE_CAPTAINS_REFORM_LOY:0 "Voivode Captains:  §Y$VAL$%§!"
+ EST_VAL_BOYAR_SCIONS_REFORM_LOY:0 "Boyar Scions:  §Y$VAL$%§!"
  

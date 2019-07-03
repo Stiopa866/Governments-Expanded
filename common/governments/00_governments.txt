@@ -178,6 +178,8 @@ monarchy = {
 				declario_ferdinandei_reform
 				imperial_circles_administration_reform
 				szlachta_recruits_reform
+				voivode_captains_reform
+				boyar_scions_reform
 			}
 		}
 		deliberative_assembly = {

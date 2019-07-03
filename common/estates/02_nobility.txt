@@ -201,6 +201,27 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_SZLACHTA_RECRUITS_REFORM
+		trigger = {
+			has_reform = szlachta_recruits_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_VOIVODE_CAPTAINS_REFORM
+		trigger = {
+			has_reform = voivode_captains_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_BOYAR_SCIONS_REFORM
+		trigger = {
+			has_reform = boyar_scions_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_EASTERN_TECH
 		trigger = {
 			technology_group = eastern
@@ -376,7 +397,27 @@ estate_nobles =
 		}
 		loyalty = 10
 	}
-	
+	loyalty_modifier = {
+		desc = EST_VAL_SZLACHTA_RECRUITS_REFORM_LOY
+		trigger = {
+			has_reform = szlachta_recruits_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_VOIVODE_CAPTAINS_REFORM_LOY
+		trigger = {
+			has_reform = voivode_captains_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_BOYAR_SCIONS_REFORM_LOY
+		trigger = {
+			has_reform = boyar_scions_reform
+		}
+		loyalty = 5
+	}
 	loyalty_modifier = {
 		desc = EST_VAL_JUNKERS
 		trigger = {
@@ -661,7 +702,7 @@ estate_nobles =
 		effect = {
 			if = {
 				limit = {
-					has_government_attribute = enables_szlachta_general
+					has_government_attribute = enables_veteran_general
 				}
 				create_general = { tradition = 60 }
 			}
