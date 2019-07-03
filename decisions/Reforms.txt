@@ -115,6 +115,7 @@ country_decisions = {
 		allow = {
 			was_player = yes
 			NOT = { is_year = 1450 }
+			has_reform = feudalism_reform
 		}
 		effect = {
 			remove_government_reform = feudalism_reform
