@@ -99,7 +99,16 @@ Mercenary_Markets_10 = {
 	possible_mercenaries = 0.50
 	mercenary_discipline = 0.10
 }
-
+National_Strenghtening_Project = {
+	land_forcelimit = 1
+}
+Rallied_For_War = {
+	land_morale = 0.05
+	recover_army_morale_speed = 0.1
+}
+Patriotism = {
+	local_manpower_modifier = 0.25
+}
 
 #Cortez
 Cortes_Piety = {

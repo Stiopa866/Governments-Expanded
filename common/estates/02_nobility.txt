@@ -1252,14 +1252,26 @@ estate_nobles =
 			if = {
 				limit = { has_government_attribute = enables_grand_captain }
 				add_yearly_manpower = 1
-				create_general = { tradition = 20 }
+				define_advisor = {
+					type = grand_captain
+					skill = 1
+					age = 40
+					cost_multiplier = 0.50
+				}
 				add_estate_influence_modifier = {
 					estate = estate_nobles
 					desc = EST_VAL_LEVIED_TROOPS
 					influence = 10
 					duration = 7300
 				}
+			}
+			if = {
+				limit = { has_government_attribute = enables_rallied_for_war }
+				add_country_modifier = {
+					name = "Rallied_For_War"
+					duration = 1825
 				}
+			}
 		}
 		
 		ai_will_do = {

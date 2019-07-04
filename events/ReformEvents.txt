@@ -1775,3 +1775,81 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.23
+	title = reform_me_events.23.t
+	desc = reform_me_events.23.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_national_strenghtening_project
+		any_owned_province = {
+			culture = polish
+			NOT = { has_province_modifier = National_Strenghtening_Project }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				culture = polish
+				NOT = { has_province_modifier = National_Strenghtening_Project }
+            }
+			add_province_modifier = {
+				name = "National_Strenghtening_Project"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.23.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.24
+	title = reform_me_events.24.t
+	desc = reform_me_events.24.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_patriotism
+		any_owned_province = {
+			culture = ROOT
+			NOT = { has_province_modifier = Patriotism }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				culture = ROOT
+				NOT = { has_province_modifier = enables_patriotism }
+            }
+			add_province_modifier = {
+				name = "Patriotism"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.24.a
+		
+	}
+}

@@ -54,6 +54,7 @@ monarchy = {
 				arch_duchy_reform
 				habsburg_monarchy_reform
 				austrian_empire_reform
+				polish_constitutionalism_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -97,6 +98,8 @@ monarchy = {
 				magnate_law_reform
 				imperial_knights_reform
 				mamluk_privileges_reform
+				szlachta_authority_reform
+				every_man_a_noble_reform
 			}
 		}
 		bureaucracy = {
@@ -129,11 +132,13 @@ monarchy = {
 				imperial_inquisition_reform
 				magnate_govenors_reform
 				revive_the_hisbah_reform
+				enforce_magdeburg_rights_reform
 			}
 		}
 		military_organisation = {
 			reforms = {
 				feudal_levies_reform
+				national_guard_reform
 				mercenary_corps_reform
 				professional_army_reform
 				italian_mercenaries_reform
@@ -152,6 +157,7 @@ monarchy = {
 				the_black_guard_reform
 				reorganize_the_imperial_army
 				arabian_horses_reform
+				pospolite_ruszenie_reform
 			}
 		}
 		growth_of_administration = {
@@ -214,6 +220,7 @@ monarchy = {
 				toleration_of_all_faiths_edict_reform
 				abolish_the_haandfaestning_reform
 				revoke_reichsfreiheit_reform
+				constitution_third_may_reform
 			}
 		}
 		separation_of_power = {
