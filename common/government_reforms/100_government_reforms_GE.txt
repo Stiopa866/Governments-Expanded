@@ -489,8 +489,10 @@ polish_constitutionalism_reform = {
 		stability_cost_modifier = -0.15
 		war_exhaustion = -0.025
 	}
+	has_parliament = yes
 	custom_attributes = {
 		enables_national_strenghtening_project = yes
+		enables_patriotism = yes
 	}
 	ai = {
 		factor = 100
@@ -1273,7 +1275,7 @@ revive_the_hisbah_reform = {
 	}
 }
 
-re-enforce_magdeburg_rights_reform = {
+re_enforce_magdeburg_rights_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
 	potential = {

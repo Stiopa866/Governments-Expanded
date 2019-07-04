@@ -1787,7 +1787,7 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_national_strenghtening_project
 		any_owned_province = {
-			culture = polish
+			has_seat_in_parliament = yes
 			NOT = { has_province_modifier = National_Strenghtening_Project }
 		}
 	}
@@ -1799,13 +1799,20 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				culture = polish
+				has_seat_in_parliament = yes
 				NOT = { has_province_modifier = National_Strenghtening_Project }
             }
 			add_province_modifier = {
 				name = "National_Strenghtening_Project"
 				duration = -1
 			}
+		}
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = no
+				has_province_modifier = National_Strenghtening_Project
+            }
+			remove_province_modifier = National_Strenghtening_Project
 		}
 	}
 	

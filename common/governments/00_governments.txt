@@ -132,7 +132,7 @@ monarchy = {
 				imperial_inquisition_reform
 				magnate_govenors_reform
 				revive_the_hisbah_reform
-				enforce_magdeburg_rights_reform
+				re_enforce_magdeburg_rights_reform
 			}
 		}
 		military_organisation = {
