@@ -486,13 +486,12 @@ polish_constitutionalism_reform = {
 	}
 	modifiers = {
 		monarch_admin_power = 1
-		stability_cost_modifier = -0.15
-		war_exhaustion = -0.025
+		administrative_efficiency = 0.05
+		max_absolutism = -10
 	}
 	has_parliament = yes
 	custom_attributes = {
 		enables_national_strenghtening_project = yes
-		enables_patriotism = yes
 	}
 	ai = {
 		factor = 100
@@ -1283,6 +1282,7 @@ re_enforce_magdeburg_rights_reform = {
 			tag = POL
 			tag = PLC
 		}
+		NOT = { has_reform = constitution_third_may_reform }
 	}
 	trigger = { 
 	}
@@ -1291,7 +1291,58 @@ re_enforce_magdeburg_rights_reform = {
 		trade_efficiency = 0.10
 	}
 	ai = {
+		factor = 100
+	}
+}
+
+revoke_magnate_estates_reform = {
+	icon = magnates_2
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		has_reform = constitution_third_may_reform
+	}
+	trigger = { 
+	}
+	modifiers = {
+		global_autonomy = -0.025
+		max_states = 3
+	}
+	ai = {
 		factor = 101
+	}
+}
+
+integrate_tatars_reform = {
+	icon = Tatar_raid
+	allow_normal_conversion = yes
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			culture_group = tartar
+		}
+		OR = {
+			NOT = { total_development = 1000 }
+			have_had_reform = integrate_tatars_reform
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 10
+			culture_group = tartar
+		}
+		NOT = { total_development = 1000 }
+	}
+	modifiers = {
+		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.10
+		num_accepted_cultures = 1
+	}
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1747,6 +1798,50 @@ foreign_recruitment_reform = {
 	}
 }
 
+reform_the_sejm_reform = {
+	icon = magnates_2
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		NOT = { has_reform = constitution_third_may_reform }
+	}
+	trigger = { 
+	}
+	modifiers = {
+		monthly_support_heir_gain = 0.25
+		global_spy_defence = 0.25
+		same_culture_advisor_cost = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+abolish_the_sejm_reform = {
+	icon = magnates_2
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		has_reform = constitution_third_may_reform
+	}
+	trigger = { 
+	}
+	modifiers = {
+		global_spy_defence = 0.50
+		advisor_cost = -0.10
+		promote_culture_cost = -0.50
+	}
+	ai = {
+		factor = 101
+	}
+}
+
 #Tier6
 
 freedom_of_religion_reform = {
@@ -1863,6 +1958,7 @@ constitution_third_may_reform = {
 	modifiers = {
 		global_unrest = -2
 		legitimacy = 1
+		max_absolutism = -5
 	}
 	effect = {
 		add_government_reform = polish_constitutionalism_reform
@@ -1944,6 +2040,7 @@ feudal_levies_reform = {
 		factor = 1
 	}
 }
+
 national_guard_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
@@ -2286,7 +2383,8 @@ pospolite_ruszenie_reform = {
 	trigger = { 
 	}
 	modifiers = {
-		cavalry_flanking = 0.5
+		shock_damage = 0.05
+		cavalry_flanking = 1
 	}
 	custom_attributes = {
 		enables_grand_captain = yes
@@ -2294,5 +2392,28 @@ pospolite_ruszenie_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+polish_national_guard_reform = {
+	icon = szlachta
+	allow_normal_conversion = yes
+	potential = { 
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		has_reform = constitution_third_may_reform
+	}
+	modifiers = {
+		reinforce_speed = 0.25
+		reinforce_cost_modifier = -0.20
+		manpower_recovery_speed = 0.15
+	}
+	custom_attributes = {
+		enables_patriotism = yes
+	}
+	ai = {
+		factor = 1
 	}
 }

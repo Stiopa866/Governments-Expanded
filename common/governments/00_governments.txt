@@ -133,6 +133,8 @@ monarchy = {
 				magnate_govenors_reform
 				revive_the_hisbah_reform
 				re_enforce_magdeburg_rights_reform
+				revoke_magnate_estates_reform
+				integrate_tatars_reform
 			}
 		}
 		military_organisation = {
@@ -158,6 +160,7 @@ monarchy = {
 				reorganize_the_imperial_army
 				arabian_horses_reform
 				pospolite_ruszenie_reform
+				polish_national_guard_reform
 			}
 		}
 		growth_of_administration = {
@@ -205,6 +208,8 @@ monarchy = {
 				king_and_duke_reform
 				diverse_estates_reform
 				foreign_recruitment_reform
+				reform_the_sejm_reform
+				abolish_the_sejm_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
