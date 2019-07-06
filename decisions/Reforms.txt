@@ -126,6 +126,22 @@ country_decisions = {
 		}
 	}
 	
+	reforms_me_jewish_theocracy_reform = {
+		major = yes
+		potential = {
+			religion = jewish
+			NOT = { government = theocracy }
+		}
+		allow = {
+		}
+		effect = {
+			change_government = theocracy
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
 	reforms_GE_consulate_of_the_sea = {
 		potential = {
 			government = monarchy

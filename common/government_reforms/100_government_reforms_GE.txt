@@ -473,7 +473,7 @@ austrian_empire_reform = {
 }
 
 polish_constitutionalism_reform = {
-	icon = szlachta
+	icon = poland_constitution_painting
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
@@ -529,7 +529,7 @@ metropolian_bishop_reform = {
 		add_patriarch_authority = 0.10
 	}
 	ai = {
-		factor = 1
+		factor = 10
 	}
 }
 
@@ -549,8 +549,35 @@ state_church_reform = {
 		church_power_modifier = 0.25
 	}
 	ai = {
-		factor = 1
+		factor = 10
 	}
+}
+
+dhimmi_nobles_reform = {
+	icon = peasants
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = muslim
+		has_estate = estate_dhimmi
+	}
+	trigger = {
+		OR = {
+			any_owned_province = {
+				religion_group = christian
+			}
+			any_owned_province = {
+				religion_group = dharmic
+			}
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.05
+	}
+	ai = {
+		factor = 10
+	}
+	#20% dhimmi influence
+	#10% dhimmi loyalty
 }
 
 #Tier2
@@ -588,7 +615,6 @@ lithuania_law_reform = {
 	}
 }
 
-
 guild_dominance_reform = {
 	icon = dutch_guilds
 	allow_normal_conversion = yes
@@ -606,8 +632,6 @@ guild_dominance_reform = {
 		factor = 10
 	}
 }
-
-
 
 growth_signoria_reform = {
 	icon = "king"
@@ -700,33 +724,6 @@ trade_princes_reform = {
 	ai = {
 		factor = 100
 	}
-}
-
-dhimmi_nobles_reform = {
-	icon = peasants
-	allow_normal_conversion = yes
-	potential = {
-		religion_group = muslim
-		has_estate = estate_dhimmi
-	}
-	trigger = {
-		OR = {
-			any_owned_province = {
-				religion_group = christian
-			}
-			any_owned_province = {
-				religion_group = dharmic
-			}
-		}
-	}
-	modifiers = {
-		global_tax_modifier = 0.05
-	}
-	ai = {
-		factor = 10
-	}
-	#20% dhimmi influence
-	#10% dhimmi loyalty
 }
 		
 council_of_sheikhs_reform = {
@@ -919,7 +916,7 @@ imperial_knights_reform = {
 }
 
 mamluk_privileges_reform = {
-	icon = mamluk_government
+	icon = mamluk_noble_2
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -940,7 +937,7 @@ mamluk_privileges_reform = {
 }
 
 szlachta_authority_reform = {
-	icon = szlachta
+	icon = szlachta_noble_1
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -962,7 +959,7 @@ szlachta_authority_reform = {
 }
 
 every_man_a_noble_reform = {
-	icon = szlachta
+	icon = szlachta_noble_2
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -996,6 +993,19 @@ regional_forts_reform = {
 	}
 	ai = {
 		factor = 1
+		modifier = {
+			factor = 5
+			calc_true_if = {
+				all_subject_country = {
+					OR = {
+						is_march = yes
+						is_vassal = yes
+						is_lesser_in_union = yes
+					}
+				}
+				amount = 1
+			}
+		}
 	}
 }
 	
@@ -1183,7 +1193,7 @@ ancien_regime_reform = {
 		tag = FRA
 	}
 	modifiers = {
-		global_autonomy = -0.05
+		global_autonomy = -0.025
 		state_maintenance_modifier = -0.10
 		max_states = 3
 	}
@@ -1254,7 +1264,7 @@ imperial_inquisition_reform = {
 }
 
 revive_the_hisbah_reform = {
-	icon = mamluk_government
+	icon = mamluk_noble
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1275,14 +1285,13 @@ revive_the_hisbah_reform = {
 }
 
 re_enforce_magdeburg_rights_reform = {
-	icon = szlachta
+	icon = magdeburg_rights
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			tag = POL
 			tag = PLC
 		}
-		NOT = { has_reform = constitution_third_may_reform }
 	}
 	trigger = { 
 	}
@@ -1305,7 +1314,7 @@ revoke_magnate_estates_reform = {
 			tag = POL
 			tag = PLC
 		}
-		has_reform = constitution_third_may_reform
+		has_reform = polish_constitutionalism_reform
 	}
 	trigger = { 
 	}
@@ -1409,7 +1418,7 @@ szlachta_recruits_reform = {
 		NOT = { primary_culture = czech }
 	}
 	modifiers = {
-		army_tradition_decay = 0.5
+		army_tradition_decay = -0.005
 	}
 	custom_attributes = {
 		enables_veteran_general = yes
@@ -1697,7 +1706,7 @@ declario_ferdinandei_reform = {
 }
 
 turkicized_elite_reform = {
-	icon = mamluk_government
+	icon = mamluk_veteran
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1778,7 +1787,7 @@ diverse_estates_reform = {
 }
 
 foreign_recruitment_reform = {
-	icon = mamluk_government
+	icon = mamluk_army
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1801,14 +1810,14 @@ foreign_recruitment_reform = {
 }
 
 reform_the_sejm_reform = {
-	icon = magnates_2
+	icon = poland_sejm
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			tag = POL
 			tag = PLC
 		}
-		NOT = { has_reform = constitution_third_may_reform }
+		NOT = { has_reform = polish_constitutionalism_reform }
 	}
 	trigger = { 
 	}
@@ -1823,14 +1832,14 @@ reform_the_sejm_reform = {
 }
 
 abolish_the_sejm_reform = {
-	icon = magnates_2
+	icon = poland_sejm
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
 			tag = POL
 			tag = PLC
 		}
-		has_reform = constitution_third_may_reform
+		has_reform = polish_constitutionalism_reform
 	}
 	trigger = { 
 	}
@@ -1947,7 +1956,7 @@ abolish_the_haandfaestning_reform = {
 }
 
 constitution_third_may_reform = {
-	icon = szlachta
+	icon = poland_constitution_paper
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1956,12 +1965,15 @@ constitution_third_may_reform = {
 		}
 	}
 	trigger = { 
-		has_reform = reform_the_sejm_reform
+		OR = {
+			has_reform = reform_the_sejm_reform
+			has_reform = abolish_the_sejm_reform
+		}
 	}
 	modifiers = {
 		global_unrest = -2
 		legitimacy = 1
-		max_absolutism = -5
+		max_absolutism = -10
 	}
 	effect = {
 		add_government_reform = polish_constitutionalism_reform
@@ -2045,7 +2057,7 @@ feudal_levies_reform = {
 }
 
 national_guard_reform = {
-	icon = szlachta
+	icon = national_guard
 	allow_normal_conversion = yes
 	potential = { }
 	modifiers = {
@@ -2350,7 +2362,7 @@ reorganize_the_imperial_army = {
 }
 
 arabian_horses_reform = {
-	icon = mamluk_government
+	icon = mamluk_horse
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2374,7 +2386,7 @@ arabian_horses_reform = {
 }
 
 pospolite_ruszenie_reform = {
-	icon = szlachta
+	icon = national_guard
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2399,7 +2411,7 @@ pospolite_ruszenie_reform = {
 }
 
 polish_national_guard_reform = {
-	icon = szlachta
+	icon = national_guard
 	allow_normal_conversion = yes
 	potential = { 
 		OR = {

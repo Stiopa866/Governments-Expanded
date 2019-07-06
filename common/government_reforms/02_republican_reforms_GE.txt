@@ -162,6 +162,7 @@ demedici_dynasty_reform = {
 			have_had_reform = demedici_dynasty_reform
 			tag = LAN
 		}
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		max_absolutism = 5
@@ -182,6 +183,7 @@ rule_by_consent_reform = {
 			tag = GEN
 			was_tag = GEN
 		}
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		republican_tradition = 0.5
@@ -201,6 +203,7 @@ support_borghese_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		republican_tradition = 0.3
@@ -214,6 +217,7 @@ mixed_republic_reform = {
 	icon = peasants
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		reform_progress_growth = 0.10

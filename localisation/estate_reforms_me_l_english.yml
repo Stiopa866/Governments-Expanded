@@ -379,6 +379,8 @@
  national_guard_reform_desc: "Our great nation needs an army core not of conscripted peasants or of mercenaries fighting for money. Let our army be build from the noble volunteers that willingly risk their lives for the homeland!"
  revoke_magnate_estates_reform: "Revoke Magnate Estates"
  revoke_magnate_estates_reform_desc: "magnates lost their privileges, now let us abolish their estates as well."
+ reform_the_sejm_reform: "Reform the Sejm"
+ reform_the_sejm_reform_desc: "Let us attempt to reform the sejm by stacking the members with loyalists to the monarch."
  abolish_the_sejm_reform: "Abolish The Sejm"
  abolish_the_sejm_reform_desc: "The government shall be open to all, both nationals and those from the borderlands."
  polish_national_guard_reform: "Polish National Guard"
@@ -414,7 +416,7 @@
  mechanic_enables_national_strenghtening_project_yes: "National Strenghtening Project: §G+15%§! Manpower, §G-0.05%§! monthly devastation and §G-10%§! Hostile Movement Speed in provinces with accepted culture."
  mechanic_enables_rallied_for_war_yes: "Rallied for War: §G+5%§! Morale of Armies and §G+10%§! Morale Recovery for five years upon raising additional levies."
  mechanic_enables_patriotism_yes: "Patriotism: 	§G+25%§! Manpower in provinces of your primary culture."
- mechanic_enables_town_rights_yes: "Town Rights: §G-10%§! Development Cost and §G0.2%§! Goods produced in Burgher Estate provinces."
+ mechanic_enables_town_rights_yes: "Town Rights: §G-10%§! Development Cost and §G+0.2§! Goods produced in Burgher Estate provinces."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -481,6 +483,9 @@
  reforms_me_austrian_empire_desc:1 "The Austrian Empire was part of the Habsburg attempt to germanize and centralize the vast lands of the Austrian Habsburgs into a proper nation state, with a unified culture, language and administrative system."
  reforms_me_french_reformed_feudalism_title:1 "Reform the French Feudal System"
  reforms_me_french_reformed_feudalism_desc:1 "By reducing the power of the french nobility and stabilizing our realm, we can finally reduce their privileges and power, no longer will we be bound by their whims!"
+ reforms_me_jewish_theocracy_reform_title:1 "A Divine State"
+ reforms_me_jewish_theocracy_reform_desc:1 "Let us become a nation ruled through theocratic law, and find the blood of david to rule us once more!"
+ 
  
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§ influence and loyalty ."
  AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY: "Available due to high §YBurgher§ influence and loyalty ."

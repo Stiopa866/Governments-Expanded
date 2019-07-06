@@ -293,6 +293,8 @@ monarchy = {
 		elective_monarchy
 		celestial_empire
 		crown_of_saint_wenceslaus
+		elective_monarchy_reform
+		polish_constitutionalism_reform
 	}
 
 	#Flavor
@@ -303,6 +305,7 @@ monarchy = {
 		states_general_reform
 		parliamentary_reform
 		crown_of_saint_wenceslaus
+		polish_constitutionalism_reform
 	}
 
 	color = { 179 25 25 }

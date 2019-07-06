@@ -459,4 +459,52 @@ spriteTypes = {
 		name = "government_reform_magnates"
 		texturefile = "gfx//interface//government_reform_icons//magnates.dds"
 	}
+	spriteType = {
+		name = "government_reform_mamluk_horse"
+		texturefile = "gfx//interface//government_reform_icons//mamluk_horse.dds"
+	}
+	spriteType = {
+		name = "government_reform_mamluk_veteran"
+		texturefile = "gfx//interface//government_reform_icons//mamluk_veteran.dds"
+	}
+	spriteType = {
+		name = "government_reform_mamluk_noble"
+		texturefile = "gfx//interface//government_reform_icons//mamluk_noble.dds"
+	}
+	spriteType = {
+		name = "government_reform_mamluk_army"
+		texturefile = "gfx//interface//government_reform_icons//mamluk_army.dds"
+	}
+	spriteType = {
+		name = "government_reform_mamluk_noble_2"
+		texturefile = "gfx//interface//government_reform_icons//mamluk_noble_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_poland_sejm"
+		texturefile = "gfx//interface//government_reform_icons//poland_sejm.dds"
+	}
+	spriteType = {
+		name = "government_reform_magdeburg_rights"
+		texturefile = "gfx//interface//government_reform_icons//magdeburg_rights.dds"
+	}
+	spriteType = {
+		name = "government_reform_poland_constitution_painting"
+		texturefile = "gfx//interface//government_reform_icons//poland_constitution_painting.dds"
+	}
+	spriteType = {
+		name = "government_reform_szlachta_noble_1"
+		texturefile = "gfx//interface//government_reform_icons//szlachta_noble_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_szlachta_noble_2"
+		texturefile = "gfx//interface//government_reform_icons//szlachta_noble_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_poland_constitution_paper"
+		texturefile = "gfx//interface//government_reform_icons//poland_constitution_paper.dds"
+	}
+	spriteType = {
+		name = "government_reform_national_guard"
+		texturefile = "gfx//interface//government_reform_icons//national_guard.dds"
+	}
 }

@@ -420,6 +420,13 @@ estate_nobles =
 		loyalty = 5
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_SZLACHTA_AUTHORITY_LOY
+		trigger = {
+			has_reform = szlachta_authority_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_JUNKERS
 		trigger = {
 			has_reform = prussian_monarchy
