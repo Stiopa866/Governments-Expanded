@@ -475,6 +475,7 @@ austrian_empire_reform = {
 polish_constitutionalism_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			tag = POL
@@ -491,7 +492,7 @@ polish_constitutionalism_reform = {
 	}
 	has_parliament = yes
 	custom_attributes = {
-		enables_national_strenghtening_project = yes
+		enables_national_strenghtening_project = yes #+15% Manpower, -0.05 monthly devastation and -10 Hostile Movement Speed in provinces with accepted culture.
 	}
 	ai = {
 		factor = 100
@@ -927,7 +928,7 @@ mamluk_privileges_reform = {
 			was_tag = MAM
 		}
 	}
-	trigger = { 
+	trigger = {
 	}
 	modifiers = {
 		global_unrest = -1
@@ -973,7 +974,6 @@ every_man_a_noble_reform = {
 	trigger = { 
 	}
 	modifiers = {
-		global_unrest = -1
 		manpower_recovery_speed = 0.10
 		global_trade_goods_size_modifier = 0.05
 	}
@@ -1270,7 +1270,7 @@ revive_the_hisbah_reform = {
 		yearly_corruption = -0.05
 	}
 	ai = {
-		factor = 10
+		factor = 100
 	}
 }
 
@@ -1287,8 +1287,10 @@ re_enforce_magdeburg_rights_reform = {
 	trigger = { 
 	}
 	modifiers = {
-		development_cost = -0.10
 		trade_efficiency = 0.10
+	}
+	custom_attributes = {
+		enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced
 	}
 	ai = {
 		factor = 100
@@ -1407,9 +1409,9 @@ szlachta_recruits_reform = {
 		NOT = { primary_culture = czech }
 	}
 	modifiers = {
-		army_tradition = 0.5
+		army_tradition_decay = 0.5
 	}
-	custom_attributes = { 
+	custom_attributes = {
 		enables_veteran_general = yes
 	}
 	ai = {
@@ -1791,7 +1793,7 @@ foreign_recruitment_reform = {
 		mercenary_cost = 0.25
 	}
 	custom_attributes = {
-		enables_mercenary_markets = yes
+		enables_mercenary_markets = yes #5% available mercenaries and 1% mercenary discipline per merchant.
 	}
 	ai = {
 		factor = 100
@@ -1812,7 +1814,7 @@ reform_the_sejm_reform = {
 	}
 	modifiers = {
 		monthly_support_heir_gain = 0.25
-		global_spy_defence = 0.25
+		global_spy_defence = 0.15
 		same_culture_advisor_cost = -0.1
 	}
 	ai = {
@@ -1833,7 +1835,7 @@ abolish_the_sejm_reform = {
 	trigger = { 
 	}
 	modifiers = {
-		global_spy_defence = 0.50
+		global_spy_defence = 0.25
 		advisor_cost = -0.10
 		promote_culture_cost = -0.50
 	}
@@ -1954,6 +1956,7 @@ constitution_third_may_reform = {
 		}
 	}
 	trigger = { 
+		has_reform = reform_the_sejm_reform
 	}
 	modifiers = {
 		global_unrest = -2
@@ -2034,7 +2037,7 @@ feudal_levies_reform = {
 		war_taxes_cost_modifier = -1
 	}
 	custom_attributes = {
-		enables_grand_captain = yes
+		enables_grand_captain = yes # Free buffed 'request additional manpower'
 	}
 	ai = {
 		factor = 1
@@ -2050,7 +2053,7 @@ national_guard_reform = {
 		recover_army_morale_speed = 0.1
 	}
 	custom_attributes = {
-		enables_patriotism = yes
+		enables_patriotism = yes #+25% Manpower in primary culture provinces
 	}
 	ai = {
 		factor = 1
@@ -2353,17 +2356,17 @@ arabian_horses_reform = {
 		OR = {
 			tag = MAM
 			was_tag = MAM
-			have_had_reform = arabian_horses_reform
+			have_had_reform = arabian_horses_reform 
 		}
 	}
 	trigger = { 
 	}
 	modifiers = {
 		cavalry_flanking = 0.5
-		shock_damage = 0.10
+		shock_damage = 0.05
 	}
 	custom_attributes = {
-		enables_arabian_horses = yes
+		enables_arabian_horses = yes # 5% Cavalry Combat Ability per Arab vassal
 	}
 	ai = {
 		factor = 100
@@ -2387,8 +2390,8 @@ pospolite_ruszenie_reform = {
 		cavalry_flanking = 1
 	}
 	custom_attributes = {
-		enables_grand_captain = yes
-		enables_rallied_for_war = yes
+		enables_grand_captain = yes # Free buffed 'request additional manpower'
+		enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
 	}
 	ai = {
 		factor = 100
@@ -2406,14 +2409,11 @@ polish_national_guard_reform = {
 		has_reform = constitution_third_may_reform
 	}
 	modifiers = {
-		reinforce_speed = 0.25
-		reinforce_cost_modifier = -0.20
-		manpower_recovery_speed = 0.15
-	}
-	custom_attributes = {
-		enables_patriotism = yes
-	}
+        reinforce_speed = 0.33
+        reinforce_cost_modifier = -0.20
+        recover_army_morale_speed = 0.1
+    }
 	ai = {
-		factor = 1
+		factor = 100
 	}
 }

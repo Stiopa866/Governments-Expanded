@@ -111,6 +111,10 @@ Rallied_For_War = {
 Patriotism = {
 	local_manpower_modifier = 0.25
 }
+Town_Rights = {
+	local_development_cost = -0.10
+	trade_goods_size = 0.2
+}
 
 #Cortez
 Cortes_Piety = {

@@ -367,9 +367,9 @@
  polish_constitutionalism_reform_desc: "The Sejm and Szlachta are tearing our country apart with their petty squabbles and foreign patrons, if we are to survive we need to institute a universal constitution. A constitution to save the commonwealth!"
  szlachta_authority_reform: "Szlachta Authority"
  szlachta_authority_reform_desc: "By granting the Szlachta additional power and influence, we can ensure their complacency, both in serving our forces as well as reducing the likelyhood they start trouble."
- every_man_a_noble_reform: "Every man a noble"
+ every_man_a_noble_reform: "Every Man a Noble"
  every_man_a_noble_reform_desc: "With our ancestral noble privileges abolished, every man shall live as a noble."
- re_enforce_magdeburg_rights_reform: "Re-Enforce Magdeburg Rights"
+ re_enforce_magdeburg_rights_reform: "Reinforce Magdeburg Rights"
  re_enforce_magdeburg_rights_reform_desc: "While similar conflicts among social classes may be found all over Europe, nowhere were the nobility as dominant at the time as in the Polish–Lithuanian Commonwealth. There is, however, much debate among historians as to which processes most affected those developments, since until the wars and crises of the mid-17th century the cities of the Commonwealth had not markedly lagged in size and wealth behind their western counterparts. The Commonwealth did have numerous towns and cities, commonly founded on Magdeburg rights. Some of the largest trade fairs in the Commonwealth were held at Lublin. See the geography section, below, for a list of major cities in the Commonwealth (commonly capitals of voivodships)."
  pospolite_ruszenie_reform: "Pospolite Ruszenie"
  pospolite_ruszenie_reform_desc: "Pospolite ruszenie is a name for the mobilisation of armed forces during the period of the Kingdom of Poland and the Polish-Lithuanian Commonwealth. The tradition of wartime mobilisation of part of the population existed from before the 13th century to the 19th century. In the later era, pospolite ruszenie units were formed from the szlachta."
@@ -387,7 +387,7 @@
  integrate_tatars_reform_desc: "The increasing weakness of the tatar hordes has led to us seizing much of their lands, These talented horsemen could be of much use to us if we can integrate them into our forces."
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
- mechanic_enables_grand_captain_yes:0 "Raise Additional Levies costs no loyalty, and grants additional manpower and a advisor."
+ mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
  mechanic_enables_noble_diplomats_yes:0 "The Noble Estate Interaction Recruit Minister will instead grant §G10%§! Improve relations."
  mechanic_enables_cortes_yes:0 "Enable The Cortes Interaction in the Noble Estate."
@@ -414,6 +414,7 @@
  mechanic_enables_national_strenghtening_project_yes: "National Strenghtening Project: §G+15%§! Manpower, §G-0.05%§! monthly devastation and §G-10%§! Hostile Movement Speed in provinces with accepted culture."
  mechanic_enables_rallied_for_war_yes: "Rallied for War: §G+5%§! Morale of Armies and §G+10%§! Morale Recovery for five years upon raising additional levies."
  mechanic_enables_patriotism_yes: "Patriotism: 	§G+25%§! Manpower in provinces of your primary culture."
+ mechanic_enables_town_rights_yes: "Town Rights: §G-10%§! Development Cost and §G0.2%§! Goods produced in Burgher Estate provinces."
 
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

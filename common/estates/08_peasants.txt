@@ -24,10 +24,11 @@ estate_peasants =
 	start_territory_weight = 0
 	
 	# Min autonomy in estate provinces
-	min_autonomy = 10
+	min_autonomy = 25
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
 	 autonomy_does_not_affect = local_manpower_modifier
+	 autonomy_does_not_affect = local_production_efficiency
 
 	country_modifier_happy = {
 		state_maintenance_modifier = -0.20
@@ -141,7 +142,7 @@ estate_peasants =
 			}
 			add_estate_loyalty = {
 				estate = estate_peasants
-				loyalty = -5
+				loyalty = -10
 			}
 			add_estate_influence_modifier = {
 				estate = estate_peasants
@@ -191,7 +192,7 @@ estate_peasants =
 			}
 			add_estate_loyalty = {
 				estate = estate_peasants
-				loyalty = -5
+				loyalty = -10
 			}
 			add_estate_influence_modifier = {
 				estate = estate_peasants

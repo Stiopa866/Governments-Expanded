@@ -220,7 +220,7 @@ inquisition_reform = {
 	modifiers = {
 		global_missionary_strength = 0.01
 		global_heretic_missionary_strength = 0.02
-		prestige_per_development_from_conversion = 0.5
+		prestige_per_development_from_conversion = 0.2
 	}
 	ai = {
 		factor = 1
@@ -299,7 +299,7 @@ brothers_in_arms_reform = {
 	
 	modifiers = {
 		mercenary_discipline = 0.025
-		leader_cost = -0.25
+		leader_cost = -0.15
 	}
 	ai = {
 		factor = 1
@@ -437,6 +437,7 @@ secular_law_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_unrest = -1
+		tolerance_heretic = 1
 	}
 	ai = {
 		factor = 1
