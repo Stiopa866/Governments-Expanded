@@ -150,7 +150,7 @@ martial_society_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.2
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -162,7 +162,7 @@ civil_society_reform = {
 		global_tax_modifier = 0.05
 		yearly_corruption = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -176,7 +176,7 @@ religious_societies_reform = {
 		stability_cost_modifier = -0.1
 		religious_unity = 0.15
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -187,7 +187,7 @@ lip_service_reform = {
 	modifiers = {
 		land_maintenance_modifier = -0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -201,7 +201,7 @@ retain_tribal_hierarchy_reform = {
 		max_states = 3
 		max_absolutism = 10
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -213,7 +213,7 @@ centralize_tribal_power_reform = {
 		core_creation = -0.05
 		stability_cost_modifier = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -259,8 +259,8 @@ tribe_becomes_monarchy_reform = {
 		}
 		change_government = monarchy
 	}
-	ai_chance = {
-		factor = 20
+	ai = {
+		factor = 1
 	}
 }
 
@@ -308,8 +308,12 @@ tribe_becomes_republic_reform = {
 		}
 		change_government = republic
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_reform = steppe_horde
+		}
 	}
 }
 
@@ -357,8 +361,12 @@ tribe_becomes_theocracy_reform = {
 		}
 		change_government = theocracy
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_reform = steppe_horde
+		}
 	}
 }
 
@@ -379,7 +387,7 @@ tribe_becomes_horde_reform = {
 		}
 		NOT = { has_reform = great_mongol_state_reform }
 	}
-	ai_chance = {
-		factor = 10
+	ai = {
+		factor = 1
 	}
 }

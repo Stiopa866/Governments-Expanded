@@ -748,7 +748,7 @@ republican_authoritarianism_reform = {
 	modifiers = {
 		global_unrest = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -768,7 +768,7 @@ nepotism_reform = {
 	custom_attributes = {
 		enables_nepotism = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -785,7 +785,7 @@ republicanism_reform = {
 	modifiers = {
 		republican_tradition = 0.2
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -801,7 +801,7 @@ council_of_captains_reform = {
 		pr_captains_influence = 0.1
 		privateer_efficiency = 0.33
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -817,7 +817,7 @@ articles_of_agreement_reform = {
 		republican_tradition = 0.5
 		global_sailors_modifier = 0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -832,7 +832,7 @@ smugglers_haven_reform = {
 		pr_smugglers_influence = 0.1
 		global_foreign_trade_power = 0.3
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -855,7 +855,7 @@ frequent_elections_reform = {
 		max_absolutism = -10
 		election_cycle = -1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -867,7 +867,7 @@ consolidation_of_power_reform = {
 		max_absolutism = 10
 		election_cycle = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -889,7 +889,7 @@ lottery_reform = {
 		election_on_death = yes
 	}
 	has_term_election = no
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -902,7 +902,7 @@ provincial_governments_reform = {
 	modifiers = {
 		state_maintenance_modifier = -0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -913,7 +913,7 @@ administrative_divisions_reform = {
 	modifiers = {
 		max_states = 5
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 		modifier = {
 			factor = 0
@@ -928,7 +928,7 @@ union_of_states_reform = {
 	modifiers = {
 		global_trade_power = 0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -943,7 +943,7 @@ presidential_reform = {
 	modifiers = {
 		embracement_cost = -0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -956,7 +956,7 @@ broaden_executive_powers_reform = {
 	modifiers = {
 		stability_cost_modifier = -0.15
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -967,7 +967,7 @@ devolution_of_powers_reform = {
 	modifiers = {
 		diplomats = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -988,7 +988,7 @@ pirate_king_reform = {
 		admirals_become_rulers = yes
 	}
 	has_term_election = no
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1009,7 +1009,7 @@ war_against_the_world_doctrine_reform = {
 	custom_attributes = {
 		gives_war_against_the_world_tooltip_dummy = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1031,7 +1031,7 @@ black_market_consortium_reform = {
 		can_use_trade_post = yes
 	}
 	boost_income = yes
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1044,7 +1044,7 @@ political_principle_reform = {
 	modifiers = {
 		possible_adm_policy = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1055,7 +1055,7 @@ moral_principle_reform = {
 	modifiers = {
 		possible_dip_policy = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1068,7 +1068,7 @@ landholders_reform = {
 	modifiers = {
 		manpower_recovery_speed = 0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1079,7 +1079,7 @@ citizenry_reform = {
 	modifiers = {
 		land_morale = 0.1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1093,7 +1093,7 @@ appointment_by_committee_reform = {
 		advisor_pool = 1
 		advisor_cost = -0.05
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1104,7 +1104,7 @@ bureaucratic_aparatus_reform = {
 	modifiers = {
 		min_autonomy_in_territories = -0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1116,7 +1116,7 @@ universal_suffrage_reform = {
 	modifiers = {
 		num_accepted_cultures = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1163,7 +1163,7 @@ seize_executive_power_reform = {
 			clr_country_flag = had_states_general_mechanic
 		}
 	}
-	ai_chance = {
+	ai = {
 		factor = 0
 	}
 }
@@ -1192,7 +1192,7 @@ strengthen_executive_powers_reform = {
 	modifiers = {
 		max_absolutism = 25
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -1205,6 +1205,6 @@ reinforce_republican_values_reform = {
 		reelection_cost = -0.1
 	}
 	ai = {
-		factor = 0
+		factor = 1
 	}
 }

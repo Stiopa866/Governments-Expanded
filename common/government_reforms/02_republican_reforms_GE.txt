@@ -109,6 +109,51 @@ genoan_republic_reform = {
 	}
 }
 
+old_swiss_confederation_reform = {
+	icon = old_confederacy
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = old_swiss_confederation_reform
+			primary_culture = swiss
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		republican_tradition = 0.25
+		infantry_cost = -0.10
+		min_autonomy = 10
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+	ai = {
+		factor = 100
+	}
+}
+
+independence_reform = {
+	icon = swiss_army
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = independence_reform
+			primary_culture = swiss
+		}
+	}
+	modifiers = {
+		war_exhaustion = -0.025
+		manpower_recovery_speed = 0.10
+		infantry_power = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 demedici_dynasty_reform = {
 	icon = de_medici
 	allow_normal_conversion = yes
@@ -117,6 +162,7 @@ demedici_dynasty_reform = {
 			have_had_reform = demedici_dynasty_reform
 			tag = LAN
 		}
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		max_absolutism = 5
@@ -124,8 +170,8 @@ demedici_dynasty_reform = {
 	custom_attributes = {
 		enables_demedici = yes
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 100
 	}
 }
 
@@ -137,6 +183,7 @@ rule_by_consent_reform = {
 			tag = GEN
 			was_tag = GEN
 		}
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		republican_tradition = 0.5
@@ -146,8 +193,8 @@ rule_by_consent_reform = {
 	custom_attributes = {
 		enables_deposition = yes
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 100
 	}
 }
 
@@ -156,12 +203,13 @@ support_borghese_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		republican_tradition = 0.3
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 10
 	}
 }
 
@@ -169,13 +217,14 @@ mixed_republic_reform = {
 	icon = peasants
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
 		reform_progress_growth = 0.10
-		stability_cost_modifier = -0.10
+		max_absolutism = 5
 	}
-	ai_chance = {
-		factor = 2
+	ai = {
+		factor = 1
 	}
 }
 
@@ -193,7 +242,7 @@ moedernegotie_reform = {
 		navy_tradition = 0.5
 		ship_power_propagation = 0.15
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#5% Burgher Influence, 10% Burgher Loyalty
@@ -217,8 +266,8 @@ factional_elections_reform = {
 	custom_attributes = {
 		enable_factional_elections = yes
 	}
-	ai_chance = {
-		factor = 0
+	ai = {
+		factor = 100
 	}
 }
 
@@ -235,7 +284,7 @@ vroedschappen_reform = {
 		candidate_random_bonus = 1
 		stability_cost_modifier = -0.10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#10% Burgher Influence
@@ -254,7 +303,26 @@ reforms_of_william_3_reform = {
 		mercenary_discipline = 0.05
 		reinforce_speed = 0.25
 	}
-	ai_chance = {
+	ai = {
+		factor = 100
+	}
+}
+
+reform_the_condotierri_reform = {
+	icon = swiss_mercenaries
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = reform_the_condotierri_reform
+			primary_culture = swiss
+		}
+	}
+	modifiers = {
+		army_tradition = 0.5
+		land_forcelimit_modifier = 0.15
+		possible_condottieri = 0.5
+	}
+	ai = {
 		factor = 100
 	}
 }
@@ -272,8 +340,8 @@ communal_territories_reform = {
 		years_of_nationalism = -5
 		min_autonomy_in_territories = -0.1
 	}
-	ai_chance = {
-		factor = 5
+	ai = {
+		factor = 100
 	}
 }
 
@@ -291,10 +359,31 @@ united_indian_companies_reform = {
 		trade_efficiency = 0.10
 		trade_company_investment_cost = -0.25
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#10% Burgher Loyalty
+}
+
+confederation_of_cantons_reform = {
+	icon = swiss_cantons
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = confederation_of_cantons_reform
+			primary_culture = swiss
+		}
+	}
+	modifiers = {
+		global_garrison_growth = 1
+		garrison_size = 0.25
+	}
+	custom_attributes = {
+		enables_mountain_towns = yes
+	}
+	ai = {
+		factor = 100
+	}
 }
 
 andrea_doria_constitution_reform = {
@@ -319,8 +408,8 @@ andrea_doria_constitution_reform = {
 	custom_attributes = {
 		enables_disables_deposition = yes
 	}
-	ai_chance = {
-		factor = 1
+	ai = {
+		factor = 100
 	}
 }
 
@@ -337,7 +426,7 @@ ware_vrijheid_reform = {
 		republican_tradition = 0.25
 		reform_progress_growth = 0.15
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-10 Noble Influence, -10% Noble Loyalty
@@ -351,13 +440,13 @@ stadholder_reform = {
 	}
 	modifiers = {
 		republican_tradition = -0.5
-		max_absolutism = 10
+		max_absolutism = 5
 		army_tradition = 1
 	}
 	royal_marriage = yes
 	#15nobleinfluence
-	ai_chance = {
-		factor = 0.1
+	ai = {
+		factor = 100
 	}
 }
 
@@ -375,7 +464,7 @@ confederation_of_states_reform = {
 		improve_relation_modifier = 0.15
 		max_absolutism = -10
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -394,7 +483,7 @@ tolerant_principle_reform = {
 		advisor_cost = -0.10
 		advisor_pool = 1
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#-10 Church Influence, -10% Church Loyalty
@@ -415,7 +504,7 @@ regents_reform = {
 	custom_attributes = {
 		enables_regent_investments = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 	#5 Burgher Influence, 10% Burgher Loyalty
@@ -434,7 +523,7 @@ raadspensionaris_reform = {
 		free_dip_policy = 1
 		global_autonomy = -0.025
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
-	}
+	}	
 }

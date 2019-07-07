@@ -54,6 +54,7 @@ monarchy = {
 				arch_duchy_reform
 				habsburg_monarchy_reform
 				austrian_empire_reform
+				polish_constitutionalism_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -94,6 +95,11 @@ monarchy = {
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
 				albertine_line_reform
+				magnate_law_reform
+				imperial_knights_reform
+				mamluk_privileges_reform
+				szlachta_authority_reform
+				every_man_a_noble_reform
 			}
 		}
 		bureaucracy = {
@@ -124,11 +130,17 @@ monarchy = {
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
+				magnate_govenors_reform
+				revive_the_hisbah_reform
+				re_enforce_magdeburg_rights_reform
+				revoke_magnate_estates_reform
+				integrate_tatars_reform
 			}
 		}
 		military_organisation = {
 			reforms = {
 				feudal_levies_reform
+				national_guard_reform
 				mercenary_corps_reform
 				professional_army_reform
 				italian_mercenaries_reform
@@ -146,6 +158,9 @@ monarchy = {
 				gustavan_artillery_reform
 				the_black_guard_reform
 				reorganize_the_imperial_army
+				arabian_horses_reform
+				pospolite_ruszenie_reform
+				polish_national_guard_reform
 			}
 		}
 		growth_of_administration = {
@@ -173,6 +188,11 @@ monarchy = {
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
 				declario_ferdinandei_reform
+				imperial_circles_administration_reform
+				szlachta_recruits_reform
+				voivode_captains_reform
+				boyar_scions_reform
+				turkicized_elite_reform
 			}
 		}
 		deliberative_assembly = {
@@ -187,6 +207,9 @@ monarchy = {
 				parliamentary_order_reform
 				king_and_duke_reform
 				diverse_estates_reform
+				foreign_recruitment_reform
+				reform_the_sejm_reform
+				abolish_the_sejm_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -201,6 +224,8 @@ monarchy = {
 				nueva_planta_decrees_reform
 				toleration_of_all_faiths_edict_reform
 				abolish_the_haandfaestning_reform
+				revoke_reichsfreiheit_reform
+				constitution_third_may_reform
 			}
 		}
 		separation_of_power = {
@@ -268,6 +293,8 @@ monarchy = {
 		elective_monarchy
 		celestial_empire
 		crown_of_saint_wenceslaus
+		elective_monarchy_reform
+		polish_constitutionalism_reform
 	}
 
 	#Flavor
@@ -278,6 +305,7 @@ monarchy = {
 		states_general_reform
 		parliamentary_reform
 		crown_of_saint_wenceslaus
+		polish_constitutionalism_reform
 	}
 
 	color = { 179 25 25 }
@@ -340,6 +368,7 @@ republic = {
 				florentine_republic
 				american_government
 				genoan_republic_reform
+				old_swiss_confederation_reform
 			}
 		}
 		republican_virtues = {
@@ -359,6 +388,7 @@ republic = {
 				rule_by_consent_reform
 				moedernegotie_reform
 				mixed_republic_reform
+				independence_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -386,6 +416,7 @@ republic = {
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				reforms_of_william_3_reform
+				reform_the_condotierri_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -396,6 +427,7 @@ republic = {
 				advanced_bookkeeping_reform
 				communal_territories_reform
 				united_indian_companies_reform
+				confederation_of_cantons_reform
 			}
 		}
 		parliamentary_vs_presidential = {

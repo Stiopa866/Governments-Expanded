@@ -299,6 +299,12 @@ country_event = {
 			has_reform = council_of_sheikhs_reform
 			has_reform = blood_tax_reform
 			has_reform = house_of_knights_reform
+			has_reform = constitutio_valdemariana_reform
+			has_reform = albertine_line_reform
+			has_reform = magnate_law_reform
+			has_reform = mamluk_privileges_reform
+			has_reform = imperial_knights_reform
+			has_reform = szlachta_authority_reform
 		}
 	}
 
@@ -379,6 +385,12 @@ country_event = {
 			has_reform = council_of_sheikhs_reform
 			has_reform = blood_tax_reform
 			has_reform = house_of_knights_reform
+			has_reform = constitutio_valdemariana_reform
+			has_reform = albertine_line_reform
+			has_reform = magnate_law_reform
+			has_reform = mamluk_privileges_reform
+			has_reform = imperial_knights_reform
+			has_reform = szlachta_authority_reform
 		}
 	}
 
@@ -436,6 +448,8 @@ country_event = {
 			has_reform = quash_noble_power_reform
 			has_reform = lithuania_law_reform
 			has_reform = portuguese_cortes_reform
+			has_reform = riksradet_norway_reform
+			has_reform = every_man_a_noble_reform
 		}
 	}
 
@@ -472,6 +486,8 @@ country_event = {
 			has_reform = quash_noble_power_reform
 			has_reform = lithuania_law_reform
 			has_reform = portuguese_cortes_reform
+			has_reform = riksradet_norway_reform
+			has_reform = every_man_a_noble_reform
 		}
 	}
 
@@ -506,6 +522,8 @@ country_event = {
 		remove_government_reform = quash_noble_power_reform
 		remove_government_reform = lithuania_law_reform
 		remove_government_reform = portuguese_cortes_reform
+		remove_government_reform = riksradet_norway_reform
+		remove_government_reform = every_man_a_noble_reform
 		reduce_reform_progress_small_effect = yes
 	}
 }
@@ -1158,6 +1176,8 @@ country_event = {
 			has_reform = oprichnina_reform
 			has_reform = constitutio_joachimica_reform
 			has_reform = ancien_regime_reform
+			has_reform = revive_the_hisbah_reform
+			has_reform = revoke_magnate_estates_reform
 		}
 	}
 
@@ -1198,6 +1218,8 @@ country_event = {
 			has_reform = oprichnina_reform
 			has_reform = constitutio_joachimica_reform
 			has_reform = ancien_regime_reform
+			has_reform = revive_the_hisbah_reform
+			has_reform = revoke_magnate_estates_reform
 		}
 	}
 
@@ -1235,6 +1257,14 @@ country_event = {
 					has_reform = blood_tax_reform
 					has_reform = quash_noble_power_reform
 					has_reform = lithuania_law_reform
+					has_reform = constitutio_valdemariana_reform
+					has_reform = riksradet_norway_reform
+					has_reform = albertine_line_reform
+					has_reform = magnate_law_reform
+					has_reform = mamluk_privileges_reform
+					has_reform = imperial_knights_reform
+					has_reform = szlachta_authority_reform
+					has_reform = every_man_a_noble_reform
 				}
 			}	
 		}
@@ -1293,6 +1323,12 @@ country_event = {
 				has_reform = akritai_privileges_reform
 				has_reform = council_of_sheikhs_reform
 				has_reform = blood_tax_reform
+				has_reform = constitutio_valdemariana_reform
+				has_reform = albertine_line_reform
+				has_reform = magnate_law_reform
+				has_reform = mamluk_privileges_reform
+				has_reform = imperial_knights_reform
+				has_reform = szlachta_authority_reform
 			}	
 		}
 		
@@ -1332,6 +1368,8 @@ country_event = {
 			OR = {
 				has_reform = quash_noble_power_reform
 				has_reform = lithuania_law_reform
+				has_reform = riksradet_norway_reform
+				has_reform = every_man_a_noble_reform
 			}	
 		}
 		
@@ -1362,6 +1400,8 @@ country_event = {
 		OR = {
 			has_reform = decentralize_reform
 			has_reform = millet_reform
+			has_reform = integrate_tatars_reform
+			has_reform = re_enforce_magdeburg_rights_reform
 		}
 	}
 
@@ -1421,6 +1461,8 @@ country_event = {
 		OR = {
 			has_reform = decentralize_reform
 			has_reform = millet_reform
+			has_reform = integrate_tatars_reform
+			has_reform = re_enforce_magdeburg_rights_reform
 		}
 	}
 
@@ -1477,6 +1519,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = regional_forts_reform
+			has_reform = magnate_govenors_reform
 		}
 	}
 
@@ -1539,6 +1582,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = regional_forts_reform
+			has_reform = magnate_govenors_reform
 		}
 	}
 
@@ -1812,6 +1856,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = clergy_in_administration_reform
+			has_reform = declario_ferdinandei_reform
 		}
 	}
 
@@ -1898,6 +1943,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = clergy_in_administration_reform
+			has_reform = declario_ferdinandei_reform
 		}
 	}
 
@@ -1935,6 +1981,11 @@ country_event = {
 			has_reform = koprulu_dynasty_reform
 			has_reform = conseil_du_roi_reform
 			has_reform = table_of_ranks_reform
+			has_reform = szlachta_recruits_reform
+			has_reform = voivode_captains_reform
+			has_reform = boyar_scions_reform
+			has_reform = turkicized_elite_reform
+			has_reform = imperial_circles_administration_reform
 		}
 	}
 
@@ -1983,6 +2034,11 @@ country_event = {
 			has_reform = koprulu_dynasty_reform
 			has_reform = conseil_du_roi_reform
 			has_reform = table_of_ranks_reform
+			has_reform = szlachta_recruits_reform
+			has_reform = voivode_captains_reform
+			has_reform = boyar_scions_reform
+			has_reform = turkicized_elite_reform
+			has_reform = imperial_circles_administration_reform
 		}
 	}
 
@@ -2021,6 +2077,8 @@ country_event = {
 			has_reform = koprulu_dynasty_reform
 			has_reform = sulu_administration_reform
 			has_reform = house_of_knights_reform
+			has_reform = the_judicature_ordinance_reform
+			has_reform = christian_four_merchantile_reform
 		}
 	}
 
@@ -2072,6 +2130,8 @@ country_event = {
 			has_reform = koprulu_dynasty_reform
 			has_reform = sulu_administration_reform
 			has_reform = house_of_knights_reform
+			has_reform = the_judicature_ordinance_reform
+			has_reform = christian_four_merchantile_reform
 		}
 	}
 
@@ -2463,6 +2523,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = royal_decree_reform
+			has_reform = king_and_duke_reform
 		}
 	}
 
@@ -2495,6 +2556,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = royal_decree_reform
+			has_reform = king_and_duke_reform
 		}
 	}
 
@@ -2531,6 +2593,9 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = aristocratic_court_reform
+			has_reform = foreign_recruitment_reform
+			has_reform = reform_the_sejm_reform
+
 		}
 	}
 
@@ -2566,6 +2631,8 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = aristocratic_court_reform
+			has_reform = foreign_recruitment_reform
+			has_reform = reform_the_sejm_reform
 		}
 	}
 
@@ -2599,6 +2666,8 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = general_estates_reform
+			has_reform = abolish_the_sejm_reform
+			has_reform = diverse_estates_reform
 		}
 	}
 
@@ -2641,6 +2710,8 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = general_estates_reform
+			has_reform = abolish_the_sejm_reform
+			has_reform = diverse_estates_reform
 		}
 	}
 
@@ -2684,6 +2755,8 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = letat_cest_moi_reform
+			has_reform = revoke_reichsfreiheit_reform
+			has_reform = abolish_the_haandfaestning_reform
 		}
 	}
 
@@ -2737,6 +2810,8 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = letat_cest_moi_reform
+			has_reform = revoke_reichsfreiheit_reform
+			has_reform = abolish_the_haandfaestning_reform
 		}
 	}
 
@@ -2989,6 +3064,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = constitutional_equality_reform
+			has_reform = constitution_third_may_reform
 		}
 	}
 
@@ -3017,6 +3093,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = constitutional_equality_reform
+			has_reform = constitution_third_may_reform
 		}
 	}
 
@@ -3253,6 +3330,7 @@ country_event = {
 			has_reform = feudal_levies_reform
 			has_reform = turkish_iqta_reform
 			has_reform = imperial_circles_reform
+			has_reform = pospolite_ruszenie_reform
 		}
 	}
 
@@ -3319,6 +3397,12 @@ country_event = {
 				has_reform = akritai_privileges_reform
 				has_reform = council_of_sheikhs_reform
 				has_reform = blood_tax_reform
+				has_reform = constitutio_valdemariana_reform
+				has_reform = albertine_line_reform
+				has_reform = magnate_law_reform
+				has_reform = mamluk_privileges_reform
+				has_reform = imperial_knights_reform
+				has_reform = szlachta_authority_reform
 			}	
 		}
 		
@@ -3343,6 +3427,7 @@ country_event = {
 			has_reform = feudal_levies_reform
 			has_reform = turkish_iqta_reform
 			has_reform = imperial_circles_reform
+			has_reform = pospolite_ruszenie_reform
 		}
 	}
 
@@ -3376,6 +3461,7 @@ country_event = {
 		
 		trigger = {
 			has_reform = regional_forts_reform
+			has_reform = magnate_govenors_reform
 		}
 		
 		highlight = yes
@@ -3400,6 +3486,7 @@ country_event = {
 			has_reform = mercenary_corps_reform
 			has_reform = italian_mercenaries_reform
 			has_reform = tatar_mercenaries_reform
+			has_reform = the_black_guard_reform
 		}
 	}
 
@@ -3441,6 +3528,7 @@ country_event = {
 			has_reform = mercenary_corps_reform
 			has_reform = italian_mercenaries_reform
 			has_reform = tatar_mercenaries_reform
+			has_reform = the_black_guard_reform
 		}
 	}
 
@@ -3482,6 +3570,12 @@ country_event = {
 			has_reform = foreign_formation_regiments_reform
 			has_reform = general_war_commissariat_reform
 			has_reform = house_of_knights_reform
+			has_reform = gustavan_artillery_reform
+			has_reform = arabian_horses_reform
+			has_reform = polish_national_guard_reform
+			has_reform = national_guard_reform
+			has_reform = reforms_of_william_3_reform
+			has_reform = reform_the_condotierri_reform
 		}
 	}
 
@@ -3523,6 +3617,12 @@ country_event = {
 			has_reform = foreign_formation_regiments_reform
 			has_reform = general_war_commissariat_reform
 			has_reform = house_of_knights_reform
+			has_reform = gustavan_artillery_reform
+			has_reform = arabian_horses_reform
+			has_reform = polish_national_guard_reform
+			has_reform = national_guard_reform
+			has_reform = reforms_of_william_3_reform
+			has_reform = reform_the_condotierri_reform
 		}
 	}
 
@@ -3562,6 +3662,8 @@ country_event = {
 				has_reform = quash_noble_power_reform
 				has_reform = lithuania_law_reform
 				has_reform = portuguese_cortes_reform
+				has_reform = riksradet_norway_reform
+				has_reform = every_man_a_noble_reform
 			}
 		}
 		

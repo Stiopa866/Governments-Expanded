@@ -20,6 +20,12 @@ Regent_Investments = {
 Feudal_Power = {
 	local_manpower_modifier = 0.15
 }
+Magnate_Law = {
+	local_unrest = -1
+}
+Mountain_Towns = {
+	local_development_cost = -0.25
+}
 Religious_Domination = {
 	tolerance_own = 1
 }
@@ -37,6 +43,77 @@ Blood_Tax_4 = {
 }
 Blood_Tax_5 = {
 	global_manpower_modifier = 0.25
+}
+Arabian_Horses_1 = {
+	cavalry_power = 0.05
+}
+Arabian_Horses_2 = {
+	cavalry_power = 0.10
+}
+Arabian_Horses_3 = {
+	cavalry_power = 0.15
+}
+Arabian_Horses_4 = {
+	cavalry_power = 0.20
+}
+Arabian_Horses_5 = {
+	cavalry_power = 0.25
+}
+Mercenary_Markets_1 = {
+	possible_mercenaries = 0.05
+	mercenary_discipline = 0.01
+}
+Mercenary_Markets_2 = {
+	possible_mercenaries = 0.10
+	mercenary_discipline = 0.02
+}
+Mercenary_Markets_3 = {
+	possible_mercenaries = 0.15
+	mercenary_discipline = 0.03
+}
+Mercenary_Markets_4 = {
+	possible_mercenaries = 0.20
+	mercenary_discipline = 0.04
+}
+Mercenary_Markets_5 = {
+	possible_mercenaries = 0.25
+	mercenary_discipline = 0.05
+}
+Mercenary_Markets_6 = {
+	possible_mercenaries = 0.30
+	mercenary_discipline = 0.06
+}
+Mercenary_Markets_7 = {
+	possible_mercenaries = 0.35
+	mercenary_discipline = 0.07
+}
+Mercenary_Markets_8 = {
+	possible_mercenaries = 0.40
+	mercenary_discipline = 0.08
+}
+Mercenary_Markets_9 = {
+	possible_mercenaries = 0.45
+	mercenary_discipline = 0.09
+}
+Mercenary_Markets_10 = {
+	possible_mercenaries = 0.50
+	mercenary_discipline = 0.10
+}
+National_Strenghtening_Project = {
+	local_monthly_devastation = -0.05
+	local_manpower_modifier = 0.15
+	local_hostile_movement_speed = -0.20
+}
+Rallied_For_War = {
+	land_morale = 0.05
+	recover_army_morale_speed = 0.1
+}
+Patriotism = {
+	local_manpower_modifier = 0.25
+}
+Town_Rights = {
+	local_development_cost = -0.10
+	trade_goods_size = 0.2
 }
 
 #Cortez
