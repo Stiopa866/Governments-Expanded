@@ -1870,16 +1870,16 @@ country_event = {
 	
 
 	trigger = {
-		has_government_attribute = mechanic_enables_town_rights_yes
+		#has_government_attribute = enables_town_rights#
 		any_owned_province = {
 			OR = {
 				AND = {
-					has_estate = estate_burgher
+					has_estate = estate_burghers
 					NOT = { has_province_modifier = Town_Rights }
 				}
 				AND = {
-					NOT = { has_estate = estate_burgher }
-					has_province_modifier = Town_Rights
+					NOT = { has_estate = estate_burghers}
+					has_province_modifier = Town_Rights 
 				}
 			}
 		}
@@ -1892,7 +1892,7 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				has_estate = estate_burgher
+				has_estate = estate_burghers
 				NOT = {	has_province_modifier = Town_Rights }
             }
 			add_province_modifier = {
@@ -1902,10 +1902,10 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { has_estate = estate_burgher }
-				has_province_modifier = Town_Rights
+				NOT = { has_estate = estate_burghers}
+				has_province_modifier = Town_Rights 
             }
-			remove_province_modifier = Town_Rights
+			remove_province_modifier = Town_Rights 
 		}
 	}
 	
