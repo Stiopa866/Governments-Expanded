@@ -429,7 +429,7 @@ habsburg_monarchy_reform = {
 		}
 		have_had_reform = habsburg_monarchy_reform
 	}
-	fixed_rank = 3
+	fixed_rank = 2
 	modifiers = {
 		tolerance_own = 1
 		mil_advisor_cost = -0.15
@@ -459,6 +459,7 @@ austrian_empire_reform = {
 		total_development = 500
 		have_had_reform = austrian_empire_reform
 	}
+	fixed_rank = 3
 	modifiers = {
 		harsh_treatment_cost = -0.15
 		monarch_diplomatic_power = 1
@@ -643,8 +644,8 @@ growth_signoria_reform = {
 		stability_cost_modifier = -0.15
 		army_tradition = 0.25
 	}
-	ai_chance = {
-		factor = 100
+	ai = {
+		factor = 10
 	}
 }
 
@@ -1698,7 +1699,7 @@ declario_ferdinandei_reform = {
 	}
 	modifiers = {
 		religious_unity = 0.20
-		imperial_authority = 0.025
+		imperial_authority = 0.05
 	}
 	ai = {
 		factor = 100

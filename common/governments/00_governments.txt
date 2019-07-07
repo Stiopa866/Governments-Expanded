@@ -405,6 +405,7 @@ republic = {
 		military_organisation = {
 			reforms = {
 				feudal_levies_reform
+				national_guard_reform
 				mercenary_corps_reform
 				professional_army_reform
 				italian_mercenaries_reform
