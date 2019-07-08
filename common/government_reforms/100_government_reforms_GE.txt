@@ -1410,6 +1410,7 @@ szlachta_recruits_reform = {
 			}
 			have_had_reform = szlachta_recruits_reform
 		}
+		has_estate = estate_nobles
 	}
 	trigger = {
 		OR = {
@@ -1440,6 +1441,7 @@ voivode_captains_reform = {
 			}
 			have_had_reform = voivode_captains_reform
 		}
+		has_estate = estate_nobles
 	}
 	trigger = {
 		OR = {
@@ -1468,6 +1470,7 @@ boyar_scions_reform = {
 			}
 			have_had_reform = boyar_scions_reform
 		}
+		has_estate = estate_nobles
 	}
 	trigger = {
 		culture_group = east_slavic
@@ -2045,7 +2048,9 @@ nizam_i_jedid_reform = {
 feudal_levies_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
-	potential = { }
+	potential = { 
+		has_estate = estate_nobles
+	}
 	modifiers = {
 		war_taxes_cost_modifier = -1
 	}
