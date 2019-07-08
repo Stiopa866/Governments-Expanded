@@ -976,6 +976,9 @@ quash_noble_power_reform = {
 	modifiers = {
 		global_tax_modifier = 0.1
 	}
+	custom_attributes = {
+		enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency
+	}
 	ai = {
 		factor = 1
 	}

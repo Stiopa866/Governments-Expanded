@@ -990,7 +990,10 @@ regional_forts_reform = {
 	}
 	modifiers = {
 		garrison_size = 0.15
-		state_maintenance_modifier = -0.25
+		fort_maintenance_modifier = -0.1
+	}
+	custom_attributes = {
+		enables_administrative_forts = yes #-25% State Maintenance
 	}
 	ai = {
 		factor = 1
@@ -1036,7 +1039,9 @@ theocratic_bureacrats_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
-		development_cost = -0.05
+	}
+	custom_attributes = {
+		enables_holy_tithe = yes #5% Tax per TOTF over 4
 	}
 	ai = {
 		factor = 1
@@ -1495,7 +1500,6 @@ imperial_circles_administration_reform = {
 		NOT = { culture_group = latin }
 		NOT = { primary_culture = swiss }
 		NOT = { tag = DTT }
-		NOT = { tag = BOH }
 		NOT = { tag = SIL }
 	}
 	trigger = {
@@ -1503,8 +1507,9 @@ imperial_circles_administration_reform = {
 	}
 	modifiers = {
 		global_unrest = -1
-		development_cost = -0.05
-		global_tax_modifier = 0.10
+	}
+	custom_attributes = {
+		enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced
 	}
 	ai = {
 		factor = 10
@@ -2162,7 +2167,6 @@ imperial_circles_reform = {
 		NOT = { culture_group = latin }
 		NOT = { primary_culture = swiss }
 		NOT = { tag = DTT }
-		NOT = { tag = BOH }
 		NOT = { tag = SIL }
 	}
 	trigger = {

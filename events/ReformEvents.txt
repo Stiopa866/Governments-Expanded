@@ -1971,9 +1971,9 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				has_province_modifier =Town_Rights
+				has_province_modifier = Town_Rights
             }
-			remove_province_modifier =Town_Rights
+			remove_province_modifier = Town_Rights
 		}
 	}
 	
@@ -1982,3 +1982,397 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.29
+	title = reform_me_events.29.t
+	desc = reform_me_events.29.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = { 
+		has_government_attribute = enables_administrative_forts 
+		any_owned_province = {
+			OR = {
+				AND = {
+					any_province_in_state = {
+						fort_level = 2
+						}
+					NOT = { has_province_modifier = "Administrative_Forts" }
+				}
+				AND = {
+					NOT = {
+						any_province_in_state = {
+							fort_level = 2
+						}
+					}
+					has_province_modifier = Administrative_Forts
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				any_province_in_state = {
+					fort_level = 2
+					}
+				NOT = { has_province_modifier = "Administrative_Forts" }
+            }
+			add_province_modifier = {
+				name = "Administrative_Forts"
+				duration = -1
+				hidden = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = {
+					any_province_in_state = {
+						fort_level = 2
+					}
+				}
+				has_province_modifier = Administrative_Forts
+            }
+			remove_province_modifier = Administrative_Forts
+		}
+	}
+	
+	option = {
+		name = reform_me_events.29.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.30
+	title = reform_me_events.30.t
+	desc = reform_me_events.30.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_administrative_forts }
+		any_owned_province = {
+			has_province_modifier = Administrative_Forts
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Administrative_Forts
+            }
+			remove_province_modifier = Administrative_Forts
+		}
+	}
+	
+	option = {
+		name = reform_me_events.30.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.31
+	title = reform_me_events.31.t
+	desc = reform_me_events.31.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_abolish_noble_customs
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_nobles
+					NOT = {	has_province_modifier = Abolished_Customs }
+				}
+				AND = {
+					NOT = { has_estate = estate_nobles }
+					has_province_modifier = Abolished_Customs
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_nobles
+				NOT = {	has_province_modifier = Abolished_Customs }
+            }
+			add_province_modifier = {
+				name = "Abolished_Customs"
+				duration = -1
+				hidden = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_estate = estate_nobles }
+				has_province_modifier = Abolished_Customs
+            }
+			remove_province_modifier = Abolished_Customs
+		}
+	}
+	
+	option = {
+		name = reform_me_events.31.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.32
+	title = reform_me_events.32.t
+	desc = reform_me_events.32.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_abolish_noble_customs }
+		any_owned_province = {
+			has_province_modifier = Abolished_Customs
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Abolished_Customs
+            }
+			remove_province_modifier = Abolished_Customs
+		}
+	}
+	
+	option = {
+		name = reform_me_events.32.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.33
+	title = reform_me_events.33.t
+	desc = reform_me_events.33.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_holy_tithe
+		OR = {
+			AND = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 4
+				}
+				NOT = { has_country_modifier = Holy_Tithe_1 }
+			}
+			AND = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 5
+				}
+				NOT = { has_country_modifier = Holy_Tithe_2 }
+			}
+			AND = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 6
+				}
+				NOT = { has_country_modifier = Holy_Tithe_3 }
+			}
+			AND = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 7
+				}
+				NOT = { has_country_modifier = Holy_Tithe_4 }
+			}
+			AND = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 8
+				}
+				NOT = { has_country_modifier = Holy_Tithe_5 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 5
+				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 6
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Holy_Tithe_1 
+				duration = -1
+			}
+			remove_country_modifier = Holy_Tithe_2 
+			remove_country_modifier = Holy_Tithe_3 
+			remove_country_modifier = Holy_Tithe_4 
+			remove_country_modifier = Holy_Tithe_5 
+		}
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 6
+				}
+				NOT = { 				
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 7
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Holy_Tithe_2
+				duration = -1
+			}
+			remove_country_modifier = Holy_Tithe_1
+			remove_country_modifier = Holy_Tithe_3 
+			remove_country_modifier = Holy_Tithe_4 
+			remove_country_modifier = Holy_Tithe_5 
+		}
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 7
+				}
+				NOT = { 				
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 8
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Holy_Tithe_3
+				duration = -1
+			}
+			remove_country_modifier = Holy_Tithe_1 
+			remove_country_modifier = Holy_Tithe_2 
+			remove_country_modifier = Holy_Tithe_4 
+			remove_country_modifier = Holy_Tithe_5 
+		}
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 8
+				}
+				NOT = { 				
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 9
+					}
+				}
+			}
+			add_country_modifier = {
+				name = Holy_Tithe_4
+				duration = -1
+			}
+			remove_country_modifier = Holy_Tithe_1
+			remove_country_modifier = Holy_Tithe_2 
+			remove_country_modifier = Holy_Tithe_3 
+			remove_country_modifier = Holy_Tithe_5 
+		}
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 9
+				}
+			}
+			add_country_modifier = {
+				name = Holy_Tithe_5
+				duration = -1
+			}
+			remove_country_modifier = Holy_Tithe_1 
+			remove_country_modifier = Holy_Tithe_2 
+			remove_country_modifier = Holy_Tithe_3 
+			remove_country_modifier = Holy_Tithe_4
+		}
+	}
+	
+	option = {
+		name = reform_me_events.33.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.34
+	title = reform_me_events.34.t
+	desc = reform_me_events.34.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_holy_tithe }
+		OR = {
+			has_country_modifier = Holy_Tithe_1
+			has_country_modifier = Holy_Tithe_2
+			has_country_modifier = Holy_Tithe_3
+			has_country_modifier = Holy_Tithe_4
+			has_country_modifier = Holy_Tithe_5
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			remove_country_modifier = Holy_Tithe_1
+			remove_country_modifier = Holy_Tithe_2 
+			remove_country_modifier = Holy_Tithe_3 
+			remove_country_modifier = Holy_Tithe_4 
+			remove_country_modifier = Holy_Tithe_5 
+	}
+	
+	option = {
+		name = reform_me_events.34.a
+		
+	}
+}
+

@@ -69,10 +69,6 @@ monarchy = {
 				deccani_society_reform
 				mughal_government
 				#ME
-				incan_society_reform
-				aztec_society_reform
-				maya_society_reform
-				zoroastrian_first_reform
 				sharia_reform
 				#GE
 				papal_embassy_reform
@@ -110,8 +106,6 @@ monarchy = {
 				mansabdari_reform
 				council_of_the_indies_reform
 				#ME
-				imperial_reform
-				colonial_reform
 				tur_reform_beylerbeys
 				tur_reform_eyalets
 				#GE
@@ -171,10 +165,6 @@ monarchy = {
 				dakhni_culture_reform
 				zabt_reform
 				#ME
-				integration_reform
-				isolationist_reform
-				incan_administration_reform
-				zoroastrian_second_reform
 				#GE
 				integrate_moneyloaners_reform
 				advanced_bookkeeping_reform
@@ -217,7 +207,6 @@ monarchy = {
 				letat_cest_moi_reform
 				regional_representation_reform
 				#ME
-				coptic_religious_reform
 				#GE
 				freedom_of_religion_reform
 				constitutional_equality_reform
@@ -439,7 +428,6 @@ republic = {
 				war_against_the_world_doctrine_reform
 				black_market_consortium_reform
 				# ME Reforms:
-				imperial_reform
 				#GE
 				stadholder_reform
 				andrea_doria_constitution_reform
@@ -529,9 +517,6 @@ tribal = {
 				gond_kingdom
 				great_mongol_state_reform
 				# ME Reforms:
-				incan_society_reform
-				aztec_society_reform
-				maya_society_reform
 			}
 		}
 		tribal_cultural_values = {
