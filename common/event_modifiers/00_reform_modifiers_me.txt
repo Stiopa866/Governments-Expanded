@@ -137,6 +137,36 @@ Holy_Tithe_4 = {
 Holy_Tithe_5 = {
 	global_tax_modifier = 0.25
 }
+General_Connections_1 = {
+	army_tradition = 0.1
+}
+General_Connections_2 = {
+	army_tradition = 0.2
+}
+General_Connections_3 = {
+	army_tradition = 0.3
+}
+General_Connections_4 = {
+	army_tradition = 0.4
+}
+General_Connections_5 = {
+	army_tradition = 0.5
+}
+General_Connections_6 = {
+	navy_tradition = 0.1
+}
+General_Connections_7 = {
+	navy_tradition = 0.2
+}
+General_Connections_8 = {
+	navy_tradition = 0.3
+}
+General_Connections_9 = {
+	navy_tradition = 0.4
+}
+General_Connections_10 = {
+	navy_tradition = 0.5
+}
 
 
 

@@ -1190,6 +1190,9 @@ of_noble_bearing_reform = {
 		leader_cost = -0.1
 		#Extra Loyalty
 	}
+	custom_attributes = {
+		enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
+	}
 	ai = {
 		factor = 1
 	}

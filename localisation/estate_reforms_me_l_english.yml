@@ -362,7 +362,7 @@
  arabian_horses_reform: "Arabian Horses"
  arabian_horses_reform_desc: "By establishing Arabian marches we can guarentee a steady supply of suitable and strong horses for our military. Our riders will be veterans ready to strike at our enemies flanks. We shall crush the enemy under our steeds' hooves."
  foreign_recruitment_reform: "Foreign Recruitment"
- foreign_recruitment_reform_desc: "By sending our merchants off to many foreign places we can ensure our supply of new Mamluks will never be cut off again as it was during the mongol and crusader invasions."
+ foreign_recruitment_reform_desc: "By sending our merchants off to many foreign places—we can ensure our supply of new Mamluks— which will never be cut off again as it was during the Mongol and Crusader Invasions."
  polish_constitutionalism_reform: "Polish Constitutionalism"
  polish_constitutionalism_reform_desc: "The Sejm and Szlachta are tearing our country apart with their petty squabbles and foreign patrons, if we are to survive we need to institute a universal constitution. A constitution to save the commonwealth!"
  szlachta_authority_reform: "Szlachta Authority"
@@ -420,7 +420,8 @@
  mechanic_enables_administrative_forts_yes: "Administrative Forts: §G-25%§! State Maintenance in each state with a fort."
  mechanic_enables_abolish_noble_customs_yes: "Abolish Noble Customs: Halve the Production Efficiency and Trade Power penalty in Noble Estate provinces."
  mechanic_enables_holy_tithe_yes: "Holy Tithe: §G+5%§! National Tax Modifier for each Tolerance of the True Faith over 4."
- 
+ mechanic_enables_general_connections_yes: "General Connections: §G+0.1§! Army/Naval Tradition per General/Admiral."
+ mechanic_enables_merchant_privileges_yes: "Merchant Privileges: Gain 1 mercantilism every time you ask for contribution”
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

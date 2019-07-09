@@ -2189,12 +2189,24 @@ country_event = {
 					which = tolerance_own
 					value = 4
 				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 5
+					}
+				}
 				NOT = { has_country_modifier = Holy_Tithe_1 }
 			}
 			AND = {
 				has_global_modifier_value = {
 					which = tolerance_own
 					value = 5
+				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 6
+					}
 				}
 				NOT = { has_country_modifier = Holy_Tithe_2 }
 			}
@@ -2203,12 +2215,24 @@ country_event = {
 					which = tolerance_own
 					value = 6
 				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 7
+					}
+				}
 				NOT = { has_country_modifier = Holy_Tithe_3 }
 			}
 			AND = {
 				has_global_modifier_value = {
 					which = tolerance_own
 					value = 7
+				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 8
+					}
 				}
 				NOT = { has_country_modifier = Holy_Tithe_4 }
 			}
@@ -2376,3 +2400,316 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = reform_me_events.35
+	title = reform_me_events.35.t
+	desc = reform_me_events.35.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_general_connections
+		OR = {
+			AND = {
+				num_of_generals = 1
+				NOT = { num_of_generals = 2 }
+				NOT = { has_country_modifier = General_Connections_1 }
+			}
+			AND = {
+				num_of_generals = 2
+				NOT = { num_of_generals = 3 }
+				NOT = { has_country_modifier = General_Connections_2 }
+			}
+			AND = {
+				num_of_generals = 3
+				NOT = { num_of_generals = 4 }
+				NOT = { has_country_modifier = General_Connections_3 }
+			}
+			AND = {
+				num_of_generals = 4
+				NOT = { num_of_generals = 5 }
+				NOT = { has_country_modifier = General_Connections_4 }
+			}
+			AND = {
+				num_of_generals = 5
+				NOT = { has_country_modifier = General_Connections_5 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				num_of_generals = 1
+				NOT = { num_of_generals = 2 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_1" 
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_2 
+			remove_country_modifier = General_Connections_3 
+			remove_country_modifier = General_Connections_4 
+			remove_country_modifier = General_Connections_5 
+		}
+		if = {
+			limit = {
+				num_of_generals = 2
+				NOT = { num_of_generals = 3 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_2"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_1 
+			remove_country_modifier = General_Connections_3 
+			remove_country_modifier = General_Connections_4 
+			remove_country_modifier = General_Connections_5  
+		}
+		if = {
+			limit = {
+				num_of_generals = 3
+				NOT = { num_of_generals = 4 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_3"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_1 
+			remove_country_modifier = General_Connections_2 
+			remove_country_modifier = General_Connections_4 
+			remove_country_modifier = General_Connections_5 
+		}
+		if = {
+			limit = {
+				num_of_generals = 4
+				NOT = { num_of_generals = 5 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_4"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_1 
+			remove_country_modifier = General_Connections_2 
+			remove_country_modifier = General_Connections_3 
+			remove_country_modifier = General_Connections_5 
+		}
+		if = {
+			limit = {
+				num_of_generals = 5
+			}
+			add_country_modifier = {
+				name = "General_Connections_5"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_1
+			remove_country_modifier = General_Connections_2 
+			remove_country_modifier = General_Connections_3 
+			remove_country_modifier = General_Connections_4 
+		}
+	}
+	
+	option = {
+		name = reform_me_events.35.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.36
+	title = reform_me_events.36.t
+	desc = reform_me_events.36.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_general_connections }
+		OR = {
+			has_country_modifier = General_Connections_1
+			has_country_modifier = General_Connections_2
+			has_country_modifier = General_Connections_3
+			has_country_modifier = General_Connections_4
+			has_country_modifier = General_Connections_5
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			remove_country_modifier = General_Connections_1 
+			remove_country_modifier = General_Connections_2 
+			remove_country_modifier = General_Connections_3 
+			remove_country_modifier = General_Connections_4 
+			remove_country_modifier = General_Connections_5 
+	}
+	
+	option = {
+		name = reform_me_events.36.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.37
+	title = reform_me_events.37.t
+	desc = reform_me_events.37.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_general_connections
+		OR = {
+			AND = {
+				num_of_admirals = 1
+				NOT = { num_of_admirals = 2 }
+				NOT = { has_country_modifier = General_Connections_6 }
+			}
+			AND = {
+				num_of_admirals = 2
+				NOT = { num_of_admirals = 3 }
+				NOT = { has_country_modifier = General_Connections_7 }
+			}
+			AND = {
+				num_of_admirals = 3
+				NOT = { num_of_admirals = 4 }
+				NOT = { has_country_modifier = General_Connections_8 }
+			}
+			AND = {
+				num_of_admirals = 4
+				NOT = { num_of_admirals = 5 }
+				NOT = { has_country_modifier = General_Connections_9 }
+			}
+			AND = {
+				num_of_admirals = 5
+				NOT = { has_country_modifier = General_Connections_10 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				num_of_admirals = 1
+				NOT = { num_of_admirals = 2 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_6" 
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_7 
+			remove_country_modifier = General_Connections_8 
+			remove_country_modifier = General_Connections_9 
+			remove_country_modifier = General_Connections_10 
+		}
+		if = {
+			limit = {
+				num_of_admirals = 2
+				NOT = { num_of_admirals = 3 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_7"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_6 
+			remove_country_modifier = General_Connections_8 
+			remove_country_modifier = General_Connections_9 
+			remove_country_modifier = General_Connections_10  
+		}
+		if = {
+			limit = {
+				num_of_admirals = 3
+				NOT = { num_of_admirals = 4 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_8"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_6 
+			remove_country_modifier = General_Connections_7  
+			remove_country_modifier = General_Connections_9 
+			remove_country_modifier = General_Connections_10 
+		}
+		if = {
+			limit = {
+				num_of_admirals = 4
+				NOT = { num_of_admirals = 5 }
+			}
+			add_country_modifier = {
+				name = "General_Connections_9"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_6 
+			remove_country_modifier = General_Connections_7 
+			remove_country_modifier = General_Connections_8 
+			remove_country_modifier = General_Connections_10 
+		}
+		if = {
+			limit = {
+				num_of_admirals = 5
+			}
+			add_country_modifier = {
+				name = "General_Connections_10"
+				duration = -1
+			}
+			remove_country_modifier = General_Connections_6 
+			remove_country_modifier = General_Connections_7 
+			remove_country_modifier = General_Connections_8 
+			remove_country_modifier = General_Connections_9 
+		}
+	}
+	
+	option = {
+		name = reform_me_events.37.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.38
+	title = reform_me_events.38.t
+	desc = reform_me_events.38.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_general_connections }
+		OR = {
+			has_country_modifier = General_Connections_6
+			has_country_modifier = General_Connections_7
+			has_country_modifier = General_Connections_8
+			has_country_modifier = General_Connections_9
+			has_country_modifier = General_Connections_10
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			remove_country_modifier = General_Connections_6 
+			remove_country_modifier = General_Connections_7 
+			remove_country_modifier = General_Connections_8 
+			remove_country_modifier = General_Connections_9 
+			remove_country_modifier = General_Connections_10 
+	}
+	
+	option = {
+		name = reform_me_events.38.a
+		
+	}
+}
