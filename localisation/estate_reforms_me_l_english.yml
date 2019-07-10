@@ -421,7 +421,7 @@
  mechanic_enables_abolish_noble_customs_yes: "Abolish Noble Customs: Halve the Production Efficiency and Trade Power penalty in Noble Estate provinces."
  mechanic_enables_holy_tithe_yes: "Holy Tithe: §G+5%§! National Tax Modifier for each Tolerance of the True Faith over 4."
  mechanic_enables_general_connections_yes: "General Connections: §G+0.1§! Army/Naval Tradition per General/Admiral."
- mechanic_enables_merchant_privileges_yes: "Merchant Privileges: Gain 1 mercantilism every time you ask for contribution”
+ mechanic_enables_merchant_privileges_yes: "Merchant Privileges: Gain 1 mercantilism every time you ask for contribution."
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
