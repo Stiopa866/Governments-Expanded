@@ -977,7 +977,7 @@ quash_noble_power_reform = {
 		global_tax_modifier = 0.1
 	}
 	custom_attributes = {
-		enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency
+		enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency in noble estate provinces
 	}
 	ai = {
 		factor = 1
@@ -1249,6 +1249,9 @@ zabt_reform = {
 royal_decree_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+	}
 	modifiers = {
 		max_absolutism = 5
 	}
@@ -1260,6 +1263,9 @@ royal_decree_reform = {
 aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+	}
 	modifiers = {
 		army_tradition_decay = -0.005
 	}
@@ -1271,6 +1277,9 @@ aristocratic_court_reform = {
 states_general_reform = {
 	icon = "states_general"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+	}
 
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
@@ -1314,6 +1323,9 @@ states_general_reform = {
 general_estates_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+	}
 	modifiers = {
 		production_efficiency = 0.1
 	}

@@ -3,6 +3,9 @@ parliamentary_reform = {
 	modifiers = {
 		global_unrest = -1
 	}
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+	}
 	
 	trigger = {
 		if = {

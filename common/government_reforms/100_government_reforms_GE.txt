@@ -9,8 +9,7 @@ feudalism_reform = {
 		cavalry_cost = -0.05
 	}
 	custom_attributes = {
-		enables_independent_nobles = yes
-		#+15% Local Manpower
+		enables_independent_nobles = yes #+15% Local Manpower
 	}
 }
 elective_monarchy_reform = {
@@ -18,6 +17,13 @@ elective_monarchy_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	potential = {
+		OR = {
+			have_had_reform = feudalism_reform
+			has_reform = feudalism_reform
+		}
+		NOT = { tag = POL }
+	}
 	modifiers = {
 		stability_cost_modifier = -0.1
 	}
@@ -31,6 +37,12 @@ arch_monarchy_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	potential = {
+		OR = {
+			have_had_reform = feudalism_reform
+			has_reform = feudalism_reform
+		}
+	}
 	trigger = {
 		OR = {
 			vassal = 1
@@ -794,6 +806,7 @@ blood_tax_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = french
+		government_rank = 2
 	}
 	modifiers = {
 		mil_advisor_cost = -0.10
@@ -1868,6 +1881,75 @@ abolish_the_sejm_reform = {
 	}
 	ai = {
 		factor = 101
+	}
+}
+
+noble_electors_reform = {
+	icon = noble
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = elective_monarchy_reform 
+	}
+	modifiers = {
+		monarch_military_power = 1
+	}
+	custom_attributes = {
+		enables_noble_electors = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+royal_electors_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = elective_monarchy_reform 
+	}
+	modifiers = {
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		enables_royal_electors = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+parliamental_electors_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	has_parliament = yes
+	potential = {
+		has_reform = elective_monarchy_reform 
+	}
+	modifiers = {
+		legitimacy = 0.5
+	}
+	custom_attributes = {
+		enables_bureacratic_apparatus = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+papal_electors_reform = {
+	icon = clergyman
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = elective_monarchy_reform 
+	}
+	modifiers = {
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_papal_favor = yes
+	}
+	ai = {
+		factor = 1
 	}
 }
 

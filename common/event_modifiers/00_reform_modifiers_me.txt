@@ -167,6 +167,9 @@ General_Connections_9 = {
 General_Connections_10 = {
 	navy_tradition = 0.5
 }
+Bureacratic_Apparatus = {
+	local_state_maintenance_modifier = -0.25
+}
 
 
 

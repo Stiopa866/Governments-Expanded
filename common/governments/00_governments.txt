@@ -200,6 +200,10 @@ monarchy = {
 				foreign_recruitment_reform
 				reform_the_sejm_reform
 				abolish_the_sejm_reform
+				noble_electors_reform 
+				royal_electors_reform 
+				parliamental_electors_reform 
+				papal_electors_reform 
 			}
 		}
 		absolute_rule_vs_constitutional = {

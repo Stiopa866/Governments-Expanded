@@ -421,7 +421,12 @@
  mechanic_enables_abolish_noble_customs_yes: "Abolish Noble Customs: Halve the Production Efficiency and Trade Power penalty in Noble Estate provinces."
  mechanic_enables_holy_tithe_yes: "Holy Tithe: §G+5%§! National Tax Modifier for each Tolerance of the True Faith over 4."
  mechanic_enables_general_connections_yes: "General Connections: §G+0.1§! Army/Naval Tradition per General/Admiral."
- mechanic_enables_merchant_privileges_yes: "Merchant Privileges: Gain 1 mercantilism every time you ask for contribution."
+ mechanic_enables_merchant_privileges_yes: "Merchant Privileges: Gain 1 mercantilism every time you 'ask for contribution.'"
+ mechanic_enables_noble_electors_yes: "Noble Electors: Allow a noble candidate to be elected in trade for noble support."
+ mechanic_enables_royal_electors_yes: "Royal Electors: no legitimacy hit from bribes."
+ mechanic_enables_bureacratic_apparatus_yes: "Bureaucratic Apparatus, §G-25%§! State Maintenance in states with a seat in parliament."
+ mechanic_enables_papal_favor_yes: "Papal Favour: §G+15§! Papal influence for the favoured candidate."
+ 
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -446,7 +451,7 @@
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
- born_to_rule_tooltip:1 "[Root.Ruler.GetName] will be elected, as is his birthright."
+ born_to_rule_tooltip:1 "[Ruler.GetName] will be elected, as is his birthright."
  decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
  
  elections.EVTNAME7001:1 "American Elections"
