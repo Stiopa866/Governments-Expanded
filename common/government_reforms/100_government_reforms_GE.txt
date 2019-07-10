@@ -1885,13 +1885,14 @@ abolish_the_sejm_reform = {
 }
 
 noble_electors_reform = {
-	icon = noble
+	icon = man_on_podium
 	allow_normal_conversion = yes
 	potential = {
 		has_reform = elective_monarchy_reform 
 	}
 	modifiers = {
 		monarch_military_power = 1
+		max_absolutism = -5
 	}
 	custom_attributes = {
 		enables_noble_electors = yes
@@ -1940,7 +1941,8 @@ papal_electors_reform = {
 	icon = clergyman
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = elective_monarchy_reform 
+		has_reform = elective_monarchy_reform
+		religion = catholic
 	}
 	modifiers = {
 		tolerance_own = 1

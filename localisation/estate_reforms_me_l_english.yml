@@ -387,6 +387,15 @@
  polish_national_guard_reform_desc: "Poland has not yet perished, So long as we still live. What the foreign force has taken from us, We shall with sabre retrieve."
  integrate_tatars_reform: "Integrate Tatars"
  integrate_tatars_reform_desc: "The increasing weakness of the tatar hordes has led to us seizing much of their lands, These talented horsemen could be of much use to us if we can integrate them into our forces."
+ noble_electors_reform: "Noble Electors"
+ noble_electors_reform_desc: "The nobility are the ones who control the land, and so, who better to elect our king then those that have experience ruling?"
+ royal_electors_reform: "Royal Electors"
+ royal_electors_reform_desc: "The only ones that deserve to elect the next ruler is our royal dynasty, as only we know what its like to wear the crown."
+ parliamental_electors_reform: "Parliamental Electors"
+ parliamental_electors_reform_desc: "We rule the people, so who better to elect our king then the people themselves?"
+ papal_electors_reform: "Papal Electors"
+ papal_electors_reform_desc: "Crowned by god, for He is the only one that can truly know who deserves to rule."
+ 
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -422,8 +431,8 @@
  mechanic_enables_holy_tithe_yes: "Holy Tithe: §G+5%§! National Tax Modifier for each Tolerance of the True Faith over 4."
  mechanic_enables_general_connections_yes: "General Connections: §G+0.1§! Army/Naval Tradition per General/Admiral."
  mechanic_enables_merchant_privileges_yes: "Merchant Privileges: Gain 1 mercantilism every time you 'ask for contribution.'"
- mechanic_enables_noble_electors_yes: "Noble Electors: Allow a noble candidate to be elected in trade for noble support."
- mechanic_enables_royal_electors_yes: "Royal Electors: no legitimacy hit from bribes."
+ mechanic_enables_noble_electors_yes: "Noble Electors: Allow a talented noble candidate to be elected in trade for noble support."
+ mechanic_enables_royal_electors_yes: "Royal Electors: no legitimacy hit from bribes, and disables foreign heirs."
  mechanic_enables_bureacratic_apparatus_yes: "Bureaucratic Apparatus, §G-25%§! State Maintenance in states with a seat in parliament."
  mechanic_enables_papal_favor_yes: "Papal Favour: §G+15§! Papal influence for the favoured candidate."
  
