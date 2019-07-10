@@ -516,6 +516,10 @@ country_event = {
 	option = {
 		name = "reform_me_events.11.a"	# Maintain Hereditary Rule
 		
+		trigger = {
+			has_regency = no
+		}
+		
 		add_legitimacy = 10
 		add_prestige = 5
 		custom_tooltip = born_to_rule_tooltip
@@ -525,6 +529,9 @@ country_event = {
 	option = {
 		name = "reform_me_events.11.b"	# A Pretender
 		
+		trigger = {
+			has_regency = no 
+		}
 		define_ruler = {
 			culture = ROOT
 			dynasty = ROOT
@@ -532,11 +539,11 @@ country_event = {
 			male = yes
 			adm = -1
 			dip = -1
-			mil = -1
-			claim = 50
+			claim = 75
 		}
 		ai_chance = { factor = 25 }
 	}
+	
 	
 	option = {
 		name = "reform_me_events.11.c"	# Challenger to the crown
@@ -547,10 +554,29 @@ country_event = {
 			dynasty = event_target:noble_candidate
 			hide_skills = yes
 			age = 40
-			claim = 20
+			claim = 50
 		}
 		ai_chance = { factor = 25 }
 	}
+	
+	option = {
+		name = "reform_me_events.11.e"	# Elect a Local Regent
+		
+		trigger = {
+			has_regency = yes
+		}
+
+		define_ruler = {
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 2
+			fixed = yes
+			regency = yes
+		}
+		ai_chance = { factor = 25 }
+	}
+
 }
 
 country_event = {

@@ -21,9 +21,10 @@
  reform_me_events.9.b: "I guess you'll have to take no as an answer."
  reform_me_events.11.t: "The King is Dead, Long Live the King"
  reform_me_events.11.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
- reform_me_events.11.a: "The Prince of Course!"
+ reform_me_events.11.a: "The Prince of course!"
  reform_me_events.11.b: "One of the late king's brothers."
  reform_me_events.11.c: "A member of a foreign dynasty."
+ reform_me_events.11.e: "Appoint a regency council untill $HEIR$'s majority."
  
  
  #GE Reform Cycle

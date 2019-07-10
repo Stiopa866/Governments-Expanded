@@ -446,7 +446,7 @@
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
- born_to_rule_tooltip:1 "[Ruler.Name] will be elected, as is his birthright."
+ born_to_rule_tooltip:1 "[Root.Ruler.GetName] will be elected, as is his birthright."
  decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
  
  elections.EVTNAME7001:1 "American Elections"
