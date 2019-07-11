@@ -60,44 +60,44 @@ Arabian_Horses_5 = {
 	cavalry_power = 0.25
 }
 Mercenary_Markets_1 = {
-	possible_mercenaries = 0.05
-	mercenary_discipline = 0.01
+	manpower_recovery_speed = 0.02
+	infantry_cost = -0.01
 }
 Mercenary_Markets_2 = {
-	possible_mercenaries = 0.10
-	mercenary_discipline = 0.02
+	manpower_recovery_speed = 0.04
+	infantry_cost = -0.02
 }
 Mercenary_Markets_3 = {
-	possible_mercenaries = 0.15
-	mercenary_discipline = 0.03
+	manpower_recovery_speed = 0.06
+	infantry_cost = -0.03
 }
 Mercenary_Markets_4 = {
-	possible_mercenaries = 0.20
-	mercenary_discipline = 0.04
+	manpower_recovery_speed = 0.08
+	infantry_cost = -0.04
 }
 Mercenary_Markets_5 = {
-	possible_mercenaries = 0.25
-	mercenary_discipline = 0.05
+	manpower_recovery_speed = 0.10
+	infantry_cost = -0.05
 }
 Mercenary_Markets_6 = {
-	possible_mercenaries = 0.30
-	mercenary_discipline = 0.06
+	manpower_recovery_speed = 0.12
+	infantry_cost = -0.06
 }
 Mercenary_Markets_7 = {
-	possible_mercenaries = 0.35
-	mercenary_discipline = 0.07
+	manpower_recovery_speed = 0.14
+	infantry_cost = -0.07
 }
 Mercenary_Markets_8 = {
-	possible_mercenaries = 0.40
-	mercenary_discipline = 0.08
+	manpower_recovery_speed = 0.16
+	infantry_cost = -0.08
 }
 Mercenary_Markets_9 = {
-	possible_mercenaries = 0.45
-	mercenary_discipline = 0.09
+	manpower_recovery_speed = 0.018
+	infantry_cost = -0.09
 }
 Mercenary_Markets_10 = {
-	possible_mercenaries = 0.50
-	mercenary_discipline = 0.10
+	manpower_recovery_speed = 0.20
+	infantry_cost = -0.10
 }
 National_Strenghtening_Project = {
 	local_monthly_devastation = -0.05

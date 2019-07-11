@@ -1830,10 +1830,10 @@ foreign_recruitment_reform = {
 	trigger = {
 	}
 	modifiers = {
-		mercenary_cost = 0.25
+		merchants = 1
 	}
 	custom_attributes = {
-		enables_mercenary_markets = yes #5% available mercenaries and 1% mercenary discipline per merchant.
+		enables_mercenary_markets = yes #-1% Infantry Cost and 2% Manpower Recovery
 	}
 	ai = {
 		factor = 100

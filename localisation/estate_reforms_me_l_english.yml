@@ -421,7 +421,7 @@
  mechanic_enables_veteran_general_yes: "Veteran Generals: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
  mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains."
  mechanic_enables_arabian_horses_yes: "Arabian Horses: Gain §G5%§! Cavalry Combat Ability per Arabian vassal."
- mechanic_enables_mercenary_markets_yes: "Mercenary Markets: §G5%§! Available Mercenaries and §G1%§! Mercenary Discipline per merchant."
+ mechanic_enables_mercenary_markets_yes: "Mercenary Markets: §G-1%§! Infantry Cost and §G+2%§! Manpower Recovery per merchant."
  mechanic_enables_national_strenghtening_project_yes: "National Strenghtening Project: §G+15%§! Manpower, §G-0.05%§! monthly devastation and §G-10%§! Hostile Movement Speed in provinces with accepted culture."
  mechanic_enables_rallied_for_war_yes: "Rallied for War: §G+5%§! Morale of Armies and §G+10%§! Morale Recovery for five years upon raising additional levies."
  mechanic_enables_patriotism_yes: "Patriotism: 	§G+25%§! Manpower in provinces of your primary culture."
