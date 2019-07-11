@@ -96,6 +96,7 @@ monarchy = {
 				mamluk_privileges_reform
 				szlachta_authority_reform
 				every_man_a_noble_reform
+				curia_regis_reform
 			}
 		}
 		bureaucracy = {
@@ -129,6 +130,7 @@ monarchy = {
 				re_enforce_magdeburg_rights_reform
 				revoke_magnate_estates_reform
 				integrate_tatars_reform
+				abolish_bastard_feudalism_reform
 			}
 		}
 		military_organisation = {
@@ -155,6 +157,7 @@ monarchy = {
 				arabian_horses_reform
 				pospolite_ruszenie_reform
 				polish_national_guard_reform
+				henry_reforms_reform
 			}
 		}
 		growth_of_administration = {
@@ -183,6 +186,7 @@ monarchy = {
 				voivode_captains_reform
 				boyar_scions_reform
 				turkicized_elite_reform
+				supreme_govenor_reform
 			}
 		}
 		deliberative_assembly = {
@@ -204,6 +208,8 @@ monarchy = {
 				royal_electors_reform 
 				parliamental_electors_reform 
 				papal_electors_reform 
+				union_of_crowns_reform
+				declaration_of_breda_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -219,6 +225,7 @@ monarchy = {
 				abolish_the_haandfaestning_reform
 				revoke_reichsfreiheit_reform
 				constitution_third_may_reform
+				bill_of_rights_reform
 			}
 		}
 		separation_of_power = {
@@ -230,6 +237,7 @@ monarchy = {
 				abolish_clergy_privileges_reform
 				peters_council_reform
 				nizam_i_jedid_reform
+				commonwealth_of_nations_reform
 			}
 		}
 	}

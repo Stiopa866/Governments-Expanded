@@ -2038,10 +2038,10 @@ country_event = {
 			OR = {
 				AND = {
 					has_estate = estate_burghers
-					NOT = { has_province_modifier = Town_Rights}
+					NOT = { has_province_modifier = Town_Rights }
 				}
 				AND = {
-					NOT = { has_estate = estate_burghers}
+					NOT = { has_estate = estate_burghers }
 					has_province_modifier = Town_Rights
 				}
 			}
@@ -2056,7 +2056,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_estate = estate_burghers
-				NOT = {	has_province_modifier = Town_Rights}
+				NOT = {	has_province_modifier = Town_Rights }
             }
 			add_province_modifier = {
 				name = "Town_Rights"
@@ -2065,7 +2065,7 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { has_estate = estate_burghers}
+				NOT = { has_estate = estate_burghers }
 				has_province_modifier = Town_Rights
             }
 			remove_province_modifier = Town_Rights
@@ -2844,9 +2844,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.29
-	title = reform_me_events.29.t
-	desc = reform_me_events.29.d
+	id = reform_me_events.39
+	title = reform_me_events.39.t
+	desc = reform_me_events.39.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -2905,15 +2905,15 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.29.a
+		name = reform_me_events.39.a
 		
 	}
 }
 
 country_event = {
-	id = reform_me_events.30
-	title = reform_me_events.30.t
-	desc = reform_me_events.30.d
+	id = reform_me_events.40
+	title = reform_me_events.40.t
+	desc = reform_me_events.40.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -2945,9 +2945,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.31
-	title = reform_me_events.31.t
-	desc = reform_me_events.31.d
+	id = reform_me_events.41
+	title = reform_me_events.41.t
+	desc = reform_me_events.41.d
 	picture = ACCUSATION_eventPicture
 
 	trigger = {
@@ -2960,14 +2960,14 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.31.a
+		name = reform_me_events.41.a
 		
 		add_heir_claim = -10
 		ai_chance = { factor = 100 }
 	}
 	
 	option = {
-		name = reform_me_events.31.b
+		name = reform_me_events.41.b
 		
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -2977,9 +2977,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.32
-	title = reform_me_events.32.t
-	desc = reform_me_events.32.d
+	id = reform_me_events.42
+	title = reform_me_events.42.t
+	desc = reform_me_events.42.d
 	picture = ACCUSATION_eventPicture
 
 	trigger = {
@@ -2992,17 +2992,17 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.32.a
+		name = reform_me_events.42.a
 		
 		random_list = {
 			10 = { add_heir_claim = -10 }
-			10 = { 0 }
+			10 = { }
 		}
 		ai_chance = { factor = 100 }
 	}
 	
 	option = {
-		name = reform_me_events.32.b
+		name = reform_me_events.42.b
 		
 		add_years_of_income = -0.25
 		add_corruption = 0.10
@@ -3011,9 +3011,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.33
-	title = reform_me_events.33.t
-	desc = reform_me_events.33.d
+	id = reform_me_events.43
+	title = reform_me_events.43.t
+	desc = reform_me_events.43.d
 	picture = ACCUSATION_eventPicture
 
 	trigger = {
@@ -3026,15 +3026,394 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.33.a
+		name = reform_me_events.43.a
 		
 		add_heir_claim = -10
 		ai_chance = { factor = 100 }
 	}
 	
 	option = {
-		name = reform_me_events.33.b
+		name = reform_me_events.43.b
 		
 		add_prestige = -10
 	}
 }
+
+country_event = {
+	id = reform_me_events.44
+	title = reform_me_events.44.t
+	desc = reform_me_events.44.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_pride_of_the_navy
+		OR = {
+			AND = {
+				navy_tradition = 20
+				NOT = {
+					navy_tradition = 40
+				}
+				NOT = { has_country_modifier = Pride_of_the_Navy_1 }
+			}
+			AND = {
+				navy_tradition = 40
+				NOT = {
+					navy_tradition = 60
+				}
+				NOT = { has_country_modifier = Pride_of_the_Navy_2 }
+			}
+			AND = {
+				navy_tradition = 60
+				NOT = {
+					navy_tradition = 80
+				}
+				NOT = { has_country_modifier = Pride_of_the_Navy_3 }
+			}
+			AND = {
+				navy_tradition = 80
+				NOT = { has_country_modifier = Pride_of_the_Navy_4 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				navy_tradition = 20
+				NOT = {
+					navy_tradition = 40
+				}
+			}
+			add_country_modifier = {
+				name = Pride_of_the_Navy_1 
+				duration = -1
+			}
+			remove_country_modifier = Pride_of_the_Navy_2 
+			remove_country_modifier = Pride_of_the_Navy_3 
+			remove_country_modifier = Pride_of_the_Navy_4 
+		}
+		if = {
+			limit = {
+				navy_tradition = 40
+				NOT = {
+					navy_tradition = 60
+				}
+			}
+			add_country_modifier = {
+				name = Pride_of_the_Navy_2 
+				duration = -1
+			}
+			remove_country_modifier = Pride_of_the_Navy_1
+			remove_country_modifier = Pride_of_the_Navy_3 
+			remove_country_modifier = Pride_of_the_Navy_4 
+		}
+		if = {
+			limit = {
+				navy_tradition = 60
+				NOT = {
+					navy_tradition = 80
+				}
+			}
+			add_country_modifier = {
+				name = Pride_of_the_Navy_3 
+				duration = -1
+			}
+			remove_country_modifier = Pride_of_the_Navy_1 
+			remove_country_modifier = Pride_of_the_Navy_2 
+			remove_country_modifier = Pride_of_the_Navy_4 
+		}
+		if = {
+			limit = {
+				navy_tradition = 80
+			}
+			add_country_modifier = {
+				name = Pride_of_the_Navy_4
+				duration = -1
+			}
+			remove_country_modifier = Pride_of_the_Navy_1 
+			remove_country_modifier = Pride_of_the_Navy_2 
+			remove_country_modifier = Pride_of_the_Navy_3 
+		}
+	}
+	
+	option = {
+		name = reform_me_events.44.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.45
+	title = reform_me_events.45.t
+	desc = reform_me_events.45.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_pride_of_the_navy }
+		OR = {
+			has_country_modifier = Pride_of_the_Navy_1
+			has_country_modifier = Pride_of_the_Navy_2
+			has_country_modifier = Pride_of_the_Navy_3
+			has_country_modifier = Pride_of_the_Navy_4
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			remove_country_modifier = Pride_of_the_Navy_1 
+			remove_country_modifier = Pride_of_the_Navy_2 
+			remove_country_modifier = Pride_of_the_Navy_3 
+			remove_country_modifier = Pride_of_the_Navy_4
+	}
+	
+	option = {
+		name = reform_me_events.45.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.46
+	title = reform_me_events.46.t
+	desc = reform_me_events.46.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_such_waste_of_life
+		any_subject_country = {
+			AND = {
+				is_overseas_subject = yes
+				NOT = { has_country_modifier = Colonial_Militias }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_subject_country = {
+			limit = {
+				is_overseas_subject = yes
+				NOT = { has_country_modifier = Colonial_Militias }
+            }
+			add_country_modifier = {
+				name = "Colonial_Militias"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.46.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.47
+	title = reform_me_events.47.t
+	desc = reform_me_events.47.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_country_modifier = Colonial_Militias
+		is_subject = no
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_modifier = Colonial_Militias
+	}
+	
+	option = {
+		name = reform_me_events.47.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.48
+	title = reform_me_events.48.t
+	desc = reform_me_events.48.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_device_forts 
+		any_owned_province = {
+			OR = {
+				AND = {
+					fort_level = 2
+					NOT = { has_province_modifier = Device_Forts }
+				}
+				AND = {
+					NOT = { fort_level = 2}
+					has_province_modifier = Device_Forts
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				fort_level = 2
+				NOT = {	has_province_modifier = Device_Forts}
+            }
+			add_province_modifier = {
+				name = "Device_Forts"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { fort_level = 2}
+				has_province_modifier = Device_Forts
+            }
+			remove_province_modifier = Device_Forts
+		}
+	}
+	
+	option = {
+		name = reform_me_events.48.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.49
+	title = reform_me_events.49.t
+	desc = reform_me_events.49.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_device_forts }
+		any_owned_province = {
+			has_province_modifier = Device_Forts
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Device_Forts
+            }
+			remove_province_modifier = Device_Forts
+		}
+	}
+	
+	option = {
+		name = reform_me_events.49.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.50
+	title = reform_me_events.50.t
+	desc = reform_me_events.50.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_longbow_training
+		any_owned_province = {
+			culture = english
+			region = british_isles_region
+			NOT = { has_province_modifier = Longbow_Training }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				culture = english
+				region = british_isles_region
+				NOT = { has_province_modifier = Longbow_Training }
+            }
+			add_province_modifier = {
+				name = "Longbow_Training"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.50.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.51
+	title = reform_me_events.51.t
+	desc = reform_me_events.51.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_longbow_training }
+		any_owned_province = {
+			has_province_modifier = Longbow_Training
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Longbow_Training
+            }
+			remove_province_modifier = Longbow_Training
+		}
+	}
+	
+	option = {
+		name = reform_me_events.51.a
+		
+	}
+}
+
+
+
