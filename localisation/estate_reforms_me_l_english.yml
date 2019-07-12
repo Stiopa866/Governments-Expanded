@@ -411,6 +411,22 @@
  commonwealth_of_nations_reform_desc: "The British Colonial Empire was truly an empire where the sun never sets. Let us empower our overseas subjects to raise their own militias so we they can fight alongside their old world breathren."
  henry_reforms_reform: "Henrician Reforms"
  henry_reforms_reform_desc: "Following the continued rise of militarism in the french, spanish and imperial nations, The english crown had a standing army of a few hundred men and a couple of fort garrisons. In addition of being horribly outnumbered, these men were armed with billhooks and crossbows, rather then muskets and pikes. The Henrician Reforms instituted by Henry VIII was the creation of a much extended standing army, expanding the navy, re-organizing the militia system and creating a series of coastal forts against potential Catholic invasions from the south."
+ granadan_iqta_reform: "Granadan Iqta"
+ granadan_iqta_reform_desc: "Its excellent position at the crossroads of the Atlantic and the Mediterranean trade networks makes Granada a key hub of commerce. The Catalonian and Genoese traders have long brought goods to our harbors, and our massive population is skilled in the labors of herding, fishing or craftmanship. The silk and textile goods from our lands has been a key part of our economy. With the downfall of the Taifa emirates, many skilled craftsman have fled the Christian conquistadores... right into our open arms."
+ taha_divisions_reform: "Taha Divisions"
+ taha_divisions_reform_desc: "The kingdom was divided into territorial and administrative circumscriptions, called tahas . The border between the Granadan Emirate and the territories of the Crown of Castile was called the Morisca Band, hence many towns of Western Andalusia are called "de la Frontera." Likewise, the Nazari Kingdom suffered from the major debacle of overpopulation."  In the early days of Muslim colonization, settlements were established around castles known as ḥiṣn (plural ḥuṣūn), which acted as organizational centers and defenders of the nearby vicinity, called ŷuz' (plural aŷzā') . This administrative structure remained unchanged until the tenth century, when the districts were modified, greatly increasing their size, being called aqālīm (singular iqlīm).The Nazari administration adopted the structure of the aŷzā' almost unchanged, creating the new configuration in tahas. Each taha consisted of an indeterminate number of farmhouses and was based on the physical structure of the territory itself. Each of them had a capital, usually in the nucleus that had consolidated around or near the original ḥiṣn ."
+ taifa_governors_reform: "Taifa Governors"
+ taifa_governors_reform_desc: "The historic shattering of Al Andalus has led to the formation of taifas that struggled and fought against eachother for dominance, if we organize our nation across the taifa borders and use some of their old infrastructure, we can have our autonomous vassals raise much bigger armies then normal govenors ever could."
+ cultural_investment_reform: "Cultural Investment"
+ cultural_investment_reform_desc: "Andalusian Caliphates would invite poets, artists, and literary figures from across the world to their courts, for the greatest honor of intellect lies solely in the deserving hands of the Andalusian people. Far and wide, as if flies to a candle, the greatest minds flock to our grand palaces to find their fame and fortune, for they know there cannot be a greater opportunity than serving our great Emir."
+ berber_cavalry_reform: "Berber Cavalry"
+ berber_cavalry_reform_desc: "Our fellow believers conquered these lands centuries ago, and every time we are in need, they send a great mounted host across the straits. Strengthening our ties with our Northern African brethren may have allowed us to subsist thus far, but we cannot continue continue to tread this path quite so lightly. Let us create a continuous flow of Berber tribesmen to settle in our lands and ensure this land of sheep and goats is to remain ours."
+ 
+ 
+ 
+ 
+ 
+ 
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -451,10 +467,15 @@
  mechanic_enables_bureacratic_apparatus_yes: "Bureaucratic Apparatus, §G-25%§! State Maintenance in states with a seat in parliament."
  mechanic_enables_papal_favor_yes: "Papal Favour: §G+15§! Papal influence for the favoured candidate."
  mechanic_enables_pride_of_the_navy_yes: "Pride of the Navy: §G+0.25§! Prestige for every 20 Naval Tradition."
- mechanic_enables_such_waste_of_life_yes: "Colonial Militias: §G+25%§! Land Forcelimit and §G+10%§! Morale of Armies for each colonial subject."
+ mechanic_enables_such_waste_of_life_yes: "Colonial Militias: §G+25%§! Land Forcelimit and §G+10%§! Morale of Armies in each colonial subject."
  mechanic_enables_device_forts_yes: "Device Forts: §G+25%§! Fort Defence in forts on the british isles."
  mechanic_enables_longbow_training_yes: "Act concerning Shooting in Long Bows: §G+15%§! Manpower in English provinced on the british isles."
  mechanic_enables_royal_council_yes: "Royal Council: At the start of your reign, elect a royal council."
+ mechanic_enables_morisca_band_yes: "Morisca Band: §G+15%§! Fort Defence in forts bordering Christians."
+ mechanic_enables_legacy_of_independence_yes: "Legacy of Independence: §G+25%§! Force Limit and §G+10%§! Taxes in your vassals."
+ mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant."
+ mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills and Drylands."
+ 
  
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"

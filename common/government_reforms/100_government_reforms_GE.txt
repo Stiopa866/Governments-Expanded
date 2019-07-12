@@ -281,6 +281,8 @@ kingdom_of_portugal_and_azures = {
 consulate_of_the_sea = {
 	icon = GE_trader
 	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
 	potential = {
 		have_had_reform = consulate_of_the_sea
 	}
@@ -333,6 +335,8 @@ crown_of_saint_wenceslaus = {
 crown_of_saint_wenceslaus_2 = {
 	icon = crown_of_saint_wenceslaus
 	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
 	potential = {
 		OR = {
 			tag = BOH
@@ -512,6 +516,29 @@ polish_constitutionalism_reform = {
 	has_parliament = yes
 	custom_attributes = {
 		enables_national_strenghtening_project = yes #+15% Manpower, -0.05 monthly devastation and -10 Hostile Movement Speed in provinces with accepted culture.
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+granadan_iqta_reform = {
+	icon = muslim
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = GRA
+			tag = ADU
+			have_had_reform = granadan_iqta_reform
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		trade_efficiency = 0.10
+		global_trade_goods_size_modifier = 0.05
 	}
 	ai = {
 		factor = 100
@@ -1017,6 +1044,30 @@ curia_regis_reform = {
 	}
 }
 
+taha_divisions_reform = {
+	icon = muslim
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GRA
+			tag = ADU
+			have_had_reform = taha_divisions_reform 
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+		development_cost = -0.05
+	}
+	custom_attributes = {
+		enables_morisca_band = yes #15% Fort Defence on Border with Christians
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -1419,6 +1470,29 @@ abolish_bastard_feudalism_reform = {
 	}
 }
 
+taifa_governors_reform = {
+	icon = muslim
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GRA
+			tag = ADU
+			have_had_reform = taha_divisions_reform 
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+	}
+	custom_attributes = {
+		enables_legacy_of_independence = yes #+25% Force limit, +10% Tax in vassals
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier4
 
 integrate_moneyloaners_reform = {
@@ -1806,6 +1880,30 @@ supreme_govenor_reform = {
 	modifiers = {
 		tolerance_heretic = 1
 		expel_minorities_cost = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+cultural_investment_reform = {
+	icon = muslim
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GRA
+			tag = ADU
+			have_had_reform = cultural_investment_reform 
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		global_trade_power = 0.10
+		trade_efficiency = 0.5
+	}
+	custom_attributes = {
+		enables_foreign_artists = yes #0.2 Prestige per Merchant. 
 	}
 	ai = {
 		factor = 100
@@ -2693,6 +2791,31 @@ henry_reforms_reform = {
 	custom_attributes = {
 		enables_device_forts = yes #25% Fort Defence in British Forts
 		enables_longbow_training = yes #15% Manpower in English Islander provinces.
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+berber_cavalry_reform = {
+	icon = muslim
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GRA
+			tag = ADU
+			have_had_reform = berber_cavalry_reform 
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		cavalry_power = 0.10
+		land_morale = 0.05
+		monthly_piety = -0.001
+	}
+	custom_attributes = {
+		enables_grazing_herds = yes #-5% Development Cost and Culture Conversion Cost in Iberian Hills and Drylands
 	}
 	ai = {
 		factor = 100

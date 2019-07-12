@@ -55,6 +55,7 @@ monarchy = {
 				habsburg_monarchy_reform
 				austrian_empire_reform
 				polish_constitutionalism_reform
+				granadan_iqta_reform 
 			}
 		}
 		hereditary_vs_nobility = {
@@ -97,6 +98,7 @@ monarchy = {
 				szlachta_authority_reform
 				every_man_a_noble_reform
 				curia_regis_reform
+				taha_divisions_reform 
 			}
 		}
 		bureaucracy = {
@@ -131,6 +133,7 @@ monarchy = {
 				revoke_magnate_estates_reform
 				integrate_tatars_reform
 				abolish_bastard_feudalism_reform
+				taifa_governors_reform 
 			}
 		}
 		military_organisation = {
@@ -158,6 +161,7 @@ monarchy = {
 				pospolite_ruszenie_reform
 				polish_national_guard_reform
 				henry_reforms_reform
+				berber_cavalry_reform 
 			}
 		}
 		growth_of_administration = {
@@ -187,6 +191,7 @@ monarchy = {
 				boyar_scions_reform
 				turkicized_elite_reform
 				supreme_govenor_reform
+				cultural_investment_reform 
 			}
 		}
 		deliberative_assembly = {
