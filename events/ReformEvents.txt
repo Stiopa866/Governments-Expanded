@@ -3415,5 +3415,236 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = reform_me_events.52
+	title = reform_me_events.52.t
+	desc = reform_me_events.52.d
+	picture = LIBERIUM_VETO_eventPicture
+	
+	trigger = {
+		has_government_attribute = enables_royal_council
+		NOT = {
+			has_ruler_flag = council_picked
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_ruler_flag = council_picked	
+		hidden_effect = {
+			if = {
+				limit = {
+					adm = 5
+				}
+				random_list = {
+					30 = { set_country_flag = Bad_Admin }
+					50 = { set_country_flag = Decent_Admin }
+					20 = { set_country_flag = Good_Admin }
+				}
+			}
+			else_if = {
+				limit = {
+					adm = 3
+				}
+				random_list = {
+					50 = { set_country_flag = Bad_Admin }
+					40 = { set_country_flag = Decent_Admin }
+					10 = { set_country_flag = Good_Admin }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { set_country_flag = Bad_Admin }
+					25 = { set_country_flag = Decent_Admin }
+					0 = { set_country_flag = Good_Admin }
+				}
+			}
+			if = {
+				limit = {
+					dip = 5
+				}
+				random_list = {
+					30 = { set_country_flag = Bad_Diplo }
+					50 = { set_country_flag = Decent_Diplo }
+					20 = { set_country_flag = Good_Diplo }
+				}
+			}
+			else_if = {
+				limit = {
+					dip = 3
+				}
+				random_list = {
+					50 = { set_country_flag = Bad_Diplo }
+					40 = { set_country_flag = Decent_Diplo }
+					10 = { set_country_flag = Good_Diplo }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { set_country_flag = Bad_Diplo }
+					25 = { set_country_flag = Decent_Diplo }
+					0 = { set_country_flag = Good_Diplo }
+				}
+			}
+			if = {
+				limit = {
+					mil = 5
+				}
+				random_list = {
+					30 = { set_country_flag = Bad_Mil }
+					50 = { set_country_flag = Decent_Mil }
+					20 = { set_country_flag = Good_Mil }
+				}
+			}
+			else_if = {
+				limit = {
+					mil = 3
+				}
+				random_list = {
+					50 = { set_country_flag = Bad_Mil }
+					40 = { set_country_flag = Decent_Mil }
+					10 = { set_country_flag = Good_Mil }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { set_country_flag = Bad_Mil }
+					25 = { set_country_flag = Decent_Mil }
+					5 = { set_country_flag = Good_Mil }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.52.a
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Bad_Admin = {
+				add_ruler_modifier = {
+					name = "Bad_Admin"
+					duration = -1
+				}
+				clr_country_flag = Bad_Admin
+			}
+			Decent_Admin = {
+				add_ruler_modifier = {
+					name = "Decent_Admin"
+					duration = -1
+				}
+				clr_country_flag = Decent_Admin
+			}
+			Good_Admin = {
+				add_ruler_modifier = {
+					name = "Good_Admin"
+					duration = -1
+				}
+				clr_country_flag = Good_Admin
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_ADVANCES
+			influence = 10
+			duration = 3650
+		}
+		clr_country_flag = Bad_Diplo
+		clr_country_flag = Decent_Diplo
+		clr_country_flag = Good_Diplo
+		clr_country_flag = Bad_Mil
+		clr_country_flag = Decent_Mil
+		clr_country_flag = Good_Mil
+	}
+	
+	option = {
+		name = reform_me_events.52.b
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Bad_Diplo = {
+				add_ruler_modifier = {
+					name = "Bad_Diplo"
+					duration = -1
+				}
+				clr_country_flag = Bad_Diplo
+			}
+			Decent_Diplo = {
+				add_ruler_modifier = {
+					name = "Decent_Diplo"
+					duration = -1
+				}
+				clr_country_flag = Decent_Diplo
+			}
+			Good_Diplo = {
+				add_ruler_modifier = {
+					name = "Good_Diplo"
+					duration = -1
+				}
+				clr_country_flag = Good_Diplo
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_ADVANCES
+			influence = 10
+			duration = 3650
+		}
 
+		clr_country_flag = Bad_Admin
+		clr_country_flag = Decent_Admin
+		clr_country_flag = Good_Admin
+		clr_country_flag = Bad_Mil
+		clr_country_flag = Decent_Mil
+		clr_country_flag = Good_Mil
+	}
+	
+	option = {
+		name = reform_me_events.52.c
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Bad_Mil = {
+				add_ruler_modifier = {
+					name = "Bad_Mil"
+					duration = -1
+				}
+				clr_country_flag = Bad_Mil
+			}
+			Decent_Mil = {
+				add_ruler_modifier = {
+					name = "Decent_Mil"
+					duration = -1
+				}
+				clr_country_flag = Decent_Mil
+			}
+			Good_Mil = {
+				add_ruler_modifier = {
+					name = "Good_Mil"
+					duration = -1
+				}
+				clr_country_flag = Good_Mil
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = 10
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		clr_country_flag = Bad_Admin
+		clr_country_flag = Decent_Admin
+		clr_country_flag = Good_Admin
+		clr_country_flag = Bad_Diplo
+		clr_country_flag = Decent_Diplo
+		clr_country_flag = Good_Diplo
+	}
+}
 

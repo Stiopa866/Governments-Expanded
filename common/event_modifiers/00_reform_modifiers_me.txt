@@ -261,6 +261,44 @@ Mil_2_Leader = {
 	general_cost = -0.2
 }
 
+#Royal Council
+Bad_Admin = {
+	development_cost = -0.05
+}
+Decent_Admin = {
+	development_cost = -0.10
+	adm_advisor_cost = -0.05
+}
+Good_Admin = {
+	development_cost = -0.15
+	adm_advisor_cost = -0.10
+	global_trade_goods_size_modifier = 0.05
+}
+Bad_Diplo = {
+	improve_relation_modifier = 0.10
+}
+Decent_Diplo = {
+	improve_relation_modifier = 0.15
+	dip_advisor_cost = -0.05
+}
+Good_Diplo = {
+	improve_relation_modifier = 0.20
+	dip_advisor_cost = -0.10
+	diplomatic_upkeep = 1
+}
+Bad_Mil = {
+	global_manpower_modifier = 0.05
+}
+Decent_Mil = {
+	global_manpower_modifier = 0.10
+	mil_advisor_cost = -0.05
+}
+Good_Mil = {
+	global_manpower_modifier = 0.15
+	mil_advisor_cost = -0.10
+	land_morale = 0.05
+}
+
 #GE Reform Cycle
 Russian_Manorialism = {
 	fort_maintenance_modifier = -0.2

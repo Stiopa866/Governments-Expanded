@@ -20,6 +20,16 @@
  Mil_2_Leader: "Noble Cadets"
  Mil_2_Main: "Extra Supplies"
  
+ Bad_Admin: "Mediocre Administrative Council"
+ Decent_Admin: "Decent Administrative Council"
+ Good_Admin: "Superb Administrative Council"
+ Bad_Diplo: "Mediocre Diplomatic Council"
+ Decent_Diplo: "Decent Diplomatic Council"
+ Good_Diplo: "Superb Diplomatic Council"
+ Bad_Mil: "Mediocre Military Council"
+ Decent_Mil: "Decent Military Council"
+ Good_Mil: "Superb Military Council"
+ 
  tax_peasants: "Peasant Tax"
  tax_peasants_desc: "Levy an additional tax upon the peasantry."
  register_peasants: "Peasant Register"

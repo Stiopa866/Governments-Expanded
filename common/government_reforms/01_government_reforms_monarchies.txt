@@ -32,6 +32,9 @@ autocracy_reform = {
 	modifiers = {
 		unjustified_demands = -0.1
 	}
+	custom_attributes = {
+		enables_royal_council = yes
+	}
 }
 
 plutocratic_reform = {

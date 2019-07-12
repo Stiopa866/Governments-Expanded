@@ -454,6 +454,7 @@
  mechanic_enables_such_waste_of_life_yes: "Colonial Militias: §G+25%§! Land Forcelimit and §G+10%§! Morale of Armies for each colonial subject."
  mechanic_enables_device_forts_yes: "Device Forts: §G+25%§! Fort Defence in forts on the british isles."
  mechanic_enables_longbow_training_yes: "Act concerning Shooting in Long Bows: §G+15%§! Manpower in English provinced on the british isles."
+ mechanic_enables_royal_council_yes: "Royal Council: At the start of your reign, elect a royal council."
  
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
