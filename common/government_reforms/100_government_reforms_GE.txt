@@ -540,6 +540,12 @@ granadan_iqta_reform = {
 		trade_efficiency = 0.10
 		global_trade_goods_size_modifier = 0.05
 	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
 	ai = {
 		factor = 100
 	}
@@ -1903,7 +1909,7 @@ cultural_investment_reform = {
 		trade_efficiency = 0.05
 	}
 	custom_attributes = {
-		enables_foreign_artists = yes #0.2 Prestige per Merchant. 
+		enables_foreign_artists = yes #0.1 Prestige per Merchant. 
 	}
 	ai = {
 		factor = 100
@@ -2059,6 +2065,7 @@ union_of_crowns_reform = {
 	}
 	modifiers = {
 		legitimacy = 0.5
+		diplomatic_reputation = 1
 	}
 	custom_attributes = {
 		enables_pride_of_the_navy = yes
