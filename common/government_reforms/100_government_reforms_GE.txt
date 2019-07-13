@@ -25,7 +25,8 @@ elective_monarchy_reform = {
 		NOT = { tag = POL }
 	}
 	modifiers = {
-		stability_cost_modifier = -0.1
+		heir_chance = 0.5
+		diplomats = 1
 	}
 	custom_attributes = {
 		enables_elective_monarchy = yes
