@@ -497,6 +497,7 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_elective_monarchy
 		is_lesser_in_union = no
+		NOT = { has_country_flag = royal_diet }
 	}
 	
 	mean_time_to_happen = {
@@ -505,6 +506,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			set_country_flag = royal_diet
 			random_neighbor_country = {
 				limit = {
 					government = monarchy
@@ -533,8 +535,6 @@ country_event = {
 		
 		add_legitimacy = 10
 		add_prestige = 5
-		custom_tooltip = born_to_rule_tooltip
-		
 		
 		if = {
 			limit = {
@@ -554,11 +554,16 @@ country_event = {
 			clr_country_flag = candidateA
 			clr_country_flag = candidateB
 			clr_country_flag = candidateC
+			clr_country_flag = royal_diet
 		}
 	}
 	
 	option = {
 		name = "reform_me_events.11.b"	# A Pretender
+		
+		trigger = {
+			has_regency = no
+		}
 		
 		define_ruler = {
 			culture = ROOT
@@ -588,6 +593,7 @@ country_event = {
 			clr_country_flag = candidateA
 			clr_country_flag = candidateB
 			clr_country_flag = candidateC
+			clr_country_flag = royal_diet
 		}
 	}
 	
@@ -622,9 +628,11 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			remove_heir = yes
 			clr_country_flag = candidateA
 			clr_country_flag = candidateB
 			clr_country_flag = candidateC
+			clr_country_flag = royal_diet
 		}
 	}
 	
@@ -648,6 +656,7 @@ country_event = {
 			clr_country_flag = candidateA
 			clr_country_flag = candidateB
 			clr_country_flag = candidateC
+			clr_country_flag = royal_diet
 		}
 	}
 	
@@ -677,11 +686,38 @@ country_event = {
 		
 		ai_chance = { factor = 25 }
 		hidden_effect = {
+			remove_heir = yes
 			clr_country_flag = candidateA
 			clr_country_flag = candidateB
 			clr_country_flag = candidateC
+			clr_country_flag = royal_diet
 		}
 	}
+	option = {
+		name = "reform_me_events.11.g"	# Old Family
+		
+		trigger = {
+			has_regency = yes
+		}
+		
+		define_ruler = {
+			dynasty = original_dynasty
+			culture = ROOT
+			religion = ROOT
+			age = 35
+			claim = 50
+		}
+		
+		ai_chance = { factor = 25 }
+		hidden_effect = {
+			remove_heir = yes
+			clr_country_flag = candidateA
+			clr_country_flag = candidateB
+			clr_country_flag = candidateC
+			clr_country_flag = royal_diet
+		}
+	}
+	
 }
 
 country_event = {
