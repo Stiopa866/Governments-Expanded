@@ -421,9 +421,12 @@
  cultural_investment_reform_desc: "Andalusian Caliphates would invite poets, artists, and literary figures from across the world to their courts, for the greatest honor of intellect lies solely in the deserving hands of the Andalusian people. Far and wide, as if moths to a flame, the greatest minds flock to our grand palaces to find their fame and fortune, for they know there cannot be a greater opportunity than serving our great Emir."
  berber_cavalry_reform: "Berber Cavalry"
  berber_cavalry_reform_desc: "Our fellow believers conquered these lands centuries ago, and every time we are in need, they send a great mounted host across the straits. Strengthening our ties with our Northern African brethren may have allowed us to subsist thus far, but we cannot continue continue to tread this path quite so lightly. Let us create a continuous flow of Berber tribesmen to settle in our lands and ensure this land of sheep and goats is to remain ours."
- 
- 
- 
+ portuguese_empire_reform: "Portuguese Empire"
+ portuguese_empire_reform_desc: "Placeholder #BlameNuno."
+ kingdom_of_castille_and_leon: "Kingdom of Castille and Leon"
+ kingdom_of_castille_and_leon_desc: "The Kingdom of Castille and Leon was a union of the Castillian and Leonese realms, fused into a united realm. however, the kings of Castille and Leon struggled to reign in the powerfull lords and militant holy orders, even failing at times."
+ crown_of_castille: "Crown of Castille"
+ crown_of_castille_desc: "The Crown of Castille is the union of the Castillian, Aragonese and Grenadan Crowns upon a single monarch's head. The dream of the Iberian nobles of both the major Crowns and that of the reconquista have been achieved."
  
  
  
@@ -475,7 +478,9 @@
  mechanic_enables_legacy_of_independence_yes: "Legacy of Independence: §G+25%§! Force Limit and §G+10%§! Taxes in your vassals."
  mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant."
  mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills, Drylands and Highlands."
- 
+ mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
+ mechanic_enables_trade_princes_reform_yes: "Trade Princes: §G+1§! Merchant if you control a aragonese or catalonian subject."
+ mechanic_enables_militant_orders_reform_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed and §G0.5§! Army Tradition while at war with heathens."
  
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"

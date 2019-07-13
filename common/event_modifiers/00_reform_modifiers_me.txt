@@ -236,8 +236,16 @@ Foreign_Artists_9 = {
 Foreign_Artists_10 = {
 	prestige = 1
 }
-
-
+Kingdom_Of_Brazil = {
+	land_forcelimit_modifier = 1
+}
+Trade_Princes = {
+	merchants = 1
+}
+Militant_Orders = {
+	manpower_recovery_speed = 0.10
+	army_tradition = 0.5
+}
 
 #Cortez
 Cortes_Piety = {

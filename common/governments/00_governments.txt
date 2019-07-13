@@ -43,6 +43,9 @@ monarchy = {
 				beylik
 				kingdom_of_portugal
 				kingdom_of_portugal_and_azures
+				portuguese_empire_reform
+				kingdom_of_castille_and_leon
+				crown_of_castille
 				margrave_reform
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus

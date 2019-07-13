@@ -25,8 +25,7 @@ elective_monarchy_reform = {
 		NOT = { tag = POL }
 	}
 	modifiers = {
-		heir_chance = 0.5
-		diplomats = 1
+		heir_chance = 1.0
 	}
 	custom_attributes = {
 		enables_elective_monarchy = yes
@@ -240,6 +239,72 @@ beylik = {
 	}
 }
 
+kingdom_of_castille_and_leon = {
+	icon = crown
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = CAS
+			tag = LEO
+		}
+	}
+	trigger = {
+	}
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		min_autonomy = 15
+		production_efficiency = 0.10
+	}
+	custom_attributes = {
+		enables_militant_orders_reform = yes #10% Manpower Recovery, 0.5 Army Traditions
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+crown_of_castille = {
+	icon = crown_highlighted
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = CAS
+		}
+	}
+	trigger = {
+		have_had_reform = crown_of_castille
+	}
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		diplomatic_upkeep = 1
+	}
+	custom_attributes = {
+		enables_trade_princes_reform = yes #1 Merchant if you got a aragonese of catalan vassal
+	}
+	ai = {
+		factor = 101
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 kingdom_of_portugal = {
 	icon = kingdom_of_portugal
 	allow_normal_conversion = yes
@@ -255,6 +320,9 @@ kingdom_of_portugal = {
 		min_autonomy = 10
 		papal_influence = 1.0
 		land_morale = 0.05
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -274,8 +342,33 @@ kingdom_of_portugal_and_azures = {
 		trade_steering = 0.10
 		navy_tradition = 1
 	}
-	ai_chance = {
-		factor = 100
+	ai = {
+		factor = 101	
+	}
+}
+
+portuguese_empire_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	potential = {
+		tag = POR
+	}
+	trigger = {
+		have_had_reform = portuguese_empire_reform
+	}
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		trade_efficiency = 0.10
+		num_accepted_cultures = 2
+		trade_company_investment_cost = -0.25
+		navy_tradition = 1
+	}
+	custom_attributes = {
+		enables_kingdom_of_brazil = yes
+	}
+	ai = {
+		factor = 102
 	}
 }
 

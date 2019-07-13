@@ -44,7 +44,9 @@
  reform_me_events.52.a: "Clergymen, as they know the plight of the people."
  reform_me_events.52.b: "The Burghers, Their relations will be of much use."
  reform_me_events.52.c: "Nobles, They got experience finding soldiers."
- 
+ reform_me_events.66.t:0 "The Crown of Castille"
+ reform_me_events.66.d: "The Crown of Castille is the union of the Castillian, Aragonese and grenadan Crowns upon a single monarch's head. The dream of both the iberian nobles and of the reconquista has been achieved."
+ reform_me_events.66.a: "A new era for Castille"
  
  #GE Reform Cycle
  metropolian_bishop_reform.1.t: "Seek First His Kingdom"

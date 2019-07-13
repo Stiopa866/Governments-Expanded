@@ -3967,9 +3967,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.23
-	title = reform_me_events.23.t
-	desc = reform_me_events.23.d
+	id = reform_me_events.59
+	title = reform_me_events.59.t
+	desc = reform_me_events.59.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -4226,7 +4226,270 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.23.a
+		name = reform_me_events.59.a
 		
+	}
+}
+
+country_event = {
+	id = reform_me_events.60
+	title = reform_me_events.60.t
+	desc = reform_me_events.60.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_kingdom_of_brazil
+		any_subject_country = {
+			AND = {
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				NOT = { has_country_modifier = Kingdom_Of_Brazil }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_subject_country = {
+			limit = {
+				is_overseas_subject = yes
+				NOT = { has_country_modifier = Kingdom_Of_Brazil }
+            }
+			add_country_modifier = {
+				name = "Kingdom_Of_Brazil"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.60.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.61
+	title = reform_me_events.61.t
+	desc = reform_me_events.61.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_country_modifier = Kingdom_Of_Brazil
+		is_subject = no
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_modifier = Kingdom_Of_Brazil
+	}
+	
+	option = {
+		name = reform_me_events.61.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.62
+	title = reform_me_events.62.t
+	desc = reform_me_events.62.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_trade_princes_reform
+		OR = {
+			OR = {
+				calc_true_if = {
+					any_subject_country = {
+						OR = {
+							primary_culture = aragonese 
+							primary_culture = catalan 
+						}
+					}
+					amount = 1
+				}
+				NOT = { has_country_modifier = Trade_Princes }
+			}
+			NOT = {
+				calc_true_if = {
+					any_subject_country = {
+						OR = {
+							primary_culture = aragonese 
+							primary_culture = catalan 
+						}
+					}
+				amount = 1
+				}
+				has_country_modifier = Trade_Princes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				calc_true_if = {
+					any_subject_country = {
+						OR = {
+							primary_culture = aragonese 
+							primary_culture = catalan 
+						}
+					}
+					amount = 1
+				}
+				NOT = { has_country_modifier = Trade_Princes }
+            }
+			add_country_modifier = {
+				name = "Trade_Princes"
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 				
+					calc_true_if = {
+						all_subject_country = {
+							OR = {
+								primary_culture = aragonese 
+								primary_culture = catalan 
+							}
+						}
+						amount = 1
+					}
+				}
+			}
+			remove_country_modifier = Trade_Princes
+		}
+	}
+	
+	option = {
+		name = reform_me_events.62.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.63
+	title = reform_me_events.63.t
+	desc = reform_me_events.63.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_trade_princes_reform }
+		has_country_modifier = Trade_Princes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_modifier = Trade_Princes
+	}
+	
+	option = {
+		name = reform_me_events.63.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.64
+	title = reform_me_events.64.t
+	desc = reform_me_events.64.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_militant_orders_reform
+		at_war_with_religious_enemy = yes
+		NOT = { has_country_modifier = Militant_Orders }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = Militant_Orders
+	}
+	
+	option = {
+		name = reform_me_events.64.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.65
+	title = reform_me_events.65.t
+	desc = reform_me_events.65.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		at_war_with_religious_enemy = no
+		has_country_modifier = Militant_Orders
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_modifier = Militant_Orders
+	}
+	
+	option = {
+		name = reform_me_events.65.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.66
+	title = reform_me_events.66.t
+	desc = reform_me_events.66.d
+	picture = WESTERNISATION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CAS
+		senior_union_with = ARA
+		NOT = { exists = GRA }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = reform_me_events.66.a
+		
+		add_government_reform = crown_of_castille
 	}
 }
