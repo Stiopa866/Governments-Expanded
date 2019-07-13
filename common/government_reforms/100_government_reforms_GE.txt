@@ -2092,7 +2092,7 @@ declaration_of_breda_reform = {
 		enables_pride_of_the_navy = yes
 	}
 	ai = {
-		factor = 101
+		factor = 100
 	}
 }
 
@@ -2382,8 +2382,8 @@ commonwealth_of_nations_reform = {
 		}
 	}
 	modifiers = {
-		vassal_forcelimit_bonus = 0.50
-		liberty_desire = -10
+		vassal_forcelimit_bonus = 1.0
+		liberty_desire = -5
 	}
 	custom_attributes = {
 		enables_such_waste_of_life = yes

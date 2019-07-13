@@ -392,7 +392,7 @@
  royal_electors_reform: "Royal Electors"
  royal_electors_reform_desc: "The only ones that deserve to elect the next ruler is our royal dynasty, as only we know what its like to wear the crown."
  parliamental_electors_reform: "Parliamental Electors"
- parliamental_electors_reform_desc: "We rule the people, so who better to elect our king then the people themselves?"
+ parliamental_electors_reform_desc: "We rule the people, so who better to elect our king than the people themselves?"
  papal_electors_reform: "Papal Electors"
  papal_electors_reform_desc: "Crowned by god, for He is the only one that can truly know who deserves to rule."
  curia_regis_reform: "Curia Regis"
@@ -465,16 +465,16 @@
  mechanic_enables_noble_electors_yes: "Noble Electors: Allow a talented noble candidate to be elected in trade for noble support."
  mechanic_enables_royal_electors_yes: "Royal Electors: no legitimacy hit from bribes, and disables foreign heirs."
  mechanic_enables_bureacratic_apparatus_yes: "Bureaucratic Apparatus, §G-25%§! State Maintenance in states with a seat in parliament."
- mechanic_enables_papal_favor_yes: "Papal Favour: §G+15§! Papal influence for the favoured candidate."
+ mechanic_enables_papal_favor_yes: "Papal Favour: §G+25§! Papal influence for the favoured candidate, and appoint a cardinal to his lands."
  mechanic_enables_pride_of_the_navy_yes: "Pride of the Navy: §G+0.25§! Prestige for every 20 Naval Tradition."
  mechanic_enables_such_waste_of_life_yes: "Colonial Militias: §G+25%§! Land Forcelimit and §G+10%§! Morale of Armies in each colonial subject."
- mechanic_enables_device_forts_yes: "Device Forts: §G+25%§! Fort Defence in forts on the british isles."
+ mechanic_enables_device_forts_yes: "Device Forts: §G+10%§! Fort Defence in forts on the british isles."
  mechanic_enables_longbow_training_yes: "Act concerning Shooting in Long Bows: §G+15%§! Manpower in English provinced on the british isles."
  mechanic_enables_royal_council_yes: "Royal Council: At the start of your reign, elect a royal council."
  mechanic_enables_morisca_band_yes: "Morisca Band: §G+15%§! Fort Defence in forts bordering Christians."
  mechanic_enables_legacy_of_independence_yes: "Legacy of Independence: §G+25%§! Force Limit and §G+10%§! Taxes in your vassals."
  mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant."
- mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills and Drylands."
+ mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills and Drylands and Highlands."
  
  
  

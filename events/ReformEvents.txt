@@ -540,7 +540,14 @@ country_event = {
 			limit = {
 				has_country_flag = candidateA 
 			}
-			add_papal_influence = 15
+			add_papal_influence = 25
+			random_owned_province = {
+				limit = {
+					religion = catholic
+					NOT = { has_cardinal = yes }
+				}
+				add_cardinal = yes
+			}
 		}
 		ai_chance = { factor = 50 }
 		hidden_effect = {
@@ -570,7 +577,14 @@ country_event = {
 			limit = {
 				has_country_flag = candidateB
 			}
-			add_papal_influence = 15
+			add_papal_influence = 25
+			random_owned_province = {
+				limit = {
+					religion = catholic
+					NOT = { has_cardinal = yes }
+				}
+				add_cardinal = yes
+			}
 		}
 		ai_chance = { factor = 25 }
 		hidden_effect = {
@@ -601,7 +615,14 @@ country_event = {
 			limit = {
 				has_country_flag = candidateC
 			}
-			add_papal_influence = 15
+			add_papal_influence = 25
+			random_owned_province = {
+				limit = {
+					religion = catholic
+					NOT = { has_cardinal = yes }
+				}
+				add_cardinal = yes
+			}
 		}
 		hidden_effect = {
 			clr_country_flag = candidateA
@@ -643,7 +664,6 @@ country_event = {
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			mil = 1
 			hidden = yes
 			age = 35
 			claim = 75
@@ -3446,9 +3466,9 @@ country_event = {
 					adm = 5
 				}
 				random_list = {
-					30 = { set_country_flag = Bad_Admin }
-					50 = { set_country_flag = Decent_Admin }
-					20 = { set_country_flag = Good_Admin }
+					10 = { set_country_flag = Bad_Admin }
+					65 = { set_country_flag = Decent_Admin }
+					25 = { set_country_flag = Good_Admin }
 				}
 			}
 			else_if = {
@@ -3456,16 +3476,16 @@ country_event = {
 					adm = 3
 				}
 				random_list = {
-					50 = { set_country_flag = Bad_Admin }
-					40 = { set_country_flag = Decent_Admin }
+					40 = { set_country_flag = Bad_Admin }
+					50 = { set_country_flag = Decent_Admin }
 					10 = { set_country_flag = Good_Admin }
 				}
 			}
 			else = {
 				random_list = {
-					75 = { set_country_flag = Bad_Admin }
+					70 = { set_country_flag = Bad_Admin }
 					25 = { set_country_flag = Decent_Admin }
-					0 = { set_country_flag = Good_Admin }
+					5 = { set_country_flag = Good_Admin }
 				}
 			}
 			if = {
@@ -3473,9 +3493,9 @@ country_event = {
 					dip = 5
 				}
 				random_list = {
-					30 = { set_country_flag = Bad_Diplo }
-					50 = { set_country_flag = Decent_Diplo }
-					20 = { set_country_flag = Good_Diplo }
+					10 = { set_country_flag = Bad_Diplo }
+					65 = { set_country_flag = Decent_Diplo }
+					25 = { set_country_flag = Good_Diplo }
 				}
 			}
 			else_if = {
@@ -3483,16 +3503,16 @@ country_event = {
 					dip = 3
 				}
 				random_list = {
-					50 = { set_country_flag = Bad_Diplo }
-					40 = { set_country_flag = Decent_Diplo }
+					40 = { set_country_flag = Bad_Diplo }
+					50 = { set_country_flag = Decent_Diplo }
 					10 = { set_country_flag = Good_Diplo }
 				}
 			}
 			else = {
 				random_list = {
-					75 = { set_country_flag = Bad_Diplo }
+					70 = { set_country_flag = Bad_Diplo }
 					25 = { set_country_flag = Decent_Diplo }
-					0 = { set_country_flag = Good_Diplo }
+					5 = { set_country_flag = Good_Diplo }
 				}
 			}
 			if = {
@@ -3500,9 +3520,9 @@ country_event = {
 					mil = 5
 				}
 				random_list = {
-					30 = { set_country_flag = Bad_Mil }
-					50 = { set_country_flag = Decent_Mil }
-					20 = { set_country_flag = Good_Mil }
+					10 = { set_country_flag = Bad_Mil }
+					65 = { set_country_flag = Decent_Mil }
+					25 = { set_country_flag = Good_Mil }
 				}
 			}
 			else_if = {
@@ -3510,14 +3530,14 @@ country_event = {
 					mil = 3
 				}
 				random_list = {
-					50 = { set_country_flag = Bad_Mil }
-					40 = { set_country_flag = Decent_Mil }
+					40 = { set_country_flag = Bad_Mil }
+					50 = { set_country_flag = Decent_Mil }
 					10 = { set_country_flag = Good_Mil }
 				}
 			}
 			else = {
 				random_list = {
-					75 = { set_country_flag = Bad_Mil }
+					70 = { set_country_flag = Bad_Mil }
 					25 = { set_country_flag = Decent_Mil }
 					5 = { set_country_flag = Good_Mil }
 				}
@@ -3845,6 +3865,7 @@ country_event = {
 			OR = {
 				has_terrain = drylands 
 				has_terrain = hills 
+				has_terrain = highlands
 			}
 			region = iberia_region
 			NOT = { has_province_modifier = Berber_Herders }
@@ -3861,6 +3882,7 @@ country_event = {
 				OR = {
 					has_terrain = drylands 
 					has_terrain = hills 
+					has_terrain = highlands
 				}
 				region = iberia_region
 				NOT = { has_province_modifier = Berber_Herders }
