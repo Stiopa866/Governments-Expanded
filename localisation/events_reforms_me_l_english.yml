@@ -25,7 +25,7 @@
  reform_me_events.11.b: "One of the late king's brothers."
  reform_me_events.11.c: "A member of a foreign dynasty."
  reform_me_events.11.e: "Appoint a regency council untill $HEIR$'s majority."
- reform_me_events.11.F: "An Influencial Noble."
+ reform_me_events.11.f: "An Influencial Noble."
  reform_me_events.41.t: "Dissenting Nobles"
  reform_me_events.41.d: "A influential noble has gone on a trip recently, and appears to be stirring up otherwise passive nobles to go and agitate for a candidate of his liking. This man has a silver tongue and knows how to use it."
  reform_me_events.41.a: "By cutting a man's tongue, you're only proving you fear his words."

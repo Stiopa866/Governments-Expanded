@@ -527,10 +527,13 @@ granadan_iqta_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	queen = no
 	potential = {
 		OR = {
-			tag = GRA
-			tag = ADU
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
 			have_had_reform = granadan_iqta_reform
 		}
 	}
@@ -1055,8 +1058,10 @@ taha_divisions_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GRA
-			tag = ADU
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
 			have_had_reform = taha_divisions_reform 
 		}
 	}
@@ -1436,7 +1441,7 @@ integrate_tatars_reform = {
 			culture_group = tartar
 		}
 		OR = {
-			NOT = { total_development = 1000 }
+			NOT = { total_development = 1500 }
 			have_had_reform = integrate_tatars_reform
 		}
 	}
@@ -1445,10 +1450,10 @@ integrate_tatars_reform = {
 			value = 10
 			culture_group = tartar
 		}
-		NOT = { total_development = 1000 }
+		NOT = { total_development = 1500 }
 	}
 	modifiers = {
-		cavalry_cost = -0.10
+		cavalry_cost = -0.15
 		cav_to_inf_ratio = 0.10
 		num_accepted_cultures = 1
 	}
@@ -1481,8 +1486,10 @@ taifa_governors_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GRA
-			tag = ADU
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
 			have_had_reform = taha_divisions_reform 
 		}
 	}
@@ -1675,7 +1682,7 @@ colonial_govenors_reform = {
 	}
 	modifiers = {
 		global_tariffs = 0.25
-		liberty_desire = -5
+		reduced_liberty_desire = -5
 	}
 	ai = {
 		factor = 10
@@ -1897,8 +1904,10 @@ cultural_investment_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GRA
-			tag = ADU
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
 			have_had_reform = cultural_investment_reform 
 		}
 	}
@@ -2812,8 +2821,10 @@ berber_cavalry_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = GRA
-			tag = ADU
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
 			have_had_reform = berber_cavalry_reform 
 		}
 	}

@@ -93,7 +93,7 @@
  casa_de_india_reform_desc: "Originally established to oversee the iberian and maroccan trade routes, the Casa de India has been left in a sorry state, we should revive it and expand our trade routes to include the west indies, the gold mines of africa and the far eastern provinces, which are sure to be profitable."
  kyoho_reforms_reform: "The Kyouhou Reforms"
  kyoho_reforms_reform_desc: "The Kyouhou Reforms included an emphasis on frugality, as well as the formation of merchant guilds that allowed greater control and taxation."
- theocratic_bureacrats_reform: "Theocratic Bureacrats"
+ theocratic_bureacrats_reform: "Theocratic Bureaucrats"
  theocratic_bureacrats_reform_desc: "By utilizing the clergical network and including the priests, abbots and bishops into our administration, our people will have more faith in our capacity to ward off evil."
  regional_forts_reform: "Regional Forts"
  regional_forts_reform_desc: "Using local castles and fortifications as the cornerstone of our administration, We will be able to maintain law and order more efficiently during peace time, and for longer during enemy raids."
@@ -467,14 +467,14 @@
  mechanic_enables_bureacratic_apparatus_yes: "Bureaucratic Apparatus, §G-25%§! State Maintenance in states with a seat in parliament."
  mechanic_enables_papal_favor_yes: "Papal Favour: §G+25§! Papal influence for the favoured candidate, and appoint a cardinal to his lands."
  mechanic_enables_pride_of_the_navy_yes: "Pride of the Navy: §G+0.25§! Prestige for every 20 Naval Tradition."
- mechanic_enables_such_waste_of_life_yes: "Colonial Militias: §G+25%§! Land Forcelimit and §G+10%§! Morale of Armies in each colonial subject."
- mechanic_enables_device_forts_yes: "Device Forts: §G+10%§! Fort Defence in forts on the british isles."
- mechanic_enables_longbow_training_yes: "Act concerning Shooting in Long Bows: §G+15%§! Manpower in English provinced on the british isles."
+ mechanic_enables_such_waste_of_life_yes: "Colonial Militias: §G+25%§! Land Forcelimit and §G+5%§! Morale of Armies in each colonial subject."
+ mechanic_enables_device_forts_yes: "Device Forts: §G+10%§! Fort Defence in forts on the British Isles."
+ mechanic_enables_longbow_training_yes: "Act concerning Shooting in Long Bows: §G+15%§! Manpower in English provinces on the British Isles."
  mechanic_enables_royal_council_yes: "Royal Council: At the start of your reign, elect a royal council."
  mechanic_enables_morisca_band_yes: "Morisca Band: §G+15%§! Fort Defence in forts bordering Christians."
  mechanic_enables_legacy_of_independence_yes: "Legacy of Independence: §G+25%§! Force Limit and §G+10%§! Taxes in your vassals."
  mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant."
- mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills and Drylands and Highlands."
+ mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills, Drylands and Highlands."
  
  
  

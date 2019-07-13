@@ -560,9 +560,6 @@ country_event = {
 	option = {
 		name = "reform_me_events.11.b"	# A Pretender
 		
-		trigger = {
-			has_regency = no 
-		}
 		define_ruler = {
 			culture = ROOT
 			dynasty = ROOT
@@ -685,7 +682,6 @@ country_event = {
 			clr_country_flag = candidateC
 		}
 	}
-
 }
 
 country_event = {
