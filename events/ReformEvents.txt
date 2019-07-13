@@ -3670,14 +3670,18 @@ country_event = {
 				NOT = { has_province_modifier = Morisca_Band }
 			}
 			AND = {
-				NOT = {
-					fort_level = 2
-					any_neighbor_province = {
-						religion_group = christian
-						has_owner_religion = yes
+				any_owned_province = {
+					OR = {
+						NOT = { fort_level = 2 }
+						NOT = {
+							any_neighbor_province = {
+								religion_group = christian
+								has_owner_religion = yes
+							}
+						}
 					}
+					has_province_modifier = Morisca_Band 
 				}
-				has_province_modifier = Town_Rights
 			}
 		}
 	}
@@ -3700,19 +3704,21 @@ country_event = {
 				name = "Morisca_Band"
 				duration = -1
 			}
-			every_owned_province = {
-				limit = {
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					NOT = { fort_level = 2 }
 					NOT = {
-						fort_level = 2
 						any_neighbor_province = {
 							religion_group = christian
 							has_owner_religion = yes
-						} 
+						}
 					}
-					has_province_modifier = Morisca_Band 
 				}
-				remove_province_modifier = Morisca_Band 
+				has_province_modifier = Morisca_Band 
 			}
+			remove_province_modifier = Morisca_Band 
 		}
 	}
 	

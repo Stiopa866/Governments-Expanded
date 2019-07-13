@@ -1900,7 +1900,7 @@ cultural_investment_reform = {
 	}
 	modifiers = {
 		global_trade_power = 0.10
-		trade_efficiency = 0.5
+		trade_efficiency = 0.05
 	}
 	custom_attributes = {
 		enables_foreign_artists = yes #0.2 Prestige per Merchant. 
@@ -2047,11 +2047,14 @@ union_of_crowns_reform = {
 		}
 	}
 	trigger = {
-		SCO = {
-			OR = {
-				vassal_of = ROOT
-				junior_union_with = ROOT
+		OR = {
+			SCO = {
+				OR = {
+					vassal_of = ROOT
+					junior_union_with = ROOT
+				}
 			}
+			tag = GBR	
 		}
 	}
 	modifiers = {

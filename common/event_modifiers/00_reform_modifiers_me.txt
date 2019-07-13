@@ -200,7 +200,7 @@ Taifa_Spirit = {
 	global_tax_modifier = 0.10
 }
 Morisca_Band = {
-	local_defensiveness = -0.15
+	local_defensiveness = 0.15
 }
 Berber_Herders = {
 	local_culture_conversion_cost = -0.05
