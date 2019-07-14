@@ -475,12 +475,12 @@
  mechanic_enables_longbow_training_yes: "Act concerning Shooting in Long Bows: §G+15%§! Manpower in English provinces on the British Isles."
  mechanic_enables_royal_council_yes: "Royal Council: At the start of your reign, elect a royal council."
  mechanic_enables_morisca_band_yes: "Morisca Band: §G+15%§! Fort Defence in forts bordering Christians."
- mechanic_enables_legacy_of_independence_yes: "Legacy of Independence: §G+25%§! Force Limit and §G+10%§! Taxes in your vassals."
+ mechanic_enables_legacy_of_independence_yes: "Legacy of Taifa Independence: §G+25%§! Force Limit and §G+10%§! Taxes in your vassals."
  mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant."
  mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills, Drylands and Highlands."
  mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
  mechanic_enables_trade_princes_reform_yes: "Trade Princes: §G+1§! Merchant if you control a aragonese or catalonian subject."
- mechanic_enables_militant_orders_reform_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed and §G0.5§! Army Tradition while at war with heathens."
+ mechanic_enables_militant_orders_reform_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed while at war with heathens."
  
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"

@@ -289,22 +289,6 @@ crown_of_castille = {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 kingdom_of_portugal = {
 	icon = kingdom_of_portugal
 	allow_normal_conversion = yes
@@ -617,7 +601,7 @@ polish_constitutionalism_reform = {
 }
 
 granadan_iqta_reform = {
-	icon = muslim
+	icon = granada_iqta
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1130,7 +1114,7 @@ every_man_a_noble_reform = {
 }
 
 curia_regis_reform = {
-	icon = british_queen
+	icon = england_curia_regis
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1148,7 +1132,7 @@ curia_regis_reform = {
 }
 
 taha_divisions_reform = {
-	icon = muslim
+	icon = granada_taha
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1557,7 +1541,7 @@ integrate_tatars_reform = {
 }
 
 abolish_bastard_feudalism_reform = {
-	icon = british_queen
+	icon = feudalism
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1576,7 +1560,7 @@ abolish_bastard_feudalism_reform = {
 }
 
 taifa_governors_reform = {
-	icon = muslim
+	icon = granada_taifa
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1976,7 +1960,7 @@ turkicized_elite_reform = {
 }
 
 supreme_govenor_reform = {
-	icon = british_queen
+	icon = england_elizabeth
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1994,7 +1978,7 @@ supreme_govenor_reform = {
 }
 
 cultural_investment_reform = {
-	icon = muslim
+	icon = granada_trader
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2147,7 +2131,7 @@ abolish_the_sejm_reform = {
 }
 
 union_of_crowns_reform = {
-	icon = british_queen
+	icon = england_james
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2179,7 +2163,7 @@ union_of_crowns_reform = {
 }
 
 declaration_of_breda_reform = {
-	icon = british_queen
+	icon = england_declaration_of_breda
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2401,7 +2385,7 @@ constitution_third_may_reform = {
 }
 
 bill_of_rights_reform = {
-	icon = british_queen
+	icon = england_bill_of_rights
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2476,7 +2460,7 @@ nizam_i_jedid_reform = {
 }
 
 commonwealth_of_nations_reform = {
-	icon = british_queen
+	icon = map_2
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2889,7 +2873,7 @@ polish_national_guard_reform = {
 }
 
 henry_reforms_reform = {
-	icon = british_queen
+	icon = england_henry_8
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2911,7 +2895,7 @@ henry_reforms_reform = {
 }
 
 berber_cavalry_reform = {
-	icon = muslim
+	icon = berber_warrior
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
