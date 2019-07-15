@@ -920,6 +920,8 @@ blood_tax_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = french
+	}
+	trigger = {
 		government_rank = 2
 	}
 	modifiers = {
@@ -1760,7 +1762,7 @@ colonial_govenors_reform = {
 	}
 	modifiers = {
 		global_tariffs = 0.25
-		reduced_liberty_desire = -5
+		reduced_liberty_desire = 5
 	}
 	ai = {
 		factor = 10
@@ -2470,7 +2472,7 @@ commonwealth_of_nations_reform = {
 	}
 	modifiers = {
 		vassal_forcelimit_bonus = 1.0
-		liberty_desire = -5
+		reduced_liberty_desire = 5
 	}
 	custom_attributes = {
 		enables_such_waste_of_life = yes
