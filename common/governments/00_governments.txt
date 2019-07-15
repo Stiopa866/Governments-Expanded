@@ -195,6 +195,7 @@ monarchy = {
 				turkicized_elite_reform
 				supreme_govenor_reform
 				cultural_investment_reform 
+				empowered_of_noble_bearing_reform
 			}
 		}
 		deliberative_assembly = {
@@ -218,6 +219,7 @@ monarchy = {
 				papal_electors_reform 
 				union_of_crowns_reform
 				declaration_of_breda_reform
+				empowered_aristocratic_court_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

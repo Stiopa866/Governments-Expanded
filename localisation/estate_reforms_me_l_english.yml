@@ -428,6 +428,12 @@
  crown_of_castille: "Crown of Castille"
  crown_of_castille_desc: "The Crown of Castille is the union of the Castillian, Aragonese and Grenadan Crowns upon a single monarch's head. The dream of the Iberian nobles of both the major Crowns and that of the reconquista have been achieved."
  
+ #1.7
+ empowered_of_noble_bearing_reform:0 "Empowered Nobles of the Robe"
+ empowered_of_noble_bearing_reform_desc:0 "The noble families of the realm have sworn to provide not only council but also eternal loyalty to our monarch. As our realm expands it is clear that these duties cannot be solely performed by serving us with sword in hand. It is time for a new generation of nobles to serve, in robes and armed with pens they will aid the state just as well as their brothers do with their swords and armor."
+ empowered_aristocratic_court_reform:0 "Empowered Aristocratic Court"
+ empowered_aristocratic_court_reform_desc:0 "The Nobility served us well over the centuries, and has become an integral part of our government. In order to better control, reward, and gain the support of these ancient aristocratic families we must continue to tie them closely to our royal person and the royal court."
+
  
  
  
@@ -481,6 +487,7 @@
  mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
  mechanic_enables_trade_princes_reform_yes: "Trade Princes: §G+1§! Merchant if you control a aragonese or catalonian subject."
  mechanic_enables_militant_orders_reform_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed while at war with heathens."
+ mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
@@ -502,12 +509,18 @@
  TAX_PEASANTS: "Update Tax Registers"
  REGISTER_PEASANTS: "Increase Recruitment"
  
+ Noble_Influence: "Noble Court Influence"
+ Clergy_Influence: "Clergy Court Influence"
+ Burgher_Court_Influence: "Burgher Court Influence"
  
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
  born_to_rule_tooltip:1 "[Ruler.GetName] will be elected, as is his birthright."
  decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
+ vetshock_general.tooltip:1 "Gain General with §G60§! tradition and §G1§! extra Shock"
+ shock_general.tooltip:1 "Gain General with §G40§! tradition and §G1§! extra Shock"
+ 
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

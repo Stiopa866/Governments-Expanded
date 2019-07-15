@@ -719,11 +719,23 @@ diplomatic_positions_reform = {
 	icon = noble_diplomat
 	allow_normal_conversion = yes
 	
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	modifiers = {
 		diplomatic_reputation = 1
 	}
 	custom_attributes = {
 		enables_noble_diplomats = yes
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
 	}
 	ai = {
 		factor = 1
@@ -2005,7 +2017,98 @@ cultural_investment_reform = {
 	}
 }
 
+empowered_of_noble_bearing_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = yes
+	effect = {
+		check_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	potential = {
+		check_variable = {
+			which = Noble_Influence
+			value = 2
+		}
+		NOT = { technology_group = eastern }
+		NOT = {
+			has_estate = estate_maratha
+			technology_group = indian
+			NOT = { has_estate = estate_nobles }
+		}
+		NOT = {
+			has_estate = estate_rajput
+			technology_group = indian
+			NOT = { has_estate = estate_nobles }
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		leader_cost = -0.2
+		#Extra Loyalty
+	}
+	custom_attributes = {
+		enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
+		enables_veteran_general = yes #60 AT General instead of 40 AT General
+	}
+	removed_effect = {
+		check_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 #Tier5
+
+empowered_aristocratic_court_reform = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	effect = {
+		check_variable = {
+		which = Noble_Influence
+		value = 1
+		}
+	}
+	potential = {
+		check_variable = {
+			which = Noble_Influence
+			value = 3
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence
+			value = 3
+		}
+	}
+	modifiers = {
+		army_tradition_decay = -0.005
+		army_tradition_from_battle = 0.5
+	}
+	custom_attributes = {
+		enables_shocking_general = yes #+1 Shock on General
+	}
+	removed_effect = {
+		check_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 10
+	}
+}
 
 parliamentary_order_reform = {
 	icon = parliament_highlighted

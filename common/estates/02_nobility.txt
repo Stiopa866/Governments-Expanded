@@ -144,7 +144,7 @@ estate_nobles =
 		trigger = {
 			has_reform = feudal_levies_reform
 		}
-		influence = 10
+		influence = 5
 	}
 	influence_modifier = {
 		desc = EST_VAL_COMMONER_OFFICIALS_REFORM
@@ -259,6 +259,13 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_NOBLES_OF_THE_ROBE
+		trigger = {
+			has_reform = empowered_of_noble_bearing_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_CURTAILED_NOBLE_PRIVILEGES
 		trigger = {
 			has_reform = quash_noble_power_reform
@@ -363,6 +370,13 @@ estate_nobles =
 		desc = EST_VAL_NOBLES_OF_THE_ROBE_LOY
 		trigger = {
 			has_reform = of_noble_bearing_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_NOBLES_OF_THE_ROBE_LOY
+		trigger = {
+			has_reform = empowered_of_noble_bearing_reform
 		}
 		loyalty = 5
 	}
@@ -712,8 +726,33 @@ estate_nobles =
 			if = {
 				limit = {
 					has_government_attribute = enables_veteran_general
+					has_government_attribute = enables_shocking_general
+				}
+				custom_tooltip = vetshock_general.tooltip
+				hidden_effect = {
+					create_general = {
+						tradition = 60
+						add_shock = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_government_attribute = enables_veteran_general
 				}
 				create_general = { tradition = 60 }
+			}
+			else_if = {
+				limit = {
+					has_government_attribute = enables_shocking_general
+				}
+				custom_tooltip = shock_general.tooltip
+				hidden_effect = {
+					create_general = {
+						tradition = 40
+						add_shock = 1
+					}
+				}
 			}
 			else = {
 				create_general = { tradition = 40 }
