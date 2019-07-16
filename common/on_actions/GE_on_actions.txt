@@ -25,16 +25,23 @@ on_startup = {
 		which = Clergy_Influence
 		value = 0
 	}
+	set_variable = {
+		which = Royal_Influence
+		value = 0
+	}
 }
+#effect = {
 #	check_variable = {
 #			which = Noble_Influence
 #			value = 1
 #		}
+#}
+#removed_effect = {
 #	change_variable = {
 #			which = Noble_Influence
 #			value = 1
 #		}
-
+#}
 
 
 

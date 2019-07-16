@@ -257,7 +257,7 @@ kingdom_of_castille_and_leon = {
 		production_efficiency = 0.10
 	}
 	custom_attributes = {
-		enables_militant_orders_reform = yes #10% Manpower Recovery, 0.5 Army Traditions
+		enables_militant_orders = yes #10% Manpower Recovery, 0.5 Army Traditions
 	}
 	ai = {
 		factor = 100
@@ -281,7 +281,7 @@ crown_of_castille = {
 		diplomatic_upkeep = 1
 	}
 	custom_attributes = {
-		enables_trade_princes_reform = yes #1 Merchant if you got a aragonese of catalan vassal
+		enables_trade_princes = yes #1 Merchant if you got a aragonese of catalan vassal
 	}
 	ai = {
 		factor = 101
@@ -643,6 +643,18 @@ papal_embassy_reform = {
 	modifiers = {
 		papal_influence = 2
 	}
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	ai = {
 		factor = 1
 	}
@@ -651,6 +663,7 @@ papal_embassy_reform = {
 metropolian_bishop_reform = {
 	icon = church
 	allow_normal_conversion = yes
+	
 	potential = {
 		religion = orthodox
 	}
@@ -660,7 +673,18 @@ metropolian_bishop_reform = {
 	}
 	effect = {
 		add_patriarch_authority = 0.10
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
 	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+
 	ai = {
 		factor = 10
 	}
@@ -669,6 +693,18 @@ metropolian_bishop_reform = {
 state_church_reform = {
 	icon = church
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			religion = reformed
@@ -681,6 +717,7 @@ state_church_reform = {
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
 	}
+
 	ai = {
 		factor = 10
 	}
@@ -725,18 +762,19 @@ diplomatic_positions_reform = {
 			value = 1
 		}
 	}
-	modifiers = {
-		diplomatic_reputation = 1
-	}
-	custom_attributes = {
-		enables_noble_diplomats = yes
-	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
 		}
 	}
+	modifiers = {
+		diplomatic_reputation = 1
+	}
+	custom_attributes = {
+		enables_noble_diplomats = yes
+	}
+
 	ai = {
 		factor = 1
 	}
@@ -745,6 +783,18 @@ diplomatic_positions_reform = {
 lithuania_law_reform = {
 	icon = casimirs_code
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {	
 			have_had_reform = lithuania_law_reform
@@ -763,6 +813,18 @@ lithuania_law_reform = {
 guild_dominance_reform = {
 	icon = dutch_guilds
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = dutch
@@ -781,6 +843,18 @@ guild_dominance_reform = {
 growth_signoria_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		culture_group = latin
 	}
@@ -796,6 +870,18 @@ growth_signoria_reform = {
 akritai_privileges_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {	
 			have_had_reform = akritai_privileges_reform
@@ -814,6 +900,18 @@ akritai_privileges_reform = {
 portuguese_cortes_reform = {
 	icon = assembly_hall
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = POR
@@ -834,6 +932,18 @@ portuguese_cortes_reform = {
 respect_union_reform = {
 	icon = Spanish_Crown
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = CAS
@@ -855,6 +965,18 @@ trade_princes_reform = {
 	icon = GE_trader
 	allow_normal_conversion = yes
 	can_use_trade_post = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = ARA
@@ -874,6 +996,18 @@ trade_princes_reform = {
 council_of_sheikhs_reform = {
 	icon = mamluk_government
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		culture_group = maghrebi
 	}
@@ -891,6 +1025,18 @@ council_of_sheikhs_reform = {
 muscovite_manorialism_reform = {
 	icon = russian_noble
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = MOS
@@ -910,6 +1056,26 @@ muscovite_manorialism_reform = {
 order_of_the_swan_reform = {
 	icon = order_of_swan
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = BRA
@@ -930,6 +1096,18 @@ order_of_the_swan_reform = {
 blood_tax_reform = {
 	icon = blood_tax
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		culture_group = french
 	}
@@ -950,6 +1128,18 @@ blood_tax_reform = {
 house_of_knights_reform = {
 	icon = house_of_knights
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = SWE
@@ -969,6 +1159,18 @@ house_of_knights_reform = {
 constitutio_valdemariana_reform = {
 	icon = nobleman
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = DAN
@@ -987,6 +1189,18 @@ constitutio_valdemariana_reform = {
 riksradet_norway_reform = {
 	icon = nobleman
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = NOR
@@ -1007,6 +1221,18 @@ riksradet_norway_reform = {
 albertine_line_reform = {
 	icon = ladislaus_posthumous
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = HAB
@@ -1027,6 +1253,18 @@ albertine_line_reform = {
 magnate_law_reform = {
 	icon = magnates
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		technology_group = eastern
 	}
@@ -1046,6 +1284,18 @@ magnate_law_reform = {
 imperial_knights_reform = {
 	icon = reichsritter
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		is_part_of_hre = yes
 		NOT = { total_development = 100 }
@@ -1066,6 +1316,18 @@ imperial_knights_reform = {
 mamluk_privileges_reform = {
 	icon = mamluk_noble_2
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			have_had_reform = mamluk_privileges_reform
@@ -1087,6 +1349,18 @@ mamluk_privileges_reform = {
 szlachta_authority_reform = {
 	icon = szlachta_noble_1
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = POL
@@ -1109,6 +1383,18 @@ szlachta_authority_reform = {
 every_man_a_noble_reform = {
 	icon = szlachta_noble_2
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = POL
@@ -1130,6 +1416,18 @@ every_man_a_noble_reform = {
 curia_regis_reform = {
 	icon = england_curia_regis
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = english
@@ -1148,6 +1446,18 @@ curia_regis_reform = {
 taha_divisions_reform = {
 	icon = granada_taha
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			AND = {
@@ -1176,6 +1486,18 @@ taha_divisions_reform = {
 regional_forts_reform = {
 	icon = fort
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		NOT = { technology_group = eastern }
 	}
@@ -1207,6 +1529,18 @@ regional_forts_reform = {
 magnate_govenors_reform = {
 	icon = magnates_2
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		technology_group = eastern
 	}
@@ -1222,6 +1556,18 @@ magnate_govenors_reform = {
 theocratic_bureacrats_reform = {
 	icon = bishop
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		religion_group = christian
 	}
@@ -1242,6 +1588,18 @@ theocratic_bureacrats_reform = {
 ulema_guidance_reform = {
 	icon = noble_muslim
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		religion_group = muslim
 	}
@@ -1261,6 +1619,18 @@ ulema_guidance_reform = {
 diocletian_reforms_reform = {
 	icon = diocletian
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		tag = BYZ
 	}
@@ -1327,6 +1697,18 @@ casa_de_india_reform = {
 oprichnina_reform = {
 	icon = oprichnina
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = MOS
@@ -1346,6 +1728,18 @@ oprichnina_reform = {
 constitutio_joachimica_reform = {
 	icon = constitutio_joachimica
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = PRU
@@ -1367,6 +1761,18 @@ constitutio_joachimica_reform = {
 millet_reform = {
 	icon = millet_system
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = TUR
@@ -1386,6 +1792,18 @@ millet_reform = {
 ancien_regime_reform = {
 	icon = ancien_regime
 	allow_normal_conversion = no
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = { 
 		tag = FRA
 	}
@@ -1402,6 +1820,18 @@ ancien_regime_reform = {
 the_red_book_reform = {
 	icon = swedish_church_ordinance
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = SWE
@@ -1423,6 +1853,18 @@ the_red_book_reform = {
 commoner_officials_reform = {
 	icon = peasants
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = DAN
@@ -1442,6 +1884,18 @@ commoner_officials_reform = {
 imperial_inquisition_reform = {
 	icon = imperial_inquisition
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = HAB
@@ -1463,6 +1917,18 @@ imperial_inquisition_reform = {
 revive_the_hisbah_reform = {
 	icon = mamluk_noble
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			have_had_reform = revive_the_hisbah_reform
@@ -1484,6 +1950,18 @@ revive_the_hisbah_reform = {
 re_enforce_magdeburg_rights_reform = {
 	icon = magdeburg_rights
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = POL
@@ -1506,6 +1984,18 @@ re_enforce_magdeburg_rights_reform = {
 revoke_magnate_estates_reform = {
 	icon = magnates_2
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = POL
@@ -1557,6 +2047,18 @@ integrate_tatars_reform = {
 abolish_bastard_feudalism_reform = {
 	icon = feudalism
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = english
@@ -1576,6 +2078,18 @@ abolish_bastard_feudalism_reform = {
 taifa_governors_reform = {
 	icon = granada_taifa
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			AND = {
@@ -1603,6 +2117,18 @@ taifa_governors_reform = {
 integrate_moneyloaners_reform = {
 	icon = banker
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		NOT = { culture_group = latin }
 	}
@@ -1621,6 +2147,18 @@ integrate_moneyloaners_reform = {
 advanced_bookkeeping_reform = {
 	icon = "paper_money_map"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		culture_group = latin
 	}
@@ -1639,9 +2177,58 @@ advanced_bookkeeping_reform = {
 	}
 }
 
+empowered_clergy_in_administration_reform = {
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	potential = {
+		check_variable = {
+			which = Clergy_Influence
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Clergy_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		free_adm_policy = 1
+		warscore_cost_vs_other_religion = -0.05
+		#Extra loyalty
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 szlachta_recruits_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			AND = {
@@ -1649,7 +2236,6 @@ szlachta_recruits_reform = {
 					culture_group = west_slavic
 					culture_group = baltic
 				}
-				NOT = { primary_culture = czech }
 			}
 			have_had_reform = szlachta_recruits_reform
 		}
@@ -1676,6 +2262,18 @@ szlachta_recruits_reform = {
 voivode_captains_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			OR = {
@@ -1706,6 +2304,18 @@ voivode_captains_reform = {
 boyar_scions_reform = {
 	icon = szlachta
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			OR = {
@@ -1782,6 +2392,18 @@ colonial_govenors_reform = {
 }
 
 sulu_administration_reform = {
+effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
     icon = muslim
     allow_normal_conversion = yes
     potential = {
@@ -1799,6 +2421,18 @@ sulu_administration_reform = {
 academy_of_science_reform = {
 	icon = paper_with_seal
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = RUS
@@ -1818,6 +2452,18 @@ academy_of_science_reform = {
 koprulu_dynasty_reform = {
 	icon = koprulu_dynasty
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = TUR
@@ -1837,6 +2483,18 @@ koprulu_dynasty_reform = {
 fredrickan_reforms_reform = {
 	icon = frederick
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = PRU
@@ -1857,6 +2515,18 @@ fredrickan_reforms_reform = {
 conseil_du_roi_reform = {
 	icon = conseil_du_roi
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = { 
 		OR = {
 			tag = FRA
@@ -1876,6 +2546,18 @@ conseil_du_roi_reform = {
 table_of_ranks_reform = {
 	icon = table_of_ranks
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = RUS
@@ -1896,6 +2578,18 @@ table_of_ranks_reform = {
 the_judicature_ordinance_reform = {
 	icon = gustavus_adolphus
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = SWE
@@ -1914,6 +2608,18 @@ the_judicature_ordinance_reform = {
 christian_four_merchantile_reform = {
 	icon = merchant_ship
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = DAN
@@ -1935,6 +2641,18 @@ christian_four_merchantile_reform = {
 declario_ferdinandei_reform = {
 	icon = ferdinants_declaration
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			tag = HAB
@@ -1955,6 +2673,18 @@ declario_ferdinandei_reform = {
 turkicized_elite_reform = {
 	icon = mamluk_veteran
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			have_had_reform = turkicized_elite_reform
@@ -1976,6 +2706,26 @@ turkicized_elite_reform = {
 supreme_govenor_reform = {
 	icon = england_elizabeth
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = english
@@ -1994,6 +2744,18 @@ supreme_govenor_reform = {
 cultural_investment_reform = {
 	icon = granada_trader
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			AND = {
@@ -2021,9 +2783,15 @@ empowered_of_noble_bearing_reform = {
 	icon = "nobleman"
 	allow_normal_conversion = yes
 	effect = {
-		check_variable = {
+		change_variable = {
 			which = Noble_Influence
 			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -2057,12 +2825,6 @@ empowered_of_noble_bearing_reform = {
 		enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
 		enables_veteran_general = yes #60 AT General instead of 40 AT General
 	}
-	removed_effect = {
-		check_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
 	ai = {
 		factor = 10
 	}
@@ -2070,13 +2832,57 @@ empowered_of_noble_bearing_reform = {
 
 #Tier5
 
+empowered_royal_decree_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+		yearly_absolutism = 0.1
+	}
+
+	ai = {
+		factor = 10
+	}
+}
+
 empowered_aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	effect = {
-		check_variable = {
-		which = Noble_Influence
-		value = 1
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -2099,14 +2905,57 @@ empowered_aristocratic_court_reform = {
 	custom_attributes = {
 		enables_shocking_general = yes #+1 Shock on General
 	}
-	removed_effect = {
+	ai = {
+		factor = 10
+	}
+}
+
+empowered_general_estates_reform = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+		NOT = {
+			check_variable = {
+				which = Noble_Influence
+				value = 0
+			}
+		}
 		check_variable = {
-			which = Noble_Influence
+			which = Burgher_Influence = 1
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	trigger = {
+		NOT = {
+			check_variable = {
+				which = Noble_Influence
+				value = 0
+			}
+		}
+		check_variable = {
+			which = Burgher_Influence = 1
+		}
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_town_rights = yes
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
 			value = -1
 		}
 	}
 	ai = {
-		factor = 10
+		factor = 1
 	}
 }
 
@@ -2133,6 +2982,19 @@ parliamentary_order_reform = {
 
 king_and_duke_reform = {
 	icon = assembly_hall
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = DAN
@@ -2171,6 +3033,18 @@ diverse_estates_reform = {
 foreign_recruitment_reform = {
 	icon = mamluk_army
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			have_had_reform = foreign_recruitment_reform
@@ -2590,6 +3464,18 @@ commonwealth_of_nations_reform = {
 feudal_levies_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = { 
 		has_estate = estate_nobles
 	}
@@ -2607,6 +3493,18 @@ feudal_levies_reform = {
 national_guard_reform = {
 	icon = national_guard
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = { }
 	modifiers = {
 		land_morale = 0.05
@@ -2623,7 +3521,34 @@ national_guard_reform = {
 mercenary_corps_reform = {
 	icon = landsknecht
 	allow_normal_conversion = yes
-	potential = { }
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = { 
+		NOT = {
+			check_variable = {
+				which = Clergy_Influence			
+				value = 2
+			}
+		}
+	}
 	modifiers = { 
 		loot_amount = 0.50
 		merc_maintenance_modifier = -0.25
@@ -2633,9 +3558,68 @@ mercenary_corps_reform = {
 	}
 }
 
+empowered_mercenary_corps_reform = {
+	icon = landsknecht
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = { 
+		check_variable = {
+			which = Clergy_Influence			
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Clergy_Influence			
+			value = 2
+		}
+	}
+	modifiers = { 
+		loot_amount = 0.50
+		merc_maintenance_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_crusader_order = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 professional_army_reform = {
 	icon = "soldiers"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = { }
 	modifiers = {
 		discipline = 0.05
@@ -2665,6 +3649,18 @@ professional_army_reform = {
 italian_mercenaries_reform = {
 	icon = italian_mercenary
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		culture_group = latin
 	}
@@ -2684,6 +3680,18 @@ italian_mercenaries_reform = {
 turkish_iqta_reform = {
 	icon = Turkish_iqta
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
 	potential = {
 		primary_culture = turkish
 	}
@@ -2758,6 +3766,18 @@ south_east_asian_elephants_reform = {
 les_vieux_corps_reform = {
 	icon = soldiers_5
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
 	potential = {
 		tag = FRA 
 	}

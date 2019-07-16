@@ -245,6 +245,37 @@ Trade_Princes = {
 Militant_Orders = {
 	manpower_recovery_speed = 0.10
 }
+Crusader_Order_1 = {
+	infantry_power = 0.01
+}
+Crusader_Order_2 = {
+	infantry_power = 0.02
+}
+Crusader_Order_3 = {
+	infantry_power = 0.03
+}
+Crusader_Order_4 = {
+	infantry_power = 0.04
+}
+Crusader_Order_5 = {
+	infantry_power = 0.05
+}
+Crusader_Order_6 = {
+	infantry_power = 0.06
+}
+Crusader_Order_7 = {
+	infantry_power = 0.07
+}
+Crusader_Order_8 = {
+	infantry_power = 0.08
+}
+Crusader_Order_9 = {
+	infantry_power = 0.09
+}
+Crusader_Order_10 = {
+	infantry_power = 0.10
+}
+
 
 #Cortez
 Cortes_Piety = {

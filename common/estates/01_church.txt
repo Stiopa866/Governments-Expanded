@@ -170,6 +170,13 @@ estate_church =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_CLERGY_ADMINISTRATORS
+		trigger = {
+			has_reform = empowered_clergy_in_administration_reform
+		}	
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_VERY_HIGH_PATRIARCH_AUTHORITY
 		trigger = {
 			religion = orthodox
@@ -240,6 +247,13 @@ estate_church =
 		desc = EST_VAL_CLERGY_ADMINISTRATORS_LOY
 		trigger = {
 			has_reform = clergy_in_administration_reform
+		}	
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_CLERGY_ADMINISTRATORS_LOY
+		trigger = {
+			has_reform = empowered_clergy_in_administration_reform
 		}	
 		loyalty = 5
 	}

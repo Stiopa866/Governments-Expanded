@@ -433,8 +433,15 @@
  empowered_of_noble_bearing_reform_desc:0 "The noble families of the realm have sworn to provide not only council but also eternal loyalty to our monarch. As our realm expands it is clear that these duties cannot be solely performed by serving us with sword in hand. It is time for a new generation of nobles to serve, in robes and armed with pens they will aid the state just as well as their brothers do with their swords and armor."
  empowered_aristocratic_court_reform:0 "Empowered Aristocratic Court"
  empowered_aristocratic_court_reform_desc:0 "The Nobility served us well over the centuries, and has become an integral part of our government. In order to better control, reward, and gain the support of these ancient aristocratic families we must continue to tie them closely to our royal person and the royal court."
+ empowered_royal_decree_reform:0 "Empowered Royal Decree"
+ empowered_royal_decree_reform_desc:0 "The Monarch rules supreme in this country and loyalty is valued above all else. We must ensure that decrees from the royal court are followed to the letter, and in in all parts of our country."
+ empowered_mercenary_corps_reform: "Empowered Mercenary Corps"
+ empowered_mercenary_corps_reform_desc: "A military should be built on what makes the world run; gold. We should fill our ranks with mercenaries and give them free reign to loot as they please. Our Pious nation has attracted many knights from all over our religious realm."
+ empowered_general_estates_reform:0 "General Estates"
+ empowered_general_estates_reform_desc:0 "The ancient privileges of the estates must be respected and their role in legislation be strengthened. Let us regularly call the general estates as a way to guide and counsel our great ruler."
+ empowered_clergy_in_administration_reform:0 "Administrative Clergy"
+ empowered_clergy_in_administration_reform_desc:0 "The clergy already possess many of the skills we look for in administrators. They are well educated, experienced scribes and they have a higher calling. In many ways allying ourselves with the clergy would offer an efficient and very strong cadre of administrators."
 
- 
  
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
@@ -485,10 +492,10 @@
  mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant."
  mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills, Drylands and Highlands."
  mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
- mechanic_enables_trade_princes_reform_yes: "Trade Princes: §G+1§! Merchant if you control a aragonese or catalonian subject."
- mechanic_enables_militant_orders_reform_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed while at war with heathens."
+ mechanic_enables_trade_princes_yes: "Trade Princes: §G+1§! Merchant if you control a aragonese or catalonian subject."
+ mechanic_enables_militant_orders_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed while at war with heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
- 
+ mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -511,7 +518,8 @@
  
  Noble_Influence: "Noble Court Influence"
  Clergy_Influence: "Clergy Court Influence"
- Burgher_Court_Influence: "Burgher Court Influence"
+ Burgher_Influence: "Burgher Court Influence"
+ Royal_Influence: "Royal Court Influence"
  
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
