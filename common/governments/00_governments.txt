@@ -222,6 +222,7 @@ monarchy = {
 				union_of_crowns_reform
 				declaration_of_breda_reform
 				empowered_aristocratic_court_reform
+				empowered_german_aristocratic_court_reform
 				empowered_royal_decree_reform
 				empowered_general_estates_reform
 			}

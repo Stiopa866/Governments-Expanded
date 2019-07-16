@@ -441,8 +441,9 @@
  empowered_general_estates_reform_desc:0 "The ancient privileges of the estates must be respected and their role in legislation be strengthened. Let us regularly call the general estates as a way to guide and counsel our great ruler."
  empowered_clergy_in_administration_reform:0 "Administrative Clergy"
  empowered_clergy_in_administration_reform_desc:0 "The clergy already possess many of the skills we look for in administrators. They are well educated, experienced scribes and they have a higher calling. In many ways allying ourselves with the clergy would offer an efficient and very strong cadre of administrators."
+ empowered_german_aristocratic_court_reform:0 "Empowered Aristocratic Court"
+ empowered_german_aristocratic_court_reform_desc:0 "The Nobility served us well over the centuries, and has become an integral part of our government. In order to better control, reward, and gain the support of these ancient aristocratic families we must continue to tie them closely to our royal person and the royal court."
 
- 
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -496,6 +497,8 @@
  mechanic_enables_militant_orders_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed while at war with heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
+ mechanic_enables_junker_estate_yes: "Enables the Junker Estate."
+ 
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
@@ -515,6 +518,12 @@
  HOLD_LANDTAG: "Hold Landtag"
  TAX_PEASANTS: "Update Tax Registers"
  REGISTER_PEASANTS: "Increase Recruitment"
+ estate_junkers: "Junker Estate"
+ estate_junkers_desc: "The Junker Estate represents the german lower nobility."
+ RECRUIT_JUNKERS: "Recruit Junkers"
+ PLACATE_JUNKERS: "Placate the Junkers"
+ PROMOTE_JUNKERS: "Promote Estates"
+ JUNKER_ADVISOR: "Recruit Commandant"
  
  Noble_Influence: "Noble Court Influence"
  Clergy_Influence: "Clergy Court Influence"
@@ -528,7 +537,7 @@
  decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
  vetshock_general.tooltip:1 "Gain General with §G60§! tradition and §G1§! extra Shock"
  shock_general.tooltip:1 "Gain General with §G40§! tradition and §G1§! extra Shock"
- 
+ Placate_Junkers.tooltip:1 "Get §R25%§! Autonomy in each province owned by the Junkers Estate."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

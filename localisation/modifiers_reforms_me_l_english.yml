@@ -233,6 +233,8 @@
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
  EST_VAL_LEVIED_TROOPS:0 "Levied Troops: §Y$VAL$%§!"
+ EST_VAL_PROMOTE_JUNKERS:0 "Promoted Junkers: §Y$VAL$%§!"
+ EST_VAL_JUNKER_ADVISOR:0 "Junker Courtier: §Y$VAL$%§!"
  
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"

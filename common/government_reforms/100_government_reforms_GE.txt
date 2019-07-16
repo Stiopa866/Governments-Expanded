@@ -2870,6 +2870,47 @@ empowered_royal_decree_reform = {
 	}
 }
 
+empowered_german_aristocratic_court_reform = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		culture_group = germanic
+		check_variable = {
+			which = Noble_Influence
+			value = 4
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		culture_group = germanic
+		check_variable = {
+			which = Noble_Influence
+			value = 4
+		}
+	}
+	modifiers = {
+		army_tradition_decay = -0.005
+	}
+	custom_attributes = {
+		enables_junker_estate = yes
+	}
+	ai = {
+		factor = 0
+	}
+}
+
 empowered_aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
@@ -2888,14 +2929,15 @@ empowered_aristocratic_court_reform = {
 	potential = {
 		check_variable = {
 			which = Noble_Influence
-			value = 3
+			value = 4
 		}
+		NOT = { culture_group = germanic }
 		NOT = { has_reform = elective_monarchy_reform }
 	}
 	trigger = {
 		check_variable = {
 			which = Noble_Influence
-			value = 3
+			value = 4
 		}
 	}
 	modifiers = {
