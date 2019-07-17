@@ -498,7 +498,7 @@
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_junker_estate_yes: "Enables the Junker Estate."
- 
+ mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces based on how tolerant you are."
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"
