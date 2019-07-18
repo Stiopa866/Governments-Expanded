@@ -476,6 +476,18 @@
  bashqaq_administration_reform_desc: "The Basqaq's were military and administrative administrators that controlled the provinces, and were responsible for both the civil and military maintenance of their regions. The intertwining of these rules meant less local unrest due to powerfull local representatives of the khan."
  recruit_cossacks_reform: "Recruit Cossacks"
  recruit_cossacks_reform_desc: "We can enlarge our army by conscripting our local subjects. This will have a negative effect on the cohesiveness of our mounted forces howevery, as cossack and tatars are highly distrustfull of eachother."
+ african_jungle_warrior_reform: "African Jungle Warriors"
+ african_jungle_warrior_reform_desc: "By using jungle specialists as our vanguard we can raid and wear our enemy down, as well as quickly overwhelm them during a moment of unawareness."
+ traditionalist_african_reform: "Traditionalism"
+ traditionalist_african_reform_desc: "In the face of an ever changing world where gunpowder is ever spreading, let us revive the ancient traditions of our people. that kept us safe for generations."
+ gunpowder_weapons_african_reform: "Modern Firearms"
+ gunpowder_weapons_african_reform_desc: "Embrace the modern combat of the time, even though it crushes the old traditions. For we can not lag behind and be crushed by the wheel of time."	
+ elephant_riders_reform: "Indian Elephant Riders"
+ elephant_riders_reform_desc: "The mighty elephants are hard to train and ride into battle, but once unleashed are hard to stop and tend to cause massive casualties amongst our enemies."
+ 
+ 
+ 
+ 
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."

@@ -145,6 +145,7 @@ monarchy = {
 				feudal_levies_reform
 				national_guard_reform
 				mercenary_corps_reform
+				empowered_mercenary_corps_reform
 				professional_army_reform
 				italian_mercenaries_reform
 				imperial_circles_reform
@@ -166,7 +167,6 @@ monarchy = {
 				polish_national_guard_reform
 				henry_reforms_reform
 				berber_cavalry_reform 
-				empowered_mercenary_corps_reform
 				turkoman_gunners_reform
 				mongol_ties_reform
 				subotai_lessons_reform
@@ -590,13 +590,16 @@ tribal = {
 		}
 		military_organisation = {
 			reforms = {
-				traditionalist_reform
 				gunpowder_weapons_reform
-				feudal_vassals_reform
+				gunpowder_weapons_african_reform 
+				traditionalist_reform
+				traditionalist_african_reform 
 				turkoman_gunners_reform
 				mongol_ties_reform
 				subotai_lessons_reform
 				tatar_raiders_reform
+				african_jungle_warrior_reform 
+				elephant_riders_reform 
 			}
 		}
 		tribal_modernization = {
@@ -619,6 +622,7 @@ tribal = {
 				tribe_becomes_horde_reform
 				haudenosaunee_reform
 				recruit_cossacks_reform
+				feudal_vassals_reform
 			}
 		}
 	}
@@ -658,7 +662,7 @@ theocracy = {
 				internal_mission_reform
 				external_mission_reform
 				colonial_mission_reform
-				teuton_drill
+				#teuton_drill
 			}
 		}
 		divine_cause = {

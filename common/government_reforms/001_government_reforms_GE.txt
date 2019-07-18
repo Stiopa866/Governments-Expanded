@@ -801,6 +801,13 @@ gunpowder_weapons_reform = {
 	icon = national_guard
 	allow_normal_conversion = yes
 	potential = {
+		NOT = {
+			OR = {
+				technology_group = south_african
+				technology_group = west_african
+				technology_group = east_african
+			}
+		}
 	}
 	modifiers = {
 		fire_damage = 0.05
@@ -812,17 +819,90 @@ gunpowder_weapons_reform = {
 	}
 }
 
-feudal_vassals_reform = {
-	icon = castle
+traditionalist_african_reform = {
+	icon = soldiers_4
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			technology_group = south_african
+			technology_group = west_african
+			technology_group = east_african
+		}
 	}
 	modifiers = {
-		vassal_income = 0.25
-		vassal_forcelimit_bonus = 1.00
+		infantry_power = 0.10
 	}
-	custom_attributes = {
-		enables_noble_estate = yes
+	
+	#+10% Noble Loyalty
+	ai = {
+		factor = 1
+	}
+}
+
+gunpowder_weapons_african_reform = {
+	icon = national_guard
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			technology_group = south_african
+			technology_group = west_african
+			technology_group = east_african
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		mil_tech_cost_modifier = -0.1
+	}
+	#-10% Noble Loyalty
+	ai = {
+		factor = 1
+	}
+}
+
+african_jungle_warrior_reform = {
+	icon = tribal_martial_society
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			technology_group = south_african
+			technology_group = west_african
+			technology_group = east_african
+		}
+	}
+	trigger = {
+		OR = {
+			technology_group = south_african
+			technology_group = west_african
+			technology_group = east_african
+		}
+	}
+	modifiers = {
+		shock_damage = 0.05
+		movement_speed = 0.10
+		hostile_attrition = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+elephant_riders_reform = { 
+	icon = noble_indian
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			technology_group = indian
+		}
+	}
+	trigger = {
+		OR = {
+			technology_group = indian
+		}
+	}
+	modifiers = {
+		cavalry_power = 0.10
+		shock_damage_received = -0.10
+		cavalry_cost = 0.10
 	}
 	ai = {
 		factor = 1
@@ -1019,7 +1099,7 @@ bashqaq_administration_reform = {
 #T5
 
 recruit_cossacks_reform = {
-	icon = castle
+	icon = soldiers_2
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = tartar
@@ -1039,6 +1119,22 @@ recruit_cossacks_reform = {
 	}
 }
 
+feudal_vassals_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1.00
+	}
+	custom_attributes = {
+		enables_noble_estate = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
 
 haudenosaunee_reform = {
 	icon = iroquois_longhouse
