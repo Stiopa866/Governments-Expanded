@@ -102,6 +102,7 @@ monarchy = {
 				every_man_a_noble_reform
 				curia_regis_reform
 				taha_divisions_reform 
+				unite_the_royal_houses_reform
 			}
 		}
 		bureaucracy = {
@@ -166,6 +167,9 @@ monarchy = {
 				henry_reforms_reform
 				berber_cavalry_reform 
 				empowered_mercenary_corps_reform
+				turkoman_gunners_reform
+				mongol_ties_reform
+				subotai_lessons_reform
 			}
 		}
 		growth_of_administration = {
@@ -198,6 +202,7 @@ monarchy = {
 				cultural_investment_reform 
 				empowered_of_noble_bearing_reform
 				empowered_clergy_in_administration_reform
+				adoption_of_christianity_reform
 			}
 		}
 		deliberative_assembly = {
@@ -221,6 +226,7 @@ monarchy = {
 				papal_electors_reform 
 				union_of_crowns_reform
 				declaration_of_breda_reform
+				royal_society_reform
 				empowered_aristocratic_court_reform
 				empowered_german_aristocratic_court_reform
 				empowered_royal_decree_reform
@@ -434,6 +440,9 @@ republic = {
 				governmental_purbias_register_reform
 				reforms_of_william_3_reform
 				reform_the_condotierri_reform
+				turkoman_gunners_reform
+				mongol_ties_reform
+				subotai_lessons_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -518,6 +527,11 @@ republic = {
 		dutch_republic
 		pirate_republic_reform
 	}
+	exclusive_reforms = {
+		pirate_king_reform
+		dutch_republic
+		stadholder_reform
+	}
 }
 
 tribal = {
@@ -557,6 +571,8 @@ tribal = {
 				royal_society_reform
 				slave_raids_reform
 				herders_of_the_steppe
+				legacy_of_pax_mongolia
+				three_jurchen_tribes_reform
 			}
 		}
 		tribal_religion = {
@@ -567,6 +583,20 @@ tribal = {
 				sheikhdom_reform
 				adoption_of_christianity_reform
 				great_code_of_nomads
+				world_under_tengri
+				maintain_charade_reform
+				tolerance_of_the_church_reform
+			}
+		}
+		military_organisation = {
+			reforms = {
+				traditionalist_reform
+				gunpowder_weapons_reform
+				feudal_vassals_reform
+				turkoman_gunners_reform
+				mongol_ties_reform
+				subotai_lessons_reform
+				tatar_raiders_reform
 			}
 		}
 		tribal_modernization = {
@@ -576,6 +606,9 @@ tribal = {
 				#GE
 				unite_the_royal_houses_reform
 				iranian_bureacracy_reform
+				reintroduce_the_dirham
+				birth_of_the_manchu_reform
+				bashqaq_administration_reform
 			}
 		}
 		tribal_reformation = {
@@ -585,6 +618,7 @@ tribal = {
 				tribe_becomes_theocracy_reform
 				tribe_becomes_horde_reform
 				haudenosaunee_reform
+				recruit_cossacks_reform
 			}
 		}
 	}
@@ -676,6 +710,9 @@ theocracy = {
 				teuton_army
 				mamluk_soldiers_reform
 				tradition_of_masada_and_bar_kochba_reform
+				turkoman_gunners_reform
+				mongol_ties_reform
+				subotai_lessons_reform
 			}
 		}
 		diplomacy = {

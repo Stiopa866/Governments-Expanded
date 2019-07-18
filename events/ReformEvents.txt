@@ -1210,7 +1210,7 @@ country_event = {
 		days = 7300
 			
 		modifier = {
-			factor = 2
+			factor = 1.25
 			has_reform = decentralize_reform
 		}
 		modifier = {
@@ -1243,7 +1243,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					is_territory = no
-					NOT = { culture = ROOT }
+					NOT = { culture_group = ROOT }
 				}
 				change_culture = ROOT
 			}
@@ -4971,15 +4971,26 @@ country_event = {
 			
 		modifier = {
 			factor = 3
-			NOT = { tolerance_heathen = 1 }
+			NOT = {
+				has_global_modifier_value = {
+					which = tolerance_heathen
+					value = 1
+				} 
+			}
 		}
 		modifier = {
 			factor = 0.75
-			tolerance_heathen = 2
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 2
+			}
 		}
 		modifier = {
 			factor = 0.75
-			tolerance_heathen = 3
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 3
+			}
 		}
 		modifier = {
 			factor = 1.5
@@ -4989,13 +5000,6 @@ country_event = {
 			factor = 0.75
 			full_idea_group = humanist_ideas
 		}
-		modifier = {
-			factor = 1.25
-			had_active_policy = {
-				policy = cultural_unity
-				days = 365
-			}
-		}
 	}
 	
 	immediate = {
@@ -5003,6 +5007,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					is_territory = no
+					NOT = { nationalism = 1 }
 					NOT = { religion = ROOT }
 				}
 				change_religion = ROOT

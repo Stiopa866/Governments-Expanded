@@ -38,7 +38,10 @@ estate_nobles =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		OR = {
+			is_nomad = no
+			has_government_attribute = enables_noble_estate
+		}
 		is_colonial_nation = no
 		OR = {
 			NOT = { has_dlc = "Common Sense" }

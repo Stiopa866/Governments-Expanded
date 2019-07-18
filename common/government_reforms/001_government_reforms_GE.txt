@@ -559,6 +559,8 @@ papal_law_reform = {
 
 #TRIBAL
 
+#T2
+
 great_law_of_peace_reform = {
 	icon = great_law_of_peace
 	allow_normal_conversion = yes
@@ -574,22 +576,102 @@ great_law_of_peace_reform = {
 	}
 }
 
-haudenosaunee_reform = {
-	icon = iroquois_longhouse
+royal_society_reform = {
+	icon = kongolese_king
 	allow_normal_conversion = yes
 	potential = {
-		tag = IRO
+		culture_group = kongo_group
 	}
 	modifiers = {
-		years_of_nationalism = -5
-		num_accepted_cultures = 2
+		global_autonomy = -0.05
+		state_maintenance_modifier = -0.25
 	}
 	ai = {
-		factor = 100
+		factor = 10
 	}
 }
 
+slave_raids_reform = {
+	icon = tatar_slave_raid
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = tartar
+	}
+	trigger = {
+		culture_group = tartar
+	}
+	modifiers = {
+		production_efficiency = 0.05
+		global_trade_goods_size_modifier = 0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
 
+herders_of_the_steppe = {
+	icon = steppe_shepherds
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = tribal_federation
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		min_autonomy_in_territories = -0.1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+legacy_of_pax_mongolia = {
+	icon = steppe_shepherds
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = altaic
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = altaic
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		num_accepted_cultures = 2
+	}
+	#custom_attributes = {
+	#	enables_pax_mongolia = yes
+	#}
+	ai = {
+		factor = 10
+	}
+}
+
+three_jurchen_tribes_reform = {
+	icon = generic_people
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = evenks 
+	}
+	trigger = {
+		culture_group = evenks 
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+		global_tax_modifier = 0.05
+		land_attrition = -0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+#T3
 
 sheikhdom_reform = {
 	icon = noble_muslim
@@ -601,21 +683,6 @@ sheikhdom_reform = {
 	modifiers = {
 		tolerance_own = 1
 		warscore_cost_vs_other_religion = -0.10
-	}
-	ai = {
-		factor = 10
-	}
-}
-
-royal_society_reform = {
-	icon = kongolese_king
-	allow_normal_conversion = yes
-	potential = {
-		culture_group = kongo_group
-	}
-	modifiers = {
-		global_autonomy = -0.05
-		state_maintenance_modifier = -0.25
 	}
 	ai = {
 		factor = 10
@@ -635,6 +702,227 @@ adoption_of_christianity_reform = {
 		factor = 10
 	}
 }
+
+
+great_code_of_nomads = {
+	icon = steppe_buddhists
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = steppe_horde
+		religion_group = eastern
+	}
+	modifiers = {
+		global_trade_power = 0.2
+		tolerance_own = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+world_under_tengri = {
+	icon = strength_of_the_khalsa
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = altaic
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = altaic
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+maintain_charade_reform = {
+	icon = arabic_scripture
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = evenks 
+	}
+	trigger = {
+		culture_group = evenks 
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		global_unrest = -1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+tolerance_of_the_church_reform = {
+	icon = church
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = tartar
+	}
+	trigger = {
+		culture_group = tartar
+	}
+	modifiers = {
+		tolerance_heathen = 1
+		state_maintenance_modifier = -0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+#T3.5
+
+traditionalist_reform = {
+	icon = soldiers_4
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		shock_damage = 0.05
+		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.15
+	}
+	#+10% Tribe Loyalty
+	ai = {
+		factor = 1
+	}
+}
+
+gunpowder_weapons_reform = {
+	icon = national_guard
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		fire_damage = 0.05
+		infantry_cost = -0.10
+	}
+	#-10% Tribe Loyalty
+	ai = {
+		factor = 1
+	}
+}
+
+feudal_vassals_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1.00
+	}
+	custom_attributes = {
+		enables_noble_estate = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+turkoman_gunners_reform = {
+	icon = soldiers_2
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = iranian
+			primary_culture = turkish
+			primary_culture = turkmeni
+			primary_culture = uzbehk
+		}
+		NOT = { tag = TUR }
+	}
+	trigger = {
+		OR = {
+			culture_group = iranian
+			primary_culture = turkish
+			primary_culture = turkmeni
+			primary_culture = uzbehk
+		}
+	}
+	modifiers = {
+		artillery_power = 0.05
+		artillery_cost = -0.10
+		artillery_bonus_vs_fort = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+mongol_ties_reform = {
+	icon = soldiers_3
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = evenks 
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = evenks 
+		}
+	}
+	modifiers = {
+		cavalry_cost = -0.10
+		reinforce_cost_modifier = -0.20
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+subotai_lessons_reform = {
+	icon = feudal_theocracy
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = altaic 
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = altaic 
+		}
+	}
+	modifiers = {
+		leader_land_manuever = 1
+		leader_siege = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+tatar_raiders_reform = {
+	icon = tatar_slave_raid
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = tartar
+	}
+	trigger = {
+		culture_group = tartar
+	}
+	modifiers = {
+		shock_damage = 0.10
+		recover_army_morale_speed = -0.05
+		loot_amount = 0.50
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+#T4
 
 unite_the_royal_houses_reform = {
 	icon = kongolese_king_2
@@ -662,7 +950,7 @@ iranian_bureacracy_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 5
+		max_states = 8
 		global_autonomy = -0.025
 	}
 	ai = {
@@ -670,59 +958,100 @@ iranian_bureacracy_reform = {
 	}
 }
 
-slave_raids_reform = {
-	icon = tatar_slave_raid
+reintroduce_the_dirham = {
+	icon = paper_money_map
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = tartar
+		OR = {
+			culture_group = altaic
+		}
 	}
 	trigger = {
-		any_owned_province = {
-			has_port = yes
+		OR = {
+			culture_group = altaic
 		}
 	}
 	modifiers = {
-		production_efficiency = 0.05
-		global_trade_goods_size_modifier = 0.10
+		trade_efficiency = 0.10
+		diplomatic_annexation_cost = -0.15
 	}
-	#custom_attributes = {
-	#	enables_slave_raids = yes
-	#}
 	ai = {
 		factor = 10
 	}
 }
 
-great_code_of_nomads = {
-	icon = steppe_buddhists
+birth_of_the_manchu_reform = {
+	icon = asian_scripture
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = steppe_horde
-		religion_group = eastern
+		culture_group = evenks 
+	}
+	trigger = {
+		culture_group = evenks 
 	}
 	modifiers = {
-		global_trade_power = 0.2
-		tolerance_own = 1
+		culture_conversion_cost = -0.20
+		idea_cost = -0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+bashqaq_administration_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = tartar
+	}
+	trigger = {
+		culture_group = tartar
+	}
+	modifiers = {
+		global_unrest = -2
+		max_states = 5
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+#T5
+
+recruit_cossacks_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = tartar
+	}
+	trigger = {
+		culture_group = tartar
+	}
+	modifiers = {
+		reinforce_cost_modifier = 0.20
+		reinforce_speed = -0.15
+	}
+	custom_attributes = {
+		enables_cossack_estate = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+
+haudenosaunee_reform = {
+	icon = iroquois_longhouse
+	allow_normal_conversion = yes
+	potential = {
+		tag = IRO
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		num_accepted_cultures = 2
 	}
 	ai = {
 		factor = 100
 	}
 }
 
-herders_of_the_steppe = {
-	icon = steppe_shepherds
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = steppe_horde
-			has_reform = tribal_federation
-		}
-	}
-	modifiers = {
-		manpower_recovery_speed = 0.1
-		min_autonomy_in_territories = -0.1
-	}
-	ai = {
-		factor = 10
-	}
-}

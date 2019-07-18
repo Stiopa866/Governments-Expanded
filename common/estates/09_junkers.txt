@@ -115,7 +115,7 @@ estate_junkers =
 		}
 		
 		effect = {
-			add_army_tradition = 10
+			add_army_tradition = 5
 			add_estate_loyalty = {
 				estate = estate_junkers
 				loyalty = -10

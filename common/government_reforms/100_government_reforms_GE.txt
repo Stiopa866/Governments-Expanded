@@ -2966,7 +2966,8 @@ empowered_general_estates_reform = {
 			}
 		}
 		check_variable = {
-			which = Burgher_Influence = 1
+			which = Burgher_Influence
+			value = 1
 		}
 	}
 	effect = {
@@ -2983,7 +2984,8 @@ empowered_general_estates_reform = {
 			}
 		}
 		check_variable = {
-			which = Burgher_Influence = 1
+			which = Burgher_Influence
+			value = 1
 		}
 	}
 	modifiers = {
