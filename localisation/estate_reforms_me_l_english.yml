@@ -484,7 +484,10 @@
  gunpowder_weapons_african_reform_desc: "Embrace the modern combat of the time, even though it crushes the old traditions. For we can not lag behind and be crushed by the wheel of time."	
  elephant_riders_reform: "Indian Elephant Riders"
  elephant_riders_reform_desc: "The mighty elephants are hard to train and ride into battle, but once unleashed are hard to stop and tend to cause massive casualties amongst our enemies."
- 
+ achaemenid_empire_reform: "Achaemenid Empire"
+ achaemenid_empire_reform_desc: "Placeholder."
+ persian_satrapies_reform: "Persian Satrapies"
+ persian_satrapies_reform_desc: "Placeholder."
  
  
  
@@ -541,7 +544,7 @@
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces based on how tolerant you are."
-
+ mechanic_achaemenid_empire_reform_yes: "Persian Tolerance: Accept any culture you control in full."
  
  #Estates
  mechanic_enables_peasant_estate_yes:0 "Enables the Peasant Estate."

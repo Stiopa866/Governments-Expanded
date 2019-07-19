@@ -59,6 +59,7 @@ monarchy = {
 				austrian_empire_reform
 				polish_constitutionalism_reform
 				granadan_iqta_reform 
+				achaemenid_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -103,6 +104,7 @@ monarchy = {
 				curia_regis_reform
 				taha_divisions_reform 
 				unite_the_royal_houses_reform
+				persian_satrapies_reform
 			}
 		}
 		bureaucracy = {

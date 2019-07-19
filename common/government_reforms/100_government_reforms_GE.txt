@@ -635,6 +635,135 @@ granadan_iqta_reform = {
 	}
 }
 
+achaemenid_empire_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	hidden_effect = {
+		country_event = { 
+			id = reform_me_events.71
+		}
+	}
+	maintain_dynasty = yes
+	potential = {
+		OR = {
+			AND = {
+				religion_group = zoroastrian
+				culture_group = iranian
+			}
+		}
+	}
+	trigger = {
+		AND = {
+			religion_group = zoroastrian
+			culture_group = iranian	
+		}
+	}
+	modifiers = {
+		prestige = 1
+	}
+	custom_attributes = {
+		enables_religious_supremacy = yes
+	}
+	assimilation_cultures = {
+		altaic = {
+		}
+		baltic = {
+		}
+		british = {
+		}
+		burman = {
+		}
+		byzantine = {
+		}
+		carpathian = {
+		}
+		caucasian = {
+		}
+		gaelic = {
+		}
+		central_indic = {
+		}
+		east_asian = {
+		}
+		kongo_group = {
+		}
+		cushitic = {
+		}
+		dravidian = {
+		}
+		african = {
+		}
+		east_slavic = {
+		}
+		eastern_aryan = {
+		}
+		evenks = {
+		}
+		french = {
+		}
+		germanic = {
+		}
+		great_lakes_group = {
+		}
+		hindusthani = {
+		}
+		iberian = {
+		}
+		iranian = {
+		}
+		japanese_g = {
+		}
+		korean_g = {
+		}
+		latin = {
+		}
+		lost_cultures_group = {
+		}
+		turko_semitic = {
+		}
+		maghrebi = {
+		}
+		malay = {
+		}
+		mande = {
+		}
+#		mon_khmer = {
+#			build_cost = -0.05
+#		}
+		pacific = {
+		}
+		sahelian = {
+		}
+		scandinavian = {
+		}
+		south_slavic = {
+		}
+		southern_african = {
+		}
+		sudanese = {
+		}
+		tartar = {
+		}
+		southeastasian_group = {
+		}
+		tibetan_group = {
+		}
+		finno_ugric = {
+		}
+		west_african = {
+		}
+		west_slavic = {
+		}
+		western_aryan = {
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -1478,6 +1607,46 @@ taha_divisions_reform = {
 	}
 	custom_attributes = {
 		enables_morisca_band = yes #15% Fort Defence on Border with Christians
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+persian_satrapies_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = zoroastrian
+				culture_group = iranian	
+			}
+		}
+	}
+	trigger = {
+		AND = {
+			religion_group = zoroastrian
+			culture_group = iranian	
+		}
+	}
+	modifiers = {
+		state_maintenance_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_satrapies = yes
 	}
 	ai = {
 		factor = 100
