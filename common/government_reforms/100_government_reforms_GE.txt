@@ -47,7 +47,7 @@ arch_monarchy_reform = {
 		OR = {
 			vassal = 1
 			personal_union = 1
-			num_of_marches = 1
+			is_march = 1
 		}
 	}
 	modifiers = {
@@ -221,6 +221,9 @@ theocratic_autocracy = {
 		prestige_per_development_from_conversion = 0.20
 		reform_progress_growth = -0.10
 	}
+	custom_attributes = {
+		enables_expanded_theme_system = yes
+	}
 }
 
 beylik = {
@@ -273,7 +276,7 @@ crown_of_castille = {
 		}
 	}
 	trigger = {
-		have_had_reform = crown_of_castille
+		has_reform = crown_of_castille
 	}
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
@@ -338,7 +341,7 @@ portuguese_empire_reform = {
 		tag = POR
 	}
 	trigger = {
-		have_had_reform = portuguese_empire_reform
+		has_reform = portuguese_empire_reform
 	}
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
@@ -362,7 +365,7 @@ consulate_of_the_sea = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
-		have_had_reform = consulate_of_the_sea
+		has_reform = consulate_of_the_sea
 	}
 	modifiers = {
 		merchants = 1
@@ -527,7 +530,7 @@ habsburg_monarchy_reform = {
 			senior_union_with = HUN
 			owns = 153
 		}
-		have_had_reform = habsburg_monarchy_reform
+		has_reform = habsburg_monarchy_reform
 	}
 	fixed_rank = 2
 	modifiers = {
@@ -584,7 +587,7 @@ polish_constitutionalism_reform = {
 		}
 	}
 	trigger = {
-		have_had_reform = polish_constitutionalism_reform
+		has_reform = polish_constitutionalism_reform
 	}
 	modifiers = {
 		monarch_admin_power = 1

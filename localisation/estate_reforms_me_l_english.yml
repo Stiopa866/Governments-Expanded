@@ -545,6 +545,13 @@
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces based on how tolerant you are."
  mechanic_achaemenid_empire_reform_yes: "Persian Tolerance: Accept any culture you control in full."
+ mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."
+ 
+ 
+ 
+ #Edicts
+ edict_expanded_theme_system: "Expanded Theme System"
+ edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
  
  #Estates
  mechanic_enables_peasant_estate_yes:0 "Enables the Peasant Estate."
