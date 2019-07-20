@@ -233,6 +233,9 @@ monarchy = {
 				empowered_german_aristocratic_court_reform
 				empowered_royal_decree_reform
 				empowered_general_estates_reform
+				empowered_divine_blood_reform
+				empowered_royal_trading_company_reform
+				empowered_monastic_militarism_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

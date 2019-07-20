@@ -443,7 +443,13 @@
  empowered_clergy_in_administration_reform_desc:0 "The clergy already possess many of the skills we look for in administrators. They are well educated, experienced scribes and they have a higher calling. In many ways allying ourselves with the clergy would offer an efficient and very strong cadre of administrators."
  empowered_german_aristocratic_court_reform:0 "Empowered Aristocratic Court"
  empowered_german_aristocratic_court_reform_desc:0 "The Nobility served us well over the centuries, and has become an integral part of our government. In order to better control, reward, and gain the support of these ancient aristocratic families we must continue to tie them closely to our royal person and the royal court."
-
+ empowered_divine_blood_reform: "Empowered Divine Blood"
+ empowered_divine_blood_reform_desc: "Placeholder."
+ empowered_royal_trading_company_reform: "Empowered Royal Trading Company"
+ empowered_royal_trading_company_reform_desc: "Placeholder."
+ empowered_monastic_militarism_reform: "Monastic Militarism."
+ empowered_monastic_militarism_reform_desc: "Placeholder."
+ 
  traditionalist_reform: "Traditionalism"
  traditionalist_reform_desc: "Let us hold on to our traditions and reform them into new and powerfull shock attacks."
  gunpowder_weapons_reform: "Gunpowder Weapons"
@@ -540,7 +546,7 @@
  mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills, Drylands and Highlands."
  mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
  mechanic_enables_trade_princes_yes: "Trade Princes: §G+1§! Merchant if you control a aragonese or catalonian subject."
- mechanic_enables_militant_orders_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed while at war with heathens."
+ mechanic_enables_militant_orders_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed and §G0.25§! Army Tradition while at war with heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces based on how tolerant you are."

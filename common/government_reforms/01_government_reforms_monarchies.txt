@@ -990,8 +990,12 @@ quash_noble_power_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
 		}
 	}
 	modifiers = {
@@ -1002,8 +1006,12 @@ quash_noble_power_reform = {
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	ai = {
@@ -1129,10 +1137,6 @@ centralize_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-		change_variable = {
 			which = Royal_Influence
 			value = 1
 		}
@@ -1141,10 +1145,6 @@ centralize_reform = {
 		global_autonomy = -0.05
 	}
 	removed_effect = {
-		change_variable = {
-			which = Noble_Influence			
-			value = 1
-		}
 		change_variable = {
 			which = Royal_Influence
 			value = -1
@@ -1230,7 +1230,7 @@ clergy_in_administration_reform = {
 		NOT = {
 			check_variable = {
 				which = Clergy_Influence
-				value = 2
+				value = 3
 			}
 		}
 	}
@@ -1262,7 +1262,7 @@ of_noble_bearing_reform = {
 		NOT = {
 			check_variable = {
 				which = Noble_Influence
-				value = 2
+				value = 3
 			}
 		}
 		NOT = { 
@@ -1307,7 +1307,7 @@ meritocratic_focus_reform = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	effect = {
-		check_variable = {
+		change_variable = {
 			which = Burgher_Influence
 			value = 1
 		}
@@ -1316,7 +1316,7 @@ meritocratic_focus_reform = {
 		advisor_cost = -0.1
 	}
 	removed_effect = {
-		check_variable = {
+		change_variable = {
 			which = Burgher_Influence
 			value = -1
 		}
@@ -1375,20 +1375,8 @@ royal_decree_reform = {
 		}
 		NOT = { has_reform = elective_monarchy_reform }
 	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		max_absolutism = 5
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -1398,12 +1386,6 @@ royal_decree_reform = {
 aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
 	potential = {
 		NOT = {
 			check_variable = {
@@ -1415,12 +1397,6 @@ aristocratic_court_reform = {
 	}
 	modifiers = {
 		army_tradition_decay = -0.005
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -1485,20 +1461,8 @@ general_estates_reform = {
 			}
 		}
 	}
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		production_efficiency = 0.1
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -1510,20 +1474,8 @@ general_estates_reform = {
 letat_cest_moi_reform = {
 	icon = "queen"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		max_states = 5
-	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -1533,20 +1485,8 @@ letat_cest_moi_reform = {
 regional_representation_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		min_autonomy_in_territories = -0.10
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -1558,21 +1498,9 @@ regional_representation_reform = {
 political_absolutism_reform = {
 	icon = "judge"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		max_absolutism = 5
 		yearly_absolutism = 0.1
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -1582,20 +1510,8 @@ political_absolutism_reform = {
 legislative_houses_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		possible_adm_policy = 1
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
