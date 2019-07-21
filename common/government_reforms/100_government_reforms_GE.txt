@@ -920,14 +920,14 @@ lithuania_law_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -1162,14 +1162,14 @@ muscovite_manorialism_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -1296,14 +1296,14 @@ constitutio_valdemariana_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
-			value = 1
+			value = -1
 		}
 	}
 	potential = {
@@ -1359,13 +1359,13 @@ albertine_line_reform = {
 	effect = {
 		change_variable = {
 			which = Noble_Influence
-			value = -1
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
-			value = 1
+			value = -1
 		}
 	}
 	potential = {
@@ -2888,7 +2888,7 @@ supreme_govenor_reform = {
 		}
 		change_variable = {
 			which = Clergy_Influence
-			value = -1
+			value = 1
 		}
 	}
 	removed_effect = {
@@ -2898,7 +2898,7 @@ supreme_govenor_reform = {
 		}
 		change_variable = {
 			which = Clergy_Influence
-			value = 1
+			value = -1
 		}
 	}
 	potential = {
@@ -3013,26 +3013,14 @@ empowered_royal_decree_reform = {
 	potential = {
 		check_variable = {
 			which = Royal_Influence
-			value = 2
+			value = 3
 		}
 		NOT = { has_reform = elective_monarchy_reform }
 	}
 	trigger = {
 		check_variable = {
 			which = Royal_Influence
-			value = 2
-		}
-	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
+			value = 3
 		}
 	}
 	modifiers = {
@@ -3045,21 +3033,114 @@ empowered_royal_decree_reform = {
 	}
 }
 
+empowered_divine_blood_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	has_devotion = yes
+	effect = {
+		add_devotion = 50
+	}
+	potential = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Clergy_Influence
+			value = 2
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Clergy_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		devotion = 0.5
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+empowered_monastic_militarism_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		check_variable = {
+			which = Noble_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Clergy_Influence
+			value = 2
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Clergy_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		free_mil_policy = 1
+	}
+	custom_attributes = {
+		enables_militant_orders = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+empowered_royal_trading_company_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Burgher_Influence
+			value = 2
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Burgher_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.10
+		trade_company_investment_cost = -0.25
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 empowered_german_aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
 	potential = {
 		culture_group = germanic
 		check_variable = {
@@ -3089,18 +3170,6 @@ empowered_german_aristocratic_court_reform = {
 empowered_aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
 	potential = {
 		check_variable = {
 			which = Noble_Influence
@@ -3131,33 +3200,15 @@ empowered_general_estates_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
-		NOT = {
-			check_variable = {
-				which = Noble_Influence
-				value = 0
-			}
-		}
 		check_variable = {
 			which = Burgher_Influence
-			value = 1
-		}
-	}
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
+			value = 3
 		}
 	}
 	trigger = {
-		NOT = {
-			check_variable = {
-				which = Noble_Influence
-				value = 0
-			}
-		}
 		check_variable = {
 			which = Burgher_Influence
-			value = 1
+			value = 3
 		}
 	}
 	modifiers = {
@@ -3165,12 +3216,6 @@ empowered_general_estates_reform = {
 	}
 	custom_attributes = {
 		enables_town_rights = yes
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 1
@@ -3201,18 +3246,6 @@ parliamentary_order_reform = {
 king_and_duke_reform = {
 	icon = assembly_hall
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
 	potential = {
 		OR = {
 			tag = DAN
@@ -3251,18 +3284,6 @@ diverse_estates_reform = {
 foreign_recruitment_reform = {
 	icon = mamluk_army
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
-	}
 	potential = {
 		OR = {
 			have_had_reform = foreign_recruitment_reform
@@ -3330,18 +3351,6 @@ abolish_the_sejm_reform = {
 union_of_crowns_reform = {
 	icon = england_james
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal _Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
 	potential = {
 		OR = {
 			primary_culture = english
@@ -3374,18 +3383,6 @@ union_of_crowns_reform = {
 declaration_of_breda_reform = {
 	icon = england_declaration_of_breda
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
-	}
 	potential = {
 		OR = {
 			primary_culture = english
@@ -3407,18 +3404,6 @@ declaration_of_breda_reform = {
 noble_electors_reform = {
 	icon = man_on_podium
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
 	potential = {
 		has_reform = elective_monarchy_reform 
 	}
@@ -3437,18 +3422,6 @@ noble_electors_reform = {
 royal_electors_reform = {
 	icon = king
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
 	potential = {
 		has_reform = elective_monarchy_reform 
 	}
@@ -3466,18 +3439,6 @@ royal_electors_reform = {
 parliamental_electors_reform = {
 	icon = judge
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
-	}
 	has_parliament = yes
 	potential = {
 		has_reform = elective_monarchy_reform 
@@ -3496,18 +3457,6 @@ parliamental_electors_reform = {
 papal_electors_reform = {
 	icon = clergyman
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Clergy_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Clergy_Influence
-			value = -1
-		}
-	}
 	potential = {
 		has_reform = elective_monarchy_reform
 		religion = catholic
@@ -3785,14 +3734,14 @@ national_guard_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = { }

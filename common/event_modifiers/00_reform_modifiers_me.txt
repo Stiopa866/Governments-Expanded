@@ -244,6 +244,7 @@ Trade_Princes = {
 }
 Militant_Orders = {
 	manpower_recovery_speed = 0.10
+	army_tradition = 0.25
 }
 Crusader_Order_1 = {
 	infantry_power = 0.01
