@@ -5006,6 +5006,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
+					has_building = temple
 					is_territory = no
 					NOT = { nationalism = 1 }
 					NOT = { religion = ROOT }
