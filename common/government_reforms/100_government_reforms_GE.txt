@@ -3222,6 +3222,33 @@ empowered_general_estates_reform = {
 	}
 }
 
+empowered_church_councils_reform = {
+	icon = "church"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = elective_monarchy_reform }
+		check_variable = {
+			which = Clergy_Influence
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Clergy_Influence
+			value = 3
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_church_poorhouses = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 parliamentary_order_reform = {
 	icon = parliament_highlighted
 	allow_normal_conversion = yes

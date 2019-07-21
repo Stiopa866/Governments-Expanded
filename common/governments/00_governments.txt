@@ -236,6 +236,7 @@ monarchy = {
 				empowered_divine_blood_reform
 				empowered_royal_trading_company_reform
 				empowered_monastic_militarism_reform
+				empowered_church_councils_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

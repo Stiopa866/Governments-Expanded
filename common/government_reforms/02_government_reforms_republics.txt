@@ -747,6 +747,7 @@ republican_authoritarianism_reform = {
 	}
 	modifiers = {
 		global_unrest = -1
+		harsh_treatment_cost = -0.10
 	}
 	ai = {
 		factor = 1
@@ -901,6 +902,10 @@ provincial_governments_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		state_maintenance_modifier = -0.25
+		development_cost = -0.05
+	}
+	custom_attributes = {
+		enables_town_rights = yes
 	}
 	ai = {
 		factor = 1
@@ -927,6 +932,7 @@ union_of_states_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_trade_power = 0.1
+		merchants = 1
 	}
 	ai = {
 		factor = 1

@@ -449,6 +449,8 @@
  empowered_royal_trading_company_reform_desc: "The crown is the currency, and the currency is the crown. To strengthen the crown and country it represents, we must seek to strengthen the currency as a matter of royal mandate. To this end, we will invest heavily in a state-run trade company, to facilitate the acquisition of wealth and the exploitation of the crown's outer territories."
  empowered_monastic_militarism_reform: "Monastic Militarism."
  empowered_monastic_militarism_reform_desc: "By binding them tightly together, we have ensured that the nobility and the church both serve the same power, whether by the symbol or by the sword. Where once this was not understood, and these arms of the divine stood divided, we now unite together, indivisible. When the nobility beckons their church brothers to serve by the sword, the church serves gladly."
+ empowered_church_councils_reform: "Church Councils"
+ empowered_church_councils_reform_desc: "Placeholder."
  
  traditionalist_reform: "Traditionalism"
  traditionalist_reform_desc: "Let us hold on to our traditions and reform them into new and powerfull shock attacks."
@@ -552,7 +554,7 @@
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces with mosques based on how tolerant you are."
  mechanic_achaemenid_empire_reform_yes: "Persian Tolerance: Accept any culture you control in full."
  mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."
- 
+ mechanic_enables_church_poorhouses_yes: "Church Poorhouses: §G-10%§! Development Cost and §G+5%§! Production Efficiency in provinces with churches."
  
  
  #Edicts
@@ -599,7 +601,7 @@
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
- born_to_rule_tooltip:1 "[Ruler.GetName] will be elected, as is his birthright."
+ born_to_rule_tooltip:1 "[Root.Monarch.GetName] ([Root.Monarch.GetAdm] £adm£ / [Root.Monarch.GetDip] £dip£ / [Root.Monarch.GetMil] £mil£ ) will be elected, as is his birthright."
  decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
  vetshock_general.tooltip:1 "Gain General with §G60§! tradition and §G1§! extra Shock"
  shock_general.tooltip:1 "Gain General with §G40§! tradition and §G1§! extra Shock"

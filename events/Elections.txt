@@ -101,6 +101,7 @@ country_event = {
 			}		
 		}
 		custom_tooltip = remains_ruler
+		add_absolutism = 2.5
 		if = {
 			limit = {
 				has_government_attribute = enables_demedici
