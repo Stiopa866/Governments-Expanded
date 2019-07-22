@@ -118,6 +118,8 @@
  Crusader_Order_8: "Crusader Order"
  Crusader_Order_9: "Crusader Order"
  Crusader_Order_10: "Crusader Order"
+ Crown_Of_Aragon: "Crown of Aragon"
+ 
  
  
  Russian_Manorialism: "Manorial Maintenance"
@@ -252,4 +254,5 @@
  EST_VAL_VOIVODE_CAPTAINS_REFORM_LOY:0 "Voivode Captains: §Y$VAL$%§!"
  EST_VAL_BOYAR_SCIONS_REFORM_LOY:0 "Boyar Scions: §Y$VAL$%§!"
  EST_VAL_SZLACHTA_AUTHORITY_LOY:0 "Szlachta Authorirty: §Y$VAL$%§!"
+ EST_VAL_OLD_WORLD_PRIVILEGES_LOY:0 "Old World Privileges: §Y$VAL$%§!"
  

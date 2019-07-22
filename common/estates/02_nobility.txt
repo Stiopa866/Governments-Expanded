@@ -451,6 +451,13 @@ estate_nobles =
 		}
 		loyalty = 10
 	}
+	loyalty_modifier = {
+		desc = EST_VAL_OLD_WORLD_PRIVILEGES
+		trigger = {
+			has_reform = old_world_privileges_reform
+		}
+		loyalty = 15
+	}
 	
 	loyalty_modifier = {
 		desc = EST_VAL_VERY_LEGITIMATE

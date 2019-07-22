@@ -284,7 +284,9 @@ Satrapy = {
 	local_manpower = 0.10
 	local_tax_modifier = 0.10
 }
-
+Crown_Of_Aragon = {
+	min_local_autonomy = 25
+}
 
 #Cortez
 Cortes_Piety = {

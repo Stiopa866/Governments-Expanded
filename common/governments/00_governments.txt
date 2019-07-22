@@ -46,6 +46,8 @@ monarchy = {
 				portuguese_empire_reform
 				kingdom_of_castille_and_leon
 				crown_of_castille
+				hispanic_kingdom
+				enlightened_despotism
 				margrave_reform
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus
@@ -85,7 +87,9 @@ monarchy = {
 				growth_signoria_reform
 				akritai_privileges_reform
 				portuguese_cortes_reform
-				respect_union_reform
+				crusader_orders_reform
+				old_world_privileges_reform
+				#respect_union_reform
 				trade_princes_reform
 				dhimmi_nobles_reform
 				council_of_sheikhs_reform
@@ -172,6 +176,9 @@ monarchy = {
 				turkoman_gunners_reform
 				mongol_ties_reform
 				subotai_lessons_reform
+				jinetes_reform
+				miquelet_militia_reform
+				royal_ordinances_reform
 			}
 		}
 		growth_of_administration = {
