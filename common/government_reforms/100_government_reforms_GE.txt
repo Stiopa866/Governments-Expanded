@@ -243,7 +243,7 @@ beylik = {
 }
 
 kingdom_of_castille_and_leon = {
-	icon = crown
+	icon = castille_leon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -270,7 +270,7 @@ kingdom_of_castille_and_leon = {
 }
 
 crown_of_castille = {
-	icon = crown_highlighted
+	icon = castille_isabelle
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -296,7 +296,7 @@ crown_of_castille = {
 }
 
 hispanic_kingdom = {
-	icon = crown_highlighted
+	icon = spain_charles
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -323,7 +323,7 @@ hispanic_kingdom = {
 }
 
 enlightened_despotism = {
-	icon = crown_highlighted
+	icon = spain_bourbon
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -2153,7 +2153,7 @@ persian_satrapies_reform = {
 }
 
 crusader_orders_reform = {
-	icon = "king"
+	icon = "holy_war"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -2191,7 +2191,7 @@ crusader_orders_reform = {
 }
 
 old_world_privileges_reform = {
-	icon = "king"
+	icon = "szlachta"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -4884,7 +4884,7 @@ berber_cavalry_reform = {
 }
 
 jinetes_reform = {
-	icon = king
+	icon = spain_jinite
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -4909,7 +4909,7 @@ jinetes_reform = {
 }
 
 miquelet_militia_reform = {
-	icon = king
+	icon = spain_tercio
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
