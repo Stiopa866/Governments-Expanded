@@ -608,7 +608,7 @@ Good_Ruler = {
 	tolerance_own = 1
 	missionary_maintenance_cost = -0.1
 }
-####
+####REPUBLIC
 Additional_Taxes = {
 	global_unrest = 2
 }
@@ -647,3 +647,14 @@ Enjoying_The_Peace = {
 	republican_tradition = 0.1
 }
 
+
+####MONARCHY
+
+Garrison_Duty_2 = {
+	garrison_size = 0.15
+	fort_maintenance_modifier = -0.1
+}
+Tough_Love = {
+	global_missionary_strength = 0.01
+	missionary_maintenance_cost = -0.15
+}

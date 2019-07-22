@@ -571,8 +571,36 @@
  bishops_law.102.b: "Desperately shift the blame."
  
  
+ ###Monarchies##
  
+ ##T2##
  
+ GE_reform_cycle_monarchy.201.t: "Royal Guarentee"
+ GE_reform_cycle_monarchy.201.d: "One of our couriers carrying official documents was ambushed by bandits or a robber baron, and his royal safe-conduct wasn't enough to deter them from robbing and killing the man. The rumor is spreading that a royal decree is not enough to protect its subjects, and that enveloping protection doesn't do much outside of the capital."
+ GE_reform_cycle_monarchy.201.a: "A breastplate would have served him better."
+ GE_reform_cycle_monarchy.201.b: "Let our local officials take care of these criminals."
+ GE_reform_cycle_monarchy.201.c: "Send a Lord to root out the perpetrator."
+ 
+ GE_reform_cycle_monarchy.202.t: "Elitist Elite"
+ GE_reform_cycle_monarchy.202.d: "The elite houses of $NATION$ have grown in power under our control, and as time goes on, consolidate themselves, becoming a handful of major factions. Now, some of these factions have fallen to infighting and are bleeding each other dry of good men, captains, and lords. Together with the rise of new, younger houses, it appears that the old houses might collapse."
+ GE_reform_cycle_monarchy.202.a: "Never interrupt your opponent while he is making a mistake."
+ GE_reform_cycle_monarchy.202.b: "Mediate between the houses."
+ GE_reform_cycle_monarchy.202.c: "How about some military exercises to take the tension off."
+ GE_reform_cycle_monarchy.202.e: "Maybe some time at the border will invigorate them."
+ GE_reform_cycle_monarchy.202.f: "Offer them Spiritual Guidance."
+ 
+ GE_reform_cycle_monarchy.401.t: "Royal Guarentee"
+ GE_reform_cycle_monarchy.401.d: "The clergical powers seem more occupied with managing their tables rather then their flock, and spreading legs rather than the word. This neglectful state of affairs is a disgrace to the Lord, yet also offers opportunity..."
+ GE_reform_cycle_monarchy.401.a: "Time to bring the fear of god back" 
+ GE_reform_cycle_monarchy.401.b: "We'll see what the big boss thinks about it."
+ GE_reform_cycle_monarchy.401.c: "Send a Lord to root out the perpetrator."
+ GE_reform_cycle_monarchy.401.e: "Let us replace some of the pigs with loyalists."
+ 
+  E_reform_cycle_monarchy.402.t: "Royal Guarentee"
+ GE_reform_cycle_monarchy.402.d: "It has come to our attention that some of the bureaucrats look down upon the native subjects of our lands, time and time again accusing them of heresy, treason, or some other false charge. This harsh treatment is reflecting badly upon our monarch, allowing for the natives to suffer so dearly under the watchful eyes of the Lord."
+ GE_reform_cycle_monarchy.402.a: "They shall learn to love the Lord"
+ GE_reform_cycle_monarchy.402.b: "Safeguard their communities." 
+ GE_reform_cycle_monarchy.402.c: "Enforce secular rule"
  
  
  ###Republics###

@@ -417,7 +417,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -5
 		}
 	}
 	
@@ -428,7 +428,7 @@ country_event = {
 			estate = estate_nobles
 			desc = EST_VAL_NOBILITY_ADVANCES
 			influence = 15
-			duration = 7300
+			duration = 3650
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles

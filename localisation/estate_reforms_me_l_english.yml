@@ -699,6 +699,10 @@
  AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_CONTRACTION: "Available due to the §YCasa de Contraction§ ."
  AVAILABLE_BECAUSE_OF_REFORM_DECENTRALIZE: "Available due to §YDecentralized Bureaucracy§ ."
  AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS: "Available due to §YRegional Forts§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_FEUDAL_LEVIES: "Available due to §YFeudal Levies§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_CLERGY: "Available due to §YAdministrative Clergy§ ."
+ AVAILABLE_BECAUSE_OF_POWERFUL_NOBLE_REFORM: ""Available due to empowering nobles through reforms."
+ 
  
  AVAILABLE_BECAUSE_OF_REFORM_INTERNAL_MISSION: "Available due to §YInternal Mission§ ."
  AVAILABLE_BECAUSE_OF_REFORM_EXTERNAL_MISSION: "Available due to §YExternal Mission§ ."
