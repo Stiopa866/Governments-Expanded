@@ -589,14 +589,14 @@
  GE_reform_cycle_monarchy.202.e: "Maybe some time at the border will invigorate them."
  GE_reform_cycle_monarchy.202.f: "Offer them Spiritual Guidance."
  
- GE_reform_cycle_monarchy.401.t: "Royal Guarentee"
+ GE_reform_cycle_monarchy.401.t: "Slumbering Spirituality"
  GE_reform_cycle_monarchy.401.d: "The clergical powers seem more occupied with managing their tables rather then their flock, and spreading legs rather than the word. This neglectful state of affairs is a disgrace to the Lord, yet also offers opportunity..."
  GE_reform_cycle_monarchy.401.a: "Time to bring the fear of god back" 
- GE_reform_cycle_monarchy.401.b: "We'll see what the big boss thinks about it."
- GE_reform_cycle_monarchy.401.c: "Send a Lord to root out the perpetrator."
+ GE_reform_cycle_monarchy.401.b: "Don't bother sleeping dogs."
+ GE_reform_cycle_monarchy.401.c: "We'll see what the big boss thinks about it."
  GE_reform_cycle_monarchy.401.e: "Let us replace some of the pigs with loyalists."
  
-  E_reform_cycle_monarchy.402.t: "Royal Guarentee"
+ GE_reform_cycle_monarchy.402.t: "Racial Concerns"
  GE_reform_cycle_monarchy.402.d: "It has come to our attention that some of the bureaucrats look down upon the native subjects of our lands, time and time again accusing them of heresy, treason, or some other false charge. This harsh treatment is reflecting badly upon our monarch, allowing for the natives to suffer so dearly under the watchful eyes of the Lord."
  GE_reform_cycle_monarchy.402.a: "They shall learn to love the Lord"
  GE_reform_cycle_monarchy.402.b: "Safeguard their communities." 

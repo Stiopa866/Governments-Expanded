@@ -5331,10 +5331,6 @@ country_event = {
 
 	trigger = {
 		tag = SPA
-		OR = {
-			was_tag = ARA
-			was_tag = CAS
-		}
 	}
 	
 	mean_time_to_happen = {

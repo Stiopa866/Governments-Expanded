@@ -204,6 +204,7 @@ support_borghese_reform = {
 	potential = {
 		culture_group = latin
 		NOT = { has_reform = pirate_republic_reform }
+		is_year = 1490
 	}
 	modifiers = {
 		republican_tradition = 0.3

@@ -314,6 +314,12 @@ country_event = {
 	
 	option = {
 		name = GE_reform_cycle_monarchy.402.b
+			
+		add_legitimacy = 5
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.402.c
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
 		trigger = {

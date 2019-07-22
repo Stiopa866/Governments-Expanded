@@ -16,3 +16,17 @@ opinion_order_of_the_swan = {
 opinion_unrestricted_diplomacy = {
 	opinion = 25
 }
+opinion_opposite_ghuelpsghibbellines = {
+	opinion = -50
+}
+opinion_opposite_ghuelpsghibbellines_timed = {
+	opinion = -50
+	yearly_decay = 5
+}
+opinion_same_ghuelpsghibbellines = {
+	opinion = 20
+}
+opinion_same_ghuelpsghibbellines_timed = {
+	opinion = 20
+	yearly_decay = 2
+}

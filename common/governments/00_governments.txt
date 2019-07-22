@@ -109,6 +109,8 @@ monarchy = {
 				taha_divisions_reform 
 				unite_the_royal_houses_reform
 				persian_satrapies_reform
+				support_ghibbelline_reform
+				support_guelphs_reform
 			}
 		}
 		bureaucracy = {
@@ -424,6 +426,8 @@ republic = {
 				moedernegotie_reform
 				mixed_republic_reform
 				independence_reform
+				support_ghibbelline_reform
+				support_guelphs_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {

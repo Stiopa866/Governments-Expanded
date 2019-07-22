@@ -552,4 +552,12 @@ spriteTypes = {
 		name = "government_reform_england_henry_8"
 		texturefile = "gfx//interface//government_reform_icons//england_henry_8.dds"
 	}
+	spriteType = {
+		name = "government_reform_italy_guelph"
+		texturefile = "gfx//interface//government_reform_icons//italy_guelph.dds"
+	}
+	spriteType = {
+		name = "government_reform_italy_ghibbelline"
+		texturefile = "gfx//interface//government_reform_icons//italy_ghibbelline.dds"
+	}
 }
