@@ -287,6 +287,19 @@ Satrapy = {
 Crown_Of_Aragon = {
 	min_local_autonomy = 25
 }
+Kingdom_of_Aragon = {
+	local_manpower_modifier = 0.25
+}
+Principality_Of_Catalonia = {
+	province_trade_power_modifier = 0.25
+}
+City_Of_Valencia = {
+	trade_goods_size_modifier = 0.15
+}
+Kingdom_Of_Sicily = {
+	local_tax_modifier = 0.20
+}
+
 
 #Cortez
 Cortes_Piety = {

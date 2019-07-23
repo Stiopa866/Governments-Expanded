@@ -515,7 +515,8 @@
  miquelet_militia_reform_desc: "The irregular militias from Catalonia and Valencia were infamous light troops that bravely defended their homes from french or imperial rule. After the crushing of the political attempt for independece, the military force was integrated into the army as light infantry."
  royal_ordinances_reform: "Royal Ordinances"
  royal_ordinances_reform_desc:"The Army was reorganized on the French model and in 1704 the old Tercios were transformed into Regiments. The first modern military school (the Artillery School) was created in Segovia in 1764. Finally, in 1768 King Charles III sanctioned the "Royal Ordinances for the Regime, Discipline, Subordination, and Service in His Armies"."
- 
+ crown_of_aragon: "Crown of Aragon"
+ crown_of_aragon_desc: "The Crown of Aragon was a composite monarchy of nearly a dozen kingdoms; The Kingdom of Aragon, The Principality of Catalonia, The City of Valencia, The Kingdom of Majorca, The Kingdom of Sardinia, the Kingdom of Sicily, The Kingdom of Naples, the Duchy of Athens, the Duchy of Neopatria, the County of Gevaudan, the County of Provence and the principality of Andorra. This extreme fragmentary state of feudalism is both hard to manage for a ruler, leaving its many subject states relatively free and prosperous, as well as rather happy about the lack of noble or royal control."
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -573,8 +574,13 @@
  mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."
  mechanic_enables_church_poorhouses_yes: "Church Poorhouses: §G-10%§! Development Cost and §G+5%§! Production Efficiency in provinces with churches."
  mechanic_enables_crown_of_aragon_yes: "Crown of Aragon: §R+25%§! Min Autonomy in Aragonese provinces."
- mechanic_enables_support_ghibbellines_yes: "In support of the Empire and Defence against the Pope; -50 opinion with Ghuelphs, +20 opinion with The Emperor and fellow Ghibellines."
- mechanic_enables_support_ghuelps_yes: "In support of the Pope and Defence against the Empire; -50 opinion with Ghibellines, +20 opinion with fellow Guelphs."
+ mechanic_enables_support_ghibbellines_yes: "In support of the Empire and Defence against the Pope; §R-50§! opinion with Ghuelphs, §G+20§! opinion with The Emperor and fellow Ghibellines."
+ mechanic_enables_support_ghuelps_yes: "In support of the Pope and Defence against the Empire; §R-50§! opinion with Ghibellines, §G+20§! opinion with fellow Guelphs."
+ mechanic_enables_kingdom_of_aragon_yes: "Kingdom of Aragon: §G+25%§! Manpower in the state of Aragon."
+ mechanic_enables_principality_of_catalonia_yes: "Principality of Catalonia: §G+25%§! Trade Power in the state of Catalonia."
+ mechanic_enables_city_of_valencia_yes: "City of Valencia: §G+15%§! Goods Produced in the state of Valencia."
+ mechanic_enables_kingdom_of_sicily_yes: "Kingdom of Sicily: §G+20%§! Tax Modifier in the state of Sicily."
+ mechanic_enables_settling_tribes_yes: "This reform will cause tribes to settle in our lands, granting §G7§! development."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

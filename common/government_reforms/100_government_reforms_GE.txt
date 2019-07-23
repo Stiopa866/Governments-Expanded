@@ -350,6 +350,62 @@ enlightened_despotism = {
 	}
 }
 
+crown_of_aragon = {
+	icon = aragon_alfonso
+	allow_normal_conversion = yes
+	effect = {
+	}
+	removed_effect = {
+		hidden_effect = {
+			aragon_area = { 
+				remove_province_modifier = {
+					name = Kingdom_of_Aragon
+					duration = -1
+				}
+			}
+			catalonia_area = {
+				remove_province_modifier = {
+					name = Principality_Of_Catalonia
+					duration = -1
+				}
+			}
+			valencia_area = {
+				remove_province_modifier = {
+					name = City_Of-Valencia
+					duration = -1
+				}
+			}
+			sicily_area = {
+				remove_province_modifier = {
+					name = Kingdom_Of_Sicily
+					duration = -1
+				}
+			}
+		}
+	}
+	potential = {
+		tag = ARA
+	}
+	trigger = {
+		has_reform = crown_of_aragon
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		min_autonomy = 10
+		global_unrest = -1
+	}
+	custom_attributes = {
+		enables_kingdom_of_aragon = yes
+		enables_principality_of_catalonia = yes
+		enables_city_of_valencia = yes
+		enables_kingdom_of_sicily = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 kingdom_of_portugal = {
 	icon = kingdom_of_portugal
 	allow_normal_conversion = yes
@@ -2781,9 +2837,12 @@ integrate_tatars_reform = {
 		NOT = { total_development = 1500 }
 	}
 	modifiers = {
-		cavalry_cost = -0.15
+		cavalry_cost = -0.10
 		cav_to_inf_ratio = 0.10
 		num_accepted_cultures = 1
+	}
+	custom_attributes = {
+		enables_settling_tribes = yes
 	}
 	ai = {
 		factor = 10

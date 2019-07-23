@@ -44,6 +44,7 @@ monarchy = {
 				kingdom_of_portugal
 				kingdom_of_portugal_and_azures
 				portuguese_empire_reform
+				crown_of_aragon
 				kingdom_of_castille_and_leon
 				crown_of_castille
 				hispanic_kingdom

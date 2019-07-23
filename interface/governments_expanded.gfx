@@ -584,4 +584,8 @@ spriteTypes = {
 		name = "government_reform_spain_tercio"
 		texturefile = "gfx//interface//government_reform_icons//spain_tercio.dds"
 	}
+	spriteType = {
+		name = "government_reform_aragon_alfonso"
+		texturefile = "gfx//interface//government_reform_icons//aragon_alfonso.dds"
+	}
 }
