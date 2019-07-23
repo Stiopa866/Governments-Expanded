@@ -598,8 +598,8 @@
  GE_reform_cycle_monarchy.3501.t: "Training Gear"
  GE_reform_cycle_monarchy.3501.d: "Our attempts at professionalizing our military have run into a bit of an error, there is a lack of training facilities.  One of our captains have taken initiative and attempted to set up a training facility at his station."
  GE_reform_cycle_monarchy.3501.a: "Bring the captain to court."
- GE_reform_cycle_monarchy.3501.b: "Train with broomsticks."
- GE_reform_cycle_monarchy.3501.c: "Fund the training camp."
+ GE_reform_cycle_monarchy.3501.b: "Fund the training camp."
+ GE_reform_cycle_monarchy.3501.c: "Train with broomsticks."
  GE_reform_cycle_monarchy.3501.e: "Hold war games with the garrisons."
  GE_reform_cycle_monarchy.3501.f: "We recently confiscated a castle we can use."
  
@@ -607,23 +607,22 @@
  GE_reform_cycle_monarchy.3502.d: "Our financial policies have led to a large amount of inflation. now our army, as state officials, are losing faith their ever dwindling purchasing power and demand a raise."
  GE_reform_cycle_monarchy.3502.a: "Print some more money."
  GE_reform_cycle_monarchy.3502.b: "Deny their Raise."
- GE_reform_cycle_monarchy.3502.c: "Fund the training camp."
- GE_reform_cycle_monarchy.3502.e: "Let the bankers do their magic."
- GE_reform_cycle_monarchy.3502.f: "Replace the troublemakers with nobles."
+ GE_reform_cycle_monarchy.3502.c: "Let the bankers do their magic."
+ GE_reform_cycle_monarchy.3502.e: "Replace the troublemakers with nobles."
  
  
- GE_reform_cycle_monarchy.401.t: "Slumbering Spirituality"
- GE_reform_cycle_monarchy.401.d: "The clergical powers seem more occupied with managing their tables rather then their flock, and spreading legs rather than the word. This neglectful state of affairs is a disgrace to the Lord, yet also offers opportunity..."
- GE_reform_cycle_monarchy.401.a: "Time to bring the fear of god back" 
- GE_reform_cycle_monarchy.401.b: "Don't bother sleeping dogs."
- GE_reform_cycle_monarchy.401.c: "We'll see what the big boss thinks about it."
- GE_reform_cycle_monarchy.401.e: "Let us replace some of the pigs with loyalists."
+ GE_reform_cycle_monarchy.301.t: "Slumbering Spirituality"
+ GE_reform_cycle_monarchy.301.d: "The clergical powers seem more occupied with managing their tables rather then their flock, and spreading legs rather than the word. This neglectful state of affairs is a disgrace to the Lord, yet also offers opportunity..."
+ GE_reform_cycle_monarchy.301.a: "Time to bring the fear of god back" 
+ GE_reform_cycle_monarchy.301.b: "Don't bother sleeping dogs."
+ GE_reform_cycle_monarchy.301.c: "We'll see what the big boss thinks about it."
+ GE_reform_cycle_monarchy.301.e: "Let us replace some of the pigs with loyalists."
  
- GE_reform_cycle_monarchy.402.t: "Racial Concerns"
- GE_reform_cycle_monarchy.402.d: "It has come to our attention that some of the bureaucrats look down upon the native subjects of our lands, time and time again accusing them of heresy, treason, or some other false charge. This harsh treatment is reflecting badly upon our monarch, allowing for the natives to suffer so dearly under the watchful eyes of the Lord."
- GE_reform_cycle_monarchy.402.a: "They shall learn to love the Lord"
- GE_reform_cycle_monarchy.402.b: "Safeguard their communities." 
- GE_reform_cycle_monarchy.402.c: "Enforce secular rule"
+ GE_reform_cycle_monarchy.302.t: "Racial Concerns"
+ GE_reform_cycle_monarchy.302.d: "It has come to our attention that some of the bureaucrats look down upon the native subjects of our lands, time and time again accusing them of heresy, treason, or some other false charge. This harsh treatment is reflecting badly upon our monarch, allowing for the natives to suffer so dearly under the watchful eyes of the Lord."
+ GE_reform_cycle_monarchy.302.a: "They shall learn to love the Lord"
+ GE_reform_cycle_monarchy.302.b: "Safeguard their communities." 
+ GE_reform_cycle_monarchy.302.c: "Enforce secular rule"
  
  
  ###Republics###

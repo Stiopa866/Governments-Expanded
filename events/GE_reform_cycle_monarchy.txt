@@ -44,8 +44,10 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
 		
 		trigger = {
-			has_reform = regional_forts_reform
-			has_reform = magnate_govenors_reform
+			OR = {
+				has_reform = regional_forts_reform
+				has_reform = magnate_govenors_reform
+			}
 		}
 		add_army_tradition = 5
 	}
@@ -423,8 +425,10 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
 		
 		trigger = {
-			has_reform = regional_forts_reform
-			has_reform = magnate_govenors_reform
+			OR = {
+				has_reform = regional_forts_reform
+				has_reform = magnate_govenors_reform
+			}
 		}
 
 		add_army_tradition = 5
@@ -492,7 +496,7 @@ country_event = {
 			
 		add_country_modifier = {
 			name = "Demoralized_Army"
-			duration = -1
+			duration = 3650
 		}
 	}
 	
