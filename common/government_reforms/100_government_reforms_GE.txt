@@ -2849,19 +2849,50 @@ integrate_tatars_reform = {
 	}
 }
 
+union_of_italian_states_reform = {
+	icon = map_2
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		culture_group = latin
+	}
+	trigger = {
+		culture_group = latin
+	}
+	modifiers = {
+		min_autonomy = 10
+		global_unrest = -2
+		global_spy_defence = 0.1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 abolish_bastard_feudalism_reform = {
 	icon = feudalism
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Burgher_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -4055,6 +4086,25 @@ declaration_of_breda_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+legacy_of_constitutionalism_reform = {
+	icon = king_2
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = latin
+	}
+	trigger = {
+		culture_group = latin
+	}	
+	modifiers = {
+		max_absolutism = 5
+		yearly_absolutism = 0.10
+		legitimacy = -0.25
+	}
+	ai = {
+		factor = 10
 	}
 }
 

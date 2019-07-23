@@ -420,6 +420,42 @@ andrea_doria_constitution_reform = {
 	}
 }
 
+the_consigliere_reform = {
+	icon = nobleman
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = latin
+	}
+	trigger = {
+		culture_group = latin
+	}	
+	modifiers = {
+		max_absolutism = 5
+		candidate_random_bonus = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+council_of_petitions_reform = {
+	icon = man_on_podium
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = latin
+	}
+	trigger = {
+		culture_group = latin
+	}	
+	modifiers = {
+		global_unrest = -2
+		reelection_cost = -0.1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 ware_vrijheid_reform = {
 	icon = dutch_tulip_field
 	allow_normal_conversion = yes

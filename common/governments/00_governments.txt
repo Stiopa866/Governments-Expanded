@@ -147,6 +147,7 @@ monarchy = {
 				integrate_tatars_reform
 				abolish_bastard_feudalism_reform
 				taifa_governors_reform 
+				union_of_italian_states_reform
 			}
 		}
 		military_organisation = {
@@ -239,6 +240,7 @@ monarchy = {
 				union_of_crowns_reform
 				declaration_of_breda_reform
 				royal_society_reform
+				legacy_of_constitutionalism_reform
 				empowered_aristocratic_court_reform
 				empowered_german_aristocratic_court_reform
 				empowered_royal_decree_reform
@@ -486,6 +488,8 @@ republic = {
 				stadholder_reform
 				andrea_doria_constitution_reform
 				ware_vrijheid_reform
+				the_consigliere_reform
+				council_of_petitions_reform
 			}
 		}
 		consolidation_of_power_category = {

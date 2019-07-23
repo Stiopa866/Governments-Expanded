@@ -494,6 +494,14 @@
  support_ghibbelline_reform_desc: "Placeholder. BLAME PARAGON"
  support_guelphs_reform: "Support Guelphs"
  support_guelphs_reform_desc: "Placeholder. BLAME PARAGON"
+ union_of_italian_states_reform: "Union of States"
+ union_of_italian_states_reform_desc: "The Italian Politics are dominated by city states and puppet regimes, by granting them some more autonomy we can ensure their loyalty and cooperation. And prevent them from opening the gates to the first rival nation that comes along."
+ the_consigliere_reform: "The Consigliere"
+ the_consigliere_reform_desc: "A four-man council elected for a three-month term, headed by the 'Duke of the Republic'. thanks to this government form, the head of the state will be more competent, and its direction clearer for our citizens."
+ council_of_petitions_reform: "Council of Petitions"
+ council_of_petitions_reform_desc: "A form of plebejan tribune where the non-aristocrats can make their voices heard and let people know that the government is serving their interests and heard their pleas."
+ legacy_of_constitutionalism_reform: "Legacy of Constitutionalism"
+ legacy_of_constitutionalism_reform_desc: "We used to have a constitution, but now the authoritarian monarchs have torn it down so much that they effectively hold absolute power. This desecration is causing the legitimacy of the monarch fade away from the eyes of the countries people."
  
  portuguese_empire_reform: "Portuguese Empire"
  portuguese_empire_reform_desc: "Placeholder #BlameNuno."
@@ -517,6 +525,7 @@
  royal_ordinances_reform_desc:"The Army was reorganized on the French model and in 1704 the old Tercios were transformed into Regiments. The first modern military school (the Artillery School) was created in Segovia in 1764. Finally, in 1768 King Charles III sanctioned the "Royal Ordinances for the Regime, Discipline, Subordination, and Service in His Armies"."
  crown_of_aragon: "Crown of Aragon"
  crown_of_aragon_desc: "The Crown of Aragon was a composite monarchy of nearly a dozen kingdoms; The Kingdom of Aragon, The Principality of Catalonia, The City of Valencia, The Kingdom of Majorca, The Kingdom of Sardinia, the Kingdom of Sicily, The Kingdom of Naples, the Duchy of Athens, the Duchy of Neopatria, the County of Gevaudan, the County of Provence and the principality of Andorra. This extreme fragmentary state of feudalism is both hard to manage for a ruler, leaving its many subject states relatively free and prosperous, as well as rather happy about the lack of noble or royal control."
+
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
