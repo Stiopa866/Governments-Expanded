@@ -133,6 +133,8 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.68
 		100 = GE_reform_cycle.69 #Professional_army
 		100 = GE_reform_cycle.70
+		150 = GE_reform_cycle_monarchy.3501
+		250 = GE_reform_cycle_monarchy.3502
 		#T7
 		
 		#Theocracies

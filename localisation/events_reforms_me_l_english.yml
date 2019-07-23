@@ -588,12 +588,29 @@
  GE_reform_cycle_monarchy.201.c: "Send a Lord to root out the perpetrator."
  
  GE_reform_cycle_monarchy.202.t: "Elitist Elite"
- GE_reform_cycle_monarchy.202.d: "The elite houses of $NATION$ have grown in power under our control, and as time goes on, consolidate themselves, becoming a handful of major factions. Now, some of these factions have fallen to infighting and are bleeding each other dry of good men, captains, and lords. Together with the rise of new, younger houses, it appears that the old houses might collapse."
+ GE_reform_cycle_monarchy.202.d: "The elite houses of $COUNTRY$ have grown in power under our control, and as time goes on, consolidate themselves, becoming a handful of major factions. Now, some of these factions have fallen to infighting and are bleeding each other dry of good men, captains, and lords. Together with the rise of new, younger houses, it appears that the old houses might collapse."
  GE_reform_cycle_monarchy.202.a: "Never interrupt your opponent while he is making a mistake."
  GE_reform_cycle_monarchy.202.b: "Mediate between the houses."
  GE_reform_cycle_monarchy.202.c: "How about some military exercises to take the tension off."
  GE_reform_cycle_monarchy.202.e: "Maybe some time at the border will invigorate them."
  GE_reform_cycle_monarchy.202.f: "Offer them Spiritual Guidance."
+ 
+ GE_reform_cycle_monarchy.3501.t: "Training Gear"
+ GE_reform_cycle_monarchy.3501.d: "Our attempts at professionalizing our military have run into a bit of an error, there is a lack of training facilities.  One of our captains have taken initiative and attempted to set up a training facility at his station."
+ GE_reform_cycle_monarchy.3501.a: "Bring the captain to court."
+ GE_reform_cycle_monarchy.3501.b: "Train with broomsticks."
+ GE_reform_cycle_monarchy.3501.c: "Fund the training camp."
+ GE_reform_cycle_monarchy.3501.e: "Hold war games with the garrisons."
+ GE_reform_cycle_monarchy.3501.f: "We recently confiscated a castle we can use."
+ 
+ GE_reform_cycle_monarchy.3502.t: "Rising Costs"
+ GE_reform_cycle_monarchy.3502.d: "Our financial policies have led to a large amount of inflation. now our army, as state officials, are losing faith their ever dwindling purchasing power and demand a raise."
+ GE_reform_cycle_monarchy.3502.a: "Print some more money."
+ GE_reform_cycle_monarchy.3502.b: "Deny their Raise."
+ GE_reform_cycle_monarchy.3502.c: "Fund the training camp."
+ GE_reform_cycle_monarchy.3502.e: "Let the bankers do their magic."
+ GE_reform_cycle_monarchy.3502.f: "Replace the troublemakers with nobles."
+ 
  
  GE_reform_cycle_monarchy.401.t: "Slumbering Spirituality"
  GE_reform_cycle_monarchy.401.d: "The clergical powers seem more occupied with managing their tables rather then their flock, and spreading legs rather than the word. This neglectful state of affairs is a disgrace to the Lord, yet also offers opportunity..."

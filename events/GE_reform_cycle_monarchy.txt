@@ -186,9 +186,9 @@ country_event = {
 }
 
 country_event = {
-	id = GE_reform_cycle_monarchy.401
-	title = GE_reform_cycle_monarchy.401.t
-	desc = GE_reform_cycle_monarchy.401.d
+	id = GE_reform_cycle_monarchy.301
+	title = GE_reform_cycle_monarchy.301.t
+	desc = GE_reform_cycle_monarchy.301.d
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
@@ -205,11 +205,11 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.401.a
+		name = GE_reform_cycle_monarchy.301.a
 			
 		add_estate_influence_modifier = {
 			estate = estate_church
-			desc = EST_VAL_NOBILITY_ADVANCES
+			desc = EST_VAL_CLERGY_ADVANCES
 			influence = -20
 			duration = 3650
 		}
@@ -220,7 +220,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.401.b
+		name = GE_reform_cycle_monarchy.301.b
 		
 		random_owned_province = {
 			limit = {
@@ -231,7 +231,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.401.c
+		name = GE_reform_cycle_monarchy.301.c
 
 		if = {
 			limit = {
@@ -265,7 +265,7 @@ country_event = {
 	}
 
 	option = {
-		name = GE_reform_cycle_monarchy.401.e
+		name = GE_reform_cycle_monarchy.301.e
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CLERGY
 		trigger = {
@@ -285,9 +285,9 @@ country_event = {
 }
 
 country_event = {
-	id = GE_reform_cycle_monarchy.402
-	title = GE_reform_cycle_monarchy.402.t
-	desc = GE_reform_cycle_monarchy.402.d
+	id = GE_reform_cycle_monarchy.302
+	title = GE_reform_cycle_monarchy.302.t
+	desc = GE_reform_cycle_monarchy.302.d
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
@@ -304,7 +304,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.402.a
+		name = GE_reform_cycle_monarchy.302.a
 			
 		add_country_modifier = {
 			name = "Tough_Love"
@@ -313,13 +313,13 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.402.b
+		name = GE_reform_cycle_monarchy.302.b
 			
 		add_legitimacy = 5
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.402.c
+		name = GE_reform_cycle_monarchy.302.c
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
 		trigger = {
@@ -337,4 +337,234 @@ country_event = {
 		add_stability = 1
 	}
 	
+}
+
+country_event = {
+	id = GE_reform_cycle_monarchy.3501 #training_gear
+	title = GE_reform_cycle_monarchy.3501.t
+	desc = GE_reform_cycle_monarchy.3501.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = professional_army_reform
+			has_reform = les_vieux_corps_reform
+			has_reform = portugese_marines_reform
+			has_reform = foreign_formation_regiments_reform
+			has_reform = general_war_commissariat_reform
+			has_reform = house_of_knights_reform
+			has_reform = gustavan_artillery_reform
+			has_reform = arabian_horses_reform
+			has_reform = polish_national_guard_reform
+			has_reform = national_guard_reform
+			has_reform = reforms_of_william_3_reform
+			has_reform = reform_the_condotierri_reform
+		}
+		any_owned_province = {
+			development = 20
+			NOT = { has_province_modifier = Training_Camps }
+		}
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					development = 20
+					NOT = { has_province_modifier = Training_Camps }
+				}
+				save_event_target_as = training_gear_cycle_GE_pos
+			}
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3501.a
+			
+		define_advisor = {
+			type = grand_captain
+			skill = 2
+			cost_multiplier = 0.50
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3501.b
+			
+		add_years_of_income = -0.5
+			
+		random_owned_province = {
+			limit = {
+				id = event_target:training_gear_cycle_GE_pos
+			}
+			add_province_modifier = {
+				name = "Training_Camps"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3501.c
+			
+		add_army_professionalism = 0.01
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3501.e
+		
+		highlight = yes
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
+		
+		trigger = {
+			has_reform = regional_forts_reform
+			has_reform = magnate_govenors_reform
+		}
+
+		add_army_tradition = 5
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3501.f
+		
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
+		trigger = {
+			OR = {
+				has_reform = quash_noble_power_reform
+				has_reform = lithuania_law_reform
+				has_reform = portuguese_cortes_reform
+				has_reform = riksradet_norway_reform
+				has_reform = every_man_a_noble_reform
+			}
+		}
+		
+		highlight = yes
+
+		add_army_tradition = 5
+	}
+	
+}
+
+country_event = {
+	id = GE_reform_cycle_monarchy.3502 #rising costs
+	title = GE_reform_cycle_monarchy.3502.t
+	desc = GE_reform_cycle_monarchy.3502.d
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = professional_army_reform
+			has_reform = les_vieux_corps_reform
+			has_reform = portugese_marines_reform
+			has_reform = foreign_formation_regiments_reform
+			has_reform = general_war_commissariat_reform
+			has_reform = house_of_knights_reform
+			has_reform = gustavan_artillery_reform
+			has_reform = arabian_horses_reform
+			has_reform = polish_national_guard_reform
+			has_reform = national_guard_reform
+			has_reform = reforms_of_william_3_reform
+			has_reform = reform_the_condotierri_reform
+		}
+		inflation = 1
+	}
+
+	is_triggered_only = yes #Pulse
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3502.a
+			
+		add_inflation = 1
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3502.b
+			
+		add_country_modifier = {
+			name = "Demoralized_Army"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3502.c
+			
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_MONEYLOANERS
+		highlight = yes
+		
+		OR = {
+			has_reform = advanced_bookkeeping_reform
+			has_reform = integrate_moneyloaners_reform
+		}
+		add_prestige = 5
+	}
+	
+	option = {
+		name = GE_reform_cycle_monarchy.3502.e
+		
+		if = {
+			limit = {
+				has_reform = enforce_privileges_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_ENFORCE_PRIVILEGES
+		}
+		else_if = {
+			limit = {
+				has_reform = growth_signoria_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_GROWTH_SIGNORIA
+		}
+		else_if = {
+			limit = {
+				has_reform = akritai_privileges_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_AKRITAI_PRIVILEGES
+		}
+		else_if = {
+			limit = {
+				has_reform = council_of_sheikhs_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_COUNCIL_OF_SHEIKHS
+		}
+		else_if = {
+			limit = {
+				has_reform = blood_tax_reform
+			}
+		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
+		}
+		trigger = {
+			OR = {
+				has_reform = enforce_privileges_reform
+				has_reform = growth_signoria_reform
+				has_reform = akritai_privileges_reform
+				has_reform = council_of_sheikhs_reform
+				has_reform = blood_tax_reform
+				has_reform = constitutio_valdemariana_reform
+				has_reform = albertine_line_reform
+				has_reform = magnate_law_reform
+				has_reform = mamluk_privileges_reform
+				has_reform = imperial_knights_reform
+				has_reform = szlachta_authority_reform
+			}	
+		}
+		
+		highlight = yes
+		add_army_tradition = -5
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = 5
+			duration = 3650
+		}
+	}
 }

@@ -671,3 +671,9 @@ Tough_Love = {
 	global_missionary_strength = 0.01
 	missionary_maintenance_cost = -0.15
 }
+Training_Camps = {
+	army_tradition = 0.1
+}
+Demoralized_Army = {
+	land_morale = -0.10
+}
