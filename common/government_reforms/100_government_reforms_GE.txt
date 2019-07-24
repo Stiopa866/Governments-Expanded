@@ -13,7 +13,7 @@ feudalism_reform = {
 	}
 }
 elective_monarchy_reform = {
-	icon = "elective_monarchy"
+	icon = "ballot_box"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1733,7 +1733,7 @@ muscovite_manorialism_reform = {
 	}
 	modifiers = {
 		development_cost = -0.05
-		infantry_cost = -0.10
+		infantry_cost = -0.05
 	}
 	ai = {
 		factor = 100

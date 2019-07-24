@@ -399,7 +399,7 @@ country_event = {
 	option = {
 		name = GE_reform_cycle_monarchy.3501.b
 			
-		add_years_of_income = -0.5
+		add_years_of_income = -1
 			
 		random_owned_province = {
 			limit = {
