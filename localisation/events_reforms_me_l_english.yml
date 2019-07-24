@@ -596,7 +596,7 @@
  GE_reform_cycle_monarchy.202.f: "Offer them Spiritual Guidance."
  
  GE_reform_cycle_monarchy.3501.t: "Training Gear"
- GE_reform_cycle_monarchy.3501.d: "Our attempts at professionalizing our military have run into a bit of an error, there is a lack of training facilities.  One of our captains have taken initiative and attempted to set up a training facility at his station."
+ GE_reform_cycle_monarchy.3501.d: "Our attempts at professionalizing our military have run into a bit of an error, there is a lack of training facilities.  One of our captains have taken initiative and attempted to set up a training facility at his station at [training_gear_cycle_GE_pos.GetName]."
  GE_reform_cycle_monarchy.3501.a: "Bring the captain to court."
  GE_reform_cycle_monarchy.3501.b: "Fund the training camp."
  GE_reform_cycle_monarchy.3501.c: "Train with broomsticks."
@@ -609,6 +609,21 @@
  GE_reform_cycle_monarchy.3502.b: "Deny their Raise."
  GE_reform_cycle_monarchy.3502.c: "Let the bankers do their magic."
  GE_reform_cycle_monarchy.3502.e: "Replace the troublemakers with nobles."
+ 
+ GE_reform_cycle_monarchy.3503.t: "Stories of Atrocities"
+ GE_reform_cycle_monarchy.3503.d: "Stories of the atrocities being committed to the civilians at home is bleeding our soldiers hearts and makes them want to return home to protect their lands. We could command them to fight on, or risk the war by giving in to their worries."
+ GE_reform_cycle_monarchy.3503.a: "Give in."
+ GE_reform_cycle_monarchy.3503.b: "Fight on." 
+ GE_reform_cycle_monarchy.3503.c: "Your families are in safe hands."
+ GE_reform_cycle_monarchy.3503.e: "Dispell these rumors."
+ GE_reform_cycle_monarchy.3503.f: "Demand the officers get their men in line." 
+ 
+ GE_reform_cycle_monarchy.3504.t: "Refused the Call" 
+ GE_reform_cycle_monarchy.3504.d: "The banners have been called, the men assembled and the formalities have ended. Yet the Lord of [refused_the_call_cycle_GE_pos.GetName] has failed to show up. This smells of either treason or suspicious circumstances. Let us dispatch our constable to bring him to justice."
+ GE_reform_cycle_monarchy.3504.a: "Seize his lands."
+ GE_reform_cycle_monarchy.3504.b: "Conscript his sons."
+ GE_reform_cycle_monarchy.3504.c: "Conscript him."
+ GE_reform_cycle_monarchy.3504.e: "Im sure his message got lost."
  
  
  GE_reform_cycle_monarchy.301.t: "Slumbering Spirituality"

@@ -2861,6 +2861,8 @@ country_event = {
 			}
 		}
 		
+		highlight = yes
+		
 		if = {
 			limit = {
 				has_reform = millet_reform

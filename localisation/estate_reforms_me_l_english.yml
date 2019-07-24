@@ -728,6 +728,8 @@
  AVAILABLE_BECAUSE_OF_REFORM_CLERGY: "Available due to §YAdministrative Clergy§ ."
  AVAILABLE_BECAUSE_OF_POWERFUL_NOBLE_REFORM: "Available due to §YEmpowered Nobles§ ."
  AVAILABLE_BECAUSE_OF_REFORM_MONEYLOANERS: "Available due to §YIntegrated Bankers§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_CENTRALIZING: "Available due to §YCentralizing Reforms§ ."
+ AVAILABLE_BECAUSE_OF_REFORM_NOBLE_ADMINISTRATORS: "Available due to §YNobles in the Administration§ ."
  
  AVAILABLE_BECAUSE_OF_REFORM_INTERNAL_MISSION: "Available due to §YInternal Mission§ ."
  AVAILABLE_BECAUSE_OF_REFORM_EXTERNAL_MISSION: "Available due to §YExternal Mission§ ."
