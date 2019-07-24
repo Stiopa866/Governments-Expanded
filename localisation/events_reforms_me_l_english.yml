@@ -576,6 +576,27 @@
  bishops_law.102.a: "Admit to your mistakes."
  bishops_law.102.b: "Desperately shift the blame."
  
+ ##Estates##
+ 
+ #Peasants#
+ 
+ peasants_estate_events.1.t: "Representation Pays Off"
+ peasants_estate_events.1.d: "The representation of the peasants as a well represented estate has caused their spirits to rise and in return they are willing to back whatever we want."
+ peasants_estate_events.1.a: "Excellent."
+ 
+ peasants_estate_events.2.t: "Peasants Rally"
+ peasants_estate_events.2.d: "The war has taken a heavy toll on our nation, but the fact that the peasants have their concerns heard and treated means that they will fight to retain their rights."
+ peasants_estate_events.2.a: "For freedom!"
+ 
+ peasants_estate_events.3.t: "Peasant Petition"
+ peasants_estate_events.3.d: "The peasants have petitioned us to grant them some more liberty to locally solve issues and determine their own building and production regulations."
+ peasants_estate_events.3.a: "Send in the Guard." 
+ peasants_estate_events.3.b: "Of course, let people govern themselves."
+ 
+ peasants_estate_events.4.t: "Modern Farming Techniques"
+ peasants_estate_events.4.d: "A peasant has invented some new production tools to increase productivity. The local inventor has significantly improved our royal domain and it has led to much higher production. He appears highly ambitious and wishes for money to spread his tools and techniques all around the nation."
+ peasants_estate_events.4.a: "Appoint him to the royal domain." 
+ peasants_estate_events.4.b: "Give him the funds to spread it to the villages!"
  
  ###Monarchies##
  

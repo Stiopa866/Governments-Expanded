@@ -101,7 +101,6 @@ country_event = {
 	
 	trigger = {
 		has_estate = estate_peasants
-
 	}
 	
 	is_triggered_only = yes
@@ -113,11 +112,7 @@ country_event = {
 	option = {
 		name = peasants_estate_events.4.a 
 		
-		add_estate_loyalty = {
-			estate = estate_peasants
-			loyalty = -10
-		}
-		add_army_tradition = 5
+		add_years_of_income = 0.15
 	}
 	
 	option = {
