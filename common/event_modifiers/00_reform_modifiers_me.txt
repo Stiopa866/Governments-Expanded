@@ -677,3 +677,6 @@ Training_Camps = {
 Demoralized_Army = {
 	land_morale = -0.10
 }
+Absent_Noble = {
+	global_manpower_modifier = -0.10
+}

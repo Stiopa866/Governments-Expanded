@@ -4827,7 +4827,7 @@ gustavan_artillery_reform = {
 		}
 	}
 	modifiers = {
-		movement_speed = 0.05
+		movement_speed = 0.10
 		artillery_power = 0.05
 	}
 	ai = {

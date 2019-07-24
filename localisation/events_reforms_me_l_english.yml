@@ -618,7 +618,7 @@
  GE_reform_cycle_monarchy.3503.e: "Dispell these rumors."
  GE_reform_cycle_monarchy.3503.f: "Demand the officers get their men in line." 
  
- GE_reform_cycle_monarchy.3504.t: "Refused the Call" 
+ GE_reform_cycle_monarchy.3504.t: "A Call Refused" 
  GE_reform_cycle_monarchy.3504.d: "The banners have been called, the men assembled and the formalities have ended. Yet the Lord of [refused_the_call_cycle_GE_pos.GetName] has failed to show up. This smells of either treason or suspicious circumstances. Let us dispatch our constable to bring him to justice."
  GE_reform_cycle_monarchy.3504.a: "Seize his lands."
  GE_reform_cycle_monarchy.3504.b: "Conscript his sons."

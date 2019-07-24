@@ -759,6 +759,10 @@ country_event = {
 			}
 			remove_estate = estate_nobles
 		}
+		add_country_modifier = {
+			name = Absent_Noble
+			duration = 3650
+		}
 	}
 	
 	option = {
@@ -799,7 +803,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_MILLET
 		}
 		if = {
-			limit = {
+			limit = { 
 				has_reform = decentralize_reform
 			}
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_DECENTRALIZE
@@ -816,7 +820,13 @@ country_event = {
 
 		random_list = {
 			50 = { add_yearly_manpower = 0.5 }
-			50 = { add_prestige = -10 }
+			50 = { 
+				add_prestige = -10 
+				add_country_modifier = {
+					name = Absent_Noble
+					duration = 3650
+				}
+			}
 		}
 	}
 	

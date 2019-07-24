@@ -3642,6 +3642,8 @@ country_event = {
 				clr_country_flag = Good_Diplo
 			}
 		}
+		if = {
+			NOT = has_
 		add_estate_influence_modifier = {
 			estate = estate_burghers
 			desc = EST_VAL_BURGHERS_ADVANCES
