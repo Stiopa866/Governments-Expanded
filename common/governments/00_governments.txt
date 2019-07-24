@@ -346,6 +346,7 @@ monarchy = {
 		parliamentary_reform
 		crown_of_saint_wenceslaus
 		polish_constitutionalism_reform
+		autocracy_reform
 	}
 
 	color = { 179 25 25 }

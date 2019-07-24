@@ -18,10 +18,10 @@ elective_monarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
-		OR = {
-			have_had_reform = feudalism_reform
-			has_reform = feudalism_reform
-		}
+		#OR = {
+		#	have_had_reform = feudalism_reform
+		#	has_reform = feudalism_reform
+		#}
 		NOT = { tag = POL }
 	}
 	modifiers = {
@@ -38,10 +38,10 @@ arch_monarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
-		OR = {
-			have_had_reform = feudalism_reform
-			has_reform = feudalism_reform
-		}
+		#OR = {
+		#	have_had_reform = feudalism_reform
+		#	has_reform = feudalism_reform
+		#}
 	}
 	trigger = {
 		OR = {
