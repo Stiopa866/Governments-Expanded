@@ -263,7 +263,8 @@ factional_elections_reform = {
 		}
 	}
 	modifiers = {
-		stability_cost_modifier = 0.10
+		republican_tradition = 0.1
+		stability_cost_modifier = 0.15
 	}
 	custom_attributes = {
 		enable_factional_elections = yes

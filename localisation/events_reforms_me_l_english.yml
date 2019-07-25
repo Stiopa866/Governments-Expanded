@@ -60,7 +60,9 @@
  reform_me_events.81.t: "New Lands"
  reform_me_events.81.d: "Our integration of the tatars within our border has led to several neighbouring tribes moving into our lands and offering to pay taxes and serving in our military in return for protection and being allowed to live in our lands."
  reform_me_events.81.a: "Sounds like a win win situation"
- 
+ reform_me_events.82.t: "End of the Guelph-Gibbelline Feud"
+ reform_me_events.82.d: "The feud has ended, the battles have been had, the arguments made and the coups attempted. It is time to accept that the status quo will remain for now."
+ reform_me_events.82.a: "Let it die, kill it if you have to."
  
  
  
@@ -625,22 +627,22 @@
  GE_reform_cycle_monarchy.3501.f: "We recently confiscated a castle we can use."
  
  GE_reform_cycle_monarchy.3502.t: "Rising Costs"
- GE_reform_cycle_monarchy.3502.d: "Our financial policies have led to a large amount of inflation. now our army, as state officials, are losing faith their ever dwindling purchasing power and demand a raise."
+ GE_reform_cycle_monarchy.3502.d: "Our financial policies have led to a large amount of inflation. Now our army, as state officials, are losing faith their ever dwindling purchasing power and demand a raise."
  GE_reform_cycle_monarchy.3502.a: "Print some more money."
  GE_reform_cycle_monarchy.3502.b: "Deny their Raise."
  GE_reform_cycle_monarchy.3502.c: "Let the bankers do their magic."
  GE_reform_cycle_monarchy.3502.e: "Replace the troublemakers with nobles."
  
  GE_reform_cycle_monarchy.3503.t: "Stories of Atrocities"
- GE_reform_cycle_monarchy.3503.d: "Stories of the atrocities being committed to the civilians at home is bleeding our soldiers hearts and makes them want to return home to protect their lands. We could command them to fight on, or risk the war by giving in to their worries."
+ GE_reform_cycle_monarchy.3503.d: "Stories of the atrocities being committed to the civilians at home is bleeding our soldiers hearts and makes them want to return home to protect their lands. We could command them to fight on or risk the war by giving in to their worries."
  GE_reform_cycle_monarchy.3503.a: "Give in."
  GE_reform_cycle_monarchy.3503.b: "Fight on." 
  GE_reform_cycle_monarchy.3503.c: "Your families are in safe hands."
- GE_reform_cycle_monarchy.3503.e: "Dispell these rumors."
+ GE_reform_cycle_monarchy.3503.e: "Dispel these rumors."
  GE_reform_cycle_monarchy.3503.f: "Demand the officers get their men in line." 
  
  GE_reform_cycle_monarchy.3504.t: "A Call Refused" 
- GE_reform_cycle_monarchy.3504.d: "The banners have been called, the men assembled and the formalities have ended. Yet the Lord of [refused_the_call_cycle_GE_pos.GetName] has failed to show up. This smells of either treason or suspicious circumstances. Let us dispatch our constable to bring him to justice."
+ GE_reform_cycle_monarchy.3504.d: "The banners have been called, the men assembled and the formalities have ended. Yet the Lord of [Root.GetName] has failed to show up. This smells of either treason or suspicious circumstances. Let us dispatch our constable to bring him to justice."
  GE_reform_cycle_monarchy.3504.a: "Seize his lands."
  GE_reform_cycle_monarchy.3504.b: "Conscript his sons."
  GE_reform_cycle_monarchy.3504.c: "Conscript him."

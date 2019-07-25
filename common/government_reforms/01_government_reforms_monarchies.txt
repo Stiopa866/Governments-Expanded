@@ -1227,11 +1227,14 @@ clergy_in_administration_reform = {
 		}
 	}
 	potential = {
-		NOT = {
-			check_variable = {
-				which = Clergy_Influence
-				value = 3
+		OR = {
+			NOT = {
+				check_variable = {
+					which = Clergy_Influence
+					value = 2
+				}
 			}
+			has_reform = clergy_in_administration_reform
 		}
 	}
 	modifiers = {
@@ -1259,11 +1262,14 @@ of_noble_bearing_reform = {
 		}
 	}
 	potential = {
-		NOT = {
-			check_variable = {
-				which = Noble_Influence
-				value = 3
+		OR = {
+			NOT = {
+				check_variable = {
+					which = Noble_Influence
+					value = 2
+				}
 			}
+			has_reform = of_noble_bearing_reform
 		}
 		NOT = { 
 			OR = {
@@ -1367,11 +1373,14 @@ royal_decree_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { 		
-			check_variable = {
-				which = Royal_Influence
-				value = 2
+		OR = {
+			NOT = { 		
+				check_variable = {
+						which = Royal_Influence
+						value = 2
+				}
 			}
+			has_reform = royal_decree_reform
 		}
 		NOT = { has_reform = elective_monarchy_reform }
 	}
@@ -1387,11 +1396,14 @@ aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = {
-			check_variable = {
-				which = Noble_Influence
-				value = 4
+		OR = {
+			NOT = {
+				check_variable = {
+					which = Noble_Influence
+					value = 3
+				}
 			}
+			has_reform = aristocratic_court_reform
 		}
 		NOT = { has_reform = elective_monarchy_reform }
 	}
@@ -1454,11 +1466,14 @@ general_estates_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
-		NOT = {
-			check_variable = {
-				which = Burgher_Influence 
-				value = 1
+		OR = {
+			NOT = {
+				check_variable = {
+					which = Burgher_Influence 
+					value = 1
+				}
 			}
+			has_reform = general_estates_reform
 		}
 	}
 	modifiers = {

@@ -5480,3 +5480,36 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = reform_me_events.82
+	title = reform_me_events.82.t
+	desc = reform_me_events.82.d
+	picture = WESTERNISATION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_reform = support_ghibbelline_reform
+			has_reform = support_guelphs_reform
+		}
+		is_year = 1490
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = reform_me_events.81.a
+		
+		remove_government_reform = support_ghibbelline_reform
+		remove_government_reform = support_guelphs_reform
+		
+	}
+}

@@ -116,7 +116,7 @@ on_five_year_pulse_4 = {
 		200 = peasants_estate_events.1 #Swedish Peasant Estate
 		300 = peasants_estate_events.2
 		200 = peasants_estate_events.3
-		200 = peasants_estate_events.4
+		150 = peasants_estate_events.4
 		#T6
 		100 = GE_reform_cycle.53 #Letat
 		100 = GE_reform_cycle.54 
