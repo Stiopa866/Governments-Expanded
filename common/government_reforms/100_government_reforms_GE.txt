@@ -62,7 +62,7 @@ french_feudalism = {
 	icon = feudalism
 	allow_normal_conversion = no
 	potential = {
-		tag = FRA
+		has_reform = french_feudalism
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
@@ -77,7 +77,7 @@ french_reformed_feudalism = {
 	icon = French_Reformed
 	allow_normal_conversion = no
 	potential = {
-		tag = FRA
+		has_reform = french_reformed_feudalism
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
@@ -97,7 +97,7 @@ french_absolutism = {
 				has_country_modifier = the_state_is_me
 				tag = FRA
 			}
-			have_had_reform = french_absolutism
+			has_reform = french_absolutism
 		}
 	}
 	lock_level_when_selected = yes
@@ -147,7 +147,10 @@ grand_duchy_reform = {
 	icon = "peasants"
 	allow_normal_conversion = yes
 	potential = {
-		tag = LIT
+		OR = {
+			tag = LIT
+			has_reform = grand_duchy_reform
+		}
 	}
 	legacy_equivalent = despotic_monarchy
 	fixed_rank = 1
@@ -163,7 +166,7 @@ lithuania_warlord_duke = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = lithuania_warlord_duke
+			has_reform = lithuania_warlord_duke
 			tag = LIT
 		}
 	}
@@ -210,7 +213,7 @@ theocratic_autocracy = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			have_had_reform = theocratic_autocracy
+			has_reform = theocratic_autocracy
 			tag = BYZ
 		}
 	}
@@ -384,7 +387,10 @@ crown_of_aragon = {
 		}
 	}
 	potential = {
-		tag = ARA
+		OR = {
+			tag = ARA
+			has_reform = crown_of_aragon
+		}
 	}
 	trigger = {
 		has_reform = crown_of_aragon
@@ -410,7 +416,10 @@ kingdom_of_portugal = {
 	icon = kingdom_of_portugal
 	allow_normal_conversion = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			has_reform = kingdom_of_portugal
+		}
 	}
 	trigger = {
 		NOT = { is_year = 1481 }
@@ -431,7 +440,10 @@ kingdom_of_portugal_and_azures = {
 	icon = portuguese_thassalocracy
 	allow_normal_conversion = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			has_reform = kingdom_of_portugal_and_azures
+		}
 	}
 	trigger = {
 		is_year = 1481
@@ -501,7 +513,7 @@ crown_of_saint_wenceslaus = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = crown_of_saint_wenceslaus
+			has_reform = crown_of_saint_wenceslaus
 		}
 	}
 	modifiers = {
@@ -535,7 +547,7 @@ crown_of_saint_wenceslaus_2 = {
 	potential = {
 		OR = {
 			tag = BOH
-			have_had_reform = crown_of_saint_wenceslaus_2
+			has_reform = crown_of_saint_wenceslaus_2
 		}
 	}
 	modifiers = {
@@ -552,8 +564,8 @@ office_of_lord_regent_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = SWE
-			was_tag = SWE
+			primary_culture = swedish
+			has_reform = office_of_lord_regent_reform
 		}
 	}
 	modifiers = {
@@ -571,9 +583,8 @@ arch_king_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = DAN
-			was_tag = DAN
-			tag = SCA
+			primary_culture = danish
+			has_reform = arch_king_reform
 		}
 		1 = {
 			country_or_non_sovereign_subject_holds = ROOT
@@ -611,8 +622,8 @@ arch_duchy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = HAB
-			was_tag = HAB
+			primary_culture = austrian
+			has_reform = arch_duchy_reform
 		}
 	}
 	trigger = {
@@ -631,8 +642,8 @@ habsburg_monarchy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = HAB
-			was_tag = HAB
+			primary_culture = austrian
+			has_reform = arch_duchy_reform
 		}
 	}
 	trigger = {
@@ -665,8 +676,8 @@ austrian_empire_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = HAB
-			was_tag = HAB
+			primary_culture = austrian
+			has_reform = arch_duchy_reform
 		}
 	}
 	trigger = {
@@ -729,7 +740,7 @@ granadan_iqta_reform = {
 				religion_group = muslim
 				culture_group = iberian	
 			}
-			have_had_reform = granadan_iqta_reform
+			has_reform = granadan_iqta_reform
 		}
 	}
 	trigger = {
