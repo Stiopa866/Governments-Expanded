@@ -486,12 +486,9 @@ country_event = {
 			has_government_attribute = enables_demedici
 		}
 		ai_chance = { factor = 10 }
-		add_scaled_republican_tradition = -8
+		add_scaled_republican_tradition = -5
 
 		define_ruler = {
-			mil = 0
-			adm = 0
-			dip = 0
 			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"

@@ -376,6 +376,7 @@ country_event = {
 			is_territory = no
 			NOT = { has_province_modifier = Training_Camps }
 		}
+		is_at_war = no
 	}
 
 	is_triggered_only = yes #Pulse
@@ -401,7 +402,7 @@ country_event = {
 		name = GE_reform_cycle_monarchy.3501.a
 			
 		define_advisor = {
-			type = grand_captain
+			type = army_organizer
 			skill = 2
 			cost_multiplier = 0.50
 		}
@@ -411,11 +412,7 @@ country_event = {
 		name = GE_reform_cycle_monarchy.3501.b
 			
 		add_years_of_income = -1
-			
-		random_owned_province = {
-			limit = {
-				id = event_target:training_gear_cycle_GE_pos
-			}
+		event_target:training_gear_cycle_GE_pos = {
 			add_province_modifier = {
 				name = "Training_Camps"
 				duration = -1
@@ -516,10 +513,11 @@ country_event = {
 			
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_MONEYLOANERS
 		highlight = yes
-		
-		OR = {
-			has_reform = advanced_bookkeeping_reform
-			has_reform = integrate_moneyloaners_reform
+		trigger = {
+			OR = {
+				has_reform = advanced_bookkeeping_reform
+				has_reform = integrate_moneyloaners_reform
+			}
 		}
 		add_prestige = 5
 	}
