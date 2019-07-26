@@ -118,11 +118,7 @@ prussian_monarchy = {
 				tag = PRU
 				NOT = { map_setup = map_setup_random }
 			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = prussian_monarchy
-			}
-			have_had_reform = prussian_monarchy
+			has_reform = prussian_monarchy
 		}
 	}
 	valid_for_nation_designer = yes
@@ -685,7 +681,7 @@ austrian_empire_reform = {
 		owns = 266
 		owns = 153
 		total_development = 500
-		have_had_reform = austrian_empire_reform
+		has_reform = austrian_empire_reform
 	}
 	fixed_rank = 3
 	modifiers = {
@@ -1057,7 +1053,7 @@ lithuania_law_reform = {
 	}
 	potential = {
 		OR = {	
-			have_had_reform = lithuania_law_reform
+			has = lithuania_law_reform
 			tag = LIT
 		}
 	}
@@ -1656,7 +1652,7 @@ respect_union_reform = {
 			tag = CAS
 			tag = SPA
 			tag = ARA
-			have_had_reform = respect_union_reform
+			has_reform = respect_union_reform
 		}
 	}
 	modifiers = {
@@ -3787,6 +3783,10 @@ empowered_divine_blood_reform = {
 		max_absolutism = 5
 		devotion = 0.5
 	}
+	custom_attributes = {
+		enables_royal_council = yes
+		enables_divine_blood = yes
+	}
 	ai = {
 		factor = 10
 	}
@@ -4573,7 +4573,7 @@ mercenary_corps_reform = {
 		}
 	}
 	modifiers = { 
-		loot_amount = 0.50
+		reinforce_speed = 0.15
 		merc_maintenance_modifier = -0.25
 	}
 	ai = {
@@ -4618,7 +4618,7 @@ empowered_mercenary_corps_reform = {
 		}
 	}
 	modifiers = { 
-		loot_amount = 0.50
+		reinforce_speed = 0.15
 		merc_maintenance_modifier = -0.25
 	}
 	custom_attributes = {

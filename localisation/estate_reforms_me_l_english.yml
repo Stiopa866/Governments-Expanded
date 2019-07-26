@@ -577,7 +577,7 @@
  mechanic_enables_trade_princes_yes: "Trade Princes: §G+1§! Merchant if you control an Aragonese or Catalonian subject."
  mechanic_enables_militant_orders_yes: "Militant Orders: §G+10%§! Manpower Recovery Speed and §G0.25§! Army Tradition while at war with heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
- mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
+ mechanic_enables_crusader_order_yes: "Crusader Order: §G+1.5%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces with mosques based on how tolerant you are."
  mechanic_achaemenid_empire_reform_yes: "Persian Tolerance: Accept any culture you control in full."
  mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."
@@ -590,6 +590,7 @@
  mechanic_enables_city_of_valencia_yes: "City of Valencia: §G+15%§! Goods Produced in the state of Valencia."
  mechanic_enables_kingdom_of_sicily_yes: "Kingdom of Sicily: §G+20%§! Tax Modifier in the state of Sicily."
  mechanic_enables_settling_tribes_yes: "This reform will cause tribes to settle in our lands, granting §G7§! development."
+ mechanic_enables_divine_blood_yes: "Divine Blood: Blessed blood flows through your veins and those of your successors, increasing their skills by §G1§!."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
