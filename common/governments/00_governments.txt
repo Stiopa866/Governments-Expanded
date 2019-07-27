@@ -677,7 +677,7 @@ theocracy = {
 				monastic_order_reform
 				papacy_reform
 				ajuraan_theocracy_reform
-				#dynastic_theocracy_reform
+				dynastic_theocracy_reform
 			}
 		}
 		internal_vs_external_mission = {

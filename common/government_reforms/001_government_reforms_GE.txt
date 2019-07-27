@@ -147,6 +147,7 @@ dynastic_theocracy_reform = {
 	queen = yes
 	heir = yes
 	royal_marriage = yes
+	maintain_dynasty = yes
 	modifiers = {
 		devotion = 0.25
 	}

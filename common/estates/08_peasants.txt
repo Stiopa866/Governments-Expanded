@@ -12,6 +12,7 @@ estate_peasants =
 		OR = {
 			has_reform = parliamentary_order_reform
 			has_government_attribute = enables_peasant_estate
+			has_reform = peasants_republic
 		}
 	}
 	

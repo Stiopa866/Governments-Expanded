@@ -73,6 +73,7 @@ country_event = {
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = american_government }
+		NOT = { has_government_attribute = enables_elective_monarchy }
 	}
 
 	option = {
@@ -520,6 +521,7 @@ country_event = {
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = american_government }
+		NOT = { has_government_attribute = enables_elective_monarchy }
 	}
 	
 	immediate = {

@@ -17,6 +17,8 @@ elective_monarchy_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	has_term_election = yes
+	duration = 100
 	potential = {
 		#OR = {
 		#	have_had_reform = feudalism_reform
@@ -4694,6 +4696,7 @@ italian_mercenaries_reform = {
 	modifiers = {
 		mercenary_discipline = 0.05
 		war_exhaustion = -0.01
+		possible_condottieri = 0.25
 	}
 	ai = {
 		factor = 10
