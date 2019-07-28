@@ -1401,7 +1401,7 @@ aristocratic_court_reform = {
 			NOT = {
 				check_variable = {
 					which = Noble_Influence
-					value = 3
+					value = 4
 				}
 			}
 			has_reform = aristocratic_court_reform

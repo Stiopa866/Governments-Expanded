@@ -1609,26 +1609,10 @@ portuguese_cortes_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Clergy_Influence
-			value = 1
-		}
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Clergy_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Noble_Influence
 			value = -1
 		}
 	}
@@ -3799,6 +3783,8 @@ empowered_divine_blood_reform = {
 		}
 	}
 	modifiers = {
+		tolerance_own = 1
+		diplomatic_reputation = 1
 		max_absolutism = 5
 		devotion = 0.5
 	}
@@ -3840,7 +3826,7 @@ empowered_monastic_militarism_reform = {
 		max_absolutism = -5
 	}
 	custom_attributes = {
-		enables_militant_orders = yes
+		enables_militant_orders = yes #20% manpower and 0.5AT during war with heretics n heathens
 	}
 	ai = {
 		factor = 10
@@ -3927,8 +3913,7 @@ empowered_aristocratic_court_reform = {
 		}
 	}
 	modifiers = {
-		#army_tradition_decay = -0.005
-		leader_land_shock = 1
+		army_tradition_decay = -0.005
 	}
 	custom_attributes = {
 		enables_shocking_general = yes #+1 Shock on General

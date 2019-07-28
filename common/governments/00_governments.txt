@@ -309,6 +309,7 @@ monarchy = {
 
 	#Flavor
 	exclusive_reforms = {
+		granadan_iqta_reform
 		iqta
 		indian_sultanate_reform
 		mamluk_government
