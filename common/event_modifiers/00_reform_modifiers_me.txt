@@ -21,7 +21,7 @@ Feudal_Power = {
 	local_manpower_modifier = 0.15
 }
 Magnate_Law = {
-	local_unrest = -1
+	local_unrest = -2
 }
 Mountain_Towns = {
 	local_development_cost = -0.25
@@ -117,7 +117,7 @@ Town_Rights = {
 }
 Church_Poorhouses = {
 	local_development_cost = -0.10
-	local_production_efficiency = 0.05
+	local_production_efficiency = 0.15
 }
 Administrative_Forts = {
 	local_state_maintenance_modifier = -0.25

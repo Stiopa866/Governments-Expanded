@@ -962,6 +962,9 @@ gond_kingdom = {
 enforce_privileges_reform = {
 	icon = "people_walking"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { technology_group = eastern }
+	}
 	effect = {
 		change_variable = {
 			which = Noble_Influence
@@ -985,9 +988,7 @@ enforce_privileges_reform = {
 quash_noble_power_reform = {
 	icon = "king_2"
 	allow_normal_conversion = yes
-	potential = {
-		NOT = { technology_group = eastern }
-	}
+
 	effect = {
 		change_variable = {
 			which = Royal_Influence
@@ -1377,7 +1378,7 @@ royal_decree_reform = {
 			NOT = { 		
 				check_variable = {
 						which = Royal_Influence
-						value = 2
+						value = 3
 				}
 			}
 			has_reform = royal_decree_reform

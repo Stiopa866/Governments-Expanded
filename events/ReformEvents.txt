@@ -3484,9 +3484,7 @@ country_event = {
 	
 	trigger = {
 		has_government_attribute = enables_royal_council
-		NOT = {
-			has_ruler_flag = council_picked
-		}
+		NOT = {	has_ruler_flag = council_picked }
 	}
 	
 	mean_time_to_happen = {
@@ -5435,10 +5433,10 @@ country_event = {
 	desc = reform_me_events.81.d
 	picture = WESTERNISATION_eventPicture
 	
-	fire_only_once = yes
 
 	trigger = {
 		has_reform = integrate_tatars_reform
+		NOT = { has_country_flag = tatars_integrated }
 	}
 	
 	mean_time_to_happen = {
@@ -5446,7 +5444,7 @@ country_event = {
 	}
 	
 	immediate = {
-		
+		set_country_flag = tatars_integrated
 	}
 	
 	option = {
@@ -5492,8 +5490,6 @@ country_event = {
 	title = reform_me_events.82.t
 	desc = reform_me_events.82.d
 	picture = WESTERNISATION_eventPicture
-	
-	fire_only_once = yes
 
 	trigger = {
 		OR = {

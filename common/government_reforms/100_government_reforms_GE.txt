@@ -1606,14 +1606,30 @@ portuguese_cortes_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+		change_variable = {
 			which = Noble_Influence
-			value = -1
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+		change_variable = {
 			which = Noble_Influence
-			value = 1
+			value = -1
 		}
 	}
 	potential = {
@@ -1989,10 +2005,11 @@ magnate_law_reform = {
 	trigger = {
 	}
 	modifiers = {
-		global_tax_modifier = 0.15
+		global_manpower_modifier = 0.10
 	}
 	custom_attributes = { 
-		enables_magnate_law = yes
+		enables_magnate_law = yes #-2 local manpower in Noble Provinces
+		enables_independent_nobles = yes #+15% Local Manpower in Noble Provinces
 	}
 	ai = {
 		factor = 10
@@ -2542,14 +2559,14 @@ oprichnina_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -2766,14 +2783,14 @@ revive_the_hisbah_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -2832,14 +2849,14 @@ revoke_magnate_estates_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -3066,7 +3083,7 @@ advanced_bookkeeping_reform = {
 }
 
 empowered_clergy_in_administration_reform = {
-	icon = "religious_leader"
+	icon = "bishop's_law"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3537,14 +3554,14 @@ declario_ferdinandei_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Clergy_Influence
-			value = -1
+			which = Royal_Influence
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Clergy_Influence
-			value = 1
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	potential = {
@@ -3673,7 +3690,7 @@ cultural_investment_reform = {
 }
 
 empowered_of_noble_bearing_reform = {
-	icon = "nobleman"
+	icon = "bourbon_reform"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3727,7 +3744,7 @@ empowered_of_noble_bearing_reform = {
 #Tier5
 
 empowered_royal_decree_reform = {
-	icon = "king"
+	icon = "austrian_empire"
 	allow_normal_conversion = yes
 	potential = {
 		check_variable = {
@@ -3754,7 +3771,7 @@ empowered_royal_decree_reform = {
 }
 
 empowered_divine_blood_reform = {
-	icon = "king"
+	icon = "theocratic_law"
 	allow_normal_conversion = yes
 	has_devotion = yes
 	effect = {
@@ -3795,7 +3812,7 @@ empowered_divine_blood_reform = {
 }
 
 empowered_monastic_militarism_reform = {
-	icon = "king"
+	icon = "brothers_in_arms"
 	allow_normal_conversion = yes
 	potential = {
 		check_variable = {
@@ -3820,6 +3837,7 @@ empowered_monastic_militarism_reform = {
 	}
 	modifiers = {
 		free_mil_policy = 1
+		max_absolutism = -5
 	}
 	custom_attributes = {
 		enables_militant_orders = yes
@@ -3830,7 +3848,7 @@ empowered_monastic_militarism_reform = {
 }
 
 empowered_royal_trading_company_reform = {
-	icon = "king"
+	icon = "GE_trader"
 	allow_normal_conversion = yes
 	potential = {
 		check_variable = {
@@ -3863,7 +3881,7 @@ empowered_royal_trading_company_reform = {
 }
 
 empowered_german_aristocratic_court_reform = {
-	icon = "soldiers_2"
+	icon = "szlachta_noble_2"
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = germanic
@@ -3881,7 +3899,7 @@ empowered_german_aristocratic_court_reform = {
 		}
 	}
 	modifiers = {
-		army_tradition_decay = -0.005
+		free_leader_pool = 1
 	}
 	custom_attributes = {
 		enables_junker_estate = yes
@@ -3892,7 +3910,7 @@ empowered_german_aristocratic_court_reform = {
 }
 
 empowered_aristocratic_court_reform = {
-	icon = "soldiers_2"
+	icon = "szlachta_noble_2"
 	allow_normal_conversion = yes
 	potential = {
 		check_variable = {
@@ -3920,7 +3938,7 @@ empowered_aristocratic_court_reform = {
 }
 
 empowered_general_estates_reform = {
-	icon = "paper_with_seal"
+	icon = "poland_sejm"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
@@ -3947,7 +3965,7 @@ empowered_general_estates_reform = {
 }
 
 empowered_church_councils_reform = {
-	icon = "church"
+	icon = "bishop"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
@@ -3964,6 +3982,7 @@ empowered_church_councils_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
+		global_missionary_strength = 0.02
 	}
 	custom_attributes = {
 		enables_church_poorhouses = yes
@@ -4567,12 +4586,6 @@ mercenary_corps_reform = {
 		}
 	}
 	potential = { 
-		NOT = {
-			check_variable = {
-				which = Clergy_Influence			
-				value = 2
-			}
-		}
 	}
 	modifiers = { 
 		reinforce_speed = 0.15
@@ -4584,7 +4597,7 @@ mercenary_corps_reform = {
 }
 
 empowered_mercenary_corps_reform = {
-	icon = landsknecht
+	icon = "Teuton_2"
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -4611,7 +4624,6 @@ empowered_mercenary_corps_reform = {
 			which = Clergy_Influence			
 			value = 2
 		}
-		NOT = { has_reform = mercenary_corps_reform }
 	}
 	trigger = {
 		check_variable = {
@@ -4620,8 +4632,8 @@ empowered_mercenary_corps_reform = {
 		}
 	}
 	modifiers = { 
-		reinforce_speed = 0.15
-		merc_maintenance_modifier = -0.25
+		reinforce_speed = 0.25
+		merc_maintenance_modifier = -0.10
 	}
 	custom_attributes = {
 		enables_crusader_order = yes
