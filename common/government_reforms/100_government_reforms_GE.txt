@@ -4036,7 +4036,8 @@ empowered_general_estates_reform = {
 		}
 	}
 	modifiers = {
-		global_trade_goods_size_modifier = 0.1
+		development_efficiency = 0.05	
+		max_absolutism = -15
 	}
 	custom_attributes = {
 		enables_burgher_council = yes
