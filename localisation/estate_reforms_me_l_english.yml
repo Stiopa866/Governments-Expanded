@@ -488,8 +488,18 @@
  elephant_riders_reform_desc: "The mighty elephants are hard to train and ride into battle, but once unleashed are hard to stop and tend to cause massive casualties amongst our enemies."
  achaemenid_empire_reform: "Achaemenid Empire"
  achaemenid_empire_reform_desc: "Placeholder. BLAME XANADU"
+ words_of_cyrus_reform: "The Words of Cyrus"
+ words_of_cyrus_reform_desc: "The world is full of hatred and ignorance, let none of that seep into our lands. The humanist policies of Cyrus the Great, the Father, must always be respected, and even brought into the Justice of Men."
  persian_satrapies_reform: "Persian Satrapies"
  persian_satrapies_reform_desc: "Placeholder. BLAME XANADU"
+ expand_the_immortals_reform: "Expand the Immortals"
+ expand_the_immortals_reform_desc: "The ancient Immortal forces have become legends, let us use the myth of an unending army, trained and always at full strenght."
+ justice_and_truth_reform: "Justice and Truth Above All"
+ justice_and_truth_reform_desc: "None are free from Justice, not even the Shahanshah. By extension, none may bar another from Freedom, not even those who would call themselves Just. Let it be known, all who seek to corrupt the world shall be purged, and all who seek to enslave their brothers shall be put into chains of their own making."
+ preeminent_padishah_reform: "Preeminent Padishah"
+ preeminent_padishah_reform_desc: "It is through me that the state has power, and it is through the state that I wield this power. As the lord of The Empire it is my will that dictates the freedoms and justice of the land. Thus, it is, with my hand, that that justice be swift, and fair to all under me. For I am not just a ruler, but Father to all within my borders."
+ 
+ 
  support_ghibbelline_reform: "Support Ghibbellines"
  support_ghibbelline_reform_desc: "Italy is a chaotic and disunified region, and we weep seeing the constant bloodshed between squabbling city-states. We must aid the Holy Roman Emperor in reining in, and ultimately bringing peace to Italy. Let us join the Ghibelline faction and help bring order and peace to Italy."
  support_guelphs_reform: "Support Guelphs"
@@ -583,14 +593,17 @@
  mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."
  mechanic_enables_church_poorhouses_yes: "Church Poorhouses: §G-10%§! Development Cost and §G+15%§! Production Efficiency in provinces with churches."
  mechanic_enables_crown_of_aragon_yes: "Crown of Aragon: §R+25%§! Min Autonomy in Aragonese provinces."
- mechanic_enables_support_ghibbellines_yes: "In support of the Empire and Defence against the Pope; §R-50§! opinion with Ghuelphs, §G+20§! opinion with The Emperor and fellow Ghibellines."
- mechanic_enables_support_ghuelps_yes: "In support of the Pope and Defence against the Empire; §R-50§! opinion with Ghibellines, §G+20§! opinion with fellow Guelphs."
+ mechanic_enables_support_ghibbellines_yes: "In support of the Empire and Defence against the Pope; §R-50§! opinion with Ghuelphs, §G+25§! opinion with The Emperor and fellow Ghibellines."
+ mechanic_enables_support_ghuelps_yes: "In support of the Pope and Defence against the Empire; §R-50§! opinion with Ghibellines, §G+25§! opinion with fellow Guelphs."
  mechanic_enables_kingdom_of_aragon_yes: "Kingdom of Aragon: §G+25%§! Manpower in the state of Aragon."
  mechanic_enables_principality_of_catalonia_yes: "Principality of Catalonia: §G+25%§! Trade Power in the state of Catalonia."
  mechanic_enables_city_of_valencia_yes: "City of Valencia: §G+15%§! Goods Produced in the state of Valencia."
  mechanic_enables_kingdom_of_sicily_yes: "Kingdom of Sicily: §G+20%§! Tax Modifier in the state of Sicily."
  mechanic_enables_settling_tribes_yes: "This reform will cause tribes to settle in our lands, granting §G7§! development."
  mechanic_enables_divine_blood_yes: "Divine Blood: Blessed blood flows through your veins and those of your successors, increasing their skills by §G1§!."
+ mechanic_enables_noble_privileges_yes: "Noble Privileges: 'Raise Additional Levies' grants additional Manpower."
+ mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! opinion with the Pope."
+ 
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

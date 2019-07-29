@@ -64,6 +64,9 @@ french_feudalism = {
 	icon = feudalism
 	allow_normal_conversion = no
 	potential = {
+		primary_culture = cosmopolitan_french
+	}
+	trigger = {
 		has_reform = french_feudalism
 	}
 	lock_level_when_selected = yes
@@ -79,6 +82,9 @@ french_reformed_feudalism = {
 	icon = French_Reformed
 	allow_normal_conversion = no
 	potential = {
+		primary_culture = cosmopolitan_french
+	}
+	trigger = {
 		has_reform = french_reformed_feudalism
 	}
 	lock_level_when_selected = yes
@@ -94,13 +100,11 @@ french_absolutism = {
 	icon = French_Absolutism
 	allow_normal_conversion = no
 	potential = {
-		OR = {
-			AND = {
-				has_country_modifier = the_state_is_me
-				tag = FRA
-			}
-			has_reform = french_absolutism
-		}
+		primary_culture = cosmopolitan_french
+	}
+	trigger = {
+		has_country_modifier = the_state_is_me
+		has_reform = french_absolutism
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
@@ -899,7 +903,7 @@ papal_embassy_reform = {
 		religion = catholic
 	}
 	modifiers = {
-		papal_influence = 2
+		papal_influence = 1.5
 	}
 	effect = {
 		change_variable = {
@@ -913,6 +917,9 @@ papal_embassy_reform = {
 			value = -1
 		}
 	}
+	custom_attributes = {
+		enables_papal_delegation = yes
+	}
 	ai = {
 		factor = 1
 	}
@@ -921,7 +928,6 @@ papal_embassy_reform = {
 metropolian_bishop_reform = {
 	icon = church
 	allow_normal_conversion = yes
-	
 	potential = {
 		religion = orthodox
 	}
@@ -2201,18 +2207,18 @@ taha_divisions_reform = {
 	}
 }
 
-persian_satrapies_reform = {
+words_of_cyrus_reform = {
 	icon = king
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
@@ -2231,10 +2237,12 @@ persian_satrapies_reform = {
 		}
 	}
 	modifiers = {
-		state_maintenance_modifier = -0.25
-	}
-	custom_attributes = {
-		enables_satrapies = yes
+		tolerance_own = 1
+		tolerance_heretic = 1
+		tolerance_heretic = 1
+		global_unrest = 1
+		female_advisor_chance = 0.25
+		
 	}
 	ai = {
 		factor = 100
@@ -2249,10 +2257,18 @@ crusader_orders_reform = {
 			which = Noble_Influence
 			value = 1
 		}
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -3001,6 +3017,48 @@ taifa_governors_reform = {
 	}
 }
 
+
+persian_satrapies_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = zoroastrian
+				culture_group = iranian	
+			}
+		}
+	}
+	trigger = {
+		AND = {
+			religion_group = zoroastrian
+			culture_group = iranian	
+		}
+	}
+	modifiers = {
+		state_maintenance_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_satrapies = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
 #Tier4
 
 integrate_moneyloaners_reform = {
@@ -3725,6 +3783,46 @@ empowered_of_noble_bearing_reform = {
 	}
 }
 
+justice_and_truth_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = zoroastrian
+				culture_group = iranian	
+			}
+		}
+	}
+	trigger = {
+		AND = {
+			religion_group = zoroastrian
+			culture_group = iranian	
+		}
+	}
+	modifiers = {
+		yearly_corruption = -0.10
+	}
+	custom_attributes = {
+		disallowed_trade_goods = { slaves }
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier5
 
 empowered_royal_decree_reform = {
@@ -4181,6 +4279,44 @@ legacy_of_constitutionalism_reform = {
 	ai = {
 		factor = 10
 	}
+}
+
+preeminent_padishah_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = zoroastrian
+				culture_group = iranian	
+			}
+		}
+	}
+	trigger = {
+		AND = {
+			religion_group = zoroastrian
+			culture_group = iranian	
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 100
+	}
+	#Needtoadd-10influence
 }
 
 noble_electors_reform = {
@@ -5143,6 +5279,44 @@ royal_ordinances_reform = {
 		mil_tech_cost_modifier = -0.15
 		artillery_cost = -0.10
 		drill_gain_modifier = 0.25
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+expand_the_immortals_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = zoroastrian
+				culture_group = iranian	
+			}
+		}
+	}
+	trigger = {
+		AND = {
+			religion_group = zoroastrian
+			culture_group = iranian	
+		}
+	}
+	modifiers = {
+		reinforce_speed = 1
+		drill_gain_modifier = 0.50
 	}
 	ai = {
 		factor = 100

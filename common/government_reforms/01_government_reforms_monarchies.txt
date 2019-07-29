@@ -980,6 +980,9 @@ enforce_privileges_reform = {
 			value = -1
 		}
 	}
+	custom_attributes = {
+		enables_noble_privileges = yes # Bonus Manpower from 'demand more troops' Noble Interaction
+	}
 	ai = {
 		factor = 1
 	}
