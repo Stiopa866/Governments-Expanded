@@ -13,23 +13,17 @@ on_startup = {
 		remove_country_modifier = tur_janissary
 	}
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-	set_variable = {
-		which = Noble_Influence
-		value = 0
-	}
-	set_variable = {
-		which = Burgher_Influence
-		value = 0
-	}
-	set_variable = {
-		which = Clergy_Influence
-		value = 0
-	}
-	set_variable = {
-		which = Royal_Influence
-		value = 0
-	}
+	if = {
+        limit = {
+            country_has_both_paradox_and_me_missions = yes
+        }
+        country_event = { id = missions_expanded_events.1 }
+    }
+    SWE = {
+        set_variable = { swe_num_of_wars_against_non_catholics = 0 }
+    }
 }
+
 #effect = {
 #	check_variable = {
 #			which = Noble_Influence
