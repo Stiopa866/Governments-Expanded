@@ -1474,7 +1474,7 @@ general_estates_reform = {
 			NOT = {
 				check_variable = {
 					which = Burgher_Influence 
-					value = 2
+					value = 3
 				}
 			}
 			has_reform = general_estates_reform

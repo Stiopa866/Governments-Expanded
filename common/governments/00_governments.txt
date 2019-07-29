@@ -150,6 +150,7 @@ monarchy = {
 				taifa_governors_reform 
 				union_of_italian_states_reform
 				#persian_satrapies_reform
+				imperial_circles_administration_reform
 			}
 		}
 		military_organisation = {
@@ -209,7 +210,6 @@ monarchy = {
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
 				declario_ferdinandei_reform
-				imperial_circles_administration_reform
 				szlachta_recruits_reform
 				voivode_captains_reform
 				boyar_scions_reform

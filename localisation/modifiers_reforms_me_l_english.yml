@@ -30,6 +30,11 @@
  Decent_Mil: "Decent Military Council"
  Good_Mil: "Superb Military Council"
  
+ Autarky: "Autarky"
+ Balanced_Policy: "Balanced Policy"
+ Open_Doors: "Open Doors"
+ 
+ 
  tax_peasants: "Peasant Tax"
  tax_peasants_desc: "Levy an additional tax upon the peasantry."
  register_peasants: "Peasant Register"
@@ -65,6 +70,7 @@
  Rallied_For_War: "Rallied for War"
  Patriotism: "Patriotism"
  Town_Rights: "Town Rights"
+ Trader_Privileges: "Trader Privileges"
  Church_Poorhouses: "Church workhouses"
  Administrative_Forts: "Administrative Forts"
  Abolished_Customs: "Abolished Customs"
@@ -207,6 +213,7 @@
  Training_Camps: "Training Camps"
  Demoralized_Army: "Demoralized Army"
  Absent_Noble: "Absent Noble"
+
  
  
  

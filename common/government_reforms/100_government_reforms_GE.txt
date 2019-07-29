@@ -17,8 +17,9 @@ elective_monarchy_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	has_term_election = yes
-	duration = 100
+	election_on_death = yes
+	#has_term_election = yes
+	#duration = 100
 	potential = {
 		#OR = {
 		#	have_had_reform = feudalism_reform
@@ -4021,6 +4022,8 @@ empowered_aristocratic_court_reform = {
 empowered_general_estates_reform = {
 	icon = "poland_sejm"
 	allow_normal_conversion = yes
+	republic = yes
+	heir = no
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
 		check_variable = {
@@ -4038,10 +4041,11 @@ empowered_general_estates_reform = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	custom_attributes = {
-		enables_town_rights = yes
+		enables_burgher_council = yes
+		enables_trade_privileges = yes
 	}
 	ai = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -4658,13 +4662,13 @@ national_guard_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = -1
 		}
 	}
