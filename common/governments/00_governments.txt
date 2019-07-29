@@ -62,7 +62,7 @@ monarchy = {
 				austrian_empire_reform
 				polish_constitutionalism_reform
 				granadan_iqta_reform 
-				achaemenid_empire_reform
+				#achaemenid_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -109,7 +109,7 @@ monarchy = {
 				curia_regis_reform
 				taha_divisions_reform 
 				unite_the_royal_houses_reform
-				persian_satrapies_reform
+				#words_of_cyrus_reform
 				support_ghibbelline_reform
 				support_guelphs_reform
 			}
@@ -148,6 +148,7 @@ monarchy = {
 				abolish_bastard_feudalism_reform
 				taifa_governors_reform 
 				union_of_italian_states_reform
+				#persian_satrapies_reform
 			}
 		}
 		military_organisation = {
@@ -183,6 +184,7 @@ monarchy = {
 				jinetes_reform
 				miquelet_militia_reform
 				royal_ordinances_reform
+				#expand_the_immortals_reform
 			}
 		}
 		growth_of_administration = {
@@ -216,6 +218,7 @@ monarchy = {
 				empowered_of_noble_bearing_reform
 				empowered_clergy_in_administration_reform
 				adoption_of_christianity_reform
+				#justice_and_truth_reform
 			}
 		}
 		deliberative_assembly = {
@@ -241,6 +244,7 @@ monarchy = {
 				declaration_of_breda_reform
 				royal_society_reform
 				legacy_of_constitutionalism_reform
+				#preeminent_padishah_reform
 				empowered_aristocratic_court_reform
 				empowered_german_aristocratic_court_reform
 				empowered_royal_decree_reform
