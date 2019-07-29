@@ -409,7 +409,7 @@ Good_Mil = {
 
 ##Burgher Council
 Autarky = {
-	global_prov_trade_power_modifier = 0.25
+	global_prov_trade_power_modifier = 0.15
 	center_of_trade_upgrade_cost = -0.25
 }
 Balanced_Policy = {

@@ -4022,8 +4022,6 @@ empowered_aristocratic_court_reform = {
 empowered_general_estates_reform = {
 	icon = "poland_sejm"
 	allow_normal_conversion = yes
-	republic = yes
-	heir = no
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
 		check_variable = {
