@@ -3648,6 +3648,7 @@ country_event = {
 		if = {
 			limit = {
 				has_estate = estate_church
+				NOT = { has_reform = states_general_reform }
 			}
 			add_estate_influence_modifier = {
 				estate = estate_church
@@ -3694,6 +3695,7 @@ country_event = {
 		if = {
 			limit = {
 				has_estate = estate_burghers
+				NOT = { has_reform = states_general_reform }
 			}
 			add_estate_influence_modifier = {
 				estate = estate_burghers
@@ -3741,6 +3743,7 @@ country_event = {
 		if = {
 			limit = {
 				has_estate = estate_nobles
+				NOT = { has_reform = states_general_reform }
 			}
 			add_estate_influence_modifier = {
 				estate = estate_nobles
