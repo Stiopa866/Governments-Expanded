@@ -3134,7 +3134,6 @@ empowered_clergy_in_administration_reform = {
 		}
 	}
 	potential = {
-		NOT = { has_reform = clergy_in_administration_reform }
 		check_variable = {
 			which = Clergy_Influence
 			value = 2
@@ -3751,7 +3750,6 @@ empowered_of_noble_bearing_reform = {
 			which = Noble_Influence
 			value = 2
 		}
-		NOT = { has_reform = of_noble_bearing_reform }
 		NOT = { technology_group = eastern }
 		NOT = {
 			has_estate = estate_maratha
@@ -3834,7 +3832,6 @@ empowered_royal_decree_reform = {
 			value = 3
 		}
 		NOT = { has_reform = elective_monarchy_reform }
-		NOT = { has_reform = royal_decree_reform }
 	}
 	trigger = {
 		check_variable = {

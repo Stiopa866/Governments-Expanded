@@ -4370,9 +4370,9 @@ country_event = {
 	
 
 	trigger = {
-		has_government_attribute = enables_trade_princes_reform
+		has_government_attribute = enables_trade_princes
 		OR = {
-			OR = {
+			AND = {
 				calc_true_if = {
 					any_subject_country = {
 						OR = {
@@ -4455,7 +4455,7 @@ country_event = {
 	
 
 	trigger = {
-		NOT = { has_government_attribute = enables_trade_princes_reform }
+		NOT = { has_government_attribute = enables_trade_princes }
 		has_country_modifier = Trade_Princes
 	}
 	
@@ -4482,9 +4482,11 @@ country_event = {
 	
 
 	trigger = {
-		has_government_attribute = enables_militant_orders
-		at_war_with_religious_enemy = yes
-		NOT = { has_country_modifier = Militant_Orders }
+		AND = {
+			has_government_attribute = enables_militant_orders
+			at_war_with_religious_enemy = yes
+			NOT = { has_country_modifier = Militant_Orders }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4492,7 +4494,10 @@ country_event = {
 	}
 	
 	immediate = {
-		add_country_modifier = Militant_Orders
+		add_country_modifier = {
+			name = "Militant_Orders"
+			duration = -1
+		}
 	}
 	
 	option = {
@@ -4510,8 +4515,16 @@ country_event = {
 	
 
 	trigger = {
-		at_war_with_religious_enemy = no
-		has_country_modifier = Militant_Orders
+		OR = {
+			AND = {
+				at_war_with_religious_enemy = yes
+				has_country_modifier = Militant_Orders
+			}
+			AND = {
+				has_country_modifier = Militant_Orders
+				NOT = { has_government_attribute = enables_militant_orders }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
