@@ -82,6 +82,13 @@ estate_burghers =
 		influence = -10
 	}
 	influence_modifier = {
+		desc = EST_VAL_ROYAL_DECREE_REFORM
+		trigger = {
+			has_reform = empowered_royal_decree_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_MOEDERNEGOTIE_REFORM
 		trigger = {
 			has_reform = moedernegotie_reform

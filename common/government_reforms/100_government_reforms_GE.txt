@@ -3851,6 +3851,7 @@ empowered_royal_decree_reform = {
 	ai = {
 		factor = 10
 	}
+	#-10% All estate Influence
 }
 
 empowered_divine_blood_reform = {

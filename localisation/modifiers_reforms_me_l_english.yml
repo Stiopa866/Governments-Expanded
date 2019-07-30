@@ -242,8 +242,10 @@
  EST_VAL_TOLERANT_PRINCIPLE_REFORM:0 "Tolerance Principle: §Y$VAL$%§!"
  EST_VAL_REGENTS_REFORM:0 "Regents: §Y$VAL$%§!"
  EST_VAL_SZLACHTA_RECRUITS_REFORM:0 "Szlachta Recruits: §Y$VAL$%§!"
- EST_VAL_VOIVODE_CAPTAINS_REFORM:0 "Voivode Captains:  §Y$VAL$%§!"
- EST_VAL_BOYAR_SCIONS_REFORM:0 "Boyar Scions:  §Y$VAL$%§!"
+ EST_VAL_VOIVODE_CAPTAINS_REFORM:0 "Voivode Captains: §Y$VAL$%§!"
+ EST_VAL_BOYAR_SCIONS_REFORM:0 "Boyar Scions: §Y$VAL$%§!"
+ EST_VAL_ROYAL_DECREE_REFORM:0 "Empowered Royal Decree: §Y$VAL$%§!"
+ 
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
