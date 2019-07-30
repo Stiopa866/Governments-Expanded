@@ -600,7 +600,7 @@
  mechanic_enables_city_of_valencia_yes: "City of Valencia: §G+15%§! Goods Produced in the state of Valencia."
  mechanic_enables_kingdom_of_sicily_yes: "Kingdom of Sicily: §G+20%§! Tax Modifier in the state of Sicily."
  mechanic_enables_settling_tribes_yes: "This reform will cause tribes to settle in our lands, granting §G7§! development."
- mechanic_enables_divine_blood_yes: "Divine Blood: Blessed blood flows through your veins and those of your successors, increasing their skills by §G1§!."
+ mechanic_enables_divine_blood_yes: "Divine Blood: Increase your heir's stats by §G1§! stat."
  mechanic_enables_noble_privileges_yes: "Noble Privileges: 'Raise Additional Levies' grants additional Manpower."
  mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! opinion with the Pope."
  mechanic_enables_trade_privileges_yes: "Merchant Privileges: §G+15%§! Trade Value and §G2.5§! Provincial Trade Power in Burgher Provinces."

@@ -111,6 +111,7 @@ country_decisions = {
 		potential = {
 			was_player = yes
 			NOT = { is_year = 1450 }
+			has_reform = feudalism_reform
 		}
 		allow = {
 			was_player = yes

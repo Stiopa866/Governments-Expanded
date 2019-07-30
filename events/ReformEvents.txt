@@ -2062,9 +2062,15 @@ country_event = {
 
 	trigger = {
 		has_government_attribute = enables_patriotism
-		any_owned_province = {
-			culture = ROOT
-			NOT = { has_province_modifier = Patriotism }
+		OR = {
+			any_owned_province = {
+				culture = ROOT
+				NOT = { has_province_modifier = Patriotism }
+			}
+			any_owned_province = {
+				NOT = { culture = ROOT }
+				has_province_modifier = Patriotism
+			}
 		}
 	}
 	
@@ -2082,6 +2088,13 @@ country_event = {
 				name = "Patriotism"
 				duration = -1
 			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { culture = ROOT }
+				has_province_modifier = Patriotism
+            }
+			remove_province_modifier = Patriotism
 		}
 	}
 	
