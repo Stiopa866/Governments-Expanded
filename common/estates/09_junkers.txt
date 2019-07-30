@@ -42,10 +42,12 @@ estate_junkers =
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
+		local_defensiveness = 0.15
 		regiment_recruit_speed = -0.25
 	}
 	province_modifier_neutral = {
-		trade_goods_size_modifier = -0.1
+		local_defensiveness = 0.15
+		trade_goods_size_modifier = -0.20
 	}	
 	province_modifier_angry = {
 		local_unrest = 5
@@ -103,7 +105,7 @@ estate_junkers =
 	# Special interactions
 	interaction = {
 		name = "RECRUIT_JUNKERS"
-		icon = 1
+		icon = 21
 		
 		years_between_use = 20
 		
@@ -115,7 +117,28 @@ estate_junkers =
 		}
 		
 		effect = {
-			add_army_tradition = 5
+			
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 10
+						has_estate = estate_junkers 
+					}
+				}
+				add_army_tradition = 15
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_estate = estate_junkers 
+					}
+				}
+				add_army_tradition = 10
+			}
+			else = {
+				add_army_tradition = 5
+			}
 			add_estate_loyalty = {
 				estate = estate_junkers
 				loyalty = -10
@@ -129,7 +152,9 @@ estate_junkers =
 		years_between_use = 10
 		
 		trigger = {
-			always = yes
+			any_owned_province = {
+				has_estate = estate_junkers
+			}
 		}
 		
 		effect = {
@@ -140,16 +165,42 @@ estate_junkers =
 					add_local_autonomy = 25
 				}
 			}
-			add_estate_loyalty = {
-				estate = estate_junkers
-				loyalty = 5
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 10
+						has_estate = estate_junkers 
+					}
+				}
+				add_estate_loyalty = {
+					estate = estate_junkers
+					loyalty = 15
+				}
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_estate = estate_junkers 
+					}
+				}
+				add_estate_loyalty = {
+					estate = estate_junkers
+					loyalty = 10
+				}
+			}
+			else = {
+				add_estate_loyalty = {
+					estate = estate_junkers
+					loyalty = 5
+				}
 			}
 		}
 		
 	}
 	interaction = {
 		name = "PROMOTE_JUNKERS"
-		icon = 1
+		icon = 17
 		
 		years_between_use = 10
 		
@@ -164,10 +215,65 @@ estate_junkers =
 		}
 		
 		effect = {
-			random_owned_province = {
-				limit = { has_estate = estate_junkers }
-				add_base_manpower = 1
+		
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 10
+						has_estate = estate_junkers 
+					}
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
 			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_estate = estate_junkers 
+					}
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = { has_estate = estate_junkers }
+					add_base_manpower = 1
+				}
+			}
+			add_estate_loyalty = {
+					estate = estate_junkers
+					loyalty = -5
+				}
 			add_estate_influence_modifier = {
 				estate = estate_junkers
 				desc = EST_VAL_PROMOTE_JUNKERS
@@ -178,7 +284,7 @@ estate_junkers =
 	}
 	interaction = {
 		name = "JUNKER_ADVISOR"
-		icon = 1
+		icon = 10
 		
 		years_between_use = 10
 		
