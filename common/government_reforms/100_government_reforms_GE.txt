@@ -3844,7 +3844,9 @@ empowered_royal_decree_reform = {
 		max_absolutism = 10
 		yearly_absolutism = 0.1
 	}
-
+	custom_attributes = {
+		enables_royal_council = yes
+	}
 	ai = {
 		factor = 10
 	}
