@@ -514,7 +514,7 @@
  legacy_of_constitutionalism_reform_desc: "We used to have a constitution, but now the authoritarian monarchs have torn it down so much that they effectively hold absolute power. This desecration is causing the legitimacy of the monarch fade away from the eyes of the countries people."
  
  portuguese_empire_reform: "Portuguese Empire"
- portuguese_empire_reform_desc: "Placeholder #BlameNuno."
+ portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility,clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people.  We are situated in every continet of the world. All the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and territory and it's citizens are all Portuguese, wether they speak another language or have different customs, we are all Portuguese under this banner. We shall lead the civilizing mission in our territory and encompass pro-miscegenation towards our subject unlike certain Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
  kingdom_of_castille_and_leon: "Kingdom of Castille and Leon"
  kingdom_of_castille_and_leon_desc: "The Kingdom of Castille and Leon was a union of the Castillian and Leonese realms, fused into a united realm. however, the kings of Castille and Leon struggled to reign in the powerfull lords and militant holy orders, even failing at times."
  crown_of_castille: "Crown of Castille"
@@ -682,6 +682,7 @@
  vetshock_general.tooltip:1 "Gain General with §G60§! tradition and §G1§! extra Shock"
  shock_general.tooltip:1 "Gain General with §G40§! tradition and §G1§! extra Shock"
  Placate_Junkers.tooltip:1 "Get §R25%§! Autonomy in each province owned by the Junkers Estate."
+ Provinces_Junkers.tooltip:1 "Effects scale with relative amount of lands this estate holds"
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

@@ -117,21 +117,21 @@ estate_junkers =
 		}
 		
 		effect = {
-			
+			custom_tooltip = Provinces_Junkers.tooltip
 			if = {
 				limit = {
-					num_of_owned_provinces_with = {
-						value = 10
-						has_estate = estate_junkers 
+					estate_territory = {
+						estate = estate_junkers 
+						territory = 40
 					}
 				}
 				add_army_tradition = 15
 			}
 			else_if = {
 				limit = {
-					num_of_owned_provinces_with = {
-						value = 5
-						has_estate = estate_junkers 
+					estate_territory = {
+						estate = estate_junkers 
+						territory = 20
 					}
 				}
 				add_army_tradition = 10
@@ -158,6 +158,7 @@ estate_junkers =
 		}
 		
 		effect = {
+			custom_tooltip = Provinces_Junkers.tooltip
 			custom_tooltip = Placate_Junkers.tooltip
 			hidden_effect = {
 				every_owned_province = {
@@ -167,9 +168,9 @@ estate_junkers =
 			}
 			if = {
 				limit = {
-					num_of_owned_provinces_with = {
-						value = 10
-						has_estate = estate_junkers 
+					estate_territory = {
+						estate = estate_junkers 
+						territory = 40
 					}
 				}
 				add_estate_loyalty = {
@@ -179,9 +180,9 @@ estate_junkers =
 			}
 			else_if = {
 				limit = {
-					num_of_owned_provinces_with = {
-						value = 5
-						has_estate = estate_junkers 
+					estate_territory = {
+						estate = estate_junkers 
+						territory = 20
 					}
 				}
 				add_estate_loyalty = {
@@ -215,12 +216,12 @@ estate_junkers =
 		}
 		
 		effect = {
-		
+			custom_tooltip = Provinces_Junkers.tooltip
 			if = {
 				limit = {
-					num_of_owned_provinces_with = {
-						value = 10
-						has_estate = estate_junkers 
+					estate_territory = {
+						estate = estate_junkers 
+						territory = 40
 					}
 				}
 				random_owned_province = {
@@ -246,9 +247,9 @@ estate_junkers =
 			}
 			else_if = {
 				limit = {
-					num_of_owned_provinces_with = {
-						value = 5
-						has_estate = estate_junkers 
+					estate_territory = {
+						estate = estate_junkers 
+						territory = 20
 					}
 				}
 				random_owned_province = {

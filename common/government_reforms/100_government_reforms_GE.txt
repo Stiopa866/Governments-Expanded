@@ -2503,6 +2503,18 @@ diocletian_reforms_reform = {
 kyoho_reforms_reform = {
 	icon = "peasants"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		culture_group = japanese
 	}
@@ -2518,6 +2530,26 @@ kyoho_reforms_reform = {
 casa_de_contraction_reform = {
 	icon = casa_de_contraction
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Royal_Influence 
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Royal_Influence 
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = CAS
@@ -2537,6 +2569,26 @@ casa_de_contraction_reform = {
 casa_de_india_reform = {
 	icon = casa_de_india
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Royal_Influence 
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Royal_Influence 
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = casa_de_india_reform
@@ -2880,6 +2932,18 @@ revoke_magnate_estates_reform = {
 integrate_tatars_reform = {
 	icon = Tatar_raid
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		num_of_owned_provinces_with = {
 			value = 1
@@ -3288,6 +3352,18 @@ boyar_scions_reform = {
 imperial_circles_administration_reform = {
 	icon = "administer_imperial_circle"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		is_part_of_hre = yes
 		NOT = { culture_group = latin }
@@ -3312,6 +3388,26 @@ imperial_circles_administration_reform = {
 colonial_govenors_reform = {
 	icon = colonial_rule
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_idea = colonial_ventures
@@ -3337,7 +3433,7 @@ colonial_govenors_reform = {
 }
 
 sulu_administration_reform = {
-effect = {
+	effect = {
 		change_variable = {
 			which = Burgher_Influence
 			value = 1
@@ -4875,6 +4971,26 @@ turkish_iqta_reform = {
 imperial_circles_reform = {
 	icon = "imperial_army"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		is_part_of_hre = yes
 		NOT = { culture_group = latin }
@@ -4897,6 +5013,26 @@ imperial_circles_reform = {
 tatar_mercenaries_reform = {
 	icon = Tatar_raid
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		any_neighbor_country = {
 			has_reform = steppe_horde
@@ -4916,6 +5052,18 @@ tatar_mercenaries_reform = {
 south_east_asian_elephants_reform = {
 	icon = soldiers_5
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			culture_group = burman
@@ -4938,13 +5086,13 @@ les_vieux_corps_reform = {
 	effect = {
 		change_variable = {
 			which = Royal_Influence
-			value = -1
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
-			value = 1
+			value = -1
 		}
 	}
 	potential = {
@@ -4965,6 +5113,18 @@ les_vieux_corps_reform = {
 portugese_marines_reform = {
 	icon = "soldiers_5"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {	
 			primary_culture = portugese 
@@ -4990,6 +5150,18 @@ portugese_marines_reform = {
 abolish_manrent_reform = {
 	icon = manrent
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = scottish
@@ -5008,6 +5180,18 @@ abolish_manrent_reform = {
 foreign_formation_regiments_reform = {
 	icon = new_order_regiments
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = russian
@@ -5027,6 +5211,18 @@ foreign_formation_regiments_reform = {
 general_war_commissariat_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = prussian
@@ -5047,6 +5243,18 @@ general_war_commissariat_reform = {
 gustavan_artillery_reform = {
 	icon = gustavan_artillery
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = swedish 
@@ -5065,6 +5273,18 @@ gustavan_artillery_reform = {
 the_black_guard_reform = {
 	icon = soldiers
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = danish 
@@ -5083,6 +5303,18 @@ the_black_guard_reform = {
 reorganize_the_imperial_army = {
 	icon = austrian_army
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = austrian 
@@ -5104,6 +5336,18 @@ reorganize_the_imperial_army = {
 arabian_horses_reform = {
 	icon = mamluk_horse
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = al_misr_arabic 
@@ -5127,6 +5371,18 @@ arabian_horses_reform = {
 pospolite_ruszenie_reform = {
 	icon = national_guard
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			tag = POL
@@ -5153,6 +5409,18 @@ pospolite_ruszenie_reform = {
 polish_national_guard_reform = {
 	icon = national_guard
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = { 
 		OR = {
 			tag = POL
@@ -5174,6 +5442,18 @@ polish_national_guard_reform = {
 henry_reforms_reform = {
 	icon = england_henry_8
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = english
@@ -5196,6 +5476,18 @@ henry_reforms_reform = {
 berber_cavalry_reform = {
 	icon = berber_warrior
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			AND = {
@@ -5223,6 +5515,18 @@ berber_cavalry_reform = {
 jinetes_reform = {
 	icon = spain_jinite
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = kingdom_of_castille_and_leon
@@ -5248,6 +5552,18 @@ jinetes_reform = {
 miquelet_militia_reform = {
 	icon = spain_tercio
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = hispanic_kingdom
@@ -5268,6 +5584,18 @@ miquelet_militia_reform = {
 royal_ordinances_reform = {
 	icon = king
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = enlightened_despotism
