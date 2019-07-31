@@ -537,6 +537,26 @@
  crown_of_aragon_desc: "The Crown of Aragon was a composite monarchy of nearly a dozen kingdoms; The Kingdom of Aragon, The Principality of Catalonia, The City of Valencia, The Kingdom of Majorca, The Kingdom of Sardinia, the Kingdom of Sicily, The Kingdom of Naples, the Duchy of Athens, the Duchy of Neopatria, the County of Gevaudan, the County of Provence and the principality of Andorra. This extreme fragmentary state of feudalism is both hard to manage for a ruler, leaving its many subject states relatively free and prosperous, as well as rather happy about the lack of noble or royal control."
 
  
+ #1.8
+ sovereignity_reform: "Sovereignty without a Sovereign"
+ sovereignity_reform_desc: "The peasants love their freedom, independence and lack of a noble tyrant, let us maintain this tooth and nail."
+ peasant_council_reform: "Council of 48"
+ peasant_council_reform_desc: "Our nation is not governed by feudal lords or bishops, but by the council of our best and brightest, so unlike the more organized nations, we are in no need of frequent elections to have excellent governance."
+ clergical_administration_reform: "Clergical Administration"
+ clergical_administration_reform_desc: "We might not recognize the power of feudal lords, but we are more then willing to organize our nation through the establishment of bishoprics."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
@@ -605,6 +625,8 @@
  mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! opinion with the Pope."
  mechanic_enables_trade_privileges_yes: "Merchant Privileges: §G+15%§! Trade Value and §G2.5§! Provincial Trade Power in Burgher Provinces."
  mechanic_enables_burgher_council_yes: "Burgher Council: The Burghers council the monarch during his reign."
+ mechanic_enables_peasant_council_yes: "Peasant Council: §G+2§! Candidate Random Bonus if you got three advisors."
+ mechanic_enables_local_bishoprics_yes: "Local Bishoprics: §G-25%§! State Maintenance in States with a province owned by the clergy."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

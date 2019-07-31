@@ -303,6 +303,12 @@ City_Of_Valencia = {
 Kingdom_Of_Sicily = {
 	local_tax_modifier = 0.20
 }
+Peasant_Council = {
+	candidate_random_bonus = 2
+}
+Local_Bishopric = {
+	local_state_maintenance_modifier = -0.25
+}
 
 
 #Cortez

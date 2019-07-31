@@ -114,7 +114,7 @@ old_swiss_confederation_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = old_swiss_confederation_reform
+			has_reform = old_swiss_confederation_reform
 			primary_culture = swiss
 		}
 	}
@@ -140,7 +140,7 @@ independence_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = independence_reform
+			has_reform = independence_reform
 			primary_culture = swiss
 		}
 	}
@@ -154,12 +154,31 @@ independence_reform = {
 	}
 }
 
+sovereignity_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = sovereignity_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		hostile_attrition = 1
+		enemy_core_creation = 0.25
+		reelection_cost = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 demedici_dynasty_reform = {
 	icon = de_medici
 	allow_normal_conversion = yes
 	potential = {
 		OR = {	
-			have_had_reform = demedici_dynasty_reform
+			has_reform = demedici_dynasty_reform
 			tag = LAN
 		}
 		NOT = { has_reform = pirate_republic_reform }
@@ -236,7 +255,7 @@ moedernegotie_reform = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			have_had_reform = moedernegotie_reform
+			has_reform = moedernegotie_reform
 		}
 	}
 	modifiers = {
@@ -248,6 +267,26 @@ moedernegotie_reform = {
 		factor = 100
 	}
 	#5% Burgher Influence, 10% Burgher Loyalty
+}
+
+peasant_council_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = peasant_council_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		election_cycle = 1
+	}
+	custom_attributes = {
+		enables_peasant_council = yes
+	}
+	ai = {
+		factor = 100
+	}
 }
 
 factional_elections_reform = {
@@ -281,7 +320,7 @@ vroedschappen_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = vroedschappen_reform
+			has_reform = vroedschappen_reform
 		}
 	}
 	modifiers = {
@@ -301,7 +340,7 @@ reforms_of_william_3_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = reforms_of_william_3_reform
+			has_reform = reforms_of_william_3_reform
 		}
 	}
 	modifiers = {
@@ -318,7 +357,7 @@ reform_the_condotierri_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = reform_the_condotierri_reform
+			has_reform = reform_the_condotierri_reform
 			primary_culture = swiss
 		}
 	}
@@ -339,7 +378,7 @@ communal_territories_reform = {
 		OR = {
 			tag = GEN
 			was_tag = GEN
-			have_had_reform = communal_territories_reform
+			has_reform = communal_territories_reform
 		}
 	}
 	modifiers = {
@@ -358,7 +397,7 @@ united_indian_companies_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = united_indian_companies_reform
+			has_reform = united_indian_companies_reform
 		}
 	}
 	modifiers = {
@@ -377,7 +416,7 @@ confederation_of_cantons_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			have_had_reform = confederation_of_cantons_reform
+			has_reform = confederation_of_cantons_reform
 			primary_culture = swiss
 		}
 	}
@@ -393,6 +432,26 @@ confederation_of_cantons_reform = {
 	}
 }
 
+clergical_administration_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = clergical_administration_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_local_bishoprics = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 andrea_doria_constitution_reform = {
 	icon = andrea_doria
 	allow_normal_conversion = yes
@@ -400,7 +459,7 @@ andrea_doria_constitution_reform = {
 		OR = {
 			tag = GEN
 			was_tag = GEN
-			have_had_reform = andrea_doria_constitution_reform
+			has_reform = andrea_doria_constitution_reform
 		}
 		NOT = { has_reform = frequent_elections_reform }
 	}
@@ -464,7 +523,7 @@ ware_vrijheid_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = ware_vrijheid_reform
+			has_reform = ware_vrijheid_reform
 		}
 	}
 	modifiers = {
@@ -502,7 +561,7 @@ confederation_of_states_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = confederation_of_states
+			has_reform = confederation_of_states
 		}
 	}
 	modifiers = {
@@ -522,7 +581,7 @@ tolerant_principle_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = tolerant_principle_reform
+			has_reform = tolerant_principle_reform
 		}
 	}
 	modifiers = {
@@ -543,7 +602,7 @@ regents_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = regents_reform
+			has_reform = regents_reform
 		}
 	}
 	modifiers = {
@@ -565,7 +624,7 @@ raadspensionaris_reform = {
 		OR = {
 			primary_culture  = dutch
 			primary_culture  = flemish
-			have_had_reform = raadspensionaris_reform
+			has_reform = raadspensionaris_reform
 		}
 	}
 	modifiers = {

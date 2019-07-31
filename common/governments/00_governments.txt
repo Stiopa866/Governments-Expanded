@@ -436,6 +436,7 @@ republic = {
 				moedernegotie_reform
 				mixed_republic_reform
 				independence_reform
+				sovereignity_reform
 				support_ghibbelline_reform
 				support_guelphs_reform
 			}
@@ -449,6 +450,7 @@ republic = {
 				#GE
 				factional_elections_reform
 				vroedschappen_reform
+				peasant_council_reform
 			}
 		}
 		military_organisation = {
@@ -481,6 +483,7 @@ republic = {
 				communal_territories_reform
 				united_indian_companies_reform
 				confederation_of_cantons_reform
+				clergical_administration_reform
 			}
 		}
 		parliamentary_vs_presidential = {
