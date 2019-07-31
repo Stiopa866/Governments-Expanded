@@ -25,6 +25,7 @@ estate_church =
 		NOT = { has_reform = cossacks_reform }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { government = native }
+		NOT = { has_reform = abolish_clergy_privileges_reform }
 		NOT = { has_reform = revolutionary_republic_reform }
 		OR = {
 			NOT = { has_reform = celestial_empire }

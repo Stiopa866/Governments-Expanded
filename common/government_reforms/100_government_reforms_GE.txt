@@ -264,7 +264,6 @@ kingdom_of_castille_and_leon = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		min_autonomy = 10
 		production_efficiency = -0.10
 	}
 	custom_attributes = {
@@ -316,7 +315,6 @@ hispanic_kingdom = {
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
-		papal_influence = 1
 		tolerance_own = 1
 		max_states = 3
 	}
@@ -377,7 +375,7 @@ crown_of_aragon = {
 			}
 			valencia_area = {
 				remove_province_modifier = {
-					name = City_Of-Valencia
+					name = City_Of_Valencia
 					duration = -1
 				}
 			}
@@ -1698,7 +1696,7 @@ trade_princes_reform = {
 		}
 	}
 	modifiers = {
-		placed_merchant_power = 8
+		placed_merchant_power = 5
 		merchants = 1
 	}
 	can_use_trade_post = yes
