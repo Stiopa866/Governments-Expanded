@@ -73,6 +73,7 @@ country_event = {
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = american_government }
+		NOT = { has_government_attribute = enables_elective_monarchy }
 	}
 
 	option = {
@@ -101,6 +102,7 @@ country_event = {
 			}		
 		}
 		custom_tooltip = remains_ruler
+		add_absolutism = 2.5
 		if = {
 			limit = {
 				has_government_attribute = enables_demedici
@@ -485,12 +487,9 @@ country_event = {
 			has_government_attribute = enables_demedici
 		}
 		ai_chance = { factor = 10 }
-		add_scaled_republican_tradition = -8
+		add_scaled_republican_tradition = -5
 
 		define_ruler = {
-			mil = 0
-			adm = 0
-			dip = 0
 			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"
@@ -522,6 +521,7 @@ country_event = {
 		NOT = { has_government_attribute = lottery_election }
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = american_government }
+		NOT = { has_government_attribute = enables_elective_monarchy }
 	}
 	
 	immediate = {
@@ -778,16 +778,13 @@ country_event = {
 	option = { # Nepotism choice, de'Medici
 		name = "EVTOPTF700"
 		trigger = {
-			has_reform = demedici_dynasty_reform 
+			has_government_attribute = enables_demedici
 		}
 		ai_chance = { factor = 10 }
-		add_scaled_republican_tradition = -8
+		add_scaled_republican_tradition = -5
 
 		define_ruler = {
-			mil = -1
-			adm = -1
-			dip = -1
-			min_age = 30
+			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"
 		}

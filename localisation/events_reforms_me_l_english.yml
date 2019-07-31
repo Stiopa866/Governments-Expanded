@@ -21,9 +21,54 @@
  reform_me_events.9.b: "I guess you'll have to take no as an answer."
  reform_me_events.11.t: "The King is Dead, Long Live the King"
  reform_me_events.11.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
- reform_me_events.11.a: "The Prince of Course!"
+ reform_me_events.11.a: "The Prince of course!"
  reform_me_events.11.b: "One of the late king's brothers."
  reform_me_events.11.c: "A member of a foreign dynasty."
+ reform_me_events.11.e: "Appoint a regency council untill $HEIR$'s majority."
+ reform_me_events.11.f: "An Influencial Noble."
+ reform_me_events.11.g: "A Distant Relative."
+ reform_me_events.41.t: "Dissenting Nobles"
+ reform_me_events.41.d: "A influential noble has gone on a trip recently, and appears to be stirring up otherwise passive nobles to go and agitate for a candidate of his liking. This man has a silver tongue and knows how to use it."
+ reform_me_events.41.a: "By cutting a man's tongue, you're only proving you fear his words."
+ reform_me_events.41.b: "Cut out his tongue."
+ reform_me_events.42.t: "Dirty Money"
+ reform_me_events.42.d: "One of our spies has infiltrated a underground society where an unknown benefactor is hosting generous feasts and lavish bribes to anyone willing to indebt themselves to him. This could be a way of gathering favours for a future succession crisis."
+ reform_me_events.42.a: "Probably just local politics."
+ reform_me_events.42.b: "Have our spy match the unknown benefactor in everything."
+ reform_me_events.43.t: "Mockery"
+ reform_me_events.43.d: "Our heir has recently been under attack from couriers over his supposed lack of accomplishments and how his father has to solve all his problems for him."
+ reform_me_events.43.a: "Execute them for this mockery."
+ reform_me_events.43.b: "It will pass soon."
+ reform_me_events.52.t: "Council of $MONARCHTITLE$ $MONARCH$"
+ reform_me_events.52.d: "Our most noble autocrat $MONARCHTITLE$ $MONARCH$ is in need of a council to help him to stay in perfect control of his lands, As the most important person in our nation, what should the council consist of?"
+ reform_me_events.52.a: "Clergymen, as they know the plight of the people."
+ reform_me_events.52.b: "The Burghers, Their relations will be of much use."
+ reform_me_events.52.c: "Nobles, They got experience finding soldiers."
+ reform_me_events.66.t:0 "The Crown of Castille"
+ reform_me_events.66.d: "The Crown of Castille is the union of the Castillian, Aragonese and grenadan Crowns upon a single monarch's head. The dream of both the iberian nobles and of the reconquista has been achieved."
+ reform_me_events.66.a: "A new era for Castille"
+ reform_me_events.71.t: "A New Dawn"
+ reform_me_events.71.d: "Our ancient empire has been reformed, who should rule it?"
+ reform_me_events.71.a: "A member of the divine Achaemenid dynasty.
+ reform_me_events.71.b: "None better suited then me!."
+ reform_me_events.78.t: "The Hispanic Kingdom"
+ reform_me_events.78.d: "The Spanish Empire, historically known as the Hispanic Monarchy  was one of the largest empires in history. From the late 15th century to the early 19th, Spain controlled a huge overseas territory in the New World and the Asian archipelago of the Philippines, what they called "The Indies" . It also included territories in Europe, Africa and Oceania. The Spanish Empire has been described as the first global empire in history, a description also given to the Portuguese Empire. It was the world's most powerful empire during the 16th and first half of the 17th centuries, reaching its maximum extension in the 18th century. The Spanish Empire was the first empire to be called 'the empire on which the sun never sets'."
+ reform_me_events.78.a: "A new era for Spain"
+ reform_me_events.79.t: "Enlightened Despotism"
+ reform_me_events.79.d: "The ideas of the Age of Enlightenment came to Spain in the eighteenth century with the new Bourbon dynasty, following the death of the last Habsburg monarch, Charles II, in 1700. This period in Spanish history is often referred to as Bourbon Spain. "Like the Spanish Enlightenment, the Spanish Bourbon monarchs were imbued with Spain's Catholic identity." The period of reform and 'enlightened despotism' under the Bourbons focused on centralizing and modernizing the Spanish government, and improvement of infrastructure, beginning with the rule of King Charles III and the work of his minister, José Moñino, count of Floridablanca. In the political and economic sphere, the crown implemented a series of changes, collectively known as the Bourbon reforms, which were aimed at making the overseas empire more prosperous to the benefit of Spain."
+ reform_me_events.79.a: "A new era for Spain"
+ reform_me_events.81.t: "New Lands"
+ reform_me_events.81.d: "Our integration of the tatars within our border has led to several neighbouring tribes moving into our lands and offering to pay taxes and serving in our military in return for protection and being allowed to live in our lands."
+ reform_me_events.81.a: "Sounds like a win win situation"
+ reform_me_events.82.t: "End of the Guelph-Gibbelline Feud"
+ reform_me_events.82.d: "The feud has ended, the battles have been had, the arguments made and the coups attempted. It is time to accept that the status quo will remain for now."
+ reform_me_events.82.a: "Let it die, kill it if you have to."
+ reform_me_events.88.t: "Burgher Council"
+ reform_me_events.88.d: "With the rise of a new ruler comes a new economic policy, what is yours?"
+ reform_me_events.88.a: "Merchantilism and Autarky."
+ reform_me_events.88.b: "A Balanced Policy."
+ reform_me_events.88.c: "Open doors for everyone and everything."
+ 
  
  
  #GE Reform Cycle
@@ -537,9 +582,89 @@
  bishops_law.102.a: "Admit to your mistakes."
  bishops_law.102.b: "Desperately shift the blame."
  
+ ##Estates##
+ 
+ #Peasants#
+ 
+ peasants_estate_events.1.t: "Representation Pays Off"
+ peasants_estate_events.1.d: "The representation of the peasants as a well represented estate has caused their spirits to rise and in return they are willing to back whatever we want."
+ peasants_estate_events.1.a: "Excellent."
+ 
+ peasants_estate_events.2.t: "Peasants Rally"
+ peasants_estate_events.2.d: "The war has taken a heavy toll on our nation, but the fact that the peasants have their concerns heard and treated means that they will fight to retain their rights."
+ peasants_estate_events.2.a: "For freedom!"
+ 
+ peasants_estate_events.3.t: "Peasant Petition"
+ peasants_estate_events.3.d: "The peasants have petitioned us to grant them some more liberty to locally solve issues and determine their own building and production regulations."
+ peasants_estate_events.3.a: "Send in the Guard." 
+ peasants_estate_events.3.b: "Of course, let people govern themselves."
+ 
+ peasants_estate_events.4.t: "Modern Farming Techniques"
+ peasants_estate_events.4.d: "A peasant has invented some new production tools to increase productivity. The local inventor has significantly improved our royal domain and it has led to much higher production. He appears highly ambitious and wishes for money to spread his tools and techniques all around the nation."
+ peasants_estate_events.4.a: "Appoint him to the royal domain." 
+ peasants_estate_events.4.b: "Give him the funds to spread it to the villages!"
+ 
+ ###Monarchies##
+ 
+ ##T2##
+ 
+ GE_reform_cycle_monarchy.201.t: "Royal Guarentee"
+ GE_reform_cycle_monarchy.201.d: "One of our couriers carrying official documents was ambushed by bandits or a robber baron, and his royal safe-conduct wasn't enough to deter them from robbing and killing the man. The rumor is spreading that a royal decree is not enough to protect its subjects, and that enveloping protection doesn't do much outside of the capital."
+ GE_reform_cycle_monarchy.201.a: "A breastplate would have served him better."
+ GE_reform_cycle_monarchy.201.b: "Let our local officials take care of these criminals."
+ GE_reform_cycle_monarchy.201.c: "Send a Lord to root out the perpetrator."
+ 
+ GE_reform_cycle_monarchy.202.t: "Elitist Elite"
+ GE_reform_cycle_monarchy.202.d: "The elite houses of $COUNTRY$ have grown in power under our control, and as time goes on, consolidate themselves, becoming a handful of major factions. Now, some of these factions have fallen to infighting and are bleeding each other dry of good men, captains, and lords. Together with the rise of new, younger houses, it appears that the old houses might collapse."
+ GE_reform_cycle_monarchy.202.a: "Never interrupt your opponent while he is making a mistake."
+ GE_reform_cycle_monarchy.202.b: "Mediate between the houses."
+ GE_reform_cycle_monarchy.202.c: "How about some military exercises to take the tension off."
+ GE_reform_cycle_monarchy.202.e: "Maybe some time at the border will invigorate them."
+ GE_reform_cycle_monarchy.202.f: "Offer them Spiritual Guidance."
+ 
+ GE_reform_cycle_monarchy.3501.t: "Training Gear"
+ GE_reform_cycle_monarchy.3501.d: "Our attempts at professionalizing our military have run into a bit of an error, there is a lack of training facilities.  One of our captains have taken initiative and attempted to set up a training facility at his station at [training_gear_cycle_GE_pos.GetName]."
+ GE_reform_cycle_monarchy.3501.a: "Bring the captain to court."
+ GE_reform_cycle_monarchy.3501.b: "Fund the training camp."
+ GE_reform_cycle_monarchy.3501.c: "Train with broomsticks."
+ GE_reform_cycle_monarchy.3501.e: "Hold war games with the garrisons."
+ GE_reform_cycle_monarchy.3501.f: "We recently confiscated a castle we can use."
+ 
+ GE_reform_cycle_monarchy.3502.t: "Rising Costs"
+ GE_reform_cycle_monarchy.3502.d: "Our financial policies have led to a large amount of inflation. Now our army, as state officials, are losing faith their ever dwindling purchasing power and demand a raise."
+ GE_reform_cycle_monarchy.3502.a: "Print some more money."
+ GE_reform_cycle_monarchy.3502.b: "Deny their Raise."
+ GE_reform_cycle_monarchy.3502.c: "Let the bankers do their magic."
+ GE_reform_cycle_monarchy.3502.e: "Replace the troublemakers with nobles."
+ 
+ GE_reform_cycle_monarchy.3503.t: "Stories of Atrocities"
+ GE_reform_cycle_monarchy.3503.d: "Stories of the atrocities being committed to the civilians at home is bleeding our soldiers hearts and makes them want to return home to protect their lands. We could command them to fight on or risk the war by giving in to their worries."
+ GE_reform_cycle_monarchy.3503.a: "Give in."
+ GE_reform_cycle_monarchy.3503.b: "Fight on." 
+ GE_reform_cycle_monarchy.3503.c: "Your families are in safe hands."
+ GE_reform_cycle_monarchy.3503.e: "Dispel these rumors."
+ GE_reform_cycle_monarchy.3503.f: "Demand the officers get their men in line." 
+ 
+ GE_reform_cycle_monarchy.3504.t: "A Call Refused" 
+ GE_reform_cycle_monarchy.3504.d: "The banners have been called, the men assembled and the formalities have ended. Yet the Lord of [Root.GetName] has failed to show up. This smells of either treason or suspicious circumstances. Let us dispatch our constable to bring him to justice."
+ GE_reform_cycle_monarchy.3504.a: "Seize his lands."
+ GE_reform_cycle_monarchy.3504.b: "Conscript his sons."
+ GE_reform_cycle_monarchy.3504.c: "Conscript him."
+ GE_reform_cycle_monarchy.3504.e: "Im sure his message got lost."
  
  
+ GE_reform_cycle_monarchy.301.t: "Slumbering Spirituality"
+ GE_reform_cycle_monarchy.301.d: "The clergical powers seem more occupied with managing their tables rather then their flock, and spreading legs rather than the word. This neglectful state of affairs is a disgrace to the Lord, yet also offers opportunity..."
+ GE_reform_cycle_monarchy.301.a: "Time to bring the fear of god back" 
+ GE_reform_cycle_monarchy.301.b: "Don't bother sleeping dogs."
+ GE_reform_cycle_monarchy.301.c: "We'll see what the big boss thinks about it."
+ GE_reform_cycle_monarchy.301.e: "Let us replace some of the pigs with loyalists."
  
+ GE_reform_cycle_monarchy.302.t: "Racial Concerns"
+ GE_reform_cycle_monarchy.302.d: "It has come to our attention that some of the bureaucrats look down upon the native subjects of our lands, time and time again accusing them of heresy, treason, or some other false charge. This harsh treatment is reflecting badly upon our monarch, allowing for the natives to suffer so dearly under the watchful eyes of the Lord."
+ GE_reform_cycle_monarchy.302.a: "They shall learn to love the Lord"
+ GE_reform_cycle_monarchy.302.b: "Safeguard their communities." 
+ GE_reform_cycle_monarchy.302.c: "Enforce secular rule"
  
  
  ###Republics###

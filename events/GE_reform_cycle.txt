@@ -417,7 +417,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -5
 		}
 	}
 	
@@ -428,7 +428,7 @@ country_event = {
 			estate = estate_nobles
 			desc = EST_VAL_NOBILITY_ADVANCES
 			influence = 15
-			duration = 7300
+			duration = 3650
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -2861,6 +2861,8 @@ country_event = {
 			}
 		}
 		
+		highlight = yes
+		
 		if = {
 			limit = {
 				has_reform = millet_reform
@@ -3332,6 +3334,7 @@ country_event = {
 			has_reform = imperial_circles_reform
 			has_reform = pospolite_ruszenie_reform
 		}
+		government = monarchy
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3429,6 +3432,7 @@ country_event = {
 			has_reform = imperial_circles_reform
 			has_reform = pospolite_ruszenie_reform
 		}
+		government = monarchy
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3488,6 +3492,7 @@ country_event = {
 			has_reform = tatar_mercenaries_reform
 			has_reform = the_black_guard_reform
 		}
+		government = monarchy
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3530,6 +3535,7 @@ country_event = {
 			has_reform = tatar_mercenaries_reform
 			has_reform = the_black_guard_reform
 		}
+		government = monarchy
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3577,6 +3583,7 @@ country_event = {
 			has_reform = reforms_of_william_3_reform
 			has_reform = reform_the_condotierri_reform
 		}
+		government = monarchy
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3624,6 +3631,7 @@ country_event = {
 			has_reform = reforms_of_william_3_reform
 			has_reform = reform_the_condotierri_reform
 		}
+		government = monarchy
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3665,6 +3673,7 @@ country_event = {
 				has_reform = riksradet_norway_reform
 				has_reform = every_man_a_noble_reform
 			}
+			government = monarchy
 		}
 		
 		highlight = yes

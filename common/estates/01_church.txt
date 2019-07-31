@@ -98,6 +98,13 @@ estate_church =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_ROYAL_DECREE_REFORM
+		trigger = {
+			has_reform = empowered_royal_decree_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_TOLERANT_PRINCIPLE_REFORM
 		trigger = {
 			has_reform = tolerant_principle_reform
@@ -166,6 +173,13 @@ estate_church =
 		desc = EST_VAL_CLERGY_ADMINISTRATORS
 		trigger = {
 			has_reform = clergy_in_administration_reform
+		}	
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_CLERGY_ADMINISTRATORS
+		trigger = {
+			has_reform = empowered_clergy_in_administration_reform
 		}	
 		influence = 10
 	}
@@ -240,6 +254,13 @@ estate_church =
 		desc = EST_VAL_CLERGY_ADMINISTRATORS_LOY
 		trigger = {
 			has_reform = clergy_in_administration_reform
+		}	
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_CLERGY_ADMINISTRATORS_LOY
+		trigger = {
+			has_reform = empowered_clergy_in_administration_reform
 		}	
 		loyalty = 5
 	}

@@ -1,7 +1,49 @@
+
+#variables
+
+on_startup = {
+	events = {
+		muslim_school_events.20 #Pick School
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+	if = {
+        limit = {
+            country_has_both_paradox_and_me_missions = yes
+        }
+        country_event = { id = missions_expanded_events.1 }
+    }
+    SWE = {
+        set_variable = { swe_num_of_wars_against_non_catholics = 0 }
+    }
+}
+
+#effect = {
+#	check_variable = {
+#			which = Noble_Influence
+#			value = 1
+#		}
+#}
+#removed_effect = {
+#	change_variable = {
+#			which = Noble_Influence
+#			value = 1
+#		}
+#}
+
+
+
+
 ##### GE Government Reform Events #####
 on_five_year_pulse_4 = {
 	random_events = {
-		400 = 0
+		500 = 0
 			
 		#Monarchy
 		
@@ -14,6 +56,8 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.6
 		100 = GE_reform_cycle.7 #promote_nobles
 		100 = GE_reform_cycle.8
+		150 = GE_reform_cycle_monarchy.201 #NEW #Promote Nobles
+		150 = GE_reform_cycle_monarchy.202
 		100 = GE_reform_cycle.9 #curtail_nobles
 		100 = GE_reform_cycle.10
 		100 = GE_reform_cycle.11 #guild_dominance
@@ -42,6 +86,8 @@ on_five_year_pulse_4 = {
 		#T4
 		100 = GE_reform_cycle.33 #administrative_clergy
 		100 = GE_reform_cycle.34
+		150 = GE_reform_cycle_monarchy.401 #NEW #Administrative Clergy
+		150 = GE_reform_cycle_monarchy.402
 		100 = GE_reform_cycle.35 #administrative_nobles
 		100 = GE_reform_cycle.36
 		100 = GE_reform_cycle.37 #administrative_civilians
@@ -61,6 +107,10 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.50
 		100 = GE_reform_cycle.51 #general_estates
 		100 = GE_reform_cycle.52
+		200 = peasants_estate_events.1 #Swedish Peasant Estate
+		300 = peasants_estate_events.2
+		200 = peasants_estate_events.3
+		150 = peasants_estate_events.4
 		#T6
 		100 = GE_reform_cycle.53 #Letat
 		100 = GE_reform_cycle.54 
@@ -77,10 +127,14 @@ on_five_year_pulse_4 = {
 		#T3.5
 		100 = GE_reform_cycle.65 #Feudal_levy
 		100 = GE_reform_cycle.66
+		150 = GE_reform_cycle_monarchy.3503
+		150 = GE_reform_cycle_monarchy.3504
 		100 = GE_reform_cycle.67 #Mercenary_corps
 		100 = GE_reform_cycle.68
 		100 = GE_reform_cycle.69 #Professional_army
 		100 = GE_reform_cycle.70
+		150 = GE_reform_cycle_monarchy.3501
+		250 = GE_reform_cycle_monarchy.3502
 		#T7
 		
 		#Theocracies
@@ -156,7 +210,45 @@ on_five_year_pulse_4 = {
 	}
 }
 
-# country
+on_diplomatic_annex = {
+	events = {
+		610
+	}
+}
+
+on_new_term_election = {
+	events = {
+		700		# Election event
+		elections.720		# Dutch Republic
+		pirates.1
+		elections.7001 #GE
+	}
+}
+
+on_death_election = {
+	if = {
+		limit = { has_reform = presidential_despot_reform }
+		remove_government_reform = presidential_despot_reform
+		if = {
+			limit = { NOT = { has_dlc = "Dharma" } }
+			set_legacy_government = oligarchic_republic
+		}
+	}
+	if = {
+		limit = {
+			has_reform = pirate_republic_reform
+		}
+		set_country_flag = pirate_death_election
+		country_event = { id = pirates.1 }
+	}
+	events = {
+		701		# Election event
+		elections.721		# Dutch Republic
+		elections.800	# Lottery election
+		elections.7002 #GE
+	}
+}
+
 on_monarch_death = {
 	if = {
 		limit = {
@@ -193,38 +285,5 @@ on_monarch_death = {
 		}
 		set_country_flag = ME_FFS_STAP
 		country_event = { id = ME_Zapadoslavia_Events.9 }
-	}
-}
-
-on_new_term_election = {
-	events = {
-		700		# Election event
-		elections.720		# Dutch Republic
-		pirates.1
-		elections.7001 #GE
-	}
-}
-
-on_death_election = {
-	if = {
-		limit = { has_reform = presidential_despot_reform }
-		remove_government_reform = presidential_despot_reform
-		if = {
-			limit = { NOT = { has_dlc = "Dharma" } }
-			set_legacy_government = oligarchic_republic
-		}
-	}
-	if = {
-		limit = {
-			has_reform = pirate_republic_reform
-		}
-		set_country_flag = pirate_death_election
-		country_event = { id = pirates.1 }
-	}
-	events = {
-		701		# Election event
-		elections.721		# Dutch Republic
-		elections.800	# Lottery election
-		elections.7002 #GE
 	}
 }

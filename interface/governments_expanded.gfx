@@ -507,4 +507,85 @@ spriteTypes = {
 		name = "government_reform_national_guard"
 		texturefile = "gfx//interface//government_reform_icons//national_guard.dds"
 	}
+	
+	spriteType = {
+		name = "government_reform_granada_iqta"
+		texturefile = "gfx//interface//government_reform_icons//granada_iqta.dds"
+	}
+	spriteType = {
+		name = "government_reform_granada_taha"
+		texturefile = "gfx//interface//government_reform_icons//granada_taha.dds"
+	}
+	spriteType = {
+		name = "government_reform_granada_taifa"
+		texturefile = "gfx//interface//government_reform_icons//granada_taifa.dds"
+	}
+	spriteType = {
+		name = "government_reform_granada_trader"
+		texturefile = "gfx//interface//government_reform_icons//granada_trader.dds"
+	}
+	spriteType = {
+		name = "government_reform_berber_warrior"
+		texturefile = "gfx//interface//government_reform_icons//berber_warrior.dds"
+	}
+	spriteType = {
+		name = "government_reform_england_curia_regis"
+		texturefile = "gfx//interface//government_reform_icons//england_curia_regis.dds"
+	}
+	spriteType = {
+		name = "government_reform_england_elizabeth"
+		texturefile = "gfx//interface//government_reform_icons//england_elizabeth.dds"
+	}
+	spriteType = {
+		name = "government_reform_england_james"
+		texturefile = "gfx//interface//government_reform_icons//england_james.dds"
+	}
+	spriteType = {
+		name = "government_reform_england_declaration_of_breda"
+		texturefile = "gfx//interface//government_reform_icons//england_declaration_of_breda.dds"
+	}
+	spriteType = {
+		name = "government_reform_england_bill_of_rights"
+		texturefile = "gfx//interface//government_reform_icons//england_bill_of_rights.dds"
+	}
+	spriteType = {
+		name = "government_reform_england_henry_8"
+		texturefile = "gfx//interface//government_reform_icons//england_henry_8.dds"
+	}
+	spriteType = {
+		name = "government_reform_italy_guelph"
+		texturefile = "gfx//interface//government_reform_icons//italy_guelph.dds"
+	}
+	spriteType = {
+		name = "government_reform_italy_ghibbelline"
+		texturefile = "gfx//interface//government_reform_icons//italy_ghibbelline.dds"
+	}
+	spriteType = {
+		name = "government_reform_castille_leon"
+		texturefile = "gfx//interface//government_reform_icons//castille_leon.dds"
+	}
+	spriteType = {
+		name = "government_reform_castille_isabelle"
+		texturefile = "gfx//interface//government_reform_icons//castille_isabelle.dds"
+	}
+	spriteType = {
+		name = "government_reform_spain_charles"
+		texturefile = "gfx//interface//government_reform_icons//spain_charles.dds"
+	}
+	spriteType = {
+		name = "government_reform_spain_bourbon"
+		texturefile = "gfx//interface//government_reform_icons//spain_bourbon.dds"
+	}
+	spriteType = {
+		name = "government_reform_spain_jinite"
+		texturefile = "gfx//interface//government_reform_icons//spain_jinite.dds"
+	}
+	spriteType = {
+		name = "government_reform_spain_tercio"
+		texturefile = "gfx//interface//government_reform_icons//spain_tercio.dds"
+	}
+	spriteType = {
+		name = "government_reform_aragon_alfonso"
+		texturefile = "gfx//interface//government_reform_icons//aragon_alfonso.dds"
+	}
 }

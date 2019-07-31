@@ -22,6 +22,7 @@ estate_nobles =
 		NOT = { has_reform = american_republic }
 		NOT = { has_reform = federal_republic }
 		NOT = { has_reform = polish_constitutionalism_reform }
+		NOT = { has_reform = parliamental_electors_reform }
 		if = {
 			limit = {
 				NOT = { religion_group = muslim }
@@ -37,7 +38,10 @@ estate_nobles =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		OR = {
+			is_nomad = no
+			has_government_attribute = enables_noble_estate
+		}
 		is_colonial_nation = no
 		OR = {
 			NOT = { has_dlc = "Common Sense" }
@@ -104,6 +108,13 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_ROYAL_DECREE_REFORM
+		trigger = {
+			has_reform = empowered_royal_decree_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
 		desc = EST_VAL_WARE_VRIJHEID_REFORM
 		trigger = {
 			has_reform = ware_vrijheid_reform
@@ -143,7 +154,7 @@ estate_nobles =
 		trigger = {
 			has_reform = feudal_levies_reform
 		}
-		influence = 10
+		influence = 5
 	}
 	influence_modifier = {
 		desc = EST_VAL_COMMONER_OFFICIALS_REFORM
@@ -258,6 +269,13 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_NOBLES_OF_THE_ROBE
+		trigger = {
+			has_reform = empowered_of_noble_bearing_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_CURTAILED_NOBLE_PRIVILEGES
 		trigger = {
 			has_reform = quash_noble_power_reform
@@ -366,6 +384,13 @@ estate_nobles =
 		loyalty = 5
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_NOBLES_OF_THE_ROBE_LOY
+		trigger = {
+			has_reform = empowered_of_noble_bearing_reform
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_NOBLE_CONSORT
 		trigger = {
 			has_dlc = "Rights of Man"
@@ -432,6 +457,13 @@ estate_nobles =
 			has_reform = prussian_monarchy
 		}
 		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_OLD_WORLD_PRIVILEGES
+		trigger = {
+			has_reform = old_world_privileges_reform
+		}
+		loyalty = 15
 	}
 	
 	loyalty_modifier = {
@@ -711,8 +743,33 @@ estate_nobles =
 			if = {
 				limit = {
 					has_government_attribute = enables_veteran_general
+					has_government_attribute = enables_shocking_general
+				}
+				custom_tooltip = vetshock_general.tooltip
+				hidden_effect = {
+					create_general = {
+						tradition = 60
+						add_shock = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_government_attribute = enables_veteran_general
 				}
 				create_general = { tradition = 60 }
+			}
+			else_if = {
+				limit = {
+					has_government_attribute = enables_shocking_general
+				}
+				custom_tooltip = shock_general.tooltip
+				hidden_effect = {
+					create_general = {
+						tradition = 40
+						add_shock = 1
+					}
+				}
 			}
 			else = {
 				create_general = { tradition = 40 }
@@ -1259,7 +1316,7 @@ estate_nobles =
 			}
 			if = {
 				limit = { has_government_attribute = enables_grand_captain }
-				add_yearly_manpower = 1
+				add_yearly_manpower = 0.5
 				define_advisor = {
 					type = grand_captain
 					skill = 1
@@ -1272,6 +1329,10 @@ estate_nobles =
 					influence = 10
 					duration = 7300
 				}
+			}
+			if = {
+				limit = { has_government_attribute = enables_noble_privileges }
+				add_yearly_manpower = 0.5
 			}
 			if = {
 				limit = { has_government_attribute = enables_rallied_for_war }
