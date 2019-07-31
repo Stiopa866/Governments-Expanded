@@ -21,7 +21,7 @@ Feudal_Power = {
 	local_manpower_modifier = 0.15
 }
 Magnate_Law = {
-	local_unrest = -2
+	local_unrest = -1
 }
 Mountain_Towns = {
 	local_development_cost = -0.25

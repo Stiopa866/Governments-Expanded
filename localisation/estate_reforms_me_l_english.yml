@@ -556,7 +556,7 @@
  mechanic_enables_blood_tax_yes: "Blood Tax: Gain §G5%§! Manpower per vassal state."
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
  mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
- mechanic_enables_magnate_law_yes: "Magnate Law: Noble Estate provinces have §G-2§! unrest."
+ mechanic_enables_magnate_law_yes: "Magnate Law: States with Noble Estate provinces have §G-1§! unrest."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
  mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains and hills."
  mechanic_enables_arabian_horses_yes: "Arabian Horses: Gain §G5%§! Cavalry Combat Ability per Arabian vassal."

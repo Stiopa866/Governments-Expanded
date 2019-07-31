@@ -21,10 +21,10 @@ elective_monarchy_reform = {
 	#has_term_election = yes
 	#duration = 100
 	potential = {
-		#OR = {
-		#	have_had_reform = feudalism_reform
-		#	has_reform = feudalism_reform
-		#}
+		OR = {
+			have_had_reform = feudalism_reform
+			has_reform = feudalism_reform
+		}
 		NOT = { tag = POL }
 	}
 	modifiers = {
@@ -41,10 +41,10 @@ arch_monarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
-		#OR = {
-		#	have_had_reform = feudalism_reform
-		#	has_reform = feudalism_reform
-		#}
+		OR = {
+			have_had_reform = feudalism_reform
+			has_reform = feudalism_reform
+		}
 	}
 	trigger = {
 		OR = {
@@ -63,7 +63,7 @@ arch_monarchy_reform = {
 
 french_feudalism = {
 	icon = feudalism
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	potential = {
 		primary_culture = cosmopolitan_french
 	}
@@ -81,7 +81,7 @@ french_feudalism = {
 
 french_reformed_feudalism = {
 	icon = French_Reformed
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	potential = {
 		primary_culture = cosmopolitan_french
 	}
@@ -99,7 +99,7 @@ french_reformed_feudalism = {
 
 french_absolutism = {
 	icon = French_Absolutism
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	potential = {
 		primary_culture = cosmopolitan_french
 	}
@@ -1999,8 +1999,7 @@ magnate_law_reform = {
 		global_manpower_modifier = 0.10
 	}
 	custom_attributes = { 
-		enables_magnate_law = yes #-2 local manpower in Noble Provinces
-		enables_independent_nobles = yes #+15% Local Manpower in Noble Provinces
+		enables_magnate_law = yes #-1 local manpower in Noble Provinces states.
 	}
 	ai = {
 		factor = 10
