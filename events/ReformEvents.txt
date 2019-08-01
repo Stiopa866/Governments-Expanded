@@ -6280,3 +6280,566 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = reform_me_events.91
+	title = reform_me_events.91.t
+	desc = reform_me_events.91.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_no_crown 
+		OR = {
+			AND = {
+				any_ally = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				NOT = { has_country_modifier = Recognize_No_Crown }
+			}
+			AND = {
+				any_ally = {
+					government = monarchy
+				}
+				has_country_modifier = Recognize_No_Crown
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				random_ally = {
+					NOT = {
+						government = monarchy
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "Recognize_No_Crown"
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				random_ally = {
+					government = monarchy
+				}
+			}
+			remove_country_modifier = Recognize_No_Crown
+		}
+	}
+	
+	option = {
+		name = reform_me_events.91.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.92
+	title = reform_me_events.92.t
+	desc = reform_me_events.92.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_no_crown }
+		has_country_modifier = Recognize_No_Crown
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_province_modifier = Recognize_No_Crown
+	}
+	
+	option = {
+		name = reform_me_events.92.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.93
+	title = reform_me_events.93.t
+	desc = reform_me_events.93.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_deep_marshes
+		any_owned_province = {
+			OR = {
+				has_terrain = marsh
+			}
+			NOT = { has_province_modifier = Deep_Marshes }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_terrain = marsh
+				}
+				NOT = { has_province_modifier = Deep_Marshes }
+            }
+			add_province_modifier = {
+				name = "Deep_Marshes"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.93.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.94
+	title = reform_me_events.94.t
+	desc = reform_me_events.94.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_return_to_sender 
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_burghers
+					has_port = yes
+					NOT = { has_province_modifier = Return_To_Sender }
+				}
+				AND = {
+					NOT = { has_estate = estate_burghers }
+					has_province_modifier = Return_To_Sender
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_burghers
+				has_port = yes
+				NOT = {	has_province_modifier = Return_To_Sender }
+            }
+			add_province_modifier = {
+				name = "Return_To_Sender"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_estate = estate_burghers }
+				has_province_modifier = Return_To_Sender
+            }
+			remove_province_modifier = Return_To_Sender
+		}
+	}
+	
+	option = {
+		name = reform_me_events.94.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.95
+	title = reform_me_events.95.t
+	desc = reform_me_events.95.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_return_to_sender }
+		any_owned_province = {
+			has_province_modifier = Return_To_Sender
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Return_To_Sender
+            }
+			remove_province_modifier = Return_To_Sender
+		}
+	}
+	
+	option = {
+		name = reform_me_events.95.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.96
+	title = reform_me_events.96.t
+	desc = reform_me_events.96.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = { 
+		has_government_attribute = enables_united_we_stand
+		any_owned_province = {
+			OR = {
+				AND = {
+					any_province_in_state = {
+						has_estate = estate_church
+						has_estate = estate_burghers
+						has_estate = estate_peasants
+						}
+					NOT = { has_province_modifier = "United_We_Stand" }
+				}
+				AND = {
+					NOT = {
+						any_province_in_state = {
+							has_estate = estate_church
+							has_estate = estate_burghers
+							has_estate = estate_peasants
+						}
+					}
+					has_province_modifier = United_We_Stand
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				any_province_in_state = {
+					has_estate = estate_church
+					has_estate = estate_burghers
+					has_estate = estate_peasants
+				}
+				NOT = { has_province_modifier = "United_We_Stand" }
+            }
+			add_province_modifier = {
+				name = "United_We_Stand"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = {
+					any_province_in_state = {
+						has_estate = estate_church
+						has_estate = estate_burghers
+						has_estate = estate_peasants
+					}
+				}
+				has_province_modifier = United_We_Stand
+            }
+			remove_province_modifier = United_We_Stand
+		}
+	}
+	
+	option = {
+		name = reform_me_events.96.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.97
+	title = reform_me_events.97.t
+	desc = reform_me_events.97.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_united_we_stand }
+		any_owned_province = {
+			has_province_modifier = United_We_Stand
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = United_We_Stand
+            }
+			remove_province_modifier = United_We_Stand
+		}
+	}
+	
+	option = {
+		name = reform_me_events.97.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.98
+	title = reform_me_events.98.t
+	desc = reform_me_events.98.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_reform = enables_farmer_sons
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_peasants
+					NOT = { has_province_modifier = Farmers_Sons }
+				}
+				AND = {
+					NOT = { has_estate = estate_peasants }
+					has_province_modifier = Farmers_Sons
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_peasants
+				NOT = {	has_province_modifier = Farmers_Sons }
+            }
+			add_province_modifier = {
+				name = "Farmers_Sons"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_estate = estate_peasants }
+				has_province_modifier = Farmers_Sons
+            }
+			remove_province_modifier = Farmers_Sons
+		}
+	}
+	
+	option = {
+		name = reform_me_events.98.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.99
+	title = reform_me_events.99.t
+	desc = reform_me_events.99.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_reform = enables_farmer_sons }
+		any_owned_province = {
+			has_province_modifier = Farmers_Sons
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Farmers_Sons
+            }
+			remove_province_modifier = Farmers_Sons
+		}
+	}
+	
+	option = {
+		name = reform_me_events.99.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.100
+	title = reform_me_events.100.t
+	desc = reform_me_events.100.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_attracting_academics
+		OR = {
+			AND = {
+				prestige = 20
+				NOT = {
+					prestige = 40
+				}
+				NOT = { has_country_modifier = Hansa_Academics_1 }
+			}
+			AND = {
+				prestige = 40
+				NOT = {
+					prestige = 60
+				}
+				NOT = { has_country_modifier = Hansa_Academics_2 }
+			}
+			AND = {
+				prestige = 60
+				NOT = {
+					prestige = 80
+				}
+				NOT = { has_country_modifier = Hansa_Academics_3 }
+			}
+			AND = {
+				prestige = 80
+				NOT = { has_country_modifier = Hansa_Academics_4 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				prestige = 20
+				NOT = {
+					prestige = 40
+				}
+			}
+			add_country_modifier = {
+				name = Hansa_Academics_1 
+				duration = -1
+			}
+			remove_country_modifier = Hansa_Academics_2 
+			remove_country_modifier = Hansa_Academics_3 
+			remove_country_modifier = Hansa_Academics_4 
+		}
+		if = {
+			limit = {
+				prestige = 40
+				NOT = {
+					prestige = 60
+				}
+			}
+			add_country_modifier = {
+				name = Hansa_Academics_2 
+				duration = -1
+			}
+			remove_country_modifier = Hansa_Academics_1
+			remove_country_modifier = Hansa_Academics_3 
+			remove_country_modifier = Hansa_Academics_4 
+		}
+		if = {
+			limit = {
+				prestige = 60
+				NOT = {
+					prestige = 80
+				}
+			}
+			add_country_modifier = {
+				name = Hansa_Academics_3 
+				duration = -1
+			}
+			remove_country_modifier = Hansa_Academics_1 
+			remove_country_modifier = Hansa_Academics_2 
+			remove_country_modifier = Hansa_Academics_4 
+		}
+		if = {
+			limit = {
+				prestige = 80
+			}
+			add_country_modifier = {
+				name = Hansa_Academics_4
+				duration = -1
+			}
+			remove_country_modifier = Hansa_Academics_1 
+			remove_country_modifier = Hansa_Academics_2 
+			remove_country_modifier = Hansa_Academics_3 
+		}
+	}
+	
+	option = {
+		name = reform_me_events.44.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.101
+	title = reform_me_events.101.t
+	desc = reform_me_events.101.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_attracting_academics }
+		OR = {
+			has_country_modifier = Hansa_Academics_1
+			has_country_modifier = Hansa_Academics_2
+			has_country_modifier = Hansa_Academics_3
+			has_country_modifier = Hansa_Academics_4
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			remove_country_modifier = Hansa_Academics_1 
+			remove_country_modifier = Hansa_Academics_2 
+			remove_country_modifier = Hansa_Academics_3 
+			remove_country_modifier = Hansa_Academics_4
+	}
+	
+	option = {
+		name = reform_me_events.101.a
+		
+	}
+}
+
+

@@ -539,15 +539,23 @@
  
  #1.8
  sovereignity_reform: "Sovereignty without a Sovereign"
- sovereignity_reform_desc: "The peasants love their freedom, independence and lack of a noble tyrant, let us maintain this tooth and nail."
+ sovereignity_reform_desc: "No man has the right to rule us, no lord is born higher than us. Freedom to live without feudal oppression is our hard-fought and hard-won right, and we shall resist and who serve to empower or restore the tools of our oppression."
  peasant_council_reform: "Council of 48"
  peasant_council_reform_desc: "Our nation is not governed by feudal lords or bishops, but by the council of our best and brightest, so unlike the more organized nations, we are in no need of frequent elections to have excellent governance."
- clergical_administration_reform: "Clergical Administration"
- clergical_administration_reform_desc: "We might not recognize the power of feudal lords, but we are more then willing to organize our nation through the establishment of bishoprics."
- 
- 
- 
- 
+ peasant_militia_reform: "Peasant Militia"
+ peasant_militia_reform_desc: "Our marshes are deep, our roads small and fortified. Any who dare cross them will find no rabble of farmers, but a well-trained and well-organized peasant militia. Their formation and use of the land hinders any attempts at bombardment or flanking. 'Wohr di, Goor, de Buur, de kump!' (Beware, guard, the farmer who is coming!)"
+ clergical_administration_reform: "Expand the 48"
+ clergical_administration_reform_desc: "Four of the five parts of Dithmarschen send twelve judges each to our governmental body to represent their parishes. We should expand the districts that send representatives to our council."
+ hansa_representatives_reform: "Hansa Representatives"
+ hansa_representatives_reform_desc: "The Hansa have been our staunch allies in our struggle against the monarchists, all the while the greedy eye our land. Let us integrate them into our governing body in order to satisfy their need for control and bargain for a guaranteed fee on shipwrecked goods."
+ hansa_domination_reform: "Dominate the Hansa"
+ hansa_domination_reform_desc: "Let us start to establish trade posts like the other hansa cities, and slowly supplant hamburg and lubeck from their dominant positions in the league."
+ independent_principle_reform: "Independent Principle"
+ independent_principle_reform_desc: "Our people are united in their fierce drive for independence, and this idea has come to dominate our government."
+ peasantry_reform: "Peasantry"
+ peasantry_reform_desc: "The furor of the peasantry being called to arms to defend their state is a terrifying thing to witness, these rugged and strong men are not mere cityboys that lived a life of weakness, but strong and fertile men with large families. Supplying their own equipment and training at home, this is an electorate not to be trifled with."
+ hansa_universities_reform: "Hansa Universities"
+ hansa_universities_reform_desc: "By aligning outself to the hansa we managed to get access to their academic classes and can convince some traders and academics to take up residence in our capital, where they will spread the modern sciences and news of the wider world."
  
  
  
@@ -625,8 +633,15 @@
  mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! opinion with the Pope."
  mechanic_enables_trade_privileges_yes: "Merchant Privileges: §G+15%§! Trade Value and §G2.5§! Provincial Trade Power in Burgher Provinces."
  mechanic_enables_burgher_council_yes: "Burgher Council: The Burghers council the monarch during his reign."
- mechanic_enables_peasant_council_yes: "Peasant Council: §G+2§! Candidate Random Bonus if you got three advisors."
+ mechanic_enables_peasant_council_yes: "Peasant Council: §G+2§! Candidate Random Bonus if you have 3 advisors."
  mechanic_enables_local_bishoprics_yes: "Local Bishoprics: §G-25%§! State Maintenance in States with a province owned by the clergy."
+ mechanic_enables_no_crown_yes: "Recognize No Crown: §G0.25§! RT if you don't have any Monarchies as allies."
+ mechanic_enables_deep_marshes_yes: "Deep Marshes:  §G2%§! Hostile Attrition in friendly marshes."
+ mechanic_enables_return_to_sender_yes: "Return to Sender: §G+25%§! Trade Value in coastal Burgher Estate provinces."
+ #mechanic_enables_united_we_stand_yes: "United we Stand: -0.05 War Exhaustion if you got over §Y20%§! land controlled by every estate."
+ mechanic_enables_farmer_sons_yes: "Farmers Sons: §G+25%§! Manpower in Peasant Estate provinces."
+ mechanic_enables_attracting_academics: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige."
+ 
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

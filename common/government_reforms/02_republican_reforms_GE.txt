@@ -165,8 +165,10 @@ sovereignity_reform = {
 	}
 	modifiers = {
 		hostile_attrition = 1
-		enemy_core_creation = 0.25
-		reelection_cost = -0.1
+		defensiveness = 0.1
+	}
+	custom_attributes = {
+		enables_no_crown = yes
 	}
 	ai = {
 		factor = 100
@@ -371,6 +373,27 @@ reform_the_condotierri_reform = {
 	}
 }
 
+peasant_militia_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = peasant_militia_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		fire_damage_received = -0.10
+		land_forcelimit_modifier = 0.15
+	}
+	custom_attributes = {
+		enables_deep_marshes = yes #-50% Hostile Movement Speed in Swamps
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 communal_territories_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
@@ -442,7 +465,8 @@ clergical_administration_reform = {
 		}
 	}
 	modifiers = {
-		tolerance_own = 1
+		max_states = 3
+		years_of_nationalism = -5
 	}
 	custom_attributes = {
 		enables_local_bishoprics = yes
@@ -554,6 +578,26 @@ stadholder_reform = {
 	}
 }
 
+hansa_representatives_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = hansa_representatives_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	custom_attributes = {
+		enables_return_to_sender = yes #25% Trade Value in coastal burgher provinces
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 confederation_of_states_reform = {
 	icon = confederation_of_states
 	allow_normal_conversion = yes
@@ -568,6 +612,25 @@ confederation_of_states_reform = {
 		diplomatic_upkeep = 1
 		improve_relation_modifier = 0.15
 		max_absolutism = -10
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hansa_domination_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	can_use_trade_post = yes
+	potential = {
+		OR = {
+			has_reform = hansa_domination_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		merchants = 1
+		diplomatic_reputation = 1
 	}
 	ai = {
 		factor = 100
@@ -595,6 +658,27 @@ tolerant_principle_reform = {
 	#-10 Church Influence, -10% Church Loyalty
 }
 
+independent_principle_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = independent_principle_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		possible_mil_policy = 1
+		war_exhaustion = -0.25
+	}
+	#custom_attributes = {
+		#enables_united_we_stand = yes #15% Trade Goods and -0.10 devastation in states with clergy, peasants and burghers.
+	#}
+	ai = {
+		factor = 100
+	}
+}
+
 regents_reform = {
 	icon = regents
 	allow_normal_conversion = yes
@@ -617,6 +701,28 @@ regents_reform = {
 	#5 Burgher Influence, 10% Burgher Loyalty
 }
 
+peasantry_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = peasantry_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		infantry_cost = -0.15
+		infantry_power = 0.10
+		army_tradition_decay = 0.001
+	}
+	custom_attributes = {
+		enables_farmer_sons = yes #25% Manpower in peasants estate provinces
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 raadspensionaris_reform = {
 	icon = raadspensionaris
 	allow_normal_conversion = yes
@@ -634,4 +740,26 @@ raadspensionaris_reform = {
 	ai = {
 		factor = 100
 	}	
+}
+
+hansa_universities_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = hansa_universities_reform
+			has_reform = peasants_republic
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		dip_advisor_cost = -0.15
+		global_institution_spread = 1
+	}
+	custom_attributes = {
+		enables_attracting_academics = yes #12.5% Innovativeness Gain per 20 prestige
+	}
+	ai = {
+		factor = 100
+	}
 }

@@ -309,7 +309,33 @@ Peasant_Council = {
 Local_Bishopric = {
 	local_state_maintenance_modifier = -0.25
 }
-
+Recognize_No_Crown = {
+	republican_tradition = 0.25
+}
+Deep_Marshes = {
+	local_hostile_attrition = 2
+}
+Return_To_Sender = {
+	trade_value_modifier = 0.25
+}
+United_We_Stand = {
+	global_trade_goods_size_modifier = 0.15
+}
+Farmers_Sons = {
+	local_manpower_modifier = 0.25
+}
+Hansa_Academics_1 = {
+	innovativeness_gain = 0.125
+}
+Hansa_Academics_2 = {
+	innovativeness_gain = 0.250
+}
+Hansa_Academics_3 = {
+	innovativeness_gain = 0.375
+}
+Hansa_Academics_4 = {
+	innovativeness_gain = 0.500
+}
 
 #Cortez
 Cortes_Piety = {

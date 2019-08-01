@@ -472,6 +472,7 @@ republic = {
 				turkoman_gunners_reform
 				mongol_ties_reform
 				subotai_lessons_reform
+				peasant_militia_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -500,6 +501,7 @@ republic = {
 				ware_vrijheid_reform
 				the_consigliere_reform
 				council_of_petitions_reform
+				hansa_representatives_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -507,6 +509,7 @@ republic = {
 				broaden_executive_powers_reform
 				devolution_of_powers_reform
 				confederation_of_states_reform
+				hansa_domination_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -514,6 +517,7 @@ republic = {
 				political_principle_reform
 				moral_principle_reform
 				tolerant_principle_reform
+				independent_principle_reform
 			}
 		}
 		electorate = {
@@ -521,6 +525,7 @@ republic = {
 				landholders_reform
 				citizenry_reform
 				regents_reform
+				peasantry_reform
 			}
 		}
 		office_selection = {
@@ -529,6 +534,7 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				raadspensionaris_reform
+				hansa_universities_reform
 			}
 		}
 		question_of_dictatorship = {
