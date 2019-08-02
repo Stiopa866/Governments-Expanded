@@ -336,6 +336,36 @@ Hansa_Academics_3 = {
 Hansa_Academics_4 = {
 	innovativeness_gain = 0.500
 }
+Military_Industry_1 = {
+	global_trade_goods_size_modifier = 0.02
+}
+Military_Industry_2 = {
+	global_trade_goods_size_modifier = 0.04
+}
+Military_Industry_3 = {
+	global_trade_goods_size_modifier = 0.06
+}
+Military_Industry_4 = {
+	global_trade_goods_size_modifier = 0.08
+}
+Military_Industry_5 = {
+	global_trade_goods_size_modifier = 0.10
+}
+Military_Industry_6 = {
+	global_trade_goods_size_modifier = 0.12
+}
+Military_Industry_7 = {
+	global_trade_goods_size_modifier = 0.14
+}
+Military_Industry_8 = {
+	global_trade_goods_size_modifier = 0.16
+}
+Military_Industry_9 = {
+	global_trade_goods_size_modifier = 0.18
+}
+Military_Industry_10 = {
+	global_trade_goods_size_modifier = 0.20
+}
 
 #Cortez
 Cortes_Piety = {

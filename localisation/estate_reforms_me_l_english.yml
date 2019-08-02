@@ -556,10 +556,14 @@
  peasantry_reform_desc: "The furor of the peasantry being called to arms to defend their state is a terrifying thing to witness, these rugged and strong men are not mere cityboys that lived a life of weakness, but strong and fertile men with large families. Supplying their own equipment and training at home, this is an electorate not to be trifled with."
  hansa_universities_reform: "Hansa Universities"
  hansa_universities_reform_desc: "By aligning outself to the hansa we managed to get access to their academic classes and can convince some traders and academics to take up residence in our capital, where they will spread the modern sciences and news of the wider world."
- 
- 
- 
- 
+ hessian_militarized_monarchy_reform: "Hessian Militarized Monarchy"
+ hessian_militarized_monarchy_reform_desc: "The Duchy of Hesse needs no undisciplined, greedy foreign mercenaries to defend her, she needs only her own men. We have militarized our state to a degree that one out of every seven men is in the army, and he will fight for his homeland, not the filling of his pocket."
+ hessian_military_complex_reform: "Hessian Military-Industrial Complex"
+ hessian_military_complex_reform_desc: "The income from our troops' expeditions in foreign lands will go to turning Hesse into a prosperous home for the returning men. Let us make sure our population can all afford wine and meat."
+ hessian_elite_jaegers_reform: "Elite Jägers"
+ hessian_elite_jaegers_reform_desc: "The Hessian Jäger (Sharpshooter) is armed with three things: ruthlessness, discipline, and his büchse. This ruthlessness is beneficial to the soldier, but not always to the Hessian state. Their equipment is expensive, and their tendency to decimate the enemy —even after the battle is won— hasn't done our diplomacy any favours."
+ found_the_rothschilds_reform: "Found the Rothschild Dynasty"
+ found_the_rothschilds_reform_desc: "Our Hoffaktor (court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility, and empower his family so that they can help us even further. Perhaps they will make a real name of themselves someday."
  
  
  
@@ -640,7 +644,8 @@
  mechanic_enables_return_to_sender_yes: "Return to Sender: §G+25%§! Trade Value in coastal Burgher Estate provinces."
  #mechanic_enables_united_we_stand_yes: "United we Stand: -0.05 War Exhaustion if you got over §Y20%§! land controlled by every estate."
  mechanic_enables_farmer_sons_yes: "Farmers Sons: §G+25%§! Manpower in Peasant Estate provinces."
- mechanic_enables_attracting_academics: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige."
+ mechanic_enables_attracting_academics_yes: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige."
+ mechanic_enables_military_exports_yes: "Military-Industrial Complex: 2% Goods Produced per 10% Army Professionalism."
  
  
  #Edicts

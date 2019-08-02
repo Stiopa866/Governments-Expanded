@@ -764,6 +764,34 @@ granadan_iqta_reform = {
 	}
 }
 
+hessian_militarized_monarchy_reform = {
+	icon = hessen_monarchy
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = no
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		yearly_army_professionalism = 0.0025
+		discipline = 0.025
+		possible_mercenaries = -0.75
+		possible_condottieri = 2
+	}
+	custom_attributes = {
+		enables_patriotism = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 achaemenid_empire_reform = {
 	icon = king
 	allow_normal_conversion = yes
@@ -3120,6 +3148,32 @@ persian_satrapies_reform = {
 	}
 }
 
+hessian_military_complex_reform = {
+	icon = hessen_military
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = no
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_military_complex_reform
+		}
+	}
+	trigger = {
+	}
+	modifiers = {
+		development_cost = -0.05
+		build_cost = -0.10
+	}
+	custom_attributes = {
+		enables_military_exports = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 
 #Tier4
 
@@ -3909,6 +3963,37 @@ justice_and_truth_reform = {
 	}
 	custom_attributes = {
 		disallowed_trade_goods = { slaves }
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+found_the_rothschilds_reform = {
+ 	icon = hesse_rothschild
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = found_the_rothschilds_reform 
+			tag = HES
+		}
+	}
+	modifiers = {
+		inflation_reduction = 0.05
+		interest = -1
+		advisor_cost = -0.05
 	}
 	ai = {
 		factor = 100
@@ -5646,6 +5731,37 @@ expand_the_immortals_reform = {
 	modifiers = {
 		reinforce_speed = 1
 		drill_gain_modifier = 0.50
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_elite_jaegers_reform = {
+ 	icon = hesse_jaegers
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = hessian_elite_jaegers_reform 
+			tag = HES
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		infantry_power = 0.10
+		global_regiment_cost = 0.10
 	}
 	ai = {
 		factor = 100

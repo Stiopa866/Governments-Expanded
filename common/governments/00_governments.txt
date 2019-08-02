@@ -64,6 +64,7 @@ monarchy = {
 				polish_constitutionalism_reform
 				granadan_iqta_reform 
 				#achaemenid_empire_reform
+				hessian_militarized_monarchy_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -151,6 +152,7 @@ monarchy = {
 				union_of_italian_states_reform
 				#persian_satrapies_reform
 				imperial_circles_administration_reform
+				hessian_military_complex_reform
 			}
 		}
 		military_organisation = {
@@ -187,6 +189,7 @@ monarchy = {
 				miquelet_militia_reform
 				royal_ordinances_reform
 				#expand_the_immortals_reform
+				hessian_elite_jaegers_reform
 			}
 		}
 		growth_of_administration = {
@@ -220,6 +223,7 @@ monarchy = {
 				empowered_clergy_in_administration_reform
 				adoption_of_christianity_reform
 				#justice_and_truth_reform
+				found_the_rothschilds_reform 
 			}
 		}
 		deliberative_assembly = {

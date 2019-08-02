@@ -588,4 +588,20 @@ spriteTypes = {
 		name = "government_reform_aragon_alfonso"
 		texturefile = "gfx//interface//government_reform_icons//aragon_alfonso.dds"
 	}
+	spriteType = {
+		name = "government_reform_hesse_rothschild"
+		texturefile = "gfx//interface//government_reform_icons//hesse_rothschild.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//hesse_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_jaeger"
+		texturefile = "gfx//interface//government_reform_icons//hesse_jaeger.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_military"
+		texturefile = "gfx//interface//government_reform_icons//hesse_military.dds"
+	}
 }
