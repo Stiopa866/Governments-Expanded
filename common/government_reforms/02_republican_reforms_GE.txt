@@ -387,7 +387,7 @@ peasant_militia_reform = {
 		land_forcelimit_modifier = 0.15
 	}
 	custom_attributes = {
-		enables_deep_marshes = yes #-50% Hostile Movement Speed in Swamps
+		enables_patriotism = yes #im fucking done with marshes
 	}
 	ai = {
 		factor = 100
@@ -671,9 +671,6 @@ independent_principle_reform = {
 		possible_mil_policy = 1
 		war_exhaustion = -0.25
 	}
-	#custom_attributes = {
-		#enables_united_we_stand = yes #15% Trade Goods and -0.10 devastation in states with clergy, peasants and burghers.
-	#}
 	ai = {
 		factor = 100
 	}
@@ -684,8 +681,8 @@ regents_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture  = dutch
-			primary_culture  = flemish
+			primary_culture = dutch
+			primary_culture = flemish
 			has_reform = regents_reform
 		}
 	}
@@ -713,10 +710,7 @@ peasantry_reform = {
 	modifiers = {
 		infantry_cost = -0.15
 		infantry_power = 0.10
-		army_tradition_decay = 0.001
-	}
-	custom_attributes = {
-		enables_farmer_sons = yes #25% Manpower in peasants estate provinces
+		army_tradition_decay = 0.01
 	}
 	ai = {
 		factor = 100
@@ -728,8 +722,8 @@ raadspensionaris_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture  = dutch
-			primary_culture  = flemish
+			primary_culture = dutch
+			primary_culture = flemish
 			has_reform = raadspensionaris_reform
 		}
 	}

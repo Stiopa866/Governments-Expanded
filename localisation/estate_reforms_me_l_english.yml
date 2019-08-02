@@ -640,10 +640,7 @@
  mechanic_enables_peasant_council_yes: "Peasant Council: §G+2§! Candidate Random Bonus if you have 3 advisors."
  mechanic_enables_local_bishoprics_yes: "Local Bishoprics: §G-25%§! State Maintenance in States with a province owned by the clergy."
  mechanic_enables_no_crown_yes: "Recognize No Crown: §G0.25§! RT if you don't have any Monarchies as allies."
- mechanic_enables_deep_marshes_yes: "Deep Marshes:  §G2%§! Hostile Attrition in friendly marshes."
  mechanic_enables_return_to_sender_yes: "Return to Sender: §G+25%§! Trade Value in coastal Burgher Estate provinces."
- #mechanic_enables_united_we_stand_yes: "United we Stand: -0.05 War Exhaustion if you got over §Y20%§! land controlled by every estate."
- mechanic_enables_farmer_sons_yes: "Farmers Sons: §G+25%§! Manpower in Peasant Estate provinces."
  mechanic_enables_attracting_academics_yes: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige."
  mechanic_enables_military_exports_yes: "Military-Industrial Complex: §G2%§! Goods Produced per 10% Army Professionalism."
  

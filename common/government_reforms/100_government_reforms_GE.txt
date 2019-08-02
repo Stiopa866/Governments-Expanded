@@ -779,7 +779,7 @@ hessian_militarized_monarchy_reform = {
 	}
 	modifiers = {
 		yearly_army_professionalism = 0.0025
-		#discipline = 0.025 #Remove before public release
+		discipline = 0.025 #Remove before public release
 		possible_mercenaries = -0.75
 		possible_condottieri = 2
 	}

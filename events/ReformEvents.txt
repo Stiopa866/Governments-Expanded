@@ -6289,10 +6289,10 @@ country_event = {
 	
 
 	trigger = {
-		has_government_attribute = enables_no_crown 
+		has_government_attribute = enables_no_crown
 		OR = {
 			AND = {
-				any_ally = {
+				all_ally = {
 					NOT = {
 						government = monarchy
 					}
@@ -6315,7 +6315,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				random_ally = {
+				every_ally = {
 					NOT = {
 						government = monarchy
 					}
