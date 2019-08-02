@@ -5591,7 +5591,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.81.a
+		name = reform_me_events.82.a
 		
 		remove_government_reform = support_ghibbelline_reform
 		remove_government_reform = support_guelphs_reform
@@ -5600,9 +5600,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.82
-	title = reform_me_events.82.t
-	desc = reform_me_events.82.d
+	id = reform_me_events.82b
+	title = reform_me_events.82b.t
+	desc = reform_me_events.82b.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -5646,7 +5646,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.82.a
+		name = reform_me_events.82b.a
 		
 	}
 }
