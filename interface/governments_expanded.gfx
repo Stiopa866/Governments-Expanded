@@ -597,8 +597,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//hesse_monarchy.dds"
 	}
 	spriteType = {
-		name = "government_reform_hesse_jaeger"
-		texturefile = "gfx//interface//government_reform_icons//hesse_jaeger.dds"
+		name = "government_reform_hesse_jaegers"
+		texturefile = "gfx//interface//government_reform_icons//hesse_jaegers.dds"
 	}
 	spriteType = {
 		name = "government_reform_hesse_military"

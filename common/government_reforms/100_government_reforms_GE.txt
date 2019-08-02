@@ -765,11 +765,10 @@ granadan_iqta_reform = {
 }
 
 hessian_militarized_monarchy_reform = {
-	icon = hessen_monarchy
+	icon = hesse_monarchy
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	queen = no
 	potential = {
 		OR = {
 			tag = HES
@@ -780,7 +779,7 @@ hessian_militarized_monarchy_reform = {
 	}
 	modifiers = {
 		yearly_army_professionalism = 0.0025
-		discipline = 0.025
+		#discipline = 0.025 #Remove before public release
 		possible_mercenaries = -0.75
 		possible_condottieri = 2
 	}
@@ -3149,11 +3148,10 @@ persian_satrapies_reform = {
 }
 
 hessian_military_complex_reform = {
-	icon = hessen_military
+	icon = hesse_military
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	queen = no
 	potential = {
 		OR = {
 			tag = HES
