@@ -371,6 +371,7 @@ country_event = {
 			has_reform = reforms_of_william_3_reform
 			has_reform = reform_the_condotierri_reform
 		}
+		government = monarchy
 		any_owned_province = {
 			development = 20
 			is_territory = no
@@ -484,6 +485,7 @@ country_event = {
 			has_reform = reforms_of_william_3_reform
 			has_reform = reform_the_condotierri_reform
 		}
+		government = monarchy
 		inflation = 1
 	}
 
