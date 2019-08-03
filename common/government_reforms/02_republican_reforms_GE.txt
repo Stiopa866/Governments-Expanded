@@ -124,6 +124,7 @@ old_swiss_confederation_reform = {
 		republican_tradition = 0.25
 		infantry_cost = -0.10
 		min_autonomy = 10
+		max_absolutism = -50
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
