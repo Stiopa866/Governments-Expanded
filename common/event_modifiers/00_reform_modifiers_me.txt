@@ -304,7 +304,8 @@ Kingdom_Of_Sicily = {
 	local_tax_modifier = 0.20
 }
 Peasant_Council = {
-	candidate_random_bonus = 2
+	candidate_random_bonus = 1
+	candidate_random_bonus = 1
 }
 Local_Bishopric = {
 	local_state_maintenance_modifier = -0.25

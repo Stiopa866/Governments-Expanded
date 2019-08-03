@@ -6104,6 +6104,7 @@ country_event = {
 			add_country_modifier = {
 				name = "Peasant_Council"
 				duration = -1
+				hidden = yes
 			}
 		}
 		if = {

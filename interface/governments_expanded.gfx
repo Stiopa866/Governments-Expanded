@@ -604,4 +604,9 @@ spriteTypes = {
 		name = "government_reform_hesse_military"
 		texturefile = "gfx//interface//government_reform_icons//hesse_military.dds"
 	}
+	spriteType = {
+		name = "government_reform_hesse_modern"
+		texturefile = "gfx//interface//government_reform_icons//hesse_modern.dds"
+	}
 }
+

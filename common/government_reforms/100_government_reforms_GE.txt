@@ -779,12 +779,38 @@ hessian_militarized_monarchy_reform = {
 	}
 	modifiers = {
 		yearly_army_professionalism = 0.0025
-		discipline = 0.025 #Remove before public release
+		discipline = 0.025 
 		possible_mercenaries = -0.75
 		possible_condottieri = 2
 	}
 	custom_attributes = {
 		enables_patriotism = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_modern_militarized_monarchy_reform = {
+	icon = hesse_modern
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_modern_militarized_monarchy_reform
+		}
+	}
+	trigger = {
+		has_reform = hessian_modern_militarized_monarchy_reform
+		absolutism = 50
+	}
+	modifiers = {
+		yearly_army_professionalism = 0.005
+		discipline = 0.05
+		possible_mercenaries = -1.25
+		monarch_military_power = 1
 	}
 	ai = {
 		factor = 100

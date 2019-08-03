@@ -558,6 +558,8 @@
  hansa_universities_reform_desc: "By aligning outself to the hansa we managed to get access to their academic classes and can convince some traders and academics to take up residence in our capital, where they will spread the modern sciences and news of the wider world."
  hessian_militarized_monarchy_reform: "Hessian Militarized Monarchy"
  hessian_militarized_monarchy_reform_desc: "The Duchy of Hesse needs no undisciplined, greedy foreign mercenaries to defend her, she needs only her own men. We have militarized our state to a degree that one out of every seven men is in the army, and he will fight for his homeland, not the filling of his pocket."
+ hessian_modern_militarized_monarchy_reform: “Enlightened Hessian Military State”
+ hessian_modern_militarized_monarchy_reform_desc: "Friedrich of Cassel’s Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."
  hessian_military_complex_reform: "Hessian Military-Industrial Complex"
  hessian_military_complex_reform_desc: "The income from our troops' expeditions in foreign lands will go to turning Hesse into a prosperous home for the returning men. Let us make sure our population can all afford wine and meat."
  hessian_elite_jaegers_reform: "Elite Jägers"
@@ -574,6 +576,9 @@
  oberhofgericht_reform_desc: "The Oberhofgericht of leipzig was the electoral court of Saxony, where the aristocrats could argue their case in front of a jury of their peers and of academics in order to reduce civil unrest, feudal wars and to slowly erode feudal power."
  freie_landtage_reform: "Freie Landtage"
  freie_landtage_reform_desc: "The increased expenditures of the elector for equipment and preservation of the army supply or also for the own yard state could not be contested any more by the own dominions. The solution was to levy new tax types. For this, however, it also required the consent of the stands. The gathering of the estates in 1438, organized under Frederick II, is considered the first state parliament of Saxony . Saxony's estates were granted the right to join forces in tax matters without convocation by the ruler. As a result, more and more Landtage took place, thus forming the Wettin sovereign state."
+ ottonian_handfeste_reform: "Ottonian Handfeste"
+ ottonian_handfeste_reform_desc: "In the Ottonian Handfeste of June 5, 1311 granted Duke Otto III. from Lower Bavaria the Lower Bavarian estates privileges and rights. Against the performance of a one-off tax, Duke Otto confessed to the Lower Bavarian estates ( nobility , clergy , cities ) the lower justice for their possessions. The tax privileges of the estates , which were also guaranteed in the Ottonian Handfeste , together with the Schnaitbacher deed of 1302 marked the beginning of parliamentarianism in Bavaria."
+ 
  
  #Ribbitsquad
  eghaevbo_administration_reform: "Eghaevbo Administration"
@@ -758,7 +763,8 @@
  GE_catholics_influence: "Catholic Influence"
  GE_catholics_FACTION_DESC: "The Catholics support the Catholic doctrine set up by the pope and consider him the highest religious figure on earth, and his words as gospel."
  
- 
+ reforms_GE_hesse_modernization_title:1 "Modernize Hesse"
+ reforms_GE_hesse_modernization_desc:1 "Friedrich of Cassel’s Reforms, based on Prussian Militarism from his experience in their army, has transformed Hesse into the most militarised state in Europe. Our enemies fear us, and our people prosper from our victories."
  reforms_me_feudal_reform_title:1 "Reform Monarchy"
  reforms_me_feudal_reform_desc:1 "Our monarchy is dominated by nobles and aristocrats that posess too much influence. We could reform our monarchy to fulfill ours needs."
  reforms_me_french_absolutism_title:1 "Institute Royaume de Soleil"

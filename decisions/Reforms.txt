@@ -84,6 +84,28 @@ country_decisions = {
 		}
 	}
 	
+	
+	reforms_GE_hesse_modernization = {
+		major = yes
+		potential = {
+			has_reform = hessian_militarized_monarchy_reform
+		}
+		allow = {
+			absolutism = 50
+			army_professionalism = 0.45
+			army_tradition = 65
+			mil = 4
+		}
+		effect = {
+			add_stability = -2
+			add_mil_power = -600
+			add_government_reform = hessian_modern_militarized_monarchy_reform
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
 	reforms_GE_lithuanian_kingdom = {
 		major = yes
 		potential = {

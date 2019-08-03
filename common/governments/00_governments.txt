@@ -65,6 +65,7 @@ monarchy = {
 				granadan_iqta_reform 
 				#achaemenid_empire_reform
 				hessian_militarized_monarchy_reform
+				hessian_modern_militarized_monarchy_reform
 				edo_empire_reform
 				gorkha_kingdom_reform
 				maharajadhiraja_reform
