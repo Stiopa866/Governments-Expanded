@@ -578,7 +578,7 @@ eghaevbo_administration_reform = {
 	ai = {
 		factor = 100
 	}
-	#Add -10 Noble Influence
+	#-10 Noble Influence
 }
 
 

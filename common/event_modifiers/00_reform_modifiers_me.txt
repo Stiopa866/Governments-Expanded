@@ -366,6 +366,9 @@ Military_Industry_9 = {
 Military_Industry_10 = {
 	global_trade_goods_size_modifier = 0.20
 }
+Rajput_Law = {
+	local_unrest = -2
+}
 
 #Cortez
 Cortes_Piety = {

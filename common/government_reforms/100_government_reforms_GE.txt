@@ -1321,6 +1321,7 @@ support_ghibbelline_reform = {
 				}
 			}
 		}
+		add_army_tradition = 5
 	}
 	removed_effect = {
 		change_variable = {
@@ -1422,6 +1423,7 @@ support_ghibbelline_reform = {
 	}
 	potential = {
 		culture_group = latin
+		is_part_of_hre = yes
 		NOT = { is_year = 1490 }
 	}
 	trigger = {
@@ -1644,6 +1646,7 @@ support_guelphs_reform = {
 	}
 	potential = {
 		culture_group = latin
+		is_part_of_hre = yes
 		NOT = { is_year = 1490 }
 	}
 	trigger = {
@@ -2524,7 +2527,7 @@ chhetri_clans_reform = {
 		leader_cost = -0.10
 	}
 	custom_attributes = {
-		enables_magnate_law = yes #fixthistorajputs
+		enables_rajput_law = yes
 	}
 	ai = {
 		factor = 100

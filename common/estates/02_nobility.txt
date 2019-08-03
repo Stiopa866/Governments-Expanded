@@ -114,6 +114,21 @@ estate_nobles =
 		}
 		influence = -10
 	}
+	
+	influence_modifier = {
+		desc = EST_VAL_EGHAEVBO_ADMINISTRATION_REFORM
+		trigger = {
+			has_reform = eghaevbo_administration_reform
+		}
+		influence = -10
+	}
+	influence_modifier = {
+		desc = EST_VAL_EDO_EMPIRE_REFORM
+		trigger = {
+			has_reform = edo_empire_reform
+		}
+		influence = -5
+	}
 	influence_modifier = {
 		desc = EST_VAL_WARE_VRIJHEID_REFORM
 		trigger = {

@@ -134,6 +134,7 @@
  Return_To_Sender: "Return to Sender"
  United_We_Stand: "United We Stand"
  Farmers_Sons: "Farmers Sons"
+ Local_Bishopric: "Local Bishoprics"
  Hansa_Academics_1: "Hansa Academics"
  Hansa_Academics_2: "Hansa Academics"
  Hansa_Academics_3: "Hansa Academics"
@@ -148,7 +149,7 @@
  Military_Industry_8: "Military-Industrial Complex"
  Military_Industry_9: "Military-Industrial Complex"
  Military_Industry_10: "Military-Industrial Complex"
- 
+ Rajput_Law: "Raiput Law"
  
  
  Russian_Manorialism: "Manorial Maintenance"
@@ -265,7 +266,8 @@
  EST_VAL_VOIVODE_CAPTAINS_REFORM:0 "Voivode Captains: §Y$VAL$%§!"
  EST_VAL_BOYAR_SCIONS_REFORM:0 "Boyar Scions: §Y$VAL$%§!"
  EST_VAL_ROYAL_DECREE_REFORM:0 "Empowered Royal Decree: §Y$VAL$%§!"
- 
+ EST_VAL_EGHAEVBO_ADMINISTRATION_REFORM:0 "Eghaevbo Administration: §Y$VAL$%§!"
+ EST_VAL_EDO_EMPIRE_REFORM:0 "Edo Empire: §Y$VAL$%§!"
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
