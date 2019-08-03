@@ -920,6 +920,67 @@ achaemenid_empire_reform = {
 	}
 }
 
+edo_empire_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = edo_empire_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		global_unrest = -2
+		max_absolutism = 5
+		max_states = 5
+	}
+	ai = {
+		factor = 100
+	}
+	#Add -5 Noble Influence
+}
+
+gorkha_kingdom_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = gorkha_kingdom_reform
+			tag = GRK
+		}
+		NOT = { tag = NPL }
+	}
+	modifiers = {
+		war_exhaustion = -0.02
+		army_tradition_decay = -0.01
+	}
+	ai = {
+		factor = 100
+	}
+	#Add -5 Noble Influence
+}
+
+maharajadhiraja_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = maharajadhiraja_reform
+			tag = NPL
+		}
+	}
+	modifiers = {
+		legitimacy = 0.25
+		global_autonomy = -0.025
+		yearly_absolutism = 0.1
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 100
+	}
+	#Add -5 Noble Influence
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -2450,6 +2511,26 @@ arch_marshal_reform = {
 	}
 }
 
+chhetri_clans_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = chhetri_clans_reform
+			tag = NPL
+		}
+	}
+	modifiers = {
+		leader_cost = -0.10
+	}
+	custom_attributes = {
+		enables_magnate_law = yes #fixthistorajputs
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -3347,6 +3428,26 @@ oberhofgericht_reform = {
 	}
 	ai = {
 		factor = 50
+	}
+}
+
+newar_and_gorkhali_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = newar_and_gorkhali_reform
+			tag = NPL
+		}
+	}
+	modifiers = {
+		harsh_treatment_cost = -0.33	
+	}
+	custom_attributes = {
+		enables_mountain_towns = yes
+	}
+	ai = {
+		factor = 100
 	}
 }
 

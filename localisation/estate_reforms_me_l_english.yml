@@ -575,6 +575,33 @@
  freie_landtage_reform: "Freie Landtage"
  freie_landtage_reform_desc: "The increased expenditures of the elector for equipment and preservation of the army supply or also for the own yard state could not be contested any more by the own dominions. The solution was to levy new tax types. For this, however, it also required the consent of the stands. The gathering of the estates in 1438, organized under Frederick II, is considered the first state parliament of Saxony . Saxony's estates were granted the right to join forces in tax matters without convocation by the ruler. As a result, more and more Landtage took place, thus forming the Wettin sovereign state."
  
+ #Ribbitsquad
+ eghaevbo_administration_reform: "Eghaevbo Administration"
+ eghaevbo_administration_reform_desc: "#Blame Ribbit"
+ children_of_osanobua_reform: "Children of Osanobua"
+ children_of_osanobua_reform_desc: "Allow only chief priests and shrines of the children of Osanobua in the royal capital only, further empowering the royal authority in religious matters"
+ warrior_kings_reform: "Warrior Kings"
+ warrior_kings_reform_desc: "#Blame Ribbit"
+ edo_empire_reform: "Edo Empire"
+ edo_empire_reform_desc: "The modernization of our country has shaken up the political landscape of the Empire, we must modernize the Eghaevbo into a nobility that cannot oppose the Oba and ensure the separation of the royal authority from the Uzama."
+ maharajadhiraja_reform: "Mugarajadiraja"
+ maharajadhiraja_reform_desc: "#Blame Ribbit"
+ gorkha_kingdom_reform: "Gorkha Kingdom"
+ gorkha_kingdom_reform_desc: "#Blame Ribbit"
+ chhetri_clans_reform: "Chhetri Clans"
+ chhetri_clans_reform_desc: "#Blame Ribbit"
+ newar_and_gorkhali_reform: "Newar and Gorkhali"
+ newar_and_gorkhali_reform_desc: "#Blame Ribbit"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."

@@ -65,6 +65,9 @@ monarchy = {
 				granadan_iqta_reform 
 				#achaemenid_empire_reform
 				hessian_militarized_monarchy_reform
+				edo_empire_reform
+				gorkha_kingdom_reform
+				maharajadhiraja_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -116,6 +119,7 @@ monarchy = {
 				support_guelphs_reform
 				franconian_salic_law_reform
 				arch_marshal_reform
+				chhetri_clans_reform
 			}
 		}
 		bureaucracy = {
@@ -157,6 +161,7 @@ monarchy = {
 				hessian_military_complex_reform
 				office_of_vitztum_reform
 				oberhofgericht_reform
+				newar_and_gorkhali_reform
 			}
 		}
 		military_organisation = {
@@ -194,6 +199,7 @@ monarchy = {
 				royal_ordinances_reform
 				#expand_the_immortals_reform
 				hessian_elite_jaegers_reform
+				warrior_kings_reform
 			}
 		}
 		growth_of_administration = {
@@ -605,7 +611,8 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
-				# ME Reforms:
+				# GE Reforms:
+				eghaevbo_administration_reform
 			}
 		}
 		tribal_cultural_values = {
@@ -634,6 +641,7 @@ tribal = {
 				world_under_tengri
 				maintain_charade_reform
 				tolerance_of_the_church_reform
+				children_of_osanobua_reform
 			}
 		}
 		military_organisation = {
@@ -648,6 +656,7 @@ tribal = {
 				tatar_raiders_reform
 				african_jungle_warrior_reform 
 				elephant_riders_reform 
+				warrior_kings_reform
 			}
 		}
 		tribal_modernization = {

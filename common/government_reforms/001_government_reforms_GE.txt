@@ -560,6 +560,28 @@ papal_law_reform = {
 
 #TRIBAL
 
+#T1
+
+eghaevbo_administration_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = eghaevbo_administration_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		core_creation = -0.10
+		max_states = 3
+	}
+	ai = {
+		factor = 100
+	}
+	#Add -10 Noble Influence
+}
+
+
 #T2
 
 great_law_of_peace_reform = {
@@ -581,7 +603,11 @@ royal_society_reform = {
 	icon = kongolese_king
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = kongo_group
+		OR = {
+			has_reform = royal_society_reform
+			culture_group = kongo_group
+			tag = BEN
+		}
 	}
 	modifiers = {
 		global_autonomy = -0.05
@@ -777,6 +803,24 @@ tolerance_of_the_church_reform = {
 	}
 	ai = {
 		factor = 10
+	}
+}
+
+children_of_osanobua_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = children_of_osanobua_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		development_cost = -0.10
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -1000,6 +1044,24 @@ tatar_raiders_reform = {
 	}
 	ai = {
 		factor = 10
+	}
+}
+
+warrior_kings_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = warrior_kings_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		leader_land_manuever = 1
+		leader_land_shock = 1
+	}
+	ai = {
+		factor = 100
 	}
 }
 
