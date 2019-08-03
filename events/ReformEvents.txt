@@ -6098,13 +6098,12 @@ country_event = {
 						fortification_expert = 1
 						grand_captain = 1
 					}
-					NOT = { has_country_modifier = "Peasant_Council" }
 				}
+				NOT = { has_country_modifier = "Peasant_Council" }
 			}
 			add_country_modifier = {
 				name = "Peasant_Council"
 				duration = -1
-				hidden = yes
 			}
 		}
 		if = {
@@ -6139,8 +6138,8 @@ country_event = {
 							grand_captain = 1
 						}
 					}
-					has_country_modifier = "Peasant_Council"
 				}
+				has_country_modifier = "Peasant_Council"
 			}
 			remove_country_modifier = Peasant_Council
 		}
@@ -6180,9 +6179,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.89
-	title = reform_me_events.89.t
-	desc = reform_me_events.89.d
+	id = reform_me_events.89b
+	title = reform_me_events.89b.t
+	desc = reform_me_events.89b.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -6241,15 +6240,15 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.89.a
+		name = reform_me_events.89b.a
 		
 	}
 }
 
 country_event = {
-	id = reform_me_events.90
-	title = reform_me_events.90.t
-	desc = reform_me_events.90.d
+	id = reform_me_events.90b
+	title = reform_me_events.90b.t
+	desc = reform_me_events.90b.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -6275,15 +6274,15 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.90.a
+		name = reform_me_events.90b.a
 		
 	}
 }
 
 country_event = {
-	id = reform_me_events.91
-	title = reform_me_events.91.t
-	desc = reform_me_events.91.d
+	id = reform_me_events.9100
+	title = reform_me_events.9100.t
+	desc = reform_me_events.9100.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -6337,7 +6336,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.91.a
+		name = reform_me_events.9100.a
 		
 	}
 }
