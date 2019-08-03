@@ -564,10 +564,16 @@
  hessian_elite_jaegers_reform_desc: "The Hessian Jäger (Sharpshooter) is armed with three things: ruthlessness, discipline, and his büchse. This ruthlessness is beneficial to the soldier, but not always to the Hessian state. Their equipment is expensive, and their tendency to decimate the enemy —even after the battle is won— hasn't done our diplomacy any favours."
  found_the_rothschilds_reform: "Found the Rothschild Dynasty"
  found_the_rothschilds_reform_desc: "Our Hoffaktor (court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility, and empower his family so that they can help us even further. Perhaps they will make a real name of themselves someday."
- 
- 
- 
- 
+ franconian_salic_law_reform: "Franconian Salic Law"
+ franconian_salic_law_reform_desc: "The Duchy of Franconia has been destroyed by the Salian Law, where brothers fought over inheritances and the royal power got divided into nothingness. Yet the nobility prospered, and can provide us a great source of manpower and strenght, should we be able to keep them under controll unlike our successors."
+ arch_marshal_reform: "Arch-Marshal Of The Empire"
+ arch_marshal_reform_desc: "We are the ArchMarshal of the Holy Roman Empire, and our ferocity will make everyone know why we hold and deserve this office!"
+ office_of_vitztum_reform: "Office of Vitztum"
+ office_of_vitztum_reform_desc: "The Office of Vitztum was the office of the most important men in Bavaria next to the duke himself, the Vitztum's role was that of a deputy duke to rule in newly conquered lands in the name of the duke, and to bring them into the royal administration."
+ oberhofgericht_reform: "Oberhofgericht Leipzig"
+ oberhofgericht_reform_desc: "The Oberhofgericht of leipzig was the electoral court of Saxony, where the aristocrats could argue their case in front of a jury of their peers and of academics in order to reduce civil unrest, feudal wars and to slowly erode feudal power."
+ freie_landtage_reform: "Freie Landtage"
+ freie_landtage_reform_desc: "The increased expenditures of the elector for equipment and preservation of the army supply or also for the own yard state could not be contested any more by the own dominions. The solution was to levy new tax types. For this, however, it also required the consent of the stands. The gathering of the estates in 1438, organized under Frederick II, is considered the first state parliament of Saxony . Saxony's estates were granted the right to join forces in tax matters without convocation by the ruler. As a result, more and more Landtage took place, thus forming the Wettin sovereign state."
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."

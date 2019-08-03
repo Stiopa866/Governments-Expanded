@@ -2357,6 +2357,99 @@ old_world_privileges_reform = {
 	#15% Noble Loyalty
 }
 
+franconian_salic_law_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			OR = {
+				tag = HES
+				tag = THU
+				tag = MAI
+				tag = NUM
+				primary_culture = franconian
+			}
+			has_reform = franconian_salic_law_reform
+		}
+	}
+	trigger = {
+		OR = {
+			OR = {
+				tag = HES
+				tag = THU
+				tag = MAI
+				tag = NUM
+				primary_culture = franconian
+			}
+			has_reform = franconian_salic_law_reform
+		}
+	}
+	modifiers = {
+		legitimacy = -0.25
+		global_manpower_modifier = 0.10
+		cavalry_cost = -0.10
+	}
+	custom_attributes = {
+		enables_independent_nobles = yes #+15% Local Manpower
+	}
+	ai = {
+		factor = 50
+	}
+	#Add 10% Noble Influence
+}
+
+arch_marshal_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				NOT = { tag = BRA }
+				NOT = { tag = PRU }
+				primary_culture = saxon
+			}
+			has_reform = arch_marshal_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = saxon
+			has_reform = arch_marshal_reform
+		}
+	}
+	modifiers = {
+		leader_land_shock = 1
+		prestige_from_land = 1
+	}
+	ai = {
+		factor = 50
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -3184,6 +3277,78 @@ hessian_military_complex_reform = {
 	}
 }
 
+office_of_vitztum_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = bavarian
+			has_reform = office_of_vitztum_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = bavarian
+			has_reform = office_of_vitztum_reform
+		}
+	}
+	modifiers = {
+		global_autonomy = -0.025
+		years_of_nationalism = -5
+		max_states = 2
+	}
+	ai = {
+		factor = 50
+	}
+}
+
+oberhofgericht_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = saxon
+			has_reform = oberhofgericht_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = saxon
+			has_reform = oberhofgericht_reform
+		}
+	}
+	modifiers = {
+		global_autonomy = -0.025
+		global_unrest = -1
+	}
+	ai = {
+		factor = 50
+	}
+}
 
 #Tier4
 
@@ -4010,6 +4175,43 @@ found_the_rothschilds_reform = {
 	}
 }
 
+ottonian_handfeste_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+		add_years_of_income = 2.5
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = bavarian
+			has_reform = ottonian_handfeste_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = bavarian
+			has_reform = ottonian_handfeste_reform
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+	}
+	ai = {
+		factor = 50
+	}
+	#add 5 influence of each influence
+}
+
 #Tier5
 
 empowered_royal_decree_reform = {
@@ -4509,6 +4711,46 @@ preeminent_padishah_reform = {
 		factor = 100
 	}
 	#Needtoadd-10influence
+}
+
+freie_landtage_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	has_parliament = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				NOT = { tag = BRA }
+				NOT = { tag = PRU }
+				primary_culture = saxon
+			}
+			has_reform = freie_landtage_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = saxon
+			has_reform = freie_landtage_reform
+		}
+	}
+	modifiers = {
+		legitimacy = 0.25
+	}
+	ai = {
+		factor = 100
+	}
 }
 
 noble_electors_reform = {

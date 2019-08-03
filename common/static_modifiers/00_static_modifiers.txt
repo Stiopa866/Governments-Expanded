@@ -555,6 +555,7 @@ war_taxes = {
 stability = {
 	global_trade_power = 0.01			#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
+	reform_progress_growth = 0.0334
 }
 
 positive_stability = {
@@ -570,6 +571,7 @@ positive_stability = {
 	yearly_corruption = -0.02
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
+	reform_progress_growth = -0.05
 }
 
 privateering = {

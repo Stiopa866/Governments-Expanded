@@ -114,6 +114,8 @@ monarchy = {
 				#words_of_cyrus_reform
 				support_ghibbelline_reform
 				support_guelphs_reform
+				franconian_salic_law_reform
+				arch_marshal_reform
 			}
 		}
 		bureaucracy = {
@@ -153,6 +155,8 @@ monarchy = {
 				#persian_satrapies_reform
 				imperial_circles_administration_reform
 				hessian_military_complex_reform
+				office_of_vitztum_reform
+				oberhofgericht_reform
 			}
 		}
 		military_organisation = {
@@ -223,7 +227,8 @@ monarchy = {
 				empowered_clergy_in_administration_reform
 				adoption_of_christianity_reform
 				#justice_and_truth_reform
-				found_the_rothschilds_reform 
+				found_the_rothschilds_reform
+				ottonian_handfeste_reform
 			}
 		}
 		deliberative_assembly = {
@@ -249,6 +254,7 @@ monarchy = {
 				declaration_of_breda_reform
 				royal_society_reform
 				legacy_of_constitutionalism_reform
+				freie_landtage_reform
 				#preeminent_padishah_reform
 				empowered_aristocratic_court_reform
 				empowered_german_aristocratic_court_reform
