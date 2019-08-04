@@ -2490,7 +2490,7 @@ franconian_salic_law_reform = {
 	modifiers = {
 		legitimacy = -0.25
 		global_manpower_modifier = 0.10
-		cavalry_cost = -0.10
+		cavalry_cost = -0.15
 	}
 	custom_attributes = {
 		enables_independent_nobles = yes #+15% Local Manpower

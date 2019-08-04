@@ -1093,7 +1093,7 @@ iranian_bureacracy_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 8
+		max_states = 5
 		global_autonomy = -0.025
 	}
 	ai = {
