@@ -1,0 +1,232 @@
+french_feudalism = {
+	icon = feudalism
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = cosmopolitan_french
+	}
+	trigger = {
+		has_reform = french_feudalism
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		min_autonomy = 10
+	}
+}
+
+ancien_regime_reform = {
+	icon = ancien_regime
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	potential = { 
+		OR = {
+			primary_culture = cosmopolitan_french
+		}
+	}
+	trigger = {
+		has_reform = ancien_regime_reform
+	}
+	
+	modifiers = {
+		global_autonomy = -0.025
+		state_maintenance_modifier = -0.10
+		max_states = 3
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+french_absolutism = {
+	icon = French_Absolutism
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	potential = {
+		primary_culture = cosmopolitan_french
+	}
+	trigger = {
+		has_country_modifier = the_state_is_me
+		has_reform = french_absolutism
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	modifiers = {
+		max_states = 5
+		max_absolutism = 5
+		global_autonomy = -0.05
+		monarch_admin_power = 1
+	}
+}
+
+blood_tax_reform = {
+	icon = blood_tax
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = blood_tax_reform
+		}
+		NOT = { has_reform = french_absolutism }
+	}
+	trigger = {
+		government_rank = 2
+	}
+	modifiers = {
+		mil_advisor_cost = -0.10
+	}
+	custom_attributes = {
+		enables_blood_tax = yes #5% Manpower per vassal
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+independent_vassals_reform = {
+	icon = ancien_regime
+	allow_normal_conversion = no
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = { 
+		OR = {
+			primary_culture = cosmopolitan_french
+			has_reform = independent_vassals_reform
+		}
+		NOT = { has_reform = french_absolutism }
+	}
+	modifiers = {
+		reduced_liberty_desire = 5
+		vassal_income = 0.25
+	}
+	custom_attributes = {
+		enables_feudal_receipts = yes #25% Tax in vassals
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+compagnies_dordonnance_reform = {
+	icon = soldiers_5
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = cosmopolitan_french
+			has_reform = les_vieux_corps_reform
+		}
+		NOT = { has_reform = french_absolutism }
+	}
+	modifiers = {
+		infantry_power = 0.05
+		cavalry_power = 0.10
+	}
+	custom_attributes = {
+		enables_regulated_leave = yes #25% Reinforcement Speed while over 50% Manpower
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+parisian_court_reform = {
+	icon = conseil_du_roi
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = { 
+		OR = {
+			primary_culture = cosmopolitan_french
+			has_reform = parisian_court_reform
+		}
+		NOT = { has_reform = french_absolutism }
+	}
+	modifiers = {
+		advisor_pool = 1
+		same_culture_advisor_cost = -0.15
+	}
+	custom_attributes = {
+		enables_french_court = yes #0.5 Prestige while all french court
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+les_vieux_corps_reform = {
+	icon = soldiers_5
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = cosmopolitan_french
+			has_reform = les_vieux_corps_reform
+		}
+	}
+	modifiers = {
+		infantry_power = 0.10
+		global_regiment_recruit_speed = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}

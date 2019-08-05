@@ -68,7 +68,6 @@ french_feudalism = {
 		primary_culture = cosmopolitan_french
 	}
 	trigger = {
-		has_reform = french_feudalism
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no

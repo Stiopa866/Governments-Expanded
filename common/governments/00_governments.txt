@@ -37,7 +37,8 @@ monarchy = {
 				#west_slavic_monarchy
 				#GE
 				french_feudalism
-				french_reformed_feudalism
+				#french_reformed_feudalism #FRA
+				ancien_regime_reform #FRA
 				french_absolutism
 				lithuania_warlord_duke
 				theocratic_autocracy
@@ -145,7 +146,8 @@ monarchy = {
 				constitutio_joachimica_reform
 				millet_reform
 				great_law_of_peace_reform
-				ancien_regime_reform
+				#ancien_regime_reform #FRA
+				independent_vassals_reform #FRA
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
@@ -163,6 +165,7 @@ monarchy = {
 				office_of_vitztum_reform
 				oberhofgericht_reform
 				newar_and_gorkhali_reform
+				
 			}
 		}
 		military_organisation = {
@@ -178,7 +181,8 @@ monarchy = {
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
-				les_vieux_corps_reform
+				#les_vieux_corps_reform #FRA
+				compagnies_dordonnance_reform #FRA
 				abolish_manrent_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
@@ -219,7 +223,8 @@ monarchy = {
 				academy_of_science_reform
 				koprulu_dynasty_reform
 				fredrickan_reforms_reform
-				conseil_du_roi_reform
+				#conseil_du_roi_reform #FRA
+				parisian_court_reform #FRA
 				table_of_ranks_reform
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform

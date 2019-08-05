@@ -1284,16 +1284,16 @@ of_noble_bearing_reform = {
 				culture_group = baltic
 			}
 		}
-		NOT = {
-			has_estate = estate_maratha
-			technology_group = indian
-			NOT = { has_estate = estate_nobles }
-		}
-		NOT = {
-			has_estate = estate_rajput
-			technology_group = indian
-			NOT = { has_estate = estate_nobles }
-		}
+		#NOT = {
+		#	has_estate = estate_maratha
+		#	technology_group = indian
+		#	NOT = { has_estate = estate_nobles }
+		#}
+		#NOT = {
+		#	has_estate = estate_rajput
+		#	technology_group = indian
+		#	NOT = { has_estate = estate_nobles }
+		#}
 	}
 	modifiers = {
 		leader_cost = -0.1

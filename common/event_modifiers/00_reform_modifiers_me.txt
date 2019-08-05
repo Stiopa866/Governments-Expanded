@@ -369,6 +369,17 @@ Military_Industry_10 = {
 Rajput_Law = {
 	local_unrest = -2
 }
+Feudal_Receipts = {
+	global_tax_modifier = 0.25
+}
+Regulated_Leave = {
+	reinforce_speed = 0.25
+}
+French_Court = {
+	prestige = 1
+}
+	
+	
 
 #Cortez
 Cortes_Piety = {
