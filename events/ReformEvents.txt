@@ -5593,9 +5593,24 @@ country_event = {
 	option = {
 		name = reform_me_events.82.a
 		
-		remove_government_reform = support_ghibbelline_reform
-		remove_government_reform = support_guelphs_reform
-		
+		if = {
+				limit = {
+					has_reform = states_general_reform
+				}
+				remove_government_reform = states_general_reform
+			}
+		if = {
+				limit = {
+					has_reform = support_ghibbelline_reform
+				}
+				remove_government_reform = support_ghibbelline_reform
+			}
+		if = {
+				limit = {
+					has_reform = support_guelphs_reform
+				}
+				remove_government_reform = support_guelphs_reform
+			}
 	}
 }
 
