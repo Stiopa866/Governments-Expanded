@@ -5595,29 +5595,23 @@ country_event = {
 		
 		if = {
 				limit = {
-					has_reform = states_general_reform
+					has_reform = growth_signoria_reform
 				}
-				remove_government_reform = states_general_reform
-			}
-		if = {
-				limit = {
-					has_reform = support_ghibbelline_reform
-				}
-				remove_government_reform = support_ghibbelline_reform
+				add_government_reform = 
 			}
 		if = {
 				limit = {
 					has_reform = support_guelphs_reform
 				}
-				remove_government_reform = support_guelphs_reform
+				add_government_reform = support_borghese_reform
 			}
 	}
 }
 
 country_event = {
-	id = reform_me_events.82b
-	title = reform_me_events.82b.t
-	desc = reform_me_events.82b.d
+	id = reform_me_events.8200
+	title = reform_me_events.8200.t
+	desc = reform_me_events.8200.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -5661,7 +5655,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.82b.a
+		name = reform_me_events.8200.a
 		
 	}
 }
