@@ -271,7 +271,7 @@ parisian_court_reform = {
 		same_culture_advisor_cost = -0.15
 	}
 	custom_attributes = {
-		enables_french_court = yes #0.5 Prestige while all french court
+		enables_french_court = yes #1 Prestige while all french court
 	}
 	ai = {
 		factor = 100

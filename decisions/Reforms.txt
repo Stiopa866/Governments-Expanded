@@ -6,6 +6,7 @@ country_decisions = {
 			has_reform = french_feudalism
 		}
 		allow = {
+			has_reform_level = 3
 			monthly_income = 25
 			land_forcelimit = 50
 			NOT = {
