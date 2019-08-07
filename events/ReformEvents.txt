@@ -5600,10 +5600,16 @@ country_event = {
 					has_reform = support_guelphs_reform
 				}
 			}
+			remove_government_reform = support_ghibbelline_reform
+			remove_government_reform = support_guelphs_reform
 			hidden_effect = {
-				add_government_reform = internal_mission_reform
+				add_reform_progress_small_effect = yes
+				add_reform_progress_small_effect = yes
+				add_reform_progress_small_effect = yes
+				add_reform_progress_small_effect = yes
 			}
 		}
+	
 	}
 }
 
