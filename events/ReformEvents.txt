@@ -5603,10 +5603,7 @@ country_event = {
 			remove_government_reform = support_ghibbelline_reform
 			remove_government_reform = support_guelphs_reform
 			hidden_effect = {
-				add_reform_progress_small_effect = yes
-				add_reform_progress_small_effect = yes
-				add_reform_progress_small_effect = yes
-				add_reform_progress_small_effect = yes
+				change_government_reform_progress = 100
 			}
 		}
 	
