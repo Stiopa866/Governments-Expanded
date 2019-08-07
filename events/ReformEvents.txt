@@ -5594,17 +5594,16 @@ country_event = {
 		name = reform_me_events.82.a
 		
 		if = {
-				limit = {
-					has_reform = growth_signoria_reform
-				}
-				add_government_reform = 
-			}
-		if = {
-				limit = {
+			limit = {
+				OR = {
+					has_reform = support_ghibbelline_reform
 					has_reform = support_guelphs_reform
 				}
-				add_government_reform = support_borghese_reform
 			}
+			hidden = {
+				add_government_reform = internal_mission_reform
+			}
+		}
 	}
 }
 
