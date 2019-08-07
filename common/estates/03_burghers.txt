@@ -486,7 +486,10 @@ estate_burghers =
 				limit = {
 					has_government_attribute = enables_permissive_burghers
 				}
-				add_prestige = -5
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = -5
+				}
 			}
 			else = {
 				add_estate_loyalty = {

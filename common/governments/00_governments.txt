@@ -104,6 +104,7 @@ monarchy = {
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				blood_tax_reform
+				noblesse_d_epee_reform #FRA
 				house_of_knights_reform
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
@@ -148,6 +149,7 @@ monarchy = {
 				great_law_of_peace_reform
 				#ancien_regime_reform #FRA
 				independent_vassals_reform #FRA
+				generalites_reform #FRA
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
@@ -225,6 +227,7 @@ monarchy = {
 				fredrickan_reforms_reform
 				#conseil_du_roi_reform #FRA
 				parisian_court_reform #FRA
+				corps_diplomatique_reform #FRA
 				table_of_ranks_reform
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
@@ -258,6 +261,7 @@ monarchy = {
 				foreign_recruitment_reform
 				reform_the_sejm_reform
 				abolish_the_sejm_reform
+				weak_burghers_reforms #FRA
 				noble_electors_reform 
 				royal_electors_reform 
 				parliamental_electors_reform 
