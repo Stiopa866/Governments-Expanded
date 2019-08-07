@@ -5600,7 +5600,7 @@ country_event = {
 					has_reform = support_guelphs_reform
 				}
 			}
-			hidden = {
+			hidden_effect = {
 				add_government_reform = internal_mission_reform
 			}
 		}
