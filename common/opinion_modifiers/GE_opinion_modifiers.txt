@@ -19,6 +19,9 @@ opinion_unrestricted_diplomacy = {
 opinion_papal_delegation = {
 	opinion = 25
 }
+opinion_lingua_franca = {
+	opinion = 20
+}
 opinion_opposite_ghuelpsghibbellines = {
 	opinion = -50
 }

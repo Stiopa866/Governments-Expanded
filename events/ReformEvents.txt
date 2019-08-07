@@ -7473,5 +7473,293 @@ country_event = {
 	}
 }
 
-			
+country_event = {
+	id = reform_me_events.111
+	title = reform_me_events.111.t
+	desc = reform_me_events.111.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
 
+	trigger = {
+		has_government_attribute = enables_officers_of_the_sword 
+		OR = {
+			AND = {
+				army_tradition = 50
+				NOT = { has_country_modifier = Officers_Of_The_Sword }
+			}
+			AND = {
+				NOT = { army_tradition = 50 }
+				has_country_modifier = Officers_Of_The_Sword
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				army_tradition = 50
+				NOT = {	has_country_modifier = Officers_Of_The_Sword }
+            }
+			add_country_modifier = {
+				name = "Officers_Of_The_Sword"
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { army_tradition = 50 }
+				has_country_modifier = Officers_Of_The_Sword
+            }
+			remove_province_modifier = Officers_Of_The_Sword
+		}
+	}
+	
+	option = {
+		name = reform_me_events.111.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.112
+	title = reform_me_events.112.t
+	desc = reform_me_events.112.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_officers_of_the_sword }
+		has_country_modifier = Officers_Of_The_Sword
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_province_modifier = Officers_Of_The_Sword
+	}
+	
+	option = {
+		name = reform_me_events.112.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.113
+	title = reform_me_events.113.t
+	desc = reform_me_events.113.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_abolish_noble_exception
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_nobles
+					NOT = {	has_province_modifier = Abolished_Noble_Exception }
+				}
+				AND = {
+					NOT = { has_estate = estate_nobles }
+					has_province_modifier = Abolished_Noble_Exception
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_nobles
+				NOT = {	has_province_modifier = Abolished_Noble_Exception }
+            }
+			add_province_modifier = {
+				name = "Abolished_Noble_Exception"
+				duration = -1
+				hidden = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_estate = estate_nobles }
+				has_province_modifier = Abolished_Noble_Exception
+            }
+			remove_province_modifier = Abolished_Noble_Exception
+		}
+	}
+	
+	option = {
+		name = reform_me_events.113.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.114
+	title = reform_me_events.114.t
+	desc = reform_me_events.114.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_abolish_noble_exception }
+		any_owned_province = {
+			has_province_modifier = Abolished_Noble_Exception
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Abolished_Noble_Exception
+            }
+			remove_province_modifier = Abolished_Noble_Exception
+		}
+	}
+	
+	option = {
+		name = reform_me_events.114.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.115
+	title = reform_me_events.115.t
+	desc = reform_me_events.115.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_lingua_franca
+		OR = {
+			any_country = {
+				OR = {
+					marriage_with = ROOT
+					alliance_with = ROOT
+					guaranteed_by = ROOT
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_lingua_franca
+					}
+				}
+			}
+			any_country = {
+				NOT = {
+					OR = {
+						marriage_with = ROOT
+						alliance_with = ROOT
+						guaranteed_by = ROOT
+					}
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_lingua_franca
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					marriage_with = ROOT
+					alliance_with = ROOT
+					guaranteed_by = ROOT
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_lingua_franca
+					}
+				}
+			}
+			add_opinion = { who = ROOT modifier = opinion_lingua_franca }
+		}
+	}
+	
+	option = {
+		name = reform_me_events.115.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.116
+	title = reform_me_events.116.t
+	desc = reform_me_events.116.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_lingua_franca }
+		any_country = {
+			NOT = {
+				OR = {
+					marriage_with = ROOT
+					alliance_with = ROOT
+					guaranteed_by = ROOT
+				}
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = opinion_lingua_franca
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					OR = {
+						marriage_with = ROOT
+						alliance_with = ROOT
+						guaranteed_by = ROOT
+					}
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_lingua_franca
+				}
+			}
+			remove_opinion = { who = ROOT modifier = opinion_lingua_franca }
+		}
+	}
+	
+	option = {
+		name = reform_me_events.116.a
+		
+	}
+}

@@ -378,7 +378,12 @@ Regulated_Leave = {
 French_Court = {
 	prestige = 1
 }
-	
+Officers_Of_The_Sword = {
+	prestige = 1
+}
+Abolished_Noble_Exception = {
+	local_tax_modifier = 0.33
+}
 	
 
 #Cortez
