@@ -6,13 +6,21 @@ country_decisions = {
 			has_reform = french_feudalism
 		}
 		allow = {
-			has_reform_level = 3
-			monthly_income = 25
-			land_forcelimit = 50
-			NOT = {
-				estate_influence = {
-					estate = estate_nobles
-					influence = 60
+			OR = {
+				has_reform_level = 4
+				AND = {
+					monthly_income = 40
+					land_forcelimit = 80
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 60
+						}
+					}
+					estate_loyalty = {
+						estate = estate_nobles
+						influence = 40
+					}
 				}
 			}
 		}
