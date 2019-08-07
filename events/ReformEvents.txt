@@ -7702,6 +7702,22 @@ country_event = {
 			}
 			add_opinion = { who = ROOT modifier = opinion_lingua_franca }
 		}
+		every_country = {
+			limit = {
+				NOT = {
+					OR = {
+						marriage_with = ROOT
+						alliance_with = ROOT
+						guaranteed_by = ROOT
+					}
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_lingua_franca
+				}
+			}
+			remove_opinion = { who = ROOT modifier = opinion_lingua_franca }
+		}
 	}
 	
 	option = {
@@ -7721,13 +7737,6 @@ country_event = {
 	trigger = {
 		NOT = { has_government_attribute = enables_lingua_franca }
 		any_country = {
-			NOT = {
-				OR = {
-					marriage_with = ROOT
-					alliance_with = ROOT
-					guaranteed_by = ROOT
-				}
-			}
 			has_opinion_modifier = {
 				who = ROOT
 				modifier = opinion_lingua_franca
@@ -7742,13 +7751,6 @@ country_event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = {
-					OR = {
-						marriage_with = ROOT
-						alliance_with = ROOT
-						guaranteed_by = ROOT
-					}
-				}
 				has_opinion_modifier = {
 					who = ROOT
 					modifier = opinion_lingua_franca

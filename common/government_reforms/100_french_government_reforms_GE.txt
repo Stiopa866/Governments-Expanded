@@ -16,7 +16,7 @@ french_feudalism = {
 }
 
 ancien_regime_reform = {
-	icon = ancien_regime
+	icon = French_Reformed #ancien_regime
 	allow_normal_conversion = yes
 	lock_level_when_selected = no
 	valid_for_nation_designer = no
@@ -85,7 +85,8 @@ blood_tax_reform = {
 			culture_group = french
 			has_reform = blood_tax_reform
 		}
-		has_reform = french_feudalism
+		NOT = { has_reform = ancien_regime_reform }
+		NOT = { has_reform = french_absolutism }
 	}
 	trigger = {
 		government_rank = 2

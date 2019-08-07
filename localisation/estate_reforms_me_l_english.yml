@@ -690,9 +690,13 @@
  mechanic_enables_return_to_sender_yes: "Return to Sender: §G+25%§! Trade Value in coastal Burgher Estate provinces."
  mechanic_enables_attracting_academics_yes: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige."
  mechanic_enables_military_exports_yes: "Military-Industrial Complex: §G2%§! Goods Produced per 10% Army Professionalism."
+ 
+ mechanic_enables_officers_of_the_sword_yes: "Officers of the Sword: §G+1§! Prestige if you got over 50 Army Tradition."
  mechanic_enables_feudal_receipts_yes: "Feudal Receipts: §G+25%§! Tax in your vassals."
+ mechanic_enables_abolish_noble_exception_yes: "Abolish Noble Exception: Remove the Tax Penalty in Noble Provinces."
  mechanic_enables_regulated_leave_yes: "Regulated Leave: §G+25%§! Reinforcement Speed while you have over 50% Manpower."
  mechanic_enables_french_court_yes: "French Court: §G+1§! Prestige while you have 3 Francien Advisors."
+ mechanic_enables_lingua_franca_yes: "Lingua Franca: §G+20§! Opinion with anyone you guarentee, marry or ally."
  mechanic_enables_permissive_burghers_yes: "Permissive Burghers: No Loyalty cost for 'ask for contribution.' interaction during war."
  
  
