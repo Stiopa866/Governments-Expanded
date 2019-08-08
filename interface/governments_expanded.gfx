@@ -608,5 +608,25 @@ spriteTypes = {
 		name = "government_reform_hesse_modern"
 		texturefile = "gfx//interface//government_reform_icons//hesse_modern.dds"
 	}
+	spriteType = {
+		name = "government_reform_france_corps_diplomatique"
+		texturefile = "gfx//interface//government_reform_icons//france_corps_diplomatique.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_colonial"
+		texturefile = "gfx//interface//government_reform_icons//france_colonial.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_continental_system"
+		texturefile = "gfx//interface//government_reform_icons//france_continental_system.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_weak_burghers"
+		texturefile = "gfx//interface//government_reform_icons//france_weak_burghers.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_compagnies"
+		texturefile = "gfx//interface//government_reform_icons//france_compagnies.dds"
+	}
 }
 

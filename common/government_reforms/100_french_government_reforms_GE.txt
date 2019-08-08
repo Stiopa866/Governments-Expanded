@@ -209,7 +209,7 @@ generalites_reform = {
 #T3.5
 
 compagnies_dordonnance_reform = {
-	icon = soldiers_5
+	icon = france_compagnies
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -311,7 +311,7 @@ parisian_court_reform = {
 }
 
 corps_diplomatique_reform = {
-	icon = king
+	icon = france_corps_diplomatique
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -347,7 +347,7 @@ corps_diplomatique_reform = {
 #T5
 
 weak_burghers_reforms = {
-	icon = king
+	icon = france_weak_burghers
 	allow_normal_conversion = yes
 	potential = { 
 		OR = {
@@ -400,7 +400,7 @@ les_vieux_corps_reform = {
 #T5.5
 
 conseil_souverain_reform = {
- 	icon = king
+ 	icon = france_colonial
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -422,7 +422,7 @@ conseil_souverain_reform = {
 }
 
 continental_system_reform = {
- 	icon = king
+ 	icon = france_continental_system
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
