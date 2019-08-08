@@ -262,7 +262,7 @@ abolish_the_patronage_system_reform = {
 			primary_culture = cosmopolitan_french
 			has_reform = abolish_the_patronage_system_reform
 		}
-		has_reform = ancien_regime
+		has_reform = ancien_regime_reform
 	}
 	modifiers = {
 		land_maintenance_modifier = -0.05
@@ -413,6 +413,9 @@ conseil_souverain_reform = {
 		global_foreign_trade_power = 0.15
 		trade_steering = 0.15	
 	}
+	custom_attributes = {
+		enables_french_ordonannce = yes #10% Goods Produced in Colonies
+	}
 	ai = {
 		factor = 100
 	}
@@ -431,6 +434,9 @@ continental_system_reform = {
 		prestige = 0.5
 		embargo_efficiency = 0.25
 		global_prov_trade_power_modifier = 0.15
+	}
+	custom_attributes = {
+		enables_economic_block = yes #2.5% Trade efficiency per ally
 	}
 	ai = {
 		factor = 100
