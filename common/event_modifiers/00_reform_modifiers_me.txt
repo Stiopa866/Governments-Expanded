@@ -384,6 +384,40 @@ Officers_Of_The_Sword = {
 Abolished_Noble_Exception = {
 	local_tax_modifier = 0.33
 }
+Promoted_Industry = {
+	trade_goods_size = 0.2
+}
+Home_Market_1 = {
+	trade_efficiency = 0.025
+}
+Home_Market_2 = {
+	trade_efficiency = 0.05
+}
+Home_Market_3 = {
+	trade_efficiency = 0.075
+}
+Home_Market_4 = {
+	trade_efficiency = 0.10
+}
+Home_Market_5 = {
+	trade_efficiency = 0.125
+}
+Home_Market_6 = {
+	trade_efficiency = 0.150
+}
+Home_Market_7 = {
+	trade_efficiency = 0.175
+}
+Home_Market_8 = {
+	trade_efficiency = 0.200
+}
+Home_Market_9 = {
+	trade_efficiency = 0.225
+}
+Home_Market_10 = {
+	trade_efficiency = 0.250
+}
+
 	
 
 #Cortez

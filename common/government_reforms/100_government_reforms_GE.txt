@@ -6149,3 +6149,58 @@ hessian_elite_jaegers_reform = {
 		factor = 100
 	}
 }
+
+#Economic Tier, T5.5
+
+strenghten_industry_reform = {
+ 	icon = king
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		global_tax_modifier = -0.05
+		global_trade_goods_size_modifier = 0.10
+		build_cost = -0.1
+	}
+	custom_attributes = {
+		enables_industrialism = yes #+0.2 Goods produced in workshops
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+mercantilism_reform = {
+ 	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		add_mercantilism = 5
+	}
+	potential = {
+	}
+	modifiers = {
+		production_efficiency = -0.10
+		global_prov_trade_power_modifier = 0.15
+		trade_steering = 0.20
+	}
+	custom_attributes = {
+		enables_home_market = yes #2.5% Trade Efficiency per 10% Mercantilism
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+noble_taxes_reform = {
+ 	icon = king
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		vassal_income = 0.25
+		global_tax_modifier = 0.15
+	}
+	ai = {
+		factor = 1
+	}
+}

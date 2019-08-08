@@ -185,6 +185,7 @@ monarchy = {
 				portugese_marines_reform
 				#les_vieux_corps_reform #FRA
 				compagnies_dordonnance_reform #FRA
+				abolish_the_patronage_system_reform #FRA
 				abolish_manrent_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
@@ -280,6 +281,15 @@ monarchy = {
 				empowered_royal_trading_company_reform
 				empowered_monastic_militarism_reform
 				empowered_church_councils_reform
+			}
+		}
+		economic_policy = {
+			reforms = {
+				strenghten_industry_reform
+				mercantilism_reform
+				noble_taxes_reform
+				conseil_souverain_reform
+				continental_system_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
