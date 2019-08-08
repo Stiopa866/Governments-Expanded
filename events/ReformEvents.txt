@@ -8283,7 +8283,6 @@ country_event = {
 			remove_country_modifier = Economic_Block_3
 			remove_country_modifier = Economic_Block_4
 			remove_country_modifier = Economic_Block_6
-
 		}
 		if = {
 			limit = {

@@ -91,6 +91,7 @@ safeguard_holy_sites_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		prestige = 1
+		prestige_decay = -0.01
 	}
 	ai = {
 		factor = 1
