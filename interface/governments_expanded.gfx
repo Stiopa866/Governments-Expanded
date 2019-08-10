@@ -628,5 +628,17 @@ spriteTypes = {
 		name = "government_reform_france_compagnies"
 		texturefile = "gfx//interface//government_reform_icons//france_compagnies.dds"
 	}
+	spriteType = {
+		name = "government_reform_economy_industry"
+		texturefile = "gfx//interface//government_reform_icons//economy_industry.dds"
+	}
+	spriteType = {
+		name = "government_reform_economy_tax"
+		texturefile = "gfx//interface//government_reform_icons//economy_tax.dds"
+	}
+	spriteType = {
+		name = "government_reform_economy_trade"
+		texturefile = "gfx//interface//government_reform_icons//economy_trade.dds"
+	}
 }
 

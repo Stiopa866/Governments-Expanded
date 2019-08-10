@@ -6153,7 +6153,7 @@ hessian_elite_jaegers_reform = {
 #Economic Tier, T5.5
 
 strenghten_industry_reform = {
- 	icon = king
+ 	icon = economy_industry
 	allow_normal_conversion = yes
 	potential = {
 	}
@@ -6171,7 +6171,7 @@ strenghten_industry_reform = {
 }
 
 mercantilism_reform = {
- 	icon = king
+ 	icon = economy_trade
 	allow_normal_conversion = yes
 	effect = {
 		add_mercantilism = 5
@@ -6192,7 +6192,7 @@ mercantilism_reform = {
 }
 
 noble_taxes_reform = {
- 	icon = king
+ 	icon = economy_tax
 	allow_normal_conversion = yes
 	potential = {
 	}
