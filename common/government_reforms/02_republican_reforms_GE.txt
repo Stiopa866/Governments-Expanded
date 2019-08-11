@@ -262,9 +262,8 @@ moedernegotie_reform = {
 		}
 	}
 	modifiers = {
-		global_prov_trade_power_modifier = 0.25
+		global_prov_trade_power_modifier = 0.20
 		navy_tradition = 0.5
-		ship_power_propagation = 0.15
 	}
 	ai = {
 		factor = 100
@@ -426,7 +425,6 @@ united_indian_companies_reform = {
 	}
 	modifiers = {
 		global_prov_trade_power_modifier = 0.20
-		trade_efficiency = 0.10
 		trade_company_investment_cost = -0.25
 	}
 	ai = {

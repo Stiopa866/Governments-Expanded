@@ -588,8 +588,8 @@
  compagnies_dordonnance_reform_desc: "By ordering the creation of a new army based around a modern system of organization, a 'compagnie d'ordonnance', a company of the order. These compagnies were created around the bravest and strongest members of the french temporary armies. The 15 compagnies were composed of approximately 100 'spears', with each 'spear' containing 1 cavalryman, 3 light infantry, 1 heavy infantry and 1 page. Unlike the feudal armies these compagnies guarenteed the royal army to have at least 7500 trained and skilled soldiers at its disposal."
  parisian_court_reform: "Parisian Court"
  parisian_court_reform_desc: "Let us fill our court with the best france has to offer. proper Parisians, and let the rural farmers and backwards lords stay home in their dwellings. Its a matter of prestige to have everyone at court observe the proper manners and speak in a flawless accent."
- weak_burghers_reforms: "Placeholder"
- weak_burghers_reforms_desc: "#Blame Jay."
+ weak_burghers_reform: "Placeholder"
+ weak_burghers_reform_desc: "#Blame Jay."
  noblesse_d_epee_reform: "Noblesse d'epee"
  noblesse_d_epee_reform_desc: "As with officer of the sword, the expression "noble of the sword" derives from the right of such noblemen to bear a sword, which reflected their duty of knightly service to their feudal overlord. In later centuries, a nobleman of the sword was not recognized as such unless his family had held this status for at least four generations. The Nobles of the Sword also provided non-military services to the king, holding positions in all branches of government."
  generalites_reform: "Generalites"
@@ -598,6 +598,17 @@
  abolish_the_patronage_system_reform_desc: "By abolishing the Patronage System we are no longer bound to the nobility for the recruitment of our heavy knights, and we no longer have to pay the noble pensions that are sucking us dry. Now we can look to the truly talented to serve in the role of mounted skirmishers and shock cavalry."
  corps_diplomatique_reform: "Corps Diplomatique"
  corps_diplomatique_reform_desc: "There is no language for more noble and cultured than French. This is why ambassadors, heralds, and diplomats all around Europe don’t use their own language to communicate, but ours instead. Let us establish a Diplomatic Corps that can capitalize on the lingua franca , and send skilled diplomats to every court that seeks our attention."
+ noble_court_attendance_reform: "Noble Court Attendance"
+ noble_court_attendance_reform_desc: "By forcing the nobility to attent our flamboyant court they have to choose between losing face and failing to meet the extravagant lifestyle expected by our royal society or face bankruptcy and lower personal funds to start plots and rebellions."
+ abolish_local_parliaments_reform: "Abolish Local Parliaments"
+ abolish_local_parliaments_reform_desc: "Some of the local parliaments refuse our new taxes and levies. They claim that taxes are only legal if they are made by the agreement of the monarch and the people.  Do they not know that the king represents the people? let us abolish the parliaments for being obsolete as the people already are represented."
+ royal_training_reform: "Royal Training"
+ royal_training_reform_desc: "The Captains of the army have long controlled the recruitment, equipment and training of our armed forced. Let us do this directly so our forces will never lack in training equipment, manpower or adequate weaponry."
+ society_of_agriculture_reform: "Society of Agriculture and an Agricultural Committee"
+ society_of_agriculture_reform_desc: "Louis's controller of finances, Henri Bertin, created a new Society of Agriculture and an Agricultural Committee within the government, comparable to those existing to support commerce. In May 1763, Bertin issued a decree permitting the tax-free circulation of grain without taxes. In August 1764, Bertin permitted the export of grain from twenty-seven French ports, later expanded to thirty-six. At the same time he established a large zone around Paris, where grain was reserved exclusively for feeding the Parisians, and established a cap on the grain price, which, if it was passed, would cause the exports to cease. The policy of freeing grain prices was effective in good years, and resulted in increased trade and lower prices."
+ droit_divine_reform: "Droit Divine"
+ droit_divine_reform_desc: "French Kings had the Divine Right to Rule. #Makealocalizerworkforthis."
+ 
  
  #Newtier
  strenghten_industry_reform: "Strengthen the Industrial Sector"

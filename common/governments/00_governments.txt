@@ -105,6 +105,7 @@ monarchy = {
 				order_of_the_swan_reform
 				blood_tax_reform
 				noblesse_d_epee_reform #FRA
+				noble_court_attendance_reform #FRA
 				house_of_knights_reform
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
@@ -150,6 +151,7 @@ monarchy = {
 				#ancien_regime_reform #FRA
 				independent_vassals_reform #FRA
 				generalites_reform #FRA
+				abolish_local_parliaments_reform #FRA
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
@@ -186,6 +188,7 @@ monarchy = {
 				#les_vieux_corps_reform #FRA
 				compagnies_dordonnance_reform #FRA
 				abolish_the_patronage_system_reform #FRA
+				royal_training_reform #FRA
 				abolish_manrent_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
@@ -262,7 +265,8 @@ monarchy = {
 				foreign_recruitment_reform
 				reform_the_sejm_reform
 				abolish_the_sejm_reform
-				weak_burghers_reforms #FRA
+				weak_burghers_reform #FRA
+				society_of_agriculture_reform #FRA
 				noble_electors_reform 
 				royal_electors_reform 
 				parliamental_electors_reform 
@@ -288,8 +292,8 @@ monarchy = {
 				strenghten_industry_reform
 				mercantilism_reform
 				noble_taxes_reform
-				conseil_souverain_reform
-				continental_system_reform
+				conseil_souverain_reform #FRA 
+				continental_system_reform #FRA
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -306,6 +310,7 @@ monarchy = {
 				revoke_reichsfreiheit_reform
 				constitution_third_may_reform
 				bill_of_rights_reform
+				droit_divine_reform #FRA
 			}
 		}
 		separation_of_power = {
