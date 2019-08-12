@@ -739,6 +739,8 @@
  mechanic_enables_french_court_yes: "French Court: §G+1§! Prestige while you have 3 Francien Advisors."
  mechanic_enables_lingua_franca_yes: "Lingua Franca: §G+20§! Opinion with anyone you guarentee, marry or ally."
  mechanic_enables_permissive_burghers_yes: "Permissive Burghers: No Loyalty cost for 'ask for contribution.' interaction during war."
+ mechanic_enables_economic_block_yes: "Continental System: §G+2.5%§! Trade Efficiency for each one of your allies."
+ mechanic_enables_french_ordonannce_yes: "French Ordonnances: §G+10%§! Goods produced in colonial nations."
  
  mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with workshops."
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."

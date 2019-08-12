@@ -7805,6 +7805,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Promoted_Industry"
 				duration = -1
+				hidden = yes
 			}
 		}
 	}
