@@ -267,6 +267,7 @@ monarchy = {
 				abolish_the_sejm_reform
 				weak_burghers_reform #FRA
 				society_of_agriculture_reform #FRA
+				bourgeoisie_aristocracy_reform #FRA
 				noble_electors_reform 
 				royal_electors_reform 
 				parliamental_electors_reform 

@@ -568,6 +568,7 @@
  hessian_elite_jaegers_reform_desc: "The Hessian Jäger (Sharpshooter) is armed with three things: ruthlessness, discipline, and his büchse. This ruthlessness is beneficial to the soldier, but not always to the Hessian state. Their equipment is expensive, and their tendency to decimate the enemy —even after the battle is won— hasn't done our diplomacy any favours."
  found_the_rothschilds_reform: "Found the Rothschild Dynasty"
  found_the_rothschilds_reform_desc: "Our Hoffaktor (court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility, and empower his family so that they can help us even further. Perhaps they will make a real name of themselves someday."
+ 
  #Krautistan
  franconian_salic_law_reform: "Franconian Salic Law"
  franconian_salic_law_reform_desc: "The Duchy of Franconia has been destroyed by the Salian Law, where brothers fought over inheritances and the royal power got divided into nothingness. Yet the nobility prospered, and can provide us a great source of manpower and strenght, should we be able to keep them under controll unlike our successors."
@@ -581,6 +582,7 @@
  freie_landtage_reform_desc: "The increased expenditures of the elector for equipment and preservation of the army supply or also for the own yard state could not be contested any more by the own dominions. The solution was to levy new tax types. For this, however, it also required the consent of the stands. The gathering of the estates in 1438, organized under Frederick II, is considered the first state parliament of Saxony . Saxony's estates were granted the right to join forces in tax matters without convocation by the ruler. As a result, more and more Landtage took place, thus forming the Wettin sovereign state."
  ottonian_handfeste_reform: "Ottonian Handfeste"
  ottonian_handfeste_reform_desc: "In the Ottonian Handfeste of June 5, 1311 granted Duke Otto III. from Lower Bavaria the Lower Bavarian estates privileges and rights. Against the performance of a one-off tax, Duke Otto confessed to the Lower Bavarian estates ( nobility , clergy , cities ) the lower justice for their possessions. The tax privileges of the estates , which were also guaranteed in the Ottonian Handfeste , together with the Schnaitbacher deed of 1302 marked the beginning of parliamentarianism in Bavaria."
+ 
  #France
  independent_vassals_reform: "Independent Vassals"
  independent_vassals_reform_desc: "Our initial attempts at levying taxes in our vassals has been twarted by local lords and their privileges. By letting the local lords levy our taxes themselves and then passing it along to us we guarentee their rights and loyalty, in addition to recieving the taxes we so desperately need."
@@ -589,7 +591,8 @@
  parisian_court_reform: "Parisian Court"
  parisian_court_reform_desc: "Let us fill our court with the best france has to offer. proper Parisians, and let the rural farmers and backwards lords stay home in their dwellings. Its a matter of prestige to have everyone at court observe the proper manners and speak in a flawless accent."
  weak_burghers_reform: "Placeholder"
- weak_burghers_reform_desc: "#Blame Jay."
+ weak_burghers_reform_desc: "The constant state of warfare in the kingdom during its earlier days led to many a city, caravan or field being plundered and ravaged. We can use the threat of reduced security to convince the burghers additional taxes are neccesary."
+ 
  noblesse_d_epee_reform: "Noblesse d'epee"
  noblesse_d_epee_reform_desc: "As with officer of the sword, the expression "noble of the sword" derives from the right of such noblemen to bear a sword, which reflected their duty of knightly service to their feudal overlord. In later centuries, a nobleman of the sword was not recognized as such unless his family had held this status for at least four generations. The Nobles of the Sword also provided non-military services to the king, holding positions in all branches of government."
  generalites_reform: "Generalites"
@@ -598,6 +601,9 @@
  abolish_the_patronage_system_reform_desc: "By abolishing the Patronage System we are no longer bound to the nobility for the recruitment of our heavy knights, and we no longer have to pay the noble pensions that are sucking us dry. Now we can look to the truly talented to serve in the role of mounted skirmishers and shock cavalry."
  corps_diplomatique_reform: "Corps Diplomatique"
  corps_diplomatique_reform_desc: "There is no language for more noble and cultured than French. This is why ambassadors, heralds, and diplomats all around Europe don’t use their own language to communicate, but ours instead. Let us establish a Diplomatic Corps that can capitalize on the lingua franca , and send skilled diplomats to every court that seeks our attention."
+ bourgeoisie_aristocracy_reform: "Bourgeoisie Aristocracy"
+ bourgeoisie_aristocracy_reform_desc: "In the wake of the Hundred Years War and the great plague that followed, many noble estates fell into decline or died out, many others were pawned or sold to the rising bourgeoisie aristocracy, who are eager to expand their influence with noble titles rather then just with personal fortunes."
+ 
  noble_court_attendance_reform: "Noble Court Attendance"
  noble_court_attendance_reform_desc: "By forcing the nobility to attent our flamboyant court they have to choose between losing face and failing to meet the extravagant lifestyle expected by our royal society or face bankruptcy and lower personal funds to start plots and rebellions."
  abolish_local_parliaments_reform: "Abolish Local Parliaments"

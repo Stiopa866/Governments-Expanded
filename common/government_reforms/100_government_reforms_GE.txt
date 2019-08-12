@@ -61,60 +61,6 @@ arch_monarchy_reform = {
 	}
 }
 
-french_feudalism = {
-	icon = feudalism
-	allow_normal_conversion = yes
-	potential = {
-		primary_culture = cosmopolitan_french
-	}
-	trigger = {
-	}
-	lock_level_when_selected = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 0
-	modifiers = {
-		min_autonomy = 10
-		cavalry_power = 0.05
-	}
-}
-
-french_reformed_feudalism = {
-	icon = French_Reformed
-	allow_normal_conversion = yes
-	potential = {
-		primary_culture = cosmopolitan_french
-	}
-	trigger = {
-		has_reform = french_reformed_feudalism
-	}
-	lock_level_when_selected = yes
-	valid_for_nation_designer = no
-	nation_designer_cost = 0
-	modifiers = {
-		unjustified_demands = -0.15
-		cavalry_cost = -0.05
-	}
-}
-
-french_absolutism = {
-	icon = French_Absolutism
-	allow_normal_conversion = yes
-	potential = {
-		primary_culture = cosmopolitan_french
-	}
-	trigger = {
-		has_country_modifier = the_state_is_me
-		has_reform = french_absolutism
-	}
-	lock_level_when_selected = yes
-	valid_for_nation_designer = no
-	modifiers = {
-		max_absolutism = 5
-		global_unrest = -1
-		monarch_admin_power = 1
-	}
-}
-
 prussian_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = yes
@@ -336,6 +282,7 @@ enlightened_despotism = {
 	}
 	trigger = {
 		has_reform = enlightened_despotism
+		absolutism = 50
 	}
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
@@ -2930,37 +2877,6 @@ millet_reform = {
 	}
 }
 
-ancien_regime_reform = {
-	icon = ancien_regime
-	allow_normal_conversion = no
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
-	potential = { 
-		OR = {
-			has_reform = ancien_regime_reform
-			primary_culture = cosmopolitan_french
-		}
-	}
-	modifiers = {
-		global_autonomy = -0.025
-		state_maintenance_modifier = -0.10
-		max_states = 3
-	}
-	ai = {
-		factor = 100
-	}
-}
-
 the_red_book_reform = {
 	icon = swedish_church_ordinance
 	allow_normal_conversion = yes
@@ -3910,37 +3826,6 @@ fredrickan_reforms_reform = {
 		development_cost = -0.05
 		build_cost = -0.10
 		interest = -0.5
-	}
-	ai = {
-		factor = 100
-	}
-}
-
-conseil_du_roi_reform = {
-	icon = conseil_du_roi
-	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	potential = { 
-		OR = {
-			primary_culture = cosmopolitan_french
-			has_reform = conseil_du_roi_reform
-		}
-	}
-	modifiers = {
-		max_absolutism = 5
-		legitimacy = 0.25
-		advisor_cost = -0.05
 	}
 	ai = {
 		factor = 100
@@ -5544,36 +5429,6 @@ south_east_asian_elephants_reform = {
 	}
 	ai = {
 		factor = 10
-	}
-}
-
-les_vieux_corps_reform = {
-	icon = soldiers_5
-	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
-	}
-	potential = {
-		OR = {
-			primary_culture = cosmopolitan_french
-			has_reform = les_vieux_corps_reform
-		}
-	}
-	modifiers = {
-		infantry_power = 0.10
-		global_regiment_recruit_speed = -0.1
-	}
-	ai = {
-		factor = 100
 	}
 }
 

@@ -300,6 +300,13 @@ estate_burghers =
 		loyalty = 10
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_BOURGEOISIE_ARISOCRACY_LOY
+		trigger = {
+			has_reform = bourgeoisie_aristocracy_reform
+		}
+		loyalty = 10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_MERITOCRATIC_RECRUITMENT_LOY
 		trigger = {
 			has_reform = meritocratic_focus_reform

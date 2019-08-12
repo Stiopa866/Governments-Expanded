@@ -292,6 +292,8 @@
  EST_VAL_ROYAL_DECREE_REFORM:0 "Empowered Royal Decree: §Y$VAL$%§!"
  EST_VAL_EGHAEVBO_ADMINISTRATION_REFORM:0 "Eghaevbo Administration: §Y$VAL$%§!"
  EST_VAL_EDO_EMPIRE_REFORM:0 "Edo Empire: §Y$VAL$%§!"
+ EST_VAL_ABOLISH_PATRONAGE_REFORM:0 "Abolish the Patronage System: §Y$VAL$%§!"
+ 
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$%§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$%§!"
@@ -315,4 +317,4 @@
  EST_VAL_BOYAR_SCIONS_REFORM_LOY:0 "Boyar Scions: §Y$VAL$%§!"
  EST_VAL_SZLACHTA_AUTHORITY_LOY:0 "Szlachta Authorirty: §Y$VAL$%§!"
  EST_VAL_OLD_WORLD_PRIVILEGES_LOY:0 "Old World Privileges: §Y$VAL$%§!"
- 
+ EST_VAL_BOURGEOISIE_ARISOCRACY_LOY:0  "Bourgoisie Aristocracy: §Y$VAL$%§!"

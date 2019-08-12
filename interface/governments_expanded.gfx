@@ -640,5 +640,25 @@ spriteTypes = {
 		name = "government_reform_economy_trade"
 		texturefile = "gfx//interface//government_reform_icons//economy_trade.dds"
 	}
+	spriteType = {
+		name = "government_reform_french_louis"
+		texturefile = "gfx//interface//government_reform_icons//french_louis.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_grain"
+		texturefile = "gfx//interface//government_reform_icons//french_grain.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_court"
+		texturefile = "gfx//interface//government_reform_icons//french_court.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_court_2"
+		texturefile = "gfx//interface//government_reform_icons//french_court_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_provinces"
+		texturefile = "gfx//interface//government_reform_icons//french_provinces.dds"
+	}
 }
 

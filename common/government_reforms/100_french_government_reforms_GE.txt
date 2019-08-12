@@ -145,17 +145,17 @@ noblesse_d_epee_reform = {
 }
 
 noble_court_attendance_reform = {
-	icon = king
+	icon = french_court
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
@@ -216,7 +216,7 @@ independent_vassals_reform = {
 }
 
 generalites_reform = {
-	icon = king
+	icon = french_provinces
 	allow_normal_conversion = no
 	effect = {
 		change_variable = {
@@ -250,7 +250,7 @@ generalites_reform = {
 }
 
 abolish_local_parliaments_reform = {
-	icon = king
+	icon = french_court_2
 	allow_normal_conversion = no
 	effect = {
 		change_variable = {
@@ -476,21 +476,38 @@ weak_burghers_reform = {
 	}
 }
 
+bourgeoisie_aristocracy_reform = {
+	icon = regents
+	allow_normal_conversion = yes
+	potential = { 
+		OR = {
+			primary_culture = cosmopolitan_french
+			has_reform = bourgeoisie_aristocracy_reform
+		}
+		has_reform = ancien_regime_reform
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+		global_trade_goods_size_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+	#+10% Noble and Burgher Loyalty
+}
+
 society_of_agriculture_reform = {
-	icon = king
+	icon = french_grain
 	allow_normal_conversion = yes
 	potential = { 
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = society_of_agriculture_reform
 		}
-		OR = {
-			has_reform = french_absolutism
-			has_reform = ancien_regime_reform
-		}
+		has_reform = french_absolutism
 	}
 	modifiers = {
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.10
 		global_own_trade_power = 0.25
 	}
 	ai = {
@@ -547,7 +564,7 @@ continental_system_reform = {
 #T6
 
 droit_divine_reform = {
-	icon = king
+	icon = french_louis
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {

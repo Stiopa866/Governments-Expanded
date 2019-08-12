@@ -249,6 +249,13 @@ estate_nobles =
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_ABOLISH_PATRONAGE_REFORM
+		trigger = {
+			has_reform = abolish_the_patronage_system_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_EASTERN_TECH
 		trigger = {
 			technology_group = eastern
@@ -354,6 +361,13 @@ estate_nobles =
 		desc = EST_VAL_FRENCH_ABSOLUTISM_LOY
 		trigger = {
 			has_reform = french_absolutism
+		}
+		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_BOURGEOISIE_ARISOCRACY_LOY
+		trigger = {
+			has_reform = bourgeoisie_aristocracy_reform
 		}
 		loyalty = 10
 	}
