@@ -1874,41 +1874,6 @@ order_of_the_swan_reform = {
 	#10% noble loyalty
 }
 
-blood_tax_reform = {
-	icon = blood_tax
-	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
-	}
-	potential = {
-		OR = {
-			culture_group = french
-			has_reform = blood_tax_reform
-		}
-	}
-	trigger = {
-		government_rank = 2
-	}
-	modifiers = {
-		mil_advisor_cost = -0.10
-	}
-	custom_attributes = {
-		enables_blood_tax = yes
-	}
-	ai = {
-		factor = 100
-	}
-}
-
 house_of_knights_reform = {
 	icon = house_of_knights
 	allow_normal_conversion = yes
@@ -5161,6 +5126,9 @@ mercenary_corps_reform = {
 	modifiers = { 
 		reinforce_speed = 0.15
 		merc_maintenance_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
 	}
 	ai = {
 		factor = 1

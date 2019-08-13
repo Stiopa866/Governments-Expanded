@@ -253,7 +253,14 @@ estate_nobles =
 		trigger = {
 			has_reform = abolish_the_patronage_system_reform
 		}
-		influence = 10
+		influence = -5
+	}
+	influence_modifier = {
+		desc = EST_VAL_ROYAL_TRAINING_REFORM
+		trigger = {
+			has_reform = royal_training_reform
+		}
+		influence = -10
 	}
 	influence_modifier = {
 		desc = EST_VAL_EASTERN_TECH

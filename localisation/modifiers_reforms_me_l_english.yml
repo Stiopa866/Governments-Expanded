@@ -174,6 +174,8 @@
  Economic_Block_4: "Economic Block"
  Economic_Block_5: "Economic Block"
  Economic_Block_6: "Economic Block"
+ Foreign_Regiments: "Foreign Regiments"
+ GE_Swiss_Guard: "Swiss Guard"
  
  
  Russian_Manorialism: "Manorial Maintenance"
@@ -293,6 +295,7 @@
  EST_VAL_EGHAEVBO_ADMINISTRATION_REFORM:0 "Eghaevbo Administration: §Y$VAL$§!"
  EST_VAL_EDO_EMPIRE_REFORM:0 "Edo Empire: §Y$VAL$§!"
  EST_VAL_ABOLISH_PATRONAGE_REFORM:0 "Abolish the Patronage System: §Y$VAL$§!"
+ EST_VAL_ROYAL_TRAINING_REFORM:0 "Royal Training: §Y$VAL$§!"
  
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$§!"

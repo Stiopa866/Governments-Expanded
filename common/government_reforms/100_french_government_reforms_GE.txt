@@ -32,7 +32,6 @@ ancien_regime_reform = {
 	
 	modifiers = {
 		global_autonomy = -0.025
-		state_maintenance_modifier = -0.10
 		max_states = 3
 	}
 	ai = {
@@ -50,7 +49,6 @@ french_absolutism = {
 		primary_culture = cosmopolitan_french
 	}
 	trigger = {
-		has_country_modifier = the_state_is_me
 		has_reform = droit_divine_reform
 		has_reform = french_absolutism
 	}
@@ -149,13 +147,13 @@ noble_court_attendance_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Noble_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Noble_Influence
 			value = -1
 		}
 	}
@@ -220,13 +218,13 @@ generalites_reform = {
 	allow_normal_conversion = no
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = -1
 		}
 	}
@@ -287,13 +285,13 @@ compagnies_dordonnance_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Noble_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Noble_Influence
 			value = -1
 		}
 	}
@@ -343,9 +341,13 @@ abolish_the_patronage_system_reform = {
 		cavalry_power = 0.10
 		cavalry_cost = -0.10
 	}
+	custom_attributes = {
+		enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
+	}
 	ai = {
 		factor = 100
 	}
+	#-5% Noble Influence
 }
 
 royal_training_reform = {
@@ -375,9 +377,13 @@ royal_training_reform = {
 		reinforce_cost_modifier = -0.1
 		reinforce_speed = 0.25
 	}
+	custom_attributes = {
+		enables_swiss_guard = yes #5% ICA if you got a swiss ally or subject
+	}
 	ai = {
 		factor = 100
 	}
+	#-10% Noble Influence
 }
 
 #T4

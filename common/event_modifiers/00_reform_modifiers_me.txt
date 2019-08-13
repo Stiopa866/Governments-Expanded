@@ -438,6 +438,12 @@ Economic_Block_5 = {
 Economic_Block_6 = {
 	trade_efficiency = 0.150
 }
+Foreign_Regiments = {
+	religious_unity = 0.10
+}
+GE_Swiss_Guard = {
+	infantry_power = 0.05
+}
 
 	
 
