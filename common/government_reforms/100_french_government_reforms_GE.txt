@@ -470,10 +470,11 @@ weak_burghers_reform = {
 		has_reform = french_feudalism
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -0.50
+		war_taxes_cost_modifier = -1
+		production_efficiency = 0.10
 	}
 	custom_attributes = {
-		enables_permissive_burghers = yes #Free Demand Contribution
+		enables_permissive_burghers = yes #Free Demand Contribution during war
 	}
 	ai = {
 		factor = 100

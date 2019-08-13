@@ -5064,7 +5064,7 @@ feudal_levies_reform = {
 		has_estate = estate_nobles
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -0.50
+		war_taxes_cost_modifier = -1
 	}
 	custom_attributes = {
 		enables_grand_captain = yes # Free buffed 'request additional manpower'

@@ -590,7 +590,7 @@
  compagnies_dordonnance_reform_desc: "By ordering the creation of a new army based around a modern system of organization, a 'compagnie d'ordonnance', a company of the order. These compagnies were created around the bravest and strongest members of the french temporary armies. The 15 compagnies were composed of approximately 100 'spears', with each 'spear' containing 1 cavalryman, 3 light infantry, 1 heavy infantry and 1 page. Unlike the feudal armies these compagnies guarenteed the royal army to have at least 7500 trained and skilled soldiers at its disposal."
  parisian_court_reform: "Parisian Court"
  parisian_court_reform_desc: "Let us fill our court with the best france has to offer. proper Parisians, and let the rural farmers and backwards lords stay home in their dwellings. Its a matter of prestige to have everyone at court observe the proper manners and speak in a flawless accent."
- weak_burghers_reform: "Placeholder"
+ weak_burghers_reform: "Passive Burghers"
  weak_burghers_reform_desc: "The constant state of warfare in the kingdom during its earlier days led to many a city, caravan or field being plundered and ravaged. We can use the threat of reduced security to convince the burghers additional taxes are neccesary."
  
  noblesse_d_epee_reform: "Noblesse d'epee"
