@@ -743,7 +743,7 @@
  mechanic_enables_french_ordonannce_yes: "French Ordonnances: §G+10%§! Goods produced in colonial nations."
  mechanic_enables_foreign_worship_yes: "Foreign Regiments: §G+10%§! Religious Unity if you employ over 10.000 mercenaries."
  mechanic_enables_swiss_guard_yes: "Swiss Guards: §G+5%§! Infantry Combat Ability if you got a Swiss ally or subject."
- 
+ mechanic_enables_royal_nobles_yes: "Royal Court: 'Call Diet' gives §G+10§! Legitimacy and §G+5§! Absolutism."
  
  mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with workshops."
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."
