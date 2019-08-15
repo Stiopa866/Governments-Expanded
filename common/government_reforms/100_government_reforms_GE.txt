@@ -3372,13 +3372,13 @@ integrate_moneyloaners_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
@@ -4414,7 +4414,7 @@ empowered_general_estates_reform = {
 		}
 	}
 	modifiers = {
-		development_efficiency = 0.05	
+		development_efficiency = 0.05
 		max_absolutism = -15
 	}
 	custom_attributes = {
@@ -4549,7 +4549,7 @@ reform_the_sejm_reform = {
 	trigger = { 
 	}
 	modifiers = {
-		monthly_support_heir_gain = 0.25
+		monthly_support_heir_gain = 0.10
 		global_spy_defence = 0.15
 		same_culture_advisor_cost = -0.1
 	}
@@ -6002,8 +6002,6 @@ mercantilism_reform = {
 	effect = {
 		add_mercantilism = 5
 	}
-	potential = {
-	}
 	modifiers = {
 		production_efficiency = -0.10
 		global_prov_trade_power_modifier = 0.15
@@ -6011,6 +6009,34 @@ mercantilism_reform = {
 	}
 	custom_attributes = {
 		enables_home_market = yes #2.5% Trade Efficiency per 10% Mercantilism
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+free_trade_reform = {
+ 	icon = economy_trade
+	allow_normal_conversion = yes
+	effect = {
+		add_mercantilism = -10
+	}
+	potential = { 
+		check_variable = {
+			which = Burgher_Influence			
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Burgher_Influence			
+			value = 2
+		}
+		NOT = { mercantilism = 50 }
+	}
+	modifiers = {
+		global_trade_power = -0.25
+		global_trade_goods_size_modifier = 0.20
 	}
 	ai = {
 		factor = 1

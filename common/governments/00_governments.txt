@@ -396,6 +396,12 @@ monarchy = {
 		polish_constitutionalism_reform
 		autocracy_reform
 	}
+	
+	exclusive_reforms = {
+		professional_army_reform
+		hessian_militarized_monarchy_reform
+		hessian_modern_militarized_monarchy_reform
+	}
 
 	color = { 179 25 25 }
 }

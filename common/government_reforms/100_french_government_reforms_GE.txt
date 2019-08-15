@@ -243,6 +243,7 @@ generalites_reform = {
 	ai = {
 		factor = 100
 	}
+	#-5% Noble Loyalty
 }
 
 abolish_local_parliaments_reform = {
@@ -425,13 +426,13 @@ corps_diplomatique_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = -1
 		}
 	}

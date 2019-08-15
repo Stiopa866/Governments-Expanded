@@ -2910,6 +2910,7 @@ country_event = {
 	option = {
 		name = letat.54.b
 		
+		add_prestige = -5
 		add_absolutism = -5
 	}
 

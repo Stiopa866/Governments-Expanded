@@ -431,9 +431,9 @@
  empowered_royal_decree_reform_desc:0 "The Monarch rules supreme in this country and loyalty is valued above all else. We must ensure that decrees from the royal court are followed to the letter, and in in all parts of our country."
  empowered_mercenary_corps_reform: "Empowered Mercenary Corps"
  empowered_mercenary_corps_reform_desc: "Our mercenary captains should not merely consist of second sons and captains, let us send holy paladins of our orders forward to gather veterans and knights to serve in our armies. Not merely as mercenaries, but as crusaders!"
- empowered_general_estates_reform:0 "General Estates"
+ empowered_general_estates_reform:0 "Empowered General Estates"
  empowered_general_estates_reform_desc:0 "The general estates have been a council dominated primarily by the nobility, but over the past century, the burghers have started to grow and develop, to the point that they think they deserve privileges. While the nobility is horrified at this, we can make use of this, by reducing restrictions of production methods and local taxation, and by establishing free trade zones the productivity of our nation is sure to skyrocket."
- empowered_clergy_in_administration_reform:0 "Administrative Clergy"
+ empowered_clergy_in_administration_reform:0 "Empowered Administrative Clergy"
  empowered_clergy_in_administration_reform_desc:0 "The clergy has always been part of our administrative cadre, yet their role has traditionally been limited. by granting them more administrative posts we can use their religious network to execute our laws much more efficiently. In addition, these men seem rather interested in spreading the faith to the heathens and heretics beyond our borders and establishing dominance over them as the Lord has commanded us to."
  empowered_german_aristocratic_court_reform:0 "Empowered Junker Court"
  empowered_german_aristocratic_court_reform_desc:0 "The Junkers, lower nobility from the empire, have long tried to demand representation on a national scale. These captains and sargeants from the imperial army have served well, and have heavily benefitted from the past century of increasing power, forming unions and threatening members of the higher nobility to stop acess to the courts. By allowing them a formal place among our court, we can secure their loyalty and reap the benefits of their military traditions and experience."
@@ -441,9 +441,9 @@
  empowered_divine_blood_reform_desc: "Does one question the firmament, demanding to know why it holds up the stars? Does one question the world, demanding to know why it holds us to its breast? Our ruler is not some petty man, subject and servant to the law: Our ruler is heaven's chosen, and our faith in heaven must dictate our faith in them. No longer will we squabble over legitimacy and nobility; instead we will serve the will of heaven."
  empowered_royal_trading_company_reform: "Empowered Royal Trading Company"
  empowered_royal_trading_company_reform_desc: "The crown is the currency, and the currency is the crown. To strengthen the crown and country it represents, we must seek to strengthen the currency as a matter of royal mandate. To this end, we will invest heavily in a state-run trade company, to facilitate the acquisition of wealth and the exploitation of the crown's outer territories."
- empowered_monastic_militarism_reform: "Monastic Militarism."
+ empowered_monastic_militarism_reform: "Empowered Monastic Militarism."
  empowered_monastic_militarism_reform_desc: "By binding them tightly together, we have ensured that the nobility and the church both serve the same power, whether by the symbol or by the sword. Where once this was not understood, and these arms of the divine stood divided, we now unite together, indivisible. When the nobility beckons their church brothers to serve by the sword, the church serves gladly."
- empowered_church_councils_reform: "Church Councils"
+ empowered_church_councils_reform: "Empowered Church Councils"
  empowered_church_councils_reform_desc: "The clergical dominance over our government has led to an increase in their demands. They wish to reduce poverty and use the church funds to feed the poor and grant them a place to go at night. In addition to setting up workhouses and letting the poor earn a living and hopefully escape poverty as changed people, virtuous and ready to spread the word and the way of the Lord."
  
  traditionalist_reform: "Traditionalism"
@@ -648,7 +648,9 @@
  newar_and_gorkhali_reform: "Newar and Gorkhali"
  newar_and_gorkhali_reform_desc: "#Blame Ribbit"
  
- 
+ #1.9
+ free_trade_reform: "Free Trade"
+ free_trade_reform_desc: "Let us open our markets and remove as many tarifs and barriers as we can, our advisors guarentee its the best way forward."
  
  
  
@@ -724,7 +726,7 @@
  mechanic_enables_noble_privileges_yes: "Noble Privileges: 'Raise Additional Levies' grants additional Manpower."
  mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! opinion with the Pope."
  mechanic_enables_trade_privileges_yes: "Merchant Privileges: §G+15%§! Trade Value and §G2.5§! Provincial Trade Power in Burgher Provinces."
- mechanic_enables_burgher_council_yes: "Burgher Council: The Burghers council the monarch during his reign."
+ mechanic_enables_burgher_council_yes: "Burgher Council: Choose a Economic Policy during a monarch's reign."
  mechanic_enables_peasant_council_yes: "Peasant Council: §G+2§! Candidate Random Bonus if you have 3 advisors."
  mechanic_enables_local_bishoprics_yes: "Local Bishoprics: §G-25%§! State Maintenance in States with a province owned by the clergy."
  mechanic_enables_no_crown_yes: "Recognize No Crown: §G0.25§! RT if you don't have any Monarchies as allies."
@@ -732,7 +734,7 @@
  mechanic_enables_attracting_academics_yes: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige."
  mechanic_enables_military_exports_yes: "Military-Industrial Complex: §G2%§! Goods Produced per 10% Army Professionalism."
  
- mechanic_enables_officers_of_the_sword_yes: "Officers of the Sword: §G+1§! Prestige if you got over 50 Army Tradition."
+ mechanic_enables_officers_of_the_sword_yes: "Officers of the Sword: §G+1§! Prestige if you have over 50 Army Tradition."
  mechanic_enables_feudal_receipts_yes: "Feudal Receipts: §G+25%§! Tax in your vassals."
  mechanic_enables_abolish_noble_exception_yes: "Abolish Noble Exception: Remove the Tax Penalty in Noble Provinces."
  mechanic_enables_regulated_leave_yes: "Regulated Leave: §G+25%§! Reinforcement Speed while you have over 50% Manpower."

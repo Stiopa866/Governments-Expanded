@@ -5860,7 +5860,7 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		has_government_attribute = enables_burgher_elections
+		has_government_attribute = enables_burgher_council
 	}
 	
 	mean_time_to_happen = {
