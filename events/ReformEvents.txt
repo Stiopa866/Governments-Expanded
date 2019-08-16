@@ -3073,10 +3073,15 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_elective_monarchy
 		NOT = { has_government_attribute = enables_royal_electors }
+		NOT = { has_ruler_flag = GE_Elective_1 }
 	}
 	
 	mean_time_to_happen = {
-		days = 10950 
+		days = 14600
+	}
+	
+	immediate = {
+		set_ruler_flag = GE_Elective_1
 	}
 	
 	option = {
@@ -3105,10 +3110,15 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_elective_monarchy
 		NOT = { has_government_attribute = enables_royal_electors }
+		NOT = { has_ruler_flag = GE_Elective_2 }
 	}
 	
 	mean_time_to_happen = {
-		days = 10950 
+		days = 14600
+	}
+	
+	immediate = {
+		set_ruler_flag = GE_Elective_2
 	}
 	
 	option = {
@@ -3139,10 +3149,15 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_elective_monarchy
 		NOT = { has_government_attribute = enables_royal_electors }
+		NOT = { has_ruler_flag = GE_Elective_3 }
 	}
 	
 	mean_time_to_happen = {
-		days = 10950 
+		days = 14600 
+	}
+	
+	immediate = {
+		set_ruler_flag = GE_Elective_3
 	}
 	
 	option = {

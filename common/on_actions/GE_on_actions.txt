@@ -216,6 +216,18 @@ on_diplomatic_annex = {
 	}
 }
 
+on_general_recruited = {
+	if = {
+		limit = {
+			has_government_attribute = enables_general_guards
+		}
+		add_army_professionalism = 0.015
+	}
+	else = {
+		add_army_professionalism = 0.01
+	}
+}
+
 on_new_term_election = {
 	events = {
 		700		# Election event

@@ -752,6 +752,7 @@
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."
  mechanic_enables_rural_development_yes: "Rural Development: §G+500§! Base Manpower in Noble Estate Provinces under §Y10§! development."
  mechanic_enables_monastic_trade_yes: "Monastic Centres: §G+1§! Base Tax and §G5§! Provincial Trade Power in Clergical Provinces."
+ mechanic_enables_general_guards_yes: "Quality Officer Training: Generals give an additional §G0.5§! professionalism when recruited"
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

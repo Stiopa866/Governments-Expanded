@@ -5207,6 +5207,9 @@ professional_army_reform = {
 		possible_mercenaries = -1.25
 		land_maintenance_modifier = 0.05
 	}
+	custom_attributes = {
+		enables_general_guards = yes #+1.5 AP per General
+	}
 	ai = {
 		factor = 1
 		modifier = {
@@ -5985,8 +5988,9 @@ strenghten_industry_reform = {
 	potential = {
 	}
 	modifiers = {
-		global_tax_modifier = -0.15
+		global_tax_modifier = -0.05
 		build_cost = -0.1
+		global_trade_goods_size_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_industrialism = yes #+0.2 Goods produced in workshops
@@ -6016,7 +6020,7 @@ mercantilism_reform = {
 }
 
 empowered_free_trade_reform = {
- 	icon = economy_trade
+ 	icon = castle
 	allow_normal_conversion = yes
 	effect = {
 		add_mercantilism = -10
@@ -6024,22 +6028,22 @@ empowered_free_trade_reform = {
 	potential = { 
 		check_variable = {
 			which = Burgher_Influence			
-			value = 2
+			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
 			which = Burgher_Influence			
-			value = 2
+			value = 3
 		}
 		NOT = { mercantilism = 50 }
 	}
 	modifiers = {
-		global_trade_power = -0.25
-		global_trade_goods_size_modifier = 0.20
+		global_trade_power = -0.05
+		global_trade_goods_size_modifier = 0.15
 	}
 	custom_attributes = {
-		enables_trade_privileges = yes
+		enables_trade_privileges = yes #15% Trade Value and 2.5 Base Trade power in Burgher Provinces
 	}
 	ai = {
 		factor = 1
