@@ -775,7 +775,7 @@ country_event = {
 	
 
 	trigger = {
-		has_reform = feudalism_reform
+		has_government_attribute = enables_independent_nobles
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -803,6 +803,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Feudal_Power"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -829,7 +830,7 @@ country_event = {
 	
 
 	trigger = {
-		NOT = { has_reform = feudalism_reform }
+		NOT = { has_government_attribute = enables_independent_nobles }
 		any_owned_province = {
 			has_province_modifier = Feudal_Power
 		}
@@ -1340,6 +1341,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Magnate_Law"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -1426,6 +1428,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Mountain_Towns"
 				duration = -1
+				hidden = yes
 			}
 		}
 	}
@@ -2036,6 +2039,7 @@ country_event = {
 			add_province_modifier = {
 				name = "National_Strenghtening_Project"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -2088,6 +2092,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Patriotism"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -3404,6 +3409,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Device_Forts"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -3486,6 +3492,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Longbow_Training"
 				duration = -1
+				hidden = yes
 			}
 		}
 	}
@@ -3828,6 +3835,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Morisca_Band"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -3995,6 +4003,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Berber_Herders"
 				duration = -1
+				hidden = yes
 			}
 		}
 	}
@@ -5359,6 +5368,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Crown_Of_Aragon"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -5480,24 +5490,28 @@ country_event = {
 				add_province_modifier = {
 					name = Kingdom_of_Aragon
 					duration = -1
+					hidden = yes
 				}
 			}
 			catalonia_area = {
 				add_province_modifier = {
 					name = Principality_Of_Catalonia
 					duration = -1
+					hidden = yes
 				}
 			}
 			valencia_area = {
 				add_province_modifier = {
 					name = City_Of_Valencia
 					duration = -1
+					hidden = yes
 				}
 			}
 			sicily_area = {
 				add_province_modifier = {
 					name = Kingdom_Of_Sicily
 					duration = -1
+					hidden = yes
 				}
 			}
 		}
@@ -5802,6 +5816,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Trader_Privileges"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -6462,6 +6477,7 @@ country_event = {
 			add_province_modifier = {
 				name = "Return_To_Sender"
 				duration = -1
+				hidden = yes
 			}
 		}
 		every_owned_province = {
@@ -8496,3 +8512,187 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.126
+	title = reform_me_events.126.t
+	desc = reform_me_events.126.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_rural_development
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_nobles
+					NOT = { development = 11 }
+					NOT = { has_province_modifier = Rural_Development }
+				}
+				AND = {
+					OR = {
+						development = 11
+						NOT = { has_estate = estate_nobles }
+					}
+					has_province_modifier = Rural_Development
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_nobles
+				NOT = { development = 11 }
+				NOT = {	has_province_modifier = Rural_Development }
+            }
+			add_province_modifier = {
+				name = "Rural_Development"
+				duration = -1
+				hidden = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					development = 11
+					NOT = { has_estate = estate_nobles }
+				}
+				has_province_modifier = Rural_Development
+            }
+			remove_province_modifier = Rural_Development
+		}
+	}
+	
+	option = {
+		name = reform_me_events.126.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.127
+	title = reform_me_events.127.t
+	desc = reform_me_events.127.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_rural_development }
+		any_owned_province = {
+			has_province_modifier = Rural_Development
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Rural_Development
+            }
+			remove_province_modifier = Rural_Development
+		}
+	}
+	
+	option = {
+		name = reform_me_events.127.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.126
+	title = reform_me_events.126.t
+	desc = reform_me_events.126.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_society_of_agriculture
+		any_owned_province = {
+			AND = {
+				OR = {
+					trade_goods = grain
+					trade_goods = wool
+					trade_goods = livestock
+					trade_goods = lumber
+				}
+				NOT = { has_province_modifier = Society_Of_Agriculture }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				NOT = {	has_province_modifier = Society_Of_Agriculture }
+				OR = {
+					trade_goods = grain
+					trade_goods = wool
+					trade_goods = livestock
+					trade_goods = lumber
+				}
+            }
+			add_province_modifier = {
+				name = "Society_Of_Agriculture"
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.126.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.127
+	title = reform_me_events.127.t
+	desc = reform_me_events.127.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_society_of_agriculture }
+		any_owned_province = {
+			has_province_modifier = Society_Of_Agriculture
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = Society_Of_Agriculture
+            }
+			remove_province_modifier = Society_Of_Agriculture
+		}
+	}
+	
+	option = {
+		name = reform_me_events.127.a
+		
+	}
+}
+

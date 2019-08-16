@@ -590,7 +590,7 @@
  compagnies_dordonnance_reform_desc: "By ordering the creation of a new army based around a modern system of organization, a 'compagnie d'ordonnance', a company of the order. These compagnies were created around the bravest and strongest members of the french temporary armies. The 15 compagnies were composed of approximately 100 'spears', with each 'spear' containing 1 cavalryman, 3 light infantry, 1 heavy infantry and 1 page. Unlike the feudal armies these compagnies guarenteed the royal army to have at least 7500 trained and skilled soldiers at its disposal."
  parisian_court_reform: "Parisian Court"
  parisian_court_reform_desc: "Let us fill our court with the best france has to offer. proper Parisians, and let the rural farmers and backwards lords stay home in their dwellings. Its a matter of prestige to have everyone at court observe the proper manners and speak in a flawless accent."
- weak_burghers_reform: "Passive Burghers"
+ weak_burghers_reform: "Subservient Bourgeois"
  weak_burghers_reform_desc: "The constant state of warfare in the kingdom during its earlier days led to many a city, caravan or field being plundered and ravaged. We can use the threat of reduced security to convince the burghers additional taxes are neccesary."
  
  noblesse_d_epee_reform: "Noblesse d'epee"
@@ -649,9 +649,10 @@
  newar_and_gorkhali_reform_desc: "#Blame Ribbit"
  
  #1.9
- free_trade_reform: "Free Trade"
- free_trade_reform_desc: "Let us open our markets and remove as many tarifs and barriers as we can, our advisors guarentee its the best way forward."
- 
+ empowered_free_trade_reform: "Empowered Free Trade"
+ empowered_free_trade_reform_desc: "Let us open our markets and remove as many tarifs and barriers as we can, our advisors guarentee its the best way forward."
+ empowered_aristocratic_estates_reform: "Empowered Aristocratic Estates"
+ empowered_aristocratic_estates_reform_desc: "By promoting the investment in the rural estates of the nobility we can free up manpower and production. This way the agricultural output of our hinterland gets improved, and a large amount of former farmers will lose their jobs due to the improved techniques. Right into the arms of our recruiters."
  
  
  
@@ -673,7 +674,7 @@
  mechanic_enables_deposition_yes:0 "Enables Depositions."
  mechanic_enables_disables_deposition_yes:0 "Disables Depositions."
  mechanic_enables_regent_investments_yes:0 "Enables Regent Investments in Dutch provinces over 20 Development."
- mechanic_enables_independent_nobles_yes:0 "Independant Nobles: Noble Estate provinces have an additional §G15%§! more manpower."
+ mechanic_enables_independent_nobles_yes:0 "Independent Nobles: Noble Estate provinces have an additional §G15%§! more manpower."
  mechanic_enables_elective_monarchy_yes: "Elective Monarchy: Calls for an election upon a monarchs death."
  mechanic_enables_blood_tax_yes: "Blood Tax: Gain §G5%§! Manpower per vassal state."
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
@@ -737,18 +738,20 @@
  mechanic_enables_officers_of_the_sword_yes: "Officers of the Sword: §G+1§! Prestige if you have over 50 Army Tradition."
  mechanic_enables_feudal_receipts_yes: "Feudal Receipts: §G+25%§! Tax in your vassals."
  mechanic_enables_abolish_noble_exception_yes: "Abolish Noble Exception: Remove the Tax Penalty in Noble Provinces."
- mechanic_enables_regulated_leave_yes: "Regulated Leave: §G+25%§! Reinforcement Speed while you have over 50% Manpower."
- mechanic_enables_french_court_yes: "French Court: §G+1§! Prestige while you have 3 Francien Advisors."
+ mechanic_enables_regulated_leave_yes: "Regulated Leave: §G+10%§! Reinforcement Speed and §G+10%§! Manpower Recovery while you have over 50% Manpower."
+ mechanic_enables_french_court_yes: "French Court: §G+1§! Prestige while you have §Y3§! Francien Advisors."
  mechanic_enables_lingua_franca_yes: "Lingua Franca: §G+20§! Opinion with anyone you guarentee, marry or ally."
  mechanic_enables_permissive_burghers_yes: "Permissive Burghers: No Loyalty cost for 'ask for contribution.' interaction during war."
  mechanic_enables_economic_block_yes: "Continental System: §G+2.5%§! Trade Efficiency for each one of your allies."
  mechanic_enables_french_ordonannce_yes: "French Ordonnances: §G+10%§! Goods produced in colonial nations."
- mechanic_enables_foreign_worship_yes: "Foreign Regiments: §G+10%§! Religious Unity if you employ over 10.000 mercenaries."
+ mechanic_enables_foreign_worship_yes: "Foreign Regiments: §G+10%§! Religious Unity if you employ over §Y10.000§! mercenaries."
  mechanic_enables_swiss_guard_yes: "Swiss Guards: §G+5%§! Infantry Combat Ability if you got a Swiss ally or subject."
  mechanic_enables_royal_nobles_yes: "Royal Court: 'Call Diet' gives §G+10§! Legitimacy and §G+5§! Absolutism."
+ mechanic_enables_society_of_agriculture_yes: "Society of Agriculture: §G+10%§! Production Efficiency and §G+10%§! Trade Value in Stated Provinces with Basic Goods."
  
  mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with workshops."
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."
+ mechanic_enables_rural_development_yes: "Rural Development: §G+500§! Base Manpower in Noble Estate Provinces under §Y10§! development."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

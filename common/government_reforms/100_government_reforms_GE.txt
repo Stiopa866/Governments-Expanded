@@ -4395,6 +4395,7 @@ empowered_aristocratic_court_reform = {
 	ai = {
 		factor = 10
 	}
+	#+15% Noble Loyalty
 }
 
 empowered_general_estates_reform = {
@@ -6015,7 +6016,7 @@ mercantilism_reform = {
 	}
 }
 
-free_trade_reform = {
+empowered_free_trade_reform = {
  	icon = economy_trade
 	allow_normal_conversion = yes
 	effect = {
@@ -6054,5 +6055,39 @@ noble_taxes_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+}
+
+empowered_aristocratic_estates_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Burgher_Influence			
+			value = 1
+		}
+		check_variable = {
+			which = Noble_Influence			
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Burgher_Influence			
+			value = 1
+		}
+		check_variable = {
+			which = Noble_Influence			
+			value = 2
+		}
+	}
+	modifiers = {
+		production_efficiency = 0.10
+	}
+	custom_attributes = {
+		enables_rural_development = yes
+	}
+	ai = {
+		factor = 10
 	}
 }

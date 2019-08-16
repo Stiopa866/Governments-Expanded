@@ -443,7 +443,13 @@ estate_nobles =
 		}
 		loyalty = 10
 	}
-	
+	loyalty_modifier = {
+		desc = EST_VAL_EMPOWERED_ARISTOCRATIC_COURT_LOY
+		trigger = {
+			has_reform = empowered_aristocratic_court_reform
+		}
+		loyalty = 15
+	}
 	loyalty_modifier = {
 		desc = EST_VAL_HOUSE_OF_KNIGHTS_LOY
 		trigger = {

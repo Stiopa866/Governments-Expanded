@@ -98,7 +98,7 @@ blood_tax_reform = {
 		mil_advisor_cost = -0.10
 	}
 	custom_attributes = {
-		enables_blood_tax = yes #5% Manpower per vassal
+		enables_blood_tax = yes #5% Manpower per vassal, up to 25%
 	}
 	ai = {
 		factor = 100
@@ -131,6 +131,7 @@ noblesse_d_epee_reform = {
 	}
 	modifiers = {
 		free_leader_pool = 1
+		leader_cost = -0.10
 	}
 	custom_attributes = {
 		enables_officers_of_the_sword = yes #0.5 prestige if over 50 AT
@@ -235,10 +236,10 @@ generalites_reform = {
 	}
 	modifiers = {
 		global_autonomy = -0.025
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.10
 	}
 	custom_attributes = {
-		enables_abolish_noble_exception = yes #25% Tax in Noble Estate Provinces
+		enables_abolish_noble_exception = yes #33% Tax in Noble Estate Provinces
 	}
 	ai = {
 		factor = 100
@@ -270,7 +271,7 @@ abolish_local_parliaments_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.15
-		yearly_absolutism = 0.1
+		yearly_absolutism = 0.25
 	}
 	ai = {
 		factor = 100
@@ -337,7 +338,7 @@ abolish_the_patronage_system_reform = {
 	}
 	modifiers = {
 		land_maintenance_modifier = -0.05
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		cavalry_cost = -0.10
 	}
 	custom_attributes = {
@@ -372,7 +373,7 @@ royal_training_reform = {
 		has_reform = french_absolutism
 	}
 	modifiers = {
-		drill_gain_modifier = 0.25
+		drill_gain_modifier = 0.50
 		reinforce_cost_modifier = -0.1
 		reinforce_speed = 0.25
 	}
@@ -402,7 +403,7 @@ parisian_court_reform = {
 			value = -1
 		}
 	}
-	potential = { 
+	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
 			has_reform = parisian_court_reform
@@ -451,7 +452,7 @@ corps_diplomatique_reform = {
 		improve_relation_modifier = 0.2
 	}
 	custom_attributes = {
-		enables_lingua_franca = yes #20 Opinion with allies/guarentees/royal marriages/military access
+		enables_lingua_franca = yes #20 Opinion with allies/guarentees/royal marriages
 	}
 	ai = {
 		factor = 100
@@ -468,7 +469,7 @@ weak_burghers_reform = {
 			primary_culture = cosmopolitan_french
 			has_reform = weak_burghers_reforms
 		}
-		has_reform = french_feudalism
+		NOT = { has_reform = french_absolutism }
 	}
 	modifiers = {
 		war_taxes_cost_modifier = -1
@@ -516,6 +517,9 @@ society_of_agriculture_reform = {
 		global_trade_goods_size_modifier = 0.10
 		global_own_trade_power = 0.25
 	}
+	custom_attributes = {
+		enables_society_of_agriculture = yes #25% Production Efficiency in Stated Agricultural Goods (Livestock, Grain
+	}
 	ai = {
 		factor = 100
 	}
@@ -535,7 +539,7 @@ conseil_souverain_reform = {
 	modifiers = {
 		global_tariffs = 0.20
 		global_foreign_trade_power = 0.15
-		trade_steering = 0.15	
+		trade_steering = 0.20	
 	}
 	custom_attributes = {
 		enables_french_ordonannce = yes #10% Goods Produced in Colonies
@@ -591,7 +595,8 @@ droit_divine_reform = {
 		}
 	}
 	modifiers = {
-		max_absolutism = 5
+		unjustified_demands = -0.25
+		core_creation = -0.1
 	}
 	ai = {
 		factor = 100

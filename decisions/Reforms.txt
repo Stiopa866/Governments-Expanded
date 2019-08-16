@@ -41,7 +41,7 @@ country_decisions = {
 		}
 		allow = {
 			has_reform = droit_divine_reform
-			absolutism = 50
+			current_age = age_of_absolutism
 		}
 		effect = {
 			add_government_reform = french_absolutism

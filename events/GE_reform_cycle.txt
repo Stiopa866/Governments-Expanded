@@ -3678,7 +3678,15 @@ country_event = {
 	option = { 
 		name = professional_army.69.b
 		
-		add_army_professionalism = 0.02
+		if = {
+			limit = {
+				has_dlc = "Cradle of Civilization"
+			}
+			add_army_professionalism = 0.02
+		}
+		else = {
+			add_army_tradition = 10
+		}
 
 	}
 }

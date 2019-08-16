@@ -37,8 +37,8 @@ monarchy = {
 				#west_slavic_monarchy
 				#GE
 				french_feudalism
-				#french_reformed_feudalism #FRA
-				ancien_regime_reform #FRA
+				#french_reformed_feudalism
+				ancien_regime_reform
 				french_absolutism
 				lithuania_warlord_duke
 				theocratic_autocracy
@@ -104,8 +104,8 @@ monarchy = {
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
 				blood_tax_reform
-				noblesse_d_epee_reform #FRA
-				noble_court_attendance_reform #FRA
+				noblesse_d_epee_reform
+				noble_court_attendance_reform
 				house_of_knights_reform
 				constitutio_valdemariana_reform
 				riksradet_norway_reform
@@ -149,9 +149,9 @@ monarchy = {
 				millet_reform
 				great_law_of_peace_reform
 				#ancien_regime_reform #FRA
-				independent_vassals_reform #FRA
-				generalites_reform #FRA
-				abolish_local_parliaments_reform #FRA
+				independent_vassals_reform
+				generalites_reform
+				abolish_local_parliaments_reform
 				the_red_book_reform
 				commoner_officials_reform
 				imperial_inquisition_reform
@@ -185,10 +185,10 @@ monarchy = {
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
-				#les_vieux_corps_reform #FRA
-				compagnies_dordonnance_reform #FRA
-				abolish_the_patronage_system_reform #FRA
-				royal_training_reform #FRA
+				#les_vieux_corps_reform
+				compagnies_dordonnance_reform
+				abolish_the_patronage_system_reform
+				royal_training_reform
 				abolish_manrent_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
@@ -230,8 +230,8 @@ monarchy = {
 				koprulu_dynasty_reform
 				fredrickan_reforms_reform
 				#conseil_du_roi_reform #FRA
-				parisian_court_reform #FRA
-				corps_diplomatique_reform #FRA
+				parisian_court_reform
+				corps_diplomatique_reform
 				table_of_ranks_reform
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
@@ -265,9 +265,9 @@ monarchy = {
 				foreign_recruitment_reform
 				reform_the_sejm_reform
 				abolish_the_sejm_reform
-				weak_burghers_reform #FRA
-				society_of_agriculture_reform #FRA
-				bourgeoisie_aristocracy_reform #FRA
+				weak_burghers_reform
+				society_of_agriculture_reform
+				bourgeoisie_aristocracy_reform
 				noble_electors_reform 
 				royal_electors_reform 
 				parliamental_electors_reform 
@@ -293,8 +293,9 @@ monarchy = {
 				strenghten_industry_reform
 				mercantilism_reform
 				noble_taxes_reform
-				conseil_souverain_reform #FRA 
-				continental_system_reform #FRA
+				conseil_souverain_reform
+				continental_system_reform
+				empowered_aristocratic_estates_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -311,7 +312,7 @@ monarchy = {
 				revoke_reichsfreiheit_reform
 				constitution_third_may_reform
 				bill_of_rights_reform
-				droit_divine_reform #FRA
+				droit_divine_reform
 			}
 		}
 		separation_of_power = {
