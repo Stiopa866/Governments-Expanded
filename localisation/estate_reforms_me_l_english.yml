@@ -612,8 +612,8 @@
  royal_training_reform_desc: "The Captains of the army have long controlled the recruitment, equipment and training of our armed forced. Let us do this directly so our forces will never lack in training equipment, manpower or adequate weaponry."
  society_of_agriculture_reform: "Society of Agriculture and an Agricultural Committee"
  society_of_agriculture_reform_desc: "Louis's controller of finances, Henri Bertin, created a new Society of Agriculture and an Agricultural Committee within the government, comparable to those existing to support commerce. In May 1763, Bertin issued a decree permitting the tax-free circulation of grain without taxes. In August 1764, Bertin permitted the export of grain from twenty-seven French ports, later expanded to thirty-six. At the same time he established a large zone around Paris, where grain was reserved exclusively for feeding the Parisians, and established a cap on the grain price, which, if it was passed, would cause the exports to cease. The policy of freeing grain prices was effective in good years, and resulted in increased trade and lower prices."
- droit_divine_reform: "Droit Divine"
- droit_divine_reform_desc: "French Kings had the Divine Right to Rule. #Makealocalizerworkforthis."
+ droit_divine_reform: "Droit Divin"
+ droit_divine_reform_desc: "We have had our right to rule determined through salic law and justified through the clerical declarations, this will no longer do, our right to rule comes not from the church, but from God Himself."
  
  
  #Newtier
@@ -653,9 +653,8 @@
  empowered_free_trade_reform_desc: "Let us open our markets and remove as many tarifs and barriers as we can, our advisors guarentee its the best way forward."
  empowered_aristocratic_estates_reform: "Empowered Aristocratic Estates"
  empowered_aristocratic_estates_reform_desc: "By promoting the investment in the rural estates of the nobility we can free up manpower and production. This way the agricultural output of our hinterland gets improved, and a large amount of former farmers will lose their jobs due to the improved techniques. Right into the arms of our recruiters."
- 
- 
- 
+ empowered_monastic_centres_reform: "Empowered Monastic Centres"
+ empowered_monastic_centres_reform_desc: "Due to the increased importance of monasteries many traders are setting up trade posts and workshops next to them. Let us increase the tax burden of the local monasteries and grant them some trade privileges to promote the intertwining of these classes."
  
  
  
@@ -745,13 +744,14 @@
  mechanic_enables_economic_block_yes: "Continental System: §G+2.5%§! Trade Efficiency for each one of your allies."
  mechanic_enables_french_ordonannce_yes: "French Ordonnances: §G+10%§! Goods produced in colonial nations."
  mechanic_enables_foreign_worship_yes: "Foreign Regiments: §G+10%§! Religious Unity if you employ over §Y10.000§! mercenaries."
- mechanic_enables_swiss_guard_yes: "Swiss Guards: §G+5%§! Infantry Combat Ability if you got a Swiss ally or subject."
+ mechanic_enables_swiss_guard_yes: "Swiss Guards: §G+5%§! Infantry Combat Ability if you have a Swiss ally or subject."
  mechanic_enables_royal_nobles_yes: "Royal Court: 'Call Diet' gives §G+10§! Legitimacy and §G+5§! Absolutism."
  mechanic_enables_society_of_agriculture_yes: "Society of Agriculture: §G+10%§! Production Efficiency and §G+10%§! Trade Value in Stated Provinces with Basic Goods."
  
  mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with workshops."
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."
  mechanic_enables_rural_development_yes: "Rural Development: §G+500§! Base Manpower in Noble Estate Provinces under §Y10§! development."
+ mechanic_enables_monastic_trade_yes: "Monastic Centres: §G+1§! Base Tax and §G5§! Provincial Trade Power in Clergical Provinces."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

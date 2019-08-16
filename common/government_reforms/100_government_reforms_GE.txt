@@ -4415,12 +4415,11 @@ empowered_general_estates_reform = {
 		}
 	}
 	modifiers = {
-		development_efficiency = 0.05
-		max_absolutism = -15
+		state_maintenance_modifier = -0.25
+		max_absolutism = -5
 	}
 	custom_attributes = {
 		enables_burgher_council = yes
-		enables_trade_privileges = yes
 	}
 	ai = {
 		factor = 0
@@ -6039,6 +6038,9 @@ empowered_free_trade_reform = {
 		global_trade_power = -0.25
 		global_trade_goods_size_modifier = 0.20
 	}
+	custom_attributes = {
+		enables_trade_privileges = yes
+	}
 	ai = {
 		factor = 1
 	}
@@ -6086,6 +6088,40 @@ empowered_aristocratic_estates_reform = {
 	}
 	custom_attributes = {
 		enables_rural_development = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+empowered_monastic_centres_reform = {
+	icon = castle
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Burgher_Influence			
+			value = 1
+		}
+		check_variable = {
+			which = Clergy_Influence		
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Burgher_Influence			
+			value = 1
+		}
+		check_variable = {
+			which = Clergy_Influence			
+			value = 2
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+	}
+	custom_attributes = {
+		enables_monastic_trade = yes
 	}
 	ai = {
 		factor = 10

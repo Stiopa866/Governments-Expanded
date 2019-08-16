@@ -296,6 +296,8 @@ monarchy = {
 				conseil_souverain_reform
 				continental_system_reform
 				empowered_aristocratic_estates_reform
+				empowered_free_trade_reform
+				empowered_monastic_centres_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

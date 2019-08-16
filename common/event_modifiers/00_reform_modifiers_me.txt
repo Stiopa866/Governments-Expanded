@@ -452,6 +452,10 @@ Society_Of_Agriculture = {
 	local_production_efficiency = 0.10
 	trade_value_modifier = 0.10
 }
+Monastic_Trade = {
+	province_trade_power_value = 5
+	tax_income = 1
+}
 
 	
 
