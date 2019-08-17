@@ -298,6 +298,8 @@ monarchy = {
 				empowered_aristocratic_estates_reform
 				empowered_free_trade_reform
 				empowered_monastic_centres_reform
+				empowered_enlarge_royal_estate_reform
+				empowered_expand_corvee_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -404,6 +406,11 @@ monarchy = {
 		professional_army_reform
 		hessian_militarized_monarchy_reform
 		hessian_modern_militarized_monarchy_reform
+	}
+	
+	exclusive_reforms = {
+		empowered_expand_corvee_reform
+		quash_noble_power_reform
 	}
 
 	color = { 179 25 25 }

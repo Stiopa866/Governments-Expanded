@@ -4263,7 +4263,6 @@ empowered_divine_blood_reform = {
 		devotion = 0.5
 	}
 	custom_attributes = {
-		enables_royal_council = yes
 		enables_divine_blood = yes
 	}
 	ai = {
@@ -5770,6 +5769,39 @@ henry_reforms_reform = {
 	}
 }
 
+redcoats_reform = {
+	icon = england_redcoat
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			tag = GBR
+			has_reform = redcoats_reform
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		infantry_power = 0.05
+	}
+	custom_attributes = {
+		enables_patriotism = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 berber_cavalry_reform = {
 	icon = berber_warrior
 	allow_normal_conversion = yes
@@ -6020,7 +6052,7 @@ mercantilism_reform = {
 }
 
 empowered_free_trade_reform = {
- 	icon = castle
+ 	icon = empowered_free_trade
 	allow_normal_conversion = yes
 	effect = {
 		add_mercantilism = -10
@@ -6065,7 +6097,7 @@ noble_taxes_reform = {
 }
 
 empowered_aristocratic_estates_reform = {
-	icon = castle
+	icon = empowered_aristocrat_estate
 	allow_normal_conversion = yes
 	potential = { 
 		check_variable = {
@@ -6099,7 +6131,7 @@ empowered_aristocratic_estates_reform = {
 }
 
 empowered_monastic_centres_reform = {
-	icon = castle
+	icon = empowered_monastery
 	allow_normal_conversion = yes
 	potential = { 
 		check_variable = {
@@ -6126,6 +6158,67 @@ empowered_monastic_centres_reform = {
 	}
 	custom_attributes = {
 		enables_monastic_trade = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+empowered_expand_corvee_reform = {
+	icon = empowered_corvee
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Noble_Influence			
+			value = 2
+		}
+		check_variable = {
+			which = Clergy_Influence		
+			value = 1
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence			
+			value = 2
+		}
+		check_variable = {
+			which = Clergy_Influence		
+			value = 1
+		}
+	}
+	modifiers = {
+		defensiveness = 0.10
+	}
+	custom_attributes = {
+		enables_corvee = yes #10% Manpower and Production Efficiency in Noble and Clergy Provinces
+	}
+	ai = {
+		factor = 10
+	}
+	#-10% Burgher Loyalty, +10% Noble and Clergy Loyalty
+}
+
+empowered_enlarge_royal_estate_reform = {
+	icon = empowered_royal_estate
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Royal_Influence			
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence			
+			value = 2
+		}
+	}
+	modifiers = {
+		max_states = 2
+	}
+	custom_attributes = {
+		enables_royal_domain = yes #10% Tax and Manpower in royal estate provinces
 	}
 	ai = {
 		factor = 10

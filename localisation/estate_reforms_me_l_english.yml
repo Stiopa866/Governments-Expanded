@@ -411,6 +411,8 @@
  commonwealth_of_nations_reform_desc: "The British Colonial Empire was truly an empire where the sun never sets. Let us empower our overseas subjects to raise their own militias so we they can fight alongside their old world breathren."
  henry_reforms_reform: "Henrician Reforms"
  henry_reforms_reform_desc: "Following the continued rise of militarism in the French, Spanish and Imperial nations, The English crown had a standing army of a few hundred men and a couple of fort garrisons. In addition of being horribly outnumbered, these men were armed with billhooks and crossbows, rather then muskets and pikes. The Henrician Reforms instituted by Henry VIII was the creation of a much extended standing army, expanding the navy, re-organizing the militia system and creating a series of coastal forts against potential Catholic invasions from the south."
+ redcoats_reform: "Redcoats"
+ redcoats_reform_desc: "Redcoats"
  granadan_iqta_reform: "Granadan Iqta"
  granadan_iqta_reform_desc: "Its excellent position at the crossroads of the Atlantic and the Mediterranean trade networks makes Granada a key hub of commerce. The Catalonian and Genoese traders have long brought goods to our harbors, and our massive population is skilled in the labors of herding, fishing or craftmanship. The silk and textile goods from our lands has been a key part of our economy. With the downfall of the Taifa emirates, many skilled craftsman have fled the Christian conquistadores... right into our open arms."
  taha_divisions_reform: "Taha Divisions"
@@ -655,8 +657,10 @@
  empowered_aristocratic_estates_reform_desc: "By promoting the investment in the rural estates of the nobility we can free up manpower and production. This way the agricultural output of our hinterland gets improved, and a large amount of former farmers will lose their jobs due to the improved techniques. Right into the arms of our recruiters."
  empowered_monastic_centres_reform: "Empowered Monastic Centres"
  empowered_monastic_centres_reform_desc: "Due to the increased importance of monasteries many traders are setting up trade posts and workshops next to them. Let us increase the tax burden of the local monasteries and grant them some trade privileges to promote the intertwining of these classes."
- 
- 
+ empowered_enlarge_royal_estate_reform: "Empowered Enlarge Royal Estates"
+ empowered_enlarge_royal_estate_reform_desc: "Through the enlargement of the royal estates we can check the estates grip on the taxation and employment of the people. And we can free up additional funds and manpower on a local level by expelling non-complicant powers within our own estates."
+ empowered_expand_corvee_reform: "Empowered Expand Corvee"
+ empowered_expand_corvee_reform_desc: "The Corvee is the feudal system of peasants and serfs working on their local noble or clergical estates in return for being allowed to rent their own farmland. Let us expand the size of the corvee and increase the days worked on the estate lands, this should allow us to improve production, manpower and maintenance on our defensive works."
  
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
@@ -752,7 +756,9 @@
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."
  mechanic_enables_rural_development_yes: "Rural Development: §G+500§! Base Manpower in Noble Estate Provinces under §Y10§! development."
  mechanic_enables_monastic_trade_yes: "Monastic Centres: §G+1§! Base Tax and §G5§! Provincial Trade Power in Clergical Provinces."
- mechanic_enables_general_guards_yes: "Quality Officer Training: Generals give an additional §G0.5§! professionalism when recruited"
+ mechanic_enables_general_guards_yes: "Quality Officer Training: Recruiting generals grants §G50%§! more professionalism."
+ mechanic_enables_royal_domain_yes: "Royal Domain: §G+10%§! Tax and §G+10%§! Manpower in Royal State provinces."
+ mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

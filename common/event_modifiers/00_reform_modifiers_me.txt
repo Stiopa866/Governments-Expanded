@@ -456,7 +456,14 @@ Monastic_Trade = {
 	province_trade_power_value = 5
 	tax_income = 1
 }
-
+Royal_Domain = {
+	local_tax_modifier = 0.10
+	local_manpower_modifier = 0.10
+}
+Expanded_Corvee = {
+	local_production_efficiency = 0.10
+	local_manpower_modifier = 0.10
+}
 	
 
 #Cortez

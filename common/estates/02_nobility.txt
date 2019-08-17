@@ -372,6 +372,13 @@ estate_nobles =
 		loyalty = 10
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_EXPAND_CORVEE_LOY
+		trigger = {
+			has_reform = empowered_expand_corvee_reform
+		}	
+		loyalty = 10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_BOURGEOISIE_ARISOCRACY_LOY
 		trigger = {
 			has_reform = bourgeoisie_aristocracy_reform

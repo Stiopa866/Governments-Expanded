@@ -335,6 +335,13 @@ estate_burghers =
 		loyalty = 10
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_EXPAND_CORVEE_LOY
+		trigger = {
+			has_reform = empowered_expand_corvee_reform
+		}	
+		loyalty = -10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_REGENTS_REFORM_LOY
 		trigger = {
 			has_reform = regents_reform

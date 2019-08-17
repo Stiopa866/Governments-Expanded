@@ -179,8 +179,8 @@
  Rural_Development: "Mechanic §YRural Development§!"
  Society_Of_Agriculture: "Mechanic §YSociety of Agriculture§!"
  Monastic_Trade: "Mechanic §YMonastic Centres§!"
- 
- 
+ Royal_Domain: "Mechanic §YRoyal Domain§!"
+ Expanded_Corvee: "Mechanic §YExpanded Corvee§!"
  
  
  
@@ -329,3 +329,4 @@
  EST_VAL_BOURGEOISIE_ARISOCRACY_LOY:0  "Bourgoisie Aristocracy: §Y$VAL$%§!"
  EST_VAL_GENERALITES_REFORM_LOY:0 "Generalite: §Y$VAL$%§!"
  EST_VAL_EMPOWERED_ARISTOCRATIC_COURT_LOY:0 "Empowered Aristocratic Court: §Y$VAL$%§!"
+ EST_VAL_EXPAND_CORVEE_LOY: "Empowered Expand Corvee: §Y$VAL$%§!"

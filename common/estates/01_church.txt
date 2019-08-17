@@ -259,6 +259,13 @@ estate_church =
 		loyalty = 5
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_EXPAND_CORVEE_LOY
+		trigger = {
+			has_reform = empowered_expand_corvee_reform
+		}	
+		loyalty = 10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_CLERGY_ADMINISTRATORS_LOY
 		trigger = {
 			has_reform = empowered_clergy_in_administration_reform

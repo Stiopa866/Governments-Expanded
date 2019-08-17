@@ -553,6 +553,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//england_henry_8.dds"
 	}
 	spriteType = {
+		name = "government_reform_england_redcoat"
+		texturefile = "gfx//interface//government_reform_icons//england_redcoat.dds"
+	}
+	spriteType = {
 		name = "government_reform_italy_guelph"
 		texturefile = "gfx//interface//government_reform_icons//italy_guelph.dds"
 	}
@@ -659,6 +663,26 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_french_provinces"
 		texturefile = "gfx//interface//government_reform_icons//french_provinces.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_corvee"
+		texturefile = "gfx//interface//government_reform_icons//empowered_corvee.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_aristocrat_estate"
+		texturefile = "gfx//interface//government_reform_icons//empowered_aristocrat_estate.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_free_trade"
+		texturefile = "gfx//interface//government_reform_icons//empowered_free_trade.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_monastery"
+		texturefile = "gfx//interface//government_reform_icons//empowered_monastery.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_royal_estate"
+		texturefile = "gfx//interface//government_reform_icons//empowered_royal_estate.dds"
 	}
 }
 
