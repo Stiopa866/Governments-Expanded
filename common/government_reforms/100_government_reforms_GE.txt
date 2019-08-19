@@ -757,7 +757,10 @@ hessian_modern_militarized_monarchy_reform = {
 		discipline = 0.05
 		possible_mercenaries = -1.25
 		monarch_military_power = 1
-		possible_condottieri = 3
+		possible_condottieri = 5
+	}
+	custom_attributes = {
+		enables_patriotism = yes
 	}
 	ai = {
 		factor = 100
