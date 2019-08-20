@@ -5015,7 +5015,6 @@ country_event = {
 			estate = estate_nobles
 			loyalty = -5
 		}
-		
 	}
 	
 	option = {
@@ -5103,7 +5102,7 @@ country_event = {
 
 country_event = {
 	id = GE_reform_cycle.100
-	title = theocratic_law.100.t #
+	title = theocratic_law.100.t
 	desc = theocratic_law.100.d
 	picture = CHURCH_ESTATE_1_eventPicture
 	

@@ -305,34 +305,6 @@ crown_of_aragon = {
 	allow_normal_conversion = yes
 	effect = {
 	}
-	removed_effect = {
-		hidden_effect = {
-			aragon_area = { 
-				remove_province_modifier = {
-					name = Kingdom_of_Aragon
-					duration = -1
-				}
-			}
-			catalonia_area = {
-				remove_province_modifier = {
-					name = Principality_Of_Catalonia
-					duration = -1
-				}
-			}
-			valencia_area = {
-				remove_province_modifier = {
-					name = City_Of_Valencia
-					duration = -1
-				}
-			}
-			sicily_area = {
-				remove_province_modifier = {
-					name = Kingdom_Of_Sicily
-					duration = -1
-				}
-			}
-		}
-	}
 	potential = {
 		OR = {
 			tag = ARA
@@ -520,7 +492,7 @@ office_of_lord_regent_reform = {
 		prestige = 0.5
 		war_exhaustion = -0.025
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -772,11 +744,6 @@ achaemenid_empire_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
-	hidden_effect = {
-		country_event = { 
-			id = reform_me_events.71
-		}
-	}
 	maintain_dynasty = yes
 	potential = {
 		OR = {
@@ -1124,7 +1091,7 @@ lithuania_law_reform = {
 	}
 	potential = {
 		OR = {	
-			has = lithuania_law_reform
+			has_reform = lithuania_law_reform
 			tag = LIT
 		}
 	}
@@ -5210,7 +5177,7 @@ professional_army_reform = {
 		land_maintenance_modifier = 0.05
 	}
 	custom_attributes = {
-		enables_general_guards = yes #+1.5 AP per General
+		enables_general_guards = yes #+1.25 AP per General
 	}
 	ai = {
 		factor = 1

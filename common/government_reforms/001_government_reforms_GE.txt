@@ -134,7 +134,7 @@ ajuraan_theocracy_reform = {
 	custom_attributes = {
 		enables_hereditary_theocracy = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -154,7 +154,7 @@ dynastic_theocracy_reform = {
 	custom_attributes = {
 		enables_hereditary_theocracy = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -170,11 +170,6 @@ fighting_for_israel_reform = {
 	}
 	modifiers = {
 		land_morale = 0.15
-	}
-	effect = {
-		palestine_area = {
-			add_permanent_claim = ROOT
-		}
 	}
 	ai = {
 		factor = 100

@@ -275,7 +275,7 @@ celestial_empire = {
 		prestige = 0.5
 	}
 	
-	ai_chance = {
+	ai = {
 		factor = 1000 # should always be picked if available
 	}
 
