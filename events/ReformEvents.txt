@@ -6101,63 +6101,27 @@ country_event = {
 		has_government_attribute = enables_peasant_council
 		OR = {
 			AND = {
-				OR = {
-					statesman = 1
-					naval_reformer = 1
-					trader = 1
-					spymaster = 1
-					colonial_governor = 1
-					diplomat = 1
-					navigator = 1
+				employed_advisor = {
+					category = ADM
 				}
-				OR = {
-					philosopher = 1
-					natural_scientist  = 1
-					artist = 1
-					treasurer = 1
-					theologian = 1
-					master_of_mint = 1
-					inquisitor = 1
+				employed_advisor = {
+					category = DIP
 				}
-				OR = {
-					army_reformer = 1
-					army_organiser = 1
-					commandant = 1
-					quartermaster = 1
-					recruitmaster = 1
-					fortification_expert = 1
-					grand_captain = 1
+				employed_advisor = {
+					category = MIL
 				}
 				NOT = { has_country_modifier = "Peasant_Council" }
 			}
 			NOT = {
 				AND = {
-					OR = {
-						statesman = 1
-						naval_reformer = 1
-						trader = 1
-						spymaster = 1
-						colonial_governor = 1
-						diplomat = 1
-						navigator = 1
+					employed_advisor = {
+						category = ADM
 					}
-					OR = {
-						philosopher = 1
-						natural_scientist  = 1
-						artist = 1
-						treasurer = 1
-						theologian = 1
-						master_of_mint = 1
-						inquisitor = 1
+					employed_advisor = {
+						category = DIP
 					}
-					OR = {
-						army_reformer = 1
-						army_organiser = 1
-						commandant = 1
-						quartermaster = 1
-						recruitmaster = 1
-						fortification_expert = 1
-						grand_captain = 1
+					employed_advisor = {
+						category = MIL
 					}
 					has_country_modifier = "Peasant_Council"
 				}
@@ -6173,32 +6137,14 @@ country_event = {
 		if = {
 			limit = {
 				AND = {
-					OR = {
-						statesman = 1
-						naval_reformer = 1
-						trader = 1
-						spymaster = 1
-						colonial_governor = 1
-						diplomat = 1
-						navigator = 1
+					employed_advisor = {
+						category = ADM
 					}
-					OR = {
-						philosopher = 1
-						natural_scientist  = 1
-						artist = 1
-						treasurer = 1
-						theologian = 1
-						master_of_mint = 1
-						inquisitor = 1
+					employed_advisor = {
+						category = DIP
 					}
-					OR = {
-						army_reformer = 1
-						army_organiser = 1
-						commandant = 1
-						quartermaster = 1
-						recruitmaster = 1
-						fortification_expert = 1
-						grand_captain = 1
+					employed_advisor = {
+						category = MIL
 					}
 				}
 				NOT = { has_country_modifier = "Peasant_Council" }
@@ -6213,32 +6159,14 @@ country_event = {
 			limit = {
 				NOT = {
 					AND = {
-						OR = {
-							statesman = 1
-							naval_reformer = 1
-							trader = 1
-							spymaster = 1
-							colonial_governor = 1
-							diplomat = 1
-							navigator = 1
+						employed_advisor = {
+							category = ADM
 						}
-						OR = {
-							philosopher = 1
-							natural_scientist  = 1
-							artist = 1
-							treasurer = 1
-							theologian = 1
-							master_of_mint = 1
-							inquisitor = 1
+						employed_advisor = {
+							category = DIP
 						}
-						OR = {
-							army_reformer = 1
-							army_organiser = 1
-							commandant = 1
-							quartermaster = 1
-							recruitmaster = 1
-							fortification_expert = 1
-							grand_captain = 1
+						employed_advisor = {
+							category = MIL
 						}
 					}
 				}

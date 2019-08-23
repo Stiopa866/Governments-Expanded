@@ -373,7 +373,7 @@ Feudal_Receipts = {
 	global_tax_modifier = 0.25
 }
 Regulated_Leave = {
-	reinforce_speed = 0.10
+	reinforce_speed = 0.15
 	manpower_recovery_speed = 0.10
 }
 French_Court = {
