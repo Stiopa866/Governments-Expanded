@@ -523,11 +523,20 @@ Dip_2_Trade = {
 Dip_2_Ship = {
 	global_ship_trade_power = 0.2
 }
+Mil_2_Train = {
+	army_tradition = 0.5
+}
 Mil_2_Main = {
 	land_maintenance_modifier = -0.05
 }
 Mil_2_Leader = {
 	general_cost = -0.2
+}
+
+#Milan
+
+Sforza_Lifetime = {
+	election_cycle = 100
 }
 
 #Royal Council

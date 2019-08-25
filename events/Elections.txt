@@ -62,6 +62,32 @@ country_event = {
 					33 = { set_country_flag = mil_republic }
 					33 = { set_country_flag = mil_infantry }
 				}
+				if = {
+					limit = { 
+						OR = { 
+							NOT = { has_ruler_flag = adm_ruler }
+							NOT = { has_ruler_flag = dip_ruler }
+							NOT = { has_ruler_flag = mil_ruler }
+						}
+					}
+					random_list = {
+						10 = { set_ruler_flag = adm_ruler }
+						10 = { set_ruler_flag = dip_ruler }
+						10 = { set_ruler_flag = mil_ruler }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government_attribute = enables_sforza
+				}
+				random_list = {
+					20 = { set_country_flag = sforza_1 }
+					20 = { set_country_flag = sforza_2 }
+					20 = { set_country_flag = sforza_3 }
+					20 = { set_country_flag = sforza_4 }
+					20 = { set_country_flag = sforza_5 }
+				}
 			}
 		}
 	}
@@ -185,13 +211,13 @@ country_event = {
 				adm_2_dev = {
 					add_ruler_modifier = {
 						name = "Adm_2_Dev"
-						duration = 1825
+						duration = -1
 					}
 				}
 				adm_2_tax = {
 					add_ruler_modifier = {
 						name = "Adm_2_Tax"
-						duration = 1825
+						duration = -1
 					}
 				}
 				adm_2_pope = {
@@ -205,28 +231,31 @@ country_event = {
 				dip_2_trade = {
 					add_ruler_modifier = {
 						name = "Dip_2_Trade"
-						duration = 1825
+						duration = -1
 					}
 				}
 				dip_2_ship = {
 					add_ruler_modifier = {
 						name = "Dip_2_Ship"
-						duration = 1825
+						duration = -1
 					}
 				}
 				mil_2_army = {
-					add_army_tradition = 10
+					add_ruler_modifier = {
+						name = "Mil_2_Train"
+						duration = -1
+					}
 				}
 				mil_2_main = {
 					add_ruler_modifier = {
 						name = "Mil_2_Main"
-						duration = 1825
+						duration = -1
 					}
 				}
 				mil_2_leader = {
 					add_ruler_modifier = {
 						name = "Mil_2_Leader"
-						duration = 1825
+						duration = -1
 					}
 				}
 				rul_2_stab = {
@@ -283,13 +312,13 @@ country_event = {
 				adm_advisor = {
 					add_ruler_modifier = {
 						name = "Adm_Advisor"
-						duration = 1825
+						duration = -1
 					}
 				}
 				adm_stabcost = {
 					add_ruler_modifier = {
 						name = "Adm_Stabcost"
-						duration = 1825
+						duration = -1
 					}
 				}
 				adm_pope = {
@@ -347,7 +376,7 @@ country_event = {
 				on_trigger = has_country_flag
 				dip_trade = {
 					add_ruler_modifier = {
-						name = "Dip_Trade"
+						name = "-1"
 						duration = 1825
 					}
 				}
@@ -356,7 +385,7 @@ country_event = {
 				}
 				dip_invest = {
 					add_ruler_modifier = {
-						name = "Dip_Invest"
+						name = "-1"
 						duration = 1825
 					}
 				}
@@ -416,7 +445,7 @@ country_event = {
 				}
 				mil_infantry = {
 					add_ruler_modifier = {
-						name = "Mil_Infantry"
+						name = "-1"
 						duration = 1825
 					}
 				}
@@ -505,6 +534,87 @@ country_event = {
 			}
 		}
 	}
+	
+	option = { # dictator #Sforza 
+		name = "EVTOPTG700"
+		trigger = {
+			has_government_attribute = enables_sforza
+		}
+		ai_chance = { factor = 100 }
+		add_republican_tradition = -25
+
+		define_ruler = {
+			mil = 2
+			min_age = 40
+			max_age = 60
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_1
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 3
+				siege = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_2
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 2
+				manuever = 1
+				siege = 3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_3
+			}
+			define_ruler_to_general = {
+				fire = 2
+				shock = 2
+				manuever = 6
+				siege = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_4
+			}
+			define_ruler_to_general = {
+				fire = 5
+				shock = 3
+				manuever = 1
+				siege = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_5
+			}
+			define_ruler_to_general = {
+				fire = 5
+				shock = 4
+				manuever = 1
+				siege = 1
+			}
+		}
+			add_ruler_modifier = {
+				name = "Sforza_Lifetime"
+				duration = -1
+			}
+	}
+	after = {
+		clr_country_flag = sforza_1
+		clr_country_flag = sforza_2
+		clr_country_flag = sforza_3
+		clr_country_flag = sforza_4
+		clr_country_flag = sforza_5
+	}
 }
 
 # Election!
@@ -542,6 +652,18 @@ country_event = {
 					33 = { set_country_flag = mil_army }
 					33 = { set_country_flag = mil_republic }
 					33 = { set_country_flag = mil_infantry }
+				}
+			}
+			if = {
+				limit = {
+					has_government_attribute = enables_sforza
+				}
+				random_list = {
+					20 = { set_country_flag = sforza_1 }
+					20 = { set_country_flag = sforza_2 }
+					20 = { set_country_flag = sforza_3 }
+					20 = { set_country_flag = sforza_4 }
+					20 = { set_country_flag = sforza_5 }
 				}
 			}
 		}
@@ -799,6 +921,87 @@ country_event = {
 			}
 		}
 	}
+	option = { # dictator #Sforza 
+		name = "EVTOPTG700"
+		trigger = {
+			has_government_attribute = enables_sforza
+		}
+		ai_chance = { factor = 100 }
+		add_republican_tradition = -25
+
+		define_ruler = {
+			mil = 2
+			min_age = 40
+			max_age = 60
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_1
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 3
+				siege = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_2
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 2
+				manuever = 1
+				siege = 3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_3
+			}
+			define_ruler_to_general = {
+				fire = 2
+				shock = 2
+				manuever = 6
+				siege = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_4
+			}
+			define_ruler_to_general = {
+				fire = 5
+				shock = 3
+				manuever = 1
+				siege = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_5
+			}
+			define_ruler_to_general = {
+				fire = 5
+				shock = 4
+				manuever = 1
+				siege = 1
+			}
+		}
+			add_ruler_modifier = {
+				name = "Sforza_Lifetime"
+				duration = -1
+			}
+	}
+	after = {
+		clr_country_flag = sforza_1
+		clr_country_flag = sforza_2
+		clr_country_flag = sforza_3
+		clr_country_flag = sforza_4
+		clr_country_flag = sforza_5
+	}
+	
 }
 
 

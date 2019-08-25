@@ -497,6 +497,7 @@ republic = {
 				sovereignity_reform
 				support_ghibbelline_reform
 				support_guelphs_reform
+				legacy_of_st_ambrose_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -509,6 +510,7 @@ republic = {
 				factional_elections_reform
 				vroedschappen_reform
 				peasant_council_reform
+				captain_and_defender_reform
 			}
 		}
 		military_organisation = {
@@ -543,6 +545,7 @@ republic = {
 				united_indian_companies_reform
 				confederation_of_cantons_reform
 				clergical_administration_reform
+				union_of_italian_states_reform
 			}
 		}
 		parliamentary_vs_presidential = {

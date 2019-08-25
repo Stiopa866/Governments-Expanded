@@ -169,11 +169,11 @@ theocratic_autocracy = {
 	nation_designer_cost = 0
 	modifiers = {
 		administrative_efficiency = 0.05
-		prestige_per_development_from_conversion = 0.20
+		heir_chance = 1.0
 		reform_progress_growth = -0.10
 	}
 	custom_attributes = {
-		enables_expanded_theme_system = yes
+		enables_roman_empire = yes
 	}
 }
 

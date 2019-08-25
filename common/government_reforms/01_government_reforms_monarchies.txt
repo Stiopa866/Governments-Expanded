@@ -1424,6 +1424,7 @@ states_general_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
+		NOT = { has_reform = english_monarchy }
 	}
 
 	trigger = {

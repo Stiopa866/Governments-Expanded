@@ -1,0 +1,131 @@
+namespace = GE_electoral_monarchy
+
+country_event = {
+	id = GE_electoral_monarchy.1
+	title = GE_electoral_monarchy.1.t
+	desc = GE_electoral_monarchy.1.d
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_roman_empire
+		is_lesser_in_union = no
+		NOT = { has_country_flag = royal_diet }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = royal_diet
+		}
+	}
+	
+	option = {
+		name = "GE_electoral_monarchy.1.a"	# Heir Apparent
+		
+		custom_tooltip = born_to_rule_tooltip
+		
+		if = {
+			limit = {
+				adm = 5
+			}
+			add_legitimacy = 5
+		}
+		if = {
+			limit = {
+				dip = 5
+			}
+			add_legitimacy = 5
+		}
+		if = {
+			limit = {
+				mil = 5
+			}
+			add_legitimacy = 5
+		}
+		if = {
+			limit = {
+				NOT = { adm = 2 }
+			}
+			add_legitimacy = -15
+		}
+		if = {
+			limit = {
+				NOT = { dip = 2 }
+			}
+			add_legitimacy = -15
+		}
+		if = {
+			limit = {
+				NOT = { mil = 2 }
+			}
+			add_legitimacy = -15
+		}
+		
+		ai_chance = { factor = 75 }
+		hidden_effect = {
+			clr_country_flag = royal_diet
+		}
+	}
+	
+	option = {
+		name = "GE_electoral_monarchy.1.b"	# A Pretender
+		
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+			hide_skills = yes
+			adm = 2
+			min_age = 40
+			max_age = 60
+			claim = 75
+		}
+		ai_chance = { factor = 25 }
+		hidden_effect = {
+			clr_country_flag = royal_diet
+		}
+	}
+	
+	
+	option = {
+		name = "GE_electoral_monarchy.1.c"	# Challenger to the crown
+		
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+			hide_skills = yes
+			dip = 2
+			min_age = 40
+			max_age = 60
+			claim = 75
+		}
+		ai_chance = { factor = 25 }
+		hidden_effect = {
+			clr_country_flag = royal_diet
+		}
+	}
+	
+	option = {
+		name = "GE_electoral_monarchy.1.e"	# Elect a Local Regent
+	
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+			hide_skills = yes
+			mil = 2
+			min_age = 40
+			max_age = 60
+			claim = 75
+		}
+		ai_chance = { factor = 25 }
+		hidden_effect = {
+			clr_country_flag = royal_diet
+		}
+	}
+	
+}

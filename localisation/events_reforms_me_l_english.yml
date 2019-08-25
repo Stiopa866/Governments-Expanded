@@ -69,7 +69,12 @@
  reform_me_events.88.b: "A Balanced Policy."
  reform_me_events.88.c: "Open doors for everyone and everything."
  
- 
+ GE_electoral_monarchy.1.t: "Roman Elections"
+ GE_electoral_monarchy.1.d: "We wuz Romans"
+ GE_electoral_monarchy.1.a: "The Heir Apparent"
+ GE_electoral_monarchy.1.b: "A Senator, Veteran of statecraft."
+ GE_electoral_monarchy.1.c: "A Bishop, Well respected internationally."
+ GE_electoral_monarchy.1.e: "A General, Hardened in war."
  
  #GE Reform Cycle
  metropolian_bishop_reform.1.t: "Seek First His Kingdom"
@@ -99,7 +104,7 @@
  diplomatic_positions.6.d: "Our nobles exist for the sake of diplomacy, but some are just not cut out for such work. One such individual seems dedicated to doing the worst possible work in his field that he is capable of doing."
  diplomatic_positions.6.a: "The crown will have to apologise personally for such incompetence..."
  diplomatic_positions.6.b: "We cannot admit failure or incompentence; there will be no apology."
- promote_nobles.7.t: "A New House, Noble and Sovreign"
+ promote_nobles.7.t: "A New House, Noble and Sovereign"
  promote_nobles.7.d: "As a new noble house proves itself worth of greater privilege, we will promote them by bestowing those new privileges upon them. For this, they will owe us. How do we wish to collect?" 
  promote_nobles.7.a: "The purpose of the nobility is to provide the nation with capable soldiers." 
  promote_nobles.7.b: "Forgive the debt they owe us; let their loyalty be our reward." 
@@ -272,10 +277,10 @@
  integrate_bankers.40.b: "Make amends with the church."
  
  colonial_gov.41.t: "Overseas Volunteers"
- colonial_gov.41.d: "One of our colonial govenors has been speaking of the homeland so much that it lit a fire in some of the sons of already established colonies. They are experienced scouts and survivalists, hardened by a life on the fronteer."
+ colonial_gov.41.d: "One of our colonial governors has been speaking of the home in such a manner as to light a fire in the sons of already-established colonies. They are experienced scouts and survivalists, hardened by a life on the frontier.""
  colonial_gov.41.a: "Give them permission to settle a new fronteer and continue their family legacy."
  colonial_gov.41.b: "Such strong and proud men will form the backbone of an expeditionary corps."
- colonial_gov.42.c: "Let the Casa de India organize them towards new shores."
+ colonial_gov.41.c: "Let the Casa de India organize them towards new shores."
  
  colonial_gov.42.t: "Missing Shipments"
  colonial_gov.42.d: "It appears that shipments that are organized by a specific govenor seem to have a much higher rate of falling to piracy and bad weather then other ships on the same route."
@@ -339,7 +344,7 @@
  letat.53.a: "Very well."
  letat.53.b: "Maybe we should let up the pressure a bit."
  
- letat.54.t: "Trump Card"
+ letat.54.t: "Local Law"
  letat.54.d: "The Monarch's word seems to oppose local law, which law trumps the other?"
  letat.54.a: "Silly peasants with their barbaric practices."
  letat.54.b: "This is the peoples domain."

@@ -17,8 +17,11 @@
  Adm_2_Tax: "Restructured Taxation"
  Dip_2_Trade: "Trader Privileges"
  Dip_2_Ship: "Encouraged Shipbuilding"
+ Mil_2_Train: "Veteran Trainers"
  Mil_2_Leader: "Noble Cadets"
  Mil_2_Main: "Extra Supplies"
+ 
+ Sforza_Lifetime: "A Lifetime Appointment"
  
  Bad_Admin: "Mediocre Administrative Council"
  Decent_Admin: "Decent Administrative Council"
