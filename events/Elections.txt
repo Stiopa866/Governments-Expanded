@@ -19,7 +19,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { has_government_attribute = enable_factional_elections }
+				limit = { 
+					OR = {
+						has_government_attribute = enable_factional_elections 
+						has_government_attribute = enable_veche_parties
+					}
+				}
 				if = {
 					limit = { has_ruler_flag = adm_ruler }
 					random_list = {
@@ -64,10 +69,12 @@ country_event = {
 				}
 				if = {
 					limit = { 
-						OR = { 
-							NOT = { has_ruler_flag = adm_ruler }
-							NOT = { has_ruler_flag = dip_ruler }
-							NOT = { has_ruler_flag = mil_ruler }
+						NOT = {
+							OR = { 
+								has_ruler_flag = adm_ruler
+								has_ruler_flag = dip_ruler
+								has_ruler_flag = mil_ruler
+							}
 						}
 					}
 					random_list = {
@@ -211,13 +218,13 @@ country_event = {
 				adm_2_dev = {
 					add_ruler_modifier = {
 						name = "Adm_2_Dev"
-						duration = -1
+						duration = 3650
 					}
 				}
 				adm_2_tax = {
 					add_ruler_modifier = {
 						name = "Adm_2_Tax"
-						duration = -1
+						duration = 3650
 					}
 				}
 				adm_2_pope = {
@@ -231,53 +238,110 @@ country_event = {
 				dip_2_trade = {
 					add_ruler_modifier = {
 						name = "Dip_2_Trade"
-						duration = -1
+						duration = 3650
 					}
 				}
 				dip_2_ship = {
 					add_ruler_modifier = {
 						name = "Dip_2_Ship"
-						duration = -1
+						duration = 3650
 					}
 				}
 				mil_2_army = {
-					add_ruler_modifier = {
-						name = "Mil_2_Train"
-						duration = -1
-					}
+					add_army_tradition = 10
 				}
 				mil_2_main = {
 					add_ruler_modifier = {
 						name = "Mil_2_Main"
-						duration = -1
+						duration = 3650
 					}
 				}
 				mil_2_leader = {
 					add_ruler_modifier = {
 						name = "Mil_2_Leader"
-						duration = -1
+						duration = 3650
 					}
 				}
 				rul_2_stab = {
 					add_stability = 1
 				}
 			}
-			clr_ruler_flag = adm_2_dev
-			clr_ruler_flag = adm_2_pope
-			clr_ruler_flag = adm_2_tax
-			clr_ruler_flag = dip_2_merc
-			clr_ruler_flag = dip_2_ship
-			clr_ruler_flag = dip_2_trade
-			clr_ruler_flag = mil_2_army
-			clr_ruler_flag = mil_2_leader
-			clr_ruler_flag = mil_2_main
-			clr_ruler_flag = rul_2_stab
+			
+		}
+		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			trigger_switch = {
+				on_trigger = has_ruler_flag
+				adm_2_dev = {
+					add_ruler_modifier = {
+						name = "VP_Core"
+						duration = 3650
+					}
+				}
+				adm_2_tax = {
+					add_ruler_modifier = {
+						name = "VP_Missionary"
+						duration = 3650
+					}
+				}
+				adm_2_pope = {
+					add_patriarch_authority = 0.05
+				}
+				dip_2_merc = {
+					add_ruler_modifier = {
+						name = "VP_Merchant"
+						duration = 3650
+					}
+				}
+				dip_2_trade = {
+					add_ruler_modifier = {
+						name = "VP_Goods"
+						duration = 3650
+					}
+				}
+				dip_2_ship = {
+					add_ruler_modifier = {
+						name = "VP_Trade_power"
+						duration = 3650
+					}
+				}
+				mil_2_army = {
+					add_ruler_modifier = {
+						name = "VP_Warscore"
+						duration = 3650
+					}
+				}
+				mil_2_main = {
+					add_ruler_modifier = {
+						name = "VP_YOS"
+						duration = 3650
+					}
+				}
+				mil_2_leader = {
+					add_ruler_modifier = {
+						name = "VP_AE"
+						duration = 3650
+					}
+				}
+				rul_2_stab = {
+					add_stability = 1
+				}
+			}
+			
 		}
 	}
 	option = {
 		name = "EVTOPTB700"	# An administrator type
 		ai_chance = { factor = 20 }
 		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			define_ruler = {
+				mil = -1
+				adm = 1
+				dip = -1
+			}
+		}
+		else_if = {
 			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				mil = 1
@@ -327,22 +391,42 @@ country_event = {
 					add_fervor = 20
 				}
 			}
-			set_ruler_flag = adm_ruler
-			clr_country_flag = adm_advisor
-			clr_country_flag = adm_pope
-			clr_country_flag = adm_stabcost
-			clr_country_flag = dip_invest
-			clr_country_flag = dip_trade
-			clr_country_flag = dip_gold
-			clr_country_flag = mil_republic
-			clr_country_flag = mil_infantry
-			clr_country_flag = mil_army
 		}
+		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				adm_advisor = {
+					add_ruler_modifier = {
+						name = "VP_Tax"
+						duration = -1
+					}
+				}
+				adm_stabcost = {
+					add_ruler_modifier = {
+						name = "VP_Pious"
+						duration = -1
+					}
+				}
+				adm_pope = {
+					add_patriarch_authority = 0.05
+				}
+			}
+		}
+		set_ruler_flag = adm_ruler
 	}
 	option = {
 		name = "EVTOPTC700"	# A diplomat
 		ai_chance = { factor = 20 }
 		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			define_ruler = {
+				mil = -1
+				adm = -1
+				dip = 1				
+			}
+		}
+		else_if = {
 			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				dip = 4
@@ -376,8 +460,8 @@ country_event = {
 				on_trigger = has_country_flag
 				dip_trade = {
 					add_ruler_modifier = {
-						name = "-1"
-						duration = 1825
+						name = "Dip_Trade"
+						duration = -1
 					}
 				}
 				dip_gold = {
@@ -385,27 +469,50 @@ country_event = {
 				}
 				dip_invest = {
 					add_ruler_modifier = {
-						name = "-1"
-						duration = 1825
+						name = "Dip_Invest"
+						duration = -1
 					}
 				}
 			}
-			set_ruler_flag = dip_ruler
-			clr_country_flag = adm_advisor
-			clr_country_flag = adm_pope
-			clr_country_flag = adm_stabcost
-			clr_country_flag = dip_invest
-			clr_country_flag = dip_trade
-			clr_country_flag = dip_gold
-			clr_country_flag = mil_republic
-			clr_country_flag = mil_infantry
-			clr_country_flag = mil_army
 		}
+		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				dip_trade = {
+					add_ruler_modifier = {
+						name = "VP_Production"
+						duration = -1
+					}
+				}
+				dip_gold = {
+					add_ruler_modifier = {
+						name = "VP_Trade"
+						duration = -1
+					}
+				}
+				dip_invest = {
+					add_ruler_modifier = {
+						name = "VP_Diprep"
+						duration = -1
+					}
+				}
+			}
+		}
+		set_ruler_flag = dip_ruler
 	}
 	option = {
 		name = "EVTOPTD700"	# A military man
 		ai_chance = { factor = 20 }
 		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			define_ruler = {
+				mil = 1
+				adm = -1
+				dip = -1				
+			}
+		}
+		else_if = {
 			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				mil = 4
@@ -445,22 +552,37 @@ country_event = {
 				}
 				mil_infantry = {
 					add_ruler_modifier = {
-						name = "-1"
-						duration = 1825
+						name = "Mil_Infantry"
+						duration = -1
 					}
 				}
 			}
-			set_ruler_flag = mil_ruler
-			clr_country_flag = adm_advisor
-			clr_country_flag = adm_pope
-			clr_country_flag = adm_stabcost
-			clr_country_flag = dip_invest
-			clr_country_flag = dip_trade
-			clr_country_flag = dip_gold
-			clr_country_flag = mil_republic
-			clr_country_flag = mil_infantry
-			clr_country_flag = mil_army
 		}
+		if = {
+			limit = { has_government_attribute = enable_veche_parties }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				mil_army = {
+					add_ruler_modifier = {
+						name = "VP_Claims"
+						duration = -1
+					}
+				}
+				mil_republic = {
+					add_ruler_modifier = {
+						name = "VP_Boyar"
+						duration = -1
+					}
+				}
+				mil_infantry = {
+					add_ruler_modifier = {
+						name = "VP_Endurance"
+						duration = -1
+					}
+				}
+			}
+		}
+		set_ruler_flag = mil_ruler
 	}
 
 	option = { # Nepotism choice, re-electing within dynasty
@@ -501,12 +623,14 @@ country_event = {
 				influence = 10
 			}				
 		}
-		if = {
-			limit = { has_government_attribute = enable_factional_elections }
-			random_list = {
-				10 = { set_ruler_flag = adm_ruler }
-				10 = { set_ruler_flag = dip_ruler }
-				10 = { set_ruler_flag = mil_ruler }
+		hidden_effect = {
+			if = {
+				limit = { has_government_attribute = enable_factional_elections }
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
 			}
 		}
 	}
@@ -609,6 +733,25 @@ country_event = {
 			}
 	}
 	after = {
+		clr_country_flag = adm_advisor
+		clr_country_flag = adm_pope
+		clr_country_flag = adm_stabcost
+		clr_country_flag = dip_invest
+		clr_country_flag = dip_trade
+		clr_country_flag = dip_gold
+		clr_country_flag = mil_republic
+		clr_country_flag = mil_infantry
+		clr_country_flag = mil_army
+		clr_ruler_flag = adm_2_dev
+		clr_ruler_flag = adm_2_pope
+		clr_ruler_flag = adm_2_tax
+		clr_ruler_flag = dip_2_merc
+		clr_ruler_flag = dip_2_ship
+		clr_ruler_flag = dip_2_trade
+		clr_ruler_flag = mil_2_army
+		clr_ruler_flag = mil_2_leader
+		clr_ruler_flag = mil_2_main
+		clr_ruler_flag = rul_2_stab
 		clr_country_flag = sforza_1
 		clr_country_flag = sforza_2
 		clr_country_flag = sforza_3
