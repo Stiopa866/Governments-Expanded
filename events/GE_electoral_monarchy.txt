@@ -74,12 +74,11 @@ country_event = {
 	}
 	
 	option = {
-		name = "GE_electoral_monarchy.1.b"	# A Pretender
+		name = "GE_electoral_monarchy.1.b"	# Veteran Senator
 		
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			hide_skills = yes
 			adm = 2
 			min_age = 40
 			max_age = 60
@@ -93,12 +92,11 @@ country_event = {
 	
 	
 	option = {
-		name = "GE_electoral_monarchy.1.c"	# Challenger to the crown
+		name = "GE_electoral_monarchy.1.c"	# Experienced Statesman
 		
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			hide_skills = yes
 			dip = 2
 			min_age = 40
 			max_age = 60
@@ -111,12 +109,11 @@ country_event = {
 	}
 	
 	option = {
-		name = "GE_electoral_monarchy.1.e"	# Elect a Local Regent
+		name = "GE_electoral_monarchy.1.e"	# Grizzeled General
 	
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			hide_skills = yes
 			mil = 2
 			min_age = 40
 			max_age = 60
