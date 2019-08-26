@@ -942,6 +942,45 @@ maharajadhiraja_reform = {
 	#Add -5 Noble Influence
 }
 
+empire_of_japan_reform = {
+	icon = shogunate
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = JAP
+			culture_group = japanese_g 
+		}
+	}
+	modifiers = {
+		prestige_decay = -0.01
+	}
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = no
+		heir = no
+		duration = 100
+		has_term_election = yes
+		states_general_mechanic = {
+			GE_shogun = {
+				free_leader_pool = 1
+				army_tradition_decay = -0.005
+				legitimacy = -1
+			}
+			
+			GE_imperials = {
+				yearly_absolutism = 0.1
+				global_autonomy = -0.05
+				legitimacy = 1
+			}
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {

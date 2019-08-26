@@ -70,6 +70,7 @@ monarchy = {
 				edo_empire_reform
 				gorkha_kingdom_reform
 				maharajadhiraja_reform
+				empire_of_japan_reform 
 			}
 		}
 		hereditary_vs_nobility = {

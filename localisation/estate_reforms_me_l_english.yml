@@ -661,10 +661,14 @@
  empowered_enlarge_royal_estate_reform_desc: "Through the enlargement of the royal estates we can check the estates grip on the taxation and employment of the people. And we can free up additional funds and manpower on a local level by expelling non-complicant powers within our own estates."
  empowered_expand_corvee_reform: "Empowered Expand Corvee"
  empowered_expand_corvee_reform_desc: "The Corvee is the feudal system of peasants and serfs working on their local noble or clergical estates in return for being allowed to rent their own farmland. Let us expand the size of the corvee and increase the days worked on the estate lands, this should allow us to improve production, manpower and maintenance on our defensive works."
+ 
  captain_and_defender_reform: "Captain And Defender of Liberty"
  captain_and_defender_reform_desc: "Let us elect a council of captains and defenders of liberty to rule us and guarentee the maintainance of the republic. Also ensure the possibility to invite famous generals to our cause by offering them the head of the council and offering them power in trade for their support and leadership."
  legacy_of_st_ambrose_reform: "Legacy of Saint Ambrose"
  legacy_of_st_ambrose_reform_desc: "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He was the Roman governor of Liguria and Emilia, headquartered in Milan, before being made bishop of Milan by popular acclamation in 374. Ambrose was one of the four original Doctors of the Church, and is the patron saint of Milan."
+ 
+ empire_of_japan_reform: "Japanese Empire"
+ empire_of_japan_reform_desc: " "
  
  
  mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
@@ -842,13 +846,22 @@
  Catholics_MECHANIC_TOOLTIP:0 "Catholics"
  Ultraquists_MECHANIC_TOOLTIP:0 "Ultraquists"
  
+ 
  GE_ultraquists: "Ultraquists"
  GE_ultraquists_influence: "Ultraquist Influence"
  GE_ultraquists_FACTION_DESC: "The Ultraquists are hardline followers of the teachings of Jan Hus, a Catholic Czech Theologian who preached against the decadence of the church. But got betrayed and executed."
  GE_catholics: "Catholics"
  GE_catholics_influence: "Catholic Influence"
  GE_catholics_FACTION_DESC: "The Catholics support the Catholic doctrine set up by the pope and consider him the highest religious figure on earth, and his words as gospel."
- 
+ GE_imperials: "Imperials"
+ GE_imperials_influence: "Imperial Influence"
+ GE_imperials_MECHANIC_TOOLTIP:0 "Imperials"
+ GE_imperials_FACTION_DESC: "FOR THE EMPEROR"
+ GE_shogun: "Shogun"
+ GE_shogun_influence: "Shogun Influence"
+ GE_shogun_MECHANIC_TOOLTIP:0 "Shogun"
+ GE_shogun_FACTION_DESC: "FOR THE WARMASTER"
+  
  reforms_GE_papal_curia_reform_title:1 "Papal Curia"
  reforms_GE_papal_curia_reform_desc:1 "Where there is human intervention, there is error and misjudgment; where there is divine intervention, there is truth and righteousness. Such is the nature of laws that from the flow from the Papal Curia in the Holy See, that they are rightly guided by God's intermediaries and founded in doctrines of piety as opposed to the fallibility of those outside the Holy See."
  reforms_GE_hesse_modernization_title:1 "Modernize Hesse"

@@ -129,3 +129,143 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = GE_electoral_monarchy.2
+	title = GE_electoral_monarchy.2.t
+	desc = GE_electoral_monarchy.2.d	
+	picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_states_general_mechanic = yes
+		has_reform = empire_of_japan_reform
+		OR = {
+			is_lesser_in_union = no
+			is_statists_in_power = yes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				25 = { set_country_flag = shogun_1 }
+				25 = { set_country_flag = shogun_2 }
+				25 = { set_country_flag = shogun_3 }
+				25 = { set_country_flag = shogun_4 }
+			}
+			random_list = {
+				25 = { set_country_flag = imperial_1 }
+				25 = { set_country_flag = imperial_2 }
+				25 = { set_country_flag = imperial_3 }
+				25 = { set_country_flag = imperial_4 }
+			}
+		}
+	}
+	
+	option = {
+		name = GE_electoral_monarchy.2.a
+		define_ruler = {
+			dynasty = "historic_dynasty"
+			mil = 2
+			dip = -1
+		}
+		change_statists_vs_orangists = -0.33
+		trigger_switch = {
+			on_trigger = has_country_flag
+			shogun_1 = {
+				add_ruler_modifier = {
+					name = "Shogun_Drill"
+					duration = -1
+				}
+			}
+			shogun_2 = {
+				add_ruler_modifier = {
+					name = "Shogun_Manpower"
+					duration = -1
+				}
+			}
+			shogun_3 = {
+				add_ruler_modifier = {
+					name = "Shogun_Tradition"
+					duration = -1
+				}
+			}
+			shogun_4 = {
+				add_ruler_modifier = {
+					name = "Shogun_Infantry"
+					duration = -1
+				}
+			}
+		}
+	}
+	option = {
+		name = GE_electoral_monarchy.2.b
+		define_ruler = {
+			dynasty = "Yamato"
+			adm = 1
+			dip = 1
+			mil = -1
+		}
+		change_statists_vs_orangists = 0.33
+		trigger_switch = {
+			on_trigger = has_country_flag
+			imperial_1 = {
+				add_ruler_modifier = {
+					name = "Imperial_Advisors"
+					duration = -1
+				}
+			}
+			imperial_2 = {
+				add_ruler_modifier = {
+					name = "Imperial_Incorruptibility"
+					duration = -1
+				}
+			}
+			imperial_3 = {
+				add_ruler_modifier = {
+					name = "Imperial_Stability"
+					duration = -1
+				}
+			}
+			imperial_4 = {
+				add_ruler_modifier = {
+					name = "Imperial_Modernization"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = GE_electoral_monarchy.2.c
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 1
+			max_random_adm = 4
+			max_random_dip = 4
+			max_random_mil = 4
+			claim = 75
+		}
+		add_prestige = -20
+		add_ruler_modifier = {
+			name = "Council_of_Kyoto"
+			duration = -1
+		}
+	}
+	
+	after = {
+		hidden_effect = {
+			clr_country_flag = shogun_1
+			clr_country_flag = shogun_2
+			clr_country_flag = shogun_3
+			clr_country_flag = shogun_4
+			clr_country_flag = imperial_1
+			clr_country_flag = imperial_2
+			clr_country_flag = imperial_3
+			clr_country_flag = imperial_4
+		}
+	}
+}

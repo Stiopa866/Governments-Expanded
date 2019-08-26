@@ -23,6 +23,18 @@
  
  Sforza_Lifetime: "A Lifetime Appointment"
  
+ #Japan
+ Council_of_Kyoto: "Council of Kyoto"
+ Shogun_Drill: "Professional Training"
+ Shogun_Manpower: "Feudal Allies"
+ Shogun_Tradition: "Traditions of War"
+ Shogun_Infantry: "Trained Guards"
+ Imperial_Advisors: "Imperial Courtiers"
+ Imperial_Incorruptibility: "Loyal Bureaucrats"
+ Imperial_Stability: "Trust of the People"
+ Imperial_Modernization: "Modernization of Japan"
+ 
+ 
  Bad_Admin: "Mediocre Administrative Council"
  Decent_Admin: "Decent Administrative Council"
  Good_Admin: "Superb Administrative Council"

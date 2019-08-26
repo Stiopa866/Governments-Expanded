@@ -75,6 +75,11 @@
  GE_electoral_monarchy.1.b: "A Senator, Veteran of statecraft."
  GE_electoral_monarchy.1.c: "A Bishop, Well respected internationally."
  GE_electoral_monarchy.1.e: "A General, Hardened in war."
+ GE_electoral_monarchy.2.t: "Dawn of a new Era"
+ GE_electoral_monarchy.2.d: "Since the death of our most glorious ruler our court has fallen in disorder, with the imperial and shogunate factions fighting over who gets to claim the imperial power for a lifetime"
+ GE_electoral_monarchy.2.a: "The Shogun, he led us to unification, and shall lead us beyond."
+ GE_electoral_monarchy.2.b: "The Emperor, for he has been chosen by heaven."
+ GE_electoral_monarchy.2.c: "A Council, to prevent conflict between the factions."
  
  #GE Reform Cycle
  metropolian_bishop_reform.1.t: "Seek First His Kingdom"
