@@ -768,7 +768,7 @@
  mechanic_enables_royal_domain_yes: "Royal Domain: §G+10%§! Tax and §G+10%§! Manpower in Royal State provinces."
  mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
  
- mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as captain and defender for a lifetime."
+ mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as Captain and Defender for a lifetime."
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
