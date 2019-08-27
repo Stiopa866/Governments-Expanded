@@ -360,6 +360,16 @@ country_event = {
 			}
 		}
 		if = {
+			limit = {
+				has_government_attribute = enables_princes_of_novogorod
+			}
+			define_advisor = {
+				type = army_organiser 
+				skill = 2
+				cost_multiplier = 0.50
+			}
+		}
+		if = {
 			limit = { 
 				has_faction = mr_guilds 
 			}
@@ -443,6 +453,12 @@ country_event = {
 				mil = 1					
 				fixed = yes
 			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = enables_princes_of_novogorod
+			}
+			create_admiral = { tradition = 50 }
 		}
 		if = {
 			limit = { 
@@ -531,6 +547,12 @@ country_event = {
 			}
 		}
 		if = {
+			limit = {
+				has_government_attribute = enables_princes_of_novogorod
+			}
+			create_general = { tradition = 50 }
+		}
+		if = {
 			limit = { 
 				has_faction = mr_aristocrats 
 			}
@@ -613,6 +635,12 @@ country_event = {
 				max_age = 50
 				name = "lastname"
 			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = enables_princes_of_novogorod
+			}
+			create_general = { tradition = 50 }
 		}
 		if = {
 			limit = { 

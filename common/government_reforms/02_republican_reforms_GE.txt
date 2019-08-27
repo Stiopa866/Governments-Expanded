@@ -73,7 +73,8 @@ russian_republic_republic = {
 	legacy_equivalent = veche_republic_legacy
 	modifiers = {
 		max_states = 5
-		global_unrest = -1
+		global_manpower_modifier = 0.15
+		max_absolutism = -10
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -438,6 +439,26 @@ peasant_council_reform = {
 	}
 }
 
+princes_of_novogorod_reform = {
+	icon = merchant
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = princes_of_novogorod_reform
+			culture_group = east_slavic
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		enables_princes_of_novogorod = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 factional_elections_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
@@ -590,6 +611,24 @@ communal_territories_reform = {
 	modifiers = {
 		years_of_nationalism = -5
 		min_autonomy_in_territories = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+volost_colonies_reform = {
+	icon = merchant
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = volost_colonies_reform
+			culture_group = east_slavic
+		}
+	}
+	modifiers = {
+		production_efficiency = 0.20
+		min_autonomy_in_territories = -0.05
 	}
 	ai = {
 		factor = 100
@@ -755,6 +794,27 @@ stadholder_reform = {
 	}
 	royal_marriage = yes
 	#15nobleinfluence
+	ai = {
+		factor = 100
+	}
+}
+
+council_of_lords_reform = {
+	icon = merchant
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = council_of_lords_reform
+			culture_group = east_slavic
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+		state_maintenance_modifier = -0.15
+	}
+	custom_attributes = {
+		enables_holy_tithe = yes #5% Tax per TOTF over 4
+	}
 	ai = {
 		factor = 100
 	}
