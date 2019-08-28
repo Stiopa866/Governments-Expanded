@@ -4,7 +4,7 @@ country_event = {
 	id = GE_electoral_monarchy.1
 	title = GE_electoral_monarchy.1.t
 	desc = GE_electoral_monarchy.1.d
-	picture = WESTERNISATION_eventPicture
+	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -135,7 +135,7 @@ country_event = {
 		}
 		
 		define_ruler = {
-			dynasty = "historic_dynasty"
+			dynasty = "Palaiologos"
 			mil = 1
 			adm = 1
 			dip = 1

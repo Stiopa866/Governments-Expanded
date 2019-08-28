@@ -464,6 +464,21 @@ Expanded_Corvee = {
 	local_production_efficiency = 0.10
 	local_manpower_modifier = 0.10
 }
+Hansa_Ties_1 = { 
+	republican_tradition = 0.1
+}
+Hansa_Ties_2 = { 
+	republican_tradition = 0.2
+}
+Hansa_Ties_3 = {
+	republican_tradition = 0.3 
+}
+Hansa_Ties_4 = { 
+	republican_tradition = 0.4
+}
+Hansa_Ties_5 = { 
+	republican_tradition = 0.5
+}
 	
 
 #Cortez
@@ -493,7 +508,7 @@ Cortes_Navy = {
 	naval_maintenance_modifier = -0.1
 }
 
-#Factional Elections
+
 Adm_Stabcost = {
 	stability_cost_modifier = -0.15
 }
@@ -523,9 +538,6 @@ Dip_2_Trade = {
 Dip_2_Ship = {
 	global_ship_trade_power = 0.2
 }
-Mil_2_Train = {
-	army_tradition = 0.5
-}
 Mil_2_Main = {
 	land_maintenance_modifier = -0.05
 }
@@ -533,7 +545,6 @@ Mil_2_Leader = {
 	general_cost = -0.2
 }
 
-<<<<<<< HEAD
 
 VP_Tax = {
 	global_tax_modifier = 0.10
@@ -584,8 +595,6 @@ VP_AE = {
 	ae_impact = -0.05
 }
 
-=======
->>>>>>> parent of e700a1a... 3 novogorod toioeoros
 #Milan
 
 Sforza_Lifetime = {

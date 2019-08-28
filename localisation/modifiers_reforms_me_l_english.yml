@@ -21,6 +21,24 @@
  Mil_2_Leader: "Noble Cadets"
  Mil_2_Main: "Extra Supplies"
  
+ #Veche Parties
+ VP_Tax: "Expand Taxation"
+ VP_Pious: "Sunday Service"
+ VP_Production: "Farmer Exceptions"
+ VP_Trade: "Loosen Trade Restrictions"
+ VP_Diprep: "Expand Diplomatic Wing"
+ VP_Claims: "Forge Claims"
+ VP_Boyar: "Boyal Scions"
+ VP_Endurance: "Enduring the Storm"
+ VP_Core: "Expanding the Republic"
+ VP_Missionary: "Enforce the Faith"
+ VP_Merchant: "Support Merchants"
+ VP_Goods: "Production Goals"
+ VP_Trade_power: "Foreign Investors"
+ VP_Warscore: "Boyar Ambitions"
+ VP_YOS: "Abolish Serfdom"
+ VP_AE: "Justify Conflict"
+ 
  Sforza_Lifetime: "A Lifetime Appointment"
  
  #Japan
@@ -196,6 +214,13 @@
  Monastic_Trade: "Mechanic §YMonastic Centres§!"
  Royal_Domain: "Mechanic §YRoyal Domain§!"
  Expanded_Corvee: "Mechanic §YExpanded Corvee§!"
+ Hansa_Ties_1: "Hansa Ties"
+ Hansa_Ties_2: "Hansa Ties"
+ Hansa_Ties_3: "Hansa Ties"
+ Hansa_Ties_4: "Hansa Ties"
+ Hansa_Ties_5: "Hansa Ties"
+ 
+ 
  
  
  

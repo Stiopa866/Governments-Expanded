@@ -3148,9 +3148,9 @@ union_of_italian_states_reform = {
 		culture_group = latin
 	}
 	modifiers = {
-		min_autonomy = 10
+		min_autonomy = 5
 		global_unrest = -2
-		global_spy_defence = 0.1
+		global_spy_defence = 0.20
 	}
 	ai = {
 		factor = 10

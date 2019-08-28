@@ -475,6 +475,7 @@ republic = {
 				american_government
 				genoan_republic_reform
 				old_swiss_confederation_reform
+				russian_republic_republic
 			}
 		}
 		republican_virtues = {
@@ -499,6 +500,7 @@ republic = {
 				support_ghibbelline_reform
 				support_guelphs_reform
 				legacy_of_st_ambrose_reform
+				hanseatic_ties_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -513,9 +515,13 @@ republic = {
 				peasant_council_reform
 				captain_and_defender_reform
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 				princes_of_novogorod_reform
 >>>>>>> parent of 284055b... degrade to check for bugs
+=======
+				
+>>>>>>> parent of e6dc2e7... degrade to check for bugs_2
 			}
 		}
 		military_organisation = {
@@ -538,6 +544,7 @@ republic = {
 				mongol_ties_reform
 				subotai_lessons_reform
 				peasant_militia_reform
+				russian_republic_army_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
