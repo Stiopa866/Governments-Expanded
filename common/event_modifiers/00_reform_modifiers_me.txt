@@ -592,7 +592,7 @@ VP_YOS = {
 	local_years_of_nationalism = -5
 }
 VP_AE = {
-	ae_impact = -0.2
+	ae_impact = -0.05
 }
 
 #Milan

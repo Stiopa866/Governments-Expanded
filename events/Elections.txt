@@ -700,8 +700,12 @@ country_event = {
 
 		define_ruler = {
 			mil = 2
-			min_age = 40
-			max_age = 60
+			min_age = 30
+			max_age = 50
+		}
+		add_ruler_modifier = {
+			name = "Sforza_Lifetime"
+			duration = -1
 		}
 		if = {
 			limit = {
@@ -758,10 +762,6 @@ country_event = {
 				siege = 1
 			}
 		}
-			add_ruler_modifier = {
-				name = "Sforza_Lifetime"
-				duration = -1
-			}
 	}
 	after = {
 		clr_country_flag = adm_advisor
@@ -1105,8 +1105,12 @@ country_event = {
 
 		define_ruler = {
 			mil = 2
-			min_age = 40
-			max_age = 60
+			min_age = 30
+			max_age = 50
+		}
+		add_ruler_modifier = {
+			name = "Sforza_Lifetime"
+			duration = -1
 		}
 		if = {
 			limit = {
@@ -1163,10 +1167,6 @@ country_event = {
 				siege = 1
 			}
 		}
-			add_ruler_modifier = {
-				name = "Sforza_Lifetime"
-				duration = -1
-			}
 	}
 	after = {
 		clr_country_flag = sforza_1
