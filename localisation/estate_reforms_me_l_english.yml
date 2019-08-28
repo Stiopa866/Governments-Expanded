@@ -782,20 +782,10 @@
  mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
  
  mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as Captain and Defender for a lifetime."
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- mechanic_enable_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerful leaders."
+ mechanic_enables_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerful leaders."
  mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have."
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
->>>>>>> parent of 284055b... degrade to check for bugs
-=======
- mechanic_enable_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerfull leaders."
- mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have."
- 
- 
->>>>>>> parent of e6dc2e7... degrade to check for bugs_2
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."

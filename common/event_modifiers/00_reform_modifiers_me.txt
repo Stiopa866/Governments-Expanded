@@ -545,7 +545,7 @@ Mil_2_Leader = {
 	general_cost = -0.2
 }
 
-
+#Russian Republic
 VP_Tax = {
 	global_tax_modifier = 0.10
 }
