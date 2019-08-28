@@ -506,7 +506,7 @@
  support_ghibbelline_reform_desc: "Italy is a chaotic and disunified region, and we weep seeing the constant bloodshed between squabbling city-states. We must aid the Holy Roman Emperor in reining in, and ultimately bringing peace to Italy. Let us join the Ghibelline faction and help bring order and peace to Italy."
  support_guelphs_reform: "Support Guelphs"
  support_guelphs_reform_desc: "There are those who believe that the Emperor has a higher authority than the pope. This is bordering on heresy, and they must realize the folly of their ways. The Guelph faction seeks to drive out the German "Emperor" from our wonderful Italy, and we will rally our merchants and clergymen in their support."
- union_of_italian_states_reform: "Union of Cities"
+ union_of_italian_states_reform: "Union of States"
  union_of_italian_states_reform_desc: "The Italian Politics are dominated by city states and puppet regimes, by granting them some more autonomy we can ensure their loyalty and cooperation. And prevent them from opening the gates to the first rival nation that comes along."
  the_consigliere_reform: "The Consigliere"
  the_consigliere_reform_desc: "A four-man council elected for a three-month term, headed by the 'Duke of the Republic'. thanks to this government form, the head of the state will be more competent, and its direction clearer for our citizens."
@@ -666,6 +666,7 @@
  captain_and_defender_reform_desc: "Let us elect a council of captains and defenders of liberty to rule us and guarentee the maintainance of the republic. Also ensure the possibility to invite famous generals to our cause by offering them the head of the council and offering them power in trade for their support and leadership."
  legacy_of_st_ambrose_reform: "Legacy of Saint Ambrose"
  legacy_of_st_ambrose_reform_desc: "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He was the Roman governor of Liguria and Emilia, headquartered in Milan, before being made bishop of Milan by popular acclamation in 374. Ambrose was one of the four original Doctors of the Church, and is the patron saint of Milan."
+<<<<<<< HEAD
  russian_republic_republic: "Great Russian Republic"
  russian_republic_republic_desc: "With the unification of Russia under Great Novgorod, our Great Kniaz has greatly reduced the bureaucracy limiting his power. We have created an effective but just institution to lead the Russian people to their destiny."
  hanseatic_ties_reform: "Hanseatic Ties"
@@ -679,12 +680,14 @@
  russian_republic_army_reform: "Tysyatskys"
  russian_republic_army_reform_desc: "Leaders of a thousand men each, the tysyatskys are some of the most important leaders of our military. Let us empower these leaders so that they can effectively handle our army and represent the common folk."
  
+=======
+>>>>>>> parent of e700a1a... 3 novogorod toioeoros
  
  empire_of_japan_reform: "Japanese Empire"
  empire_of_japan_reform_desc: "A delicate balance of power and influence, the Japanese Throne has long been torn between the official head of State, the Emperor, and the Shogun. Each side has a different vision for the island, manifesting as the way they approach each obstacle along their reign, often interrupted by neutral councilors, aiming at stabilizing the country."
  
  
- mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
+ mechanic_enable_factional_elections_yes:0 "Enable Factional Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
  mechanic_enables_noble_diplomats_yes:0 "The Noble Estate Interaction Recruit Minister will instead grant §G10%§! Improve relations."
@@ -782,10 +785,6 @@
  mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
  
  mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as Captain and Defender for a lifetime."
- mechanic_enable_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerfull leaders."
- mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have."
- 
- 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
