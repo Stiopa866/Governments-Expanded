@@ -284,7 +284,6 @@ monarchy = {
 				empowered_royal_decree_reform
 				empowered_general_estates_reform
 				empowered_divine_blood_reform
-				empowered_royal_trading_company_reform
 				empowered_monastic_militarism_reform
 				empowered_church_councils_reform
 			}
@@ -301,6 +300,7 @@ monarchy = {
 				empowered_monastic_centres_reform
 				empowered_enlarge_royal_estate_reform
 				empowered_expand_corvee_reform
+				empowered_royal_trading_company_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -512,6 +512,10 @@ republic = {
 				vroedschappen_reform
 				peasant_council_reform
 				captain_and_defender_reform
+<<<<<<< HEAD
+=======
+				princes_of_novogorod_reform
+>>>>>>> parent of 284055b... degrade to check for bugs
 			}
 		}
 		military_organisation = {
@@ -547,6 +551,7 @@ republic = {
 				confederation_of_cantons_reform
 				clergical_administration_reform
 				union_of_italian_states_reform
+				volost_colonies_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -564,6 +569,7 @@ republic = {
 				the_consigliere_reform
 				council_of_petitions_reform
 				hansa_representatives_reform
+				council_of_lords_reform
 			}
 		}
 		consolidation_of_power_category = {

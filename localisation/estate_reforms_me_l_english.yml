@@ -670,15 +670,15 @@
  russian_republic_republic: "Great Russian Republic"
  russian_republic_republic_desc: "With the unification of Russia under Great Novgorod, our Great Kniaz has greatly reduced the bureaucracy limiting his power. We have created an effective but just institution to lead the Russian people to their destiny."
  hanseatic_ties_reform: "Hanseatic Ties"
-<<<<<<< HEAD
  hanseatic_ties_reform_desc: "Novgorod has always had close ties to the Hansa and Neva has always been the port to the west. this has helped us remain strong, stable and rich, Let us strenghten our trade network and increase the peoples belief in the republican way!"
  princes_of_novogorod_reform: "Princes of Novogorod"
  princes_of_novogorod_reform_desc: "Princes of Novogorod Placeholder"
-=======
- hanseatic_ties_reform_desc: "Novgorod has always had close ties to the hansa and Neva has always been the port to the west. this has helped us remain strong, stable and rich, Let us strenghten our trade network and increase the peoples belief in the republican way!"
->>>>>>> parent of 800e7cf... 3 New Russian Republican Reforms
  russian_republic_army_reform: "Tysyatskys"
  russian_republic_army_reform_desc: "Leaders of a thousand men each, the tysyatskys are some of the most important leaders of our military. Let us empower these leaders so that they can effectively handle our army and represent the common folk."
+ volost_colonies_reform: "Volost Colonies"
+ volost_colonies_reform_desc: "Vast lands to the east that were being colonised by Novgorod or just paid tribute to it were divided into volosts."
+ council_of_lords_reform: "Council of Lords"
+ council_of_lords_reform_desc: "The Council of lords was headed by the archbishop of Novogorod and was responsible for both the ordinary executive functions as well as the religious functions in the republic."
  
 =======
 >>>>>>> parent of e700a1a... 3 novogorod toioeoros
@@ -785,6 +785,13 @@
  mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
  
  mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as Captain and Defender for a lifetime."
+<<<<<<< HEAD
+=======
+ mechanic_enable_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerful leaders."
+ mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have."
+ mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
+ 
+>>>>>>> parent of 284055b... degrade to check for bugs
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -898,7 +905,9 @@
  reforms_me_french_reformed_feudalism_desc:1 "By reducing the power of the french nobility and stabilizing our realm, we can finally reduce their privileges and power, no longer will we be bound by their whims!"
  reforms_me_jewish_theocracy_reform_title:1 "A Divine State"
  reforms_me_jewish_theocracy_reform_desc:1 "Let us become a nation ruled through theocratic law, and find the blood of david to rule us once more!"
- 
+ reforms_GE_great_russian_republic_title:1 "Declare the Russian Republic"
+ reforms_GE_great_russian_republic_desc:1 "With the unification of Russia under Great Novgorod, our great Kniaz has greatly reduced the bureaucracy limiting his power. We have created an effective but just institution to lead the Russian people to their destiny."
+
  
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§! influence and loyalty ."
  AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY: "Available due to high §YBurgher§1 influence and loyalty ."
