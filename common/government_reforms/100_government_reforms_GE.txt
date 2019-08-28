@@ -4377,6 +4377,39 @@ empowered_monastic_militarism_reform = {
 	}
 }
 
+empowered_royal_trading_company_reform = {
+	icon = "GE_trader"
+	allow_normal_conversion = yes
+	potential = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Burgher_Influence
+			value = 2
+		}
+		NOT = { has_reform = elective_monarchy_reform }
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence
+			value = 2
+		}
+		check_variable = {
+			which = Burgher_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.10
+		trade_company_investment_cost = -0.25
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 empowered_german_aristocratic_court_reform = {
 	icon = "szlachta_noble_2"
 	allow_normal_conversion = yes
@@ -6262,37 +6295,3 @@ empowered_enlarge_royal_estate_reform = {
 		factor = 10
 	}
 }
-
-empowered_royal_trading_company_reform = {
-	icon = "GE_trader"
-	allow_normal_conversion = yes
-	potential = {
-		check_variable = {
-			which = Royal_Influence
-			value = 2
-		}
-		check_variable = {
-			which = Burgher_Influence
-			value = 2
-		}
-		NOT = { has_reform = elective_monarchy_reform }
-	}
-	trigger = {
-		check_variable = {
-			which = Royal_Influence
-			value = 2
-		}
-		check_variable = {
-			which = Burgher_Influence
-			value = 2
-		}
-	}
-	modifiers = {
-		trade_efficiency = 0.10
-		trade_company_investment_cost = -0.25
-	}
-	ai = {
-		factor = 10
-	}
-}
-
