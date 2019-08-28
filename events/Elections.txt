@@ -323,9 +323,6 @@ country_event = {
 						duration = 3650
 					}
 				}
-				rul_2_stab = {
-					add_stability = 1
-				}
 			}
 			
 		}
@@ -339,6 +336,8 @@ country_event = {
 				mil = -1
 				adm = 1
 				dip = -1
+				min_age = 40
+				max_age = 60
 			}
 		}
 		else_if = {
@@ -433,7 +432,9 @@ country_event = {
 			define_ruler = {
 				mil = -1
 				adm = -1
-				dip = 1				
+				dip = 1			
+				min_age = 40
+				max_age = 60
 			}
 		}
 		else_if = {
@@ -525,7 +526,9 @@ country_event = {
 			define_ruler = {
 				mil = 1
 				adm = -1
-				dip = -1				
+				dip = -1		
+				min_age = 40
+				max_age = 60
 			}
 		}
 		else_if = {

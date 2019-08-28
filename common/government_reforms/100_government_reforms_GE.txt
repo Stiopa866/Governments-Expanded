@@ -3,7 +3,7 @@ feudalism_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = feudal_monarchy
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	modifiers = {
 		vassal_income = 0.25
 		cavalry_cost = -0.05
@@ -16,7 +16,7 @@ elective_monarchy_reform = {
 	icon = "ballot_box"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	election_on_death = yes
 	#has_term_election = yes
 	#duration = 100
@@ -39,7 +39,7 @@ arch_monarchy_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	potential = {
 		OR = {
 			have_had_reform = feudalism_reform
@@ -119,13 +119,9 @@ lithuania_warlord_duke = {
 		}
 	}
 	trigger = {
-		prestige = 75
-		legitimacy = 100
-		papal_influence = 25
-		religion = catholic
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 30
 	modifiers = {
 		years_of_nationalism = -5
 		promote_culture_cost = -0.5
@@ -149,7 +145,7 @@ margrave_reform = {
 		NOT = { total_development = 100 }
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	modifiers = {
 		defensiveness = 0.10
 		global_manpower_modifier = 0.15
@@ -166,7 +162,7 @@ theocratic_autocracy = {
 		}
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 100
 	modifiers = {
 		administrative_efficiency = 0.05
 		heir_chance = 1.0
@@ -233,7 +229,7 @@ crown_of_castille = {
 		has_reform = crown_of_castille
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	modifiers = {
 		diplomatic_upkeep = 1
 	}
@@ -258,7 +254,7 @@ hispanic_kingdom = {
 		has_reform = hispanic_kingdom
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 25
 	modifiers = {
 		tolerance_own = 1
 		max_states = 3
@@ -285,7 +281,7 @@ enlightened_despotism = {
 		absolutism = 50
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 70
 	modifiers = {
 		max_absolutism = 5
 		build_cost = -0.15
@@ -344,7 +340,7 @@ kingdom_of_portugal = {
 		NOT = { is_year = 1481 }
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 20
 	modifiers = {
 		min_autonomy = 10
 		papal_influence = 1.0
@@ -368,7 +364,7 @@ kingdom_of_portugal_and_azures = {
 		is_year = 1481
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 25
 	modifiers = {
 		global_autonomy = -0.025
 		trade_steering = 0.10
@@ -383,13 +379,16 @@ portuguese_empire_reform = {
 	icon = king
 	allow_normal_conversion = yes
 	potential = {
-		tag = POR
+		OR = {
+			tag = POR
+			has_reform = portuguese_empire_reform
+		}
 	}
 	trigger = {
 		has_reform = portuguese_empire_reform
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 60
 	modifiers = {
 		trade_efficiency = 0.10
 		num_accepted_cultures = 2
@@ -408,7 +407,7 @@ consulate_of_the_sea = {
 	icon = GE_trader
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 50
 	potential = {
 		has_reform = consulate_of_the_sea
 	}
@@ -462,7 +461,7 @@ crown_of_saint_wenceslaus_2 = {
 	icon = crown_of_saint_wenceslaus
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 20
 	potential = {
 		OR = {
 			tag = BOH
@@ -482,7 +481,7 @@ office_of_lord_regent_reform = {
 	icon = sten_sture
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 25
 	potential = {
 		OR = {
 			primary_culture = swedish
@@ -544,7 +543,7 @@ arch_duchy_reform = {
 	icon = archduchy
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	potential = {
 		OR = {
 			primary_culture = austrian
@@ -566,7 +565,7 @@ habsburg_monarchy_reform = {
 	icon = habsburg_monarchy
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 35
 	potential = {
 		OR = {
 			primary_culture = austrian
@@ -575,14 +574,18 @@ habsburg_monarchy_reform = {
 	}
 	trigger = {
 		OR = {
-			senior_union_with = BOH
-			owns = 266
+			AND = {
+				OR = {
+					senior_union_with = BOH
+					owns = 266
+				}
+				OR = {
+					senior_union_with = HUN
+					owns = 153
+				}
+			}
+			has_reform = habsburg_monarchy_reform
 		}
-		OR = {
-			senior_union_with = HUN
-			owns = 153
-		}
-		has_reform = habsburg_monarchy_reform
 	}
 	fixed_rank = 2
 	modifiers = {
@@ -591,7 +594,7 @@ habsburg_monarchy_reform = {
 		max_states = 3
 	}
 	custom_attributes = {
-		enables_religious_domination = yes
+		enables_religious_domination = yes #+1 tolerance of the true faith in catholic subjects
 	}
 	ai = {
 		factor = 101
@@ -602,7 +605,7 @@ austrian_empire_reform = {
 	icon = austrian_empire
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 65
 	potential = {
 		OR = {
 			primary_culture = austrian
@@ -610,11 +613,15 @@ austrian_empire_reform = {
 		}
 	}
 	trigger = {
-		absolutism = 50
-		owns = 266
-		owns = 153
-		total_development = 500
-		has_reform = austrian_empire_reform
+		OR = {
+			AND = {
+				absolutism = 50
+				owns = 266
+				owns = 153
+				total_development = 500
+			}
+			has_reform = austrian_empire_reform
+		}
 	}
 	fixed_rank = 3
 	modifiers = {
@@ -635,11 +642,12 @@ polish_constitutionalism_reform = {
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 100
 	potential = {
 		OR = {
 			tag = POL
 			tag = PLC
+			has_reform = polish_constitutionalism_reform
 		}
 	}
 	trigger = {
@@ -663,7 +671,7 @@ granadan_iqta_reform = {
 	icon = granada_iqta
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 50
 	queen = no
 	potential = {
 		OR = {
@@ -698,7 +706,7 @@ hessian_militarized_monarchy_reform = {
 	icon = hesse_monarchy
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 50
 	potential = {
 		OR = {
 			tag = HES
@@ -725,7 +733,7 @@ hessian_modern_militarized_monarchy_reform = {
 	icon = hesse_modern
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 125
 	potential = {
 		OR = {
 			tag = HES
@@ -879,7 +887,7 @@ edo_empire_reform = {
 	icon = tribal_federation
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 40
 	potential = {
 		OR = {
 			has_reform = edo_empire_reform
@@ -901,7 +909,7 @@ gorkha_kingdom_reform = {
 	icon = tribal_federation
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	potential = {
 		OR = {
 			has_reform = gorkha_kingdom_reform
@@ -923,7 +931,7 @@ maharajadhiraja_reform = {
 	icon = tribal_federation
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 20
 	potential = {
 		OR = {
 			has_reform = maharajadhiraja_reform
@@ -946,11 +954,12 @@ empire_of_japan_reform = {
 	icon = shogunate
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 100
 	potential = {
 		OR = {
 			tag = JAP
 			culture_group = japanese_g 
+			has_reform = empire_of_japan_reform
 		}
 	}
 	modifiers = {
@@ -3392,6 +3401,42 @@ newar_and_gorkhali_reform = {
 }
 
 #Tier4
+
+#######
+#Ottoman Reforms By Clavin, NOT PROPERTY OF GE
+#######
+tur_reform_beylerbeys = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		max_states = 5
+	}
+	trigger = {
+		mission_completed = TUR_beylerbeys
+	}
+	potential = {
+		tag = TUR
+		NOT = { mission_completed = TUR_eyalets }
+	}
+}
+
+tur_reform_eyalets = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		max_states = 7
+		state_maintenance_modifier = -0.05
+	}
+	trigger = {
+		mission_completed = TUR_beylerbeys
+	}
+	potential = {
+		tag = TUR
+		mission_completed = TUR_eyalets 
+	}
+}
+#######
+#######
 
 integrate_moneyloaners_reform = {
 	icon = banker

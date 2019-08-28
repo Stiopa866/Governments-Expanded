@@ -8,7 +8,7 @@ american_government = {
 		}
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 10
+	nation_designer_cost = 400
 	modifiers = {
 		yearly_corruption = -0.05
 		global_unrest = -1
@@ -41,7 +41,7 @@ florentine_republic = {
 		}
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 20
 	modifiers = { 
 		trade_efficiency = 0.1
 		build_cost = -0.10
@@ -73,7 +73,7 @@ russian_republic_republic = {
 	legacy_equivalent = veche_republic_legacy
 	modifiers = {
 		max_states = 5
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.20
 		max_absolutism = -10
 	}
 	valid_for_nation_designer = yes
@@ -171,7 +171,7 @@ genoan_republic_reform = {
 		merchants = 1
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 40
+	nation_designer_cost = 50
 	legacy_equivalent = merchant_republic
 	potential = {
 		OR = {
@@ -227,7 +227,7 @@ old_swiss_confederation_reform = {
 		}
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 50
 	modifiers = {
 		republican_tradition = 0.25
 		infantry_cost = -0.10
@@ -316,7 +316,7 @@ hanseatic_ties_reform = {
 		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
-		trade_steering = 0.25
+		ship_power_propagation = 0.1
 	}
 	custom_attributes = {
 		enables_hansa_ties = yes #0.10 RT per republic ally or vassal, cap at 5
@@ -589,7 +589,6 @@ russian_republic_army_reform = {
 		}
 	}
 	modifiers = {
-		manpower_recovery_speed = 0.15
 		army_tradition = 0.5
 		global_unrest = -1
 	}
@@ -810,7 +809,7 @@ council_of_lords_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
-		state_maintenance_modifier = -0.15
+		state_maintenance_modifier = -0.20
 	}
 	custom_attributes = {
 		enables_holy_tithe = yes #5% Tax per TOTF over 4

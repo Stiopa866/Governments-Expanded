@@ -2,7 +2,6 @@ country_decisions = {
 	reforms_me_french_reformed_feudalism = {
 		major = yes
 		potential = {
-			tag = FRA
 			has_reform = french_feudalism
 		}
 		allow = {
@@ -36,7 +35,6 @@ country_decisions = {
 	reforms_me_french_absolutism = {
 		major = yes
 		potential = {
-			tag = FRA
 			has_reform = ancien_regime_reform
 		}
 		allow = {
