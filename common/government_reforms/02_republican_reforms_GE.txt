@@ -316,7 +316,7 @@ hanseatic_ties_reform = {
 		NOT = { has_reform = pirate_republic_reform }
 	}
 	modifiers = {
-		ship_power_propagation = 0.1
+		trade_steering = 0.1
 	}
 	custom_attributes = {
 		enables_hansa_ties = yes #0.10 RT per republic ally or vassal, cap at 5

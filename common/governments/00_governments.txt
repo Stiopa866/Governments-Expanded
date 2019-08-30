@@ -70,7 +70,8 @@ monarchy = {
 				edo_empire_reform
 				gorkha_kingdom_reform
 				maharajadhiraja_reform
-				empire_of_japan_reform 
+				empire_of_japan_reform
+				kingdom_of_jerusalem_reform 
 			}
 		}
 		hereditary_vs_nobility = {
@@ -176,6 +177,7 @@ monarchy = {
 		military_organisation = {
 			reforms = {
 				feudal_levies_reform
+				empowered_heavy_knights_reform
 				national_guard_reform
 				mercenary_corps_reform
 				empowered_mercenary_corps_reform
@@ -514,14 +516,7 @@ republic = {
 				vroedschappen_reform
 				peasant_council_reform
 				captain_and_defender_reform
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 				princes_of_novogorod_reform
->>>>>>> parent of 284055b... degrade to check for bugs
-=======
-				
->>>>>>> parent of e6dc2e7... degrade to check for bugs_2
 			}
 		}
 		military_organisation = {

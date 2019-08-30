@@ -990,6 +990,39 @@ empire_of_japan_reform = {
 	}
 }
 
+kingdom_of_jerusalem_reform = {
+	icon = holy_war
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	has_devotion = yes
+	effect = {
+		add_devotion = 100
+	}
+	potential = {
+		OR = {
+			tag = FRA
+			tag = KOJ
+			has_reform = kingdom_of_jerusalem_reform
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_crusader_order = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			feudal_theocracy_mechanic
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -1876,18 +1909,10 @@ order_of_the_swan_reform = {
 			which = Noble_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Clergy_Influence
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -2316,19 +2341,11 @@ crusader_orders_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-		change_variable = {
 			which = Clergy_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
 		change_variable = {
 			which = Clergy_Influence
 			value = -1
@@ -2712,18 +2729,10 @@ casa_de_contraction_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Royal_Influence 
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Royal_Influence 
 			value = -1
 		}
 	}
@@ -2751,18 +2760,10 @@ casa_de_india_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Royal_Influence 
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Royal_Influence 
 			value = -1
 		}
 	}
@@ -3708,18 +3709,10 @@ colonial_govenors_reform = {
 			which = Burgher_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Burgher_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Royal_Influence
 			value = -1
 		}
 	}
@@ -4040,18 +4033,10 @@ supreme_govenor_reform = {
 			which = Royal_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Clergy_Influence
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -4063,7 +4048,7 @@ supreme_govenor_reform = {
 	}
 	modifiers = {
 		tolerance_heretic = 1
-		expel_minorities_cost = -0.1
+		expel_minorities_cost = -0.15
 	}
 	ai = {
 		factor = 100
@@ -5111,6 +5096,45 @@ feudal_levies_reform = {
 	}
 }
 
+empowered_heavy_knights_reform = {
+	icon = mamluk_army
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = { 
+		has_estate = estate_nobles
+		check_variable = {
+			which = Noble_Influence			
+			value = 2
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence			
+			value = 2
+		}
+	}
+	modifiers = {
+		cavalry_power = 0.15
+		shock_damage = 0.05
+		cavalry_cost = 0.05
+	}
+	ai = {
+		factor = 1
+	}
+	#add 10% Noble Influence
+}
+
 national_guard_reform = {
 	icon = national_guard
 	allow_normal_conversion = yes
@@ -5147,25 +5171,17 @@ mercenary_corps_reform = {
 			which = Royal_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
 		}
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
 	}
 	potential = { 
 	}
 	modifiers = { 
-		reinforce_speed = 0.15
+		reinforce_speed = 0.25
 		merc_maintenance_modifier = -0.25
 	}
 	custom_attributes = {
@@ -5184,18 +5200,10 @@ empowered_mercenary_corps_reform = {
 			which = Royal_Influence
 			value = 1
 		}
-		change_variable = {
-			which = Clergy_Influence
-			value = 1
-		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
-			value = -1
-		}
-		change_variable = {
-			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -5213,7 +5221,7 @@ empowered_mercenary_corps_reform = {
 	}
 	modifiers = { 
 		reinforce_speed = 0.25
-		merc_maintenance_modifier = -0.15
+		merc_maintenance_modifier = -0.25
 	}
 	custom_attributes = {
 		enables_crusader_order = yes #1% ICA per Tolerance
@@ -5337,19 +5345,11 @@ imperial_circles_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
-			value = 1
-		}
-		change_variable = {
 			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
-		change_variable = {
-			which = Noble_Influence
-			value = -1
-		}
 		change_variable = {
 			which = Royal_Influence
 			value = -1
@@ -5379,19 +5379,11 @@ tatar_mercenaries_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-		change_variable = {
 			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
 		change_variable = {
 			which = Royal_Influence
 			value = -1

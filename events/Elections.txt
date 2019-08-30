@@ -658,7 +658,12 @@ country_event = {
 		}
 		hidden_effect = {
 			if = {
-				limit = { has_government_attribute = enable_factional_elections }
+				limit = { 
+					OR = {
+						has_government_attribute = enable_factional_elections 
+						 has_government_attribute = enables_veche_parties 
+					}
+				}
 				random_list = {
 					10 = { set_ruler_flag = adm_ruler }
 					10 = { set_ruler_flag = dip_ruler }
@@ -813,7 +818,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { has_government_attribute = enable_factional_elections }
+				limit = { 
+					OR = {
+						has_government_attribute = enable_factional_elections 
+						has_government_attribute = enables_veche_parties
+					}
+				}
 				random_list = {
 					33 = { set_country_flag = adm_advisor }
 					33 = { set_country_flag = adm_stabcost }
@@ -1142,10 +1152,20 @@ country_event = {
 				influence = 10
 			}				
 		}
-		random_list = {
-			10 = { set_ruler_flag = adm_ruler }
-			10 = { set_ruler_flag = dip_ruler }
-			10 = { set_ruler_flag = mil_ruler }
+		hidden_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_government_attribute = enable_factional_elections 
+						 has_government_attribute = enables_veche_parties 
+					}
+				}
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
+			}
 		}
 	}
 	option = { # Nepotism choice, de'Medici

@@ -661,6 +661,9 @@
  empowered_enlarge_royal_estate_reform_desc: "Through the enlargement of the royal estates we can check the estates grip on the taxation and employment of the people. And we can free up additional funds and manpower on a local level by expelling non-complicant powers within our own estates."
  empowered_expand_corvee_reform: "Empowered Expand Corvee"
  empowered_expand_corvee_reform_desc: "The Corvee is the feudal system of peasants and serfs working on their local noble or clergical estates in return for being allowed to rent their own farmland. Let us expand the size of the corvee and increase the days worked on the estate lands, this should allow us to improve production, manpower and maintenance on our defensive works."
+ empowered_heavy_knights_reform: "Empowered Heavy Knights"
+ empowered_heavy_knights_reform_desc: "With high wages for our elite knights and special privileges for the nobility, we can be sure that we'll always have the bravest noble sons to ride for our armies."
+ 
  
  captain_and_defender_reform: "Captain And Defender of Liberty"
  captain_and_defender_reform_desc: "Let us elect a council of captains and defenders of liberty to rule us and guarentee the maintainance of the republic. Also ensure the possibility to invite famous generals to our cause by offering them the head of the council and offering them power in trade for their support and leadership."
@@ -671,15 +674,14 @@
  hanseatic_ties_reform: "Hanseatic Ties"
  hanseatic_ties_reform_desc: "Novgorod has always had close ties to the Hansa and Neva has always been the port to the west. this has helped us remain strong, stable and rich, Let us strenghten our trade network and increase the peoples belief in the republican way!"
  princes_of_novogorod_reform: "Princes of Novogorod"
- princes_of_novogorod_reform_desc: "Princes of Novogorod Placeholder"
+ princes_of_novogorod_reform_desc: "Since time immemorial, Russia has been ruled by autonomous princes, and Novgorod is no exception, despite our Republican sentiment. We invite princes from neighboring nations to lead and assist in administration, though their power wanes. The revitalization of this system might in fact bolster our governance."
  russian_republic_army_reform: "Tysyatskys"
  russian_republic_army_reform_desc: "Leaders of a thousand men each, the tysyatskys are some of the most important leaders of our military. Let us empower these leaders so that they can effectively handle our army and represent the common folk."
  volost_colonies_reform: "Volost Colonies"
  volost_colonies_reform_desc: "Vast lands to the east that were being colonised by Novgorod or just paid tribute to it were divided into volosts."
  council_of_lords_reform: "Council of Lords"
  council_of_lords_reform_desc: "The Council of lords was headed by the archbishop of Novogorod and was responsible for both the ordinary executive functions as well as the religious functions in the republic."
- 
- 
+
  empire_of_japan_reform: "Japanese Empire"
  empire_of_japan_reform_desc: "A delicate balance of power and influence, the Japanese Throne has long been torn between the official head of State, the Emperor, and the Shogun. Each side has a different vision for the island, manifesting as the way they approach each obstacle along their reign, often interrupted by neutral councilors, aiming at stabilizing the country."
  
@@ -734,7 +736,7 @@
  mechanic_enables_trade_princes_yes: "Trade Princes: §G+1§! Merchant if you control an Aragonese or Catalonian subject."
  mechanic_enables_militant_orders_yes: "Militant Orders: §G+20%§! Manpower Recovery Speed and §G0.5§! Army Tradition while at war with heretics or heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
- mechanic_enables_crusader_order_yes: "Crusader Order: §G+1.5%§! Infantry Combat Ability for each Tolerance of the True Faith."
+ mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces with mosques based on how tolerant you are."
  mechanic_achaemenid_empire_reform_yes: "Persian Tolerance: Accept any culture you control in full."
  mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."

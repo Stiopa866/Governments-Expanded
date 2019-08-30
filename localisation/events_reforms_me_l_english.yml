@@ -72,6 +72,12 @@
  reform_me_events.134.d: "A delicate balance of power and influence, the Japanese Throne has long been torn between the official head of State, the Emperor, and the Shogun. Each side has a different vision for the island, manifesting as the way they approach each obstacle along their reign, often interrupted by neutral councilors, aiming at stabilizing the country."
  reform_me_events.134.a: "I'm a FUCKING WEEB."
  reform_me_events.134.a: "I'm Good."
+ reform_me_events.137.t: "Governments Expanded"
+ reform_me_events.137.d: "Welcome to Governments Expanded. This mod adds over 200 reforms for your gameplay experience. /n /n Events: /n Your choices matter, you might notice some new and special events based on where you take your country with how you reform your country. Enjoy over 100 events to show the consequences of your actions, for better or worse. /n /n Empowered Reforms: /n There are 16 so called "Empowered" reforms that become available based on what kind of court influence you aquire by picking reforms. These Empowered reforms are stronger or have highly unique effects that drastically change your nation based on the type of court influence unlocks them."
+ reform_me_events.137.a: "A"
+ reform_me_events.137.b: "B"
+ reform_me_events.137.c: "C"
+ 
  
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With death of The Basileus all influential people from acorss the empire have gathered to witness the succession. The designated heir is legitimate by Imperial decree, however the army, the senate and the church have each put forward a candidate who they think will serve best interests of the empire."
