@@ -479,6 +479,9 @@ Hansa_Ties_4 = {
 Hansa_Ties_5 = { 
 	republican_tradition = 0.5
 }
+Royal_Army_Garrison = {
+	local_manpower = 0.1
+}
 	
 
 #Cortez

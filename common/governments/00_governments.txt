@@ -177,11 +177,12 @@ monarchy = {
 		military_organisation = {
 			reforms = {
 				feudal_levies_reform
-				empowered_heavy_knights_reform
 				national_guard_reform
 				mercenary_corps_reform
-				empowered_mercenary_corps_reform
 				professional_army_reform
+				empowered_royal_guard_reform
+				empowered_mercenary_corps_reform
+				empowered_heavy_knights_reform
 				italian_mercenaries_reform
 				imperial_circles_reform
 				turkish_iqta_reform
@@ -214,6 +215,7 @@ monarchy = {
 				#expand_the_immortals_reform
 				hessian_elite_jaegers_reform
 				warrior_kings_reform
+				snaphaner_reform
 			}
 		}
 		growth_of_administration = {

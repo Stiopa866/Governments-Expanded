@@ -685,6 +685,11 @@
  empire_of_japan_reform: "Japanese Empire"
  empire_of_japan_reform_desc: "A delicate balance of power and influence, the Japanese Throne has long been torn between the official head of State, the Emperor, and the Shogun. Each side has a different vision for the island, manifesting as the way they approach each obstacle along their reign, often interrupted by neutral councilors, aiming at stabilizing the country."
  
+ empowered_royal_guard_reform: "Royal Army"
+ empowered_royal_guard_reform_desc: "By Centralizing the army upon our monarch we ensure a strong and loyal force, however by cutting out the middle man we're severely weaking the military infrastructure preventing us from fielding as large an army as our rivals."
+ snaphaner_reform: "Employ the Snaphaener"
+ snaphaner_reform_desc: "Snaphanerne (The Quickshots) were the Scanians who refused integration into Sweden when conquered from Denmark. With the noble power broken in this region, let us hire these excellent riflemen and use their fiery spirit of independence for our own Kingdom."
+ 
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -782,6 +787,7 @@
  mechanic_enables_general_guards_yes: "Quality Officer Training: Recruiting generals grants §G25%§! more professionalism."
  mechanic_enables_royal_domain_yes: "Royal Domain: §G+10%§! Tax and §G+10%§! Manpower in Royal State provinces."
  mechanic_enables_corvee_yes: "Corvee: §G+10%§! Production Efficiency and §G+10%§! Manpower in Clergy and Noble Estates."
+ mechanic_enables_royal_army_garrisons_yes: "Royal Army Garrisons: §G+100§! Base Manpower in every Royal State province."
  
  mechanic_enables_sforza_yes: "Captain and Defender: Allows us to elect a condottieri general as Captain and Defender for a lifetime."
  mechanic_enables_veche_parties_yes: "Veche Parties: Enables bribes during Elections and guarentees powerful leaders."
