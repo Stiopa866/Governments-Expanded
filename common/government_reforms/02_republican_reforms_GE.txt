@@ -411,7 +411,7 @@ legacy_of_st_ambrose_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
-		institution_spread_from_true_faith = 0.5
+		innovativeness_gain = 0.5
 	}
 	ai = {
 		factor = 100

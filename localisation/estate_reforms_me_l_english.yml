@@ -663,7 +663,9 @@
  empowered_expand_corvee_reform_desc: "The Corvee is the feudal system of peasants and serfs working on their local noble or clergical estates in return for being allowed to rent their own farmland. Let us expand the size of the corvee and increase the days worked on the estate lands, this should allow us to improve production, manpower and maintenance on our defensive works."
  empowered_heavy_knights_reform: "Empowered Heavy Knights"
  empowered_heavy_knights_reform_desc: "With high wages for our elite knights and special privileges for the nobility, we can be sure that we'll always have the bravest noble sons to ride for our armies."
- 
+ empowered_royal_guard_reform: "Royal Army"
+ empowered_royal_guard_reform_desc: "By Centralizing the army upon our monarch we ensure a strong and loyal force, however by cutting out the middle man we're severely weaking the military infrastructure preventing us from fielding as large an army as our rivals."
+
  
  captain_and_defender_reform: "Captain And Defender of Liberty"
  captain_and_defender_reform_desc: "Let us elect a council of captains and defenders of liberty to rule us and guarentee the maintainance of the republic. Also ensure the possibility to invite famous generals to our cause by offering them the head of the council and offering them power in trade for their support and leadership."
@@ -685,8 +687,6 @@
  empire_of_japan_reform: "Japanese Empire"
  empire_of_japan_reform_desc: "A delicate balance of power and influence, the Japanese Throne has long been torn between the official head of State, the Emperor, and the Shogun. Each side has a different vision for the island, manifesting as the way they approach each obstacle along their reign, often interrupted by neutral councilors, aiming at stabilizing the country."
  
- empowered_royal_guard_reform: "Royal Army"
- empowered_royal_guard_reform_desc: "By Centralizing the army upon our monarch we ensure a strong and loyal force, however by cutting out the middle man we're severely weaking the military infrastructure preventing us from fielding as large an army as our rivals."
  snaphaner_reform: "Employ the Snaphaener"
  snaphaner_reform_desc: "Snaphanerne (The Quickshots) were the Scanians who refused integration into Sweden when conquered from Denmark. With the noble power broken in this region, let us hire these excellent riflemen and use their fiery spirit of independence for our own Kingdom."
  
