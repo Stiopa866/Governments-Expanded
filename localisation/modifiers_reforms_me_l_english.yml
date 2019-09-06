@@ -52,6 +52,12 @@
  Imperial_Stability: "Trust of the People"
  Imperial_Modernization: "Modernization of Japan"
  
+ #Rome
+ Coalition_Popular: "Popular Election"
+ Coalition_Trade: "Cunning Tradesman"
+ Coalition_Piety: "Zealous Patriarch"
+ Coalition_Veteran: "Army Veteran"
+ 
  
  Bad_Admin: "Mediocre Administrative Council"
  Decent_Admin: "Decent Administrative Council"

@@ -505,8 +505,8 @@ vroedschappen_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture  = dutch
-			primary_culture  = flemish
+			primary_culture = dutch
+			primary_culture = flemish
 			has_reform = vroedschappen_reform
 		}
 	}
@@ -525,8 +525,8 @@ reforms_of_william_3_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture  = dutch
-			primary_culture  = flemish
+			primary_culture = dutch
+			primary_culture = flemish
 			has_reform = reforms_of_william_3_reform
 		}
 	}
@@ -639,8 +639,8 @@ united_indian_companies_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture  = dutch
-			primary_culture  = flemish
+			primary_culture = dutch
+			primary_culture = flemish
 			has_reform = united_indian_companies_reform
 		}
 	}

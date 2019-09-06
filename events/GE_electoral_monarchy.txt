@@ -22,104 +22,72 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = royal_diet
+			random_list = {
+				10 = { set_country_flag = coalition_1 }
+				10 = { set_country_flag = coalition_2 }
+				10 = { set_country_flag = coalition_3 }
+				10 = { set_country_flag = coalition_4 }
+			}
 		}
 	}
 	
 	option = {
 		name = "GE_electoral_monarchy.1.a"	# Heir Apparent
 		
-		custom_tooltip = born_to_rule_tooltip
-		
-		if = {
-			limit = {
-				adm = 5
-			}
-			add_legitimacy = 5
-		}
-		if = {
-			limit = {
-				dip = 5
-			}
-			add_legitimacy = 5
-		}
-		if = {
-			limit = {
-				mil = 5
-			}
-			add_legitimacy = 5
-		}
-		if = {
-			limit = {
-				NOT = { adm = 2 }
-			}
-			add_legitimacy = -15
-		}
-		if = {
-			limit = {
-				NOT = { dip = 2 }
-			}
-			add_legitimacy = -15
-		}
-		if = {
-			limit = {
-				NOT = { mil = 2 }
-			}
-			add_legitimacy = -15
+		define_ruler = {
+			dynasty = ROOT
+			claim = 100
 		}
 		
-		ai_chance = { factor = 75 }
+		change_statists_vs_orangists = 0.33
+		
+		ai_chance = { factor = 100 }
 		hidden_effect = {
 			clr_country_flag = royal_diet
 		}
 	}
 	
 	option = {
-		name = "GE_electoral_monarchy.1.b"	# Veteran Senator
+		name = "GE_electoral_monarchy.1.b"	# Coalition Leader
 		
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			adm = 2
 			min_age = 40
 			max_age = 60
 			claim = 75
 		}
-		ai_chance = { factor = 25 }
-		hidden_effect = {
-			clr_country_flag = royal_diet
-		}
-	}
-	
-	
-	option = {
-		name = "GE_electoral_monarchy.1.c"	# Experienced Statesman
+		change_statists_vs_orangists = -0.33
 		
-		define_ruler = {
-			culture = ROOT
-			religion = ROOT
-			dip = 2
-			min_age = 40
-			max_age = 60
-			claim = 75
+		trigger_switch = {
+			on_trigger = has_country_flag
+			coalition_1 = {
+				add_ruler_modifier = {
+					name = "Coalition_Popular" #-1 Unrest
+					duration = -1
+				}
+			}
+			coalition_2 = {
+				add_ruler_modifier = {
+					name = "Coalition_Trade" #10% Trade Efficiency
+					duration = -1
+				}
+			}
+			coalition_3 = {
+				add_ruler_modifier = {
+					name = "Coalition_Piety" #50% Missionary cost
+					duration = -1
+				}
+			}
+			coalition_4 = {
+				add_ruler_modifier = {
+					name = "Coalition_Veteran" #0.5 AT
+					duration = -1
+				}
+			}
 		}
-		ai_chance = { factor = 25 }
-		hidden_effect = {
-			clr_country_flag = royal_diet
-		}
-	}
-	
-	option = {
-		name = "GE_electoral_monarchy.1.e"	# Grizzeled General
-	
-		define_ruler = {
-			culture = ROOT
-			religion = ROOT
-			mil = 2
-			min_age = 40
-			max_age = 60
-			claim = 75
-		}
-		ai_chance = { factor = 25 }
+		
+		ai_chance = { factor = 5 }
 		hidden_effect = {
 			clr_country_flag = royal_diet
 		}
@@ -142,7 +110,8 @@ country_event = {
 			hidden = yes
 			claim = 75
 		}
-		ai_chance = { factor = 25 }
+		change_statists_vs_orangists = 1
+		ai_chance = { factor = 100 }
 		hidden_effect = {
 			clr_country_flag = royal_diet
 		}

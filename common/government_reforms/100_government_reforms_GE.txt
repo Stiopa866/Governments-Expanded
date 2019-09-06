@@ -136,9 +136,6 @@ margrave_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		is_part_of_hre = yes
-		any_neighbor_country = {
-			is_part_of_hre = no
-		}
 		NOT = { total_development = 200 }
 	}
 	trigger = {
@@ -162,11 +159,35 @@ theocratic_autocracy = {
 		}
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 100
+	nation_designer_cost = 200
+	has_parliament = yes
 	modifiers = {
 		administrative_efficiency = 0.05
-		heir_chance = 1.0
-		reform_progress_growth = -0.10
+		max_states = 3
+	}
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = yes
+		heir = no
+		duration = 100
+		has_term_election = yes
+		states_general_mechanic = {
+			Factions = {
+				reform_progress_growth = 0.10
+				yearly_corruption = -0.10
+				legitimacy = -1
+			}
+
+			Imperial = {
+				global_unrest = -1
+				legitimacy = 1
+			}
+		}
 	}
 	custom_attributes = {
 		enables_roman_empire = yes

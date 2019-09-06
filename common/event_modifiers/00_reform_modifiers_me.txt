@@ -633,6 +633,20 @@ Imperial_Modernization = {
 	reform_progress_growth  = 0.10
 }
 
+#Rome
+Coalition_Popular = {
+	global_unrest = -1
+}
+Coalition_Trade = {
+	trade_efficiency = 0.10
+}
+Coalition_Piety = {
+	missionary_maintenance_cost = -0.25
+}
+Coalition_Veteran = {
+	army_tradition = 0.5
+}
+
 #Royal Council
 Bad_Admin = {
 	development_cost = -0.05

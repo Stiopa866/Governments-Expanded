@@ -794,6 +794,8 @@
  mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have."
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
+ mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
+ 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -870,7 +872,8 @@
  
  Catholics_MECHANIC_TOOLTIP:0 "Catholics"
  Ultraquists_MECHANIC_TOOLTIP:0 "Ultraquists"
- 
+ Factions_MECHANIC_TOOLTIP:0 "Factions"
+ Imperial_MECHANIC_TOOLTIP:0 "Imperials"
  
  GE_ultraquists: "Ultraquists"
  GE_ultraquists_influence: "Ultraquist Influence"
