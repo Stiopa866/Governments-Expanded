@@ -5201,6 +5201,7 @@ mercenary_corps_reform = {
 	potential = { 
 	}
 	modifiers = { 
+		loot_amount = 0.50
 		reinforce_speed = 0.25
 		merc_maintenance_modifier = -0.25
 	}
@@ -5240,6 +5241,7 @@ empowered_mercenary_corps_reform = {
 		}
 	}
 	modifiers = { 
+		loot_amount = 0.50
 		reinforce_speed = 0.25
 		merc_maintenance_modifier = -0.25
 	}
@@ -5376,13 +5378,13 @@ turkish_iqta_reform = {
 	effect = {
 		change_variable = {
 			which = Noble_Influence
-			value = -1
+			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
-			value = 1
+			value = -1
 		}
 	}
 	potential = {
