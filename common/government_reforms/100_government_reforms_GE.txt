@@ -979,7 +979,12 @@ empire_of_japan_reform = {
 	potential = {
 		OR = {
 			tag = JAP
-			culture_group = japanese_g 
+			has_reform = empire_of_japan_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = JAP
 			has_reform = empire_of_japan_reform
 		}
 	}
@@ -1130,6 +1135,43 @@ state_church_reform = {
 		tolerance_own = 0.5
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+elevated_landed_gentry_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			religion = confucianism
+			has_reform = elevated_landed_gentry_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = confucianism
+			has_reform = elevated_landed_gentry_reform
+		}
+	}
+	modifiers = {
+		idea_cost = -0.05
+		global_unrest = -1
+		production_efficiency = 0.10
 	}
 	ai = {
 		factor = 10
@@ -2545,6 +2587,45 @@ chhetri_clans_reform = {
 	}
 }
 
+support_samurai_reform = {
+	icon = "samurai"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = japanese_g
+			has_reform = support_samurai_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = japanese_g
+			has_reform = support_samurai_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		drill_gain_modifier = 0.25
+		army_tradition = 0.5
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_noble_privileges = yes # Bonus Manpower from 'demand more troops' Noble Interaction
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -2731,7 +2812,16 @@ kyoho_reforms_reform = {
 		}
 	}
 	potential = {
-		culture_group = japanese
+		OR = {
+			culture_group = japanese_g
+			has_reform = kyoho_reforms_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = japanese_g
+			has_reform = kyoho_reforms_reform
+		}
 	}
 	modifiers = { 
 		global_tax_modifier = 0.10
@@ -3419,6 +3509,78 @@ newar_and_gorkhali_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+imperial_examination_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			religion = confucianism
+			has_reform = imperial_examination_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = confucianism
+			has_reform = imperial_examination_reform
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		yearly_corruption = -0.1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+metsuke_system_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = metsuke_system_reform
+			has_reform = shogunate
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = metsuke_system_reform
+			has_reform = shogunate
+		}
+	}
+	modifiers = {
+		spy_offence = 0.33
+		reduced_liberty_desire = 5
+	}
+	ai = {
+		factor = 10
 	}
 }
 
@@ -4271,6 +4433,42 @@ ottonian_handfeste_reform = {
 		factor = 50
 	}
 	#add 5 influence of each influence
+}
+
+reestablish_the_kuge_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			religion = shinto
+			has_reform = reestablish_the_kuge_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = shinto
+			has_reform = reestablish_the_kuge_reform
+		}
+	}
+	modifiers = {
+		prestige = 1
+		global_unrest = -1
+	}
+	ai = {
+		factor = 10
+	}
 }
 
 #Tier5
@@ -5149,6 +5347,9 @@ empowered_heavy_knights_reform = {
 		shock_damage = 0.05
 		cavalry_cost = 0.05
 	}
+    #custom_attributes = {
+	#	enables_noble_knights = yes
+	#}
 	ai = {
 		factor = 1
 	}
@@ -6135,6 +6336,120 @@ hessian_elite_jaegers_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+wei_suo_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = east_asian
+			has_reform = wei_suo_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = east_asian
+			has_reform = wei_suo_reform
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.10
+		army_tradition = 1
+		land_maintenance_modifier = -0.10
+		discipline = -0.05
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+recruit_ronin_reform = {
+	icon = samurai
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = recruit_ronin_reform
+			culture_group = japanese_g
+			accepted_culture = japanese
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = recruit_ronin_reform
+			culture_group = japanese_g
+			accepted_culture = japanese
+		}
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		merc_maintenance_modifier = -0.10
+		possible_mercenaries = 0.25
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+ashigaru_generals_reform = {
+	icon = daimyo
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = ashigaru_generals_reform
+			culture_group = japanese_g
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = ashigaru_generals_reform
+			culture_group = japanese_g
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		fire_damage_received = -0.05
+		drill_gain_modifier = 0.25
+	}
+	ai = {
+		factor = 10
 	}
 }
 

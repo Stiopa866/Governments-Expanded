@@ -964,6 +964,7 @@ enforce_privileges_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { technology_group = eastern }
+		NOT = { culture_group = japanese_g }
 	}
 	effect = {
 		change_variable = {

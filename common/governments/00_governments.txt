@@ -91,6 +91,7 @@ monarchy = {
 				papal_embassy_reform
 				state_church_reform
 				metropolian_bishop_reform
+				elevated_landed_gentry_reform
 				diplomatic_positions_reform
 				lithuania_law_reform
 				guild_dominance_reform
@@ -126,6 +127,7 @@ monarchy = {
 				franconian_salic_law_reform
 				arch_marshal_reform
 				chhetri_clans_reform
+				support_samurai_reform
 			}
 		}
 		bureaucracy = {
@@ -171,7 +173,8 @@ monarchy = {
 				office_of_vitztum_reform
 				oberhofgericht_reform
 				newar_and_gorkhali_reform
-				
+				metsuke_system_reform
+				imperial_examination_reform
 			}
 		}
 		military_organisation = {
@@ -216,6 +219,9 @@ monarchy = {
 				hessian_elite_jaegers_reform
 				warrior_kings_reform
 				snaphaner_reform
+				recruit_ronin_reform
+				ashigaru_generals_reform
+				wei_suo_reform
 			}
 		}
 		growth_of_administration = {
@@ -253,6 +259,7 @@ monarchy = {
 				#justice_and_truth_reform
 				found_the_rothschilds_reform
 				ottonian_handfeste_reform
+				reestablish_the_kuge_reform
 			}
 		}
 		deliberative_assembly = {

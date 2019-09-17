@@ -686,6 +686,23 @@
 
  empire_of_japan_reform: "Japanese Empire"
  empire_of_japan_reform_desc: "A delicate balance of power and influence, the Japanese Throne has long been torn between the official head of State, the Emperor, and the Shogun. Each side has a different vision for the island, manifesting as the way they approach each obstacle along their reign, often interrupted by neutral councilors, aiming at stabilizing the country."
+ support_samurai_reform: "Support Samurai"
+ support_samurai_reform_desc: "Samurai are hereditary warrior-elites who are disciplined in both the battlefield and the court. While we rule over them as daimyos, their loyalty can be fickle if not rewarded properly. Offering privileges to these hardy men will greatly satisfy them—and guarantee their aid in times of need."
+ metsuke_system_reform: "Metsuke System"
+ metsuke_system_reform_desc: "The power the shogun wields always hangs on a delicate balance, and to maintain it we have to look far and act closely on our fellow countrymen, lest they try to pull something unspeakable to us. We must uphold a system of constant surveillance and intelligence gathering, to always act before the strikes."
+ recruit_ronin_reform: "Recruit Ronin"
+ recruit_ronin_reform_desc: "A samurai who lost his lord learns to serve not people, but money. As long as they live, these hardened fighters will never swear loyalty to any other ruler, choosing instead to risk their lives for survival and a chance to redeem themselves through battle—and to meet their masters with honor.  Let us recruit these brave wanderers into our ranks and give them the fight they deserve." 
+ ashigaru_generals_reform: "Ashigaru Generals"
+ ashigaru_generals_reform_desc: "After many decades of war, the might of one skilled samurai lord, while formidable, paled in comparison in the face of organized armies with matchlock firearms—tanegashimas. Their efficiency lied on their strict formation and ability to stand still in enemy fire range while delivering shots themselves. By accepting these people into our higher ranks, we can bolster the might of our army several times over."
+ reestablish_the_kuge_reform: "Re-establish the Kuge"
+ reestablish_the_kuge_reform_desc: "With the rise of the buke, or warriors who swore loyalty to the shogunate, the kuge were thrown into the shadows. This class of court officials, art patrons and dexterous commoners is especially adept in the know-how of ruling a country. The way of the warrior may be honourable, but a country that knows only war will end in war. Let us reestablish these officers into the Court."
+ 
+ elevated_landed_gentry_reform: "Elevated Landed Gentry"
+ elevated_landed_gentry_reform_desc: "The Superior Man is aware of Righteousness, the Inferior Man is aware of profit. Our empire spans six-thousand li, and it stretches far much more than what the sharpest eyes can see. We require something essential: wisdom and knowledge from every subject to rule effectively. We shall let our Xiangshen, our erudite rural gentry, who are proficient in Confucius’ teaching to enlighten our and care for our countryside."
+ imperial_examination_reform: "Imperial Examination"
+ imperial_examination_reform_desc: "To find talent, one must be prepared to search for it. A national examination can maximize our chances of finding any genius that resides in our court and bring him over. The topics of these exams shall conform to our doctrines and thoughts, so an intellectual spend his entire life serving our monarch is less likely to have dissident thoughts."
+ wei_suo_reform: "Wei-Suo System"
+ wei_suo_reform_desc: "To guarantee proper manpower for its wars, previous dynasties relied on a system where one family member per household was chosen for battles, if that person died, another one would take its place. This came at the cost of low discipline for their troops, but in return, much needed replaceability. When Zhu Yuanzhang formed Ming, he designed a society that everyone could stay in their ancestral careers. This was in hope of a low-cost army of many men who could also fulfill their agricultural duties."
  
  snaphaner_reform: "Employ the Snaphaener"
  snaphaner_reform_desc: "Snaphanerne (The Quickshots) were the Scanians who refused integration into Sweden when conquered from Denmark. With the noble power broken in this region, let us hire these excellent riflemen and use their fiery spirit of independence for our own Kingdom."
@@ -795,6 +812,9 @@
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
  mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
+ #mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G10%§! Shock Damage."
+ 
+ 
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
