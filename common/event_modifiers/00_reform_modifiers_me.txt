@@ -255,34 +255,34 @@ Militant_Orders = {
 	army_tradition = 0.5
 }
 Crusader_Order_1 = {
-	infantry_power = 0.015
+	infantry_power = 0.01
 }
 Crusader_Order_2 = {
-	infantry_power = 0.03
+	infantry_power = 0.02
 }
 Crusader_Order_3 = {
-	infantry_power = 0.045
+	infantry_power = 0.03
 }
 Crusader_Order_4 = {
-	infantry_power = 0.06
+	infantry_power = 0.04
 }
 Crusader_Order_5 = {
-	infantry_power = 0.075
+	infantry_power = 0.05
 }
 Crusader_Order_6 = {
-	infantry_power = 0.09
+	infantry_power = 0.06
 }
 Crusader_Order_7 = {
-	infantry_power = 0.105
+	infantry_power = 0.07
 }
 Crusader_Order_8 = {
-	infantry_power = 0.12
+	infantry_power = 0.08
 }
 Crusader_Order_9 = {
-	infantry_power = 0.135
+	infantry_power = 0.09
 }
 Crusader_Order_10 = {
-	infantry_power = 0.15
+	infantry_power = 0.10
 }
 Satrapy = {
 	local_manpower = 0.10
@@ -303,7 +303,186 @@ City_Of_Valencia = {
 Kingdom_Of_Sicily = {
 	local_tax_modifier = 0.20
 }
-
+Peasant_Council = {
+	candidate_random_bonus = 2
+}
+Local_Bishopric = {
+	local_state_maintenance_modifier = -0.25
+}
+Recognize_No_Crown = {
+	republican_tradition = 0.25
+}
+Deep_Marshes = {
+	local_hostile_attrition = 2
+}
+Return_To_Sender = {
+	trade_value_modifier = 0.25
+}
+United_We_Stand = {
+	global_trade_goods_size_modifier = 0.15
+}
+Farmers_Sons = {
+	local_manpower_modifier = 0.25
+}
+Hansa_Academics_1 = {
+	innovativeness_gain = 0.125
+}
+Hansa_Academics_2 = {
+	innovativeness_gain = 0.250
+}
+Hansa_Academics_3 = {
+	innovativeness_gain = 0.375
+}
+Hansa_Academics_4 = {
+	innovativeness_gain = 0.500
+}
+Military_Industry_1 = {
+	global_trade_goods_size_modifier = 0.02
+}
+Military_Industry_2 = {
+	global_trade_goods_size_modifier = 0.04
+}
+Military_Industry_3 = {
+	global_trade_goods_size_modifier = 0.06
+}
+Military_Industry_4 = {
+	global_trade_goods_size_modifier = 0.08
+}
+Military_Industry_5 = {
+	global_trade_goods_size_modifier = 0.10
+}
+Military_Industry_6 = {
+	global_trade_goods_size_modifier = 0.12
+}
+Military_Industry_7 = {
+	global_trade_goods_size_modifier = 0.14
+}
+Military_Industry_8 = {
+	global_trade_goods_size_modifier = 0.16
+}
+Military_Industry_9 = {
+	global_trade_goods_size_modifier = 0.18
+}
+Military_Industry_10 = {
+	global_trade_goods_size_modifier = 0.20
+}
+Rajput_Law = {
+	local_unrest = -2
+}
+Feudal_Receipts = {
+	global_tax_modifier = 0.25
+}
+Regulated_Leave = {
+	reinforce_speed = 0.15
+	manpower_recovery_speed = 0.10
+}
+French_Court = {
+	prestige = 1
+}
+Officers_Of_The_Sword = {
+	prestige = 1
+}
+Abolished_Noble_Exception = {
+	local_tax_modifier = 0.33
+}
+Promoted_Industry = {
+	trade_goods_size = 0.2
+}
+Home_Market_1 = {
+	trade_efficiency = 0.025
+}
+Home_Market_2 = {
+	trade_efficiency = 0.05
+}
+Home_Market_3 = {
+	trade_efficiency = 0.075
+}
+Home_Market_4 = {
+	trade_efficiency = 0.10
+}
+Home_Market_5 = {
+	trade_efficiency = 0.125
+}
+Home_Market_6 = {
+	trade_efficiency = 0.150
+}
+Home_Market_7 = {
+	trade_efficiency = 0.175
+}
+Home_Market_8 = {
+	trade_efficiency = 0.200
+}
+Home_Market_9 = {
+	trade_efficiency = 0.225
+}
+Home_Market_10 = {
+	trade_efficiency = 0.250
+}
+French_Ordonnance = {
+	global_trade_goods_size_modifier = 0.10
+}
+Economic_Block_1 = {
+	trade_efficiency = 0.025
+}
+Economic_Block_2 = {
+	trade_efficiency = 0.05
+}
+Economic_Block_3 = {
+	trade_efficiency = 0.075
+}
+Economic_Block_4 = {
+	trade_efficiency = 0.1
+}
+Economic_Block_5 = {
+	trade_efficiency = 0.125
+}
+Economic_Block_6 = {
+	trade_efficiency = 0.150
+}
+Foreign_Regiments = {
+	religious_unity = 0.10
+}
+GE_Swiss_Guard = {
+	infantry_power = 0.05
+}
+Rural_Development = {
+	local_manpower = 0.5
+}
+Society_Of_Agriculture = {
+	local_production_efficiency = 0.10
+	trade_value_modifier = 0.10
+}
+Monastic_Trade = {
+	province_trade_power_value = 5
+	tax_income = 1
+}
+Royal_Domain = {
+	local_tax_modifier = 0.10
+	local_manpower_modifier = 0.10
+}
+Expanded_Corvee = {
+	local_production_efficiency = 0.10
+	local_manpower_modifier = 0.10
+}
+Hansa_Ties_1 = { 
+	republican_tradition = 0.1
+}
+Hansa_Ties_2 = { 
+	republican_tradition = 0.2
+}
+Hansa_Ties_3 = {
+	republican_tradition = 0.3 
+}
+Hansa_Ties_4 = { 
+	republican_tradition = 0.4
+}
+Hansa_Ties_5 = { 
+	republican_tradition = 0.5
+}
+Royal_Army_Garrison = {
+	local_manpower = 0.1
+}
+	
 
 #Cortez
 Cortes_Piety = {
@@ -332,7 +511,7 @@ Cortes_Navy = {
 	naval_maintenance_modifier = -0.1
 }
 
-#Factional Elections
+
 Adm_Stabcost = {
 	stability_cost_modifier = -0.15
 }
@@ -367,6 +546,105 @@ Mil_2_Main = {
 }
 Mil_2_Leader = {
 	general_cost = -0.2
+}
+
+#Russian Republic
+VP_Tax = {
+	global_tax_modifier = 0.10
+}
+VP_Pious = {
+	tolerance_own = 1
+}
+VP_Production = {
+	production_efficiency = 0.10
+}
+VP_Trade = {
+	trade_efficiency = 0.05
+}
+VP_Diprep = {
+	diplomatic_reputation = 1
+}
+VP_Claims = {
+	fabricate_claims_cost = -0.15
+}
+VP_Boyar = {
+	mil_advisor_cost = -0.20
+}
+VP_Endurance = {
+	war_exhaustion = -0.025
+}
+VP_Core = {
+	core_creation = -0.10
+}
+VP_Missionary = {
+	global_missionary_strength = 0.01
+}
+VP_Merchant = {
+	placed_merchant_power = 8
+}
+VP_Goods = {
+	global_trade_goods_size_modifier = 0.10
+}
+VP_Trade_power = {
+	global_trade_power = 0.15
+}
+VP_Warscore = {
+	province_warscore_cost = -0.05
+}
+VP_YOS = {
+	local_years_of_nationalism = -5
+}
+VP_AE = {
+	ae_impact = -0.05
+}
+
+#Milan
+
+Sforza_Lifetime = {
+	election_cycle = 100
+}
+
+#Japan
+Council_of_Kyoto = {
+	global_unrest = -2
+}
+Shogun_Drill = {
+	drill_gain_modifier = 0.25
+}
+Shogun_Manpower = {
+	global_manpower_modifier = 0.15
+}
+Shogun_Tradition = {
+	army_tradition = 0.5
+}
+Shogun_Infantry = {
+	infantry_power = 0.05
+}
+Imperial_Advisors = {
+	advisor_cost = -0.10
+}
+Imperial_Incorruptibility = {
+	yearly_corruption = -0.05
+}
+Imperial_Stability = {
+	stability_cost_modifier = -0.15
+}
+Imperial_Modernization = {
+	reform_progress_growth  = 0.10
+}
+
+#Rome
+Coalition_Popular = {
+	global_unrest = -1
+}
+Coalition_Trade = {
+	trade_efficiency = 0.10
+}
+Coalition_Piety = {
+	missionary_maintenance_cost = -0.25
+}
+Coalition_Veteran = {
+	army_tradition = 0.5
 }
 
 #Royal Council

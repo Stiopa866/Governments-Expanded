@@ -5,6 +5,7 @@ parliamentary_reform = {
 	}
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
+		NOT = { has_reform = english_monarchy }
 	}
 	
 	trigger = {

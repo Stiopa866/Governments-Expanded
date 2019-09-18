@@ -57,6 +57,7 @@ papacy_reform = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		enables_swiss_guard = yes #5% ICA if you got a swiss ally or subject
 	}
 }
 
@@ -91,6 +92,7 @@ safeguard_holy_sites_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		prestige = 1
+		prestige_decay = -0.01
 	}
 	ai = {
 		factor = 1

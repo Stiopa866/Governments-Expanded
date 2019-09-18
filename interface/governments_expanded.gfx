@@ -553,6 +553,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//england_henry_8.dds"
 	}
 	spriteType = {
+		name = "government_reform_england_redcoat"
+		texturefile = "gfx//interface//government_reform_icons//england_redcoat.dds"
+	}
+	spriteType = {
 		name = "government_reform_italy_guelph"
 		texturefile = "gfx//interface//government_reform_icons//italy_guelph.dds"
 	}
@@ -588,4 +592,97 @@ spriteTypes = {
 		name = "government_reform_aragon_alfonso"
 		texturefile = "gfx//interface//government_reform_icons//aragon_alfonso.dds"
 	}
+	spriteType = {
+		name = "government_reform_hesse_rothschild"
+		texturefile = "gfx//interface//government_reform_icons//hesse_rothschild.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//hesse_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_jaegers"
+		texturefile = "gfx//interface//government_reform_icons//hesse_jaegers.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_military"
+		texturefile = "gfx//interface//government_reform_icons//hesse_military.dds"
+	}
+	spriteType = {
+		name = "government_reform_hesse_modern"
+		texturefile = "gfx//interface//government_reform_icons//hesse_modern.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_corps_diplomatique"
+		texturefile = "gfx//interface//government_reform_icons//france_corps_diplomatique.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_colonial"
+		texturefile = "gfx//interface//government_reform_icons//france_colonial.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_continental_system"
+		texturefile = "gfx//interface//government_reform_icons//france_continental_system.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_weak_burghers"
+		texturefile = "gfx//interface//government_reform_icons//france_weak_burghers.dds"
+	}
+	spriteType = {
+		name = "government_reform_france_compagnies"
+		texturefile = "gfx//interface//government_reform_icons//france_compagnies.dds"
+	}
+	spriteType = {
+		name = "government_reform_economy_industry"
+		texturefile = "gfx//interface//government_reform_icons//economy_industry.dds"
+	}
+	spriteType = {
+		name = "government_reform_economy_tax"
+		texturefile = "gfx//interface//government_reform_icons//economy_tax.dds"
+	}
+	spriteType = {
+		name = "government_reform_economy_trade"
+		texturefile = "gfx//interface//government_reform_icons//economy_trade.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_louis"
+		texturefile = "gfx//interface//government_reform_icons//french_louis.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_grain"
+		texturefile = "gfx//interface//government_reform_icons//french_grain.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_court"
+		texturefile = "gfx//interface//government_reform_icons//french_court.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_court_2"
+		texturefile = "gfx//interface//government_reform_icons//french_court_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_provinces"
+		texturefile = "gfx//interface//government_reform_icons//french_provinces.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_corvee"
+		texturefile = "gfx//interface//government_reform_icons//empowered_corvee.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_aristocrat_estate"
+		texturefile = "gfx//interface//government_reform_icons//empowered_aristocrat_estate.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_free_trade"
+		texturefile = "gfx//interface//government_reform_icons//empowered_free_trade.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_monastery"
+		texturefile = "gfx//interface//government_reform_icons//empowered_monastery.dds"
+	}
+	spriteType = {
+		name = "government_reform_empowered_royal_estate"
+		texturefile = "gfx//interface//government_reform_icons//empowered_royal_estate.dds"
+	}
 }
+

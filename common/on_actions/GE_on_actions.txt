@@ -19,6 +19,7 @@ on_startup = {
         }
         country_event = { id = missions_expanded_events.1 }
     }
+	country_event = { id = reform_me_events.137 } #set_global_flag = governments_expanded_mod_active
     SWE = {
         set_variable = { swe_num_of_wars_against_non_catholics = 0 }
     }
@@ -56,8 +57,8 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.6
 		100 = GE_reform_cycle.7 #promote_nobles
 		100 = GE_reform_cycle.8
-		150 = GE_reform_cycle_monarchy.201 #NEW #Promote Nobles
-		150 = GE_reform_cycle_monarchy.202
+		100 = GE_reform_cycle_monarchy.201 #NEW #Promote Nobles
+		100 = GE_reform_cycle_monarchy.202
 		100 = GE_reform_cycle.9 #curtail_nobles
 		100 = GE_reform_cycle.10
 		100 = GE_reform_cycle.11 #guild_dominance
@@ -86,8 +87,8 @@ on_five_year_pulse_4 = {
 		#T4
 		100 = GE_reform_cycle.33 #administrative_clergy
 		100 = GE_reform_cycle.34
-		150 = GE_reform_cycle_monarchy.401 #NEW #Administrative Clergy
-		150 = GE_reform_cycle_monarchy.402
+		100 = GE_reform_cycle_monarchy.301 #NEW #Administrative Clergy
+		100 = GE_reform_cycle_monarchy.302
 		100 = GE_reform_cycle.35 #administrative_nobles
 		100 = GE_reform_cycle.36
 		100 = GE_reform_cycle.37 #administrative_civilians
@@ -133,8 +134,8 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.68
 		100 = GE_reform_cycle.69 #Professional_army
 		100 = GE_reform_cycle.70
-		150 = GE_reform_cycle_monarchy.3501
-		250 = GE_reform_cycle_monarchy.3502
+		100 = GE_reform_cycle_monarchy.3501
+		200 = GE_reform_cycle_monarchy.3502
 		#T7
 		
 		#Theocracies
@@ -144,7 +145,7 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.71
 		100 = GE_reform_cycle.72
 		100 = GE_reform_cycle.73
-		100 = GE_reform_cycle.74
+		#100 = GE_reform_cycle.74
 
 		100 = GE_reform_cycle.76 #Monastic_Order
 		100 = GE_reform_cycle.77
@@ -216,12 +217,26 @@ on_diplomatic_annex = {
 	}
 }
 
+on_general_recruited = {
+	if = {
+		limit = {
+			has_government_attribute = enables_general_guards
+		}
+		add_army_professionalism = 0.0125
+	}
+	else = {
+		add_army_professionalism = 0.01
+	}
+}
+
 on_new_term_election = {
 	events = {
 		700		# Election event
 		elections.720		# Dutch Republic
 		pirates.1
 		elections.7001 #GE
+		GE_electoral_monarchy.1
+		GE_electoral_monarchy.2
 	}
 }
 
@@ -246,6 +261,8 @@ on_death_election = {
 		elections.721		# Dutch Republic
 		elections.800	# Lottery election
 		elections.7002 #GE
+		GE_electoral_monarchy.1
+		GE_electoral_monarchy.2
 	}
 }
 
@@ -268,6 +285,7 @@ on_monarch_death = {
 		ME_Spain_Events.8
 		ME_Reform_Events.1
 		reform_me_events.11
+		GE_electoral_monarchy.1
 	}
 	if = {
 		limit = {

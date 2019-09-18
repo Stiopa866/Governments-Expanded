@@ -28,7 +28,7 @@ autocracy_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
-	nation_designer_cost = 0
+	nation_designer_cost = 10
 	modifiers = {
 		unjustified_demands = -0.1
 	}
@@ -275,7 +275,7 @@ celestial_empire = {
 		prestige = 0.5
 	}
 	
-	ai_chance = {
+	ai = {
 		factor = 1000 # should always be picked if available
 	}
 
@@ -964,6 +964,7 @@ enforce_privileges_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { technology_group = eastern }
+		NOT = { culture_group = japanese_g }
 	}
 	effect = {
 		change_variable = {
@@ -1284,16 +1285,16 @@ of_noble_bearing_reform = {
 				culture_group = baltic
 			}
 		}
-		NOT = {
-			has_estate = estate_maratha
-			technology_group = indian
-			NOT = { has_estate = estate_nobles }
-		}
-		NOT = {
-			has_estate = estate_rajput
-			technology_group = indian
-			NOT = { has_estate = estate_nobles }
-		}
+		#NOT = {
+		#	has_estate = estate_maratha
+		#	technology_group = indian
+		#	NOT = { has_estate = estate_nobles }
+		#}
+		#NOT = {
+		#	has_estate = estate_rajput
+		#	technology_group = indian
+		#	NOT = { has_estate = estate_nobles }
+		#}
 	}
 	modifiers = {
 		leader_cost = -0.1
@@ -1424,6 +1425,7 @@ states_general_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = elective_monarchy_reform }
+		NOT = { has_reform = english_monarchy }
 	}
 
 	trigger = {

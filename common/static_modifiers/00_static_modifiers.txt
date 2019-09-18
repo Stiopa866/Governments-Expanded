@@ -570,6 +570,7 @@ positive_stability = {
 	yearly_corruption = -0.02
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
+	reform_progress_growth = 0.0334
 }
 
 privateering = {
@@ -584,6 +585,7 @@ negative_stability = {
 	devotion = 1
 	caravan_power = 0.05
 	monthly_militarized_society = -0.05
+	reform_progress_growth = -0.05
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate

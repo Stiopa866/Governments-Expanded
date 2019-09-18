@@ -134,7 +134,7 @@ ajuraan_theocracy_reform = {
 	custom_attributes = {
 		enables_hereditary_theocracy = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 100
 	}
 }
@@ -154,7 +154,7 @@ dynastic_theocracy_reform = {
 	custom_attributes = {
 		enables_hereditary_theocracy = yes
 	}
-	ai_chance = {
+	ai = {
 		factor = 1
 	}
 }
@@ -170,11 +170,6 @@ fighting_for_israel_reform = {
 	}
 	modifiers = {
 		land_morale = 0.15
-	}
-	effect = {
-		palestine_area = {
-			add_permanent_claim = ROOT
-		}
 	}
 	ai = {
 		factor = 100
@@ -560,6 +555,28 @@ papal_law_reform = {
 
 #TRIBAL
 
+#T1
+
+eghaevbo_administration_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = eghaevbo_administration_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		core_creation = -0.10
+		max_states = 3
+	}
+	ai = {
+		factor = 100
+	}
+	#-10 Noble Influence
+}
+
+
 #T2
 
 great_law_of_peace_reform = {
@@ -581,7 +598,11 @@ royal_society_reform = {
 	icon = kongolese_king
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = kongo_group
+		OR = {
+			has_reform = royal_society_reform
+			culture_group = kongo_group
+			tag = BEN
+		}
 	}
 	modifiers = {
 		global_autonomy = -0.05
@@ -780,6 +801,24 @@ tolerance_of_the_church_reform = {
 	}
 }
 
+children_of_osanobua_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = children_of_osanobua_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		development_cost = -0.10
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #T3.5
 
 traditionalist_reform = {
@@ -790,7 +829,7 @@ traditionalist_reform = {
 	modifiers = {
 		shock_damage = 0.05
 		cavalry_cost = -0.10
-		cav_to_inf_ratio = 0.15
+		cav_to_inf_ratio = 0.10
 	}
 	#+10% Tribe Loyalty
 	ai = {
@@ -1003,6 +1042,24 @@ tatar_raiders_reform = {
 	}
 }
 
+warrior_kings_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = warrior_kings_reform
+			tag = BEN
+		}
+	}
+	modifiers = {
+		leader_land_manuever = 1
+		leader_land_shock = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #T4
 
 unite_the_royal_houses_reform = {
@@ -1031,7 +1088,7 @@ iranian_bureacracy_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 8
+		max_states = 5
 		global_autonomy = -0.025
 	}
 	ai = {

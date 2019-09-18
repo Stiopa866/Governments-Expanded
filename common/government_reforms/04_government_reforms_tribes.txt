@@ -41,7 +41,7 @@ steppe_horde = {
 		movement_speed = 0.2
 		years_of_nationalism = -5
 	}
-	ai_chance = {
+	ai = {
 		factor = 1000
 	}
 }
