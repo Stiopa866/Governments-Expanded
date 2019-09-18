@@ -1,5 +1,5 @@
 name="Governments Expanded"
-path="mod/Governments_Expanded"
+path="mod/Governments_Expanded.zip"
 dependencies={
 	"Missions Expanded"
 	"Beyond Typus 11.5"
