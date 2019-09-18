@@ -1027,7 +1027,6 @@ kingdom_of_jerusalem_reform = {
 	}
 	potential = {
 		OR = {
-			tag = FRA
 			tag = KOJ
 			has_reform = kingdom_of_jerusalem_reform
 		}
@@ -2618,9 +2617,6 @@ support_samurai_reform = {
 			value = -1
 		}
 	}
-	custom_attributes = {
-		enables_noble_privileges = yes # Bonus Manpower from 'demand more troops' Noble Interaction
-	}
 	ai = {
 		factor = 1
 	}
@@ -3708,7 +3704,7 @@ empowered_clergy_in_administration_reform = {
 	}
 	modifiers = {
 		free_adm_policy = 1
-		warscore_cost_vs_other_religion = -0.05
+		warscore_cost_vs_other_religion = -0.10
 		#Extra loyalty
 	}
 	removed_effect = {
@@ -6463,7 +6459,7 @@ strenghten_industry_reform = {
 	modifiers = {
 		global_tax_modifier = -0.05
 		build_cost = -0.1
-		global_trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_industrialism = yes #+0.2 Goods produced in workshops
@@ -6531,7 +6527,6 @@ noble_taxes_reform = {
 	modifiers = {
 		vassal_income = 0.25
 		global_tax_modifier = 0.15
-		advisor_pool = 1
 		min_autonomy_in_territories = -0.10
 	}
 	ai = {

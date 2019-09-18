@@ -9346,10 +9346,10 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = reform_me_events.137.a
-		
-	}
+	#option = {
+	#	name = reform_me_events.137.a
+	#	
+	#}
 	option = {
 		name = reform_me_events.137.b
 		country_event = { 
@@ -9381,12 +9381,12 @@ country_event = {
 			id = reform_me_events.139
 		}
 	}
-	option = {
-		name = reform_me_events.138.b
-		country_event = { 
-			id = reform_me_events.137
-		}
-	}
+	#option = {
+	#	name = reform_me_events.138.b
+	#	country_event = { 
+	#		id = reform_me_events.137
+	#	}
+	#}
 	option = {
 		name = reform_me_events.138.c
 		
@@ -9412,12 +9412,12 @@ country_event = {
 			id = reform_me_events.140
 		}
 	}
-	option = {
-		name = reform_me_events.139.b
-		country_event = { 
-			id = reform_me_events.137
-		}
-	}
+	#option = {
+	#	name = reform_me_events.139.b
+	#	country_event = { 
+	#		id = reform_me_events.137
+	#	}
+	#}
 	option = {
 		name = reform_me_events.139.c
 		
@@ -9436,12 +9436,12 @@ country_event = {
 		days = 1
 	}
 
-	option = {
-		name = reform_me_events.140.b
-		country_event = { 
-			id = reform_me_events.137
-		}
-	}
+	#option = {
+	#	name = reform_me_events.140.b
+	#	country_event = { 
+	#		id = reform_me_events.137
+	#	}
+	#}
 	option = {
 		name = reform_me_events.140.c
 		

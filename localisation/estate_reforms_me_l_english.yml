@@ -706,7 +706,8 @@
  
  snaphaner_reform: "Employ the Snaphaener"
  snaphaner_reform_desc: "Snaphanerne (The Quickshots) were the Scanians who refused integration into Sweden when conquered from Denmark. With the noble power broken in this region, let us hire these excellent riflemen and use their fiery spirit of independence for our own Kingdom."
- 
+ kingdom_of_jerusalem_reform: "Kingdom of Jerusalem"
+ kingdom_of_jerusalem_reform_desc: "The Kingdom of Jerusalem was first established in 1099. Being the most prestigious of the Crusader Bastions, it enjoys the divine favor of the Holy Father as well as inspires the crusaders to go above and beyond in the battlefield. A Bastion of Christianity in the Middle East, the Kingdom often struggled with local neighbors however it often persevered through sheer strength of faith."
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
