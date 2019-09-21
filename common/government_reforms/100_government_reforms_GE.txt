@@ -156,6 +156,7 @@ theocratic_autocracy = {
 		OR = {
 			has_reform = theocratic_autocracy
 			tag = BYZ
+			tag = ROM
 		}
 	}
 	valid_for_nation_designer = yes
