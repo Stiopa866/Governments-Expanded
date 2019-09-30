@@ -72,6 +72,7 @@ monarchy = {
 				maharajadhiraja_reform
 				empire_of_japan_reform
 				kingdom_of_jerusalem_reform 
+				despotate_of_caucasia_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -487,6 +488,7 @@ republic = {
 				genoan_republic_reform
 				old_swiss_confederation_reform
 				russian_republic_republic
+				caucasian_republic
 			}
 		}
 		republican_virtues = {

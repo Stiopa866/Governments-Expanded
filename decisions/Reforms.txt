@@ -59,7 +59,9 @@ country_decisions = {
 			tag = RUS
 		}
 		effect = {
+			change_government = republic
 			add_government_reform = russian_republic_republic
+			add_republican_tradition = 50
 		}
 		ai_will_do = {
 			factor = 0

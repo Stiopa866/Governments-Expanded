@@ -1049,6 +1049,30 @@ kingdom_of_jerusalem_reform = {
 	}
 }
 
+despotate_of_caucasia_reform = {
+	icon = crown
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			culture_group = caucasian
+			has_reform = despotate_of_caucasia_reform
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		land_morale = 0.05
+		culture_conversion_cost = -0.20
+	}
+	custom_attributes = {
+		enables_royal_council = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {

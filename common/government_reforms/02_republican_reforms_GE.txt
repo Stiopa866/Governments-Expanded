@@ -74,7 +74,7 @@ russian_republic_republic = {
 	modifiers = {
 		max_states = 5
 		global_manpower_modifier = 0.20
-		max_absolutism = -10
+		max_absolutism = -30
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -243,6 +243,33 @@ old_swiss_confederation_reform = {
 		factor = 100
 	}
 }
+
+caucasian_republic = {
+	allow_normal_conversion = yes
+	icon = "peasant_republic"
+	potential = {
+		OR = {
+			culture_group = caucasian
+			has_reform = caucasian_republic
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	legacy_equivalent = peasants_republic_legacy
+	modifiers = {
+		num_accepted_cultures = 2
+		global_unrest = -1
+		max_absolutism = -30
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_caucasus_candidates = yes
+	}
+	duration = 7
+}
+
+#T2
 
 independence_reform = {
 	icon = swiss_army

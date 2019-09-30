@@ -330,6 +330,9 @@ country_event = {
 	option = {
 		name = "EVTOPTB700"	# An administrator type
 		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { has_government_attribute = enables_caucasus_candidates }
+		}
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
@@ -429,6 +432,9 @@ country_event = {
 	option = {
 		name = "EVTOPTC700"	# A diplomat
 		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { has_government_attribute = enables_caucasus_candidates }
+		}
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
@@ -523,6 +529,9 @@ country_event = {
 	option = {
 		name = "EVTOPTD700"	# A military man
 		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { has_government_attribute = enables_caucasus_candidates }
+		}
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
@@ -572,7 +581,10 @@ country_event = {
 			trigger_switch = {
 				on_trigger = has_country_flag
 				mil_army = {
-					add_army_tradition = 5
+					add_ruler_modifier = {
+						name = "Mil_Tradition"
+						duration = -1
+					}
 				}
 				mil_republic = {
 					add_republican_tradition = 3
@@ -770,6 +782,184 @@ country_event = {
 			}
 		}
 	}
+
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTH700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 3
+			DIP = 3
+			MIL = 3
+			fixed = yes
+			culture = georgian
+		}
+		add_ruler_modifier = {
+			name = "Georgian_Ruler" #-25% State Maintenance, +1 Diprep
+			duration = -1
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_government_attribute = enable_factional_elections }
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
+			}
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTI700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 2
+			DIP = 5
+			MIL = 2
+			fixed = yes
+			culture = circassian
+		}
+		add_ruler_modifier = {
+			name = "Circassian_Ruler" #25% Improve Relations
+			duration = -1
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				dip_trade = {
+					add_ruler_modifier = {
+						name = "Dip_Trade"
+						duration = -1
+					}
+				}
+				dip_gold = {
+					add_years_of_income = 0.4
+				}
+				dip_invest = {
+					add_ruler_modifier = {
+						name = "Dip_Invest"
+						duration = -1
+					}
+				}
+			}
+			set_ruler_flag = dip_ruler
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTJ700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 2
+			DIP = 2
+			MIL = 5
+			fixed = yes
+			culture = dagestani
+		}
+		add_ruler_modifier = {
+			name = "Dagestani_Ruler" #20% Force Limit
+			duration = -1
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				mil_army = {
+					add_ruler_modifier = {
+						name = "Mil_Tradition"
+						duration = -1
+					}
+				}
+				mil_republic = {
+					add_republican_tradition = 3
+				}
+				mil_infantry = {
+					add_ruler_modifier = {
+						name = "Mil_Infantry"
+						duration = -1
+					}
+				}
+			}
+			set_ruler_flag = mil_ruler
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTK700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 5
+			DIP = 2
+			MIL = 2
+			fixed = yes
+			culture = armenian
+		}
+		if = {
+			limit = { religion_group = christian }
+			add_ruler_modifier = {
+				name = "Armenian_Zealous_Ruler" #+1 Tolerance of the True Faith
+				duration = -1
+			}
+		}
+		if = {
+			limit = { NOT = { religion_group = christian } }
+			add_ruler_modifier = {
+				name = "Armenian_Tolerant_Ruler" #+1 Tolerance of Heretics and Heathens
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				adm_advisor = {
+					add_ruler_modifier = {
+						name = "Adm_Advisor"
+						duration = -1
+					}
+				}
+				adm_stabcost = {
+					add_ruler_modifier = {
+						name = "Adm_Stabcost"
+						duration = -1
+					}
+				}
+				adm_pope = {
+					add_papal_influence = 10
+					add_church_power = 15
+					add_fervor = 20
+				}
+			}
+			set_ruler_flag = adm_ruler
+		}
+	}
+	
 	after = {
 		clr_country_flag = adm_advisor
 		clr_country_flag = adm_pope
@@ -857,6 +1047,9 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB700"	# An administrator type
+		trigger = {
+			NOT = { has_government_attribute = enables_caucasus_candidates }
+		}
 		ai_chance = { factor = 40 }
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
@@ -943,6 +1136,9 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTC700"	# A diplomat
+		trigger = {
+			NOT = { has_government_attribute = enables_caucasus_candidates }
+		}
 		ai_chance = { factor = 30 }
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
@@ -1031,6 +1227,9 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTD700"	# A military man
+		trigger = {
+			NOT = { has_government_attribute = enables_caucasus_candidates }
+		}
 		ai_chance = { factor = 30 }
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
@@ -1074,7 +1273,10 @@ country_event = {
 			trigger_switch = {
 				on_trigger = has_country_flag
 				mil_army = {
-					add_army_tradition = 5
+					add_ruler_modifier = {
+						name = "Mil_Tradition"
+						duration = -1
+					}
 				}
 				mil_republic = {
 					add_republican_tradition = 3
@@ -1265,6 +1467,183 @@ country_event = {
 			}
 		}
 	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTH700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 3
+			DIP = 3
+			MIL = 3
+			fixed = yes
+			culture = georgian
+		}
+		add_ruler_modifier = {
+			name = "Georgian_Ruler" #-25% State Maintenance, +1 Diprep
+			duration = -1
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_government_attribute = enable_factional_elections }
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
+			}
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTI700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 2
+			DIP = 5
+			MIL = 2
+			fixed = yes
+			culture = circassian
+		}
+		add_ruler_modifier = {
+			name = "Circassian_Ruler" #25% Improve Relations
+			duration = -1
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				dip_trade = {
+					add_ruler_modifier = {
+						name = "Dip_Trade"
+						duration = -1
+					}
+				}
+				dip_gold = {
+					add_years_of_income = 0.4
+				}
+				dip_invest = {
+					add_ruler_modifier = {
+						name = "Dip_Invest"
+						duration = -1
+					}
+				}
+			}
+			set_ruler_flag = dip_ruler
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTJ700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 2
+			DIP = 2
+			MIL = 5
+			fixed = yes
+			culture = dagestani
+		}
+		add_ruler_modifier = {
+			name = "Dagestani_Ruler" #20% Force Limit
+			duration = -1
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				mil_army = {
+					add_ruler_modifier = {
+						name = "Mil_Tradition"
+						duration = -1
+					}
+				}
+				mil_republic = {
+					add_republican_tradition = 3
+				}
+				mil_infantry = {
+					add_ruler_modifier = {
+						name = "Mil_Infantry"
+						duration = -1
+					}
+				}
+			}
+			set_ruler_flag = mil_ruler
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTK700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 5
+			DIP = 2
+			MIL = 2
+			fixed = yes
+			culture = armenian
+		}
+		if = {
+			limit = { religion_group = christian }
+			add_ruler_modifier = {
+				name = "Armenian_Zealous_Ruler" #+1 Tolerance of the True Faith
+				duration = -1
+			}
+		}
+		if = {
+			limit = { NOT = { religion_group = christian } }
+			add_ruler_modifier = {
+				name = "Armenian_Tolerant_Ruler" #+1 Tolerance of Heretics and Heathens
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				adm_advisor = {
+					add_ruler_modifier = {
+						name = "Adm_Advisor"
+						duration = -1
+					}
+				}
+				adm_stabcost = {
+					add_ruler_modifier = {
+						name = "Adm_Stabcost"
+						duration = -1
+					}
+				}
+				adm_pope = {
+					add_papal_influence = 10
+					add_church_power = 15
+					add_fervor = 20
+				}
+			}
+			set_ruler_flag = adm_ruler
+		}
+	}
+	
 	after = {
 		clr_country_flag = adm_advisor
 		clr_country_flag = adm_pope

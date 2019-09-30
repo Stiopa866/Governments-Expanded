@@ -1,0 +1,153 @@
+Adm_Stabcost = {
+	stability_cost_modifier = -0.15
+}
+Adm_Advisor = {
+	advisor_cost = -0.10
+}
+Dip_Trade = {
+	trade_efficiency = 0.05
+	global_trade_power = 0.05
+}
+Dip_Invest = {
+	build_cost = -0.1
+	interest = -0.5
+}
+Mil_Infantry = {
+	infantry_cost = -0.05
+}
+Adm_2_Dev = {
+	development_cost = -0.1
+}
+Adm_2_Tax = {
+	global_tax_modifier = 0.10
+}
+Dip_2_Trade = {
+	global_prov_trade_power_modifier = 0.1
+}
+Dip_2_Ship = {
+	global_ship_trade_power = 0.2
+}
+Mil_2_Main = {
+	land_maintenance_modifier = -0.05
+}
+Mil_2_Leader = {
+	general_cost = -0.2
+}
+Mil_Tradition = {
+	army_tradition = 0.5
+}
+
+VP_Tax = {
+	global_tax_modifier = 0.10
+}
+VP_Pious = {
+	tolerance_own = 1
+}
+VP_Production = {
+	production_efficiency = 0.10
+}
+VP_Trade = {
+	trade_efficiency = 0.05
+}
+VP_Diprep = {
+	diplomatic_reputation = 1
+}
+VP_Claims = {
+	fabricate_claims_cost = -0.15
+}
+VP_Boyar = {
+	mil_advisor_cost = -0.20
+}
+VP_Endurance = {
+	war_exhaustion = -0.025
+}
+VP_Core = {
+	core_creation = -0.10
+}
+VP_Missionary = {
+	global_missionary_strength = 0.01
+}
+VP_Merchant = {
+	placed_merchant_power = 8
+}
+VP_Goods = {
+	global_trade_goods_size_modifier = 0.10
+}
+VP_Trade_power = {
+	global_trade_power = 0.15
+}
+VP_Warscore = {
+	province_warscore_cost = -0.05
+}
+VP_YOS = {
+	local_years_of_nationalism = -5
+}
+VP_AE = {
+	ae_impact = -0.05
+}
+
+Sforza_Lifetime = {
+	election_cycle = 100
+}
+
+
+Council_of_Kyoto = {
+	global_unrest = -2
+}
+Shogun_Drill = {
+	drill_gain_modifier = 0.25
+}
+Shogun_Manpower = {
+	global_manpower_modifier = 0.15
+}
+Shogun_Tradition = {
+	army_tradition = 0.5
+}
+Shogun_Infantry = {
+	infantry_power = 0.05
+}
+Imperial_Advisors = {
+	advisor_cost = -0.10
+}
+Imperial_Incorruptibility = {
+	yearly_corruption = -0.05
+}
+Imperial_Stability = {
+	stability_cost_modifier = -0.15
+}
+Imperial_Modernization = {
+	reform_progress_growth  = 0.10
+}
+
+
+Coalition_Popular = {
+	global_unrest = -1
+}
+Coalition_Trade = {
+	trade_efficiency = 0.10
+}
+Coalition_Piety = {
+	missionary_maintenance_cost = -0.25
+}
+Coalition_Veteran = {
+	army_tradition = 0.5
+}
+
+Georgian_Ruler = {
+	state_maintenance_modifier = -0.25
+	diplomatic_reputation = 1
+}
+Circassian_Ruler = {
+	improve_relation_modifier = 0.25
+}
+Dagestani_Ruler = {
+	land_forcelimit_modifier = 0.20
+}
+Armenian_Zealous_Ruler = {
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+}
+Armenian_Tolerant_Ruler = {
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+}

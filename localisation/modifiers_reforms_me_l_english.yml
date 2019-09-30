@@ -13,6 +13,7 @@
  Dip_Trade: "Trader Privileges"
  Dip_Invest: "Building Plans"
  Mil_Infantry: "Volunteers"
+ Mil_Tradition: "Military Experience"
  Adm_2_Dev: "Expanding the Estates"
  Adm_2_Tax: "Restructured Taxation"
  Dip_2_Trade: "Trader Privileges"
@@ -58,6 +59,12 @@
  Coalition_Piety: "Zealous Patriarch"
  Coalition_Veteran: "Army Veteran"
  
+ #Caucasus
+ Georgian_Ruler: "Georgian Heritage"
+ Circassian_Ruler: "Circassian Heritage"
+ Dagestani_Ruler: "Dagestani Heritage"
+ Armenian_Zealous_Ruler: "Armenian Heritage"
+ Armenian_Tolerant_Ruler: "Armenian Heritage"
  
  Bad_Admin: "Mediocre Administrative Council"
  Decent_Admin: "Decent Administrative Council"

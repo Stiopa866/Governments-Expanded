@@ -709,6 +709,27 @@
  kingdom_of_jerusalem_reform: "Kingdom of Jerusalem"
  kingdom_of_jerusalem_reform_desc: "The Kingdom of Jerusalem was first established in 1099. Being the most prestigious of the Crusader Bastions, it enjoys the divine favor of the Holy Father as well as inspires the crusaders to go above and beyond in the battlefield. A Bastion of Christianity in the Middle East, the Kingdom often struggled with local neighbors however it often persevered through sheer strength of faith."
  
+ #1.10
+ caucasian_republic: "Caucasian Federation"
+ caucasian_republic_desc: "After decades of warfare and strife, the ancient lands of Caucasia are united, finally free of political query and combat. The time is nigh to proclaim ourselves as the legitimate rulers of all of Caucasia. We shall form a federation of Caucasian states, allowing regional representation to all subjects."
+ despotate_of_caucasia_reform: "Despotate of Caucasia"
+ despotate_of_caucasia_reform_desc: "After decades of warfare and strife, the ancient lands of Caucasia are united, finally free of political query and combat. The mighty mountains stand tall, yet we hold our heads high, for we have overcome such obstacles. The land is merely our tool for prosperity. The people shall find our rule benevolent, yet quake in fear at our splendorous glory."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
@@ -814,7 +835,7 @@
  
  mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
  #mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G10%§! Shock Damage."
- 
+ mechanic_enables_caucasus_candidates_yes: "Caucasus Republic: Elect a suitable ruler from among the Caucasus peoples."
  
  
  #Edicts
@@ -849,6 +870,10 @@
  EVTOPTF700:1 "Let us elect a scion of the de'Medici family."
  EVTOPTG700:1 "Let us invite a veteran condottieri captain."
  EVTOPTF800f:1 "Let us elect a scion of the de'Medici family."
+ EVTOPTH700:1 "Let us elect a Georgian Statesman"
+ EVTOPTI700:1 "Let us elect a Circassian Diplomat"
+ EVTOPTJ700:1 "Let us elect a Dagestani General"
+ EVTOPTK700:1 "Let us elect a Armenian Bishop"
  CALL_CORTES: "Call Cortez"
  estate_peasants: "Peasants"
  estate_peasants_desc: "The Peasant Estate represents the peasants."

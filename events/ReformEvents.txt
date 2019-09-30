@@ -1344,13 +1344,13 @@ country_event = {
 				hidden = yes
 			}
 		}
-		every_owned_province = {
-			limit = {
-				NOT = { has_estate = estate_nobles }
-				has_province_modifier = Magnate_Law
-            }
-			remove_province_modifier = Magnate_Law
-		}
+		#every_owned_province = {
+		#	limit = {
+		#		NOT = { has_estate = estate_nobles }
+		#		has_province_modifier = Magnate_Law
+        #   }
+		#	remove_province_modifier = Magnate_Law
+		#}
 	}
 	
 	option = {
