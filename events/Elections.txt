@@ -172,6 +172,12 @@ country_event = {
 			}
 		}
 		if = {
+			limit = {
+				has_government_attribute = enables_absolute_reelection
+			}
+			add_absolutism = 2
+		}
+		if = {
 			limit = { 
 				is_tribal = yes
 				government = republic

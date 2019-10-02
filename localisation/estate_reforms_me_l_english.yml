@@ -714,10 +714,18 @@
  caucasian_republic_desc: "After decades of warfare and strife, the ancient lands of Caucasia are united, finally free of political query and combat. The time is nigh to proclaim ourselves as the legitimate rulers of all of Caucasia. We shall form a federation of Caucasian states, allowing regional representation to all subjects."
  despotate_of_caucasia_reform: "Despotate of Caucasia"
  despotate_of_caucasia_reform_desc: "After decades of warfare and strife, the ancient lands of Caucasia are united, finally free of political query and combat. The mighty mountains stand tall, yet we hold our heads high, for we have overcome such obstacles. The land is merely our tool for prosperity. The people shall find our rule benevolent, yet quake in fear at our splendorous glory."
- 
- 
- 
- 
+ empowered_aristocratic_courts_reform: "Empowered Aristocratic Courts"
+ empowered_aristocratic_courts_reform_desc: "The Noble Aristocrats have long dominated local courts in lower regions, often bribing their way into positions of power, by granting them these privileges we will both reduce the corruption on a local level as well as stabilize the courts and their influence."
+ empowered_sovereign_trade_companies_reform: "Empowered Sovereign Trade Companies"
+ empowered_sovereign_trade_companies_reform_desc: "By granting our trade companies charters to own and wage wars on their own we can expand our influence in the indies while not engaging in full on conflicts, instead using our trade companies as proxies to seize lands and trade centers."
+ empowered_consolidation_of_power_reform: "Empowered Consolidation of Power"
+ empowered_consolidation_of_power_reform_desc: "The Long Reign of our rulers means that they have enough time to pass the needed laws and influences to accomplish their goals while in office. And successive elections means their words carry more weight as they represent the will of the people."
+ empowered_principle_of_heritage_reform: "Empowered Principle of Heritage"
+ empowered_principle_of_heritage_reform_desc: "The knights of old dominated the battlefields and saved our republic many times over. Let us Raise them up and guarentee their privileges in exchange for their protection of our most serene republic."
+ empowered_principle_of_profit_reform: "Empowered Principle of Profit"
+ empowered_principle_of_profit_reform_desc: "The merchants are what funds and sustains our republic, we should let them dominate our economic policy so that we enjoy the ease of loans and let the trade flow into our coffers."
+ empowered_principle_of_power_reform: "Empowered Principle of Power"
+ empowered_principle_of_power_reform_desc: "Let us increase the reign of our rulers and smooth over the re-election process. it might cause some unrest among the more republican types among us, but its for the good of stability of the republic."
  
  
  
@@ -834,8 +842,15 @@
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
  mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
- #mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G10%§! Shock Damage."
+ mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G5% Shock Damage§!."
  mechanic_enables_caucasus_candidates_yes: "Caucasus Republic: Elect a suitable ruler from among the Caucasus peoples."
+ mechanic_enables_voc_mentality_yes: "Sovereign Trade Companies: §G+10% Goods Produced§! in Trade Company provinces."
+ mechanic_enables_absolute_reelection_yes: "Absolute Mandate: §G+2 Absolutism§! when you Re-elect a ruler."
+ mechanic_enables_knightly_privileges_yes: "Knightly Privileges: Unlocks 'grant Knightly Privileges' Noble Estate Interaction."
+ mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1 Unrest§! and §G-25% Stability Cost§! untill the end of his reign."
+ 
+ 
+ 
  
  
  #Edicts
@@ -886,6 +901,9 @@
  PLACATE_JUNKERS: "Placate the Junkers"
  PROMOTE_JUNKERS: "Promote Estates"
  JUNKER_ADVISOR: "Recruit Commandant"
+ KNIGHTY_PRIVILEGES: "Privilege Knights"
+ EST_VAL_KNIGHTLY_PRIVILEGES: "Privileged Knights."
+ 
  
  Noble_Influence: "Noble Court Influence"
  Clergy_Influence: "Clergy Court Influence"

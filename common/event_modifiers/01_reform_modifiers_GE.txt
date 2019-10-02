@@ -151,3 +151,18 @@ Armenian_Tolerant_Ruler = {
 	tolerance_heathen = 1
 	tolerance_heretic = 1
 }
+
+GE_noble_knights = {
+	shock_damage = 0.10
+}
+Soverein_Trade_Company = {
+	trade_goods_size_modifier = 0.10
+}
+Knightly_Privileges = {
+	cavalry_power = 0.15
+	cav_to_inf_ratio = 0.25
+}
+Long_Reign = {
+	stability_cost_modifier = -0.25
+	global_unrest = -1
+}

@@ -5365,16 +5365,14 @@ empowered_heavy_knights_reform = {
 	}
 	modifiers = {
 		cavalry_power = 0.15
-		shock_damage = 0.05
 		cavalry_cost = 0.05
 	}
-    #custom_attributes = {
-	#	enables_noble_knights = yes
-	#}
+	custom_attributes = {
+		enables_noble_knights = yes
+	}
 	ai = {
 		factor = 1
 	}
-	#add 10% Noble Influence
 }
 
 national_guard_reform = {

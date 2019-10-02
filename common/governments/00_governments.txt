@@ -591,6 +591,9 @@ republic = {
 				devolution_of_powers_reform
 				confederation_of_states_reform
 				hansa_domination_reform
+				empowered_aristocratic_courts_reform
+				empowered_sovereign_trade_companies_reform
+				empowered_consolidation_of_power_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -599,6 +602,9 @@ republic = {
 				moral_principle_reform
 				tolerant_principle_reform
 				independent_principle_reform
+				empowered_principle_of_heritage_reform
+				empowered_principle_of_profit_reform
+				empowered_principle_of_power_reform
 			}
 		}
 		electorate = {

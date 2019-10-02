@@ -1466,4 +1466,44 @@ estate_nobles =
 			}
 		}
 	}
+	interaction = {
+		name = "KNIGHTY_PRIVILEGES"
+		icon = 13
+		
+		years_between_use = 10
+		
+		potential = {
+			has_government_attribute = enables_knightly_privileges
+			}
+			
+		trigger = {
+		}
+		
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_KNIGHTLY_PRIVILEGES
+				influence = 10
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = "Knightly_Privileges"
+				duration = 3650
+			}
+			add_republican_tradition = -5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				legitimacy = 100
+			}
+			modifier = {
+				factor = 0
+				NOT = { 
+					legitimacy = 95
+				}
+			}
+		}
+	}
 }

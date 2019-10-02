@@ -280,6 +280,18 @@ independence_reform = {
 			primary_culture = swiss
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		war_exhaustion = -0.025
 		manpower_recovery_speed = 0.10
@@ -297,6 +309,18 @@ sovereignity_reform = {
 		OR = {
 			has_reform = sovereignity_reform
 			has_reform = peasants_republic
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -321,6 +345,18 @@ demedici_dynasty_reform = {
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		max_absolutism = 5
 	}
@@ -341,6 +377,18 @@ hanseatic_ties_reform = {
 			culture_group = east_slavic 
 		}
 		NOT = { has_reform = pirate_republic_reform }
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
 	}
 	modifiers = {
 		trade_steering = 0.1
@@ -363,6 +411,18 @@ rule_by_consent_reform = {
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		republican_tradition = 0.5
 		stability_cost_modifier = 0.1
@@ -384,6 +444,18 @@ support_borghese_reform = {
 		NOT = { has_reform = pirate_republic_reform }
 		is_year = 1490
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		republican_tradition = 0.3
 	}
@@ -397,6 +469,18 @@ mixed_republic_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = pirate_republic_reform }
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
 	}
 	modifiers = {
 		reform_progress_growth = 0.15
@@ -415,6 +499,18 @@ moedernegotie_reform = {
 			primary_culture = dutch
 			primary_culture = flemish
 			has_reform = moedernegotie_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -436,6 +532,18 @@ legacy_of_st_ambrose_reform = {
 			has_reform = legacy_of_st_ambrose_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		tolerance_own = 1
 		innovativeness_gain = 0.5
@@ -453,6 +561,18 @@ peasant_council_reform = {
 		OR = {
 			has_reform = peasant_council_reform
 			has_reform = peasants_republic
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -473,6 +593,18 @@ princes_of_novogorod_reform = {
 		OR = {
 			has_reform = princes_of_novogorod_reform
 			culture_group = east_slavic
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -498,6 +630,18 @@ factional_elections_reform = {
 			}
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		republican_tradition = 0.1
 		stability_cost_modifier = 0.15
@@ -519,6 +663,18 @@ captain_and_defender_reform = {
 		merc_maintenance_modifier = -0.15
 		max_absolutism = 5
 	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	custom_attributes = {
 		enables_sforza = yes
 	}
@@ -535,6 +691,18 @@ vroedschappen_reform = {
 			primary_culture = dutch
 			primary_culture = flemish
 			has_reform = vroedschappen_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -557,6 +725,18 @@ reforms_of_william_3_reform = {
 			has_reform = reforms_of_william_3_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		mercenary_discipline = 0.05
 		reinforce_speed = 0.25
@@ -573,6 +753,18 @@ reform_the_condotierri_reform = {
 		OR = {
 			has_reform = reform_the_condotierri_reform
 			primary_culture = swiss
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -592,6 +784,18 @@ peasant_militia_reform = {
 		OR = {
 			has_reform = peasant_militia_reform
 			has_reform = peasants_republic
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -615,6 +819,18 @@ russian_republic_army_reform = {
 			culture_group = east_slavic
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		army_tradition = 0.5
 		global_unrest = -1
@@ -634,6 +850,18 @@ communal_territories_reform = {
 			has_reform = communal_territories_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		years_of_nationalism = -5
 		min_autonomy_in_territories = -0.1
@@ -650,6 +878,18 @@ volost_colonies_reform = {
 		OR = {
 			has_reform = volost_colonies_reform
 			culture_group = east_slavic
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -671,6 +911,18 @@ united_indian_companies_reform = {
 			has_reform = united_indian_companies_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		global_prov_trade_power_modifier = 0.20
 		trade_company_investment_cost = -0.25
@@ -688,6 +940,18 @@ confederation_of_cantons_reform = {
 		OR = {
 			has_reform = confederation_of_cantons_reform
 			primary_culture = swiss
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -709,6 +973,18 @@ clergical_administration_reform = {
 		OR = {
 			has_reform = clergical_administration_reform
 			has_reform = peasants_republic
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -738,6 +1014,18 @@ andrea_doria_constitution_reform = {
 		NOT = { has_reform = frequent_elections_reform }
 		has_reform = rule_by_consent_reform
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		stability_cost_modifier = -0.25
 		max_absolutism = 10
@@ -759,7 +1047,19 @@ the_consigliere_reform = {
 	}
 	trigger = {
 		culture_group = latin
-	}	
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		max_absolutism = 5
 		candidate_random_bonus = 1
@@ -777,7 +1077,19 @@ council_of_petitions_reform = {
 	}
 	trigger = {
 		culture_group = latin
-	}	
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		global_unrest = -2
 		reelection_cost = -0.1
@@ -797,6 +1109,18 @@ ware_vrijheid_reform = {
 			has_reform = ware_vrijheid_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		republican_tradition = 0.25
 		reform_progress_growth = 0.15
@@ -812,6 +1136,18 @@ stadholder_reform = {
 	allow_normal_conversion = yes
 	potential = {}
 	trigger = { 
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
 	}
 	modifiers = {
 		republican_tradition = -0.5
@@ -838,6 +1174,18 @@ council_of_lords_reform = {
 		tolerance_own = 1
 		state_maintenance_modifier = -0.20
 	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	custom_attributes = {
 		enables_holy_tithe = yes #5% Tax per TOTF over 4
 	}
@@ -858,6 +1206,18 @@ hansa_representatives_reform = {
 	modifiers = {
 		global_prov_trade_power_modifier = 0.15
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	custom_attributes = {
 		enables_return_to_sender = yes #25% Trade Value in coastal burgher provinces
 	}
@@ -865,6 +1225,8 @@ hansa_representatives_reform = {
 		factor = 100
 	}
 }
+
+#T6
 
 confederation_of_states_reform = {
 	icon = confederation_of_states
@@ -905,6 +1267,93 @@ hansa_domination_reform = {
 	}
 }
 
+empowered_aristocratic_courts_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = { 
+		has_estate = estate_nobles
+		check_variable = {
+			which = Noble_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		yearly_corruption = -0.10
+	}
+	custom_attributes = {
+		enables_magnate_law = yes
+		enables_aristocratic_idea_group = yes
+		enables_plutocratic_idea_group = no
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+empowered_sovereign_trade_companies_reform = {
+	icon = colonial_rule
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Burgher_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Burgher_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		max_absolutism = -5
+		trade_company_investment_cost = -0.10
+		ae_impact = -0.10
+	}
+	custom_attributes = {
+		enables_voc_mentality = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+empowered_consolidation_of_power_reform = {
+	icon = imperial_inquisition
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Royal_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		global_autonomy = -0.05
+	}
+	custom_attributes = {
+		enables_absolute_reelection = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+
+#T7
+
 tolerant_principle_reform = {
 	icon = dutch_tolerance
 	allow_normal_conversion = yes
@@ -943,6 +1392,91 @@ independent_principle_reform = {
 		factor = 100
 	}
 }
+
+empowered_principle_of_heritage_reform = {
+	icon = soldiers_2
+	allow_normal_conversion = yes
+	potential = {
+		has_estate = estate_nobles
+		check_variable = {
+			which = Noble_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Noble_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		free_mil_policy = 1
+	}
+	custom_attributes = {
+		enables_knightly_privileges = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+empowered_principle_of_profit_reform = {
+	icon = economy_trade
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Burgher_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Burgher_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		interest = -1
+		trade_steering = 0.25
+	}
+	custom_attributes = {
+		enables_home_market = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+empowered_principle_of_power_reform = {
+	icon = french_louis
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Royal_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Royal_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		election_cycle = 1
+		reelection_cost = -0.25
+		republican_tradition = -0.1
+	}
+	custom_attributes = {
+		enables_long_reign = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+
+#T8
 
 regents_reform = {
 	icon = regents

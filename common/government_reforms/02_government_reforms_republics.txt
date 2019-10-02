@@ -746,6 +746,18 @@ republican_authoritarianism_reform = {
 			has_reform = pirate_republic_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		global_unrest = -1
 		harsh_treatment_cost = -0.10
@@ -761,6 +773,18 @@ nepotism_reform = {
 	potential = {
 		NOT = {
 			has_reform = pirate_republic_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -782,6 +806,18 @@ republicanism_reform = {
 		NOT = {
 			has_reform = pirate_republic_reform
 			culture_group = latin
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
 		}
 	}
 	modifiers = {
@@ -853,6 +889,18 @@ frequent_elections_reform = {
 			has_reform = lottery_reform
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		max_absolutism = -10
 		election_cycle = -1
@@ -865,6 +913,18 @@ frequent_elections_reform = {
 consolidation_of_power_reform = {
 	icon = "constitution"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		max_absolutism = 10
 		election_cycle = 1
@@ -882,6 +942,18 @@ lottery_reform = {
 	}
 	trigger = {
 		NOT = { has_reform = venice_merchants_reform }
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
 	}
 	modifiers = {
 		yearly_corruption = -0.1
@@ -901,6 +973,18 @@ lottery_reform = {
 provincial_governments_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		state_maintenance_modifier = -0.25
 		development_cost = -0.05
@@ -916,6 +1000,18 @@ provincial_governments_reform = {
 administrative_divisions_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		max_states = 5
 	}
@@ -931,6 +1027,18 @@ administrative_divisions_reform = {
 union_of_states_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		global_trade_power = 0.1
 		merchants = 1
@@ -947,6 +1055,18 @@ union_of_states_reform = {
 presidential_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		embracement_cost = -0.1
 	}
@@ -1049,6 +1169,7 @@ political_principle_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
 	modifiers = {
+		free_adm_policy = 1
 		possible_adm_policy = 1
 	}
 	ai = {
@@ -1060,6 +1181,7 @@ moral_principle_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
 	modifiers = {
+		free_dip_policy = 1
 		possible_dip_policy = 1
 	}
 	ai = {
