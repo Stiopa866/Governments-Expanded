@@ -166,3 +166,15 @@ Long_Reign = {
 	stability_cost_modifier = -0.25
 	global_unrest = -1
 }
+Expanded_Ghulam_Corps_1 = {
+	fire_damage = 0.025
+}
+Expanded_Ghulam_Corps_2 = {
+	fire_damage = 0.05
+}
+Expanded_Ghulam_Corps_3 = {
+	fire_damage = 0.075
+}
+Expanded_Ghulam_Corps_4 = {
+	fire_damage = 0.100
+}

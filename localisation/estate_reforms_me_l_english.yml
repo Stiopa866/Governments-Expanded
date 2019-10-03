@@ -842,12 +842,12 @@
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
  mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
- mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G5% Shock Damage§!."
+ mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G5%§! Shock Damage."
  mechanic_enables_caucasus_candidates_yes: "Caucasus Republic: Elect a suitable ruler from among the Caucasus peoples."
- mechanic_enables_voc_mentality_yes: "Sovereign Trade Companies: §G+10% Goods Produced§! in Trade Company provinces."
- mechanic_enables_absolute_reelection_yes: "Absolute Mandate: §G+2 Absolutism§! when you Re-elect a ruler."
+ mechanic_enables_voc_mentality_yes: "Sovereign Trade Companies: §G+10%§! Goods Produced in Trade Company provinces."
+ mechanic_enables_absolute_reelection_yes: "Absolute Mandate: §G+2§! Absolutism when you Re-elect a ruler."
  mechanic_enables_knightly_privileges_yes: "Knightly Privileges: Unlocks 'grant Knightly Privileges' Noble Estate Interaction."
- mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1 Unrest§! and §G-25% Stability Cost§! untill the end of his reign."
+ mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1§! Unrest and §G-25%§! Stability Cost modifier untill the end of his reign."
  
  
  
@@ -897,13 +897,19 @@
  REGISTER_PEASANTS: "Increase Recruitment"
  estate_junkers: "Junkers"
  estate_junkers_desc: "The Junker Estate represents the German lower nobility."
+ 
  RECRUIT_JUNKERS: "Recruit Junkers"
  PLACATE_JUNKERS: "Placate the Junkers"
  PROMOTE_JUNKERS: "Promote Estates"
  JUNKER_ADVISOR: "Recruit Commandant"
- KNIGHTY_PRIVILEGES: "Privilege Knights"
- EST_VAL_KNIGHTLY_PRIVILEGES: "Privileged Knights."
  
+ estate_ghulams: "Ghulams"
+ estate_ghulams_desc: "Ghulams were the class of imported slave administrators/soldiers imported from the Caucasus to serve as a third faction in Persia; loyal only to the shah."
+ KNIGHTY_PRIVILEGES: "Privilege Knights"
+ BUY_GHULAMS: "Buy Additional Ghulams"
+ EXPAND_GHULAM_CORPS: "Expand the Ghulam Corps"
+ REPLACE_GOVERNORS: "Replace Governors"
+ GHULAM_ADVISOR: "Promote Talented Ghulams"
  
  Noble_Influence: "Noble Court Influence"
  Clergy_Influence: "Clergy Court Influence"

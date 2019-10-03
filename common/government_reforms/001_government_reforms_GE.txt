@@ -678,10 +678,16 @@ three_jurchen_tribes_reform = {
 	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		} 
 	}
 	trigger = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	modifiers = {
 		global_trade_goods_size_modifier = 0.05
@@ -769,10 +775,16 @@ maintain_charade_reform = {
 	icon = arabic_scripture
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	trigger = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	modifiers = {
 		diplomatic_reputation = 1
@@ -984,12 +996,14 @@ mongol_ties_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			culture_group = evenks 
+			culture_group = evenks
+			primary_culture = manchu_new
 		}
 	}
 	trigger = {
 		OR = {
-			culture_group = evenks 
+			culture_group = evenks
+			primary_culture = manchu_new
 		}
 	}
 	modifiers = {
@@ -1122,10 +1136,16 @@ birth_of_the_manchu_reform = {
 	icon = asian_scripture
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	trigger = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	modifiers = {
 		culture_conversion_cost = -0.20

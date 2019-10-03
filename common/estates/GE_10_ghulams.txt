@@ -1,0 +1,297 @@
+estate_ghulams =
+{
+	icon = 11
+	
+	color = { 000 127 014 }
+	
+	# Is estate kept in control of province on conquest?
+	keep_on_conquest = no
+	
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_government_attribute = enables_ghulams_estate
+			tag = PAP
+		}
+	}
+	
+	# If true, province can be granted to estate
+	province_trigger = {
+		always = yes
+	}	
+
+	# Is used to weigh importance compared to other estates
+	start_territory_weight = 0
+	
+	# Min autonomy in estate provinces
+	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	 autonomy_does_not_affect = local_production_efficiency
+	 autonomy_does_not_affect = local_tax_modifier
+
+	country_modifier_happy = {
+		army_tradition = 0.5
+		state_maintenance_modifier = -0.20
+	}
+	country_modifier_neutral = {
+		state_maintenance_modifier = -0.20
+	}	
+	country_modifier_angry = {
+		state_maintenance_modifier = 0.20
+		army_tradition = -0.5
+	}
+	
+	# These do not scale, but only applied in provinces owned by the estate
+	province_modifier_happy = {
+		local_autonomy = -0.10
+		local_development_cost = -0.10
+	}
+	province_modifier_neutral = {
+		local_autonomy = -0.10
+	}	
+	province_modifier_angry = {
+		local_unrest = 5
+	}		
+	
+	# Influence modifiers
+	base_influence = 20
+	
+	# Influence modifiers from Events:
+	
+	# Loyalty modifiers
+	
+	#Alternative naming of estates
+
+	# Does the AI want to give any extra territory beyond the minimum?
+
+	# For province assignment
+	ai_grant_province = {
+		factor = 1	
+		modifier = {
+			factor = 0.5
+			development = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { development = 10 }
+		}				
+		modifier = {
+			factor = 0.1
+			has_estate = estate_cossacks
+			has_terrain = steppe
+		}
+		modifier = {
+			factor = 0.75
+			has_owner_culture = yes
+		}
+		modifier = {
+			factor = 0.75
+			province_trade_power = 5
+		}			
+		modifier = {
+			factor = 0.75
+			province_trade_power = 10
+		}
+		modifier = {
+			factor = 4
+			local_autonomy = 25
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { local_autonomy = 25 }
+		}
+	}
+	
+	# Special interactions
+	interaction = {
+		name = "BUY_GHULAMS"
+		icon = 7
+		
+		years_between_use = 5
+		
+		trigger = {
+		}
+		
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_ghulams
+				desc = EST_VAL_BUY_GHULAMS
+				influence = 10
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = 5
+			}
+		}
+	}
+	interaction = {
+		name = "EXPAND_GHULAM_CORPS"
+		icon = 32
+		
+		years_between_use = 20
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = 30
+			}
+			estate_influence = {
+				estate = estate_ghulams
+				influence = 40
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_ghulams
+							influence = 50
+						}	
+					}
+				}
+				add_country_modifier = {
+					name = "Expanded_Ghulam_Corps_1"
+					duration = 3650
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_ghulams
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_ghulams
+							influence = 75
+						}	
+					}
+				}
+				add_country_modifier = {
+					name = "Expanded_Ghulam_Corps_2"
+					duration = 3650
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_ghulams
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_ghulams
+							influence = 100
+						}	
+					}
+				}
+				add_country_modifier = {
+					name = "Expanded_Ghulam_Corps_3"
+					duration = 3650
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_ghulams
+						influence = 100
+					}
+				}
+				add_country_modifier = {
+					name = "Expanded_Ghulam_Corps_4"
+					duration = 3650
+				}
+			}
+			add_estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = -15
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+		
+	}
+	interaction = {
+		name = "REPLACE_GOVERNORS"
+		icon = 24
+		
+		years_between_use = 20
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = 30
+			}
+			estate_influence = {
+				estate = estate_ghulams
+				influence = 50
+			}
+		}
+		
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_ghulams
+				desc = EST_VAL_REPLACE_GOVERNORS
+				influence = 10
+				duration = 7300
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_REPLACE_GOVERNORS
+				influence = -10
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = -5
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -5
+			}
+		}
+	}
+	interaction = {
+		name = "GHULAM_ADVISOR"
+		icon = 6
+		
+		years_between_use = 20
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_ghulams
+				influence = 20
+			}
+		}
+		
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 1
+				cost_multiplier = 0.50
+			}
+			add_estate_influence_modifier = {
+				estate = estate_ghulams
+				desc = EST_VAL_GHULAM_ADVISOR
+				influence = 10
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_REPLACE_GOVERNORS
+				influence = -10
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -5
+			}
+		}
+	}
+}

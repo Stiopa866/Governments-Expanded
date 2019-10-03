@@ -1373,7 +1373,7 @@ estate_nobles =
 					}
 				}
 				add_yearly_manpower = 2.5
-			}	
+			}
 			if = {
 				limit = {
 					NOT = { has_government_attribute = enables_grand_captain }

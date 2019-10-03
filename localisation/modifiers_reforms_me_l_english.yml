@@ -237,6 +237,10 @@
  GE_noble_knights: "Noble Knights"
  Knightly_Privileges: "Knightly Privileges"
  Long_Reign: "Long Reign"
+ Expanded_Ghulam_Corps_1: "Expanded Ghulam Corps"
+ Expanded_Ghulam_Corps_2: "Expanded Ghulam Corps"
+ Expanded_Ghulam_Corps_3: "Expanded Ghulam Corps"
+ Expanded_Ghulam_Corps_4: "Expanded Ghulam Corps"
  
  
  
@@ -365,6 +369,10 @@
  EST_VAL_LEVIED_TROOPS:0 "Levied Troops: §Y$VAL$§!"
  EST_VAL_PROMOTE_JUNKERS:0 "Promoted Junkers: §Y$VAL$§!"
  EST_VAL_JUNKER_ADVISOR:0 "Junker Courtier: §Y$VAL$§!"
+ EST_VAL_KNIGHTLY_PRIVILEGES: "Privileged Knights: §Y$VAL$§!"
+ EST_VAL_BUY_GHULAMS: "Bought Additional Ghulams: §Y$VAL$§!"
+ EST_VAL_REPLACE_GOVERNORS: "Replaced Governors: §Y$VAL$§!"
+ EST_VAL_GHULAM_ADVISOR: "Promoted Ghulams: §Y$VAL$§!"
  
  EST_VAL_ORDER_OF_SWAN_LOY:0 "Order of the Swan: §G$VAL$§!"
  EST_VAL_FRENCH_ABSOLUTISM_LOY:0 "French Absolutism: §G$VAL$§!"
