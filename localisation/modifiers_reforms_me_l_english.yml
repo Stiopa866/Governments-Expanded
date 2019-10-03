@@ -363,6 +363,8 @@
  EST_VAL_ABOLISH_PATRONAGE_REFORM:0 "Abolish the Patronage System: §Y$VAL$§!"
  EST_VAL_ROYAL_TRAINING_REFORM:0 "Royal Training: §Y$VAL$§!"
  EST_VAL_HEAVY_KNIGHTS_REFORM:0 "Empowered Heavy Knights: §Y$VAL$§!"
+ EST_VAL_GHULAMS_REFORM:0 "Foreign Ghulams: §Y$VAL$§!"
+ EST_VAL_ABBAS_REFORM:0 "Abbas's Reforms: §Y$VAL$§!"
  
  EST_VAL_REGISTER_PEASANTS:0 "Register Peasants: §Y$VAL$§!"
  EST_VAL_TAX_PEASANTS:0 "Tax Peasants: §Y$VAL$§!"
@@ -394,5 +396,5 @@
  EST_VAL_GENERALITES_REFORM_LOY:0 "Generalite: §Y$VAL$%§!"
  EST_VAL_EMPOWERED_ARISTOCRATIC_COURT_LOY:0 "Empowered Aristocratic Court: §Y$VAL$%§!"
  EST_VAL_EXPAND_CORVEE_LOY: "Empowered Expand Corvee: §Y$VAL$%§!"
-
-
+ EST_VAL_GHULAMS_REFORM_LOY:0 "Foreign Ghulams: §Y$VAL$§!"
+ EST_VAL_ABBAS_REFORM_LOY:0 "Abbas's Reforms: §Y$VAL$§!"

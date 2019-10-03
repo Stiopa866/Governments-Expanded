@@ -11,7 +11,6 @@ estate_ghulams =
 	trigger = {
 		OR = {
 			has_government_attribute = enables_ghulams_estate
-			tag = PAP
 		}
 	}
 	
@@ -36,7 +35,7 @@ estate_ghulams =
 	}
 	country_modifier_neutral = {
 		state_maintenance_modifier = -0.20
-	}	
+	}
 	country_modifier_angry = {
 		state_maintenance_modifier = 0.20
 		army_tradition = -0.5
@@ -45,7 +44,7 @@ estate_ghulams =
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
 		local_autonomy = -0.10
-		local_development_cost = -0.10
+		local_development_cost = -0.15
 	}
 	province_modifier_neutral = {
 		local_autonomy = -0.10
@@ -59,7 +58,31 @@ estate_ghulams =
 	
 	# Influence modifiers from Events:
 	
+	influence_modifier = {
+		desc = EST_VAL_GHULAMS_REFORM
+		trigger = {
+			has_reform = foreign_ghulams_reform
+		}
+		influence = 10
+	}
+	
+	
 	# Loyalty modifiers
+	
+	loyalty_modifier = {
+		desc = EST_VAL_GHULAMS_REFORM_LOY
+		trigger = {
+			has_reform = foreign_ghulams_reform
+		}
+		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_ABBAS_REFORM_LOY
+		trigger = {
+			has_reform = reforms_of_abbas_reform
+		}
+		loyalty = 10
+	}
 	
 	#Alternative naming of estates
 
@@ -133,6 +156,7 @@ estate_ghulams =
 		years_between_use = 20
 		
 		trigger = {
+			has_government_attribute = enables_fire_ghulams
 			estate_loyalty = {
 				estate = estate_ghulams
 				loyalty = 30
@@ -212,7 +236,7 @@ estate_ghulams =
 			}
 			add_estate_loyalty = {
 				estate = estate_nobles
-				loyalty = -10
+				loyalty = -5
 			}
 		}
 		
@@ -281,6 +305,10 @@ estate_ghulams =
 				desc = EST_VAL_GHULAM_ADVISOR
 				influence = 10
 				duration = 3650
+			}
+			add_estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = -5
 			}
 			add_estate_influence_modifier = {
 				estate = estate_church

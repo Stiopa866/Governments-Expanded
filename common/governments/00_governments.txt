@@ -129,6 +129,7 @@ monarchy = {
 				arch_marshal_reform
 				chhetri_clans_reform
 				support_samurai_reform
+				turkic_qasilbash_heirs_reform
 			}
 		}
 		bureaucracy = {
@@ -176,6 +177,7 @@ monarchy = {
 				newar_and_gorkhali_reform
 				metsuke_system_reform
 				imperial_examination_reform
+				tajik_administration_reform
 			}
 		}
 		military_organisation = {
@@ -223,6 +225,7 @@ monarchy = {
 				recruit_ronin_reform
 				ashigaru_generals_reform
 				wei_suo_reform
+				reforms_of_abbas_reform
 			}
 		}
 		growth_of_administration = {
@@ -261,6 +264,7 @@ monarchy = {
 				found_the_rothschilds_reform
 				ottonian_handfeste_reform
 				reestablish_the_kuge_reform
+				foreign_ghulams_reform
 			}
 		}
 		deliberative_assembly = {

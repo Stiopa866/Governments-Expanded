@@ -2647,6 +2647,45 @@ support_samurai_reform = {
 	}
 }
 
+turkic_qasilbash_heirs_reform = {
+	icon = "horde_riding"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		missionary_maintenance_cost = -0.25
+		army_tradition = 0.5
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_independent_nobles = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -3605,6 +3644,45 @@ metsuke_system_reform = {
 	}
 }
 
+tajik_administration_reform = {
+	icon = "arabic_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		max_states = 3
+		num_accepted_cultures = 1
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_mountain_towns = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier4
 
 #######
@@ -4489,6 +4567,45 @@ reestablish_the_kuge_reform = {
 	}
 	ai = {
 		factor = 10
+	}
+}
+
+foreign_ghulams_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		advisor_cost = -0.10
+		advisor_pool = 1
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_ghulams_estate = yes
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -6469,6 +6586,45 @@ ashigaru_generals_reform = {
 	}
 	ai = {
 		factor = 10
+	}
+}
+
+reforms_of_abbas_reform = {
+	icon = "soldiers_4"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.10
+		artillery_cost = -0.10
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_fire_ghulams = yes
+	}
+	ai = {
+		factor = 100
 	}
 }
 

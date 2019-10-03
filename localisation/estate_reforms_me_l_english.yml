@@ -727,11 +727,14 @@
  empowered_principle_of_power_reform: "Empowered Principle of Power"
  empowered_principle_of_power_reform_desc: "Let us increase the reign of our rulers and smooth over the re-election process. it might cause some unrest among the more republican types among us, but its for the good of stability of the republic."
  
- 
- 
- 
- 
- 
+ turkic_qasilbash_heirs_reform: "Trukic Qasilbash Heirs"
+ turkic_qasilbash_heirs_reform_desc: "The Heirs of the Turkoman Qasilbash military forces are excellent stock for the noble positions of power in our lands. Their military background and fanatic devotion to the shiite cause is sure to serve us well."
+ tajik_administration_reform: "Tajik Administration"
+ tajik_administration_reform_desc: "The Turko-Persian Iranian state was build by the turkoman Qasilbash forces, but it was ruled from the ancient persian traditions. Their legacy of empire administration and integration of foreign and domestic cultures is legendary."
+ foreign_ghulams_reform: "Foreign Ghulams"
+ foreign_ghulams_reform_desc: "The Caucasian wars brought in many slaves and captives. Let us use this pool of manpower to create ghulam regiments, loyal to our ruler alone. As well as promote them to powerfull positions to create a third force alongside the turkic military and the persian administration to balance them and solidify the royal power."
+ reforms_of_abbas_reform: "Abbas's Reforms"
+ reforms_of_abbas_reform_desc: "With the dominance and increasing independence of the qasilbash and noble forces the shah realized he needed a personal force to guarentee his control over the state and prevent the shah from having to watch powerlessly as the qasilbash led revolts over their personal ambitions or domestic crisises."
  
  
  
@@ -849,6 +852,7 @@
  mechanic_enables_knightly_privileges_yes: "Knightly Privileges: Unlocks 'grant Knightly Privileges' Noble Estate Interaction."
  mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1§! Unrest and §G-25%§! Stability Cost modifier untill the end of his reign."
  
+ mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' estate interaction for additional land fire damage."
  
  
  
@@ -862,6 +866,7 @@
  mechanic_enables_junker_estate_yes: "Enables the Junker Estate."
  mechanic_enables_noble_estate_yes: "Noble Subjects: Enables the Noble Estate."
  mechanic_enables_cossack_estate_yes: "Cossack Influence: Enables the Cossack Estate."
+ mechanic_enables_ghulams_estate_yes: "Ghulams Estate: Enables the Ghulam Estate."
  
  military_organisation: "Military Organisation"
  economic_policy: "Economic Policy"
@@ -904,7 +909,7 @@
  JUNKER_ADVISOR: "Recruit Commandant"
  
  estate_ghulams: "Ghulams"
- estate_ghulams_desc: "Ghulams were the class of imported slave administrators/soldiers imported from the Caucasus to serve as a third faction in Persia; loyal only to the shah."
+ estate_ghulams_desc: "Ghulams were the class of foreign slave administrators/soldiers imported from the Caucasus to serve as a third faction in Persia; loyal only to the shah."
  KNIGHTY_PRIVILEGES: "Privilege Knights"
  BUY_GHULAMS: "Buy Additional Ghulams"
  EXPAND_GHULAM_CORPS: "Expand the Ghulam Corps"

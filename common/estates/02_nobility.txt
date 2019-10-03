@@ -115,6 +115,14 @@ estate_nobles =
 		influence = -10
 	}
 	influence_modifier = {
+		desc = EST_VAL_ABBAS_REFORM
+		trigger = {
+			has_reform = reforms_of_abbas_reform
+		}
+		influence = -10
+	}
+	
+	influence_modifier = {
 		desc = EST_VAL_HEAVY_KNIGHTS_REFORM
 		trigger = {
 			has_reform = empowered_heavy_knights_reform
