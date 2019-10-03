@@ -156,7 +156,7 @@ estate_ghulams =
 		years_between_use = 20
 		
 		trigger = {
-			has_government_attribute = enables_fire_ghulams
+			has_reform = reforms_of_abbas_reform
 			estate_loyalty = {
 				estate = estate_ghulams
 				loyalty = 30
