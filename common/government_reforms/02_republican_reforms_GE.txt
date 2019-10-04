@@ -1014,6 +1014,9 @@ andrea_doria_constitution_reform = {
 			has_reform = andrea_doria_constitution_reform
 		}
 		NOT = { has_reform = frequent_elections_reform }
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
 	}
 	trigger = {
 		NOT = { has_reform = frequent_elections_reform }
@@ -1049,6 +1052,9 @@ the_consigliere_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
 	}
 	trigger = {
 		culture_group = latin
@@ -1079,6 +1085,9 @@ council_of_petitions_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
 	}
 	trigger = {
 		culture_group = latin
@@ -1113,6 +1122,9 @@ ware_vrijheid_reform = {
 			primary_culture  = flemish
 			has_reform = ware_vrijheid_reform
 		}
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
 	}
 	effect = {
 		change_variable = {
@@ -1139,7 +1151,11 @@ ware_vrijheid_reform = {
 stadholder_reform = {
 	icon = Stadholder
 	allow_normal_conversion = yes
-	potential = {}
+	potential = {
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
+	}
 	trigger = { 
 	}
 	effect = {
@@ -1174,6 +1190,9 @@ council_of_lords_reform = {
 			has_reform = council_of_lords_reform
 			culture_group = east_slavic
 		}
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
 	}
 	modifiers = {
 		tolerance_own = 1
@@ -1206,6 +1225,9 @@ hansa_representatives_reform = {
 		OR = {
 			has_reform = hansa_representatives_reform
 			has_reform = peasants_republic
+		}
+		NOT = {
+			has_reform = pirate_republic_reform
 		}
 	}
 	modifiers = {

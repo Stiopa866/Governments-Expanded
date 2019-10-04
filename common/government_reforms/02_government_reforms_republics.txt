@@ -1080,6 +1080,11 @@ presidential_reform = {
 broaden_executive_powers_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
+	}
 	modifiers = {
 		stability_cost_modifier = -0.15
 	}
@@ -1091,6 +1096,11 @@ broaden_executive_powers_reform = {
 devolution_of_powers_reform = {
 	icon = "generic_people"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
+	}
 	modifiers = {
 		diplomats = 1
 	}
