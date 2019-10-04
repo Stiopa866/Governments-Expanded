@@ -55,7 +55,7 @@ orthodox_influence_4 = {
 		NOT = { 
 			num_of_religion = {
 				religion = orthodox
-				value = 0.50
+				value = 0.40
 			}
 		}
 	}
@@ -129,7 +129,7 @@ coptic_influence_4 = {
 		NOT = { 
 			num_of_religion = {
 				religion = coptic
-				value = 0.50
+				value = 0.40
 			}
 		}
 	}
@@ -203,7 +203,7 @@ sunni_influence_4 = {
 		NOT = { 
 			num_of_religion = {
 				religion = sunni
-				value = 0.50
+				value = 0.40
 			}
 		}
 	}
