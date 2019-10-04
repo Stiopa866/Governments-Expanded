@@ -1061,12 +1061,17 @@ despotate_of_caucasia_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -1
 		land_morale = 0.05
+		tolerance_heretic = 1
 		culture_conversion_cost = -0.20
 	}
 	custom_attributes = {
 		enables_royal_council = yes
+	}
+	factions = {
+		GE_orthodox
+		GE_coptic
+		GE_sunni
 	}
 	ai = {
 		factor = 100
@@ -2670,7 +2675,8 @@ turkic_qasilbash_heirs_reform = {
 	}
 	modifiers = {
 		missionary_maintenance_cost = -0.25
-		army_tradition = 0.5
+		cav_to_inf_ratio = 0.15
+		cavalry_cost = -0.10
 	}
 	removed_effect = {
 		change_variable = {
@@ -5185,6 +5191,8 @@ papal_electors_reform = {
 		factor = 1
 	}
 }
+
+
 
 #Tier6
 

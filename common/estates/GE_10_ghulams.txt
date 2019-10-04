@@ -147,6 +147,7 @@ estate_ghulams =
 				estate = estate_ghulams
 				loyalty = 5
 			}
+			add_years_of_income = -0.2
 		}
 	}
 	interaction = {
@@ -305,10 +306,6 @@ estate_ghulams =
 				desc = EST_VAL_GHULAM_ADVISOR
 				influence = 10
 				duration = 3650
-			}
-			add_estate_loyalty = {
-				estate = estate_ghulams
-				loyalty = -5
 			}
 			add_estate_influence_modifier = {
 				estate = estate_church

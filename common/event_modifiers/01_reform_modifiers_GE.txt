@@ -144,8 +144,7 @@ Dagestani_Ruler = {
 	land_forcelimit_modifier = 0.20
 }
 Armenian_Zealous_Ruler = {
-	tolerance_own = 1
-	global_missionary_strength = 0.01
+	tolerance_own = 2
 }
 Armenian_Tolerant_Ruler = {
 	tolerance_heathen = 1
