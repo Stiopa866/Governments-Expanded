@@ -66,7 +66,7 @@ GE_sunni = {
 	always = yes
 	
 	modifier = {
-		religious_unity = 0.25
+		religious_unity = 0.15
 		tolerance_heathen = 1
 	}
 }

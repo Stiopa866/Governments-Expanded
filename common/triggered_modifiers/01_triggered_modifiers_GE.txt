@@ -11,6 +11,7 @@ orthodox_influence_1 = {
 
 	trigger = {
 		religion = orthodox
+		faction_in_power = GE_orthodox
 	}
 
 	GE_orthodox_influence = 0.10
@@ -84,6 +85,7 @@ coptic_influence_1 = {
 
 	trigger = {
 		religion = coptic
+		faction_in_power = GE_coptic
 	}
 
 	GE_coptic_influence = 0.10
@@ -95,7 +97,10 @@ coptic_influence_2 = {
 	}
 
 	trigger = {
-		dominant_religion = coptic
+		num_of_religion = {
+			religion = coptic
+			value = 0.75
+		}
 	}
 
 	GE_coptic_influence = 0.10
@@ -154,6 +159,7 @@ sunni_influence_1 = {
 
 	trigger = {
 		religion = sunni
+		faction_in_power = GE_sunni
 	}
 
 	GE_sunni_influence = 0.10

@@ -211,8 +211,7 @@ monarchy = {
 				pospolite_ruszenie_reform
 				polish_national_guard_reform
 				henry_reforms_reform
-				berber_cavalry_reform 
-				turkoman_gunners_reform
+				berber_cavalry_reform
 				mongol_ties_reform
 				subotai_lessons_reform
 				jinetes_reform
