@@ -249,6 +249,7 @@ estate_ghulams =
 		years_between_use = 20
 		
 		trigger = {
+			has_reform = ghulam_governates_reform
 			estate_loyalty = {
 				estate = estate_ghulams
 				loyalty = 30
@@ -272,13 +273,9 @@ estate_ghulams =
 				influence = -10
 				duration = 7300
 			}
-			add_estate_loyalty = {
-				estate = estate_ghulams
-				loyalty = -5
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
+			add_country_modifier = {
+				name = "Replaced_Governors"
+				duration = 7300
 			}
 		}
 	}

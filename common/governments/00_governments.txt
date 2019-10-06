@@ -221,6 +221,7 @@ monarchy = {
 				hessian_elite_jaegers_reform
 				warrior_kings_reform
 				snaphaner_reform
+				redcoats_reform
 				recruit_ronin_reform
 				ashigaru_generals_reform
 				wei_suo_reform
@@ -301,6 +302,7 @@ monarchy = {
 				empowered_divine_blood_reform
 				empowered_monastic_militarism_reform
 				empowered_church_councils_reform
+				ghulam_governates_reform
 			}
 		}
 		economic_policy = {
@@ -316,6 +318,7 @@ monarchy = {
 				empowered_enlarge_royal_estate_reform
 				empowered_expand_corvee_reform
 				empowered_royal_trading_company_reform
+				armenian_silk_traders_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -333,6 +336,7 @@ monarchy = {
 				constitution_third_may_reform
 				bill_of_rights_reform
 				droit_divine_reform
+				principle_of_fiqh_reform
 			}
 		}
 		separation_of_power = {

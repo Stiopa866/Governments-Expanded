@@ -177,3 +177,9 @@ Expanded_Ghulam_Corps_3 = {
 Expanded_Ghulam_Corps_4 = {
 	fire_damage = 0.100
 }
+Replaced_Governors = {
+	global_autonomy = -0.05
+}
+GE_silk_trade = {
+	trade_efficiency = 0.15
+}

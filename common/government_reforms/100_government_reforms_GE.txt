@@ -407,7 +407,13 @@ portuguese_empire_reform = {
 		}
 	}
 	trigger = {
-		has_reform = portuguese_empire_reform
+		OR = {
+			has_reform = portuguese_empire_reform
+			AND = {
+				has_reform = kingdom_of_portugal_and_azures
+				absolutism = 50
+			}
+		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
@@ -5192,7 +5198,44 @@ papal_electors_reform = {
 	}
 }
 
-
+ghulam_governates_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		global_unrest = 1
+		max_absolutism = 5
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_ghulam_governors = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 #Tier6
 
@@ -5347,6 +5390,45 @@ bill_of_rights_reform = {
 	}
 }
 
+armenian_silk_traders_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		build_cost = -0.15
+		culture_conversion_cost = -0.20
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_silk_traders = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier7
 
 abolish_clergy_privileges_reform = {
@@ -5423,6 +5505,43 @@ commonwealth_of_nations_reform = {
 	}
 	custom_attributes = {
 		enables_such_waste_of_life = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+principle_of_fiqh_reform = {
+	icon = "noble_muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		tolerance_own = 1
+		max_absolutism = 5
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
 	}
 	ai = {
 		factor = 100
