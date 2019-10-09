@@ -71,7 +71,6 @@ country_decisions = {
 	reforms_me_habsburg_monarchy = {
 		major = yes
 		potential ={
-			tag = HAB
 			has_reform = arch_duchy_reform
 		}
 		allow = {
@@ -95,7 +94,6 @@ country_decisions = {
 	reforms_me_austrian_empire = {
 		major = yes
 		potential ={
-			tag = HAB
 			has_reform = habsburg_monarchy_reform
 		}
 		allow = {

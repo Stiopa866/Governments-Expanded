@@ -431,7 +431,7 @@
  nueva_planta.64.b: "We can not risk a major uprising."
  
  feudal_levy.65.t: "The Cavalry Arrives"
- feudal_levy.65.d: "A new unit arrived at our rallying point, a glorious host of armor clad horsemen has shown up. It's noble leader gracefully dismounted and kneeled in fron of our $MONARCH$."
+ feudal_levy.65.d: "A new unit arrived at our rallying point, a glorious host of armor clad horsemen has shown up. It's noble leader gracefully dismounted and kneeled in front of our $MONARCH$."
  feudal_levy.65.a: "Rise, Knight of $COUNTRY$."
  feudal_levy.65.b: "Service worthy of me."
  feudal_levy.65.c: "A Noble worthy of privileges."
