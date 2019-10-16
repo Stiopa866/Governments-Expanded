@@ -5275,7 +5275,51 @@ ghulam_governates_reform = {
 	}
 }
 
+grand_secretariat_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = MNG
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MNG
+		}
+	}
+	modifiers = {
+		monarch_diplomatic_power = 1
+		yearly_corruption = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
 
+grand_council_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = QNG
+		}
+	}
+	trigger = {
+		OR = {
+			tag = QNG
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+	}
+	custom_attributes = {
+		enables_qing_court = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 #Tier6
 
@@ -5430,27 +5474,36 @@ bill_of_rights_reform = {
 	}
 }
 
-armenian_silk_traders_reform = {
-	icon = "GE_trader"
+absolutist_administration_reform = {
+	icon = "asian_scripture"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			primary_culture = azerbaijani
-			tag = PER
-		}
-	}
-	trigger = {
-		OR = {
-			primary_culture = azerbaijani
-			tag = PER
+			is_emperor_of_china = yes
 		}
 	}
 	modifiers = {
-		build_cost = -0.15
-		culture_conversion_cost = -0.20
+		max_absolutism = 10
+		meritocracy = -1
+		production_efficiency = 0.10
 	}
-	custom_attributes = {
-		enables_silk_traders = yes
+	ai = {
+		factor = 100
+	}
+}
+
+permanent_regency_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_emperor_of_china = yes
+		}
+	}
+	modifiers = {
+		max_absolutism = -5
+		tolerance_own = 2
+		yearly_corruption = -0.05
 	}
 	ai = {
 		factor = 100
@@ -7018,3 +7071,29 @@ empowered_royal_trading_company_reform = {
 	}
 }
 
+armenian_silk_traders_reform = {
+	icon = "GE_trader"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
+	modifiers = {
+		build_cost = -0.15
+		culture_conversion_cost = -0.20
+	}
+	custom_attributes = {
+		enables_silk_traders = yes
+	}
+	ai = {
+		factor = 100
+	}
+}

@@ -744,6 +744,21 @@
  principle_of_fiqh_reform: "Principle of Fiqh"
  principle_of_fiqh_reform_desc: "By dividing the powers of civil and criminal justice we can ensure that civil matters are handled by the imams and judges of law, following the Islamic Sharia Law. While the Criminal Law is executed by our local governors in the name of the Shah, granting the people the freedom to be judged under the true faith, but making sure that criminal justice remains a powerful tool in the hands of the Shah to maintain order and secure his power."
  
+ grand_council_reform: "Grand Council"
+ grand_council_reform_desc: "The Grand Secretariat of the Ming is no longer useful for us. Military decisions require quick, precise thinking, and the system at hand provides neither. Let us make an Inner Council in the Forbidden City to safeguard our secret military meetings and come to a quick resolution."
+ grand_secretariat_reform: "Grand Secretariat"
+ grand_secretariat_reform_desc: "In 1380, the Hongwu Emperor abolished the old Secretariat system, to keep the six ministries from being controlled by only two chancellors. To solve this bureaucratic void in turn, the late Emperor recruited the Hanlin Academy and created the Grand Secretariat. With the duty of managing the ministries in different hands, who all responded to the Secretariat (and in turn spoke to the Emperor), we can effectively wield our government decisions with ease, at the cost of averting our eyes from some unsavory practices."
+ eunich_administration_reform: "Eunich Administration"
+ eunich_administration_reform_desc: "The eunuchs of the Imperial family serve as our ears, listening to every corner of the court and country, and sending their words right to us. Rather than look for commoners who will defile our palace, prestige and populace, let us elevate these servants whose life depend on us."
+ civil_servant_reform: "Civil Servant System
+ civil_servant_reform_desc: "The millenium old Civil Servant System has proved indispensable for the management of our country, just like for countries before us. It still carries on flaws however: it takes but one test to pass, and the cream of the crop is mixed with less talented people. On top of this, some officials end up serving in their hometowns for life, bringing out widespread corruption. We must perfect this system for the heavens to keep smiling over us."
+ absolutist_administration_reform: "Absolutist Administration"
+ absolutist_administration_reform_desc: "When the Hongwu Emperor was alive, he hoped to create a stable society with submissive subjects. Such an Empire needs to be led by a strong and benevolent son, not a group of literati."
+ permanent_regency_reform: "Permanent Regency"
+ permanent_regency_reform_desc: "Taoism believes that great monarch rules by well by doing nothing. To do so, he must retreat behind the scenes and hand over political affairs to the First and Second cabinets, as well as civil literary scholars who are not only capable in confucian classic, but also ambitious."
+ 
+ 
+ 
  
  
  
@@ -861,8 +876,8 @@
  mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' estate interaction for additional land fire damage."
  mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' estate interaction for reduced autonomy."
  mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
- mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ascention."
- 
+ mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
+ mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

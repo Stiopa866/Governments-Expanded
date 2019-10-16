@@ -99,6 +99,12 @@
  reform_me_events.148.d: "Let us choose the new court. #nekowritesomethingforthis"
  reform_me_events.148.a: "Trusting the Loyalist."
  reform_me_events.148.b: "Promoting the incorruptible"
+ reform_me_events.149.t: "The Qing Court"
+ reform_me_events.149.d: "Let us choose the new council. #nekowritesomethingforthis"
+ reform_me_events.149.a: "Small Council."
+ reform_me_events.149.b: "Medium Council."
+ reform_me_events.149.c: "Large Council."
+ 
  
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."

@@ -192,3 +192,12 @@ GE_eastern_courts_incorruptible = {
 	prestige = -1
 	global_unrest = -2
 }
+GE_qing_court_small = {
+	advisor_cost = -0.05
+}
+GE_qing_court_medium = {
+	advisor_cost = -0.15
+}
+GE_qing_court_large = {
+	administrative_efficiency = 0.05
+}
