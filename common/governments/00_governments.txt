@@ -265,6 +265,8 @@ monarchy = {
 				ottonian_handfeste_reform
 				reestablish_the_kuge_reform
 				foreign_ghulams_reform
+				eunich_administration_reform
+				civil_servant_reform
 			}
 		}
 		deliberative_assembly = {

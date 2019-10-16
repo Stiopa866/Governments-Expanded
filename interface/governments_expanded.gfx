@@ -684,5 +684,13 @@ spriteTypes = {
 		name = "government_reform_empowered_royal_estate"
 		texturefile = "gfx//interface//government_reform_icons//empowered_royal_estate.dds"
 	}
+	spriteType = {
+		name = "government_reform_persia_qizilbash"
+		texturefile = "gfx//interface//government_reform_icons//persia_qizilbash.dds"
+	}
+	spriteType = {
+		name = "government_reform_persia_abbas"
+		texturefile = "gfx//interface//government_reform_icons//persia_abbas.dds"
+	}
 }
 

@@ -183,3 +183,12 @@ Replaced_Governors = {
 GE_silk_trade = {
 	trade_efficiency = 0.15
 }
+
+GE_eastern_courts_corruptible = {
+	yearly_corruption = 0.10
+	meritocracy = 1
+}
+GE_eastern_courts_incorruptible = {
+	prestige = -1
+	global_unrest = -2
+}

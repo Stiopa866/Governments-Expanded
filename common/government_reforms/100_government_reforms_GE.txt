@@ -50,7 +50,7 @@ arch_monarchy_reform = {
 		OR = {
 			vassal = 1
 			personal_union = 1
-			num_of_marches = 1
+			march = 1
 		}
 	}
 	modifiers = {
@@ -2659,7 +2659,7 @@ support_samurai_reform = {
 }
 
 turkic_qasilbash_heirs_reform = {
-	icon = "horde_riding"
+	icon = "persia_qizilbash"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -3657,7 +3657,7 @@ metsuke_system_reform = {
 }
 
 tajik_administration_reform = {
-	icon = "arabic_scripture"
+	icon = "iranian_bureaucracy"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -4583,7 +4583,7 @@ reestablish_the_kuge_reform = {
 }
 
 foreign_ghulams_reform = {
-	icon = "strength_of_the_khalsa"
+	icon = "mamluk_noble"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -4615,6 +4615,56 @@ foreign_ghulams_reform = {
 	}
 	custom_attributes = {
 		enables_ghulams_estate = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+eunich_administration_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = MNG
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MNG
+		}
+	}
+	modifiers = {
+		free_dip_policy = 1
+		num_accepted_cultures = 1
+		legitimacy = 0.5
+	}
+	custom_attributes = {
+		enables_eastern_courts = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+civil_servant_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			religion = confucianism
+		}
+	}
+	trigger = {
+		OR = {
+			religion = confucianism
+		}
+	}
+	modifiers = {
+		max_states = 5
+	}
+	custom_attributes = {
+		enables_eastern_courts = yes
 	}
 	ai = {
 		factor = 100
@@ -5199,7 +5249,7 @@ papal_electors_reform = {
 }
 
 ghulam_governates_reform = {
-	icon = "strength_of_the_khalsa"
+	icon = "mamluk_veteran"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -5213,21 +5263,9 @@ ghulam_governates_reform = {
 			tag = PER
 		}
 	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		global_unrest = 1
 		max_absolutism = 5
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
 	}
 	custom_attributes = {
 		enables_ghulam_governors = yes
@@ -5236,6 +5274,8 @@ ghulam_governates_reform = {
 		factor = 100
 	}
 }
+
+
 
 #Tier6
 
@@ -5391,7 +5431,7 @@ bill_of_rights_reform = {
 }
 
 armenian_silk_traders_reform = {
-	icon = "strength_of_the_khalsa"
+	icon = "GE_trader"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -5405,21 +5445,9 @@ armenian_silk_traders_reform = {
 			tag = PER
 		}
 	}
-	effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		build_cost = -0.15
 		culture_conversion_cost = -0.20
-	}
-	removed_effect = {
-		change_variable = {
-			which = Royal_Influence
-			value = -1
-		}
 	}
 	custom_attributes = {
 		enables_silk_traders = yes
@@ -5526,22 +5554,10 @@ principle_of_fiqh_reform = {
 			tag = PER
 		}
 	}
-	effect = {
-		change_variable = {
-			which = Clergy_Influence
-			value = 1
-		}
-	}
 	modifiers = {
 		global_unrest = -1
 		tolerance_own = 1
 		max_absolutism = 5
-	}
-	removed_effect = {
-		change_variable = {
-			which = Clergy_Influence
-			value = -1
-		}
 	}
 	ai = {
 		factor = 100
@@ -6717,7 +6733,7 @@ ashigaru_generals_reform = {
 }
 
 reforms_of_abbas_reform = {
-	icon = "soldiers_4"
+	icon = "persia_abbas"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {

@@ -727,20 +727,22 @@
  empowered_principle_of_power_reform: "Empowered Principle of Power"
  empowered_principle_of_power_reform_desc: "Let us increase the reign of our rulers and smooth over the re-election process. it might cause some unrest among the more republican types among us, but its for the good of stability of the republic."
  
- turkic_qasilbash_heirs_reform: "Trukic Qasilbash Heirs"
- turkic_qasilbash_heirs_reform_desc: "The Heirs of the Turkoman Qasilbash military forces are excellent stock for the noble positions of power in our lands. Their military background and fanatic devotion to the shiite cause is sure to serve us well."
+ #^^^^^Remember to Spoil these guys^^^^^#
+ 
+ turkic_qasilbash_heirs_reform: "Turkic Qasilbash Heirs"
+ turkic_qasilbash_heirs_reform_desc: "The heirs of the Turkoman Qasilbash military forces are excellent stock for the noble positions of power in our lands. Their military background and fanatic devotion to the Shi'ite cause is sure to serve us well."
  tajik_administration_reform: "Tajik Administration"
- tajik_administration_reform_desc: "The Turko-Persian Iranian state was build by the turkoman Qasilbash forces, but it was ruled from the ancient persian traditions. Their legacy of empire administration and integration of foreign and domestic cultures is legendary."
+ tajik_administration_reform_desc: "The Turko-Persian Iranian state was build by the Turkoman Qasilbash forces, but it was ruled from the ancient persian traditions. Their legacy of empire administration and integration of foreign and domestic cultures is legendary."
  foreign_ghulams_reform: "Foreign Ghulams"
- foreign_ghulams_reform_desc: "The Caucasian wars brought in many slaves and captives. Let us use this pool of manpower to create ghulam regiments, loyal to our ruler alone. As well as promote them to powerfull positions to create a third force alongside the turkic military and the persian administration to balance them and solidify the royal power."
+ foreign_ghulams_reform_desc: "The Caucasian wars brought in many slaves and captives. Let us use this pool of manpower to create ghulam regiments, loyal to our ruler alone. As well as promote them to powerfull positions to create a third force alongside the Turkic military and the Persian administration to balance them and solidify the royal power."
  reforms_of_abbas_reform: "Abbas's Reforms"
- reforms_of_abbas_reform_desc: "With the dominance and increasing independence of the qasilbash and noble forces the shah realized he needed a personal force to guarentee his control over the state and prevent the shah from having to watch powerlessly as the qasilbash led revolts over their personal ambitions or domestic crisises."
+ reforms_of_abbas_reform_desc: "With the dominance and increasing independence of the Qasilbash and noble forces the Shah realized he needed a personal force to guarentee his control over the state and prevent the shah from having to watch powerlessly as the Qasilbash led revolts over their personal ambitions or domestic crisises."
  ghulam_governates_reform: "Ghulam Governates"
- ghulam_governates_reform_desc: "By granting the Ghulam posts as governors, the Shah was able to reduce the influence of the persian noble and clergical influences on his reign, and solidify his rule."
+ ghulam_governates_reform_desc: "By granting the Ghulam posts as governors, the Shah was able to reduce the influence of the Persian noble and clergical influences on his reign, and solidify his rule."
  armenian_silk_traders_reform: "Armenian Silk Traders"
  armenian_silk_traders_reform_desc: "By resettling many of the trade centers on the silk road with captive Armenians Abbas secured both the pacification of the region, as well as the repopulation and prosperity of the silk road, because as we all know, the silk must flow."
  principle_of_fiqh_reform: "Principle of Fiqh"
- principle_of_fiqh_reform_desc: "By Dividing the powers of civil and criminal justice we can ensure that civil matters are handled by the imams and judges of law, following the Islamic sharia law. And that the Criminal Law is executed by our local governors in the name of the shah, granting the people the freedom to be judged under the true faith, but making sure that criminal justice remains a powerful tool in the hands of the shah to maintain order and secure his power."
+ principle_of_fiqh_reform_desc: "By dividing the powers of civil and criminal justice we can ensure that civil matters are handled by the imams and judges of law, following the Islamic Sharia Law. While the Criminal Law is executed by our local governors in the name of the Shah, granting the people the freedom to be judged under the true faith, but making sure that criminal justice remains a powerful tool in the hands of the Shah to maintain order and secure his power."
  
  
  
@@ -859,7 +861,7 @@
  mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' estate interaction for additional land fire damage."
  mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' estate interaction for reduced autonomy."
  mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
- 
+ mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ascention."
  
  
  #Edicts
