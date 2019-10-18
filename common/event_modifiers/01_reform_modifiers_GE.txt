@@ -201,3 +201,10 @@ GE_qing_court_medium = {
 GE_qing_court_large = {
 	administrative_efficiency = 0.05
 }
+GE_Bad_Custodian = {
+	prestige = -2
+	legitimacy = -1
+}
+GE_Good_Custodian = {
+	prestige = 1
+}

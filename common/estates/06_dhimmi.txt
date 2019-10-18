@@ -81,6 +81,13 @@ estate_dhimmi = {
 	# Influence modifiers
 	base_influence = 0
 	influence_modifier = {
+		desc = EST_VAL_SAYYID_PRIVILEGES_REFORM
+		trigger = {
+			has_reform = sayyid_privileges_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_RELIGIOUS_MINORITY
 		trigger = {
 			any_owned_province = {

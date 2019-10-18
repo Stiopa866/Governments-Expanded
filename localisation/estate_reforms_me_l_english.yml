@@ -750,16 +750,23 @@
  grand_secretariat_reform_desc: "In 1380, the Hongwu Emperor abolished the old Secretariat system, to keep the six ministries from being controlled by only two chancellors. To solve this bureaucratic void in turn, the late Emperor recruited the Hanlin Academy and created the Grand Secretariat. With the duty of managing the ministries in different hands, who all responded to the Secretariat (and in turn spoke to the Emperor), we can effectively wield our government decisions with ease, at the cost of averting our eyes from some unsavory practices."
  eunich_administration_reform: "Eunich Administration"
  eunich_administration_reform_desc: "The eunuchs of the Imperial family serve as our ears, listening to every corner of the court and country, and sending their words right to us. Rather than look for commoners who will defile our palace, prestige and populace, let us elevate these servants whose life depend on us."
- civil_servant_reform: "Civil Servant System
+ civil_servant_reform: "Civil Servant System"
  civil_servant_reform_desc: "The millenium old Civil Servant System has proved indispensable for the management of our country, just like for countries before us. It still carries on flaws however: it takes but one test to pass, and the cream of the crop is mixed with less talented people. On top of this, some officials end up serving in their hometowns for life, bringing out widespread corruption. We must perfect this system for the heavens to keep smiling over us."
  absolutist_administration_reform: "Absolutist Administration"
  absolutist_administration_reform_desc: "When the Hongwu Emperor was alive, he hoped to create a stable society with submissive subjects. Such an Empire needs to be led by a strong and benevolent son, not a group of literati."
  permanent_regency_reform: "Permanent Regency"
  permanent_regency_reform_desc: "Taoism believes that great monarch rules by well by doing nothing. To do so, he must retreat behind the scenes and hand over political affairs to the First and Second cabinets, as well as civil literary scholars who are not only capable in confucian classic, but also ambitious."
  
- 
- 
- 
+ sharifate_reform: "Sharifate"
+ sharifate_reform_desc: "Akin to European feudal nobility, Ashraf were essentially wealthy, hereditary landowners, but differed in their methods of rule. Sharifates were highly centralized around religious centers such as Mecca or Medina, and thus ruled with a heavy dependency on theological principles, with heavy emphasis on Islamic law and punishment."
+ sayyid_privileges_reform: "Sayyid Privileges"
+ sayyid_privileges_reform_desc: "Through allotting certain privileges to the Sayyids--descendants of Husayn ibn Ali--that are typically reserved for Ashraf, we might yet earn their favor, spurring along the process of centralization, as well as the replacement of the Dhimmi with provincial Sunni governors."
+ dual_city_administration_reform: "Dual City Administration"
+ dual_city_administration_reform_desc: "The cities of Mecca and Medina are already incredibly important to our administration, but our administration is split between the two. By establishing superior communication between the two, we can effectively ensure the resources of both cities are used to their fullest potential. In the past, this form of cooperation was deemed impossible due to mountainous terrain and political strife, but the times are changing, and technology is advancing."
+ sherifan_levies_reform: "Sherifan Levies"
+ sherifan_levies_reform_desc: "Ashraf, wealthy landowners that they are, have access to swathes of peasants, though until recent years these peasants have been more than occupied tilling the dry, cracked earth to grow whatever meager crops could manage. Agricultural technology has lifted much of the burden off of the peasantry, allowing Ashraf to draw upon them for our army."
+ highborn_ministers_reform: "Highborn Ministers"
+ highborn_ministers_reform_desc: ""Sharifan administrators are in high demand, but very few are available to alleviate the burdens of governance. By opening up governing positions to all descendants of Muhammad, we would effectively increase the labor available for our efforts."
  
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
@@ -878,6 +885,8 @@
  mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
  mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
  mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
+ mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
+ 
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

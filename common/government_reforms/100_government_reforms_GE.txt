@@ -1084,6 +1084,49 @@ despotate_of_caucasia_reform = {
 	}
 }
 
+sharifate_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	queen = no
+	potential = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = sharifate_reform
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = sharifate_reform
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+		legitimacy = 0.5
+		tolerance_heretic = -3
+	}
+	custom_attributes = {
+		enables_custodian_of_cities = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -2698,6 +2741,48 @@ turkic_qasilbash_heirs_reform = {
 	}
 }
 
+sayyid_privileges_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = sayyid_privileges_reform
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = sayyid_privileges_reform
+		}
+	}
+	modifiers = {
+		vassal_income = 0.33
+		tolerance_own = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier3
 
 regional_forts_reform = {
@@ -3695,6 +3780,48 @@ tajik_administration_reform = {
 	}
 }
 
+dual_city_administration_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = dual_city_administration_reform
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = dual_city_administration_reform
+		}
+	}
+	modifiers = {
+		monarch_admin_power = 1
+		global_autonomy = -0.025
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier4
 
 #######
@@ -4665,6 +4792,51 @@ civil_servant_reform = {
 	}
 	custom_attributes = {
 		enables_eastern_courts = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+highborn_ministers_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = highborn_ministers_reform
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = highborn_ministers_reform
+		}
+	}
+	modifiers = {
+		free_adm_policy = 1
+		max_states = 2
+	}
+	custom_attributes = {
+		enables_abolish_noble_customs = yes
 	}
 	ai = {
 		factor = 100
@@ -6818,6 +6990,51 @@ reforms_of_abbas_reform = {
 	}
 	custom_attributes = {
 		enables_fire_ghulams = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+sherifan_levies_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = sherifan_levies_reform
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				primary_culture = hejazi_culture	
+			}
+			has_reform = sherifan_levies_reform
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.15
+		reinforce_cost_modifier = -0.20
+	}
+	custom_attributes = {
+		enables_grand_captain = yes
 	}
 	ai = {
 		factor = 100

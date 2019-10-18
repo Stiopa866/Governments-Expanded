@@ -100,6 +100,14 @@ estate_nobles =
 	
 	# Influence modifiers
 	base_influence = 20
+	
+	influence_modifier = {
+		desc = EST_VAL_SAYYID_PRIVILEGES_REFORM
+		trigger = {
+			has_reform = sayyid_privileges_reform
+		}
+		influence = 10
+	}
 	influence_modifier = {
 		desc = EST_VAL_BASTARD_FEUDALISM
 		trigger = {
@@ -378,6 +386,13 @@ estate_nobles =
 	
 	
 	# Loyalty modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_SAYYID_PRIVILEGES_REFORM
+		trigger = {
+			has_reform = sayyid_privileges_reform
+		}
+		loyalty = 10
+	}
 	loyalty_modifier = {
 		desc = EST_VAL_FRENCH_ABSOLUTISM_LOY
 		trigger = {
@@ -1482,9 +1497,10 @@ estate_nobles =
 		
 		potential = {
 			has_government_attribute = enables_knightly_privileges
-			}
+		}
 			
 		trigger = {
+			has_government_attribute = enables_knightly_privileges
 		}
 		
 		effect = {
