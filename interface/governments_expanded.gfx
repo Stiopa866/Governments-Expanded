@@ -692,5 +692,30 @@ spriteTypes = {
 		name = "government_reform_persia_abbas"
 		texturefile = "gfx//interface//government_reform_icons//persia_abbas.dds"
 	}
+	spriteType = {
+		name = "government_reform_hejaz_sharif"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_sharif.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_sayyid"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_sayyid.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_custodian"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_custodian.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_cavalry"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_cavalry.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_ministers"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_ministers.dds"
+	}
+	spriteType = {
+		name = "government_reform_turks_sultanate_of_women"
+		texturefile = "gfx//interface//government_reform_icons//turks_sultanate_of_women.dds"
+	}
+	
 }
 

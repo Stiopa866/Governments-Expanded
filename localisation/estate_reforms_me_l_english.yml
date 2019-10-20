@@ -768,6 +768,17 @@
  highborn_ministers_reform: "Highborn Ministers"
  highborn_ministers_reform_desc: ""Sharifan administrators are in high demand, but very few are available to alleviate the burdens of governance. By opening up governing positions to all descendants of Muhammad, we would effectively increase the labor available for our efforts."
  
+ timariot_domains_reform: "Timariot Domains"
+ timariot_domains_reform_desc: "The Timariot was a warrior elite that composed the aristocracy of conquered Ottoman lands. They were akin to European nobility in the fact that they were expected to maintain the land they were given in times of peace, and contribute soldiers and rations to the government in times of war. However, they did not legally own this land, instead deriving their legitimacy completely from the Padishah."
+ qadi_authority_reform: "Qadi Authority"
+ qadi_authority_reform_desc: "The Qadi were regional administrators, serving various roles as needed, though they officially held the position of magistrate of the Shari'a court. They administered justice on a local level in accordance to Islamic principles. Through strengthening the rights of these men, we can increase the influence Islam plays in our borders."
+ kaza_system_reform: "Kaza System"
+ kaza_system_reform_desc: "The Kaza was an administrative division in the Ottoman Empire, unifying the tasks of the Qadi, Müdür, and Kaymakam and allowing for greater cohesion among the empire."
+ expanded_devshirme_reform: "Expanded Devshirme"
+ expanded_devshirme_reform_desc: "The Devshrime System already provides us with a steady stream of Janissaries, but we have less control than we would hope for. We should centralize and expand the process to ensure the quality of the soldiers."
+ sultanate_of_women_reform: "Sultanate of Women"
+ sultanate_of_women_reform_desc: "By marrying Roxolana Suleiman created a new position in the imperial court, the position of 'Haseki Sultan', or Imperial Consort, which would go on to hold significant influence over the governance of the Ottoman State. Often these women would invest in internal matters, like ceremonies and the construction of public works. Yet at times they maintained the military of the Ottoman State while the sultan was unable to rule himself due to age or incompetence."
+ 
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -886,7 +897,14 @@
  mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
  mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
  mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
- 
+ mechanic_enables_timariots_yes: "Timariots: §G+1§! Tax and  §G+250§! Manpower in every Noble Province."
+ mechanic_enables_qadi_authority_yes: "Qadi Authority: §G-15%§! State Maintenance in Muslim provinces."
+ mechanic_enables_kaza_system_yes: "Kaza System: For every 10% Sunni Provinces, gain §G+1%§! Trade Efficiency."
+ mechanic_enables_millet_system_yes: "Millet System: Accepted Cultures gain §G-1§! Unrest and §G+15%§! Tax."
+ mechanic_enables_devshirme_yes: "Devshirme: §G+25%§! Manpower in Orthodox Provinces."
+ mechanic_enables_janissary_guards_yes: "Janissary Guards: §G+5%§! Discipline for Janissaries as long as you have less then 20% Janissaries."
+ mechanic_enables_koprulu_dynasty_yes: "Koprulu Viziers: Allows your vizier to focus on an area every 25 years."
+ mechanic_enables_public_works_yes: "Public Works: §G-10%§! Local Development Cost and §G-2§! Unrest in provinces with a Courthouse."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -961,6 +979,8 @@
  shock_general.tooltip:1 "Gain General with §G40§! tradition and §G1§! extra Shock"
  Placate_Junkers.tooltip:1 "Get §R25%§! Autonomy in each province owned by the Junkers Estate."
  Provinces_Junkers.tooltip:1 "Effects scale with relative amount of lands this estate holds"
+ GE_Koprulu_Defence_Event:1 "Get §G15%§! Fort Defence in all border provinces."
+ GE_Koprulu_Economy_Event:1 "Get §G10%§! Goods produced in every province producing Grain or Livestock."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

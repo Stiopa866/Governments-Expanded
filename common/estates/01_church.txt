@@ -92,6 +92,13 @@ estate_church =
 	# Influence modifiers
 	base_influence = 20
 	influence_modifier = {
+		desc = EST_VAL_QADI_AUTHORITY_REFORM
+		trigger = {
+			has_reform = qadi_authority_reform
+		}
+		influence = 10
+	}
+	influence_modifier = {
 		desc = EST_VAL_THEOCRATIC_BUREACRATS_REFORM
 		trigger = {
 			has_reform = theocratic_bureacrats_reform

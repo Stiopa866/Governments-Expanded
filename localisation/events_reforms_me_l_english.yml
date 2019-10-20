@@ -104,7 +104,11 @@
  reform_me_events.149.a: "Small Council."
  reform_me_events.149.b: "Medium Council."
  reform_me_events.149.c: "Large Council."
- 
+ reform_me_events.156.t: "Koprulu Vizier"
+ reform_me_events.156.d: "Either Elephante is gonna write something here or im taking his tusks."
+ reform_me_events.156.a: "Ensure our marcher lords are battle ready."
+ reform_me_events.156.b: "Secure the grain imports and guarentee the food supply."
+ reform_me_events.156.c: "Protect the court from intrigue and corruption."
  
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."

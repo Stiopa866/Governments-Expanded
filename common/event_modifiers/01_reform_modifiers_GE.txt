@@ -208,3 +208,64 @@ GE_Bad_Custodian = {
 GE_Good_Custodian = {
 	prestige = 1
 }
+GE_Timariots = {
+	tax_income = 1
+	local_manpower = 0.250
+}
+GE_Qadi_Authority = {
+	local_state_maintenance_modifier = -0.15
+}
+GE_Millet_System = {
+	local_unrest = -1
+	local_tax_modifier = 0.15
+}
+GE_Kaza_System_0 = {
+	trade_efficiency = 0.01
+}
+GE_Kaza_System_1 = {
+	trade_efficiency = 0.02
+}
+GE_Kaza_System_2 = {
+	trade_efficiency = 0.03
+}
+GE_Kaza_System_3 = {
+	trade_efficiency = 0.04
+}
+GE_Kaza_System_4 = {
+	trade_efficiency = 0.05
+}
+GE_Kaza_System_5 = {
+	trade_efficiency = 0.06
+}
+GE_Kaza_System_6 = {
+	trade_efficiency = 0.07
+}
+GE_Kaza_System_7 = {
+	trade_efficiency = 0.08
+}
+GE_Kaza_System_8 = {
+	trade_efficiency = 0.09
+}
+GE_Kaza_System_9 = {
+	trade_efficiency = 0.10
+}
+GE_Devshirme = {
+	local_manpower_modifier = 0.25
+}
+GE_Janissary_Guards = {
+	is_janissary_modifier = yes
+	discipline = 0.05
+}
+GE_Koprulu_Defence_Local = {
+	local_defensiveness = 0.15
+}
+GE_Koprulu_Economy_Local = {
+	trade_goods_size_modifier = 0.10
+}
+GE_Koprulu_Court = {
+	yearly_corruption = -0.05
+}
+GE_Public_Works = {
+	local_development_cost = -0.10
+	local_unrest = -2
+}

@@ -88,6 +88,14 @@ estate_dhimmi = {
 		influence = 10
 	}
 	influence_modifier = {
+		desc = EST_VAL_QADI_AUTHORITY_REFORM
+		trigger = {
+			has_reform = qadi_authority_reform
+		}
+		influence = -10
+	}
+	
+	influence_modifier = {
 		desc = EST_VAL_RELIGIOUS_MINORITY
 		trigger = {
 			any_owned_province = {

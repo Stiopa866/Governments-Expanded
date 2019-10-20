@@ -132,6 +132,8 @@ monarchy = {
 				support_samurai_reform
 				turkic_qasilbash_heirs_reform
 				sayyid_privileges_reform
+				timariot_domains_reform
+				qadi_authority_reform
 			}
 		}
 		bureaucracy = {
@@ -155,6 +157,7 @@ monarchy = {
 				oprichnina_reform
 				constitutio_joachimica_reform
 				millet_reform
+				kaza_system_reform
 				great_law_of_peace_reform
 				#ancien_regime_reform #FRA
 				independent_vassals_reform
@@ -194,7 +197,7 @@ monarchy = {
 				empowered_heavy_knights_reform
 				italian_mercenaries_reform
 				imperial_circles_reform
-				turkish_iqta_reform
+				expanded_devshirme_reform
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
@@ -312,6 +315,7 @@ monarchy = {
 				ghulam_governates_reform
 				grand_council_reform
 				grand_secretariat_reform
+				sultanate_of_women_reform
 			}
 		}
 		economic_policy = {

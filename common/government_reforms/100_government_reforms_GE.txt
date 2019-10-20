@@ -1085,7 +1085,7 @@ despotate_of_caucasia_reform = {
 }
 
 sharifate_reform = {
-	icon = noble_muslim
+	icon = hejaz_sharif
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -2742,7 +2742,7 @@ turkic_qasilbash_heirs_reform = {
 }
 
 sayyid_privileges_reform = {
-	icon = noble_muslim
+	icon = hejaz_sayyid
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -2777,6 +2777,82 @@ sayyid_privileges_reform = {
 	modifiers = {
 		vassal_income = 0.33
 		tolerance_own = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+timariot_domains_reform = {
+	icon = horde_riding
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = turkish	
+			has_reform = timariot_domains_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish	
+			has_reform = timariot_domains_reform
+		}
+	}
+	modifiers = {
+		reduced_liberty_desire = 10
+	}
+	custom_attributes = {
+		enables_timariots = yes #1 tax and 250 manpower in noble provinces
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+qadi_authority_reform = {
+	icon = horde_riding
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = turkish	
+			has_reform = qadi_authority_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish	
+			has_reform = qadi_authority_reform
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_qadi_authority = yes #-15% state maintenance in islamic provinces
 	}
 	ai = {
 		factor = 100
@@ -3131,15 +3207,59 @@ millet_reform = {
 	}
 	potential = {
 		OR = {
-			tag = TUR
-			tag = RUM
+			primary_culture = turkish
+			has_reform = millet_reform
+		}
+	}
+	trigger = {
+		OR = {
 			primary_culture = turkish
 			has_reform = millet_reform
 		}
 	}
 	modifiers = {
-		global_tax_modifier = 0.10
-		global_unrest = -1
+		num_accepted_cultures = 1
+	}
+	custom_attributes = {
+		enables_millet_system = yes #-1 Unrest and 15% tax in Accepted Cultures
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+kaza_system_reform = {
+	icon = hejaz_sayyid
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = turkish
+			has_reform = kaza_system_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish
+			has_reform = kaza_system_reform
+		}
+	}
+	modifiers = {
+		max_states = 2
+	}
+	custom_attributes = {
+		enables_kaza_system = yes #1% Trade Efficiency per 10% Sunni provinces
 	}
 	ai = {
 		factor = 100
@@ -3781,7 +3901,7 @@ tajik_administration_reform = {
 }
 
 dual_city_administration_reform = {
-	icon = noble_muslim
+	icon = hejaz_custodian
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3838,6 +3958,7 @@ tur_reform_beylerbeys = {
 	}
 	potential = {
 		tag = TUR
+		mission_completed = TUR_beylerbeys
 		NOT = { mission_completed = TUR_eyalets }
 	}
 }
@@ -4225,27 +4346,34 @@ koprulu_dynasty_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
 	potential = {
 		OR = {
-			tag = TUR
-			tag = RUM
+			primary_culture = turkish
+			has_reform = koprulu_dynasty_reform
+		}
+	}
+	trigger = {
+		OR = {
 			primary_culture = turkish
 			has_reform = koprulu_dynasty_reform
 		}
 	}
 	modifiers = {
-		advisor_cost = -0.05
-		leader_cost = -0.10
+		same_culture_advisor_cost = -0.10
+		advisor_pool = 1
+	}
+	custom_attributes = {
+		enables_koprulu_dynasty = yes
 	}
 	ai = {
 		factor = 100
@@ -4799,7 +4927,7 @@ civil_servant_reform = {
 }
 
 highborn_ministers_reform = {
-	icon = noble_muslim
+	icon = hejaz_ministers
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -5493,6 +5621,45 @@ grand_council_reform = {
 	}
 }
 
+sultanate_of_women_reform = {
+	icon = turks_sultanate_of_women
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = turkish
+			has_reform = sultanate_of_women_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish
+			has_reform = sultanate_of_women_reform
+		}
+	}
+	modifiers = {
+		female_advisor_chance = 0.25
+		prestige = 0.5
+	}
+	custom_attributes = {
+		enables_public_works = yes #-10% development cost and -2 unrest in provinces with a courthouse.
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier6
 
 freedom_of_religion_reform = {
@@ -6077,30 +6244,39 @@ italian_mercenaries_reform = {
 	}
 }
 
-turkish_iqta_reform = {
+expanded_devshirme_reform = {
 	icon = Turkish_iqta
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
 	potential = {
 		OR = {
 			primary_culture = turkish
-			has_reform = turkish_iqta_reform
+			has_reform = expanded_devshirme_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish
+			has_reform = expanded_devshirme_reform
 		}
 	}
 	modifiers = {
-		cavalry_cost = -0.15
-		land_maintenance_modifier = -0.05
+		manpower_recovery_speed = 0.10
+	}
+	custom_attributes = {
+		enables_devshirme = yes #25% Manpower in Orthodox Provinces
+		enables_janissary_guards = yes #5% Janissary Discipline if under 20% Janissaries
 	}
 	ai = {
 		factor = 10
@@ -6997,7 +7173,7 @@ reforms_of_abbas_reform = {
 }
 
 sherifan_levies_reform = {
-	icon = noble_muslim
+	icon = hejaz_cavalry
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
