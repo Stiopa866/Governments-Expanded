@@ -269,3 +269,6 @@ GE_Public_Works = {
 	local_development_cost = -0.10
 	local_unrest = -2
 }
+GE_Caravanserai = {
+	province_trade_power_value = 5
+}

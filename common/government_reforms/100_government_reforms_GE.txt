@@ -5849,6 +5849,34 @@ permanent_regency_reform = {
 	}
 }
 
+tanzimat_reforms_reform = {
+	icon = arabic_scripture
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = turkish
+			has_reform = tanzimat_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish
+			has_reform = tanzimat_reform
+		}
+	}
+	modifiers = {
+		global_unrest = -2
+		max_absolutism = -5
+		global_institution_spread = 0.25
+	}
+	custom_attributes = {
+		enables_patriotism = yes #+25% Manpower in Own Culture Provinces.
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier7
 
 abolish_clergy_privileges_reform = {
@@ -7484,7 +7512,34 @@ armenian_silk_traders_reform = {
 		culture_conversion_cost = -0.20
 	}
 	custom_attributes = {
-		enables_silk_traders = yes
+		enables_silk_traders = yes #15% trade efficiency if trading in silk
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+caravanserai_reform = {
+	icon = paper_money_map
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = turkish
+			has_reform = caravanserai_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = turkish
+			has_reform = caravanserai_reform
+		}
+	}
+	modifiers = {
+		caravan_power = 0.25
+		merchants = 1
+	}
+	custom_attributes = {
+		enables_caravanserai = yes #+5 Trade Power in provinces with centers of trade and a fort
 	}
 	ai = {
 		factor = 100

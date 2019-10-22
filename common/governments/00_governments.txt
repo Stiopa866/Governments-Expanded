@@ -332,6 +332,7 @@ monarchy = {
 				empowered_expand_corvee_reform
 				empowered_royal_trading_company_reform
 				armenian_silk_traders_reform
+				caravanserai_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
@@ -352,6 +353,7 @@ monarchy = {
 				principle_of_fiqh_reform
 				absolutist_administration_reform
 				permanent_regency_reform
+				tanzimat_reforms_reform
 			}
 		}
 		separation_of_power = {

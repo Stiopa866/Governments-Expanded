@@ -778,6 +778,11 @@
  expanded_devshirme_reform_desc: "The Devshrime System already provides us with a steady stream of Janissaries, but we have less control than we would hope for. We should centralize and expand the process to ensure the quality of the soldiers."
  sultanate_of_women_reform: "Sultanate of Women"
  sultanate_of_women_reform_desc: "By marrying Roxolana Suleiman created a new position in the imperial court, the position of 'Haseki Sultan', or Imperial Consort, which would go on to hold significant influence over the governance of the Ottoman State. Often these women would invest in internal matters, like ceremonies and the construction of public works. Yet at times they maintained the military of the Ottoman State while the sultan was unable to rule himself due to age or incompetence."
+ caravanserai_reform: "Restore the Caravanserai"
+ caravanserai_reform_desc: "Though we inherited the Caravanserai system from the Seljuks, the system has fallen into decay at the hands of revolt destroying infrastructure. As the Silk Road decays in favor of the Indian Ocean Route, so too do the Caravanserai. We must invest in this dwindling industry and revive it."
+ tanzimat_reforms_reform: "Tanzimat Reforms"
+ tanzimat_reforms_reform_desc: "The Tanzimat Reforms focused on a progressive, western view on governance. Spearheaded by the Young Turks, it never truly took hold until the late 1800s. Whilst in effect, the constitution slowly centralized power, despite limiting some governmental processes. It truly appeased both the people and government officials. Guarenteeing civil rights and liberties for everyone, allowing non-muslims into the military and bringing education and modernization into the traditionalist Ottoman lands."
+ 
  
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
@@ -905,6 +910,8 @@
  mechanic_enables_janissary_guards_yes: "Janissary Guards: §G+5%§! Discipline for Janissaries as long as you have less then 20% Janissaries."
  mechanic_enables_koprulu_dynasty_yes: "Koprulu Viziers: Allows your vizier to focus on an area every 25 years."
  mechanic_enables_public_works_yes: "Public Works: §G-10%§! Local Development Cost and §G-2§! Unrest in provinces with a Courthouse."
+ mechanic_enables_caravanserai_yes: "Caravanserai: §G+5§! Trade power in Centers of Trade with Forts."
+ 
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
