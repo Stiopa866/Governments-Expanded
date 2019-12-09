@@ -85,7 +85,7 @@ estate_dhimmi = {
 		trigger = {
 			has_reform = sayyid_privileges_reform
 		}
-		influence = 10
+		influence = -10
 	}
 	influence_modifier = {
 		desc = EST_VAL_QADI_AUTHORITY_REFORM
@@ -150,6 +150,13 @@ estate_dhimmi = {
 			}
 		}
 		loyalty = -20
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_DHIMMI_NOBLES_REFORM
+		trigger = {
+			has_reform = dhimmi_nobles_reform
+		}
+		loyalty = 10
 	}
 	
 	#Get's the reverse loyalty modifiers for piety compared to Ulema.

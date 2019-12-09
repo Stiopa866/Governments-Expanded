@@ -2,7 +2,7 @@ french_feudalism = {
 	icon = feudalism
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = cosmopolitan_french
+		tag = FRA
 	}
 	trigger = {
 		has_reform = french_feudalism
@@ -22,9 +22,7 @@ ancien_regime_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	potential = { 
-		OR = {
-			primary_culture = cosmopolitan_french
-		}
+		tag = FRA
 	}
 	trigger = {
 		has_reform = ancien_regime_reform
@@ -46,10 +44,9 @@ french_absolutism = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	potential = {
-		primary_culture = cosmopolitan_french
+		tag = FRA
 	}
 	trigger = {
-		has_reform = droit_divine_reform
 		has_reform = french_absolutism
 	}
 	custom_attributes = {
@@ -518,7 +515,7 @@ society_of_agriculture_reform = {
 		global_own_trade_power = 0.25
 	}
 	custom_attributes = {
-		enables_society_of_agriculture = yes #25% Production Efficiency in Stated Agricultural Goods (Livestock, Grain
+		enables_society_of_agriculture = yes #25% Production Efficiency in Stated Agricultural Goods (Livestock, Grain)
 	}
 	ai = {
 		factor = 100

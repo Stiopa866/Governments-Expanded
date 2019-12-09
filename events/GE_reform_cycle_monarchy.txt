@@ -176,7 +176,6 @@ country_event = {
 		trigger = {
 			OR = {
 				has_reform = theocratic_bureacrats_reform
-				has_reform = house_of_knights_reform
 			}
 		}
 		random_list = {

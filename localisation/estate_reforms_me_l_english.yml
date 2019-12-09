@@ -181,7 +181,7 @@
  abolish_the_haandfaestning_reform: "Abolish the Haandfaestning"
  abolish_the_haandfaestning_reform_desc: "For centuries the Danish kings have had to accept limits to their power, and had to struggle over each and every issue with the nobility. My hands shall no longer be bound by such a agreement. My rule is my own, and any noble or clergical influence shall no longer be accepted. My reign and my heirs are no longer submit to signing this humiliating document."
  the_black_guard_reform: "The Black Guard"
- the_black_guard_reform_desc: "Formerly a Habsburg unit raised to defend the low countries, The Black Guard Landsknechten served the danish kings in fighting noble and swedish revolts untill their demise in the battle of hemingstead."
+ the_black_guard_reform_desc: "Formerly a Habsburg unit raised to defend the low countries, The Black Guard Landsknechten served the danish kings in fighting noble and swedish revolts until their demise in the battle of hemingstead."
  
  
 
@@ -783,6 +783,8 @@
  tanzimat_reforms_reform: "Tanzimat Reforms"
  tanzimat_reforms_reform_desc: "The Tanzimat Reforms focused on a progressive, western view on governance. Spearheaded by the Young Turks, it never truly took hold until the late 1800s. Whilst in effect, the constitution slowly centralized power, despite limiting some governmental processes. It truly appeased both the people and government officials. Guarenteeing civil rights and liberties for everyone, allowing non-muslims into the military and bringing education and modernization into the traditionalist Ottoman lands."
  
+ rum_eagle_reform: "Rumi Government"
+ rum_eagle_reform_desc: "Decades of administering vast lands under Egyptian and Mamluk governors have certainly opened our horizons in matters of administration. Exposure to the Mamlukean bureaucracy has given the edge to our Pashas and Sultan in order to reform the entire beaurocratic body, thus paving the way for a new form of government."
  
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
@@ -833,7 +835,7 @@
  mechanic_enables_grazing_herds_yes: "Berber Herders: §G-5%§! Development Cost and §G-5%§! Culture Conversion Cost in Iberian Hills, Drylands and Highlands."
  mechanic_enables_kingdom_of_brazil_yes: "Kingdom of Brazil: Brazil gets §G+100%§! Force Limit Modifier."
  mechanic_enables_trade_princes_yes: "Trade Princes: §G+1§! Merchant if you control an Aragonese or Catalonian subject."
- mechanic_enables_militant_orders_yes: "Militant Orders: §G+20%§! Manpower Recovery Speed and §G0.5§! Army Tradition while at war with heretics or heathens."
+ mechanic_enables_militant_orders_yes: "Militant Orders: §G+25%§! Manpower Recovery Speed and §G1§! Army Tradition while at war with heretics or heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
  mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces with mosques based on how tolerant you are."
@@ -894,7 +896,7 @@
  mechanic_enables_voc_mentality_yes: "Sovereign Trade Companies: §G+10%§! Goods Produced in Trade Company provinces."
  mechanic_enables_absolute_reelection_yes: "Absolute Mandate: §G+2§! Absolutism when you Re-elect a ruler."
  mechanic_enables_knightly_privileges_yes: "Knightly Privileges: Unlocks 'grant Knightly Privileges' Noble Estate Interaction."
- mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1§! Unrest and §G-25%§! Stability Cost modifier untill the end of his reign."
+ mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1§! Unrest and §G-25%§! Stability Cost modifier until the end of his reign."
  
  mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' estate interaction for additional land fire damage."
  mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' estate interaction for reduced autonomy."
@@ -1004,13 +1006,13 @@
  GE_republicans_FACTION_DESC: "We waz savages."
  GE_orthodox: "Orthodox"
  GE_orthodox_influence: "Orthodox Influence"
- GE_orthodox_FACTION_DESC: "The Georgian Orthodox Church is a powerfull force that seeks to expand its power through conversion."
+ GE_orthodox_FACTION_DESC: "The Georgian Orthodox Church is a powerful force that seeks to expand its power through conversion."
  GE_coptic: "Coptic"
  GE_coptic_influence: "Coptic Influence"
- GE_coptic_FACTION_DESC: "The Armenian Coptic Church is a powerfull force that seeks to expand its power through massed force of arms."
+ GE_coptic_FACTION_DESC: "The Armenian Coptic Church is a powerful force that seeks to expand its power through massed force of arms."
  GE_sunni: "Islamic"
  GE_sunni_influence: "Islamic Influence"
- GE_sunni_FACTION_DESC: "The Islamic Religion is a powerfull force that seeks to expand its power through earning the acceptance of the people."
+ GE_sunni_FACTION_DESC: "The Islamic Religion is a powerful force that seeks to expand its power through earning the acceptance of the people."
  
  
  Catholics_MECHANIC_TOOLTIP:0 "Catholics"

@@ -1127,6 +1127,40 @@ sharifate_reform = {
 	}
 }
 
+rum_eagle_reform = {
+	icon = mamluk_government
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	potential = {
+		has_reform = rum_eagle_reform
+	}
+	trigger = {
+		has_reform = rum_eagle_reform
+	}
+	modifiers = {
+		monarch_admin_power = 2
+		max_absolutism = 5
+		diplomatic_upkeep = 1
+	}
+	custom_attributes = {
+		
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+		heir = no
+		has_pashas = yes
+		foreign_slave_rulers = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -6904,7 +6938,7 @@ jinetes_reform = {
 		}
 	}
 	modifiers = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		cavalry_cost = -0.10
 		cavalry_flanking = 0.5
 	}

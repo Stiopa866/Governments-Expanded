@@ -34,7 +34,7 @@ monarchy = {
 				athenian_monarchy
 				german_kaiserreich
 				caliphate_reform_sunni
-				#west_slavic_monarchy
+				west_slavic_monarchy
 				#GE
 				french_feudalism
 				#french_reformed_feudalism
@@ -74,6 +74,7 @@ monarchy = {
 				kingdom_of_jerusalem_reform 
 				despotate_of_caucasia_reform
 				sharifate_reform
+				rum_eagle_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -595,9 +596,7 @@ republic = {
 			reforms = {
 				parliamentary_reform
 				presidential_reform
-				pirate_king_reform
-				war_against_the_world_doctrine_reform
-				black_market_consortium_reform
+				
 				# ME Reforms:
 				#GE
 				stadholder_reform
@@ -613,6 +612,9 @@ republic = {
 			reforms = {
 				broaden_executive_powers_reform
 				devolution_of_powers_reform
+				pirate_king_reform
+				war_against_the_world_doctrine_reform
+				black_market_consortium_reform
 				confederation_of_states_reform
 				hansa_domination_reform
 				empowered_aristocratic_courts_reform

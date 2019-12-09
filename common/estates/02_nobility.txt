@@ -102,6 +102,13 @@ estate_nobles =
 	base_influence = 20
 	
 	influence_modifier = {
+		desc = EST_VAL_DHIMMI_NOBLES_REFORM
+		trigger = {
+			has_reform = dhimmi_nobles_reform
+		}
+		influence = -5
+	}
+	influence_modifier = {
 		desc = EST_VAL_SAYYID_PRIVILEGES_REFORM
 		trigger = {
 			has_reform = sayyid_privileges_reform
