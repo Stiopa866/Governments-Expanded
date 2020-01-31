@@ -75,6 +75,7 @@ monarchy = {
 				despotate_of_caucasia_reform
 				sharifate_reform
 				rum_eagle_reform
+				hermit_kingdom_reform
 			}
 		}
 		hereditary_vs_nobility = {
