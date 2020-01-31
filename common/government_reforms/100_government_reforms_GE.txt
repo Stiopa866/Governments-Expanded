@@ -12,6 +12,18 @@ feudalism_reform = {
 		enables_independent_nobles = yes #+15% Local Manpower
 	}
 }
+
+hermit_kingdom_reform = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		development_cost = -0.05
+		defensiveness = 0.2
+	}
+}
+
 elective_monarchy_reform = {
 	icon = "ballot_box"
 	allow_normal_conversion = yes
