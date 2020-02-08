@@ -559,7 +559,6 @@ arch_king_reform = {
 	}
 	modifiers = {
 		prestige = 1
-		liberty_desire = 5
 		diplomatic_annexation_cost = -0.05
 	}
 	ai = {
@@ -637,6 +636,7 @@ austrian_empire_reform = {
 	potential = {
 		OR = {
 			primary_culture = austrian
+			has_reform = habsburg_monarchy_reform
 			has_reform = arch_duchy_reform
 		}
 	}
@@ -1155,6 +1155,35 @@ rum_eagle_reform = {
 		heir = no
 		has_pashas = yes
 		foreign_slave_rulers = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+high_king_of_ireland_reform = {
+	icon = high_king_of_ireland
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			has_reform = high_king_of_ireland_reform
+			tag = IRE
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = high_king_of_ireland_reform
+			tag = IRE
+		}
+	}
+	modifiers = {
+		prestige = 1
+		max_absolutism = 5
+	}
+	custom_attributes = {
+		
 	}
 	ai = {
 		factor = 100
@@ -2887,6 +2916,44 @@ qadi_authority_reform = {
 	}
 	custom_attributes = {
 		enables_qadi_authority = yes #-15% state maintenance in islamic provinces
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+clans_of_ireland_reform = {
+	icon = clans_of_ireland
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = clans_of_ireland_reform
+			primary_culture = irish
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = clans_of_ireland_reform
+			primary_culture = irish
+		}
+	}
+	modifiers = {
+		global_unrest = -1
+	}
+	custom_attributes = {
+		enables_clans_estate
 	}
 	ai = {
 		factor = 100
@@ -7287,9 +7354,8 @@ strenghten_industry_reform = {
 	potential = {
 	}
 	modifiers = {
-		global_tax_modifier = -0.05
+		global_tax_modifier = -0.10
 		build_cost = -0.1
-		global_trade_goods_size_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_industrialism = yes #+0.2 Goods produced in workshops
@@ -7309,6 +7375,7 @@ mercantilism_reform = {
 		production_efficiency = -0.10
 		global_prov_trade_power_modifier = 0.15
 		trade_steering = 0.20
+		merchants = 1
 	}
 	custom_attributes = {
 		enables_home_market = yes #2.5% Trade Efficiency per 10% Mercantilism
@@ -7340,6 +7407,7 @@ empowered_free_trade_reform = {
 	modifiers = {
 		global_trade_power = -0.10
 		global_trade_goods_size_modifier = 0.15
+		merchants = 1
 	}
 	custom_attributes = {
 		enables_trade_privileges = yes #15% Trade Value and 2.5 Base Trade power in Burgher Provinces
@@ -7358,6 +7426,7 @@ noble_taxes_reform = {
 		vassal_income = 0.25
 		global_tax_modifier = 0.15
 		min_autonomy_in_territories = -0.10
+		diplomatic_upkeep = 1
 	}
 	ai = {
 		factor = 1

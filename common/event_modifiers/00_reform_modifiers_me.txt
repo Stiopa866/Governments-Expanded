@@ -10,6 +10,9 @@ tax_peasants = {
 	local_tax_modifier = 0.10
 	tax_income = 0.6
 }
+Clans_Leader = {
+	free_leader_pool = 1
+}
 
 #Reforms
 

@@ -75,6 +75,7 @@ monarchy = {
 				despotate_of_caucasia_reform
 				sharifate_reform
 				rum_eagle_reform
+				high_king_of_ireland_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -135,6 +136,7 @@ monarchy = {
 				sayyid_privileges_reform
 				timariot_domains_reform
 				qadi_authority_reform
+				clans_of_ireland_reform
 			}
 		}
 		bureaucracy = {

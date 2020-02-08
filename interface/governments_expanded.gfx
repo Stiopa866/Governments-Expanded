@@ -716,6 +716,13 @@ spriteTypes = {
 		name = "government_reform_turks_sultanate_of_women"
 		texturefile = "gfx//interface//government_reform_icons//turks_sultanate_of_women.dds"
 	}
-	
+	spriteType = {
+		name = "government_reform_clans_of_ireland"
+		texturefile = "gfx//interface//government_reform_icons//clans_of_ireland.dds"
+	}
+	spriteType = {
+		name = "government_reform_high_king_of_ireland_reform"
+		texturefile = "gfx//interface//government_reform_icons//high_king_of_ireland_reform.dds"
+	}
 }
 
