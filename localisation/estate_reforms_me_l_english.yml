@@ -786,6 +786,28 @@
  rum_eagle_reform: "Rumi Government"
  rum_eagle_reform_desc: "Decades of administering vast lands under Egyptian and Mamluk governors have certainly opened our horizons in matters of administration. Exposure to the Mamlukean bureaucracy has given the edge to our Pashas and Sultan in order to reform the entire beaurocratic body, thus paving the way for a new form of government."
  
+ #Korea
+ hermit_kingdom_reform: "Hermit Kingdom"
+ hermit_kingdom_reform_desc: "During the rule of Joseon dynasty, Korea wasn't an expansionist state. In the five centuries of its rule, Korea has only expanded up to the Changbai Mountains and conducted no other major expansionist operations that resulted in significant territorial gains."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."

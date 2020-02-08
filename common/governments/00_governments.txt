@@ -76,6 +76,7 @@ monarchy = {
 				sharifate_reform
 				rum_eagle_reform
 				high_king_of_ireland_reform
+				hermit_kingdom_reform
 			}
 		}
 		hereditary_vs_nobility = {
