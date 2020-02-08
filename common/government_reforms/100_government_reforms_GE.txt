@@ -1201,7 +1201,7 @@ high_king_of_ireland_reform = {
 		max_absolutism = 5
 	}
 	custom_attributes = {
-		
+		enables_royal_council 
 	}
 	ai = {
 		factor = 100

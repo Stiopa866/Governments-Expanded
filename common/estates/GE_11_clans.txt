@@ -27,7 +27,7 @@ estate_clans =
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
 	 autonomy_does_not_affect = local_manpower_modifier
-	 autonomy_does_not_affect = local_tax_modifier
+	 autonomy_does_not_affect = land_forcelimit_modifier
 
 	country_modifier_happy = {
 		shock_damage = 0.10
@@ -43,11 +43,13 @@ estate_clans =
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
-		trade_goods_size_modifier = 0.10
-		local_development_cost = -0.10
+		land_forcelimit = 1
+		local_manpower = 1
+		local_defensiveness = 0.25
 	}
 	province_modifier_neutral = {
-		trade_goods_size_modifier = 0.10
+		land_forcelimit = 0.5
+		local_manpower = 1
 	}	
 	province_modifier_angry = {
 		local_unrest = 5
