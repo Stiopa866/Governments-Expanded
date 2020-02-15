@@ -2737,9 +2737,10 @@ chhetri_clans_reform = {
 	}
 	modifiers = {
 		leader_cost = -0.10
+		leader_land_shock = 1
 	}
 	custom_attributes = {
-		enables_rajput_law = yes
+		enables_rajput_law = yes #-2 Unrest and +10% Manpower in each province owned by the rajput estate
 	}
 	ai = {
 		factor = 100
@@ -2971,7 +2972,7 @@ clans_of_ireland_reform = {
 		global_unrest = -1
 	}
 	custom_attributes = {
-		enables_clans_estate
+		enables_clans_estate = yes #enables clans estate
 	}
 	ai = {
 		factor = 100
@@ -4876,7 +4877,6 @@ found_the_rothschilds_reform = {
 	modifiers = {
 		inflation_reduction = 0.05
 		interest = -1
-		advisor_cost = -0.05
 	}
 	ai = {
 		factor = 100
@@ -5084,6 +5084,44 @@ highborn_ministers_reform = {
 	}
 	custom_attributes = {
 		enables_abolish_noble_customs = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+kiwi_support_reform = {
+	icon = merchant_ship
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = malay
+			has_reform = kiwi_support_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = malay
+			has_reform = kiwi_support_reform
+		}
+	}
+	modifiers = {
+		global_trade_power = 0.10
+	}
+	custom_attributes = {
+		enables_kiwi_support = yes #5% ship trade power per merchant.
 	}
 	ai = {
 		factor = 100

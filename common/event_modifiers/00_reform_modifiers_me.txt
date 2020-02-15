@@ -485,8 +485,42 @@ Hansa_Ties_5 = {
 Royal_Army_Garrison = {
 	local_manpower = 0.1
 }
+Kiwi_Rights_1 = {
+	global_ship_trade_power = 0.05
+}
+Kiwi_Rights_2 = {
+	global_ship_trade_power = 0.10
+}
+Kiwi_Rights_3 = {
+	global_ship_trade_power = 0.15
+}
+Kiwi_Rights_4 = {
+	global_ship_trade_power = 0.20
+}
+Kiwi_Rights_5 = {
+	global_ship_trade_power = 0.25
+}
+Kiwi_Rights_6 = {
+	global_ship_trade_power = 0.30
+}
+Kiwi_Rights_7 = {
+	global_ship_trade_power = 0.35
+}
+Kiwi_Rights_8 = {
+	global_ship_trade_power = 0.40
+}
+Kiwi_Rights_9 = {
+	global_ship_trade_power = 0.45
+}
+Kiwi_Rights_10 = {
+	global_ship_trade_power = 0.50
+}
+GE_Rajput_Law = {
+	local_unrest = -2
+	local_manpower_modifier = 0.1
+}
 	
-
+	
 #Cortez
 Cortes_Piety = {
 	tolerance_own = 1

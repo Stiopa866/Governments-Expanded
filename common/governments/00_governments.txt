@@ -279,6 +279,7 @@ monarchy = {
 				eunich_administration_reform
 				civil_servant_reform
 				highborn_ministers_reform
+				kiwi_support_reform
 			}
 		}
 		deliberative_assembly = {
