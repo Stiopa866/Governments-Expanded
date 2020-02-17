@@ -939,6 +939,7 @@
  
  mechanic_enables_kiwi_support_yes: "Kiwi Support: §G+5%§! Ship Trade Power for each merchant you have."
  mechanic_enables_rajput_law_yes: "Rajput Law: §G-2§! Unrest and §G+10%§! Manpower in every province owned by the Rajput Estate."
+ mechanic_enables_marcher_lords_yes: "Marcher Lord Privileges: §G+25%§! Force Limit and Manpower in your vassals."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

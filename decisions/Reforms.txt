@@ -271,8 +271,8 @@ country_decisions = {
 		}
 		effect = {
 			country_event = { 
-			id = reform_me_events.137
-		}
+				id = reform_me_events.137
+			}
 		}
 		ai_will_do = {
 			factor = 0

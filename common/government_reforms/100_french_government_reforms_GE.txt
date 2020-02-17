@@ -131,7 +131,7 @@ noblesse_d_epee_reform = {
 		leader_cost = -0.10
 	}
 	custom_attributes = {
-		enables_officers_of_the_sword = yes #0.5 prestige if over 50 AT
+		enables_officers_of_the_sword = yes #1 prestige if over 50 AT
 	}
 	ai = {
 		factor = 100
@@ -268,7 +268,7 @@ abolish_local_parliaments_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.15
-		yearly_absolutism = 0.15
+		yearly_absolutism = 0.25
 	}
 	ai = {
 		factor = 100
@@ -304,7 +304,7 @@ compagnies_dordonnance_reform = {
 		cavalry_power = 0.05
 	}
 	custom_attributes = {
-		enables_regulated_leave = yes #25% Reinforcement Speed while over 50% Manpower
+		enables_regulated_leave = yes #15% Reinforcement Speed and 10% Manpower Recover while over 50% Manpower
 	}
 	ai = {
 		factor = 100

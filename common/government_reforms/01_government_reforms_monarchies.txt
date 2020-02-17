@@ -1171,13 +1171,15 @@ decentralize_reform = {
 	}
 	modifiers = {
 		num_accepted_cultures = 2
-		harsh_treatment_cost = -0.10
 	}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence
 			value = -1
 		}
+	}
+	custom_attributes = {
+		enables_marcher_lords = yes #25% vassal force limit and manpower
 	}
 	ai = {
 		factor = 1
