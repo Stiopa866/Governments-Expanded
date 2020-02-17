@@ -248,7 +248,7 @@ country_decisions = {
 			owns = 121
 			owns = 112
 			num_of_light_ship = 100
-			1297 = { # Genua
+			1297 = { # Genoa
 				is_strongest_trade_power = ROOT
 			}
 			1308 = { # Venice
@@ -257,6 +257,73 @@ country_decisions = {
 		}
 		effect = {
 			add_government_reform = consulate_of_the_sea
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	reforms_GE_consulate_of_the_malay = {
+		potential = {
+			government = monarchy
+			OR = {
+				culture_group = malay
+			}
+			NOT = { has_reform = consulate_of_the_malay }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 594
+				province_id = 596
+				province_id = 600
+				province_id = 613
+				province_id = 656
+				province_id = 2372
+				province_id = 2376
+				province_id = 2380
+				province_id = 4352
+				province_id = 2702
+				province_id = 2698
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			calc_true_if = {
+				owns = 594
+				owns = 596
+				owns = 600
+				owns = 613
+				owns = 656
+				owns = 2372
+				owns = 2376
+				owns = 2380
+				owns = 4352
+				owns = 2703
+				owns = 2698
+				amount = 8
+			}
+			num_of_light_ship = 100
+			1361 = { # Malacca
+				is_strongest_trade_power = ROOT
+			}
+			calc_true_if = {
+				1365 = { # Siam
+					is_strongest_trade_power = ROOT
+				}
+				1371 = { # Canton
+					is_strongest_trade_power = ROOT
+				}
+				1357 = { # Moluccas
+					is_strongest_trade_power = ROOT
+				}
+				4358 = { # Philiphines
+					is_strongest_trade_power = ROOT
+				}
+				amount = 2
+			}
+
+		}
+		effect = {
+			add_government_reform = consulate_of_the_malay
 		}
 		ai_will_do = {
 			factor = 100

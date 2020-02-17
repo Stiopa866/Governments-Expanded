@@ -526,7 +526,34 @@ GE_Marcher_Lords = {
 	global_manpower_modifier = 0.25
 	land_forcelimit_modifier = 0.25
 }
-	
+Malay_Sailors_1 = {
+	global_sailors_modifier = 0.10
+	naval_forcelimit_modifier = 0.10
+}
+Malay_Sailors_2 = {
+	global_sailors_modifier = 0.15
+	naval_forcelimit_modifier = 0.15
+}
+Malay_Sailors_3 = {
+	global_sailors_modifier = 0.20
+	naval_forcelimit_modifier = 0.20
+}
+Malay_Sailors_4 = {
+	global_sailors_modifier = 0.25
+	naval_forcelimit_modifier = 0.25
+}
+Malay_Sailors_5 = {
+	global_sailors_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+}
+Malay_Sailors_6 = {
+	global_sailors_modifier = 0.35
+	naval_forcelimit_modifier = 0.35
+}
+Malay_Sailors_7 = {
+	global_sailors_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+}
 	
 #Cortez
 Cortes_Piety = {

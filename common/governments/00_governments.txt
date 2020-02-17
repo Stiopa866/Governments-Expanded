@@ -77,6 +77,7 @@ monarchy = {
 				rum_eagle_reform
 				high_king_of_ireland_reform
 				hermit_kingdom_reform
+				consulate_of_the_malay
 			}
 		}
 		hereditary_vs_nobility = {
