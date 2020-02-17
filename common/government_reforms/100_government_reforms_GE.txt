@@ -1208,6 +1208,8 @@ high_king_of_ireland_reform = {
 	}
 }
 
+
+
 #ReligiousT2
 
 papal_embassy_reform = {
@@ -2907,7 +2909,7 @@ timariot_domains_reform = {
 }
 
 qadi_authority_reform = {
-	icon = horde_riding
+	icon = muslim
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -5731,7 +5733,7 @@ ghulam_governates_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -1
+		global_unrest = 1
 		max_absolutism = 5
 		yearly_absolutism = 0.5
 	}
@@ -7678,7 +7680,7 @@ armenian_silk_traders_reform = {
 	}
 	modifiers = {
 		build_cost = -0.15
-		culture_conversion_cost = -0.20
+		caravan_power = 0.25
 	}
 	custom_attributes = {
 		enables_silk_traders = yes #15% trade efficiency if trading in silk

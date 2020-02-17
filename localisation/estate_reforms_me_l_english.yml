@@ -899,7 +899,7 @@
  mechanic_enables_royal_nobles_yes: "Royal Court: 'Call Diet' gives §G+10§! Legitimacy and §G+5§! Absolutism."
  mechanic_enables_society_of_agriculture_yes: "Society of Agriculture: §G+10%§! Production Efficiency and §G+10%§! Trade Value in Stated Provinces with Basic Goods."
  
- mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with workshops."
+ mechanic_enables_industrialism_yes: "Fires Of Industry: §G+0.2§! Goods produced in provinces with Workshops. §G+0.4§! Goods produced in provinces with Counting Houses."
  mechanic_enables_home_market_yes: "Home Market: §G+2.5%§! Trade Efficiency for every 10% Merchantilism."
  mechanic_enables_rural_development_yes: "Rural Development: §G+500§! Base Manpower in Noble Estate Provinces under §Y10§! development."
  mechanic_enables_monastic_trade_yes: "Monastic Centres: §G+1§! Base Tax and §G5§! Provincial Trade Power in Clergical Provinces."
@@ -914,7 +914,7 @@
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
  mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
- mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G5%§! Shock Damage."
+ mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G10%§! Shock Damage."
  mechanic_enables_caucasus_candidates_yes: "Caucasus Republic: Elect a suitable ruler from among the Caucasus peoples."
  mechanic_enables_voc_mentality_yes: "Sovereign Trade Companies: §G+10%§! Goods Produced in Trade Company provinces."
  mechanic_enables_absolute_reelection_yes: "Absolute Mandate: §G+2§! Absolutism when you Re-elect a ruler."

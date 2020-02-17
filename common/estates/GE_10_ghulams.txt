@@ -145,9 +145,9 @@ estate_ghulams =
 			}
 			add_estate_loyalty = {
 				estate = estate_ghulams
-				loyalty = 5
+				loyalty = 10
 			}
-			add_years_of_income = -0.2
+			add_years_of_income = -0.5
 		}
 	}
 	interaction = {
@@ -171,6 +171,10 @@ estate_ghulams =
 		effect = {
 			if = {
 				limit = {
+					estate_influence = {
+						estate = estate_ghulams
+						influence = 25
+					}
 					NOT = {
 						estate_influence = {
 							estate = estate_ghulams
@@ -179,8 +183,8 @@ estate_ghulams =
 					}
 				}
 				add_country_modifier = {
-					name = "Expanded_Ghulam_Corps_1"
-					duration = 3650
+					name = "Expanded_Ghulam_Corps_2"
+					duration = 7300
 				}
 			}
 			if = {
@@ -197,8 +201,8 @@ estate_ghulams =
 					}
 				}
 				add_country_modifier = {
-					name = "Expanded_Ghulam_Corps_2"
-					duration = 3650
+					name = "Expanded_Ghulam_Corps_3"
+					duration = 7300
 				}
 			}
 			if = {
@@ -207,28 +211,10 @@ estate_ghulams =
 						estate = estate_ghulams
 						influence = 75
 					}
-					NOT = {
-						estate_influence = {
-							estate = estate_ghulams
-							influence = 100
-						}	
-					}
-				}
-				add_country_modifier = {
-					name = "Expanded_Ghulam_Corps_3"
-					duration = 3650
-				}
-			}
-			if = {
-				limit = {
-					estate_influence = {
-						estate = estate_ghulams
-						influence = 100
-					}
 				}
 				add_country_modifier = {
 					name = "Expanded_Ghulam_Corps_4"
-					duration = 3650
+					duration = 7300
 				}
 			}
 			add_estate_loyalty = {

@@ -172,10 +172,10 @@ Expanded_Ghulam_Corps_2 = {
 	fire_damage = 0.05
 }
 Expanded_Ghulam_Corps_3 = {
-	fire_damage = 0.075
+	fire_damage = 0.10
 }
 Expanded_Ghulam_Corps_4 = {
-	fire_damage = 0.100
+	fire_damage = 0.15
 }
 Replaced_Governors = {
 	global_autonomy = -0.05
