@@ -11652,7 +11652,10 @@ country_event = {
 						}
 						amount = 7
 					}
-					has_unified_culture_group = yes
+					AND = {
+						government_rank = 3
+						culture_group = malay
+					}
 				}
 				NOT = { has_country_modifier = Malay_Sailors_7 }
 			}
@@ -11944,7 +11947,10 @@ country_event = {
 						}
 						amount = 7
 					}
-					has_unified_culture_group = yes
+					AND = {
+						government_rank = 3
+						culture_group = malay
+					}
 				}
 			}
 			add_country_modifier = {
