@@ -793,7 +793,8 @@
  kiwi_support_reform_desc: "The Kiwi's were traveling merchants in the malay region, sending goods across the sultanates through limited partnerships and hiring capacity from captains. By encouraging these practices and enforcing the 'Undang Undang Laut Melaka' we can increase the amount of trade in our empire and the amount of goods that reach our markets!"
  consulate_of_the_malay: "Undang Undang Melaka"
  consulate_of_the_malay_desc: "Layering Islamic law over longtime Malay customary tradition, the Undang Undang Malaca was originally memorized by Senior Ministers until its compilation in the Malacca sultanate.  It compromised 6 parts, notably including maritime, trade, state administration, and marital law. Its deep legacy formed the basis for nearby Sultanate and future legal codes."
- 
+ solar_kingdom_reform: "Reformed Solar Kingdom"
+ solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
  
  
  
@@ -1109,6 +1110,9 @@
  reforms_GE_great_russian_republic_desc:1 "With the unification of Russia under Great Novgorod, our great Kniaz has greatly reduced the bureaucracy limiting his power. We have created an effective but just institution to lead the Russian people to their destiny."
  reforms_GE_consulate_of_the_malay_title:1 "Adopt the Undang Undang Melaka"
  reforms_GE_consulate_of_the_malay_desc:1 "Let us combine the laws of the land, the laws of Allah and the maritime codes of melaka into a comprehensive legal code."
+ reforms_GE_solar_kingdom_reform_title: "Reform into the Solar Empire"
+ reforms_GE_solar_kingdom_reform_desc:1 "The Failure of previous administrations to properly manage our stretched our realm can not be allowed to repeat itself. We shall replace the hereditary chieftainships with appointed governors and abolish the monastic exceptions and instead of being the center of the mandala, become the center of an empire!"
+ 
  
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§! influence and loyalty ."
  AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY: "Available due to high §YBurgher§1 influence and loyalty ."

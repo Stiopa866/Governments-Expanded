@@ -11536,7 +11536,6 @@ country_event = {
 		OR = {
 			AND = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11546,14 +11545,12 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 1
 				}
 				NOT = { has_country_modifier = Malay_Sailors_1 }
 			}
 			AND = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11563,14 +11560,12 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 2
 				}
 				NOT = { has_country_modifier = Malay_Sailors_2 }
 			}
 			AND = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11580,14 +11575,12 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 3
 				}
 				NOT = { has_country_modifier = Malay_Sailors_3 }
 			}
 			AND = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11597,14 +11590,12 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 4
 				}
 				NOT = { has_country_modifier = Malay_Sailors_4 }
 			}
 			AND = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11614,14 +11605,12 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 5
 				}
 				NOT = { has_country_modifier = Malay_Sailors_5 }
 			}
 			AND = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11631,7 +11620,6 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 6
 				}
 				NOT = { has_country_modifier = Malay_Sailors_6 }
@@ -11639,17 +11627,15 @@ country_event = {
 			AND = {
 				OR = {
 					calc_true_if = {
-						OR = {
-							accepted_culture = polynesian 
-							accepted_culture = cham 
-							accepted_culture = malayan 
-							accepted_culture = sumatran 
-							accepted_culture = javanese 
-							accepted_culture = filipino 
-							accepted_culture = bornean 
-							accepted_culture = madagascan 
-							accepted_culture = sulawesi 
-						}
+						accepted_culture = polynesian 
+						accepted_culture = cham 
+						accepted_culture = malayan 
+						accepted_culture = sumatran 
+						accepted_culture = javanese 
+						accepted_culture = filipino 
+						accepted_culture = bornean 
+						accepted_culture = madagascan 
+						accepted_culture = sulawesi 
 						amount = 7
 					}
 					AND = {
@@ -11670,7 +11656,6 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11680,11 +11665,9 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 				}
 				NOT = {
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11694,7 +11677,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 2
 					}
 				}
@@ -11713,7 +11695,6 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11723,12 +11704,10 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 2
 				}
 				NOT = { 				
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11738,7 +11717,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 3
 					}
 				}
@@ -11757,7 +11735,6 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11767,12 +11744,10 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 3
 				}
 				NOT = { 				
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11782,7 +11757,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 4
 					}
 				}
@@ -11801,7 +11775,6 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11811,12 +11784,10 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 4
 				}
 				NOT = { 				
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11826,7 +11797,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 5
 					}
 				}
@@ -11845,7 +11815,6 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11855,12 +11824,10 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 5
 				}
 				NOT = { 				
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11870,7 +11837,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 6
 					}
 				}
@@ -11889,7 +11855,6 @@ country_event = {
 		if = {
 			limit = {
 				calc_true_if = {
-					OR = {
 						accepted_culture = polynesian 
 						accepted_culture = cham 
 						accepted_culture = malayan 
@@ -11899,12 +11864,10 @@ country_event = {
 						accepted_culture = bornean 
 						accepted_culture = madagascan 
 						accepted_culture = sulawesi 
-					}
 					amount = 6
 				}
 				NOT = { 				
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11914,7 +11877,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 7
 					}
 				}
@@ -11934,7 +11896,6 @@ country_event = {
 			limit = {
 				OR = {
 					calc_true_if = {
-						OR = {
 							accepted_culture = polynesian 
 							accepted_culture = cham 
 							accepted_culture = malayan 
@@ -11944,7 +11905,6 @@ country_event = {
 							accepted_culture = bornean 
 							accepted_culture = madagascan 
 							accepted_culture = sulawesi 
-						}
 						amount = 7
 					}
 					AND = {
