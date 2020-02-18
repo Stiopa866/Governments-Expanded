@@ -109,6 +109,10 @@
  reform_me_events.156.a: "Ensure our marcher lords are battle ready."
  reform_me_events.156.b: "Secure the grain imports and guarentee the food supply."
  reform_me_events.156.c: "Protect the court from intrigue and corruption."
+ reform_me_events.165.d: "With the unfortunate passing of our Co-Emperor, it has become time to elect a new Co-Emperor to the empire. He shall be a great servant of the state, from what background do we wish our Co-Emperor to come?"
+ reform_me_events.165.a: "A former senator with connections all over the country."
+ reform_me_events.165.b: "A holy man, whos faith and righteousness shall root out all ills."
+ reform_me_events.165.c: "A Captain of the Army, a veteran of many battles."
  
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."

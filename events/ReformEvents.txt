@@ -11931,3 +11931,62 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.165
+	title = reform_me_events.165.t
+	desc = reform_me_events.165.d
+	picture = WESTERNISATION_eventPicture
+
+	trigger = {
+		has_government_attribute = enables_roman_empire
+		OR = {
+			had_country_flag = {
+				flag = GE_Roman_Empire_Flag
+				days = 9125
+			}
+			NOT = { has_country_flag = GE_Roman_Empire_Flag }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = GE_Roman_Empire_Flag
+			set_country_flag = GE_Roman_Empire_Flag
+		}
+	}
+	
+	option = {
+		name = reform_me_events.165.a
+		
+		change_adm = 1
+		add_country_modifier = {
+			name = GE_Roman_Empire_Administration #-0.025 Autonomy
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = reform_me_events.165.b
+		
+		change_dip = 1
+		add_country_modifier = {
+			name = GE_Roman_Empire_Corruption #-0.05 Corruption
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = reform_me_events.165.c
+		
+		change_mil = 1
+		add_country_modifier = {
+			name = GE_Roman_Empire_Drill #25% Drill
+			duration = 9125
+		}
+	}
+}

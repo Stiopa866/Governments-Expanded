@@ -11,7 +11,7 @@
  demedici_dynasty_reform_desc: "The De Medici dynasty has produced many grand consuls for our Florentine Republic, perhaps we should allow them to continue supplying us with their talented and well groomed heirs."
  lithuania_warlord_duke: "Kingdom of Lithuania"
  lithuania_warlord_duke_desc: "The Lithuanian Grand Duchy was a succesfull and expansionist nation. Our Kingdom will continue our tradition of expansion and integration."
- theocratic_autocracy: "Theocratic Autocracy"
+ theocratic_autocracy: "Roman Autocracy"
  theocratic_autocracy_desc: "The emperor is both the head of civil society and the ultimate authority over the ecclesiastical authorities, or patriarchates. The emperor is also considered to be God's omnipotent representative on earth and he rules as an absolute autocrat."
  beylik: "Beylik"
  beylik_desc: "Heirs of the former Suljuk sultanate, we serve no longer, and will establish our own empire!"
@@ -915,7 +915,7 @@
  mechanic_enables_hansa_ties_yes: "Republican Inspiration: §G+0.1§! Republican Tradition for every ally or subject republic you have."
  mechanic_enables_princes_of_novogorod_yes: "Princes of Novogorod: "Invite a Prince to lead the republican forces."
  
- mechanic_enables_roman_empire_yes: "Imperial Succession: Elect a Imperial Successor upon the death of the emperor."
+ mechanic_enables_roman_empire_yes: "Co-Emperorship: Elect a Co-Emperor to assist your rule."
  mechanic_enables_noble_knights_yes: "§GIF:§! you have §YAristocratic Ideas§!: Gain §G10%§! Shock Damage."
  mechanic_enables_caucasus_candidates_yes: "Caucasus Republic: Elect a suitable ruler from among the Caucasus peoples."
  mechanic_enables_voc_mentality_yes: "Sovereign Trade Companies: §G+10%§! Goods Produced in Trade Company provinces."

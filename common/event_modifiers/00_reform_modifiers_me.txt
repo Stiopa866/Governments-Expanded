@@ -554,6 +554,20 @@ Malay_Sailors_7 = {
 	global_sailors_modifier = 0.40
 	naval_forcelimit_modifier = 0.40
 }
+GE_Roman_Empire_Administration = {
+	global_autonomy = -0.025
+}
+GE_Roman_Empire_Corruption = {
+	yearly_corruption = -0.05
+}
+GE_Roman_Empire_Drill = {
+	drill_gain_modifier = 0.25
+}
+
+
+
+
+
 	
 #Cortez
 Cortes_Piety = {
