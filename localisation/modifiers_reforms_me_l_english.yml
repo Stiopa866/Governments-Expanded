@@ -295,7 +295,19 @@
  GE_Roman_Empire_Administration: "Well Connected"
  GE_Roman_Empire_Corruption: "Righteous Fervor"
  GE_Roman_Empire_Drill: "Drilling Techniques"
- 
+ GE_Fortified_Settlement: "Fortified Settlements"
+ desc_GE_Fortified_Settlement: "Dorn Approves"
+ Jurisprudence_1: "Jurisprudence"
+ Jurisprudence_2: "Jurisprudence"
+ Jurisprudence_3: "Jurisprudence"
+ Jurisprudence_4: "Jurisprudence"
+ Jurisprudence_5: "Jurisprudence"
+ Jurisprudence_6: "Jurisprudence"
+ Jurisprudence_7: "Jurisprudence"
+ Jurisprudence_8: "Jurisprudence"
+ Jurisprudence_9: "Jurisprudence"
+ Jurisprudence_10: "Jurisprudence"
+ GE_Varangian_Guard: "Varangian Guard"
  
  
  Russian_Manorialism: "Manorial Maintenance"

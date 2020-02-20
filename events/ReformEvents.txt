@@ -11965,8 +11965,12 @@ country_event = {
 		
 		change_adm = 1
 		add_country_modifier = {
-			name = GE_Roman_Empire_Administration #-0.025 Autonomy
+			name = GE_Roman_Empire_Administration #-15% State Maintenance
 			duration = 9125
+		}
+		add_faction_influence = {
+			faction = GE_Senate
+			influence = 25
 		}
 	}
 	
@@ -11978,6 +11982,10 @@ country_event = {
 			name = GE_Roman_Empire_Corruption #-0.05 Corruption
 			duration = 9125
 		}
+		add_faction_influence = {
+			faction = GE_Pentarchy
+			influence = 25
+		}
 	}
 	
 	option = {
@@ -11988,5 +11996,486 @@ country_event = {
 			name = GE_Roman_Empire_Drill #25% Drill
 			duration = 9125
 		}
+		add_faction_influence = {
+			faction = GE_Army
+			influence = 25
+		}
+	}
+}
+
+
+country_event = {
+	id = reform_me_events.166
+	title = reform_me_events.166.t
+	desc = reform_me_events.166.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = { 
+		has_government_attribute = enables_fortified_settlements 
+		any_owned_province = {
+			OR = {
+				AND = {
+					any_province_in_state = {
+						fort_level = 2
+						}
+					NOT = { has_province_modifier = "GE_Fortified_Settlement" }
+				}
+				AND = {
+					NOT = {
+						any_province_in_state = {
+							fort_level = 2
+						}
+					}
+					has_province_modifier = GE_Fortified_Settlement
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				any_province_in_state = {
+					fort_level = 2
+					}
+				NOT = { has_province_modifier = "GE_Fortified_Settlement" }
+            }
+			add_province_modifier = {
+				name = "GE_Fortified_Settlement"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = {
+					any_province_in_state = {
+						fort_level = 2
+					}
+				}
+				has_province_modifier = GE_Fortified_Settlement
+            }
+			remove_province_modifier = GE_Fortified_Settlement
+		}
+	}
+	
+	option = {
+		name = reform_me_events.166.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.167
+	title = reform_me_events.167.t
+	desc = reform_me_events.167.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_fortified_settlements }
+		any_owned_province = {
+			has_province_modifier = GE_Fortified_Settlement
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GE_Fortified_Settlement
+            }
+			remove_province_modifier = GE_Fortified_Settlement
+		}
+	}
+	
+	option = {
+		name = reform_me_events.167.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.168
+	title = reform_me_events.168.t
+	desc = reform_me_events.168.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_jurisprudence
+		OR = {
+			AND = {
+				average_autonomy = 0
+				NOT = { average_autonomy = 10 }
+				NOT = { has_country_modifier = Jurisprudence_1 }
+			}
+			AND = {
+				average_autonomy = 10
+				NOT = { average_autonomy = 20 }
+				NOT = { has_country_modifier = Jurisprudence_2 }
+			}
+			AND = {
+				average_autonomy = 20
+				NOT = { average_autonomy = 30 }
+				NOT = { has_country_modifier = Jurisprudence_3 }
+			}
+			AND = {
+				average_autonomy = 30
+				NOT = { average_autonomy = 40 }
+				NOT = { has_country_modifier = Jurisprudence_4 }
+			}
+			AND = {
+				average_autonomy = 40
+				NOT = { average_autonomy = 50 }
+				NOT = { has_country_modifier = Jurisprudence_5 }
+			}
+			AND = {
+				average_autonomy = 50
+				NOT = { average_autonomy = 60 }
+				NOT = { has_country_modifier = Jurisprudence_6 }
+			}
+			AND = {
+				average_autonomy = 60
+				NOT = { average_autonomy = 70 }
+				NOT = { has_country_modifier = Jurisprudence_7 }
+			}
+			AND = {
+				average_autonomy = 70
+				NOT = { average_autonomy = 80 }
+				NOT = { has_country_modifier = Jurisprudence_8 }
+			}
+			AND = {
+				average_autonomy = 80
+				NOT = { average_autonomy = 90 }
+				NOT = { has_country_modifier = Jurisprudence_9 }
+			}
+			AND = {
+				average_autonomy = 90
+				NOT = { has_country_modifier = Jurisprudence_10 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				average_autonomy = 0
+				NOT = { average_autonomy = 10 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_1
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 10
+				NOT = { average_autonomy = 20 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_2
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 20
+				NOT = { average_autonomy = 30 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_3
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 30
+				NOT = { average_autonomy = 40 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_4
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 40
+				NOT = { average_autonomy = 50 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_5
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 50
+				NOT = { average_autonomy = 60 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_6
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 60
+				NOT = { average_autonomy = 70 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_7
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 70
+				NOT = { average_autonomy = 80 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_8
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_9
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 80
+				NOT = { average_autonomy = 90 }
+			}
+			add_country_modifier = {
+				name = Jurisprudence_9
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_10
+		}
+		if = {
+			limit = {
+				average_autonomy = 90
+			}
+			add_country_modifier = {
+				name = Jurisprudence_10
+				duration = -1
+			}
+			remove_country_modifier = Jurisprudence_1
+			remove_country_modifier = Jurisprudence_2
+			remove_country_modifier = Jurisprudence_3
+			remove_country_modifier = Jurisprudence_4
+			remove_country_modifier = Jurisprudence_5
+			remove_country_modifier = Jurisprudence_6
+			remove_country_modifier = Jurisprudence_7
+			remove_country_modifier = Jurisprudence_8
+			remove_country_modifier = Jurisprudence_9
+		}
+	}
+	
+	option = {
+		name = reform_me_events.168.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.169
+	title = reform_me_events.169.t
+	desc = reform_me_events.169.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_varangian_guard 
+		OR = {
+			AND = {
+				OR = {
+					any_ally = {
+						culture_group = scandinavian 
+					}
+					any_subject_country = {
+						culture_group = scandinavian
+					}
+				}
+				NOT = { has_country_modifier = GE_Varangian_Guard }
+			}
+			AND = {
+				NOT = { 
+					OR = {
+						any_ally = {
+							culture_group = scandinavian
+						}
+						any_subject_country = {
+							culture_group = scandinavian
+						}
+					} 
+				}
+				has_country_modifier = GE_Varangian_Guard
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					any_ally = {
+						culture_group = scandinavian
+					}
+					any_subject_country = {
+						culture_group = scandinavian
+					}
+				}
+				NOT = { has_country_modifier = GE_Varangian_Guard }
+            }
+			add_country_modifier = {
+				name = "GE_Varangian_Guard"
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = {
+						any_ally = {
+							culture_group = scandinavian
+						}
+						any_subject_country = {
+							culture_group = scandinavian
+						}
+					} 
+				}
+				has_country_modifier = GE_Varangian_Guard
+            }
+			remove_province_modifier = GE_Varangian_Guard
+		}
+	}
+	
+	option = {
+		name = reform_me_events.169.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.170
+	title = reform_me_events.170.t
+	desc = reform_me_events.170.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_varangian_guard }
+		has_country_modifier = GE_Varangian_Guard
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_province_modifier = GE_Varangian_Guard
+	}
+	
+	option = {
+		name = reform_me_events.170.a
+		
 	}
 }

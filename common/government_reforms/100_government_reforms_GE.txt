@@ -1972,7 +1972,9 @@ akritai_privileges_reform = {
 	}
 	modifiers = {
 		defensiveness = 0.15
-		fort_maintenance_modifier = -0.1
+	}
+	custom_attributes = {
+		enables_fortified_settlements = yes #-10% dev cost in states with a fort
 	}
 	ai = {
 		factor = 100
@@ -3158,8 +3160,11 @@ diocletian_reforms_reform = {
 		}
 	}
 	modifiers = { 
-		yearly_corruption = -0.05
-		num_accepted_cultures = 1
+		global_autonomy = -0.025
+		legitimacy = 0.25
+	}
+	custom_attributes = {
+		enables_jurisprudence = yes #-1% Idea Cost and -2 Admin Tech Cost for each 10% Min Autonomy
 	}
 	ai = {
 		factor = 100
@@ -5147,6 +5152,46 @@ kiwi_support_reform = {
 	}
 	custom_attributes = {
 		enables_kiwi_support = yes #5% ship trade power per merchant.
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+roman_senate_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = byzantine
+			has_reform = roman_senate_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = byzantine
+			has_reform = roman_senate_reform
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.10
+	}
+	factions = {
+		GE_Senate
+		GE_Pentarchy
+		GE_Army
 	}
 	ai = {
 		factor = 100
@@ -7423,6 +7468,49 @@ sherifan_levies_reform = {
 	}
 	custom_attributes = {
 		enables_grand_captain = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+restore_the_komnenoid_army_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				culture_group = byzantine
+			}
+			has_reform = restore_the_komnenoid_army_reform
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				culture_group = byzantine
+			}
+			has_reform = restore_the_komnenoid_army_reform
+		}
+	}
+	modifiers = {
+		army_tradition_decay = -0.01
+		possible_mercenaries = 0.15
+	}
+	custom_attributes = {
+		enables_varangian_guard = yes #2.5% merc discipline if you got a scandinavian ally or subject
 	}
 	ai = {
 		factor = 100

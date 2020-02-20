@@ -795,8 +795,10 @@
  consulate_of_the_malay_desc: "Layering Islamic law over longtime Malay customary tradition, the Undang Undang Malaca was originally memorized by Senior Ministers until its compilation in the Malacca sultanate.  It compromised 6 parts, notably including maritime, trade, state administration, and marital law. Its deep legacy formed the basis for nearby Sultanate and future legal codes."
  solar_kingdom_reform: "Reformed Solar Kingdom"
  solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
- 
- 
+ restore_the_komnenoid_army_reform: "Restore the Komnenoid Army"
+ restore_the_komnenoid_army_reform_desc: "Restore the Komnenoid Army."
+ roman_senate_reform: "Roman Court"
+ roman_senate_reform_desc: "Roman Court"
  
  
  
@@ -943,6 +945,10 @@
  mechanic_enables_rajput_law_yes: "Rajput Law: §G-2§! Unrest and §G+10%§! Manpower in every province owned by the Rajput Estate."
  mechanic_enables_marcher_lords_yes: "Marcher Lord Privileges: §G+25%§! Force Limit and Manpower in your vassals."
  mechanic_enables_unite_the_malay_yes: "Unite the Malay: §G+5%§! Naval Force Limit and Sailors for each Accepted Malay Culture."
+ mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost in states with forts."
+ mechanic_enables_jurisprudence_yes: "Jurisprudence: Up to §G-10%§! Idea cost and §G-20%§! Admin Technology Cost depending on your average Autonomy."
+ mechanic_enables_varangian_guard_yes: "Varangian Guard: §G+2.5%§! Mercenary Discipline if you have a Scandinavian ally or subject."
+ 
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1043,6 +1049,15 @@
  GE_sunni_influence: "Islamic Influence"
  GE_sunni_FACTION_DESC: "The Islamic Religion is a powerful force that seeks to expand its power through earning the acceptance of the people."
  
+ GE_Senate: "Senate"
+ GE_Senate_influence: "Senatorial Influence"
+ GE_Senate_MECHANIC_TOOLTIP:0 "Senate"
+ GE_Pentarchy: "Pentarchy"
+ GE_Pentarchy_influence: "Pentarchy Influence"
+ GE_Pentarchy_MECHANIC_TOOPTIP:0 "Pentarchy"
+ GE_Army: "Army"
+ GE_Army_influence: "Army Influence"
+ GE_Army_MECHANIC_TOOLTIP:0 "Army"
  
  Catholics_MECHANIC_TOOLTIP:0 "Catholics"
  Ultraquists_MECHANIC_TOOLTIP:0 "Ultraquists"
