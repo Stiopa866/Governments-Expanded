@@ -5159,7 +5159,7 @@ kiwi_support_reform = {
 }
 
 roman_senate_reform = {
-	icon = soldiers
+	icon = parliament
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
