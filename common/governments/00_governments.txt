@@ -418,6 +418,7 @@ monarchy = {
 		states_general_reform
 		crown_of_saint_wenceslaus
 		khaganate
+		empire_of_japan_reform
 	}
 
 	#States General works with few others
@@ -434,6 +435,7 @@ monarchy = {
 		crown_of_saint_wenceslaus
 		elective_monarchy_reform
 		polish_constitutionalism_reform
+		empire_of_japan_reform
 	}
 
 	#Flavor
@@ -517,7 +519,7 @@ republic = {
 				caliphate_reform_sunni
 				#GE
 				florentine_republic
-				american_government
+				#american_government
 				genoan_republic_reform
 				old_swiss_confederation_reform
 				russian_republic_republic
