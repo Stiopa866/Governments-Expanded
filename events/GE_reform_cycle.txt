@@ -100,7 +100,6 @@ country_event = {
 		name = papal_embassy_reform.3.a
 		
 		add_papal_influence = 10
-		GE_catholics_influence = 10
 	}
 	
 	option = {
@@ -172,7 +171,6 @@ country_event = {
 		name = papal_embassy_reform.4.a
 		
 		add_papal_influence = -10
-		GE_ultraquists_influence = 10
 	}
 	
 	option = {
@@ -976,6 +974,9 @@ country_event = {
 		OR = {
 			has_reform = dhimmi_nobles_reform
 		}
+		any_owned_province = {
+			has_estate = estate_dhimmi
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -1594,7 +1595,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				has_reform = les_vieux_corps_reform
+				has_reform = empowered_royal_guard_reform
 			}
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_LES_VIEUX_CORPS
 		}
@@ -1607,7 +1608,7 @@ country_event = {
 		
 		trigger = {
 			OR = {
-				has_reform = les_vieux_corps_reform
+				has_reform = empowered_royal_guard_reform
 				has_reform = professional_army_reform
 				has_reform = compagnies_dordonnance_reform
 				has_reform = abolish_the_patronage_system_reform
@@ -2027,7 +2028,6 @@ country_event = {
 		OR = {
 			has_reform = of_noble_bearing_reform
 			has_reform = koprulu_dynasty_reform
-			has_reform = conseil_du_roi_reform
 			has_reform = table_of_ranks_reform
 			has_reform = szlachta_recruits_reform
 			has_reform = voivode_captains_reform
@@ -2048,8 +2048,7 @@ country_event = {
 		define_advisor = {
 			type = commandant
 			skill = 3
-			age = 45
-			cost_multiplier = 0.25
+			cost_multiplier = 0.5
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -2059,7 +2058,7 @@ country_event = {
 	option = {
 		name = administrative_nobles.35.b
 		define_advisor = {
-			type = army_organiser
+			type = army_organiser 
 			skill = 1
 		}
 		add_prestige = 5
@@ -2080,7 +2079,6 @@ country_event = {
 		OR = {
 			has_reform = of_noble_bearing_reform
 			has_reform = koprulu_dynasty_reform
-			has_reform = conseil_du_roi_reform
 			has_reform = table_of_ranks_reform
 			has_reform = szlachta_recruits_reform
 			has_reform = voivode_captains_reform
@@ -2144,8 +2142,7 @@ country_event = {
 		define_advisor = {
 			type = trader
 			skill = 3
-			age = 45
-			cost_multiplier = 0.25
+			cost_multiplier = 0.50
 		}
 		add_estate_influence_modifier = {
 			estate = estate_burghers
@@ -2157,7 +2154,7 @@ country_event = {
 	option = {
 		name = administrative_civilians.37.b
 		add_country_modifier = {
-			name = "Meritocrac_recruitment"
+			name = "Meritocrac_Recruitment"
 			duration = 3650
 		}
 		define_advisor = {
@@ -3055,8 +3052,7 @@ country_event = {
 		define_advisor = {
 			type = natural_scientist
 			skill = 4
-			cost_multiplier = 0.25
-			age = 40
+			cost_multiplier = 0.50
 		}
 	}
 	
@@ -3394,7 +3390,6 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = feudal_levies_reform
-			has_reform = turkish_iqta_reform
 			has_reform = imperial_circles_reform
 			has_reform = pospolite_ruszenie_reform
 		}
@@ -3498,7 +3493,6 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = feudal_levies_reform
-			has_reform = turkish_iqta_reform
 			has_reform = imperial_circles_reform
 			has_reform = pospolite_ruszenie_reform
 		}
@@ -3641,7 +3635,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = professional_army_reform
-			has_reform = les_vieux_corps_reform
+			has_reform = empowered_royal_guard_reform
 			has_reform = portugese_marines_reform
 			has_reform = foreign_formation_regiments_reform
 			has_reform = general_war_commissariat_reform
@@ -3700,7 +3694,7 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = professional_army_reform
-			has_reform = les_vieux_corps_reform
+			has_reform = empowered_royal_guard_reform
 			has_reform = portugese_marines_reform
 			has_reform = foreign_formation_regiments_reform
 			has_reform = general_war_commissariat_reform
@@ -3886,7 +3880,7 @@ country_event = {
 		}
 	}
 }
-province_event = {
+country_event = {
 	id = GE_reform_cycle.74
 	title = leading_clergy.74.t #Construction of new Temple
 	desc = leading_clergy.74.d
@@ -3961,7 +3955,7 @@ country_event = {
 	option = {
 		name = monastic_order.76.b
 		
-		devotion = -10
+		add_devotion = -10
 	}
 }
 
@@ -5073,7 +5067,7 @@ country_event = {
 			}
 			add_unrest = 8
 			random_list = {
-				50 = { 0 }
+				50 = { }
 				50 = {
 					spawn_rebels = {
 						type = heretic_rebels_rebels
@@ -5149,7 +5143,7 @@ country_event = {
 			NOT = { has_country_modifier = Divine_Protection }
 		}
 		add_country_modifier = {
-			name = "Divine_Justice" #	global_unrest = -2,	global_autonomy = -0.1
+			name = "Divine_Protection" #	global_unrest = -2,	global_autonomy = -0.1
 			duration = -1
 		}
 	}
@@ -5181,7 +5175,7 @@ country_event = {
 		
 		add_country_modifier = {
 			name = "Good_Ruler" #+1 TOTF, -10% Missionary strength
-			name = 5475
+			duration = 5475
 		}
 	}
 	

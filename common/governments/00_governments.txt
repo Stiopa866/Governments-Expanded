@@ -50,7 +50,7 @@ monarchy = {
 				kingdom_of_castille_and_leon
 				crown_of_castille
 				hispanic_kingdom
-				enlightened_despotism
+				enlightened_despotism_reform
 				margrave_reform
 				consulate_of_the_sea
 				crown_of_saint_wenceslaus
@@ -386,7 +386,7 @@ monarchy = {
 		feudal_monarchy
 		administrative_monarchy
 		constitutional_monarchy
-		enlightened_despotism
+		enlightened_despotism_reform
 		revolutionary_empire
 		english_monarchy_legacy
 		mamluk_government_legacy
@@ -573,7 +573,7 @@ republic = {
 				professional_army_reform
 				italian_mercenaries_reform
 				imperial_circles_reform
-				turkish_iqta_reform
+				expanded_devshirme_reform
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
@@ -925,9 +925,9 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = constitutional_monarchy
 	}
-	enlightened_despotism = {
+	enlightened_despotism_reform = {
 		government = monarchy
-		legacy_government = enlightened_despotism
+		legacy_government = enlightened_despotism_reform
 	}
 	revolutionary_empire = {
 		government = monarchy

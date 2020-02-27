@@ -11,6 +11,7 @@ estate_adivasi =
 	trigger = {
 		culture_group = central_indic
 		religion = hinduism
+		always = no
 	}
 	
 	# If true, province can be granted to estate

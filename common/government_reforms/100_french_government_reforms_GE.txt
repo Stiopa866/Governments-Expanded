@@ -295,7 +295,7 @@ compagnies_dordonnance_reform = {
 	potential = {
 		OR = {
 			primary_culture = cosmopolitan_french
-			has_reform = les_vieux_corps_reform
+			has_reform = compagnies_dordonnance_reform
 		}
 		has_reform = french_feudalism
 	}
@@ -464,7 +464,7 @@ weak_burghers_reform = {
 	potential = { 
 		OR = {
 			primary_culture = cosmopolitan_french
-			has_reform = weak_burghers_reforms
+			has_reform = weak_burghers_reform
 		}
 		NOT = { has_reform = french_absolutism }
 	}

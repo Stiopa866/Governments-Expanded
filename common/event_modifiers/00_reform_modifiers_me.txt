@@ -606,7 +606,9 @@ Jurisprudence_10 = {
 	idea_cost = -0.01
 	adm_tech_cost_modifier = -0.02
 }
-
+GE_Varangian_Guard = {
+	shock_damage = 0.05
+}
 
 
 	
