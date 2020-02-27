@@ -218,9 +218,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.3b
-	title = reform_me_events.3b.t
-	desc = reform_me_events.3b.d
+	id = reform_me_events.300
+	title = reform_me_events.300.t
+	desc = reform_me_events.300.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -252,7 +252,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.3b.a
+		name = reform_me_events.300.a
 		
 	}
 }
@@ -313,7 +313,7 @@ country_event = {
 	
 	immediate = {
 		define_heir = {
-			dynasty = Ben-David`
+			dynasty = "Ben-David"
 			age = 0
 			adm = 1
 			dip = 1
@@ -321,7 +321,7 @@ country_event = {
 			claim = 100
 			male = yes
 			religion = jewish
-			culture = hebreb
+			culture = hebrew
 		}
 	}
 	
@@ -2087,7 +2087,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				culture = ROOT
-				NOT = { has_province_modifier = enables_patriotism }
+				NOT = { has_province_modifier = Patriotism }
             }
 			add_province_modifier = {
 				name = "Patriotism"
@@ -5083,7 +5083,7 @@ country_event = {
 		days = 7300
 			
 		modifier = {
-			factor = 3
+			factor = 2
 			NOT = {
 				has_global_modifier_value = {
 					which = tolerance_heathen
@@ -5092,14 +5092,14 @@ country_event = {
 			}
 		}
 		modifier = {
-			factor = 0.50
+			factor = 0.75
 			has_global_modifier_value = {
 				which = tolerance_heathen
 				value = 2
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.50
 			has_global_modifier_value = {
 				which = tolerance_heathen
 				value = 3
@@ -5193,7 +5193,7 @@ country_event = {
 			limit = {
 				is_territory = no
 				NOT = { culture = ROOT }
-				NOT = { has_province_modifier = enables_satrapies }
+				NOT = { has_province_modifier = Satrapy }
             }
 			add_province_modifier = {
 				name = "Satrapy"
@@ -5522,6 +5522,38 @@ country_event = {
 					hidden = yes
 				}
 			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.80.a
+		
+		
+	}
+}
+country_event = {
+	id = reform_me_events.8001
+	title = reform_me_events.8001.t
+	desc = reform_me_events.8001.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_reform = crown_of_aragon
+		sicily_area = {
+			owned_by = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		hidden_effect = {
+			#Removed for BT since Sicily is part of Naples
 			sicily_area = {
 				add_province_modifier = {
 					name = Kingdom_Of_Sicily
@@ -5535,7 +5567,7 @@ country_event = {
 	option = {
 		name = reform_me_events.80.a
 		
-		add_stability = 1
+		
 	}
 }
 
@@ -6210,9 +6242,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.89b
-	title = reform_me_events.89b.t
-	desc = reform_me_events.89b.d
+	id = reform_me_events.8900
+	title = reform_me_events.8900.t
+	desc = reform_me_events.8900.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -6271,15 +6303,15 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.89b.a
+		name = reform_me_events.8900.a
 		
 	}
 }
 
 country_event = {
-	id = reform_me_events.90b
-	title = reform_me_events.90b.t
-	desc = reform_me_events.90b.d
+	id = reform_me_events.9000
+	title = reform_me_events.9000.t
+	desc = reform_me_events.9000.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -6305,7 +6337,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.90b.a
+		name = reform_me_events.9000.a
 		
 	}
 }
@@ -6373,9 +6405,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.92
-	title = reform_me_events.92.t
-	desc = reform_me_events.92.d
+	id = reform_me_events.9200
+	title = reform_me_events.9200.t
+	desc = reform_me_events.9200.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -6394,7 +6426,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.92.a
+		name = reform_me_events.9200.a
 		
 	}
 }
@@ -6641,93 +6673,93 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = reform_me_events.98
-	title = reform_me_events.98.t
-	desc = reform_me_events.98.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
+# country_event = {
+	# id = reform_me_events.98
+	# title = reform_me_events.98.t
+	# desc = reform_me_events.98.d
+	# picture = WESTERNISATION_eventPicture
+	# hidden = yes
 	
 
-	trigger = {
-		has_reform = enables_farmer_sons
-		any_owned_province = {
-			OR = {
-				AND = {
-					has_estate = estate_peasants
-					NOT = { has_province_modifier = Farmers_Sons }
-				}
-				AND = {
-					NOT = { has_estate = estate_peasants }
-					has_province_modifier = Farmers_Sons
-				}
-			}
-		}
-	}
+	# trigger = {
+		# has_reform = enables_farmer_sons
+		# any_owned_province = {
+			# OR = {
+				# AND = {
+					# has_estate = estate_peasants
+					# NOT = { has_province_modifier = Farmers_Sons }
+				# }
+				# AND = {
+					# NOT = { has_estate = estate_peasants }
+					# has_province_modifier = Farmers_Sons
+				# }
+			# }
+		# }
+	# }
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+	# mean_time_to_happen = {
+		# days = 30
+	# }
 	
-	immediate = {
-		every_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-				NOT = {	has_province_modifier = Farmers_Sons }
-            }
-			add_province_modifier = {
-				name = "Farmers_Sons"
-				duration = -1
-			}
-		}
-		every_owned_province = {
-			limit = {
-				NOT = { has_estate = estate_peasants }
-				has_province_modifier = Farmers_Sons
-            }
-			remove_province_modifier = Farmers_Sons
-		}
-	}
+	# immediate = {
+		# every_owned_province = {
+			# limit = {
+				# has_estate = estate_peasants
+				# NOT = {	has_province_modifier = Farmers_Sons }
+            # }
+			# add_province_modifier = {
+				# name = "Farmers_Sons"
+				# duration = -1
+			# }
+		# }
+		# every_owned_province = {
+			# limit = {
+				# NOT = { has_estate = estate_peasants }
+				# has_province_modifier = Farmers_Sons
+            # }
+			# remove_province_modifier = Farmers_Sons
+		# }
+	# }
 	
-	option = {
-		name = reform_me_events.98.a
+	# option = {
+		# name = reform_me_events.98.a
 		
-	}
-}
+	# }
+# }
 
-country_event = {
-	id = reform_me_events.99
-	title = reform_me_events.99.t
-	desc = reform_me_events.99.d
-	picture = WESTERNISATION_eventPicture
-	hidden = yes
+# country_event = {
+	# id = reform_me_events.99
+	# title = reform_me_events.99.t
+	# desc = reform_me_events.99.d
+	# picture = WESTERNISATION_eventPicture
+	# hidden = yes
 	
 
-	trigger = {
-		NOT = { has_reform = enables_farmer_sons }
-		any_owned_province = {
-			has_province_modifier = Farmers_Sons
-		}
-	}
+	# trigger = {
+		# NOT = { has_reform = enables_farmer_sons }
+		# any_owned_province = {
+			# has_province_modifier = Farmers_Sons
+		# }
+	# }
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+	# mean_time_to_happen = {
+		# days = 30
+	# }
 	
-	immediate = {
-		every_owned_province = {
-			limit = {
-				has_province_modifier = Farmers_Sons
-            }
-			remove_province_modifier = Farmers_Sons
-		}
-	}
+	# immediate = {
+		# every_owned_province = {
+			# limit = {
+				# has_province_modifier = Farmers_Sons
+            # }
+			# remove_province_modifier = Farmers_Sons
+		# }
+	# }
 	
-	option = {
-		name = reform_me_events.99.a
+	# option = {
+		# name = reform_me_events.99.a
 		
-	}
-}
+	# }
+# }
 
 country_event = {
 	id = reform_me_events.100
@@ -8633,9 +8665,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.126
-	title = reform_me_events.126.t
-	desc = reform_me_events.126.d
+	id = reform_me_events.1260
+	title = reform_me_events.1260.t
+	desc = reform_me_events.1260.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -8685,9 +8717,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.127
-	title = reform_me_events.127.t
-	desc = reform_me_events.127.d
+	id = reform_me_events.1270
+	title = reform_me_events.1270.t
+	desc = reform_me_events.1270.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -8713,7 +8745,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.127.a
+		name = reform_me_events.1270.a
 		
 	}
 }
@@ -9663,9 +9695,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.143
-	title = reform_me_events.143.t
-	desc = reform_me_events.143.d
+	id = reform_me_events.1430
+	title = reform_me_events.1430.t
+	desc = reform_me_events.1430.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -9688,15 +9720,15 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.143.a
+		name = reform_me_events.1430.a
 		
 	}
 }
 
 country_event = {
-	id = reform_me_events.144
-	title = reform_me_events.144.t
-	desc = reform_me_events.144.d
+	id = reform_me_events.1440
+	title = reform_me_events.1440.t
+	desc = reform_me_events.1440.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
@@ -9718,7 +9750,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.144.a
+		name = reform_me_events.1440.a
 		
 	}
 }
@@ -10169,9 +10201,9 @@ country_event = {
 }
 
 country_event = {
-	id = reform_me_events.152
-	title = reform_me_events.152.t
-	desc = reform_me_events.152.d
+	id = reform_me_events.15200
+	title = reform_me_events.15200.t
+	desc = reform_me_events.15200.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 
@@ -10212,7 +10244,7 @@ country_event = {
 	}
 	
 	option = {
-		name = reform_me_events.152.a
+		name = reform_me_events.15200.a
 		
 		every_owned_province = {
 			limit = {
@@ -11065,7 +11097,7 @@ country_event = {
 		
 		every_owned_province = {
 			limit = {
-				center_of_trade = 1
+				province_has_center_of_trade_of_level = 1
 				fort_level = 2
 				NOT = { has_province_modifier = GE_Caravanserai }
 			}
@@ -11078,7 +11110,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				NOT = { 
-					center_of_trade = 1
+					province_has_center_of_trade_of_level = 1
 					fort_level = 2
 				}
 				has_province_modifier = GE_Caravanserai
@@ -12443,7 +12475,7 @@ country_event = {
 				}
 				has_country_modifier = GE_Varangian_Guard
             }
-			remove_province_modifier = GE_Varangian_Guard
+			remove_country_modifier = GE_Varangian_Guard
 		}
 	}
 	

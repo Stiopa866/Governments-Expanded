@@ -98,7 +98,7 @@
  regional_forts_reform: "Regional Forts"
  regional_forts_reform_desc: "Using local castles and fortifications as the cornerstone of our administration, We will be able to maintain law and order more efficiently during peace time, and for longer during enemy raids."
  diocletian_reforms_reform: "Justinian Code"
- diocletian_reforms_reform_desc: "The Justinian Code of Law was the massive rework of roman law into a comprehensive and universal set of rules for the byzantine empire, one of its key principles was the idea of jurisprudence, where the interpretation of a law is based on how it was applied lastly. This code of law and its principles would form the basis of many great nations down the line."
+ diocletian_reforms_reform_desc: "The Justinian Code of Law was the massive rework of roman law into a comprehensive and universal set of rules for the byzantine empire, one of its key principles was the idea of jurisprudence, where the interpretation of a law is based on how it was applied previously. This code of law and its principles would form the basis of many great nations down the line."
  portugese_marines_reform: "Portuguese Marines"
  portugese_marines_reform_desc: "In order to provide specialized artillery and riflemen to the Navy of the Portuguese Crown, in 1585 a special marine unit was raised. This elite regiment later often served as a bodyguard for the Portuguese Monarch"
  integrate_moneyloaners_reform: "Integrate Moneyloaners"
@@ -796,9 +796,9 @@
  solar_kingdom_reform: "Reformed Solar Kingdom"
  solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
  restore_the_komnenoid_army_reform: "Restore the Komnenoid Army"
- restore_the_komnenoid_army_reform_desc: "Restore the Komnenoid Army."
+ restore_the_komnenoid_army_reform_desc: "Alexios I Komnenos' military reforms saved the empire from onslaught of Normans and Turks. Under Komnenoi Emperors, the Empire saw increasing professionalization and an influx of foreign mercenaries ranging from nomadic warriors and Anglo-Saxon infantry. A professional army allowed the empire to compete with the enemies that outnumbered it, and the mercenaries who had no interest in local politics, took direct orders from the Emperor and no one else, thus giving the emperor a large advantage in quelling internal conflicts. The army also became adaptive to facing different type of foes, such as arming Imperial Cataphracts with long lances to counter Turkish cavalry and Norman knights."
  roman_senate_reform: "Roman Court"
- roman_senate_reform_desc: "Roman Court"
+ roman_senate_reform_desc: "The Roman Senate was the most enduring institution in Roman History. It was established during the first days of city of Rome and it survived the overthrow of the kings, the fall of the Roman Republic, the division of the Roman Empire, the fall of the Western Roman Empire, and later incursions into eastern Empire and Constantinople, which became the home of senate after fall of Rome, established by Constantine I in 4th century. The Senate survived until the disgraceful fourth crusade, even though its powers were waning before that. It’s time revive the senate and modernize it, so that it can serve our empire like it always has."
  
  
  
