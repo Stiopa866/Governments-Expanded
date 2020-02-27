@@ -711,7 +711,7 @@ vroedschappen_reform = {
 		}
 	}
 	modifiers = {
-		candidate_random_bonus = 1
+		candidate_random_bonus = 2
 		stability_cost_modifier = -0.10
 	}
 	ai = {

@@ -1966,8 +1966,7 @@ akritai_privileges_reform = {
 	potential = {
 		OR = {	
 			has_reform = akritai_privileges_reform
-			primary_culture = greek
-			tag = BYZ
+			culture_group = byzantine
 		}
 	}
 	modifiers = {
@@ -3155,12 +3154,11 @@ diocletian_reforms_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = greek
+			culture_group = byzantine
 			has_reform = diocletian_reforms_reform
 		}
 	}
 	modifiers = { 
-		global_autonomy = -0.025
 		legitimacy = 0.25
 	}
 	custom_attributes = {
