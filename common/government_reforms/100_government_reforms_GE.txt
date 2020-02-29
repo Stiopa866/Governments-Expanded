@@ -2989,7 +2989,7 @@ clans_of_ireland_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 	custom_attributes = {
 		enables_clans_estate = yes #enables clans estate
