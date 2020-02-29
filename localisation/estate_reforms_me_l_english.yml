@@ -865,7 +865,7 @@
  mechanic_enables_militant_orders_yes: "Militant Orders: §G+25%§! Manpower Recovery Speed and §G1§! Army Tradition while at war with heretics or heathens."
  mechanic_enables_shocking_general_yes: "Knightly Honor: 'Grant Generalship' Generals now have §G+1§! Shock pip."
  mechanic_enables_crusader_order_yes: "Crusader Order: §G+1%§! Infantry Combat Ability for each Tolerance of the True Faith."
- mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Automatically convert provinces with mosques based on how tolerant you are."
+ mechanic_enables_religious_supremacy_yes: "Religious Supremacy: Slowly converts stated provinces with mosques based on how much tolerance of heathens you have."
  mechanic_achaemenid_empire_reform_yes: "Persian Tolerance: Accept any culture you control in full."
  mechanic_enables_expanded_theme_system_yes: "Enables the Expanded Theme System Edict."
  mechanic_enables_church_poorhouses_yes: "Church Poorhouses: §G-10%§! Development Cost and §G+15%§! Production Efficiency in provinces with churches."
