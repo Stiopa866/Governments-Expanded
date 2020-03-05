@@ -308,6 +308,8 @@
  Jurisprudence_9: "Jurisprudence"
  Jurisprudence_10: "Jurisprudence"
  GE_Varangian_Guard: "Varangian Guard"
+ GE_Codified_Law: "Codified Law"
+ desc_GE_Codified_Law: "Follow the Code of Law"
  
  
  Russian_Manorialism: "Manorial Maintenance"

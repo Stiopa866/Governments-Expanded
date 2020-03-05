@@ -2048,7 +2048,6 @@ respect_union_reform = {
 trade_princes_reform = {
 	icon = GE_trader
 	allow_normal_conversion = yes
-	can_use_trade_post = yes
 	effect = {
 		change_variable = {
 			which = Burgher_Influence
@@ -2174,6 +2173,42 @@ order_of_the_swan_reform = {
 		factor = 100
 	}
 	#10% noble loyalty
+}
+
+junker_class_reform = {
+	icon = szlachta_noble_2
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			tag = BRA
+			tag = PRU
+			primary_culture = prussian
+			has_reform = junker_class_reform
+		}
+		NOT = { religion = catholic }
+	}
+	modifiers = {
+		leader_cost = -0.10
+	}
+	custom_attributes = {
+		enables_junker_estate = yes
+		enables_disable_noble_estate = yes
+	}
+	ai = {
+		factor = 100
+	}
 }
 
 house_of_knights_reform = {
@@ -3324,7 +3359,10 @@ constitutio_joachimica_reform = {
 	}
 	modifiers = {
 		global_autonomy = -0.025
-		global_unrest = -1
+		yearly_corruption = -0.05
+	}
+	custom_attributes = {
+		enables_codified_law = yes #-2 Unrest in provinces with less then 50% Autonomy.
 	}
 	ai = {
 		factor = 100
@@ -6400,6 +6438,7 @@ professional_army_reform = {
 		discipline = 0.05
 		possible_mercenaries = -1.25
 		land_maintenance_modifier = 0.05
+		possible_condottieri = 2
 	}
 	custom_attributes = {
 		enables_general_guards = yes #+1.25 AP per General
@@ -7580,6 +7619,7 @@ empowered_free_trade_reform = {
 	custom_attributes = {
 		enables_trade_privileges = yes #15% Trade Value and 2.5 Base Trade power in Burgher Provinces
 	}
+	can_use_trade_post = yes
 	ai = {
 		factor = 1
 	}

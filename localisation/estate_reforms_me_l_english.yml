@@ -140,7 +140,7 @@
  order_of_the_swan_reform: "Order of the Swan"
  order_of_the_swan_reform_desc: "The Order of the Swan has been a great succes in our lands, By opening up the order to our neighbours we can increase the prestige of the Order. And leverage his position as grand master in order to aquire influence around the Christian world."
  constitutio_joachimica_reform: "Constitutio Joachimica"
- constitutio_joachimica_reform_desc: "The Constitutio Joachimica is a series of laws regulating the administration of the march and ensuring the judges are fair and reliable."
+ constitutio_joachimica_reform_desc: "The Constitutio Joachimica is a series of laws regulating the inheritances and legal authority of the margraviate. By centralizing and unifying these laws we make sure there can be little corruption or conflict about inheritances or matters of lineage."
  nizam_i_jedid_reform: "Nizam-i Jédit"
  nizam_i_jedid_reform_desc: "Our Administrative and Governmental systems were cutting edge during the renaissance, The Pride of our kingdom is slowly fading. In the new modern era we shall not be left behind though, and through glorious rulers and genius administrators we shall shine bright again!"
  millet_reform: "Millet System"
@@ -800,7 +800,8 @@
  roman_senate_reform: "Roman Court"
  roman_senate_reform_desc: "The Roman Senate was the most enduring institution in Roman History. It was established during the first days of city of Rome and it survived the overthrow of the kings, the fall of the Roman Republic, the division of the Roman Empire, the fall of the Western Roman Empire, and later incursions into eastern Empire and Constantinople, which became the home of senate after fall of Rome, established by Constantine I in 4th century. The Senate survived until the disgraceful fourth crusade, even though its powers were waning before that. It’s time revive the senate and modernize it, so that it can serve our empire like it always has."
  
- 
+ junker_class_reform: "Junker Class"
+ junker_class_reform_desc: "Let us empower the junker class to support our reign. This class of lower nobility is strong enough to form a powerfull base against the magnates, burghers and clergy. And from this base we shall dominate our enemies foreign and domestic."
  
  
  
@@ -948,6 +949,8 @@
  mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost in states with forts."
  mechanic_enables_jurisprudence_yes: "Jurisprudence: Up to §G-10%§! Idea cost and §G-20%§! Admin Technology Cost depending on your average Autonomy."
  mechanic_enables_varangian_guard_yes: "Varangian Guard: §G+5%§! Shock Damage if you have a Scandinavian ally or subject."
+ mechanic_enables_disable_noble_estate_yes: "Disable the Noble Estate"
+ mechanic_enables_codified_law_yes: "Codified Law: §G-2§! Unrest in provinces under 50% Autonomy."
  
  
  #Edicts

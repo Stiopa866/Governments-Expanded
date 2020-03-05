@@ -113,6 +113,7 @@ monarchy = {
 				council_of_sheikhs_reform
 				muscovite_manorialism_reform
 				order_of_the_swan_reform
+				junker_class_reform
 				blood_tax_reform
 				noblesse_d_epee_reform
 				noble_court_attendance_reform

@@ -23,6 +23,7 @@ estate_nobles =
 		NOT = { has_reform = federal_republic }
 		NOT = { has_reform = polish_constitutionalism_reform }
 		NOT = { has_reform = parliamental_electors_reform }
+		NOT = { has_government_attribute = enables_disable_noble_estate }
 		if = {
 			limit = {
 				NOT = { religion_group = muslim }

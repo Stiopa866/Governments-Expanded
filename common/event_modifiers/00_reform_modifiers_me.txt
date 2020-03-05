@@ -609,7 +609,9 @@ Jurisprudence_10 = {
 GE_Varangian_Guard = {
 	shock_damage = 0.05
 }
-
+GE_Codified_Law = {
+	local_unrest = -2
+}
 
 	
 #Cortez
