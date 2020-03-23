@@ -4214,6 +4214,8 @@ country_event = {
 			has_reform = teuton_army
 		}
 		has_border_with_religious_enemy = yes
+		is_at_war = no
+		NOT = { had_recent_war = 10 }
 	}
 
 	is_triggered_only = yes #Pulse
