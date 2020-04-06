@@ -949,6 +949,7 @@
  mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost in states with forts."
  mechanic_enables_jurisprudence_yes: "Jurisprudence: Up to §G-10%§! Idea cost and §G-20%§! Admin Technology Cost depending on your average Autonomy."
  mechanic_enables_varangian_guard_yes: "Varangian Guard: §G+5%§! Shock Damage if you have a Scandinavian ally or subject."
+ mechanic_enables_peace_development_reduction_yes: "Hermit Kingdom: For every 5 years of being at peace beginning at 10, you get §G-5%§! Development Cost up to a maximum of §G-15%§!"
  mechanic_enables_disable_noble_estate_yes: "Disable the Noble Estate"
  mechanic_enables_codified_law_yes: "Codified Law: §G-2§! Unrest in provinces under 50% Autonomy."
  
