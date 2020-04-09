@@ -97,6 +97,7 @@
  Magnate_Law: "Mechanic §YMagnate Law§!"
  Mountain_Towns: "Mechanic §YMountain Towns§!"
  Mountain_Forts: "Mechanic §YMountain Forts§!"
+ GE_hwangog: "Hwangog"
  Arabian_Horses_1: "Arabian Horses"
  Arabian_Horses_2: "Arabian Horses"
  Arabian_Horses_3: "Arabian Horses"
@@ -397,7 +398,7 @@
  Training_Camps: "Training Camps"
  Demoralized_Army: "Demoralized Army"
  Absent_Noble: "Absent Noble"
-
+ 
  
  
  EST_VAL_BURGHERS_ADVANCES:0 "Burghers Advance: §Y$VAL$%§!"

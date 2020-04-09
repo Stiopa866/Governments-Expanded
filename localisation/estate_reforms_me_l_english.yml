@@ -223,6 +223,10 @@
  restore_the_davidic_line_reform_desc: "The Sanhedrin has met and accepted the lineage of the Nassi.  The House of David is restored to Power once Again!"
  dynastic_theocracy_reform: "Dynastic Theocracies"
  dynastic_theocracy_reform_desc: "A form of government where the dynasty is the representative of God, and the protector of the people."
+ jaeseungbangryak_reform: "Jaesungbangryak"
+ jaeseungbangryak_reform_desc: ""
+ five_military_force_reform: "Five Military Force"
+ five_military_force_reform_desc: ""
  
  #Theocracies T4.5
  religious_enforcement: "Religious Enforcement"
@@ -514,6 +518,15 @@
  council_of_petitions_reform_desc: "A form of plebejan tribune where the non-aristocrats can make their voices heard and let people know that the government is serving their interests and heard their pleas."
  legacy_of_constitutionalism_reform: "Legacy of Constitutionalism"
  legacy_of_constitutionalism_reform_desc: "We used to have a constitution, but now the authoritarian monarchs have torn it down so much that they effectively hold absolute power. This desecration is causing the legitimacy of the monarch fade away from the eyes of the countries people."
+ nobi_jongbubub_reform: "Nobi Jongbubub"
+ nobi_jongbubub_reform_desc: "Nobi were the serfs of Korea. Establishing the Paternal inheritance of the Nobi title made Nobi grow in amount, and therefore, the nobles."
+ nobi_jongmobub_reform: "Nobi Jongmobub"
+ nobi_jongmobub_reform_desc: "Nobi were the serfs of Korea. Establishing the Maternal inheritance of the Nobi title made Nobi plummet in numbers, therefore weakening the nobles."
+ bangyesurok_reform: "Bangyesurok"
+ bangyesurok_reform_desc: "Bangyesurok was the reform theory suggested by Yu Hyeongwon in 1670. This reform consists of land, class, education, bureaucracy reform."
+ euijung_bu_seosajae_reform: "Euijung-bu Seosajae"
+ euijung_bu_seosajae_reform_desc: "Euijung-bu Seosajae is a system that introduces a limit to monarch's power. Strengthening the Euiung Bu Seosajae allows the bureaucrats to check and control the power of the royals. The King can of course veto them, but it is highly tabooed and can lead to disaster."
+ 
  
  portuguese_empire_reform: "Portuguese Empire"
  portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility,clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people.  We are situated in every continet of the world. All the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and territory and it's citizens are all Portuguese, wether they speak another language or have different customs, we are all Portuguese under this banner. We shall lead the civilizing mission in our territory and encompass pro-miscegenation towards our subject unlike certain Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
@@ -789,6 +802,11 @@
  #1.11
  hermit_kingdom_reform: "Hermit Kingdom"
  hermit_kingdom_reform_desc: "During the rule of Joseon dynasty, Korea wasn't an expansionist state. In the five centuries of its rule, Korea has only expanded up to the Changbai Mountains and conducted no other major expansionist operations that resulted in significant territorial gains."
+ reinforce_the_hwangog_reform: "Reinforce the Hwangog"
+ reinforce_the_hwangog_reform_desc: ""
+ issue_a_new_korean_coin_reform: "Issue a Coin"
+ issue_a_new_korean_coin_reform_desc: ""
+ 
  kiwi_support_reform: "Kiwi Support"
  kiwi_support_reform_desc: "The Kiwi's were traveling merchants in the malay region, sending goods across the sultanates through limited partnerships and hiring capacity from captains. By encouraging these practices and enforcing the 'Undang Undang Laut Melaka' we can increase the amount of trade in our empire and the amount of goods that reach our markets!"
  consulate_of_the_malay: "Undang Undang Melaka"
@@ -952,7 +970,9 @@
  mechanic_enables_peace_development_reduction_yes: "Hermit Kingdom: For every 5 years of being at peace beginning at 10, you get §G-5%§! Development Cost up to a maximum of §G-15%§!"
  mechanic_enables_disable_noble_estate_yes: "Disable the Noble Estate"
  mechanic_enables_codified_law_yes: "Codified Law: §G-2§! Unrest in provinces under 50% Autonomy."
- 
+ mechanic_enables_global_tax_modifier_buff_yes: "Bangyesurok: §G+5.0%§! extra National Tax Modifier for every positive point of stability"
+ mechanic_enables_central_army_conscription_yes: "Central Army: §G-25.0%§! Recruitment Time and §G+10.0%§! Manpower Recovery Speed while at war"
+ mechanic_enables_better_grain_yes: "Hwangog: §G+100.0%§! Trade Value in grain producing provinces"
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1104,7 +1124,10 @@
  sunni_influence_4: "Sunni Minority Reign"
  sunni_influence_5: "Sunni Representative Influence"
  sunni_influence_6: "Sunni Minority Influence"
-  
+ bangyesurok_1: "Bangyesurok: 1 Stability"
+ bangyesurok_2: "Bangyesurok: 2 Stability"
+ bangyesurok_3: "Bangyesurok: 3 Stability"
+ central_army_GE: "Central Army"
   
  check_empowered_requirements_again_title:1 "Empowered Requirements"
  check_empowered_requirements_again_desc:1 "Did you forget what the Empowered Reforms were?, here is a little refresher!"

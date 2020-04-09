@@ -13,24 +13,7 @@ feudalism_reform = {
 	}
 }
 
-hermit_kingdom_reform = {
-	icon = "celestial_empire"
-	allow_normal_conversion = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 30
-	potential = {
-		OR = {
-			tag = KOR
-			has_reform = hermit_kingdom_reform
-		}
-	}
-	modifiers = {
-		defensiveness = 0.2
-	}
-	custom_attributes = {
-		enables_peace_development_reduction = yes
-	}
-}
+
 
 elective_monarchy_reform = {
 	icon = "ballot_box"
@@ -4124,6 +4107,7 @@ dual_city_administration_reform = {
 	}
 }
 
+
 #Tier4
 
 #######
@@ -6773,6 +6757,7 @@ foreign_formation_regiments_reform = {
 	}
 }
 
+
 general_war_commissariat_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
@@ -7856,5 +7841,243 @@ caravanserai_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+hermit_kingdom_reform = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	potential = {
+		OR = {
+			primary_culture = korean 
+			has_reform = hermit_kingdom_reform
+		}
+	}
+	modifiers = {
+		defensiveness = 0.2
+	}
+	custom_attributes = {
+		enables_peace_development_reduction = yes
+	}
+}
+nobi_jongbubub_reform= {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = korean
+			has_reform = nobi_jongbubub_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.15
+		global_trade_goods_size_modifier = 0.05
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		#enables_noble_privileges = yes # Bonus Manpower from 'demand more troops' Noble Interaction
+	}
+	ai = {
+		factor = 1
+	}
+}
+nobi_jongmobub_reform = {
+	icon = "king_2"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = korean
+			has_reform = nobi_jongmobub_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+	}
+	custom_attributes = {
+		#enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency in noble estate provinces
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+bangyesurok_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	effect = {
+		#change_variable = {
+		#	which = Royal_Influence
+		#	value = 1
+		#}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+	removed_effect = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = korean
+			has_reform = bangyesurok_reform 
+		}
+	}
+	modifiers = {
+		yearly_corruption = -0.1	
+	}
+	custom_attributes = {
+		enables_global_tax_modifier_buff = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+euijung_bu_seosajae_reform= {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		advisor_pool = 1
+		advisor_cost = -0.2
+		max_absolutism = -5
+	}
+	potential = {
+		OR = {
+			has_reform = euijung_bu_seosajae_reform
+			primary_culture = korean
+		}
+	}
+}
+jaeseungbangryak_reform = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		movement_speed = 0.2
+		#regiment_recruit_speed = -0.2
+	}
+	potential = {
+		OR = {
+			has_reform = jaeseungbangryak_reform
+			primary_culture = korean
+		}
+	}
+	custom_attributes = {
+		enables_central_army_conscription = yes
+	}
+}
+five_military_force_reform = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		fire_damage = 0.1
+		land_maintenance_modifier = -0.05
+	}
+	potential = {
+		OR = {
+			has_reform = five_military_force_reform
+			primary_culture = korean
+		}
+	}
+}
+reinforce_the_hwangog_reform = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = grain
+					NOT = { has_province_modifier = GE_hwangog }
+				}
+				add_province_modifier = {
+					name = GE_hwangog
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = GE_hwangog
+				}
+				remove_province_modifier = GE_hwangog
+			}
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.2
+		global_tax_modifier = 0.15
+	}
+	potential = {
+		OR = {
+			has_reform = reinforce_the_hwangog_reform
+			primary_culture = korean
+		}
+	}
+	custom_attributes = {
+		enables_better_grain = yes
+	}
+}
+issue_a_new_korean_coin_reform = {
+	icon = "parliament_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		inflation_reduction = 0.1
+		interest = -1
+		trade_efficiency = 0.15
+	}
+	effect = {
+		add_mercantilism = 10
+	}
+	potential = {
+		OR = {
+			has_reform = issue_a_new_korean_coin_reform
+			primary_culture = korean
+		}
 	}
 }

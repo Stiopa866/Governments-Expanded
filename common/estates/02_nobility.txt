@@ -510,6 +510,13 @@ estate_nobles =
 		loyalty = 10
 	}
 	loyalty_modifier = {
+		desc = EST_VAL_DIVERSE_ESTATES_REFORM_LOY
+		trigger = {
+			has_reform = diverse_estates_reform 
+		}
+		loyalty = 10
+	}
+	loyalty_modifier = {
 		desc = EST_VAL_SZLACHTA_RECRUITS_REFORM_LOY
 		trigger = {
 			has_reform = szlachta_recruits_reform

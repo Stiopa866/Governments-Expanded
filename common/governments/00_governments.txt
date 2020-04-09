@@ -83,6 +83,8 @@ monarchy = {
 		}
 		hereditary_vs_nobility = {
 			reforms = {
+				nobi_jongmobub_reform
+				nobi_jongbubub_reform
 				enforce_privileges_reform
 				quash_noble_power_reform
 				enforce_trader_privileges_reform
@@ -191,6 +193,7 @@ monarchy = {
 				imperial_examination_reform
 				tajik_administration_reform
 				dual_city_administration_reform
+				bangyesurok_reform
 			}
 		}
 		military_organisation = {
@@ -241,6 +244,8 @@ monarchy = {
 				reforms_of_abbas_reform
 				sherifan_levies_reform
 				restore_the_komnenoid_army_reform
+				jaeseungbangryak_reform
+				five_military_force_reform
 			}
 		}
 		growth_of_administration = {
@@ -294,6 +299,7 @@ monarchy = {
 				aristocratic_court_reform
 				general_estates_reform
 				states_general_reform
+				
 				#GE
 				haudenosaunee_reform
 				parliamentary_order_reform
@@ -326,6 +332,7 @@ monarchy = {
 				grand_council_reform
 				grand_secretariat_reform
 				sultanate_of_women_reform
+				euijung_bu_seosajae_reform
 			}
 		}
 		economic_policy = {
@@ -343,6 +350,8 @@ monarchy = {
 				empowered_royal_trading_company_reform
 				armenian_silk_traders_reform
 				caravanserai_reform
+				reinforce_the_hwangog_reform
+				issue_a_new_korean_coin_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

@@ -272,3 +272,6 @@ GE_Public_Works = {
 GE_Caravanserai = {
 	province_trade_power_value = 5
 }
+GE_hwangog = {
+	trade_value_modifier = 1
+}
