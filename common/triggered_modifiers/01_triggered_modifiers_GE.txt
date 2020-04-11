@@ -317,3 +317,15 @@ central_army_GE = {
 	global_regiment_recruit_speed = -0.25
 	manpower_recovery_speed = 0.1
 }
+bureaucracy_autonomy = {
+	potential = {
+		has_government_attribute = enables_bureaucracy_autonomy
+	}
+
+	trigger = {
+		NOT = {	average_autonomy_above_min = 30 }
+	}
+
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+}

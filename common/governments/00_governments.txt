@@ -290,6 +290,7 @@ monarchy = {
 				highborn_ministers_reform
 				kiwi_support_reform
 				roman_senate_reform
+				korean_bureaucracy_reform
 			}
 		}
 		deliberative_assembly = {
@@ -351,7 +352,7 @@ monarchy = {
 				armenian_silk_traders_reform
 				caravanserai_reform
 				reinforce_the_hwangog_reform
-				issue_a_new_korean_coin_reform
+				bureaucratic_economy_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {

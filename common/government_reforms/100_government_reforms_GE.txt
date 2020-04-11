@@ -7855,6 +7855,12 @@ hermit_kingdom_reform = {
 			has_reform = hermit_kingdom_reform
 		}
 	}
+	trigger = {
+		OR = {
+			has_reform = hermit_kingdom_reform
+			primary_culture = korean
+		}
+	}
 	modifiers = {
 		defensiveness = 0.2
 	}
@@ -7869,6 +7875,12 @@ nobi_jongbubub_reform= {
 		OR = {
 			primary_culture = korean
 			has_reform = nobi_jongbubub_reform
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = nobi_jongbubub_reform
+			primary_culture = korean
 		}
 	}
 	effect = {
@@ -7901,6 +7913,12 @@ nobi_jongmobub_reform = {
 		OR = {
 			primary_culture = korean
 			has_reform = nobi_jongmobub_reform
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = nobi_jongmobub_reform
+			primary_culture = korean
 		}
 	}
 	effect = {
@@ -7966,6 +7984,12 @@ bangyesurok_reform = {
 			has_reform = bangyesurok_reform 
 		}
 	}
+	trigger = {
+		OR = {
+			has_reform = bangyesurok_reform
+			primary_culture = korean
+		}
+	}
 	modifiers = {
 		yearly_corruption = -0.1	
 	}
@@ -7977,7 +8001,7 @@ bangyesurok_reform = {
 	}
 }
 euijung_bu_seosajae_reform= {
-	icon = "parliament_hall"
+	icon = "asian_scripture"
 	allow_normal_conversion = yes
 	modifiers = {
 		advisor_pool = 1
@@ -7990,9 +8014,15 @@ euijung_bu_seosajae_reform= {
 			primary_culture = korean
 		}
 	}
+	trigger = {
+		OR = {
+			has_reform = euijung_bu_seosajae_reform
+			primary_culture = korean
+		}
+	}
 }
 jaeseungbangryak_reform = {
-	icon = "parliament_hall"
+	icon = "fort"
 	allow_normal_conversion = yes
 	modifiers = {
 		movement_speed = 0.2
@@ -8004,12 +8034,18 @@ jaeseungbangryak_reform = {
 			primary_culture = korean
 		}
 	}
+	trigger = {
+		OR = {
+			has_reform = jaeseungbangryak_reform
+			primary_culture = korean
+		}
+	}
 	custom_attributes = {
 		enables_central_army_conscription = yes
 	}
 }
 five_military_force_reform = {
-	icon = "parliament_hall"
+	icon = "hesse_jaegers"
 	allow_normal_conversion = yes
 	modifiers = {
 		fire_damage = 0.1
@@ -8021,9 +8057,15 @@ five_military_force_reform = {
 			primary_culture = korean
 		}
 	}
+	trigger = {
+		OR = {
+			has_reform = five_military_force_reform
+			primary_culture = korean
+		}
+	}
 }
 reinforce_the_hwangog_reform = {
-	icon = "parliament_hall"
+	icon = "banker"
 	allow_normal_conversion = yes
 	effect = {
 		hidden_effect = {
@@ -8059,25 +8101,60 @@ reinforce_the_hwangog_reform = {
 			primary_culture = korean
 		}
 	}
+	trigger = {
+		OR = {
+			has_reform = reinforce_the_hwangog_reform
+			primary_culture = korean
+		}
+	}
 	custom_attributes = {
 		enables_better_grain = yes
 	}
 }
-issue_a_new_korean_coin_reform = {
-	icon = "parliament_hall"
+bureaucratic_economy_reform = {
+	icon = "asian_scripture"
 	allow_normal_conversion = yes
 	modifiers = {
-		inflation_reduction = 0.1
-		interest = -1
-		trade_efficiency = 0.15
-	}
-	effect = {
-		add_mercantilism = 10
+		trade_efficiency = -0.05
+		production_efficiency = 0.1
+		global_tax_modifier = 0.1
 	}
 	potential = {
 		OR = {
-			has_reform = issue_a_new_korean_coin_reform
+			has_reform = bureaucratic_economy_reform
 			primary_culture = korean
 		}
+	}
+	trigger = {
+		OR = {
+			has_reform = bureaucratic_economy_reform
+			primary_culture = korean
+		}
+	}
+	custom_attributes = {
+		enables_bureaucracy_autonomy = yes
+	}
+}
+korean_bureaucracy_reform = {
+	icon = "celestial_empire"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_autonomy = -0.1
+	}
+	potential = {
+		OR = {
+			has_reform = korean_bureaucracy_reform
+			primary_culture = korean
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = korean_bureaucracy_reform
+			primary_culture = korean
+		}
+	}
+	custom_attributes = {
+		#enables_korean_bureaucracy = yes
+		enables_jurisprudence = yes
 	}
 }
