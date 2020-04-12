@@ -978,7 +978,8 @@
  mechanic_enables_central_army_conscription_yes: "Central Army: §G-25.0%§! Recruitment Time and §G+10.0%§! Manpower Recovery Speed while at war"
  mechanic_enables_better_grain_yes: "Hwangog: §G+100.0%§! Trade Value in grain producing provinces"
  mechanic_enables_bureaucracy_autonomy_yes: "Bureaucratic Economy: §G+5.0%§! Production Efficiency and National Tax Modifier while we have our §YAverage autonomy above minimum§! under 30"
- #mechanic_enables_korean_bureaucracy_yes: "Korean Bureaucracy: §G-15.0%§! Stability Cost Modifier while we have an administrative advisor in employ"
+ mechanic_enables_korean_bureaucracy_yes: "Korean Bureaucracy: §G-5.0%§! Stability Cost Modifier per 1 level of administrative advisor in employ."
+ 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -1134,6 +1135,11 @@
  bangyesurok_3: "Bangyesurok: 3 Stability"
  central_army_GE: "Central Army"
  bureaucracy_autonomy: "Bureaucratic Economy"
+ korean_bureaucracy_advisor_1: "Korean Bureaucracy: Advisor Level 1"
+ korean_bureaucracy_advisor_2: "Korean Bureaucracy: Advisor Level 2"
+ korean_bureaucracy_advisor_3: "Korean Bureaucracy: Advisor Level 3"
+ korean_bureaucracy_advisor_4: "Korean Bureaucracy: Advisor Level 4"
+ korean_bureaucracy_advisor_5: "Korean Bureaucracy: Advisor Level 5"
   
  check_empowered_requirements_again_title:1 "Empowered Requirements"
  check_empowered_requirements_again_desc:1 "Did you forget what the Empowered Reforms were?, here is a little refresher!"

@@ -8154,7 +8154,7 @@ korean_bureaucracy_reform = {
 		}
 	}
 	custom_attributes = {
-		#enables_korean_bureaucracy = yes
-		enables_jurisprudence = yes
+		enables_korean_bureaucracy = yes
+		#enables_jurisprudence = yes
 	}
 }

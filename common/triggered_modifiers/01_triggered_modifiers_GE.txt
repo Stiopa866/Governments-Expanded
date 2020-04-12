@@ -329,3 +329,62 @@ bureaucracy_autonomy = {
 	global_tax_modifier = 0.05
 	production_efficiency = 0.05
 }
+korean_bureaucracy_advisor_1 = {
+	potential = {
+		has_government_attribute = enables_korean_bureaucracy
+	}
+
+	trigger = {
+		has_adm_advisor_with_skill = { skill = 1 }
+		NOT = { has_adm_advisor_with_skill = { skill = 2 } }
+	}
+
+	stability_cost_modifier = -0.05
+}
+korean_bureaucracy_advisor_2 = {
+	potential = {
+		has_government_attribute = enables_korean_bureaucracy
+	}
+
+	trigger = {
+		has_adm_advisor_with_skill = { skill = 2 }
+		NOT = { has_adm_advisor_with_skill = { skill = 3 } }
+	}
+
+	stability_cost_modifier = -0.1
+}
+korean_bureaucracy_advisor_3 = {
+	potential = {
+		has_government_attribute = enables_korean_bureaucracy
+	}
+
+	trigger = {
+		has_adm_advisor_with_skill = { skill = 3 }
+		NOT = { has_adm_advisor_with_skill = { skill = 4 } }
+	}
+
+	stability_cost_modifier = -0.15
+}
+korean_bureaucracy_advisor_4 = {
+	potential = {
+		has_government_attribute = enables_korean_bureaucracy
+	}
+
+	trigger = {
+		has_adm_advisor_with_skill = { skill = 4 }
+		NOT = { has_adm_advisor_with_skill = { skill = 5 } }
+	}
+
+	stability_cost_modifier = -0.2
+}
+korean_bureaucracy_advisor_5 = {
+	potential = {
+		has_government_attribute = enables_korean_bureaucracy
+	}
+
+	trigger = {
+		has_adm_advisor_with_skill = { skill = 5 }
+	}
+
+	stability_cost_modifier = -0.25
+}

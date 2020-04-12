@@ -1,0 +1,11 @@
+has_adm_advisor_with_skill = {
+    OR = {
+        treasurer = $skill$
+        philosopher = $skill$
+        artist = $skill$
+        theologian = $skill$
+        master_of_mint = $skill$
+        inquisitor = $skill$
+        natural_scientist = $skill$
+    }
+}

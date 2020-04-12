@@ -472,3 +472,5 @@
  EST_VAL_EXPAND_CORVEE_LOY: "Empowered Expand Corvee: §Y$VAL$%§!"
  EST_VAL_GHULAMS_REFORM_LOY:0 "Foreign Ghulams: §Y$VAL$§!"
  EST_VAL_ABBAS_REFORM_LOY:0 "Abbas's Reforms: §Y$VAL$§!"
+ #unsorted
+ has_adm_advisor_with_skill: "Has Adm Advisor with skill of at least $skill$"
