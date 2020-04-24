@@ -965,6 +965,7 @@ enforce_privileges_reform = {
 	potential = {
 		NOT = { technology_group = eastern }
 		NOT = { culture_group = japanese_g }
+		NOT = { tag = KOR }
 	}
 	effect = {
 		change_variable = {
@@ -992,7 +993,9 @@ enforce_privileges_reform = {
 quash_noble_power_reform = {
 	icon = "king_2"
 	allow_normal_conversion = yes
-
+	potential = {
+		NOT = { tag = KOR }
+	}	
 	effect = {
 		change_variable = {
 			which = Royal_Influence

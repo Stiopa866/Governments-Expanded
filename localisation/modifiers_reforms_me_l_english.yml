@@ -97,6 +97,7 @@
  Magnate_Law: "Mechanic §YMagnate Law§!"
  Mountain_Towns: "Mechanic §YMountain Towns§!"
  Mountain_Forts: "Mechanic §YMountain Forts§!"
+ GE_hwangog: "Hwangog"
  Arabian_Horses_1: "Arabian Horses"
  Arabian_Horses_2: "Arabian Horses"
  Arabian_Horses_3: "Arabian Horses"
@@ -264,6 +265,9 @@
  GE_Kaza_System_7: "Kaza System"
  GE_Kaza_System_8: "Kaza System"
  GE_Kaza_System_9: "Kaza System"
+ Hermit_five: "Hermit Kingdom"
+ Hermit_ten: "Hermit Kingdom"
+ Hermit_fifteen: "Hermit Kingdom"
  GE_Devshirme: "Mechanic §YDevshirme§!"
  GE_Janissary_Guards: "Janissary Guards"
  GE_Koprulu_Defence: "Mobilized Marcher Lords"
@@ -394,7 +398,7 @@
  Training_Camps: "Training Camps"
  Demoralized_Army: "Demoralized Army"
  Absent_Noble: "Absent Noble"
-
+ 
  
  
  EST_VAL_BURGHERS_ADVANCES:0 "Burghers Advance: §Y$VAL$%§!"
@@ -468,3 +472,5 @@
  EST_VAL_EXPAND_CORVEE_LOY: "Empowered Expand Corvee: §Y$VAL$%§!"
  EST_VAL_GHULAMS_REFORM_LOY:0 "Foreign Ghulams: §Y$VAL$§!"
  EST_VAL_ABBAS_REFORM_LOY:0 "Abbas's Reforms: §Y$VAL$§!"
+ #unsorted
+ has_adm_advisor_with_skill: "Has Adm Advisor with skill of at least $skill$"

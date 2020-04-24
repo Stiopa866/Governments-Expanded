@@ -224,6 +224,7 @@
  dynastic_theocracy_reform: "Dynastic Theocracies"
  dynastic_theocracy_reform_desc: "A form of government where the dynasty is the representative of God, and the protector of the people."
  
+ 
  #Theocracies T4.5
  religious_enforcement: "Religious Enforcement"
  holy_orthodoxy_reform: "Holy Orthodoxy"
@@ -515,6 +516,8 @@
  legacy_of_constitutionalism_reform: "Legacy of Constitutionalism"
  legacy_of_constitutionalism_reform_desc: "We used to have a constitution, but now the authoritarian monarchs have torn it down so much that they effectively hold absolute power. This desecration is causing the legitimacy of the monarch fade away from the eyes of the countries people."
  
+ 
+ 
  portuguese_empire_reform: "Portuguese Empire"
  portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility,clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people.  We are situated in every continet of the world. All the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and territory and it's citizens are all Portuguese, wether they speak another language or have different customs, we are all Portuguese under this banner. We shall lead the civilizing mission in our territory and encompass pro-miscegenation towards our subject unlike certain Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
  kingdom_of_castille_and_leon: "Kingdom of Castille and Leon"
@@ -789,6 +792,25 @@
  #1.11
  hermit_kingdom_reform: "Hermit Kingdom"
  hermit_kingdom_reform_desc: "During the rule of Joseon dynasty, Korea wasn't an expansionist state. In the five centuries of its rule, Korea has only expanded up to the Changbai Mountains and conducted no other major expansionist operations that resulted in significant territorial gains."
+ reinforce_the_hwangog_reform: "Reinforce the Hwangog"
+ reinforce_the_hwangog_reform_desc: "Ever since the fall of Goryo and the emergence of the Joseon dynasty, Korea has been a primarily agrarian state. This state of affairs was reinforced by the various reforms introduced by the benevolent governments, such as the Hwangog system, which provided national granaries. Thanks to that, agriculture did not fail in times of hardship. The system clearly served wonders for us and should be reinforced and modernized."
+ bureaucratic_economy_reform: "Bureaucratic Economy"
+ bureaucratic_economy_reform_desc: "Naturally, the national economy should not be in the hands of the commons, but in the hands of the knowledgeable elites. The wellness and comfort of the people should not be in the hands of the greedy and subjective, but in the hands of the objective experts. For, as we all know, the government serves to comfort the people."
+ nobi_jongbubub_reform: "Nobi Jongbubub"
+ nobi_jongbubub_reform_desc: "Nobi were the serfs of Korea. Nobi Jongbubub (Paternal Inheritance of the Nobi title) would theoretically make the Nobi decrease in numbers. Practically though, the Nobi women changed their husbands to save their children from lowborn class, deluding the real father. In this case, the noble would persist the child's father is Nobi."
+ nobi_jongmobub_reform: "Nobi Jongmobub"
+ nobi_jongmobub_reform_desc: "Nobi were the serfs of Korea, whose numbers directly correlated the influence of the nobles. Establishing the Maternal Inheritance of the Nobi title would make the Nobi reduce in numbers, providing safety measures are put in. Accepting the Maternal Inheritance would mean forbidding the marriage between the Nobi woman and the common man, with a few exceptions that is."
+ bangyesurok_reform: "Bangyesurok"
+ bangyesurok_reform_desc: "Bangyesurok is a reform suggested by Yu Hyeongwon. In his theory, he presented many innovative ideas, that would greatly help modernize our country as we know it. The Bangyesurok includes nationalization of the land in the state, redistribution it to the people with special taxation in addition to it. A new form of coin would be to be minted, causing the trade to flourish and compulsory education would be introduced to raise the competencies. At last, the Nobi system would be abolished."
+ euijung_bu_seosajae_reform: "Euijung-bu Seosajae"
+ euijung_bu_seosajae_reform_desc: "Euijung-bu Seosajae is a system that introduces a limit to monarch's power. Strengthening the Euijung Bu Seosajae allows the bureaucrats to check and control the power of the royals. It also grants extensive bureaucratic competencies to the administrative branch, which allowed them to designate new laws. The King could of course veto them, but it is highly tabooed and can lead to disaster."
+ jaeseungbangryak_reform: "Jaesungbangryak"
+ jaeseungbangryak_reform_desc: "Jaesungbangryak is a defense system that assumes that central action is to be taken soon after the beginning of a conflict. Used to the small character of the invasions, the Korean army is to be conscripted early after the beginning of the war, and it is to be comprised of light, highly mobile units. The frontiers would be defended by permanent defense institutions."
+ five_military_force_reform: "Five Military Force"
+ five_military_force_reform_desc: "With growth of Joseon, and the states around it, the former defense system is not going to provide enough safety. This is why, Five Military Force is to be established, and with it, a Drilled Standing Force armed with matchlocks would replace the cavalry-focused army. These regiments would later become famous for their elite skills."
+ korean_bureaucracy_reform: "Korean Bureaucracy"
+ korean_bureaucracy_reform_desc: "The Joseon State has always been a bureaucratic state. The government is highly centralized and is enrooted deeply in bureaucratic absolutism. This government type allowed the dynasty to flourish, and it should not be abandoned."
+ 
  kiwi_support_reform: "Kiwi Support"
  kiwi_support_reform_desc: "The Kiwi's were traveling merchants in the malay region, sending goods across the sultanates through limited partnerships and hiring capacity from captains. By encouraging these practices and enforcing the 'Undang Undang Laut Melaka' we can increase the amount of trade in our empire and the amount of goods that reach our markets!"
  consulate_of_the_malay: "Undang Undang Melaka"
@@ -949,9 +971,14 @@
  mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost in states with forts."
  mechanic_enables_jurisprudence_yes: "Jurisprudence: Up to §G-10%§! Idea cost and §G-20%§! Admin Technology Cost depending on your average Autonomy."
  mechanic_enables_varangian_guard_yes: "Varangian Guard: §G+5%§! Shock Damage if you have a Scandinavian ally or subject."
+ mechanic_enables_peace_development_reduction_yes: "Hermit Kingdom: For every 5 years of being at peace beginning at 10, you get §G-5%§! Development Cost up to a maximum of §G-15%§!"
  mechanic_enables_disable_noble_estate_yes: "Disable the Noble Estate"
  mechanic_enables_codified_law_yes: "Codified Law: §G-2§! Unrest in provinces under 50% Autonomy."
- 
+ mechanic_enables_global_tax_modifier_buff_yes: "Bangyesurok: §G+5.0%§! extra National Tax Modifier for every positive point of stability"
+ mechanic_enables_central_army_conscription_yes: "Central Army: §G-25.0%§! Recruitment Time and §G+10.0%§! Manpower Recovery Speed while at war"
+ mechanic_enables_better_grain_yes: "Hwangog: §G+100.0%§! Trade Value in grain producing provinces"
+ mechanic_enables_bureaucracy_autonomy_yes: "Bureaucratic Economy: §G+5.0%§! Production Efficiency and National Tax Modifier while we have our §YAverage autonomy above minimum§! under 30"
+ mechanic_enables_korean_bureaucracy_yes: "Korean Bureaucracy: §G-5.0%§! Stability Cost Modifier per 1 level of administrative advisor in employ."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1103,7 +1130,16 @@
  sunni_influence_4: "Sunni Minority Reign"
  sunni_influence_5: "Sunni Representative Influence"
  sunni_influence_6: "Sunni Minority Influence"
-  
+ bangyesurok_1: "Bangyesurok: 1 Stability"
+ bangyesurok_2: "Bangyesurok: 2 Stability"
+ bangyesurok_3: "Bangyesurok: 3 Stability"
+ central_army_GE: "Central Army"
+ bureaucracy_autonomy: "Bureaucratic Economy"
+ korean_bureaucracy_advisor_1: "Korean Bureaucracy: Advisor Level 1"
+ korean_bureaucracy_advisor_2: "Korean Bureaucracy: Advisor Level 2"
+ korean_bureaucracy_advisor_3: "Korean Bureaucracy: Advisor Level 3"
+ korean_bureaucracy_advisor_4: "Korean Bureaucracy: Advisor Level 4"
+ korean_bureaucracy_advisor_5: "Korean Bureaucracy: Advisor Level 5"
   
  check_empowered_requirements_again_title:1 "Empowered Requirements"
  check_empowered_requirements_again_desc:1 "Did you forget what the Empowered Reforms were?, here is a little refresher!"
