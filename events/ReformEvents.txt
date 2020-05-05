@@ -713,7 +713,7 @@ country_event = {
 		define_ruler = {
 			culture = ROOT
 			religion = ROOT
-			hidden = yes
+			hide_skills = yes
 			age = 35
 			claim = 75
 		}
@@ -2087,7 +2087,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				culture = ROOT
-				NOT = { has_province_modifier = enables_patriotism }
+				NOT = { has_province_modifier = Patriotism }
             }
 			add_province_modifier = {
 				name = "Patriotism"
@@ -5193,7 +5193,7 @@ country_event = {
 			limit = {
 				is_territory = no
 				NOT = { culture = ROOT }
-				NOT = { has_province_modifier = enables_satrapies }
+				NOT = { has_province_modifier = Satrapy }
             }
 			add_province_modifier = {
 				name = "Satrapy"

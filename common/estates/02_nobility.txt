@@ -103,7 +103,7 @@ estate_nobles =
 	influence_modifier = {
 		desc = EST_VAL_BASTARD_FEUDALISM
 		trigger = {
-			has_reform = bastard_feudalism_reform
+			has_reform = abolish_bastard_feudalism_reform
 		}
 		influence = 10
 	}
@@ -1389,7 +1389,6 @@ estate_nobles =
 				define_advisor = {
 					type = grand_captain
 					skill = 1
-					age = 40
 					cost_multiplier = 0.50
 				}
 				add_estate_influence_modifier = {

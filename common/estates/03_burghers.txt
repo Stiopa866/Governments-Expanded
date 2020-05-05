@@ -137,10 +137,7 @@ estate_burghers =
 		trigger = {
 			NOT = { has_reform = free_city }
 			any_owned_province = {
-				OR = {
-					has_province_modifier = inland_center_of_trade_modifier
-					has_province_modifier = center_of_trade_modifier
-				}
+				province_has_center_of_trade_of_level = 1
 			}
 		}
 		influence = 5

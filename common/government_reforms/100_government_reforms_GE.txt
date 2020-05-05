@@ -2139,7 +2139,7 @@ magnate_law_reform = {
 	potential = {
 		OR = {
 			technology_group = eastern
-			has_reform = magnate_law
+			has_reform = magnate_law_reform
 		}
 	}
 	trigger = {
@@ -4326,6 +4326,7 @@ empowered_of_noble_bearing_reform = {
 justice_and_truth_reform = {
 	icon = king
 	allow_normal_conversion = yes
+	disallowed_trade_goods = { slaves }
 	effect = {
 		change_variable = {
 			which = Royal_Influence
@@ -4354,9 +4355,6 @@ justice_and_truth_reform = {
 	}
 	modifiers = {
 		yearly_corruption = -0.10
-	}
-	custom_attributes = {
-		disallowed_trade_goods = { slaves }
 	}
 	ai = {
 		factor = 100
@@ -5780,7 +5778,7 @@ foreign_formation_regiments_reform = {
 	potential = {
 		OR = {
 			primary_culture = russian
-			has_reform = foreign_formation_regiments
+			has_reform = foreign_formation_regiments_reform
 		}
 	}
 	modifiers = {
