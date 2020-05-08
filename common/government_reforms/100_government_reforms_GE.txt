@@ -8044,6 +8044,15 @@ jaeseungbangryak_reform = {
 	custom_attributes = {
 		enables_central_army_conscription = yes
 	}
+	effect = {
+		if = {
+			limit = {
+				has_country_flag = KOR_GE_refund
+			}
+			change_government_reform_progress = 75
+			clr_country_flag = KOR_GE_refund
+		}
+	}
 }
 five_military_force_reform = {
 	icon = "hesse_jaegers"
