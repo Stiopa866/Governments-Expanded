@@ -6485,13 +6485,8 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				AND = {
-					has_estate = estate_burghers
 					has_port = yes
 					NOT = { has_province_modifier = Return_To_Sender }
-				}
-				AND = {
-					NOT = { has_estate = estate_burghers }
-					has_province_modifier = Return_To_Sender
 				}
 			}
 		}
@@ -6504,7 +6499,6 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				has_estate = estate_burghers
 				has_port = yes
 				NOT = {	has_province_modifier = Return_To_Sender }
             }
@@ -6513,13 +6507,6 @@ country_event = {
 				duration = -1
 				hidden = yes
 			}
-		}
-		every_owned_province = {
-			limit = {
-				NOT = { has_estate = estate_burghers }
-				has_province_modifier = Return_To_Sender
-            }
-			remove_province_modifier = Return_To_Sender
 		}
 	}
 	

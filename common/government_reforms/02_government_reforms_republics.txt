@@ -987,11 +987,11 @@ provincial_governments_reform = {
 	}
 	modifiers = {
 		state_maintenance_modifier = -0.25
-		development_cost = -0.05
+		development_cost = -0.10
 	}
-	custom_attributes = {
-		enables_town_rights = yes
-	}
+	# custom_attributes = {
+		# enables_town_rights = yes
+	# }
 	ai = {
 		factor = 1
 	}

@@ -996,9 +996,9 @@ clergical_administration_reform = {
 		max_states = 3
 		years_of_nationalism = -5
 	}
-	custom_attributes = {
-		enables_local_bishoprics = yes
-	}
+	# custom_attributes = {
+		# enables_local_bishoprics = yes
+	# }
 	ai = {
 		factor = 100
 	}
@@ -1312,9 +1312,10 @@ empowered_aristocratic_courts_reform = {
 	}
 	modifiers = {
 		yearly_corruption = -0.10
+		state_maintenance_modifier = -0.15
 	}
 	custom_attributes = {
-		enables_magnate_law = yes
+		# enables_magnate_law = yes
 		enables_aristocratic_idea_group = yes
 		enables_plutocratic_idea_group = no
 	}

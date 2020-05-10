@@ -244,9 +244,9 @@ generalites_reform = {
 		global_autonomy = -0.025
 		global_tax_modifier = 0.10
 	}
-	custom_attributes = {
-		enables_abolish_noble_exception = yes #33% Tax in Noble Estate Provinces
-	}
+	# custom_attributes = {
+		# enables_abolish_noble_exception = yes #33% Tax in Noble Estate Provinces
+	# }
 	ai = {
 		factor = 100
 	}

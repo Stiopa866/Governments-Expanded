@@ -43,12 +43,6 @@ arch_monarchy_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
-	potential = {
-		OR = {
-			have_had_reform = feudalism_reform
-			has_reform = feudalism_reform
-		}
-	}
 	trigger = {
 		OR = {
 			vassal = 1
@@ -60,7 +54,7 @@ arch_monarchy_reform = {
 		prestige = 0.5
 	}
 	custom_attributes = {
-		enables_blood_tax = yes
+		enables_blood_tax = yes #5% manpower per non-colonial subject
 	}
 }
 
@@ -1232,7 +1226,7 @@ papal_embassy_reform = {
 		}
 	}
 	custom_attributes = {
-		enables_papal_delegation = yes
+		enables_papal_delegation = yes #25 opinion with the pope
 	}
 	ai = {
 		factor = 1
@@ -1386,7 +1380,7 @@ diplomatic_positions_reform = {
 		diplomatic_reputation = 1
 	}
 	custom_attributes = {
-		enables_noble_diplomats = yes
+		enables_noble_diplomats = yes #15% Improve relations in noble estate
 	}
 
 	ai = {
@@ -1992,7 +1986,7 @@ portuguese_cortes_reform = {
 		legitimacy = 1
 	}
 	custom_attributes = {
-		enables_cortes = yes
+		enables_cortes = yes #pseudoparliament
 	}
 	ai = {
 		factor = 100
@@ -2347,10 +2341,11 @@ magnate_law_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.10
+		state_maintenance_modifier = -0.15
 	}
-	custom_attributes = { 
-		enables_magnate_law = yes #-1 local manpower in Noble Provinces states.
-	}
+	# custom_attributes = {
+		# enables_magnate_law = yes #-1 local manpower in Noble Provinces states.
+	# }
 	ai = {
 		factor = 10
 	}
@@ -2715,12 +2710,12 @@ franconian_salic_law_reform = {
 	}
 	modifiers = {
 		legitimacy = -0.25
-		global_manpower_modifier = 0.10
+		global_manpower_modifier = 0.5
 		cavalry_cost = -0.15
 	}
-	custom_attributes = {
-		enables_independent_nobles = yes #+15% Local Manpower
-	}
+	# custom_attributes = {
+		# enables_independent_nobles = yes #+15% Local Manpower
+	# }
 	ai = {
 		factor = 50
 	}
@@ -2780,9 +2775,9 @@ chhetri_clans_reform = {
 		leader_cost = -0.10
 		leader_land_shock = 1
 	}
-	custom_attributes = {
-		enables_rajput_law = yes #-2 Unrest and +10% Manpower in each province owned by the rajput estate
-	}
+	# custom_attributes = {
+		# enables_rajput_law = yes #-2 Unrest and +10% Manpower in each province owned by the rajput estate
+	# }
 	ai = {
 		factor = 100
 	}
@@ -2935,10 +2930,11 @@ timariot_domains_reform = {
 	}
 	modifiers = {
 		reduced_liberty_desire = 10
+		cavalry_cost = -0.15
 	}
-	custom_attributes = {
-		enables_timariots = yes #1 tax and 250 manpower in noble provinces
-	}
+	# custom_attributes = {
+		# enables_timariots = yes #1 tax and 250 manpower in noble provinces
+	# }
 	ai = {
 		factor = 100
 	}
@@ -3045,7 +3041,7 @@ regional_forts_reform = {
 		fort_maintenance_modifier = -0.1
 	}
 	custom_attributes = {
-		enables_administrative_forts = yes #-25% State Maintenance
+		enables_administrative_forts = yes #-25% State Maintenance in states with forts
 	}
 	ai = {
 		factor = 1
@@ -3183,7 +3179,7 @@ diocletian_reforms_reform = {
 		legitimacy = 0.25
 	}
 	custom_attributes = {
-		enables_jurisprudence = yes #-1% Idea Cost and -2 Admin Tech Cost for each 10% Min Autonomy
+		enables_jurisprudence = yes #-1% Idea Cost and -2% Admin Tech Cost for each 10% Min Autonomy
 	}
 	ai = {
 		factor = 100
@@ -3586,10 +3582,11 @@ re_enforce_magdeburg_rights_reform = {
 	}
 	modifiers = {
 		trade_efficiency = 0.10
+		development_cost = -0.05
 	}
-	custom_attributes = {
-		enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced
-	}
+	# custom_attributes = {
+		# enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced in burgher estate provinces
+	# }
 	ai = {
 		factor = 100
 	}
@@ -4401,10 +4398,11 @@ imperial_circles_administration_reform = {
 	}
 	modifiers = {
 		global_unrest = -1
+		development_cost = -0.05
 	}
-	custom_attributes = {
-		enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced
-	}
+	# custom_attributes = {
+		# enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced
+	# }
 	ai = {
 		factor = 10
 	}
@@ -5134,10 +5132,11 @@ highborn_ministers_reform = {
 	modifiers = {
 		free_adm_policy = 1
 		max_states = 2
+		global_tax_modifier = 0.05
 	}
-	custom_attributes = {
-		enables_abolish_noble_customs = yes
-	}
+	# custom_attributes = {
+		# enables_abolish_noble_customs = yes #50% less trade and tax penalty in noble provinces
+	# }
 	ai = {
 		factor = 100
 	}
@@ -5437,7 +5436,7 @@ empowered_church_councils_reform = {
 		global_missionary_strength = 0.02
 	}
 	custom_attributes = {
-		enables_church_poorhouses = yes
+		enables_church_poorhouses = yes 
 	}
 	ai = {
 		factor = 1
@@ -6480,11 +6479,11 @@ empowered_royal_guard_reform = {
 	modifiers = {
 		land_forcelimit_modifier = -0.15
 		drill_gain_modifier = 0.25
-		infantry_power = 0.10
+		infantry_power = 0.15
 	}
-	custom_attributes = {
-		enables_royal_army_garrisons = yes #+100 Base Manpower in Royal State provinces
-	}
+	# custom_attributes = {
+		# enables_royal_army_garrisons = yes #+100 Base Manpower in Royal State provinces
+	# }
 	ai = {
 		factor = 10
 	}
@@ -7568,12 +7567,12 @@ mercantilism_reform = {
 		add_mercantilism = 5
 	}
 	modifiers = {
-		global_prov_trade_power_modifier = 0.15
+		global_prov_trade_power_modifier = 0.10
 		trade_steering = 0.20
 		merchants = 1
 	}
 	custom_attributes = {
-		enables_home_market = yes #2.5% Trade Efficiency per 10% Mercantilism
+		enables_home_market = yes #1.5% Trade Efficiency per 10% Mercantilism
 	}
 	ai = {
 		factor = 1
@@ -7604,9 +7603,9 @@ empowered_free_trade_reform = {
 		global_trade_goods_size_modifier = 0.15
 		merchants = 1
 	}
-	custom_attributes = {
-		enables_trade_privileges = yes #15% Trade Value and 2.5 Base Trade power in Burgher Provinces
-	}
+	# custom_attributes = {
+		# enables_trade_privileges = yes #15% Trade Value and 2.5 Base Trade power in Burgher Provinces
+	# }
 	can_use_trade_post = yes
 	ai = {
 		factor = 1
@@ -7654,10 +7653,11 @@ empowered_aristocratic_estates_reform = {
 	}
 	modifiers = {
 		production_efficiency = 0.10
+		global_manpower_modifier = 0.10
 	}
-	custom_attributes = {
-		enables_rural_development = yes
-	}
+	# custom_attributes = {
+		# enables_rural_development = yes
+	# }
 	ai = {
 		factor = 10
 	}
@@ -7688,10 +7688,11 @@ empowered_monastic_centres_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.10
+		global_trade_power = 0.10
 	}
-	custom_attributes = {
-		enables_monastic_trade = yes
-	}
+	# custom_attributes = {
+		# enables_monastic_trade = yes
+	# }
 	ai = {
 		factor = 10
 	}
@@ -7722,10 +7723,12 @@ empowered_expand_corvee_reform = {
 	}
 	modifiers = {
 		defensiveness = 0.10
+		global_trade_goods_size_modifier = 0.05
+		global_manpower_modifier = 0.10
 	}
-	custom_attributes = {
-		enables_corvee = yes #10% Manpower and Production Efficiency in Noble and Clergy Provinces
-	}
+	# custom_attributes = {
+		# enables_corvee = yes #10% Manpower and Production Efficiency in Noble and Clergy Provinces
+	# }
 	ai = {
 		factor = 10
 	}
@@ -7748,11 +7751,11 @@ empowered_enlarge_royal_estate_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 2
+		max_states = 5
 	}
-	custom_attributes = {
-		enables_royal_domain = yes #10% Tax and Manpower in royal estate provinces
-	}
+	# custom_attributes = {
+		# enables_royal_domain = yes #10% Tax and Manpower in royal estate provinces
+	# }
 	ai = {
 		factor = 10
 	}
