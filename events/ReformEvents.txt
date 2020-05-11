@@ -12758,3 +12758,64 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.177
+	title = reform_me_events.177.t
+	desc = reform_me_events.177.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		OR = {
+			AND = {
+				has_government_attribute = enables_mint_towns
+				any_owned_province = {
+					development = 20
+					NOT = {	has_province_modifier = Mint_Towns }
+				}
+			}
+			any_owned_province = {
+				has_province_modifier = Mint_Towns
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_government_attribute = enables_mint_towns
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = Mint_Towns
+				}
+				remove_province_modifier = Mint_Towns
+			}
+		}
+		every_owned_province = {
+			limit = {
+				development = 20
+				NOT = {	has_province_modifier = Mint_Towns }
+            }
+			add_province_modifier = {
+				name = "Mint_Towns"
+				duration = -1
+				hidden = yes
+			}
+		}
+		
+	}
+	
+	option = {
+		name = reform_me_events.177.a
+		
+	}
+}

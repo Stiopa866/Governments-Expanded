@@ -143,6 +143,7 @@ monarchy = {
 				timariot_domains_reform
 				qadi_authority_reform
 				#clans_of_ireland_reform
+				mint_towns_reform
 			}
 		}
 		bureaucracy = {

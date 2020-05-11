@@ -621,6 +621,9 @@ Hermit_ten = {
 Hermit_fifteen = {
 	development_cost = -0.15
 }
+Mint_Towns = {
+	local_state_maintenance_modifier = -0.25
+}
 
 	
 #Cortez

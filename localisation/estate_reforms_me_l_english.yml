@@ -824,7 +824,8 @@
  
  junker_class_reform: "Junker Class"
  junker_class_reform_desc: "Let us empower the junker class to support our reign. This class of lower nobility is strong enough to form a powerfull base against the magnates, burghers and clergy. And from this base we shall dominate our enemies foreign and domestic."
- 
+ mint_towns_reform: "Mint Towns"
+ mint_towns_reform_desc: "Mint Towns were considered the backbone of the economy of the Bengal Sultanate. These towns were usually important centers of trade or provincial capitals at which Taka coins were produced, hence the name Mint Towns. These coins depicted the status of the Bengali economy, the urban and administrative centers of the country, and were generally used as a form of currency. These towns were scattered all across the Bengali realm and played a pivotal role in its production of Taka coins and in administrating the growing kingdom."
  
  
  
@@ -980,6 +981,9 @@
  mechanic_enables_bureaucracy_autonomy_yes: "Bureaucratic Economy: §G+5.0%§! Production Efficiency and National Tax Modifier while we have our §YAverage autonomy above minimum§! under 30"
  mechanic_enables_korean_bureaucracy_yes: "Korean Bureaucracy: §G-5.0%§! Stability Cost Modifier per 1 level of administrative advisor in employ."
  
+ mechanic_enables_mint_towns_yes: "Mint Towns: §G-25.0%§! state maintenance cost in 20+ development provinces."
+
+
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
