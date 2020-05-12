@@ -154,8 +154,8 @@ monarchy = {
 				mansabdari_reform
 				council_of_the_indies_reform
 				#ME
-				tur_reform_beylerbeys
-				tur_reform_eyalets
+				#tur_reform_beylerbeys
+				#tur_reform_eyalets
 				#GE
 				regional_forts_reform
 				theocratic_bureacrats_reform

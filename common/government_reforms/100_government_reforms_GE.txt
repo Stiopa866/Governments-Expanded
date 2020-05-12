@@ -1438,6 +1438,8 @@ guild_dominance_reform = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
+			accepted_culture = dutch
+			accepted_culture = flemish
 		}
 	}
 	modifiers = {
@@ -2077,6 +2079,10 @@ council_of_sheikhs_reform = {
 		OR = {
 			culture_group = maghrebi
 			has_reform = council_of_sheikhs_reform 
+			accepted_culture = moroccan
+			accepted_culture = tunisian
+			accepted_culture = algerian
+			accepted_culture = berber
 		}
 	}
 	modifiers = {
@@ -2175,6 +2181,7 @@ junker_class_reform = {
 			tag = BRA
 			tag = PRU
 			primary_culture = prussian
+			accepted_culture = prussian
 			has_reform = junker_class_reform
 		}
 		NOT = { religion = catholic }
@@ -2368,10 +2375,10 @@ imperial_knights_reform = {
 	}
 	potential = {
 		is_part_of_hre = yes
-		NOT = { total_development = 100 }
+		NOT = { total_development = 200 }
 	}
 	trigger = {
-		NOT = { total_development = 50 }
+		NOT = { total_development = 100 }
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.10
@@ -2402,6 +2409,7 @@ mamluk_privileges_reform = {
 		OR = {
 			has_reform = mamluk_privileges_reform
 			primary_culture = al_misr_arabic 
+			accepted_culture = al_misr_arabic 
 		}
 	}
 	trigger = {
@@ -2435,6 +2443,7 @@ szlachta_authority_reform = {
 			tag = POL
 			tag = PLC
 			primary_culture = polish
+			accepted_culture = polish
 		}
 		NOT = { has_reform = polish_constitutionalism_reform }
 	}
@@ -2692,6 +2701,7 @@ franconian_salic_law_reform = {
 				tag = MAI
 				tag = NUM
 				primary_culture = franconian
+				accepted_culture = franconian
 			}
 			has_reform = franconian_salic_law_reform
 		}
@@ -2704,6 +2714,7 @@ franconian_salic_law_reform = {
 				tag = MAI
 				tag = NUM
 				primary_culture = franconian
+				accepted_culture = franconian
 			}
 			has_reform = franconian_salic_law_reform
 		}
@@ -2769,6 +2780,8 @@ chhetri_clans_reform = {
 		OR = {
 			has_reform = chhetri_clans_reform
 			tag = NPL
+			primary_culture = nepali
+			accepted_culture = nepali
 		}
 	}
 	modifiers = {
@@ -2878,7 +2891,8 @@ sayyid_privileges_reform = {
 		OR = {
 			AND = {
 				religion_group = muslim
-				primary_culture = hejazi_culture	
+				primary_culture = hejazi_culture
+				accepted_culture = hejazi_culture
 			}
 			has_reform = sayyid_privileges_reform
 		}
@@ -2887,7 +2901,8 @@ sayyid_privileges_reform = {
 		OR = {
 			AND = {
 				religion_group = muslim
-				primary_culture = hejazi_culture	
+				primary_culture = hejazi_culture
+				accepted_culture = hejazi_culture
 			}
 			has_reform = sayyid_privileges_reform
 		}
@@ -2918,13 +2933,15 @@ timariot_domains_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = turkish	
+			primary_culture = turkish
+			accepted_culture = turkish
 			has_reform = timariot_domains_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = turkish	
+			accepted_culture = turkish
 			has_reform = timariot_domains_reform
 		}
 	}
@@ -3246,12 +3263,18 @@ kyoho_reforms_reform = {
 	potential = {
 		OR = {
 			culture_group = japanese_g
+			accepted_culture = japanese
+			accepted_culture = kyushuan
+			accepted_culture = togoku
 			has_reform = kyoho_reforms_reform
 		}
 	}
 	trigger = {
 		OR = {
 			culture_group = japanese_g
+			accepted_culture = japanese
+			accepted_culture = kyushuan
+			accepted_culture = togoku
 			has_reform = kyoho_reforms_reform
 		}
 	}
@@ -3410,12 +3433,14 @@ millet_reform = {
 	potential = {
 		OR = {
 			primary_culture = turkish
+			accepted_culture = turkish
 			has_reform = millet_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = turkish
+			accepted_culture = turkish
 			has_reform = millet_reform
 		}
 	}
@@ -3615,6 +3640,7 @@ re_enforce_magdeburg_rights_reform = {
 	potential = {
 		OR = {
 			primary_culture = polish
+			accepted_culture = polish
 			has_reform = re_enforce_magdeburg_rights_reform
 		}
 	}
@@ -3767,6 +3793,7 @@ abolish_bastard_feudalism_reform = {
 	potential = {
 		OR = {
 			primary_culture = english
+			accepted_culture = english
 			has_reform = abolish_bastard_feudalism_reform
 		}
 	}
@@ -4070,12 +4097,14 @@ tajik_administration_reform = {
 	potential = {
 		OR = {
 			primary_culture = azerbaijani
+			accepted_culture = azerbaijani
 			tag = PER
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = azerbaijani
+			accepted_culture = azerbaijani
 			tag = PER
 		}
 	}
@@ -4122,7 +4151,8 @@ dual_city_administration_reform = {
 		OR = {
 			AND = {
 				religion_group = muslim
-				primary_culture = hejazi_culture	
+				primary_culture = hejazi_culture
+				accepted_culture = hejazi_culture
 			}
 			has_reform = dual_city_administration_reform
 		}
@@ -4131,7 +4161,8 @@ dual_city_administration_reform = {
 		OR = {
 			AND = {
 				religion_group = muslim
-				primary_culture = hejazi_culture	
+				primary_culture = hejazi_culture
+				accepted_culture = hejazi_culture
 			}
 			has_reform = dual_city_administration_reform
 		}
@@ -4534,6 +4565,7 @@ academy_of_science_reform = {
 			tag = RUS
 			tag = MOS
 			primary_culture = russian
+			accepted_culture = russian
 			has_reform = academy_of_science_reform
 		}
 	}
@@ -4797,6 +4829,7 @@ supreme_govenor_reform = {
 	potential = {
 		OR = {
 			primary_culture = english
+			accepted_culture = english
 			has_reform = supreme_govenor_reform
 		}
 	}
@@ -4929,9 +4962,6 @@ justice_and_truth_reform = {
 	}
 	modifiers = {
 		yearly_corruption = -0.10
-	}
-	custom_attributes = {
-		disallowed_trade_goods = { slaves }
 	}
 	ai = {
 		factor = 100
@@ -5549,6 +5579,7 @@ foreign_recruitment_reform = {
 		OR = {
 			has_reform = foreign_recruitment_reform
 			primary_culture = al_misr_arabic
+			accepted_culture = al_misr_arabic
 		}
 	}
 	trigger = {
@@ -6389,9 +6420,9 @@ mercenary_corps_reform = {
 			value = -1
 		}
 	}
-	potential = { 
+	potential = {
 	}
-	modifiers = { 
+	modifiers = {
 		loot_amount = 0.50
 		reinforce_speed = 0.25
 		merc_maintenance_modifier = -0.25
@@ -6754,6 +6785,7 @@ abolish_manrent_reform = {
 	potential = {
 		OR = {
 			primary_culture = scottish
+			accepted_culture = scottish
 			has_reform = abolish_manrent_reform
 		}
 	}
@@ -6847,7 +6879,8 @@ gustavan_artillery_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = swedish 
+			primary_culture = swedish
+			accepted_culture = swedish
 			has_reform = gustavan_artillery_reform 
 		}
 	}
@@ -6974,7 +7007,8 @@ arabian_horses_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = al_misr_arabic 
+			primary_culture = al_misr_arabic
+			accepted_culture = al_misr_arabic			
 			has_reform = arabian_horses_reform 
 		}
 	}
