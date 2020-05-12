@@ -2776,6 +2776,18 @@ arch_marshal_reform = {
 chhetri_clans_reform = {
 	icon = tribal_federation
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = chhetri_clans_reform
@@ -4002,6 +4014,18 @@ oberhofgericht_reform = {
 newar_and_gorkhali_reform = {
 	icon = tribal_federation
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = newar_and_gorkhali_reform
@@ -5588,7 +5612,7 @@ foreign_recruitment_reform = {
 		merchants = 1
 	}
 	custom_attributes = {
-		enables_mercenary_markets = yes #-1% Infantry Cost and 2% Manpower Recovery
+		enables_mercenary_markets = yes #-1% Infantry Cost and 2% Manpower Recovery per merchant
 	}
 	ai = {
 		factor = 100
@@ -6946,7 +6970,7 @@ snaphaner_reform = {
 	}
 	modifiers = {
 		infantry_fire = 0.25
-		infantry_power = 0.10
+		infantry_power = 0.05
 		years_of_nationalism = 5
 	}
 	custom_attributes = {

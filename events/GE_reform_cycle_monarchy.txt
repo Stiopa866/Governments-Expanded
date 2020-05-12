@@ -7,26 +7,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		OR = {
-			has_reform = enforce_privileges_reform
-			has_reform = growth_signoria_reform
-			has_reform = akritai_privileges_reform
-			has_reform = council_of_sheikhs_reform
-			has_reform = blood_tax_reform
-			has_reform = house_of_knights_reform
-			has_reform = constitutio_valdemariana_reform
-			has_reform = albertine_line_reform
-			has_reform = magnate_law_reform
-			has_reform = mamluk_privileges_reform
-			has_reform = imperial_knights_reform
-			has_reform = szlachta_authority_reform
-			has_reform = crusader_orders_reform
-			has_reform = old_world_privileges_reform
-			has_reform = noblesse_d_epee_reform
-			has_reform = taha_divisions_reform
-			has_reform = franconian_salic_law_reform
-			has_reform = chhetri_clans_reform
-		}
+		has_strong_noble_reform_2 = yes
 	}
 
 	is_triggered_only = yes #Pulse
@@ -62,17 +43,7 @@ country_event = {
 		highlight = yes
 		
 		trigger = {
-			OR = {
-				has_reform = of_noble_bearing_reform
-				has_reform = koprulu_dynasty_reform
-				has_reform = conseil_du_roi_reform
-				has_reform = table_of_ranks_reform
-				has_reform = szlachta_recruits_reform
-				has_reform = voivode_captains_reform
-				has_reform = boyar_scions_reform
-				has_reform = turkicized_elite_reform
-				has_reform = imperial_circles_administration_reform
-			}
+			has_nobility_reform_4 = yes
 		}
 		add_prestige = 5
 	}
@@ -85,26 +56,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		OR = {
-			has_reform = enforce_privileges_reform
-			has_reform = growth_signoria_reform
-			has_reform = akritai_privileges_reform
-			has_reform = council_of_sheikhs_reform
-			has_reform = blood_tax_reform
-			has_reform = house_of_knights_reform
-			has_reform = constitutio_valdemariana_reform
-			has_reform = albertine_line_reform
-			has_reform = magnate_law_reform
-			has_reform = mamluk_privileges_reform
-			has_reform = imperial_knights_reform
-			has_reform = szlachta_authority_reform
-			has_reform = crusader_orders_reform
-			has_reform = old_world_privileges_reform
-			has_reform = noblesse_d_epee_reform
-			has_reform = taha_divisions_reform
-			has_reform = franconian_salic_law_reform
-			has_reform = chhetri_clans_reform
-		}
+		has_strong_noble_reform_2 = yes
 	}
 
 	is_triggered_only = yes #Pulse
@@ -140,10 +92,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_FEUDAL_LEVIES
 		
 		trigger = {
-			OR = {
-				has_reform = feudal_levies_reform
-				has_reform = pospolite_ruszenie_reform
-			}
+			has_feudalism_reform_35 = yes
 		}
 		add_army_tradition = 5
 		
@@ -156,10 +105,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
 		
 		trigger = {
-			OR = {
-				has_reform = regional_forts_reform
-				has_reform = magnate_law_reform
-			}
+			has_forts_reform_3 = yes
 		}
 		add_country_modifier = {
 			name = "Garrison_Duty_2"
@@ -174,9 +120,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_THEOCRATIC_BUREACRATS
 		
 		trigger = {
-			OR = {
-				has_reform = theocratic_bureacrats_reform
-			}
+			has_theological_reform_4 = yes
 		}
 		random_list = {
 			50 = { }
@@ -202,7 +146,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_reform = theocratic_bureacrats_reform
+			has_theological_reform_4 = yes
 			has_reform = house_of_knights_reform
 		}
 	}
@@ -268,11 +212,7 @@ country_event = {
 		}
 		
 		trigger = {
-			OR = {
-				has_reform = papal_embassy_reform
-				has_reform = state_church_reform
-				has_reform = metropolian_bishop_reform
-			}
+			has_religious_reform_2 = yes
 		}
 		
 		highlight = yes
@@ -287,10 +227,7 @@ country_event = {
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CLERGY
 		trigger = {
-			OR = {
-				has_reform = clergy_in_administration_reform
-				has_reform = empowered_clergy_in_administration_reform
-			}
+			has_theological_reform_4 = yes
 		}
 		
 		highlight = yes
@@ -310,7 +247,7 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_reform = theocratic_bureacrats_reform
+			has_theological_reform_4 = yes
 			has_reform = house_of_knights_reform
 		}
 	}
@@ -341,16 +278,7 @@ country_event = {
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
 		trigger = {
-			OR = {
-				has_reform = quash_noble_power_reform
-				has_reform = lithuania_law_reform
-				has_reform = portuguese_cortes_reform
-				has_reform = riksradet_norway_reform
-				has_reform = every_man_a_noble_reform
-				has_reform = noble_court_attendance_reform
-				has_reform = arch_marshal_reform
-				has_reform = curia_regis_reform
-			}
+			has_weak_noble_reform_2 = yes
 		}
 		
 		highlight = yes
@@ -367,23 +295,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		OR = {
-			has_reform = professional_army_reform
-			has_reform = empowered_royal_guard_reform
-			has_reform = portugese_marines_reform
-			has_reform = foreign_formation_regiments_reform
-			has_reform = general_war_commissariat_reform
-			has_reform = house_of_knights_reform
-			has_reform = gustavan_artillery_reform
-			has_reform = arabian_horses_reform
-			has_reform = polish_national_guard_reform
-			has_reform = national_guard_reform
-			has_reform = reforms_of_william_3_reform
-			has_reform = reform_the_condotierri_reform
-			has_reform = compagnies_dordonnance_reform
-			has_reform = abolish_the_patronage_system_reform
-			has_reform = royal_training_reform
-		}
+		has_professionals_reform_35 = yes
 		government = monarchy
 		any_owned_province = {
 			development = 20
@@ -455,10 +367,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
 		
 		trigger = {
-			OR = {
-				has_reform = regional_forts_reform
-				has_reform = magnate_govenors_reform
-			}
+			has_forts_reform_3 = yes
 		}
 
 		add_army_tradition = 5
@@ -469,16 +378,7 @@ country_event = {
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
 		trigger = {
-			OR = {
-				has_reform = quash_noble_power_reform
-				has_reform = lithuania_law_reform
-				has_reform = portuguese_cortes_reform
-				has_reform = riksradet_norway_reform
-				has_reform = every_man_a_noble_reform
-				has_reform = noble_court_attendance_reform
-				has_reform = arch_marshal_reform
-				has_reform = curia_regis_reform
-			}
+			has_weak_noble_reform_2 = yes
 		}
 		
 		highlight = yes
@@ -495,23 +395,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		OR = {
-			has_reform = professional_army_reform
-			has_reform = empowered_royal_guard_reform
-			has_reform = portugese_marines_reform
-			has_reform = foreign_formation_regiments_reform
-			has_reform = general_war_commissariat_reform
-			has_reform = house_of_knights_reform
-			has_reform = gustavan_artillery_reform
-			has_reform = arabian_horses_reform
-			has_reform = polish_national_guard_reform
-			has_reform = national_guard_reform
-			has_reform = reforms_of_william_3_reform
-			has_reform = reform_the_condotierri_reform
-			has_reform = compagnies_dordonnance_reform
-			has_reform = abolish_the_patronage_system_reform
-			has_reform = royal_training_reform
-		}
+		has_professionals_reform_35 = yes
 		government = monarchy
 		inflation = 1
 	}
@@ -543,10 +427,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_MONEYLOANERS
 		highlight = yes
 		trigger = {
-			OR = {
-				has_reform = advanced_bookkeeping_reform
-				has_reform = integrate_moneyloaners_reform
-			}
+			has_banking_reform_4 = yes
 		}
 		add_prestige = 5
 	}
@@ -585,25 +466,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
 		}
 		trigger = {
-			OR = {
-				has_reform = enforce_privileges_reform
-				has_reform = growth_signoria_reform
-				has_reform = akritai_privileges_reform
-				has_reform = council_of_sheikhs_reform
-				has_reform = blood_tax_reform
-				has_reform = constitutio_valdemariana_reform
-				has_reform = albertine_line_reform
-				has_reform = magnate_law_reform
-				has_reform = mamluk_privileges_reform
-				has_reform = imperial_knights_reform
-				has_reform = szlachta_authority_reform
-				has_reform = noblesse_d_epee_reform
-				has_reform = taha_divisions_reform
-				has_reform = crusader_orders_reform
-				has_reform = old_world_privileges_reform
-				has_reform = franconian_salic_law_reform
-				has_reform = chhetri_clans_reform
-			}	
+			has_strong_noble_reform_2 = yes
 		}
 		
 		highlight = yes
@@ -624,11 +487,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		OR = {
-			has_reform = feudal_levies_reform
-			has_reform = imperial_circles_reform
-			has_reform = pospolite_ruszenie_reform
-		}
+		has_feudalism_reform_35 = yes
 		government = monarchy
 		war_exhaustion = 1
 	}
@@ -685,25 +544,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_BLOOD_TAX_REFORM
 		}
 		trigger = {
-			OR = {
-				has_reform = enforce_privileges_reform
-				has_reform = growth_signoria_reform
-				has_reform = akritai_privileges_reform
-				has_reform = council_of_sheikhs_reform
-				has_reform = blood_tax_reform
-				has_reform = constitutio_valdemariana_reform
-				has_reform = albertine_line_reform
-				has_reform = magnate_law_reform
-				has_reform = mamluk_privileges_reform
-				has_reform = imperial_knights_reform
-				has_reform = szlachta_authority_reform
-				has_reform = noblesse_d_epee_reform
-				has_reform = taha_divisions_reform
-				has_reform = crusader_orders_reform
-				has_reform = old_world_privileges_reform
-				has_reform = franconian_salic_law_reform
-				has_reform = chhetri_clans_reform
-			}	
+			has_strong_noble_reform_2 = yes
 		}
 		
 		highlight = yes
@@ -717,18 +558,7 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_CENTRALIZING
 		
 	trigger = {
-		OR = {
-			has_reform = centralize_reform
-			has_reform = diocletian_reforms_reform
-			has_reform = kyoho_reforms_reform
-			has_reform = oprichnina_reform
-			has_reform = constitutio_joachimica_reform
-			has_reform = ancien_regime_reform
-			has_reform = revive_the_hisbah_reform
-			has_reform = revoke_magnate_estates_reform
-			has_reform = generalites_reform
-			has_reform = abolish_local_parliaments_reform
-		}
+		has_centralization_reform_3 = yes
 	}
 
 		add_prestige = 10
@@ -739,17 +569,7 @@ country_event = {
 		
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_NOBLE_ADMINISTRATORS
 	trigger = {
-		OR = {
-			has_reform = of_noble_bearing_reform
-			has_reform = koprulu_dynasty_reform
-			has_reform = conseil_du_roi_reform
-			has_reform = table_of_ranks_reform
-			has_reform = szlachta_recruits_reform
-			has_reform = voivode_captains_reform
-			has_reform = boyar_scions_reform
-			has_reform = turkicized_elite_reform
-			has_reform = imperial_circles_administration_reform
-		}
+		has_nobility_reform_4 = yes
 	}
 		
 		highlight = yes
@@ -769,11 +589,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 	
 	trigger = {
-		OR = {
-			has_reform = feudal_levies_reform
-			has_reform = imperial_circles_reform
-			has_reform = pospolite_ruszenie_reform
-		}
+		has_feudalism_reform_35 = yes
 		government = monarchy
 		any_owned_province = {
 			has_estate = nobles
@@ -822,16 +638,7 @@ country_event = {
 			
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_QUASH_NOBLE_POWER
 		trigger = {
-			OR = {
-				has_reform = quash_noble_power_reform
-				has_reform = lithuania_law_reform
-				has_reform = portuguese_cortes_reform
-				has_reform = riksradet_norway_reform
-				has_reform = every_man_a_noble_reform
-				has_reform = noble_court_attendance_reform
-				has_reform = arch_marshal_reform
-				has_reform = curia_regis_reform
-			}
+			has_weak_noble_reform_2 = yes
 		}
 		
 		highlight = yes
@@ -858,13 +665,7 @@ country_event = {
 		}
 		
 		trigger = {
-			OR = {
-				has_reform = decentralize_reform
-				has_reform = millet_reform
-				has_reform = integrate_tatars_reform
-				has_reform = re_enforce_magdeburg_rights_reform
-				has_reform = independent_vassals_reform
-			}
+			has_decentralization_reform_3 = yes
 		}
 
 		random_list = {
