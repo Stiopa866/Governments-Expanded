@@ -144,6 +144,7 @@ monarchy = {
 				qadi_authority_reform
 				#clans_of_ireland_reform
 				mint_towns_reform
+				order_of_the_dragon_reform
 			}
 		}
 		bureaucracy = {
@@ -195,6 +196,7 @@ monarchy = {
 				tajik_administration_reform
 				dual_city_administration_reform
 				bangyesurok_reform
+				levy_the_thirthieth_reform
 			}
 		}
 		military_organisation = {
@@ -292,6 +294,7 @@ monarchy = {
 				kiwi_support_reform
 				roman_senate_reform
 				korean_bureaucracy_reform
+				decretum_maius_reform
 			}
 		}
 		deliberative_assembly = {
@@ -335,6 +338,7 @@ monarchy = {
 				grand_secretariat_reform
 				sultanate_of_women_reform
 				euijung_bu_seosajae_reform
+				tripartum_reform
 			}
 		}
 		economic_policy = {

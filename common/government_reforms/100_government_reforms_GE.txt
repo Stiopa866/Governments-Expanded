@@ -1200,9 +1200,9 @@ solar_kingdom_reform = {
 	}
 }
 
-
-
-#ReligiousT2
+#############################
+#######Tier2/Religious#######
+############################# 
 
 papal_embassy_reform = {
 	icon = papal_embassy
@@ -1358,7 +1358,9 @@ dhimmi_nobles_reform = {
 	#10% dhimmi loyalty
 }
 
-#Tier2
+#############################
+###########Tier2#############
+############################# 
 
 diplomatic_positions_reform = {
 	icon = noble_diplomat
@@ -3085,7 +3087,51 @@ mint_towns_reform = {
 	}
 }
 
-#Tier3
+order_of_the_dragon_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = order_of_the_dragon_reform
+			primary_culture = hungarian
+			primary_culture = romanian
+			accepted_culture = hungarian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = order_of_the_dragon_reform
+			primary_culture = hungarian
+			primary_culture = romanian
+			accepted_culture = hungarian
+		}
+	}
+	modifiers = {
+		prestige = 0.5
+	}
+	custom_attributes = {
+		enables_militant_orders = yes 
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+#############################
+###########Tier3#############
+############################# 
 
 regional_forts_reform = {
 	icon = fort
@@ -4200,8 +4246,48 @@ dual_city_administration_reform = {
 	}
 }
 
+levy_the_thirthieth_reform = {
+	icon = economy_tax
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = levy_the_thirthieth_reform
+			primary_culture = hungarian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = levy_the_thirthieth_reform
+			primary_culture = hungarian
+		}
+	}
+	modifiers = {
+		global_unrest = 2
+		global_tax_modifier = 0.25
+	}
+	custom_attributes = {
+		enables_salt_monopoly = yes #25% Trade Value and Goods produced on salt and naval supplies
+	}
+	ai = {
+		factor = 100
+	}
+}
 
-#Tier4
+#############################
+###########Tier4#############
+############################# 
 
 #######
 #Ottoman Reforms By Clavin, NOT PROPERTY OF GE
@@ -5314,7 +5400,48 @@ roman_senate_reform = {
 	}
 }
 
-#Tier5
+decretum_maius_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = decretum_maius_reform
+			primary_culture = hungarian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = decretum_maius_reform
+			primary_culture = hungarian
+		}
+	}
+	modifiers = {
+		global_autonomy = -0.0025
+		advisor_pool = 1
+	}
+	custom_attributes = {
+		enables_masked_monarch = yes #-0.10 corruption while at peace
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+#############################
+###########Tier5#############
+############################# 
 
 empowered_royal_decree_reform = {
 	icon = "austrian_empire"
@@ -6006,7 +6133,49 @@ sultanate_of_women_reform = {
 	}
 }
 
-#Tier6
+tripartum_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = tripartum_reform
+			primary_culture = hungarian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = tripartum_reform
+			primary_culture = hungarian
+		}
+	}
+	modifiers = {
+		legitimacy = 0.5
+		global_unrest = -1
+		max_absolutism = -10
+	}
+	custom_attributes = {
+		enables_noble_service = yes #+50% manpower and morale in defensive wars
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+#############################
+###########Tier6#############
+############################# 
 
 freedom_of_religion_reform = {
 	icon = freedom_of_religion
@@ -6223,7 +6392,9 @@ tanzimat_reforms_reform = {
 	}
 }
 
-#Tier7
+#############################
+###########Tier7#############
+############################# 
 
 abolish_clergy_privileges_reform = {
 	icon = bourbon_reform
@@ -6330,7 +6501,9 @@ principle_of_fiqh_reform = {
 	}
 }
 
-#Tier35
+#############################
+###########Tier3.5###########
+############################# 
 
 feudal_levies_reform = {
 	icon = "soldiers_2"
@@ -7639,7 +7812,9 @@ restore_the_komnenoid_army_reform = {
 	}
 }
 
-#Economic Tier, T5.5
+#############################
+###########Tier5.5###########
+############################# 
 
 strenghten_industry_reform = {
  	icon = economy_industry

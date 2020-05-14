@@ -827,12 +827,14 @@
  mint_towns_reform: "Mint Towns"
  mint_towns_reform_desc: "Mint Towns were considered the backbone of the economy of the Bengal Sultanate. These towns were usually important centers of trade or provincial capitals at which Taka coins were produced, hence the name Mint Towns. These coins depicted the status of the Bengali economy, the urban and administrative centers of the country, and were generally used as a form of currency. These towns were scattered all across the Bengali realm and played a pivotal role in its production of Taka coins and in administrating the growing kingdom."
  
- 
- 
- 
- 
- 
- 
+ order_of_the_dragon_reform: "Order of the Dragon"
+ order_of_the_dragon_reform_desc: "The Order of the Dragon was established by Sigismund of Luxembourg, King of Hungary in 1408, and was a highly prestigious knightly order which sought to fight the enemies of christianity, and specifically to drive the ottoman turks from the Balkans and Asia Minor. As patron of this order, our rallying cry can raise armies, even crusades to crush the enemies of Christ!"
+ levy_the_thirthieth_reform: "Levy the Thirthieth"
+ levy_the_thirthieth_reform_desc: "We need to afford a grand and professional army to face the threat at our borders, traditional taxes and feudal tarifs can not grant us the funds we need to defend our borders and nation from the ottoman threat at our southern border. Let us re-establish the 'Thirtieth', the 'duty to the crown' from our subjects so they may help the war effort!"
+ decretum_maius_reform: "Decretum Maius"
+ decretum_maius_reform_desc: "By weakening the noble privileges and strenghtening the royal magistrates, we can reduce the amount of local leeway and immunities locals have, and bring it in line with our national laws and privileges!. The Decretium Maius provides our magistrates with the authority to bring such misdeeds to light and with protection from vengeful nobles angered by this uncovering of abuse and unjust privileges. It is rumored our monarch even takes this job upon himself, disguising himself as a magistrate to root our corruption himself."
+ tripartum_reform: "Tripartum"
+ tripartum_reform_desc: "The Tripartum was a core part of the legal corpus of hungary after the Diet of 1514, where the nobles, disgruntled after a series of strong and domineering kings seized power and created a government where the executive power was split equally between the Nobles and the King. In Addition, the nobles did not need to serve in the kings armies unless the kingdom came under attack from a foreign nation. As well as granting them grant legal privileges for their own domains."
  
  
  
@@ -982,6 +984,10 @@
  mechanic_enables_korean_bureaucracy_yes: "Korean Bureaucracy: §G-5.0%§! Stability Cost Modifier per 1 level of administrative advisor in employ."
  
  mechanic_enables_mint_towns_yes: "Mint Towns: §G-25.0%§! state maintenance cost in 20+ development provinces."
+ 
+ mechanic_enables_salt_monopoly_yes: "Salt Monopoly: §G+25%§! goods produced and trade value in salt and naval supplies provinces."
+ mechanic_enables_masked_monarch_yes: "Masked Monarch: §G-0.10§! corruption during peacetime."
+ mechanic_enables_noble_service_yes: "Noble Service: §G+50%§! manpower and §G+10%§! Morale while in a defensive war."
 
 
  #Edicts

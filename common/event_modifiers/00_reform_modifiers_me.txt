@@ -624,7 +624,17 @@ Hermit_fifteen = {
 Mint_Towns = {
 	local_state_maintenance_modifier = -0.25
 }
-
+Salt_Monopoly = {
+	trade_goods_size_modifier = 0.25
+	trade_value_modifier = 0.25
+}
+Masked_Monarch = {
+	yearly_corruption = -0.10
+}
+Noble_Service = {
+	global_manpower_modifier = 0.50
+	land_morale = 0.10
+}
 	
 #Cortez
 Cortes_Piety = {
