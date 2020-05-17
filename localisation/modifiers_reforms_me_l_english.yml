@@ -402,7 +402,14 @@
  Training_Camps: "Training Camps"
  Demoralized_Army: "Demoralized Army"
  Absent_Noble: "Absent Noble"
- 
+ Shuffled_Populations: "Shuffled Population"
+ All_Creatures_Of_God: "All creatures of God"
+ Pious_People: "Pious People"
+ Unified_Purpose: "Unified Purpose"
+ Engineers_Present: "Engineers Present"
+ GE_Improved_Defences: "Improved Defences"
+ Cultural_Acceptance: "Cultural Acceptance"
+ GE_Unified_Army: "Unified Army"
  
  
  EST_VAL_BURGHERS_ADVANCES:0 "Burghers Advance: §Y$VAL$%§!"

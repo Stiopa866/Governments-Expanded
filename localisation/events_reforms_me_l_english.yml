@@ -677,6 +677,39 @@
  GE_reform_cycle_monarchy.202.e: "Maybe some time at the border will invigorate them."
  GE_reform_cycle_monarchy.202.f: "Offer them Spiritual Guidance."
  
+ GE_reform_cycle_monarchy.203.t: "Nobles Bickering Amongst Themselves"
+ GE_reform_cycle_monarchy.203.d: "The strong nobles of the realm are spending their time squabbling over minor titles and court positions. Our court intrigue, presitigous titles, and circles of influence around ourselves to get anything done are serving their purpose. It is driving many nobles to seek out the crown's assistance."
+ GE_reform_cycle_monarchy.203.a: "We appreciate gifts to our coffers."
+ GE_reform_cycle_monarchy.203.b: "Leveraget the Nobles to gain control."
+ GE_reform_cycle_monarchy.203.c: "Let us look for a excellent match."
+ GE_reform_cycle_monarchy.203.d: "Play the game of thrones."
+ 
+ GE_reform_cycle_monarchy.211.t: "Nobles Rally support of the people"
+ GE_reform_cycle_monarchy.211.d: "Other realms must work through powerful nobles.  But the nobles of realm XX are loyal.  We work as one Kingdom--King, nobleman, and commoner are all here to press on for the glory of the Kingdom. While the unwise King may ruthlessly exploit this loyalty, we could also utilize this unity and hope to further the aims of our realm."
+ GE_reform_cycle_monarchy.211.a: "As it should be."
+ GE_reform_cycle_monarchy.211.b: "let us levarage this willingness."
+ GE_reform_cycle_monarchy.211.c: "Together untill the end."
+ GE_reform_cycle_monarchy.211.d: "We can exploit this."
+ 
+ GE_reform_cycle_monarchy.221.t: "Diplomatic Court"
+ GE_reform_cycle_monarchy.221.d: "Our court values men of wisdom and refinement.  Our court noblemnen and advisors provide wise council on the realm and abroad, as well as speak many languages. Wise council is well valued, while charlatans and baldfaced greed are both banaished to do their business at the pubs and docks."
+ GE_reform_cycle_monarchy.221.a: "With wisdom comes power."
+ GE_reform_cycle_monarchy.221.b: "Re-arrange our court for better purpose."
+ GE_reform_cycle_monarchy.221.c: "We should be carefull around these men of wisdom."
+ 
+ GE_reform_cycle_monarchy.231.t: "Rich Nation, Strong Army"
+ GE_reform_cycle_monarchy.231.d: "Merchants have an exalted place in our Kingdom. We understand that a wealthy nation leads to a strong and powerful nation. Some courts have talk quietly of the pretensions and upstarts in our realms. We see this for what it really is: jealousy of our growing wealth and prosperity."
+ GE_reform_cycle_monarchy.231.a: "City dwellers want to fight for the realm."
+ GE_reform_cycle_monarchy.231.b: "There is never too much coin."
+ GE_reform_cycle_monarchy.231.c: "Our merchants bring knowledge of foreign weapons and strategies."
+ GE_reform_cycle_monarchy.231.d: "Learn from great military advisors."
+ 
+ GE_reform_cycle_monarchy.241.t: "Godly King"
+ GE_reform_cycle_monarchy.241.d: "Our Kings have turned to god and live life as pious men.  More then just lip service, every man and woman of our dynasty is expected to serve God as well as the Kingdom.  For the people must have someone moral to look up to."
+ GE_reform_cycle_monarchy.241.a: "Pious lands with a pious ruler."
+ GE_reform_cycle_monarchy.241.b: "We're all children of god."
+ GE_reform_cycle_monarchy.241.c: "Time to rise to the challenge."
+ 
  GE_reform_cycle_monarchy.3501.t: "Training Gear"
  GE_reform_cycle_monarchy.3501.d: "Our attempts at professionalizing our military have run into a bit of an error, there is a lack of training facilities.  One of our captains have taken initiative and attempted to set up a training facility at his station at [training_gear_cycle_GE_pos.GetName]."
  GE_reform_cycle_monarchy.3501.a: "Bring the captain to court."
@@ -721,6 +754,58 @@
  GE_reform_cycle_monarchy.302.b: "Safeguard their communities." 
  GE_reform_cycle_monarchy.302.c: "Enforce secular rule"
  
+ GE_reform_cycle_monarchy.303.t: "One Nation, Under God"
+ GE_reform_cycle_monarchy.303.d: "Our nation turns to god.  We are unyielding in our quest for holiness.  Many of our people think that these foreign traditions are having people veer away from the one true path to holiness and we must find a way to deal with this energy."
+ GE_reform_cycle_monarchy.303.a: "Institute national days of prayer."
+ GE_reform_cycle_monarchy.303.b: "Employ the people to build more housing for the poor." 
+ GE_reform_cycle_monarchy.303.c: "Move the people of our empire to lessen the draw of apostasy."
+ 
+ GE_reform_cycle_monarchy.311.t: "National Engineering"
+ GE_reform_cycle_monarchy.311.d: "The  castles and fortresses of our Kingdom have resulted in many engineers who help build their walls and keep them in tact.  Their efforts could be put to many great things in our realm."
+ GE_reform_cycle_monarchy.311.a: "Bring great engineers to the capital."
+ GE_reform_cycle_monarchy.311.b: "Improve our national defensive capabilities." 
+ GE_reform_cycle_monarchy.311.c: "Grand Engineering."
+ 
+ GE_reform_cycle_monarchy.321.t: "Capital Expansion"
+ GE_reform_cycle_monarchy.321.d: "The centralization policies of our dynasty have led to much power being amassed in our capital. We have many ways to express this newfound strength.  What do you suggest, Sire?"
+ GE_reform_cycle_monarchy.321.a: "Invest in the merchant and artisan quarter."
+ GE_reform_cycle_monarchy.321.b: "Increase the royal guard." 
+ GE_reform_cycle_monarchy.321.c: "Invest in more streets and poor houses."
+ 
+ GE_reform_cycle_monarchy.331.t: "Seven Nation Army"
+ GE_reform_cycle_monarchy.331.d: "Our generals are often tasked with leading massive, multilingual regiments and gaining unified military action out of seemingly endless rabble. Thankfully, this allows us to rain down the armies of seven nations upon our foes."
+ GE_reform_cycle_monarchy.331.a: "Great Leader emerges."
+ GE_reform_cycle_monarchy.331.b: "Many nations of an empire." 
+ GE_reform_cycle_monarchy.331.c: "Navigating the Peoples."
+ GE_reform_cycle_monarchy.331.d: "United Militaries."
+ 
+ GE_reform_cycle_monarchy.341.t: "Adventure on the High Seas"
+ GE_reform_cycle_monarchy.341.d: "Grand  sagas were written about valiant heroes since the ancient times.  However, it is the merchants who often meet the people of many realms, see sights unheard of in our lands and go forth and great risk to themselves and their familial wealth in an attempt to earn even greater fortune."
+ GE_reform_cycle_monarchy.341.a: "Write a great Courtly Saga."
+ GE_reform_cycle_monarchy.341.b: "Bring a greaet man to court." 
+ GE_reform_cycle_monarchy.341.c: "Hire retired foreign soldiers to learn of foreign military organization across the world."
+ GE_reform_cycle_monarchy.341.d: "Bring Me Everyone!"
+ 
+ GE_reform_cycle_monarchy.342.t: "Re-routed investments"
+ GE_reform_cycle_monarchy.342.d: "Claiming to be a great pillar of society against the old corrupt institutions, it seems some of our funds are being re-routed to other sources.  Whether quickly or slowly, we must regain control of the national finances."
+ GE_reform_cycle_monarchy.342.a: "Hire new men."
+ GE_reform_cycle_monarchy.342.b: "Wait them out." 
+ GE_reform_cycle_monarchy.342.c: "Buy them off."
+ 
+ GE_reform_cycle_monarchy.343.t: "Community Pillars"
+ GE_reform_cycle_monarchy.343.d: "Our merchants are pillars of their community.  They are well aware that the world over, Merchants are viewed as a lesser profession to politicians and nobles.  We can inspire them to invest locally and gain reputation for their civic pride."
+ GE_reform_cycle_monarchy.343.a: "Grant title to generous nobles."
+ GE_reform_cycle_monarchy.343.b: "Invest with the nobles to enrich the capital." 
+ GE_reform_cycle_monarchy.343.c: "Praise the merchants for their great deeds."
+ 
+ GE_reform_cycle_monarchy.351.t: "Rare Findings"
+ GE_reform_cycle_monarchy.351.d: "In their adventures across the world our colonial explorers have brought back tales of productive plants, strange artifacts and glorious monuments.  We can press upon them to deliver more, if we so desire. What would you like us to do, sire?"
+ GE_reform_cycle_monarchy.351.a: "Have them bring back a strange item of a foreign culture."
+ GE_reform_cycle_monarchy.351.b: "Have plants to be brought to our lands and studied." 
+ GE_reform_cycle_monarchy.351.c: "Bring  a large monument from our overseas territories to our capital."
+ 
+ 
+ 
  
  ###Republics###
  
@@ -738,7 +823,7 @@
  GE_reform_cycle_republic.202.a: "Reap what we sowed."
  GE_reform_cycle_republic.202.b: "There is no need to change the situation."
  GE_reform_cycle_republic.202.c: "Fiddle with the system to ensure the dictator's power is limited."
- 
+
  GE_reform_cycle_republic.203.t: "Family Feud"
  GE_reform_cycle_republic.203.d: "Upon the election of our new ruler, violence broke out between several family members of our leader. It seems to have started out as a plot to overthrow our rightfully elected ruler, but an argument over how the new power should be delegated has turned into a seeming civil war among the dynasty. If the situation is not resolved and resolved soon, we may experience open revolt among the higher nobles in support of the various pretenders."
  GE_reform_cycle_republic.203.a: "Wage war upon the family."

@@ -8,7 +8,10 @@ french_feudalism = {
 		}
 	}
 	trigger = {
-		has_reform = french_feudalism
+		OR = {
+			culture_group = french
+			has_reform = french_absolutism
+		}
 	}
 	lock_level_when_selected = no
 	valid_for_nation_designer = yes

@@ -6,11 +6,11 @@ feudalism_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		vassal_income = 0.25
-		cavalry_cost = -0.05
+		cavalry_cost = -0.10 #temp, -0.05
 	}
-	custom_attributes = {
-		enables_independent_nobles = yes #+15% Local Manpower
-	}
+	# custom_attributes = {
+		# enables_independent_nobles = yes #+15% Local Manpower
+	# }
 }
 
 
@@ -201,10 +201,11 @@ kingdom_of_castille_and_leon = {
 	nation_designer_cost = 0
 	modifiers = {
 		production_efficiency = -0.10
+		global_manpower_modifier = 0.05 #temp
 	}
-	custom_attributes = {
-		enables_independent_nobles = yes 
-	}
+	# custom_attributes = {
+		# enables_independent_nobles = yes 
+	# }
 	ai = {
 		factor = 100
 	}
@@ -2089,7 +2090,7 @@ council_of_sheikhs_reform = {
 	}
 	modifiers = {
 		legitimacy = 0.5
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.20
 	}
 	ai = {
 		factor = 10
@@ -2418,7 +2419,7 @@ mamluk_privileges_reform = {
 	}
 	modifiers = {
 		global_unrest = -1
-		production_efficiency = 0.10
+		production_efficiency = 0.15
 	}
 	ai = {
 		factor = 10
@@ -2723,7 +2724,7 @@ franconian_salic_law_reform = {
 	}
 	modifiers = {
 		legitimacy = -0.25
-		global_manpower_modifier = 0.5
+		global_manpower_modifier = 0.25
 		cavalry_cost = -0.15
 	}
 	# custom_attributes = {
@@ -2870,7 +2871,7 @@ turkic_qasilbash_heirs_reform = {
 	modifiers = {
 		missionary_maintenance_cost = -0.25
 		cav_to_inf_ratio = 0.15
-		cavalry_cost = -0.10
+		cavalry_cost = -0.20 #temp -0.10
 	}
 	removed_effect = {
 		change_variable = {
@@ -2878,9 +2879,9 @@ turkic_qasilbash_heirs_reform = {
 			value = -1
 		}
 	}
-	custom_attributes = {
-		enables_independent_nobles = yes
-	}
+	# custom_attributes = {
+		# enables_independent_nobles = yes
+	# }
 	ai = {
 		factor = 100
 	}

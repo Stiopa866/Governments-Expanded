@@ -3358,8 +3358,6 @@ country_event = {
 			name = "Aristocrat_Officers"
 			duration = 3650
 		}
-		add_army_tradition = -10
-
 	}
 	
 	option = {

@@ -44,7 +44,7 @@ on_startup = {
 ##### GE Government Reform Events #####
 on_five_year_pulse_4 = {
 	random_events = {
-		500 = 0
+		1000 = 0
 			
 		#Monarchy
 		
@@ -53,18 +53,23 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.2
 		100 = GE_reform_cycle.3 #papal_embassy_reform
 		100 = GE_reform_cycle.4
+		101 = GE_reform_cycle_monarchy.241
 		100 = GE_reform_cycle.5 #diplomatic_positions
 		100 = GE_reform_cycle.6
+		101 = GE_reform_cycle_monarchy.221
 		100 = GE_reform_cycle.7 #promote_nobles
 		100 = GE_reform_cycle.8
 		100 = GE_reform_cycle_monarchy.201 #NEW #Promote Nobles
 		100 = GE_reform_cycle_monarchy.202
+		101 = GE_reform_cycle_monarchy.203
 		100 = GE_reform_cycle.9 #curtail_nobles
 		100 = GE_reform_cycle.10
+		101 = GE_reform_cycle_monarchy.211
 		100 = GE_reform_cycle.11 #guild_dominance
 		100 = GE_reform_cycle.12
 		100 = GE_reform_cycle.13 #trade_princes
 		100 = GE_reform_cycle.14
+		101 = GE_reform_cycle_monarchy.231
 		100 = GE_reform_cycle.15 #state_church
 		100 = GE_reform_cycle.16
 		100 = GE_reform_cycle.17 #dhimmi_nobles
@@ -76,14 +81,22 @@ on_five_year_pulse_4 = {
 		#T3
 		100 = GE_reform_cycle.23 #centralized
 		100 = GE_reform_cycle.24
+		101 = GE_reform_cycle_monarchy.321
 		100 = GE_reform_cycle.25 #decentralized
 		100 = GE_reform_cycle.26
+		101 = GE_reform_cycle_monarchy.331
 		100 = GE_reform_cycle.27 #regional_fort
 		100 = GE_reform_cycle.28
+		101 = GE_reform_cycle_monarchy.311
 		100 = GE_reform_cycle.29 #theocrat
 		100 = GE_reform_cycle.30
+		101 = GE_reform_cycle_monarchy.303
 		100 = GE_reform_cycle.31 #casa_de_india
 		100 = GE_reform_cycle.32
+		101 = GE_reform_cycle_monarchy.351
+		101 = GE_reform_cycle_monarchy.341 #trader_division
+		101 = GE_reform_cycle_monarchy.342
+		101 = GE_reform_cycle_monarchy.343
 		#T4
 		100 = GE_reform_cycle.33 #administrative_clergy
 		100 = GE_reform_cycle.34

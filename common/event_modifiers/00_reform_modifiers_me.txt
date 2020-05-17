@@ -995,3 +995,35 @@ Demoralized_Army = {
 Absent_Noble = {
 	global_manpower_modifier = -0.10
 }
+Shuffled_Populations = {
+	culture_conversion_cost = -0.25
+}
+All_Creatures_Of_God = {
+	religious_unity = 0.10
+}
+Pious_People = {
+	tolerance_own = 1
+}
+Unified_Purpose = {
+	stability_cost_modifier = -0.10
+}
+Engineers_Present = {
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.10
+}
+GE_Improved_Defences = {
+	defensiveness = 0.15
+}
+Cultural_Acceptance = {
+	promote_culture_cost = -0.33
+}
+GE_Unified_Army = {
+	manpower_recovery_speed = 0.10
+	land_morale = 0.10
+}
+	
+	
+	
+	
+	
+	
