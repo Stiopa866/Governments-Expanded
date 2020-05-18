@@ -3148,7 +3148,7 @@ buddhist_nation_reform = {
 	potential = {
 		OR = {
 			religion = buddhism
-			religion = mahayan
+			religion = mahayana
 		}
 		OR = {
 			culture_group = burman
@@ -3159,7 +3159,7 @@ buddhist_nation_reform = {
 	trigger = {
 		OR = {
 			religion = buddhism
-			religion = mahayan
+			religion = mahayana
 		}
 		OR = {
 			culture_group = burman

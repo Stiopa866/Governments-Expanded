@@ -636,10 +636,10 @@ Noble_Service = {
 	land_morale = 0.10
 }
 GE_Religious_Adherence = {
-	local_manpower = 250
+	local_manpower = 0.250
 }
 GE_People_Under_Tengri = {
-	local_manpower = 500
+	local_manpower = 0.500
 	local_unrest = -2
 }
 GE_Elephant_Cavalry_1 = {

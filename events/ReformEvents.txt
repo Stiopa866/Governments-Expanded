@@ -13456,11 +13456,11 @@ country_event = {
 				has_government_attribute = enables_Religious_Fervor
 				OR = {
 					AND = {
-						religious_unity = 90
+						religious_unity = 0.90
 						NOT = { has_country_modifier = GE_Religious_Fervor }
 					}
 					AND = {
-						NOT = { religious_unity = 90 }
+						NOT = { religious_unity = 0.90 }
 						has_country_modifier = GE_Religious_Fervor
 					}
 				}
@@ -13481,7 +13481,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				religious_unity = 90
+				religious_unity = 0.90
 				NOT = { has_country_modifier = GE_Religious_Fervor }
 			}
 			add_country_modifier = {
@@ -13491,7 +13491,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { religious_unity = 90 }
+				NOT = { religious_unity = 0.90 }
 				has_country_modifier = GE_Religious_Fervor
 			}
 			remove_country_modifier = GE_Religious_Fervor 
