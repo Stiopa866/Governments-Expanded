@@ -48,19 +48,19 @@ Blood_Tax_5 = {
 	global_manpower_modifier = 0.25
 }
 Arabian_Horses_1 = {
-	cavalry_power = 0.05
+	cavalry_power = 0.03
 }
 Arabian_Horses_2 = {
-	cavalry_power = 0.10
+	cavalry_power = 0.06
 }
 Arabian_Horses_3 = {
-	cavalry_power = 0.15
+	cavalry_power = 0.09
 }
 Arabian_Horses_4 = {
-	cavalry_power = 0.20
+	cavalry_power = 0.12
 }
 Arabian_Horses_5 = {
-	cavalry_power = 0.25
+	cavalry_power = 0.15
 }
 Mercenary_Markets_1 = {
 	manpower_recovery_speed = 0.02
@@ -446,7 +446,7 @@ Economic_Block_6 = {
 	trade_efficiency = 0.150
 }
 Foreign_Regiments = {
-	religious_unity = 0.10
+	religious_unity = 0.20
 }
 GE_Swiss_Guard = {
 	infantry_power = 0.05
@@ -635,6 +635,40 @@ Noble_Service = {
 	global_manpower_modifier = 0.50
 	land_morale = 0.10
 }
+GE_Religious_Adherence = {
+	local_manpower = 250
+}
+GE_People_Under_Tengri = {
+	local_manpower = 500
+	local_unrest = -2
+}
+GE_Elephant_Cavalry_1 = {
+	siege_ability = 0.03
+}
+GE_Elephant_Cavalry_2 = {
+	siege_ability = 0.06
+}
+GE_Elephant_Cavalry_3 = {
+	siege_ability = 0.09
+}
+GE_Elephant_Cavalry_4 = {
+	siege_ability = 0.12
+}
+GE_Elephant_Cavalry_5 = {
+	siege_ability = 0.15
+}
+siamese_national_pride = {
+	infantry_power = 0.05
+}
+siamese_national_shame = {
+	global_unrest = 2
+}
+GE_Religious_Fervor = {
+	global_manpower_modifier = 0.20
+}
+	
+	
+	
 	
 #Cortez
 Cortes_Piety = {

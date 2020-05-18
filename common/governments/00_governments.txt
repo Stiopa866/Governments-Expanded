@@ -145,6 +145,7 @@ monarchy = {
 				#clans_of_ireland_reform
 				mint_towns_reform
 				order_of_the_dragon_reform
+				buddhist_nation_reform
 			}
 		}
 		bureaucracy = {
@@ -161,6 +162,12 @@ monarchy = {
 				regional_forts_reform
 				theocratic_bureacrats_reform
 				ulema_guidance_reform 
+				state_temple_harmonization_reform
+				enlightened_ethical_teachings_reform
+				guidance_of_the_dalai_llama_reform
+				teaching_of_guru_Sahib_reform
+				enforced_caste_system_reform
+				faith_in_ancestors_spirits_reform
 				diocletian_reforms_reform
 				kyoho_reforms_reform
 				casa_de_contraction_reform
@@ -249,6 +256,7 @@ monarchy = {
 				restore_the_komnenoid_army_reform
 				jaeseungbangryak_reform
 				five_military_force_reform
+				honor_of_thai_kingdoms_reform
 			}
 		}
 		growth_of_administration = {

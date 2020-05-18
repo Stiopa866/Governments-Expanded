@@ -337,7 +337,8 @@ country_decisions = {
 		potential = {
 			government = monarchy
 			OR = {
-				culture_group = burman 
+				culture_group = burman
+				culture_group = southeastasian_group 
 			}
 			NOT = { has_reform = solar_kingdom_reform }
 		}

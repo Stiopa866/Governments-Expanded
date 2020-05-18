@@ -3130,6 +3130,56 @@ order_of_the_dragon_reform = {
 	}
 }
 
+buddhist_nation_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			religion = buddhism
+			religion = mahayan
+		}
+		OR = {
+			culture_group = burman
+			culture_group = southeastasian_group
+			has_reform = buddhist_nation_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = buddhism
+			religion = mahayan
+		}
+		OR = {
+			culture_group = burman
+			culture_group = southeastasian_group
+			has_reform = buddhist_nation_reform
+		}
+	}
+	modifiers = {
+		tolerance_heathen = -1
+		manpower_recovery_speed = 0.10
+	}
+	custom_attributes = {
+		enables_Religious_Fervor = yes #+20% Manpower if you have 90% Religious Unity
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+
 #############################
 ###########Tier3#############
 ############################# 
@@ -3268,6 +3318,272 @@ ulema_guidance_reform = {
 		factor = 1
 	}
 	#10 Clergy Influence and Loyalty
+}
+
+
+faith_in_ancestors_spirits_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        OR = {
+            religion = shamanism
+            religion = totemism
+        }
+		
+	}
+	trigger = {
+        OR = {
+            religion = shamanism
+            religion = totemism
+        }
+		
+	}
+	modifiers = {
+		tolerance_own = 1
+		global_missionary_strength = 0.01
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty #notapplied
+}
+
+histories_of_the_sky_god_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        religion = tengri_pagan_reformed
+	}
+	trigger = {
+        OR = {
+            religion = tengri_pagan_reformed
+        }
+		
+	}
+	modifiers = {
+		global_missionary_strength = 0.01
+	}
+	custom_attributes = {
+		enables_people_under_tengri = yes #500 manpower and -2 unrest for steppe provinces
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty #notapplied
+}
+
+enforced_caste_system_reform = {
+    icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        religion = hinduism
+	}
+	trigger = {
+        OR = {
+            religion = hinduism
+        }
+		
+	}
+	modifiers = {
+        global_missionary_strength = 0.01
+        tolerance_own = 1
+        stability_cost_modifier = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty #notapplied
+}
+
+teaching_of_guru_Sahib_reform = {
+    icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        religion = sikhism
+	}
+	trigger = {
+        OR = {
+			religion = sikhism
+        }
+		
+	}
+	modifiers = {
+        global_missionary_strength = 0.01
+        religious_unity = 0.25
+        stability_cost_modifier = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty #notapplied
+}
+
+guidance_of_the_dalai_llama_reform = {
+    icon = noble_muslim
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        religion = vajrayana
+	}
+	trigger = {
+        OR = {
+            religion = vajrayana
+        }
+	}
+	modifiers = {
+        global_missionary_strength = 0.01
+        tolerance_own = 1
+		religious_unity = 0.15
+	}
+	custom_attributes = {
+		enables_holy_lhasa = yes #Provide a malus that if Lhasa province is not Vajrayana, gain +2 unrest 
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty #notapplied
+}
+
+enlightened_ethical_teachings_reform = {
+    icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+        religion = confucianism
+	}
+	trigger = {
+        OR = {
+            religion = confucianism
+        }
+		
+	}
+	modifiers = {
+        yearly_harmony = 0.15
+		tolerance_own = 1.5
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty #notapplied
+}
+
+state_temple_harmonization_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        OR = {
+			religion = buddhism
+			religion = mahayana
+		}
+	}
+	trigger = {
+        OR = {
+			religion = buddhism
+			religion = mahayana
+        }
+		
+	}
+	modifiers = {
+        global_missionary_strength = 0.01
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_religious_adherence = yes #250 manpower in true faith provinces with temples
+	}
+	ai = {
+		factor = 1
+	}
+	#10 Clergy Influence and Loyalty#notapplied
 }
 
 diocletian_reforms_reform = {
@@ -6564,7 +6880,7 @@ empowered_heavy_knights_reform = {
 		}
 	}
 	modifiers = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		cavalry_cost = 0.05
 	}
 	custom_attributes = {
@@ -6621,12 +6937,12 @@ mercenary_corps_reform = {
 	potential = {
 	}
 	modifiers = {
-		loot_amount = 0.50
+		land_attrition = -0.1
 		reinforce_speed = 0.25
 		merc_maintenance_modifier = -0.25
 	}
 	custom_attributes = {
-		enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
+		enables_foreign_worship = yes #20% Religious Unity if you employ mercenaries
 	}
 	ai = {
 		factor = 1
@@ -6660,8 +6976,8 @@ empowered_mercenary_corps_reform = {
 			value = 2
 		}
 	}
-	modifiers = { 
-		loot_amount = 0.50
+	modifiers = {
+		land_attrition = -0.1	
 		reinforce_speed = 0.25
 		merc_maintenance_modifier = -0.25
 	}
@@ -6691,9 +7007,8 @@ professional_army_reform = {
 	potential = {}
 	modifiers = {
 		discipline = 0.05
-		possible_mercenaries = -1.25
-		land_maintenance_modifier = 0.05
-		possible_condottieri = 2
+		mercenary_discipline = -0.25
+		land_maintenance_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_general_guards = yes #+1.25 AP per General
@@ -6919,12 +7234,63 @@ south_east_asian_elephants_reform = {
 			has_reform = south_east_asian_elephants_reform
 		}
 	}
+	trigger = {
+		OR = {
+			culture_group = burman
+			culture_group = southeastasian_group
+			has_reform = south_east_asian_elephants_reform
+		}
+	}
 	modifiers = {
 		cavalry_power = 0.05
 		land_morale = 0.05
 	}
+	custom_attributes = {
+		enables_elephant_cavalry = yes #3% siege ability per 5% Cavalry Combat Ability
+	}
 	ai = {
 		factor = 10
+	}
+}
+
+honor_of_thai_kingdoms_reform = {
+	icon = soldiers_6
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = central_thai
+			primary_culture = northern_thai
+			has_reform = honor_of_thai_kingdoms_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = central_thai
+			primary_culture = northern_thai
+			has_reform = honor_of_thai_kingdoms_reform
+		}
+	}
+	modifiers = {
+		legitimacy = 1
+		land_forcelimit_modifier = 0.20
+	}
+	custom_attributes = {
+		enables_siamese_honor = yes #-2 unrest if <50 legitimacy, +5% ICA if >75 legitimacy
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -7217,7 +7583,7 @@ arabian_horses_reform = {
 		shock_damage = 0.05
 	}
 	custom_attributes = {
-		enables_arabian_horses = yes # 5% Cavalry Combat Ability per Arab vassal
+		enables_arabian_horses = yes # 3% Cavalry Combat Ability per Arab vassal
 	}
 	ai = {
 		factor = 100

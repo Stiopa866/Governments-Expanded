@@ -318,6 +318,17 @@
  Salt_Monopoly: "Salt Monopoly"
  Masked_Monarch: "Masked Monarch"
  Noble_Service: "Noble Service"
+ GE_Religious_Adherence: "Religious Adherence"
+ GE_People_Under_Tengri: "People Under Tengri"
+ GE_Elephant_Cavalry_1: "Elephant Cavalry"
+ GE_Elephant_Cavalry_2: "Elephant Cavalry"
+ GE_Elephant_Cavalry_3: "Elephant Cavalry"
+ GE_Elephant_Cavalry_4: "Elephant Cavalry"
+ GE_Elephant_Cavalry_5: "Elephant Cavalry"
+ siamese_national_pride: "Siamese National Pride"
+ siamese_national_shame: "Siamese National Shame"
+ GE_Religious_Fervor: "Religious Fervor"
+ 
  
  
  Russian_Manorialism: "Manorial Maintenance"
