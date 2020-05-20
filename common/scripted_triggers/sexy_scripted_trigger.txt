@@ -37,6 +37,7 @@ has_strong_noble_reform_2 = {
 		has_reform = clans_of_ireland_reform
 		has_reform = enforce_privileges_reform
 		has_reform = nobi_jongbubub_reform
+		has_reform = order_of_the_dragon_reform
 	}
 }
 
@@ -83,6 +84,7 @@ has_religious_reform_2 = {
 		has_reform = qadi_authority_reform
 		has_reform = sufi_syncretism_reform
 		has_reform = khalsa_reform
+		has_reform = buddhist_nation_reform
 	}
 }
 
@@ -111,6 +113,13 @@ has_theocratic_reform_3 = {
 		has_reform = the_red_book_reform
 		has_reform = imperial_examination_reform
 		has_reform = tajik_administration_reform
+		has_reform = faith_in_ancestors_spirits_reform
+		has_reform = histories_of_the_sky_god_reform
+		has_reform = enforced_caste_system_reform
+		has_reform = teaching_of_guru_Sahib_reform
+		has_reform = guidance_of_the_dalai_llama_reform
+		has_reform = enlightened_ethical_teachings_reform
+		has_reform = state_temple_harmonization_reform
 	}
 }
 
@@ -128,6 +137,7 @@ has_centralization_reform_3 = {
 		has_reform = dual_city_administration_reform
 		has_reform = centralize_reform
 		has_reform = bangyesurok_reform
+		has_reform = levy_the_thirthieth_reform
 	}
 }
 
@@ -191,6 +201,7 @@ has_nobility_reform_4 = {
 		has_reform = empowered_of_noble_bearing_reform
 		has_reform = ottonian_handfeste_reform
 		has_reform = highborn_ministers_reform
+		has_reform = decretum_maius_reform
 	}
 }
 
@@ -268,6 +279,7 @@ has_aristocracy_reform_5 = {
 		has_reform = aristocratic_court_reform
 		has_reform = empowered_german_aristocratic_court_reform
 		has_reform = empowered_aristocratic_court_reform
+		has_reform = tripartum_reform
 	}
 }
 

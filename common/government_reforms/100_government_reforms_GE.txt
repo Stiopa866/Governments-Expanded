@@ -13,8 +13,6 @@ feudalism_reform = {
 	# }
 }
 
-
-
 elective_monarchy_reform = {
 	icon = "ballot_box"
 	allow_normal_conversion = yes
@@ -3322,7 +3320,7 @@ ulema_guidance_reform = {
 
 
 faith_in_ancestors_spirits_reform = {
-	icon = noble_muslim
+	icon = tribal_religious_society
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3361,7 +3359,7 @@ faith_in_ancestors_spirits_reform = {
 }
 
 histories_of_the_sky_god_reform = {
-	icon = noble_muslim
+	icon = horde_riding
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3397,7 +3395,7 @@ histories_of_the_sky_god_reform = {
 }
 
 enforced_caste_system_reform = {
-    icon = noble_muslim
+    icon = indian_sultanate
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3467,7 +3465,7 @@ teaching_of_guru_Sahib_reform = {
 }
 
 guidance_of_the_dalai_llama_reform = {
-    icon = noble_muslim
+    icon = people_walking
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
