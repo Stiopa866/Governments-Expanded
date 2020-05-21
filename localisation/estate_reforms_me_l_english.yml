@@ -815,8 +815,6 @@
  kiwi_support_reform_desc: "The Kiwi's were traveling merchants in the malay region, sending goods across the sultanates through limited partnerships and hiring capacity from captains. By encouraging these practices and enforcing the 'Undang Undang Laut Melaka' we can increase the amount of trade in our empire and the amount of goods that reach our markets!"
  consulate_of_the_malay: "Undang Undang Melaka"
  consulate_of_the_malay_desc: "Layering Islamic law over longtime Malay customary tradition, the Undang Undang Malaca was originally memorized by Senior Ministers until its compilation in the Malacca sultanate.  It compromised 6 parts, notably including maritime, trade, state administration, and marital law. Its deep legacy formed the basis for nearby Sultanate and future legal codes."
- solar_kingdom_reform: "Reformed Solar Kingdom"
- solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
  restore_the_komnenoid_army_reform: "Restore the Komnenoid Army"
  restore_the_komnenoid_army_reform_desc: "Alexios I Komnenos' military reforms saved the empire from onslaught of Normans and Turks. Under Komnenoi Emperors, the Empire saw increasing professionalization and an influx of foreign mercenaries ranging from nomadic warriors and Anglo-Saxon infantry. A professional army allowed the empire to compete with the enemies that outnumbered it, and the mercenaries who had no interest in local politics, took direct orders from the Emperor and no one else, thus giving the emperor a large advantage in quelling internal conflicts. The army also became adaptive to facing different type of foes, such as arming Imperial Cataphracts with long lances to counter Turkish cavalry and Norman knights."
  roman_senate_reform: "Roman Court"
@@ -854,6 +852,10 @@
  honor_of_thai_kingdoms_reform_desc: "We care how we move forward, together, as a people.  The King's appointed by heaven serve us all, and not themselves."
  buddhist_nation_reform: "Buddhist Nation"
  buddhist_nation_reform_desc: "Our nation is only a Buddhist nation. You can be full of kindness and love, but you cannot sleep next to a mad dog."
+ basic_reformed_mandala_reform: "Reformed Mandala System"
+ basic_reformed_mandala_reform_desc: "We learned the lessons of our fallen predecessors.  We now station garrisions throughout our empire, create stronger ties between our governors and the capital.  We often host the children and relatives of important Suzerain and governors at the Royal palace."
+ solar_kingdom_reform: "Reformed Solar Kingdom"
+ solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
  
  
  
@@ -1017,8 +1019,8 @@
  mechanic_enables_elephant_cavalry_yes: "Elephant Cavalry: §G+3%§! Siege Ability per 5% Cavalry Combat Ability. Up to a maximum of §G15%§! Siege Ability."
  mechanic_enables_siamese_honor_yes: "Siamese Honor: §G+5%§! Infantry Combat Ability while your legitimacy is over 75, §R+2§! Global Unrest while your legitimacy is under 50."
  mechanic_enables_Religious_Fervor_yes: "Religious Fervor: §G+20%§! Manpower while you have over 90% Religious Unity."
-
-
+ mechanic_enables_mandala_periphery_yes: "Mandala Periphery: §G+15%§! National Tax Modifier for Subjects."
+ mechanic_enables_solar_periphery_yes: "Solar Periphery: §G+15%§! National Tax Modifier and §G+15%§! National Manpower Modifier for Subjects."
 
 
  #Edicts
@@ -1208,6 +1210,8 @@
  reforms_GE_great_russian_republic_desc:1 "With the unification of Russia under Great Novgorod, our great Kniaz has greatly reduced the bureaucracy limiting his power. We have created an effective but just institution to lead the Russian people to their destiny."
  reforms_GE_consulate_of_the_malay_title:1 "Adopt the Undang Undang Melaka"
  reforms_GE_consulate_of_the_malay_desc:1 "Let us combine the laws of the land, the laws of Allah and the maritime codes of melaka into a comprehensive legal code."
+ reforming_mandala_system_decision_desc: "The Taungoo Empire had as dramatic a fall as a rise. Like the Majapahit empire before it, too much autonomy amongs their vassals and governors and limited ways for the King to control his realm outside of personal favour. We have passed many reforms throughout our realms, and while it was not easy, we will be much more capable governors because of these changes."
+ reforming_mandala_system_decision_title: "Reform Mandala System"
  reforms_GE_solar_kingdom_reform_title: "Reform into the Solar Empire"
  reforms_GE_solar_kingdom_reform_desc:1 "The Failure of previous administrations to properly manage our stretched our realm can not be allowed to repeat itself. We shall replace the hereditary chieftainships with appointed governors and abolish the monastic exceptions and instead of being the center of the mandala, become the center of an empire!"
  

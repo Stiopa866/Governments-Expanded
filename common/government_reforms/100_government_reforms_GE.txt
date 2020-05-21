@@ -1181,22 +1181,85 @@ consulate_of_the_malay = {
 	}
 }
 
-solar_kingdom_reform = {
-	icon = asian_scripture
+basic_reformed_mandala_reform = {
+	icon = "mandala_system"
 	allow_normal_conversion = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
 	potential = {
-		has_reform = solar_kingdom_reform
+		OR = {
+			AND = {
+				NOT = { religion = shinto }
+				NOT = { religion = confucianism }
+				OR = {
+					religion_group = eastern
+					religion_group = dharmic
+					religion_group = muslim
+					religion = animism
+				}
+				technology_group = chinese
+			}
+			has_reform = basic_reformed_mandala_reform
+		}	
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		NOT = { religion = shinto }
+		NOT = { religion = confucianism }
+		OR = {
+			religion_group = eastern
+			religion_group = dharmic
+			religion_group = muslim
+		}
+		technology_group = chinese
+	}
+	trigger = {
+		has_reform = basic_reformed_mandala_reform
 	}
 	modifiers = {
-		max_absolutism = 5
-		max_states = 5
-		global_tax_modifier = 0.15
+		vassal_forcelimit_bonus = 1 #makes thematic sense (children)
+		max_states = 2 #seems like a generic bonus "just because the vanilla T1 has it"
+		reduced_liberty_desire_on_same_continent = 5 #makes thematic sense
+		#Overlord Gains 3% Max Manpower per vassal up to 15% Manpower #makes thematic sense, garrisons and all
+	}
+	custom_attributes = {
+		enables_mandala_periphery = yes #15% tax in subjects #not too sure about why the subjects get additional prosperity
 	}
 	ai = {
-		factor = 100
+		factor = 101
 	}
+}
+
+solar_kingdom_reform = {
+    icon = asian_scripture
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 50
+	potential = {
+		NOT = { religion = shinto }
+		NOT = { religion = confucianism }
+		OR = {
+			religion_group = eastern
+			religion_group = dharmic
+			religion_group = muslim
+			religion = animism
+		}
+		technology_group = chinese
+	}
+    trigger = {
+        has_reform = solar_kingdom_reform
+    }
+    modifiers = {
+		vassal_forcelimit_bonus = 2 #this is gonna provide some insane force limit
+		max_states = 5 #wait, i thought we were going vassal
+		diplomatic_upkeep = 1 #fuck yeah vassals
+    }
+	custom_attributes = {
+		enables_blood_tax = yes #5% Manpower Per vassal up to 25% Manpower #more vassal-based armies yay
+		enables_solar_periphery = yes #Vassals Gain 15% Tax AND 15% Manpower #wait, why do they get additional manpower and money
+	}
+    ai = {
+        factor = 102
+    }
 }
 
 #############################
@@ -7278,7 +7341,7 @@ honor_of_thai_kingdoms_reform = {
 			primary_culture = central_thai
 			primary_culture = northern_thai
 			has_reform = honor_of_thai_kingdoms_reform
-		}
+		}	
 	}
 	modifiers = {
 		legitimacy = 1

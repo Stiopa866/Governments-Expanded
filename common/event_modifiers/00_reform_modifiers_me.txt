@@ -666,7 +666,13 @@ siamese_national_shame = {
 GE_Religious_Fervor = {
 	global_manpower_modifier = 0.20
 }
-	
+GE_Mandala_Periphery = {
+	global_tax_modifier = 0.15
+}
+GE_Solar_Periphery = {
+	global_manpower_modifier = 0.15
+	global_tax_modifier = 0.15
+}
 	
 	
 	

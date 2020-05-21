@@ -847,7 +847,7 @@ mandala_reform = {
 	}
 	legacy_equivalent = despotic_monarchy
 	modifiers = {
-		vassal_income = 0.15
+		liberty_desire_from_subject_development = 0.15
 		vassal_forcelimit_bonus = 1
 		max_states = 1
 	}

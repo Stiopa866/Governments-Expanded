@@ -78,6 +78,7 @@ monarchy = {
 				high_king_of_ireland_reform
 				hermit_kingdom_reform
 				consulate_of_the_malay
+				basic_reformed_mandala_reform
 				solar_kingdom_reform
 			}
 		}
