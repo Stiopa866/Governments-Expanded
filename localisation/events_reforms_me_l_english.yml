@@ -213,18 +213,20 @@
  muscovite_manorialism.19.a: "Why give a veteran land if he cannot protect it?"
  muscovite_manorialism.19.b: "They are free men, and shall work as free men do."
  muscovite_manorialism.19.c: "They are free men; they shall do as they please."
+ 
  muscovite_manorialism.20.t: "What's Yours Is Mine"
  muscovite_manorialism.20.d: "Some of the land reserved for heroic returning soldiers...should not have been. An administrator of low character seemed to be making a bid to weaken the crown whilst ensuring we could not reverse his action without incurring the wroth of our veterans."
  muscovite_manorialism.20.a: "I'll have his head on a spike!"
  muscovite_manorialism.20.b: "Do we really fear upsetting lowly soldiers?"
  
  order_of_the_swan.21.t: "The Swan Ascendant"
- order_of_the_swan.21.d: "A foreign member of our glorious order has honoured the name of the Swan and its members."
- order_of_the_swan.21.a: "$RULERNAME$ leads our order well, producing such wonderful knights."
+ order_of_the_swan.21.d: "A foreign member of the order of the swan has done a wonderfull deed and honored this most catholic order."
+ order_of_the_swan.21.a: "The Monarch leads our order well, producing such wonderful knights."
  order_of_the_swan.21.b: "Praise his homeland, for creating such a fine knight!"
+ order_of_the_swan.21.c: "As expected of a holy order!"
 
  order_of_the_swan.22.t: "Clipped Wings"
- order_of_the_swan.22.d: "For shame! A member of our glorious order has dishonoured the name of the swan by drunkenly spitting on an image of the Virgin Mary!"
+ order_of_the_swan.22.d: "For shame! A local member of the Order of the Swan has dishonoured the name of the Order by drunkenly spitting on an image of the Virgin Mary!"
  order_of_the_swan.22.a: "If $RULERNAME$ cannot keep the knights in check, how can they keep their subjects in check?"
  order_of_the_swan.22.b: "A disgrace to order has no place in it; out, thou blackguard!"
 
@@ -682,14 +684,14 @@
  GE_reform_cycle_monarchy.203.a: "We appreciate gifts to our coffers."
  GE_reform_cycle_monarchy.203.b: "Leveraget the Nobles to gain control."
  GE_reform_cycle_monarchy.203.c: "Let us look for a excellent match."
- GE_reform_cycle_monarchy.203.d: "Play the game of thrones."
+ GE_reform_cycle_monarchy.203.e: "Play the game of thrones."
  
  GE_reform_cycle_monarchy.211.t: "Nobles Rally support of the people"
- GE_reform_cycle_monarchy.211.d: "Other realms must work through powerful nobles.  But the nobles of realm XX are loyal.  We work as one Kingdom--King, nobleman, and commoner are all here to press on for the glory of the Kingdom. While the unwise King may ruthlessly exploit this loyalty, we could also utilize this unity and hope to further the aims of our realm."
+ GE_reform_cycle_monarchy.211.d: "Other realms must work through powerful nobles.  But the nobles of the realm are loyal.  We work as one Kingdom--King, nobleman, and commoner are all here to press on for the glory of the Kingdom. While the unwise King may ruthlessly exploit this loyalty, we could also utilize this unity and hope to further the aims of our realm."
  GE_reform_cycle_monarchy.211.a: "As it should be."
  GE_reform_cycle_monarchy.211.b: "let us levarage this willingness."
  GE_reform_cycle_monarchy.211.c: "Together untill the end."
- GE_reform_cycle_monarchy.211.d: "We can exploit this."
+ GE_reform_cycle_monarchy.211.e: "We can exploit this."
  
  GE_reform_cycle_monarchy.221.t: "Diplomatic Court"
  GE_reform_cycle_monarchy.221.d: "Our court values men of wisdom and refinement.  Our court noblemnen and advisors provide wise council on the realm and abroad, as well as speak many languages. Wise council is well valued, while charlatans and baldfaced greed are both banaished to do their business at the pubs and docks."
@@ -702,7 +704,7 @@
  GE_reform_cycle_monarchy.231.a: "City dwellers want to fight for the realm."
  GE_reform_cycle_monarchy.231.b: "There is never too much coin."
  GE_reform_cycle_monarchy.231.c: "Our merchants bring knowledge of foreign weapons and strategies."
- GE_reform_cycle_monarchy.231.d: "Learn from great military advisors."
+ GE_reform_cycle_monarchy.231.e: "Learn from great military advisors."
  
  GE_reform_cycle_monarchy.241.t: "Godly King"
  GE_reform_cycle_monarchy.241.d: "Our Kings have turned to god and live life as pious men.  More then just lip service, every man and woman of our dynasty is expected to serve God as well as the Kingdom.  For the people must have someone moral to look up to."
@@ -777,14 +779,14 @@
  GE_reform_cycle_monarchy.331.a: "Great Leader emerges."
  GE_reform_cycle_monarchy.331.b: "Many nations of an empire." 
  GE_reform_cycle_monarchy.331.c: "Navigating the Peoples."
- GE_reform_cycle_monarchy.331.d: "United Militaries."
+ GE_reform_cycle_monarchy.331.e: "United Militaries."
  
  GE_reform_cycle_monarchy.341.t: "Adventure on the High Seas"
  GE_reform_cycle_monarchy.341.d: "Grand  sagas were written about valiant heroes since the ancient times.  However, it is the merchants who often meet the people of many realms, see sights unheard of in our lands and go forth and great risk to themselves and their familial wealth in an attempt to earn even greater fortune."
  GE_reform_cycle_monarchy.341.a: "Write a great Courtly Saga."
  GE_reform_cycle_monarchy.341.b: "Bring a greaet man to court." 
  GE_reform_cycle_monarchy.341.c: "Hire retired foreign soldiers to learn of foreign military organization across the world."
- GE_reform_cycle_monarchy.341.d: "Bring Me Everyone!"
+ GE_reform_cycle_monarchy.341.e: "Bring Me Everyone!"
  
  GE_reform_cycle_monarchy.342.t: "Re-routed investments"
  GE_reform_cycle_monarchy.342.d: "Claiming to be a great pillar of society against the old corrupt institutions, it seems some of our funds are being re-routed to other sources.  Whether quickly or slowly, we must regain control of the national finances."

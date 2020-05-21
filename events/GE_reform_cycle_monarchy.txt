@@ -192,7 +192,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.203.d
+		name = GE_reform_cycle_monarchy.203.e
 		
 		highlight = yes
 		custom_tooltip = AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS
@@ -256,7 +256,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.211.d
+		name = GE_reform_cycle_monarchy.211.e
 		
 		highlight = yes
 		trigger = {
@@ -349,7 +349,7 @@ country_event = {
 	option = {
 		name = GE_reform_cycle_monarchy.231.b
 		
-		add_yearly_manpower = 0.15
+		add_years_of_income = 0.15
 	}
 	
 	option = {
@@ -359,7 +359,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.231.d
+		name = GE_reform_cycle_monarchy.231.e
 		
 		highlight = yes
 		trigger = {
@@ -412,7 +412,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.241.d
+		name = GE_reform_cycle_monarchy.241.e
 		
 		highlight = yes
 		trigger = {
@@ -774,7 +774,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.331.d
+		name = GE_reform_cycle_monarchy.331.e
 		
 		highlight = yes
 		trigger = {
@@ -828,7 +828,7 @@ country_event = {
 	}
 	
 	option = {
-		name = GE_reform_cycle_monarchy.341.d
+		name = GE_reform_cycle_monarchy.341.e
 		
 		highlight = yes
 		trigger = {

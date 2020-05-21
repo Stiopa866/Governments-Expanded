@@ -1061,7 +1061,9 @@ GE_Unified_Army = {
 	manpower_recovery_speed = 0.10
 	land_morale = 0.10
 }
-	
+GE_Corrupted_Merchants = {
+	yearly_corruption = 0.02
+}
 	
 	
 	

@@ -1074,7 +1074,12 @@ country_event = {
 	option = {
 		name = order_of_the_swan.21.a
 		
-		add_prestige = 10
+		trigger = {
+			has_reform = order_of_the_swan
+		}
+		
+		add_prestige = 25
+		add_papal_influence = 10
 	}
 	
 	option = {
@@ -1087,6 +1092,12 @@ country_event = {
 			}
 			add_opinion = { who = ROOT modifier = opinion_order_of_the_swan }
 		}
+	}
+	
+	option = {
+		name = order_of_the_swan.21.c
+		
+		add_papal_influence = 10
 	}
 }
 
