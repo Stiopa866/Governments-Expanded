@@ -857,7 +857,16 @@
  solar_kingdom_reform: "Reformed Solar Kingdom"
  solar_kingdom_reform_desc: "The crown completely replaced the hereditary chieftainships with appointed governorships in the entire Irrawaddy valley, and greatly reduced the hereditary rights of Shan chiefs. It also reined in the continuous growth of monastic wealth and autonomy, giving a greater tax base. Its trade and secular administrative reforms built a prosperous economy for the future."
  
- 
+ despotate_of_serbia_reform: "Despotate of Serbia"
+ despotate_of_serbia_reform_desc: "After the fall of the Serbian Empire the despotate of Serbia rose from the ashes to unite and defend as much of their formerly held lands from the Ottoman Turk menace. While nominally a Byzantine subject, in practice this was primarily used as a governmental basis and a source of legitimacy. This didn't stop them from aligning with, and militarily supporting, the Ottomans or the Hungarians depending on what was advantageous."
+ serbian_empire_reform: "Serbian Empire"
+ serbian_empire_reform_desc: "Serbian Empire Description is WIP."
+ vlast_voivodes_reform: "Vlast Voivodes"
+ vlast_voivodes_reform_desc: "By empowering the voivodes through the reorganization of the country in so called 'Vlasts', The voivodes that were granted governorship of these districts had absolute authority on everything related to both military and civilian matters."
+ form_the_vojstatic_reform: "Form the Vojstatic"
+ form_the_vojstatic_reform_desc: "Following the collapse of the Serbian Empire, the Despotate in its rough lands had a much reduced pool of wealth and manpower, to maintain combat effectiveness against the Turks and Hungarians we will create the Vojstatic. This modern, cannon equipped standing army raised from our own citizens shall defend our castles and cities from any invaders. Further Strenghtened by strenghtened by numerous mercenary companies."
+ grand_logothete_reform: "Grand Logothete"
+ grand_logothete_reform_desc: "Originally a position adopted from the Byzantine Empire, the Grand Logothete held a dualist position as both the chief chancellor of the Serbian Empire and the Serbian Despotate, as well as the second highest authority of matters of the Serbian Orthodox Church."
  
  
  
@@ -1011,7 +1020,7 @@
  
  mechanic_enables_salt_monopoly_yes: "Salt Monopoly: §G+25%§! Goods Produced and Trade Value in salt and naval supplies provinces."
  mechanic_enables_masked_monarch_yes: "Masked Monarch: §G-0.10§! Corruption during peacetime."
- mechanic_enables_noble_service_yes: "Noble Service: §G+50%§! Manpower and §G+10%§! Morale while in a defensive war."
+ mechanic_enables_noble_service_yes: "Noble Service: §G+33%§! Manpower and §G+10%§! Morale while in a defensive war."
  
  mechanic_enables_religious_adherence_yes: "Religious Adherence: §G+250§! Base Manpower in provices of your religion with temples."
  mechanic_enables_holy_lhasa_yes: "Holy Lhase: §R+2§! Unrest if Lhasa is not vajrana."
@@ -1021,6 +1030,20 @@
  mechanic_enables_Religious_Fervor_yes: "Religious Fervor: §G+20%§! Manpower while you have over 90% Religious Unity."
  mechanic_enables_mandala_periphery_yes: "Mandala Periphery: §G+15%§! National Tax Modifier for Subjects."
  mechanic_enables_solar_periphery_yes: "Solar Periphery: §G+15%§! National Tax Modifier and §G+15%§! National Manpower Modifier for Subjects."
+
+ mechanic_enables_church_policy_yes: "Church Policy: Upon Ascention, pick a policy for your administration."
+ mechanic_enables_royal_levies_yes: "Royal Levies: §G+1§! Land Force Limit and §G5%§! Land Force Limit Modifier for each point of military skill of your monarch."
+ mechanic_enables_byzantine_administration_yes: "Byzantime Administration: §G-10%§! Administrative Tech cost and §G+0.5§! yearly legitimacy."
+ mechanic_enables_military_governors_yes: "Military Governors: §G250§! Base Manpower and §G10%§! Local Tax Modifier in provinces with forts."
+ mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.25§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
+
+
+
+
+
+
+
+
 
 
  #Edicts
@@ -1214,6 +1237,9 @@
  reforming_mandala_system_decision_title: "Reform Mandala System"
  reforms_GE_solar_kingdom_reform_title: "Reform into the Solar Empire"
  reforms_GE_solar_kingdom_reform_desc:1 "The Failure of previous administrations to properly manage our stretched our realm can not be allowed to repeat itself. We shall replace the hereditary chieftainships with appointed governors and abolish the monastic exceptions and instead of being the center of the mandala, become the center of an empire!"
+ reforms_me_empire_of_serbia_title: "Reform the Serbian Empire"
+ reforms_me_empire_of_serbia_desc:1 "We're gonna reform the Serbian Empire, WIP."
+ 
  
  
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§! influence and loyalty ."

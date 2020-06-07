@@ -80,6 +80,8 @@ monarchy = {
 				consulate_of_the_malay
 				basic_reformed_mandala_reform
 				solar_kingdom_reform
+				despotate_of_serbia_reform
+				serbian_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -205,6 +207,7 @@ monarchy = {
 				dual_city_administration_reform
 				bangyesurok_reform
 				levy_the_thirthieth_reform
+				vlast_voivodes_reform
 			}
 		}
 		military_organisation = {
@@ -258,6 +261,7 @@ monarchy = {
 				jaeseungbangryak_reform
 				five_military_force_reform
 				honor_of_thai_kingdoms_reform
+				form_the_vojstatic_reform
 			}
 		}
 		growth_of_administration = {
@@ -304,6 +308,7 @@ monarchy = {
 				roman_senate_reform
 				korean_bureaucracy_reform
 				decretum_maius_reform
+				grand_logothete_reform
 			}
 		}
 		deliberative_assembly = {

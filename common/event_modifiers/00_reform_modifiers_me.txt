@@ -632,7 +632,7 @@ Masked_Monarch = {
 	yearly_corruption = -0.10
 }
 Noble_Service = {
-	global_manpower_modifier = 0.50
+	global_manpower_modifier = 0.33
 	land_morale = 0.10
 }
 GE_Religious_Adherence = {
@@ -673,6 +673,37 @@ GE_Solar_Periphery = {
 	global_manpower_modifier = 0.15
 	global_tax_modifier = 0.15
 }
+GE_byzantine_administration = {
+	adm_tech_cost_modifier = -0.10
+	legitimacy = 0.5
+}
+GE_Mining_Monopoly = {
+	trade_goods_size = 0.25
+	local_autonomy = -0.05
+}
+GE_military_governors = {
+	local_manpower = 0.25
+	local_tax_modifier = 0.10
+}
+GE_church_policy_tolerance = {
+	tolerance_own = 1
+}
+GE_church_policy_missionary = {
+	global_missionary_strength = 0.02
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -330,6 +330,11 @@
  GE_Religious_Fervor: "Religious Fervor"
  GE_Mandala_Periphery: "Mandala Periphery"
  GE_Solar_Periphery: "Solar Periphery"
+ GE_byzantine_administration: "Byzantine Administration"
+ GE_Mining_Monopoly: "Royal Mining Monopoly"
+ GE_military_governors: "Military Governors"
+ GE_church_policy_tolerance: "Pious Church Policy"
+ GE_church_policy_missionary: "Zealous Church Policy"
  
  
  

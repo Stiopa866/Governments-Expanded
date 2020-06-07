@@ -1216,13 +1216,12 @@ basic_reformed_mandala_reform = {
 		has_reform = basic_reformed_mandala_reform
 	}
 	modifiers = {
-		vassal_forcelimit_bonus = 1 #makes thematic sense (children)
-		max_states = 2 #seems like a generic bonus "just because the vanilla T1 has it"
-		reduced_liberty_desire_on_same_continent = 5 #makes thematic sense
-		#Overlord Gains 3% Max Manpower per vassal up to 15% Manpower #makes thematic sense, garrisons and all
+		vassal_forcelimit_bonus = 1
+		max_states = 2
+		reduced_liberty_desire_on_same_continent = 5
 	}
 	custom_attributes = {
-		enables_mandala_periphery = yes #15% tax in subjects #not too sure about why the subjects get additional prosperity
+		enables_mandala_periphery = yes #15% tax in subjects
 	}
 	ai = {
 		factor = 101
@@ -1249,16 +1248,72 @@ solar_kingdom_reform = {
         has_reform = solar_kingdom_reform
     }
     modifiers = {
-		vassal_forcelimit_bonus = 2 #this is gonna provide some insane force limit
-		max_states = 5 #wait, i thought we were going vassal
-		diplomatic_upkeep = 1 #fuck yeah vassals
+		vassal_forcelimit_bonus = 2 
+		max_states = 5 
+		diplomatic_upkeep = 1 
     }
 	custom_attributes = {
-		enables_blood_tax = yes #5% Manpower Per vassal up to 25% Manpower #more vassal-based armies yay
-		enables_solar_periphery = yes #Vassals Gain 15% Tax AND 15% Manpower #wait, why do they get additional manpower and money
+		enables_blood_tax = yes #5% Manpower Per vassal up to 25% Manpower
+		enables_solar_periphery = yes #Vassals Gain 15% Tax AND 15% Manpower
 	}
     ai = {
         factor = 102
+    }
+}
+
+despotate_of_serbia_reform = {
+    icon = king
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = serbian
+			has_reform = despotate_of_serbia_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = serbian
+			has_reform = despotate_of_serbia_reform
+		}
+    }
+    modifiers = {
+		diplomatic_reputation = 1
+    }
+	custom_attributes = {
+		enables_byzantine_administration = yes #-10% admin tech cost and 0.5 legitimacy while byzantium exists
+	} 
+    ai = {
+        factor = 100
+    }
+}
+
+serbian_empire_reform = {
+    icon = king_2
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = serbian
+			has_reform = serbian_empire_reform
+		}
+	}
+    trigger = {
+		OR = {
+			has_reform = serbian_empire_reform
+		}
+    }
+    modifiers = {
+		max_absolutism = 5
+		unjustified_demands = -0.25
+    }
+	custom_attributes = {
+		enables_royal_mining_monopoly = yes #0.25 Goods produced and -0.05 Autonomy in all Stated Mining Provinces.
+	}
+    ai = {
+        factor = 101
     }
 }
 
@@ -2110,7 +2165,19 @@ trade_princes_reform = {
 		OR = {
 			tag = ARA
 			primary_culture = aragonese
+			accepted_culture = aragonese
 			primary_culture = catalan 
+			accepted_culture = catalan  
+			has_reform = trade_princes_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = ARA
+			primary_culture = aragonese
+			accepted_culture = aragonese
+			primary_culture = catalan 
+			accepted_culture = catalan 
 			has_reform = trade_princes_reform
 		}
 	}
@@ -2140,6 +2207,16 @@ council_of_sheikhs_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			culture_group = maghrebi
+			has_reform = council_of_sheikhs_reform 
+			accepted_culture = moroccan
+			accepted_culture = tunisian
+			accepted_culture = algerian
+			accepted_culture = berber
+		}
+	}
+	trigger = {
 		OR = {
 			culture_group = maghrebi
 			has_reform = council_of_sheikhs_reform 
@@ -2211,6 +2288,7 @@ order_of_the_swan_reform = {
 		OR = {
 			tag = BRA
 			primary_culture = prussian
+			accepted_culture = prussian
 			has_reform = order_of_the_swan_reform
 		}
 		religion = catholic
@@ -3240,7 +3318,6 @@ buddhist_nation_reform = {
 	}
 }
 
-
 #############################
 ###########Tier3#############
 ############################# 
@@ -3513,6 +3590,7 @@ teaching_of_guru_Sahib_reform = {
 	trigger = {
         OR = {
 			religion = sikhism
+			has_reform = teaching_of_guru_Sahib_reform
         }
 		
 	}
@@ -4663,6 +4741,46 @@ levy_the_thirthieth_reform = {
 	}
 }
 
+vlast_voivodes_reform = {
+	icon = szlachta_noble_1
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = vlast_voivodes_reform
+			primary_culture = serbian
+			accepted_culture = serbian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = vlast_voivodes_reform
+			primary_culture = serbian
+			accepted_culture = serbian
+		}
+	}
+	modifiers = {
+		global_manpower_modifier = 0.10
+	}
+	custom_attributes = {
+		enables_military_governors = yes #250 base manpower and 10% local tax modifier in provinces with forts
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #############################
 ###########Tier4#############
 ############################# 
@@ -5806,11 +5924,50 @@ decretum_maius_reform = {
 		}
 	}
 	modifiers = {
-		global_autonomy = -0.0025
+		global_autonomy = -0.025
 		advisor_pool = 1
 	}
 	custom_attributes = {
 		enables_masked_monarch = yes #-0.10 corruption while at peace
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+grand_logothete_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = grand_logothete_reform
+			primary_culture = serbian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = grand_logothete_reform
+			primary_culture = serbian
+		}
+	}
+	modifiers = {
+		prestige = 0.5
+		advisor_cost = -0.05
+	}
+	custom_attributes = {
+		enables_church_policy = yes #pick a church policy for this administration.(5PA, 1TOTF, 2MS)
 	}
 	ai = {
 		factor = 100
@@ -8235,6 +8392,46 @@ restore_the_komnenoid_army_reform = {
 	custom_attributes = {
 		enables_varangian_guard = yes #2.5% merc discipline if you got a scandinavian ally or subject
 	}
+	ai = {
+		factor = 100
+	}
+}
+
+form_the_vojstatic_reform = {
+	icon = szlachta_noble_1
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = form_the_vojstatic_reform
+			primary_culture = serbian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = form_the_vojstatic_reform
+			primary_culture = serbian
+		}
+	}
+	modifiers = {
+		land_maintenance_modifier = -0.05
+		land_forcelimit = 6
+		merc_maintenance_modifier = -0.15#temp 
+	}
+	custom_attributes = {
+		#enables_royal_levies = yes #+1 & 5% Land Force Limit for each military monarch point
+	} #fixdis
 	ai = {
 		factor = 100
 	}
