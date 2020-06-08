@@ -1,13 +1,7 @@
 estate_peasants =
 {
 	icon = 12
-	
-	color = { 250 200 0 }
-	
-	# Is estate kept in control of province on conquest?
-	keep_on_conquest = no
-	
-	# If true, country will get estate
+
 	trigger = {
 		OR = {
 			has_reform = parliamentary_order_reform
@@ -15,21 +9,6 @@ estate_peasants =
 			has_reform = peasants_republic
 		}
 	}
-	
-	# If true, province can be granted to estate
-	province_trigger = {
-		always = yes
-	}	
-
-	# Is used to weigh importance compared to other estates
-	start_territory_weight = 0
-	
-	# Min autonomy in estate provinces
-	min_autonomy = 25
-	
-	# Estate cancels out the following multiplicative local autonomy effects:
-	 autonomy_does_not_affect = local_manpower_modifier
-	 autonomy_does_not_affect = local_production_efficiency
 
 	country_modifier_happy = {
 		state_maintenance_modifier = -0.20
@@ -41,19 +20,32 @@ estate_peasants =
 	country_modifier_angry = {
 		state_maintenance_modifier = 0.20
 		production_efficiency = -0.10
+		global_unrest = 2
 	}
-	
-	# These do not scale, but only applied in provinces owned by the estate
-	province_modifier_happy = {
-		local_build_cost = -0.15
-		trade_goods_size = 0.1
+	land_ownership_modifier = {
+		nobles_loyalty_modifier = 0.2
 	}
-	province_modifier_neutral = {
-		trade_goods_size = 0.1
-	}	
-	province_modifier_angry = {
-		local_unrest = 5
-	}		
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
 	
 	# Influence modifiers
 	base_influence = 20
@@ -62,157 +54,63 @@ estate_peasants =
 	
 	# Loyalty modifiers
 	
+	loyalty_modifier = {
+		desc = EST_VAL_NOBLE_CONSORT
+		trigger = {
+			stability = 3
+		}
+		loyalty = 10
+	}
+	
 	#Alternative naming of estates
 
 	# Does the AI want to give any extra territory beyond the minimum?
 
 	# For province assignment
-	ai_grant_province = {
-		factor = 1
-	}	
+
+	color = { 250 200 0 }
 	
-	# Special interactions
-	interaction = {
-		name = "HOLD_LANDTAG"
-		icon = 1
-		
-		years_between_use = 20
-		
-		trigger = {
-			always = yes
-		}
-		
-		effect = {
-			add_prestige = -5
-			add_estate_loyalty = {
-				estate = estate_peasants
-				loyalty = 15
-			}
-			add_estate_influence_modifier = {
-				estate = estate_peasants
-				desc = EST_VAL_DIET_HELD
-				influence = 10
-				duration = 7300
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				estate_influence = {
-					estate = estate_peasants
-					influence = 60
-				}				
-			}
-			modifier = {
-				factor = 0
-				estate_loyalty = {
-					estate = estate_peasants
-					loyalty = 30
-				}				
-			}			
-		}
-	}
-	interaction = {
-		name = "TAX_PEASANTS"
-		icon = 17
-		
-		years_between_use = 10
-		
-		trigger = {
-			estate_influence = {
-				estate = estate_peasants
-				influence = 40
-			}
-			any_owned_province = {
-				has_estate = estate_peasants
-			}
-		}
-		
-		effect = {
-			custom_tooltip = tax_peasants_tooltip
-			hidden_effect = {
-				every_owned_province = {
-					limit = { has_estate = estate_peasants }
-					add_province_modifier = {
-						name = tax_peasants
-						duration = 3650
-					}
-				}
-			}
-			add_estate_loyalty = {
-				estate = estate_peasants
-				loyalty = -10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_peasants
-				desc = EST_VAL_TAX_PEASANTS
-				influence = 10
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				estate_loyalty = {
-					estate = estate_peasants
-					loyalty = 30
-				}				
-			}
-		}
-	}
-	interaction = {
-		name = "REGISTER_PEASANTS"
-		icon = 12
-		
-		years_between_use = 10
-		
-		trigger = {
-			estate_influence = {
-				estate = estate_peasants
-				influence = 40
-			}
-			any_owned_province = {
-				has_estate = estate_peasants
-			}
-		}
-		
-		effect = {
-			custom_tooltip = register_peasants_tooltip
-			hidden_effect = {
-				every_owned_province = {
-					limit = { has_estate = estate_peasants }
-					add_province_modifier = {
-						name = register_peasants
-						duration = 3650
-					}
-				}
-			}
-			add_estate_loyalty = {
-				estate = estate_peasants
-				loyalty = -10
-			}
-			add_estate_influence_modifier = {
-				estate = estate_peasants
-				desc = EST_VAL_REGISTER_PEASANTS
-				influence = 10
-				duration = 3650
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				estate_loyalty = {
-					estate = estate_peasants
-					loyalty = 30
-				}				
-			}
-		}
+	privileges = {
+		estate_church_land_rights_1
+		estate_nobles_land_rights
+		estate_nobles_nobility_primacy
+		estate_peasants_land_rights
+		estate_peasants_guild_assembly
+		estate_peasants_manpower_drive
+		estate_peasants_voting_rights
+		estate_peasants_conscription
 	}
 
+	agendas = {
+		estate_nobles_develop_x
+		estate_nobles_build_army_building_in_y
+		estate_nobles_build_fort_building_in_y
+		estate_nobles_build_university_in_y
+		estate_nobles_build_manufactory_in_y
+		estate_nobles_get_allies
+		estate_nobles_befriend_rival_of_rival
+		estate_nobles_restore_legitimacy
+		estate_nobles_relations_with_X
+		estate_nobles_break_coalition
+		estate_nobles_condottieri_rivals
+		estate_nobles_support_independence
+		estate_nobles_retake_core
+		estate_nobles_crush_revolts
+		estate_nobles_regain_liberty
+		estate_nobles_convert_province_culture
+		estate_nobles_protect_our_culture
+		estate_nobles_vassalise_vulnerable_country
+		estate_nobles_expand_into_x
+		estate_nobles_complete_conquest_of_x
+		estate_nobles_annex_subject
+		estate_nobles_build_an_army
+		estate_nobles_bigger_army_than_rival
+		estate_nobles_build_up_manpower_reserves
+		estate_nobles_recover_abysmal_prestige
+		estate_nobles_improve_prestige
+		estate_nobles_hire_advisor
+		estate_nobles_fire_advisor
+	}
+	
+	influence_from_dev_modifier = 1.0
 }

@@ -84,11 +84,11 @@ country_event = {
 			estate = estate_peasants
 			loyalty = 10
 		}
-		every_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-			}
-			add_local_autonomy = 25
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = -10
+			duration = 3650
 		}
 	}
 }

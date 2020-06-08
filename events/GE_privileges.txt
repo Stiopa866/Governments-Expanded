@@ -1,0 +1,22 @@
+namespace = GE_privileges
+
+country_event = {
+	id = GE_privileges.1
+	title = GE_privileges.1.t
+	desc = GE_privileges.1.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_estate_monopoly_modifier = { privilege = estate_peasants_conscription }
+	}
+	
+	option = {
+		name = GE_privileges.1.a
+		reapply_estate_privilege = { privilege = estate_peasants_conscription }
+	}
+	option = {
+		name = GE_privileges.1.b
+	}
+}
