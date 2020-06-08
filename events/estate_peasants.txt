@@ -120,15 +120,9 @@ country_event = {
 		
 		add_years_of_income = -1
 		random_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-			}
 			add_base_production = 1
 		}
 		random_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-			}
 			add_base_production = 1
 		}
 		if = {
@@ -139,21 +133,12 @@ country_event = {
 				}
 			}
 			random_owned_province = {
-				limit = {
-					has_estate = estate_peasants
-				}
 				add_base_production = 1
 			}
 			random_owned_province = {
-				limit = {
-					has_estate = estate_peasants
-				}
 				add_base_production = 1
 			}
 			random_owned_province = {
-				limit = {
-					has_estate = estate_peasants
-				}
 				add_base_production = 1
 			}
 		}

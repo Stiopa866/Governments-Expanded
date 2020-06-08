@@ -57,13 +57,6 @@ estate_junkers =
 	}
 	
 	# Influence modifiers from Events:
-	influence_modifier = {
-		desc = EST_HUN_MAGNATES
-		trigger = {
-			has_ruler_modifier = hun_power_to_magnates
-		}
-		influence = 10
-	}
 
 	color = { 144 0 32 }
 	

@@ -9,10 +9,6 @@ estate_ghulams =
 		}
 	}
 
-	# Estate cancels out the following multiplicative local autonomy effects:
-	 autonomy_does_not_affect = local_production_efficiency
-	 autonomy_does_not_affect = local_tax_modifier
-
 	country_modifier_happy = {
 		army_tradition = 0.5
 		state_maintenance_modifier = -0.20
@@ -61,13 +57,6 @@ estate_ghulams =
 	}
 	
 	# Influence modifiers from Events:
-	influence_modifier = {
-		desc = EST_HUN_MAGNATES
-		trigger = {
-			has_ruler_modifier = hun_power_to_magnates
-		}
-		influence = 10
-	}
 
 	color = { 000 127 014 }
 	

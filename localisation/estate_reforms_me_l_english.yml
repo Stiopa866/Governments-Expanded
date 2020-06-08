@@ -876,7 +876,6 @@
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
- mechanic_enables_noble_diplomats_yes:0 "The Noble Estate Interaction Recruit Minister will instead grant §G10%§! Improve relations."
  mechanic_enables_cortes_yes:0 "Enable The Cortes Interaction in the Noble Estate."
  mechanic_enables_demedici_yes:0 "De'Medici Influence: Corrupt the electoral system."
  mechanic_enables_holy_war_yes:0 "Enables Holy Wars."
@@ -892,7 +891,6 @@
  mechanic_enables_blood_tax_yes: "Blood Tax: Gain §G5%§! Manpower per vassal state. Up to a maximum of §G25%§! Manpower."
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
  mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
- mechanic_enables_magnate_law_yes: "Magnate Law: States with Noble Estate provinces have §G-1§! unrest."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
  mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains and hills."
  mechanic_enables_arabian_horses_yes: "Arabian Horses: Gain §G3%§! Cavalry Combat Ability per Arabian vassal. Up to a maximum of §G15%§! Cavalry Combat Ability."
@@ -990,7 +988,6 @@
  mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
  mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
  mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
- mechanic_enables_timariots_yes: "Timariots: §G+1§! Tax and  §G+250§! Manpower in every Noble Province."
  mechanic_enables_qadi_authority_yes: "Qadi Authority: §G-15%§! State Maintenance in Muslim provinces."
  mechanic_enables_kaza_system_yes: "Kaza System: For every 10% Sunni Provinces, gain §G+1%§! Trade Efficiency. Up to a maximum of §G10%§! Trade Efficiency."
  mechanic_enables_millet_system_yes: "Millet System: Accepted Cultures gain §G-1§! Unrest and §G+15%§! Tax."
@@ -999,6 +996,8 @@
  mechanic_enables_koprulu_dynasty_yes: "Koprulu Viziers: Allows your vizier to focus on an area every 25 years."
  mechanic_enables_public_works_yes: "Public Works: §G-10%§! Local Development Cost and §G-2§! Unrest in provinces with a Courthouse."
  mechanic_enables_caravanserai_yes: "Caravanserai: §G+5§! Trade power in Centers of Trade with Forts."
+ 
+ #GE 1.12
  
  mechanic_enables_kiwi_support_yes: "Kiwi Support: §G+5%§! Ship Trade Power for each merchant you have. Up to a maximum of §G50%§! Ship Trade Power."
  mechanic_enables_rajput_law_yes: "Rajput Law: §G-2§! Unrest and §G+10%§! Manpower in every province owned by the Rajput Estate."
@@ -1037,7 +1036,12 @@
  mechanic_enables_military_governors_yes: "Military Governors: §G250§! Base Manpower and §G10%§! Local Tax Modifier in provinces with forts."
  mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.25§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 
-
+ #GE 1.12 #1.30
+ mechanic_enables_noble_diplomats_yes:0 "Noble Diplomats: Unlock the 'Noble Diplomatis' Privilege for the nobility, Giving a §G10%§! Improve relations and a direct relations boost upon granting."
+ mechanic_enables_magnate_law_yes: "Magnate Law: Unlocks the 'Magnate Law' Privilege for the Nobility, granting up to §G-2.5§! National Unrest"
+ mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain Access to the infamous 'Imperial Knights' Mercenary Company."
+ mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Company."
+ mechanic_enables_timariots_yes: "Timariots: Unlock the 'Timariot Domains' Privilege for the nobility, Giving extra cavalry and governing capacity in trade for land."
 
 
 
@@ -1075,6 +1079,35 @@
  elections.720.e: "A Catholic Noble."
  elections.720.d: "A Hussite Noble."
  
+ #Privileges
+ estate_peasants_land_rights: "Peasants Land Rights"
+ estate_peasants_land_rights_desc: "The Peasantry, backbone of the country, deserves some self-governance."
+ estate_peasants_guild_assembly: "Peasant Guilds Representation"
+ estate_peasants_guild_assembly_desc: "The Peasant-Guild deserves the right to organize in formal guilds with full recognition of the state."
+ estate_peasants_manpower_drive: "Peasant Manpower Drive"
+ estate_peasants_manpower_drive_desc: "The Peasantry can serve in our armies, no matter how rough the nobility might think it is." 
+ estate_peasants_voting_rights: "Peasant Voting Rights"
+ estate_peasants_voting_rights_desc: "Peasant having a say in the republic is sure to increase the fervor of republicanism and spread political discourse over the country."
+ estate_peasants_conscription: "Peasant Conscription"
+ estate_peasants_conscription_desc: "In times of need the peasantry can be called to arms, although this leaves the farms unattended."
+ estate_nobles_diplomatic_privilege: "Noble Diplomats"
+ estate_nobles_diplomatic_privilege_desc: "By sending the most noble of nobles to work as our diplomats to our neighbours we can ensure there will be plenty of friends and prestigious meetings to impart our best wishes on them."
+ estate_nobles_magnate_law_privilege: "Magnate Law"
+ estate_nobles_magnate_law_privilege_desc: "Through the granting of local autonomy we can please and pacify the nobility to the point of them solving most of the local issues on their own accord."
+ estate_nobles_timariot_privilege: "Timariot Domains"
+ estate_nobles_timariot_privilege_desc: "Granting lands to our mounted warriors to upkeep their equipment and their levies is an excellent way of maintaining our military force on the cheap."
+ 
+ 
+ 
+ 
+ 
+ 
+ #Mercenaries
+ merc_local_imperial_knights_company: "Imperial Knights"
+ merc_local_imperial_knights_company_desc: "Better Imperial Knights then Imperial Walkers."
+ merc_local_qizilbash_company: "Qizilbash"
+ 
+ #misc
  EVTOPTF700:1 "Let us elect a scion of the de'Medici family."
  EVTOPTF700:1 "Let us elect a scion of the de'Medici family."
  EVTOPTG700:1 "Let us invite a veteran condottieri captain."
@@ -1121,6 +1154,7 @@
  Provinces_Junkers.tooltip:1 "Effects scale with relative amount of lands this estate holds"
  GE_Koprulu_Defence_Event:1 "Get §G15%§! Fort Defence in all border provinces."
  GE_Koprulu_Economy_Event:1 "Get §G10%§! Goods produced in every province producing Grain or Livestock."
+ GE_diplomatic_privileges_tooltip:1 "Get §G25§! Opinion with all neighbouring nations you're not at war with."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

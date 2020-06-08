@@ -4,7 +4,7 @@ estate_peasants_land_rights = {
 	land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
-	influence = 0.05
+	influence = 0.10
 	can_select = {
 	}
 	on_granted = {
@@ -12,9 +12,6 @@ estate_peasants_land_rights = {
 	penalties = {
 	}
 	benefits = {
-		estate_peasants_loyalty_modifier = 0.1
-		peasants_loyalty_modifier = 0.5
-		church_loyalty_modifier = 0.1
 		governing_capacity = 50
 	}
 	ai_will_do = {
@@ -47,9 +44,10 @@ estate_peasants_manpower_drive = {
 	loyalty = 0.10
 	influence = 0.05
 	modifier_by_land_ownership = {
-		global_manpower_modifier = 0.10
+		global_manpower_modifier = 0.25
 	}
 	penalties = {
+		nobles_loyalty_modifier = -0.1
 	}
 	benefits = {
 	}
@@ -65,6 +63,7 @@ estate_peasants_voting_rights = {
 	loyalty = 0.10
 	influence = 0.25
 	penalties = {
+		stability_cost_modifier = 0.50
 	}
 	benefits = {
 		republican_tradition = 0.25
@@ -83,7 +82,11 @@ estate_peasants_conscription = {
 	can_select = {
 	}
 	on_granted = {
-		add_yearly_manpower = 2
+		add_yearly_manpower = 4
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -15
+		}
 	}
 	on_revoked = {
 	}
@@ -102,6 +105,138 @@ estate_peasants_conscription = {
 		factor = 0
 	}
 }
+
+###############Noble Privileges###############
+
+estate_nobles_diplomatic_privilege = {
+	icon = privilege_diplo_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_noble_diplomats
+	}
+	can_select = {
+		has_government_attribute = enables_noble_diplomats
+	}
+	on_granted = {
+		custom_tooltip = GE_diplomatic_privileges_tooltip
+		hidden_effect = {
+			every_neighbor_country = {
+				limit = {
+					NOT = { war_with = ROOT }
+				}
+				add_opinion = { who = ROOT modifier = opinion_diplomatic_positions }
+			}
+		}
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+		improve_relation_modifier = 0.10
+	}
+	cooldown_years = 25
+	on_cooldown_expires = {
+		country_event = { id = GE_privileges.2 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_magnate_law_privilege = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_magnate_law
+	}
+	can_select = {
+		has_government_attribute = enables_magnate_law
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+		global_unrest = -2.5
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_timariot_privilege = {
+	icon = privilege_mil_power
+	land_share = 0
+	max_absolutism = -15
+	loyalty = 0.05
+	influence = 0.15
+	is_valid = {
+		has_government_attribute = enables_timariots
+	}
+	can_select = {
+		has_government_attribute = enables_timariots
+	}
+	on_granted = {
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 2.5
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+		}
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	cooldown_years = 25
+	on_cooldown_expires = {
+		country_event = { id = GE_privileges.3 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+###############Noble Privileges###############
 
 estate_ghulams_land_rights = {
 	icon = privilege_grant_autonomy

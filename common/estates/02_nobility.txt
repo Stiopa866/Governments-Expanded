@@ -351,6 +351,10 @@ estate_nobles =
 		estate_nobles_monopoly_of_livestock
 		estate_nobles_monopoly_of_gems
 		estate_nobles_statutory_rights
+		#GE
+		estate_nobles_diplomatic_privilege
+		estate_nobles_magnate_law_privilege
+		estate_nobles_timariot_privilege
 	}
 
 	agendas = {

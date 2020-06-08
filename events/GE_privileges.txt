@@ -9,7 +9,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		remove_estate_monopoly_modifier = { privilege = estate_peasants_conscription }
+		
 	}
 	
 	option = {
@@ -18,5 +18,53 @@ country_event = {
 	}
 	option = {
 		name = GE_privileges.1.b
+		remove_estate_privilege = estate_peasants_conscription
+	}
+}
+
+country_event = {
+	id = GE_privileges.2
+	title = GE_privileges.2.t
+	desc = GE_privileges.2.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = GE_privileges.2.a
+		reapply_estate_privilege = { privilege = estate_nobles_diplomatic_privilege }
+	}
+	option = {
+		name = GE_privileges.2.b
+		remove_estate_privilege = estate_nobles_diplomatic_privilege
+	}
+}
+
+country_event = {
+	id = GE_privileges.3
+	title = GE_privileges.3.t
+	desc = GE_privileges.3.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = GE_privileges.3.a
+		reapply_estate_privilege = { privilege = estate_nobles_timariot_privilege }
+	}
+	option = {
+		name = GE_privileges.3.b
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
 	}
 }
