@@ -898,7 +898,6 @@
  mechanic_enables_national_strenghtening_project_yes: "National Strenghtening Project: §G+15%§! Manpower, §G-0.05%§! monthly devastation and §G-10%§! Hostile Movement Speed in provinces with accepted culture."
  mechanic_enables_rallied_for_war_yes: "Rallied for War: §G+5%§! Morale of Armies and §G+10%§! Morale Recovery for five years upon raising additional levies."
  mechanic_enables_patriotism_yes: "Patriotism: 	§G+25%§! Manpower in provinces of your primary culture."
- mechanic_enables_town_rights_yes: "Town Rights: §G-10%§! Development Cost and §G+0.2§! Goods produced in Burgher Estate provinces."
  mechanic_enables_administrative_forts_yes: "Administrative Forts: §G-25%§! State Maintenance in each state with a fort."
  mechanic_enables_abolish_noble_customs_yes: "Abolish Noble Customs: Halve the Production Efficiency and Trade Power penalty in Noble Estate provinces."
  mechanic_enables_holy_tithe_yes: "Holy Tithe: §G+5%§! National Tax Modifier for each Tolerance of the True Faith over 4. Up to a maximum of §G25%§! National Tax Modifier."
@@ -1042,6 +1041,7 @@
  mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain Access to the infamous 'Imperial Knights' Mercenary Company."
  mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Company."
  mechanic_enables_timariots_yes: "Timariots: Unlock the 'Timariot Domains' Privilege for the nobility, Giving extra cavalry and governing capacity in trade for land."
+ mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra trade goods produced and reduced development cost depending on land ownership."
 
 
 
@@ -1095,8 +1095,9 @@
  estate_nobles_magnate_law_privilege: "Magnate Law"
  estate_nobles_magnate_law_privilege_desc: "Through the granting of local autonomy we can please and pacify the nobility to the point of them solving most of the local issues on their own accord."
  estate_nobles_timariot_privilege: "Timariot Domains"
- estate_nobles_timariot_privilege_desc: "Granting lands to our mounted warriors to upkeep their equipment and their levies is an excellent way of maintaining our military force on the cheap."
- 
+ estate_nobles_timariot_privilege_desc: "Granting lands to our mounted warriors to maintain their equipment and their levies is an excellent way of maintaining our military force on the cheap."
+ estate_burghers_town_rights: "Town Rights"
+ estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
  
  
  

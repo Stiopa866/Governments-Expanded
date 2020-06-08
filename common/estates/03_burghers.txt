@@ -250,6 +250,8 @@ estate_burghers =
 		estate_burghers_enforced_interfaith_dialogue
 		estate_burghers_prussian_confederation
 		estate_burghers_statutory_rights
+		#GE
+		estate_burghers_town_rights
 	}
 
 	agendas = {

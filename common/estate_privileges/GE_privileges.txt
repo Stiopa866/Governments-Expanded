@@ -134,6 +134,10 @@ estate_nobles_diplomatic_privilege = {
 	on_revoked = {
 	}
 	on_invalid = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
 	}
 	penalties = {
 	}
@@ -166,6 +170,10 @@ estate_nobles_magnate_law_privilege = {
 	on_revoked = {
 	}
 	on_invalid = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
 	}
 	modifier_by_land_ownership = {
 		global_unrest = -2.5
@@ -180,11 +188,11 @@ estate_nobles_magnate_law_privilege = {
 }
 
 estate_nobles_timariot_privilege = {
-	icon = privilege_mil_power
+	icon = privilege_military_power
 	land_share = 0
-	max_absolutism = -15
+	max_absolutism = -10
 	loyalty = 0.05
-	influence = 0.15
+	influence = 0.10
 	is_valid = {
 		has_government_attribute = enables_timariots
 	}
@@ -196,47 +204,72 @@ estate_nobles_timariot_privilege = {
 			estate = estate_nobles
 			share = 2.5
 		}
-		random_owned_province = {
-			limit = {
-				is_capital = yes
-			}
-			ROOT = {
-				cavalry = PREV
-			}
-			ROOT = {
-				cavalry = PREV
-			}
-			ROOT = {
-				cavalry = PREV
-			}
-			ROOT = {
-				cavalry = PREV
-			}
-			ROOT = {
-				cavalry = PREV
-			}
-		}
 	}
 	on_revoked = {
 	}
 	on_invalid = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
 	}
 	penalties = {
 	}
 	benefits = {
-		governing_capacity = 100
+		governing_capacity = 50
 	}
 	cooldown_years = 25
 	on_cooldown_expires = {
 		country_event = { id = GE_privileges.3 }
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
 
-###############Noble Privileges###############
+###############Burgher Privileges###############
+
+estate_burghers_town_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	modifier_by_land_ownership = {
+		global_trade_goods_size_modifier = 0.10
+		development_cost = -0.20
+	}
+	on_granted = {
+	}
+	on_invalid = {
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+###############Vassal Privileges###############
+
+
+
+
+
+
+
+
+
 
 estate_ghulams_land_rights = {
 	icon = privilege_grant_autonomy

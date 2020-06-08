@@ -1461,12 +1461,12 @@ dhimmi_nobles_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.05
+		dhimmi_loyalty_modifier = 0.10
+		dhimmi_influence_modifier = 0.20
 	}
 	ai = {
 		factor = 10
 	}
-	#20% dhimmi influence
-	#10% dhimmi loyalty
 }
 
 #############################
@@ -2189,7 +2189,7 @@ trade_princes_reform = {
 		factor = 100
 	}
 }
-		
+
 council_of_sheikhs_reform = {
 	icon = mamluk_government
 	allow_normal_conversion = yes
@@ -2234,8 +2234,6 @@ council_of_sheikhs_reform = {
 	ai = {
 		factor = 10
 	}
-	#5% clergy influence
-	#5% noble influence
 }
 
 muscovite_manorialism_reform = {
@@ -2298,12 +2296,11 @@ order_of_the_swan_reform = {
 	modifiers = {
 		papal_influence = 1
 		prestige = 0.5
-		nobles_loyalty_modifier = 0.10
+		nobles_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 100
 	}
-	#10% noble loyalty
 }
 
 junker_class_reform = {
@@ -2372,7 +2369,6 @@ house_of_knights_reform = {
 	ai = {
 		factor = 100
 	}
-	#10% noble loyalty
 }
 
 constitutio_valdemariana_reform = {
@@ -3013,7 +3009,7 @@ turkic_qasilbash_heirs_reform = {
 	modifiers = {
 		missionary_maintenance_cost = -0.25
 		cav_to_inf_ratio = 0.15
-		cavalry_cost = -0.20 #temp -0.10
+		cavalry_cost = -0.10 #temp -0.10
 	}
 	removed_effect = {
 		change_variable = {
@@ -3103,7 +3099,6 @@ timariot_domains_reform = {
 		}
 	}
 	modifiers = {
-		reduced_liberty_desire = 10
 		cavalry_cost = -0.10
 	}
 	 custom_attributes = {
@@ -3143,6 +3138,7 @@ qadi_authority_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
+		clergy_loyalty_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_qadi_authority = yes #-15% state maintenance in islamic provinces
@@ -3260,6 +3256,7 @@ order_of_the_dragon_reform = {
 	}
 	modifiers = {
 		prestige = 0.5
+		nobles_loyalty_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_militant_orders = yes 
@@ -3389,6 +3386,7 @@ magnate_govenors_reform = {
 	modifiers = {
 		governing_capacity = 100
 		state_maintenance_modifier = -0.25
+		nobles_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 10
@@ -3418,6 +3416,8 @@ theocratic_bureacrats_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_holy_tithe = yes #5% Tax per TOTF over 4
@@ -3451,6 +3451,8 @@ ulema_guidance_reform = {
 	modifiers = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3491,6 +3493,8 @@ faith_in_ancestors_spirits_reform = {
 	modifiers = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3524,6 +3528,8 @@ histories_of_the_sky_god_reform = {
 	}
 	modifiers = {
 		global_missionary_strength = 0.01
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_people_under_tengri = yes #500 manpower and -2 unrest for steppe provinces
@@ -3562,6 +3568,8 @@ enforced_caste_system_reform = {
         global_missionary_strength = 0.01
         tolerance_own = 1
         stability_cost_modifier = -0.1
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3598,6 +3606,8 @@ teaching_of_guru_Sahib_reform = {
         global_missionary_strength = 0.01
         religious_unity = 0.25
         stability_cost_modifier = -0.1
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3632,6 +3642,8 @@ guidance_of_the_dalai_llama_reform = {
         global_missionary_strength = 0.01
         tolerance_own = 1
 		religious_unity = 0.15
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_holy_lhasa = yes #Provide a malus that if Lhasa province is not Vajrayana, gain +2 unrest 
@@ -3677,6 +3689,8 @@ enlightened_ethical_teachings_reform = {
 	modifiers = {
         yearly_harmony = 0.15
 		tolerance_own = 1.5
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3715,6 +3729,8 @@ state_temple_harmonization_reform = {
 	modifiers = {
         global_missionary_strength = 0.01
 		tolerance_own = 1
+		clergy_loyalty_modifier = 0.05
+		clergy_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_religious_adherence = yes #250 manpower in true faith provinces with temples
@@ -3795,6 +3811,7 @@ kyoho_reforms_reform = {
 	modifiers = { 
 		global_tax_modifier = 0.10
 		trade_efficiency = 0.05
+		burghers_influence_modifier = 0.05
 	}
 	ai = {
 		factor = 10
@@ -3919,6 +3936,7 @@ constitutio_joachimica_reform = {
 	modifiers = {
 		global_autonomy = -0.025
 		yearly_corruption = -0.05
+		nobles_influence_modifier = -0.10
 	}
 	custom_attributes = {
 		enables_codified_law = yes #-2 Unrest in provinces with less then 50% Autonomy.
@@ -4034,6 +4052,7 @@ the_red_book_reform = {
 	modifiers = {
 		manpower_recovery_speed = 0.10
 		tolerance_heretic = 0.5
+		clergy_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 100
@@ -4064,6 +4083,8 @@ commoner_officials_reform = {
 	modifiers = {
 		ship_power_propagation = 0.25
 		dip_advisor_cost = -0.25
+		burghers_influence_modifier = 0.05
+		nobles_influence_modifier = -0.10
 	}
 	ai = {
 		factor = 100
@@ -4098,6 +4119,7 @@ imperial_inquisition_reform = {
 		missionary_maintenance_cost = -0.1
 		papal_influence = 1
 		prestige_per_development_from_conversion = 0.1
+		clergy_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 100
@@ -4130,6 +4152,7 @@ revive_the_hisbah_reform = {
 	modifiers = {
 		global_autonomy = -0.025
 		yearly_corruption = -0.05
+		nobles_influence_modifier = -0.05
 	}
 	ai = {
 		factor = 100
@@ -4162,11 +4185,10 @@ re_enforce_magdeburg_rights_reform = {
 	}
 	modifiers = {
 		trade_efficiency = 0.10
-		development_cost = -0.05
 	}
-	# custom_attributes = {
-		# enables_town_rights = yes #-10% Development Cost, 0.2 Goods Produced in burgher estate provinces
-	# }
+	 custom_attributes = {
+		 enables_town_rights = yes #Unlock Burgher Privilege 'Town Rights', +10% Goods Produced and -20% development cost depending on lands.
+	 }
 	ai = {
 		factor = 100
 	}
@@ -4315,6 +4337,7 @@ abolish_bastard_feudalism_reform = {
 		global_manpower_modifier = -0.05
 		global_autonomy = -0.05
 		global_unrest = -1
+		nobles_influence_modifier = -0.10
 	}
 	ai = {
 		factor = 100
@@ -4349,6 +4372,7 @@ taifa_governors_reform = {
 	}
 	modifiers = {
 		diplomatic_upkeep = 1
+		nobles_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_legacy_of_independence = yes #+25% Force limit, +10% Tax in vassals
@@ -4467,6 +4491,7 @@ office_of_vitztum_reform = {
 		global_autonomy = -0.025
 		years_of_nationalism = -5
 		governing_capacity = 100
+		nobles_influence_modifier = -0.10
 	}
 	ai = {
 		factor = 50
@@ -4507,6 +4532,7 @@ oberhofgericht_reform = {
 	modifiers = {
 		global_autonomy = -0.025
 		global_unrest = -1
+		nobles_influence_modifier = -0.10
 	}
 	ai = {
 		factor = 50
@@ -4643,6 +4669,7 @@ tajik_administration_reform = {
 	modifiers = {
 		governing_capacity = 150
 		num_accepted_cultures = 1
+		nobles_influence_modifier = -0.10
 	}
 	removed_effect = {
 		change_variable = {
