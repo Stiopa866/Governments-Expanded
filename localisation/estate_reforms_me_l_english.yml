@@ -891,7 +891,6 @@
  mechanic_enables_blood_tax_yes: "Blood Tax: Gain §G5%§! Manpower per vassal state. Up to a maximum of §G25%§! Manpower."
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
  mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
- mechanic_enables_veteran_general_yes: "Veteran Generals: Replaces the §G40§! tradition general from the noble estate with a §G60§! tradition general."
  mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains and hills."
  mechanic_enables_arabian_horses_yes: "Arabian Horses: Gain §G3%§! Cavalry Combat Ability per Arabian vassal. Up to a maximum of §G15%§! Cavalry Combat Ability."
  mechanic_enables_mercenary_markets_yes: "Mercenary Markets: §G-1%§! Infantry Cost and §G+2%§! Manpower Recovery per merchant. Up to a maximum of §G-10%§! Infantry Cost and §G20%§! Manpower Recovery Speed."
@@ -954,7 +953,7 @@
  mechanic_enables_permissive_burghers_yes: "Permissive Burghers: No Loyalty cost for 'ask for contribution.' interaction during war."
  mechanic_enables_economic_block_yes: "Continental System: §G+2.5%§! Trade Efficiency for each one of your allies. Up to a maximum of §G15%§! Trade Efficiency."
  mechanic_enables_french_ordonannce_yes: "French Ordonnances: §G+10%§! Goods produced in colonial nations."
- mechanic_enables_foreign_worship_yes: "Foreign Regiments: §G+20%§! Religious Unity if you employ over §Y10.000§! mercenaries."
+ mechanic_enables_foreign_worship_yes: "Foreign Regiments: §G+10%§! Religious Unity if you employ over §Y10.000§! mercenaries."
  mechanic_enables_swiss_guard_yes: "Swiss Guards: §G+5%§! Infantry Combat Ability if you have a Swiss ally or subject."
  mechanic_enables_royal_nobles_yes: "Royal Court: 'Call Diet' gives §G+10§! Legitimacy and §G+5§! Absolutism."
  mechanic_enables_society_of_agriculture_yes: "Society of Agriculture: §G+10%§! Production Efficiency and §G+10%§! Trade Value in Stated Provinces with Basic Goods."
@@ -1042,6 +1041,7 @@
  mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Company."
  mechanic_enables_timariots_yes: "Timariots: Unlock the 'Timariot Domains' Privilege for the nobility, Giving extra cavalry and governing capacity in trade for land."
  mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra trade goods produced and reduced development cost depending on land ownership."
+ mechanic_enables_veteran_general_yes: "Veteran Generals: Unlock the 'Noble Officers' Privilege for the nobility, Giving excellent generals each generation."
 
 
 
@@ -1098,8 +1098,10 @@
  estate_nobles_timariot_privilege_desc: "Granting lands to our mounted warriors to maintain their equipment and their levies is an excellent way of maintaining our military force on the cheap."
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
- 
- 
+ estate_nobles_noble_officer_privilege: "Noble Officer Privilege"
+ estate_nobles_noble_officer_privilege_desc: "Granting The privilege of leadership to the best and brightest of our noble stock will ensure their loyalty and a steady stream of excellent noble generals."
+ estate_nobles_grand_captain_privilege: "Levy Captains"
+ estate_nobles_grand_captain_privilege_desc: "Time to levy our forces, let us send captains to raise additional forces for our subjects."
  
  
  
@@ -1156,6 +1158,7 @@
  GE_Koprulu_Defence_Event:1 "Get §G15%§! Fort Defence in all border provinces."
  GE_Koprulu_Economy_Event:1 "Get §G10%§! Goods produced in every province producing Grain or Livestock."
  GE_diplomatic_privileges_tooltip:1 "Get §G25§! Opinion with all neighbouring nations you're not at war with."
+ GE_Grand_Captains_tt:1 "Each vassal gets §G+25%§! Land Force Limit Modifier and §G-10%§! Land Maintenance."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

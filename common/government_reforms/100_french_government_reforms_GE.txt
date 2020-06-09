@@ -247,9 +247,6 @@ generalites_reform = {
 		global_autonomy = -0.025
 		global_tax_modifier = 0.10
 	}
-	# custom_attributes = {
-		# enables_abolish_noble_exception = yes #33% Tax in Noble Estate Provinces
-	# }
 	ai = {
 		factor = 100
 	}
@@ -385,6 +382,7 @@ royal_training_reform = {
 		drill_gain_modifier = 0.50
 		reinforce_cost_modifier = -0.1
 		reinforce_speed = 0.25
+		nobles_influence_modifier = -0.10
 	}
 	custom_attributes = {
 		enables_swiss_guard = yes #5% ICA if you got a swiss ally or subject
@@ -481,11 +479,8 @@ weak_burghers_reform = {
 		NOT = { has_reform = french_absolutism }
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -1
+		war_taxes_cost_modifier = -5
 		production_efficiency = 0.10
-	}
-	custom_attributes = {
-		enables_permissive_burghers = yes #Free Demand Contribution during war
 	}
 	ai = {
 		factor = 100

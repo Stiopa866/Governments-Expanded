@@ -133,7 +133,14 @@
  GE_privileges.3.d: "The official timariot lease runs to its end, and many of the entrenched nobles are treating the timariot domains as their personal properties and pledged them to their sons."
  GE_privileges.3.a: "Let us renew the lease, their sons can serve."
  GE_privileges.3.b: "We must break the generational stranglehold."
- 
+ GE_privileges.4.t: "Noble Scion"
+ GE_privileges.4.d: "A new generation of noble sons have been groomed for command, and due to the privileges bestowed upon their forebears they expect us to let them command."
+ GE_privileges.4.a: "Like father like son."
+ GE_privileges.4.b: "Break the chain of heritable command."
+ GE_privileges.5.t: "Levy Captains."
+ GE_privileges.5.d: "We forced captains onto our subjects and forced them to raise large regiments to support us, they demand the captains be send home and their mobilization to be held in their own hands again."
+ GE_privileges.5.a: "We NEED those regiments."
+ GE_privileges.5.b: "Send them home."
  
  
  

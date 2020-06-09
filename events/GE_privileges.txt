@@ -68,3 +68,47 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = GE_privileges.4
+	title = GE_privileges.4.t
+	desc = GE_privileges.4.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = GE_privileges.4.a
+		reapply_estate_privilege = { privilege = estate_nobles_noble_officer_privilege }
+	}
+	option = {
+		name = GE_privileges.4.b
+		add_army_tradition = 5
+	}
+}
+
+country_event = {
+	id = GE_privileges.5
+	title = GE_privileges.5.t
+	desc = GE_privileges.5.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = GE_privileges.5.a
+		reapply_estate_privilege = { privilege = estate_nobles_grand_captain_privilege }
+	}
+	option = {
+		name = GE_privileges.5.b
+		add_prestige = -5
+	}
+}

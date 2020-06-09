@@ -227,12 +227,84 @@ estate_nobles_timariot_privilege = {
 	}
 }
 
+estate_nobles_noble_officer_privilege = {
+	icon = privilege_military_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_veteran_general
+	}
+	can_select = {
+		has_government_attribute = enables_veteran_general
+	}
+	on_granted = {
+		create_general = { tradition = 60 }
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		country_event = { id = GE_privileges.4 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_grand_captain_privilege = {
+	icon = privilege_military_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_grand_captain
+	}
+	can_select = {
+		has_government_attribute = enables_grand_captain
+	}
+	on_granted = {
+		custom_tooltip = "GE_Grand_Captains_tt"
+		hidden_effect = {
+			every_subject_country = {
+				add_country_modifier = {
+					name = GE_Grand_Captains
+					duration = 9125
+				}
+			}
+		}
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+		vassal_income = -0.25
+	}
+	benefits = {
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		country_event = { id = GE_privileges.5 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
 
 ###############Burgher Privileges###############
 
 estate_burghers_town_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 0
+	land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
@@ -245,10 +317,6 @@ estate_burghers_town_rights = {
 	on_granted = {
 	}
 	on_invalid = {
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = -20
-		}
 	}
 	penalties = {
 	}
