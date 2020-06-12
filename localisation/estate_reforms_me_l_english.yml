@@ -1145,6 +1145,9 @@
  Clergy_Influence: "Clergy Court Influence"
  Burgher_Influence: "Burgher Court Influence"
  Royal_Influence: "Royal Court Influence"
+ peasants_loyalty_modifier: "Peasants Loyalty"
+ peasants_influence_modifier: "Peasants Influence"
+ vassal_tax_modifier: "Vassal Tax Income"
  
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."

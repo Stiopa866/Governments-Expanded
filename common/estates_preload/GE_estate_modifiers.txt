@@ -12,8 +12,15 @@ estate_peasants = {
 		type = influence
 		key = peasants_influence_modifier
 		trigger = {
-			has_estate = peasants
+			has_estate = estate_peasants
 		}
 	}
-
+}
+vassal_tax = {
+	modifier_definition = {
+		key = vassal_tax_modifier
+		trigger = {
+			always = yes
+		}
+	}
 }

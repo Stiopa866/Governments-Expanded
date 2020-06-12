@@ -338,6 +338,40 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ GE_vassal_tax_script_1: "Vassal Tax Income"
+ GE_vassal_tax_script_2: "Vassal Tax Income"
+ GE_vassal_tax_script_3: "Vassal Tax Income"
+ GE_vassal_tax_script_4: "Vassal Tax Income"
+ GE_vassal_tax_script_5: "Vassal Tax Income"
+ GE_vassal_tax_script_6: "Vassal Tax Income"
+ GE_vassal_tax_script_7: "Vassal Tax Income"
+ GE_vassal_tax_script_8: "Vassal Tax Income"
+ GE_vassal_tax_script_9: "Vassal Tax Income"
+ GE_vassal_tax_script_10: "Vassal Tax Income"
+ GE_vassal_tax_script_11: "Vassal Tax Income"
+ GE_vassal_tax_script_12: "Vassal Tax Income"
+ GE_vassal_tax_script_13: "Vassal Tax Income"
+ GE_vassal_tax_script_14: "Vassal Tax Income"
+ GE_vassal_tax_script_15: "Vassal Tax Income"
+ GE_vassal_tax_script_16: "Vassal Tax Income"
+ GE_vassal_tax_script_17: "Vassal Tax Income"
+ GE_vassal_tax_script_18: "Vassal Tax Income"
+ GE_vassal_tax_script_19: "Vassal Tax Income"
+ GE_vassal_tax_script_20: "Vassal Tax Income"
+ 
+ 
+ 
+ 
+ 
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"
  Beneficial_Self_Rule: "Beneficial Self Rule"

@@ -36,6 +36,7 @@ arch_monarchy_reform = {
 	}
 	modifiers = {
 		prestige = 0.5
+		vassal_tax_modifier = 0.15
 	}
 	custom_attributes = {
 		enables_blood_tax = yes #5% manpower per non-colonial subject
@@ -73,6 +74,7 @@ margrave_reform = {
 		NOT = { total_development = 200 }
 	}
 	trigger = {
+		is_part_of_hre = yes
 		NOT = { total_development = 100 }
 	}
 	valid_for_nation_designer = yes
@@ -88,6 +90,13 @@ theocratic_autocracy = {
 	icon = "pope_highlighted"
 	allow_normal_conversion = no
 	potential = {
+		OR = {
+			has_reform = theocratic_autocracy
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = theocratic_autocracy
 			tag = BYZ
@@ -112,6 +121,9 @@ beylik = {
 		primary_culture = turkish
 		NOT = { tag = TUR }
 		NOT = { tag = RUM }
+	}
+	trigger = {
+		primary_culture = turkish
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -422,6 +434,12 @@ office_of_lord_regent_reform = {
 			has_reform = office_of_lord_regent_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = swedish
+			has_reform = office_of_lord_regent_reform
+		}
+	}
 	modifiers = {
 		legitimacy = 0.5
 		prestige = 0.5
@@ -484,6 +502,10 @@ arch_duchy_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = arch_duchy_reform
+		}
 	}
 	modifiers = {
 		prestige = 0.5
@@ -615,6 +637,13 @@ granadan_iqta_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
+			has_reform = granadan_iqta_reform
+		}
 	}
 	modifiers = {
 		trade_efficiency = 0.10
@@ -646,6 +675,10 @@ hessian_militarized_monarchy_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+		}
 	}
 	modifiers = {
 		yearly_army_professionalism = 0.0025
@@ -1261,6 +1294,9 @@ papal_embassy_reform = {
 	potential = {
 		religion = catholic
 	}
+	trigger = {
+		religion = catholic
+	}
 	modifiers = {
 		papal_influence = 1.5
 		church_loyalty_modifier = 0.05
@@ -1290,6 +1326,9 @@ metropolian_bishop_reform = {
 	icon = church
 	allow_normal_conversion = yes
 	potential = {
+		religion = orthodox
+	}
+	trigger = {
 		religion = orthodox
 	}
 	modifiers = {
@@ -1337,6 +1376,15 @@ state_church_reform = {
 			religion = reformed
 			religion = protestant
 			religion = angilican
+			religion = hussite
+		}
+	}
+	trigger = {
+		OR = {
+			religion = reformed
+			religion = protestant
+			religion = angilican
+			religion = hussite
 		}
 	}
 	modifiers = {
@@ -1470,6 +1518,12 @@ lithuania_law_reform = {
 			tag = LIT
 		}
 	}
+	trigger = {
+		OR = {	
+			has_reform = lithuania_law_reform
+			tag = LIT
+		}
+	}
 	modifiers = {
 		global_unrest = -1
 		yearly_corruption = -0.05
@@ -1499,8 +1553,38 @@ guild_dominance_reform = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
-			accepted_culture = dutch
-			accepted_culture = flemish
+			AND = {
+				OR = {
+					accepted_culture = dutch
+					accepted_culture = flemish
+				}
+				num_of_owned_provinces_with = {
+					value = 1
+					OR = {
+						culture = dutch
+						culture = flemish
+					}
+				}
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			AND = {
+				OR = {
+					accepted_culture = dutch
+					accepted_culture = flemish
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					OR = {
+						culture = dutch
+						culture = flemish
+					}
+				}
+			}
 		}
 	}
 	modifiers = {
@@ -1531,6 +1615,9 @@ growth_signoria_reform = {
 	potential = {
 		culture_group = latin
 		is_year = 1490
+	}
+	trigger = {
+		culture_group = latin
 	}
 	modifiers = {
 		stability_cost_modifier = -0.15
@@ -2012,6 +2099,12 @@ akritai_privileges_reform = {
 			culture_group = byzantine
 		}
 	}
+	trigger = {
+		OR = {	
+			has_reform = akritai_privileges_reform
+			culture_group = byzantine
+		}
+	}
 	modifiers = {
 		defensiveness = 0.15
 		nobles_influence_modifier = 0.05
@@ -2040,6 +2133,13 @@ portuguese_cortes_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			tag = POR
+			primary_culture = portugese
+			has_reform = portuguese_cortes_reform
+		}
+	}
+	trigger = {
 		OR = {
 			tag = POR
 			primary_culture = portugese
@@ -2177,7 +2277,7 @@ council_of_sheikhs_reform = {
 		legitimacy = 0.5
 		manpower_recovery_speed = 0.20
 		nobles_loyalty_modifier = 0.05
-		clergy_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 10
@@ -2200,6 +2300,14 @@ muscovite_manorialism_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			tag = MOS
+			tag = RUS
+			primary_culture = russian
+			has_reform = muscovite_manorialism_reform
+		}
+	}
+	trigger = {
 		OR = {
 			tag = MOS
 			tag = RUS
@@ -2236,7 +2344,14 @@ order_of_the_swan_reform = {
 		OR = {
 			tag = BRA
 			primary_culture = prussian
-			accepted_culture = prussian
+			has_reform = order_of_the_swan_reform
+		}
+		religion = catholic
+	}
+	trigger = {
+		OR = {
+			tag = BRA
+			primary_culture = prussian
 			has_reform = order_of_the_swan_reform
 		}
 		religion = catholic
@@ -2271,8 +2386,30 @@ junker_class_reform = {
 			tag = BRA
 			tag = PRU
 			primary_culture = prussian
-			accepted_culture = prussian
 			has_reform = junker_class_reform
+			AND = {
+				accepted_culture = prussian
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = prussian
+				}
+			}
+		}
+		NOT = { religion = catholic }
+	}
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+			primary_culture = prussian
+			has_reform = junker_class_reform
+			AND = {
+				accepted_culture = prussian
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = prussian
+				}
+			}
 		}
 		NOT = { religion = catholic }
 	}
@@ -2309,6 +2446,12 @@ house_of_knights_reform = {
 			has_reform = house_of_knights_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = swedish 
+			has_reform = house_of_knights_reform
+		}
+	}
 	modifiers = {
 		prestige = 0.5
 		leader_cost = -0.20
@@ -2340,6 +2483,12 @@ constitutio_valdemariana_reform = {
 			has_reform = constitutio_valdemariana_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = danish
+			has_reform = constitutio_valdemariana_reform
+		}
+	}
 	modifiers = {
 		diplomatic_upkeep = 1
 		global_manpower_modifier = 0.10
@@ -2366,6 +2515,12 @@ riksradet_norway_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = riksradet_norway_reform
+			primary_culture = norwegian
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = riksradet_norway_reform
 			primary_culture = norwegian
@@ -2404,6 +2559,10 @@ albertine_line_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = albertine_line_reform
+		}
 	}
 	modifiers = {
 		legitimacy = 0.5
@@ -2437,6 +2596,10 @@ magnate_law_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			technology_group = eastern
+			has_reform = magnate_law_reform
+		}
 	}
 	modifiers = {
 		global_manpower_modifier = 0.10
@@ -2466,7 +2629,7 @@ imperial_knights_reform = {
 	}
 	potential = {
 		is_part_of_hre = yes
-		NOT = { total_development = 200 }
+		NOT = { total_development = 150 }
 	}
 	trigger = {
 		NOT = { total_development = 100 }
@@ -2502,10 +2665,27 @@ mamluk_privileges_reform = {
 		OR = {
 			has_reform = mamluk_privileges_reform
 			primary_culture = al_misr_arabic 
-			accepted_culture = al_misr_arabic 
+			AND = {
+				accepted_culture = al_misr_arabic
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = al_misr_arabic
+				}
+			}
 		}
 	}
 	trigger = {
+		OR = {
+			has_reform = mamluk_privileges_reform
+			primary_culture = al_misr_arabic 
+			AND = {
+				accepted_culture = al_misr_arabic
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = al_misr_arabic
+				}
+			}
+		}
 	}
 	modifiers = {
 		global_unrest = -1
@@ -2536,11 +2716,30 @@ szlachta_authority_reform = {
 			tag = POL
 			tag = PLC
 			primary_culture = polish
-			accepted_culture = polish
+			AND = {
+				accepted_culture = polish
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = polish
+				}
+			}
 		}
 		NOT = { has_reform = polish_constitutionalism_reform }
 	}
 	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+			AND = {
+				accepted_culture = polish
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = polish
+				}
+			}
+		}
+		NOT = { has_reform = polish_constitutionalism_reform }
 	}
 	modifiers = {
 		global_unrest = -1
@@ -2576,6 +2775,12 @@ every_man_a_noble_reform = {
 		has_reform = polish_constitutionalism_reform
 	}
 	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+		}
+		has_reform = polish_constitutionalism_reform
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.10
@@ -2602,6 +2807,12 @@ curia_regis_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			primary_culture = english
+			has_reform = curia_regis_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = english
 			has_reform = curia_regis_reform
@@ -2641,6 +2852,13 @@ taha_divisions_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
+			has_reform = taha_divisions_reform 
+		}
 	}
 	modifiers = {
 		global_tax_modifier = 0.10
@@ -2789,26 +3007,26 @@ franconian_salic_law_reform = {
 	}
 	potential = {
 		OR = {
-			OR = {
-				tag = HES
-				tag = THU
-				tag = MAI
-				tag = NUM
-				primary_culture = franconian
+			primary_culture = franconian
+			AND = {
 				accepted_culture = franconian
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = franconian
+				}
 			}
 			has_reform = franconian_salic_law_reform
 		}
 	}
 	trigger = {
 		OR = {
-			OR = {
-				tag = HES
-				tag = THU
-				tag = MAI
-				tag = NUM
-				primary_culture = franconian
+			primary_culture = franconian
+			AND = {
 				accepted_culture = franconian
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = franconian
+				}
 			}
 			has_reform = franconian_salic_law_reform
 		}
@@ -2881,6 +3099,14 @@ chhetri_clans_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = chhetri_clans_reform
+			tag = NPL
+			primary_culture = nepali
+			accepted_culture = nepali
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = chhetri_clans_reform
 			tag = NPL
@@ -2990,22 +3216,28 @@ sayyid_privileges_reform = {
 	}
 	potential = {
 		OR = {
-			AND = {
-				religion_group = muslim
-				primary_culture = hejazi_culture
-				accepted_culture = hejazi_culture
-			}
+			primary_culture = hejazi_culture
 			has_reform = sayyid_privileges_reform
+			AND = {
+				accepted_culture = hejazi_culture
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = hejazi_culture
+				}
+			}
 		}
 	}
 	trigger = {
 		OR = {
-			AND = {
-				religion_group = muslim
-				primary_culture = hejazi_culture
-				accepted_culture = hejazi_culture
-			}
+			primary_culture = hejazi_culture
 			has_reform = sayyid_privileges_reform
+			AND = {
+				accepted_culture = hejazi_culture
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = hejazi_culture
+				}
+			}
 		}
 	}
 	modifiers = {
@@ -3035,14 +3267,26 @@ timariot_domains_reform = {
 	potential = {
 		OR = {
 			primary_culture = turkish
-			accepted_culture = turkish
+			AND = {
+				accepted_culture = turkish
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = turkish
+				}
+			}
 			has_reform = timariot_domains_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = turkish	
-			accepted_culture = turkish
+			AND = {
+				accepted_culture = turkish
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = turkish
+				}
+			}
 			has_reform = timariot_domains_reform
 		}
 	}
@@ -3086,7 +3330,7 @@ qadi_authority_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
-		clergy_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_qadi_authority = yes #-15% state maintenance in islamic provinces
@@ -3331,6 +3575,12 @@ magnate_govenors_reform = {
 			has_reform = magnate_govenors_reform
 		}
 	}
+	trigger = {
+		OR = {
+			technology_group = eastern
+			has_reform = magnate_govenors_reform
+		}
+	}
 	modifiers = {
 		governing_capacity = 100
 		state_maintenance_modifier = -0.25
@@ -3364,8 +3614,8 @@ theocratic_bureacrats_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.05
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_holy_tithe = yes #5% Tax per TOTF over 4
@@ -3399,8 +3649,8 @@ ulema_guidance_reform = {
 	modifiers = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3441,8 +3691,8 @@ faith_in_ancestors_spirits_reform = {
 	modifiers = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3476,8 +3726,8 @@ histories_of_the_sky_god_reform = {
 	}
 	modifiers = {
 		global_missionary_strength = 0.01
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_people_under_tengri = yes #500 manpower and -2 unrest for steppe provinces
@@ -3516,8 +3766,8 @@ enforced_caste_system_reform = {
         global_missionary_strength = 0.01
         tolerance_own = 1
         stability_cost_modifier = -0.1
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3554,8 +3804,8 @@ teaching_of_guru_Sahib_reform = {
         global_missionary_strength = 0.01
         religious_unity = 0.25
         stability_cost_modifier = -0.1
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3590,8 +3840,8 @@ guidance_of_the_dalai_llama_reform = {
         global_missionary_strength = 0.01
         tolerance_own = 1
 		religious_unity = 0.15
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_holy_lhasa = yes #Provide a malus that if Lhasa province is not Vajrayana, gain +2 unrest 
@@ -3637,8 +3887,8 @@ enlightened_ethical_teachings_reform = {
 	modifiers = {
         yearly_harmony = 0.15
 		tolerance_own = 1.5
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
@@ -3677,8 +3927,8 @@ state_temple_harmonization_reform = {
 	modifiers = {
         global_missionary_strength = 0.01
 		tolerance_own = 1
-		clergy_loyalty_modifier = 0.05
-		clergy_influence_modifier = 0.10
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	custom_attributes = {
 		enables_religious_adherence = yes #250 manpower in true faith provinces with temples
@@ -3705,6 +3955,12 @@ diocletian_reforms_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			culture_group = byzantine
+			has_reform = diocletian_reforms_reform
+		}
+	}
+	trigger = {
 		OR = {
 			culture_group = byzantine
 			has_reform = diocletian_reforms_reform
@@ -3788,6 +4044,13 @@ casa_de_contraction_reform = {
 			has_reform = casa_de_contraction_reform
 		}
 	}
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = SPA
+			has_reform = casa_de_contraction_reform
+		}
+	}
 	modifiers = {
 		global_ship_trade_power = 0.2
 		global_colonial_growth = 10
@@ -3813,6 +4076,12 @@ casa_de_india_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = casa_de_india_reform
+			primary_culture = portugese
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = casa_de_india_reform
 			primary_culture = portugese
@@ -3848,6 +4117,12 @@ oprichnina_reform = {
 			has_reform = oprichnina_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = russian
+			has_reform = oprichnina_reform
+		}
+	}
 	modifiers = {
 		unjustified_demands = -0.10
 		global_autonomy = -0.025
@@ -3874,9 +4149,14 @@ constitutio_joachimica_reform = {
 	}
 	potential = {
 		OR = {
-			tag = PRU
 			tag = BRA
-			tag = NGF
+			primary_culture = prussian
+			has_reform = constitutio_joachimica_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = BRA
 			primary_culture = prussian
 			has_reform = constitutio_joachimica_reform
 		}
@@ -3913,14 +4193,26 @@ millet_reform = {
 	potential = {
 		OR = {
 			primary_culture = turkish
-			accepted_culture = turkish
+			AND = {
+				accepted_culture = turkish
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = turkish
+				}
+			}
 			has_reform = millet_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = turkish
-			accepted_culture = turkish
+			AND = {
+				accepted_culture = turkish
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = turkish
+				}
+			}
 			has_reform = millet_reform
 		}
 	}
@@ -4000,7 +4292,7 @@ the_red_book_reform = {
 	modifiers = {
 		manpower_recovery_speed = 0.10
 		tolerance_heretic = 0.5
-		clergy_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 100
@@ -4023,6 +4315,12 @@ commoner_officials_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			primary_culture = danish
+			has_reform = commoner_officials_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = danish
 			has_reform = commoner_officials_reform
@@ -4062,12 +4360,16 @@ imperial_inquisition_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			has_reform = imperial_inquisition_reform
+			primary_culture = austrian
+		}
 	}
 	modifiers = {
 		missionary_maintenance_cost = -0.1
 		papal_influence = 1
 		prestige_per_development_from_conversion = 0.1
-		clergy_influence_modifier = 0.10
+		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 100
@@ -4096,6 +4398,10 @@ revive_the_hisbah_reform = {
 		}
 	}
 	trigger = { 
+		OR = {
+			has_reform = revive_the_hisbah_reform
+			primary_culture = al_misr_arabic
+		}
 	}
 	modifiers = {
 		global_autonomy = -0.025
@@ -4125,11 +4431,28 @@ re_enforce_magdeburg_rights_reform = {
 	potential = {
 		OR = {
 			primary_culture = polish
-			accepted_culture = polish
+			AND = {
+				accepted_culture = polish
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = polish
+				}
+			}
 			has_reform = re_enforce_magdeburg_rights_reform
 		}
 	}
-	trigger = { 
+	trigger = {
+		OR = {
+			primary_culture = polish
+			AND = {
+				accepted_culture = polish
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = polish
+				}
+			}
+			has_reform = re_enforce_magdeburg_rights_reform
+		}
 	}
 	modifiers = {
 		trade_efficiency = 0.10
@@ -4167,6 +4490,13 @@ revoke_magnate_estates_reform = {
 		has_reform = polish_constitutionalism_reform
 	}
 	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+			has_reform = revoke_magnate_estates_reform 
+		}
+		has_reform = polish_constitutionalism_reform
 	}
 	modifiers = {
 		global_autonomy = -0.025
@@ -4281,6 +4611,13 @@ abolish_bastard_feudalism_reform = {
 			has_reform = abolish_bastard_feudalism_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = english
+			accepted_culture = english
+			has_reform = abolish_bastard_feudalism_reform
+		}
+	}
 	modifiers = {
 		global_manpower_modifier = -0.05
 		global_autonomy = -0.05
@@ -4317,6 +4654,13 @@ taifa_governors_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
+			has_reform = taha_divisions_reform 
+		}
 	}
 	modifiers = {
 		diplomatic_upkeep = 1
@@ -4395,6 +4739,10 @@ hessian_military_complex_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			tag = HES
+			has_reform = hessian_military_complex_reform
+		}
 	}
 	modifiers = {
 		development_cost = -0.05
@@ -4503,6 +4851,12 @@ newar_and_gorkhali_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = newar_and_gorkhali_reform
+			tag = NPL
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = newar_and_gorkhali_reform
 			tag = NPL
@@ -4652,9 +5006,13 @@ dual_city_administration_reform = {
 		OR = {
 			AND = {
 				religion_group = muslim
-				primary_culture = hejazi_culture
 				accepted_culture = hejazi_culture
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = hejazi_culture
+				}
 			}
+			primary_culture = hejazi_culture
 			has_reform = dual_city_administration_reform
 		}
 	}
@@ -4662,9 +5020,13 @@ dual_city_administration_reform = {
 		OR = {
 			AND = {
 				religion_group = muslim
-				primary_culture = hejazi_culture
 				accepted_culture = hejazi_culture
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = hejazi_culture
+				}
 			}
+			primary_culture = hejazi_culture
 			has_reform = dual_city_administration_reform
 		}
 	}
@@ -4885,6 +5247,7 @@ empowered_clergy_in_administration_reform = {
 		free_adm_policy = 1
 		warscore_cost_vs_other_religion = -0.10
 		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.10
 	}
 	removed_effect = {
 		change_variable = {
@@ -5050,6 +5413,7 @@ imperial_circles_administration_reform = {
 	}
 	trigger = {
 		total_development = 75
+		is_part_of_hre = yes
 	}
 	modifiers = {
 		global_unrest = -1
@@ -5119,6 +5483,9 @@ sulu_administration_reform = {
     potential = {
         tag = SUL
     }
+	trigger = {
+		 tag = SUL
+	}
     modifiers = {
         advisor_cost = -0.20
         advisor_pool = 1
@@ -5144,6 +5511,15 @@ academy_of_science_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			tag = RUS
+			tag = MOS
+			primary_culture = russian
+			accepted_culture = russian
+			has_reform = academy_of_science_reform
+		}
+	}
+	trigger = {
 		OR = {
 			tag = RUS
 			tag = MOS
@@ -5217,9 +5593,14 @@ fredrickan_reforms_reform = {
 	}
 	potential = {
 		OR = {
-			tag = PRU
 			tag = BRA
-			tag = NGF
+			has_reform = fredrickan_reforms_reform
+			primary_culture = prussian
+		}
+	}
+	trigger = {
+		OR = {
+			tag = BRA
 			has_reform = fredrickan_reforms_reform
 			primary_culture = prussian
 		}
@@ -5250,6 +5631,14 @@ table_of_ranks_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			tag = RUS
+			tag = MOS
+			primary_culture = russian
+			has_reform = table_of_ranks_reform
+		}
+	}
+	trigger = {
 		OR = {
 			tag = RUS
 			tag = MOS
@@ -5288,6 +5677,12 @@ the_judicature_ordinance_reform = {
 			has_reform = the_judicature_ordinance_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = swedish 
+			has_reform = the_judicature_ordinance_reform
+		}
+	}
 	modifiers = {
 		reform_progress_growth = 0.10
 		global_unrest = -1
@@ -5313,6 +5708,12 @@ christian_four_merchantile_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = christian_four_merchantile_reform
+			primary_culture = danish
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = christian_four_merchantile_reform
 			primary_culture = danish
@@ -5352,6 +5753,10 @@ declario_ferdinandei_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = declario_ferdinandei_reform
+		}
 	}
 	modifiers = {
 		religious_unity = 0.20
@@ -5384,6 +5789,10 @@ turkicized_elite_reform = {
 		}
 	}
 	trigger = { 
+		OR = {
+			has_reform = turkicized_elite_reform
+			primary_culture = al_misr_arabic 
+		}
 	}
 	modifiers = {
 		diplomatic_upkeep = 1
@@ -5410,6 +5819,13 @@ supreme_govenor_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			primary_culture = english
+			accepted_culture = english
+			has_reform = supreme_govenor_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = english
 			accepted_culture = english
@@ -5450,6 +5866,13 @@ cultural_investment_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
+			has_reform = cultural_investment_reform 
+		}
 	}
 	modifiers = {
 		global_trade_power = 0.10
@@ -5567,6 +5990,12 @@ found_the_rothschilds_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = found_the_rothschilds_reform 
+			tag = HES
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = found_the_rothschilds_reform 
 			tag = HES
@@ -5973,7 +6402,7 @@ empowered_royal_decree_reform = {
 		yearly_absolutism = 0.1
 		nobles_influence_modifier = -0.10
 		burghers_influence_modifier = -0.10
-		clergy_influence_modifier = -0.10
+		church_influence_modifier = -0.10
 	}
 	custom_attributes = {
 		enables_royal_council = yes
@@ -6185,6 +6614,12 @@ parliamentary_order_reform = {
 			has_reform = parliamentary_order_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = swedish
+			has_reform = parliamentary_order_reform
+		}
+	}
 	modifiers = {
 		stability_cost_modifier = -0.10
 	}
@@ -6200,6 +6635,12 @@ king_and_duke_reform = {
 	icon = assembly_hall
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			primary_culture = danish
+			has_reform = king_and_duke_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = danish
 			has_reform = king_and_duke_reform
@@ -6224,12 +6665,16 @@ diverse_estates_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = diverse_estates_reform
+		}
 	}
 	modifiers = {
 		diplomats = 1
-		nobles_influence_modifier = 0.10
-		burghers_influence_modifier = 0.10
-		clergy_influence_modifier = 0.10
+		nobles_loyalty_modifier = 0.05
+		burghers_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 100
@@ -6244,10 +6689,29 @@ foreign_recruitment_reform = {
 		OR = {
 			has_reform = foreign_recruitment_reform
 			primary_culture = al_misr_arabic
-			accepted_culture = al_misr_arabic
+			AND = {
+				religion_group = muslim
+				accepted_culture = al_misr_arabic
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = al_misr_arabic
+				}
+			}
 		}
 	}
 	trigger = {
+		OR = {
+			has_reform = foreign_recruitment_reform
+			primary_culture = al_misr_arabic
+			AND = {
+				religion_group = muslim
+				accepted_culture = al_misr_arabic
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = al_misr_arabic
+				}
+			}
+		}
 	}
 	modifiers = {
 		merchants = 1
@@ -6272,6 +6736,12 @@ reform_the_sejm_reform = {
 		NOT = { has_reform = polish_constitutionalism_reform }
 	}
 	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+		}
+		NOT = { has_reform = polish_constitutionalism_reform }
 	}
 	modifiers = {
 		monthly_support_heir_gain = 0.10
@@ -6295,6 +6765,12 @@ abolish_the_sejm_reform = {
 		has_reform = polish_constitutionalism_reform
 	}
 	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+		}
+		has_reform = polish_constitutionalism_reform
 	}
 	modifiers = {
 		global_spy_defence = 0.25
@@ -6342,6 +6818,12 @@ declaration_of_breda_reform = {
 	icon = england_declaration_of_breda
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			primary_culture = english
+			has_reform = declaration_of_breda_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = english
 			has_reform = declaration_of_breda_reform
@@ -6725,6 +7207,7 @@ revoke_reichsfreiheit_reform = {
 		is_part_of_hre = yes
 	}
 	trigger = {
+		is_part_of_hre = yes
 		total_development = 150
 	}
 	modifiers = {
@@ -6740,6 +7223,12 @@ nueva_planta_decrees_reform = {
 	icon = nueva_planta
 	allow_normal_conversion = yes
 	potential = {
+		OR = { 
+			tag = SPA
+			has_reform = nueva_planta_decrees_reform
+		}
+	}
+	trigger = {
 		OR = { 
 			tag = SPA
 			has_reform = nueva_planta_decrees_reform
@@ -6765,6 +7254,13 @@ toleration_of_all_faiths_edict_reform = {
 			has_reform = toleration_of_all_faiths_edict_reform
 		}
 	}
+	trigger = {
+		OR = {
+			tag = RUS
+			primary_culture = russian
+			has_reform = toleration_of_all_faiths_edict_reform
+		}
+	}
 	modifiers = {
 		tolerance_heathen = 1
 		build_cost = -0.10
@@ -6784,15 +7280,21 @@ abolish_the_haandfaestning_reform = {
 			has_reform = abolish_the_haandfaestning_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = danish
+			has_reform = abolish_the_haandfaestning_reform
+		}
+	}
 	modifiers = {
 		max_absolutism = 10
 		heir_chance = 0.25
 		global_unrest = -1
+		nobles_influence_modifier = -0.15
 	}
 	ai = {
 		factor = 100
 	}
-	#-15% Noble Influence
 }
 
 constitution_third_may_reform = {
@@ -6805,9 +7307,15 @@ constitution_third_may_reform = {
 			primary_culture = polish
 		}
 	}
-	trigger = { 
+	trigger = {
 		OR = {
 			have_had_reform = reform_the_sejm_reform
+			has_reform = reform_the_sejm_reform
+		}
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
 		}
 	}
 	modifiers = {
@@ -6832,6 +7340,12 @@ bill_of_rights_reform = {
 			has_reform = bill_of_rights_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = english
+			has_reform = bill_of_rights_reform
+		}
+	}
 	modifiers = {
 		global_unrest = -2
 		manpower_recovery_speed = 0.10 #right to arm bears
@@ -6850,6 +7364,11 @@ absolutist_administration_reform = {
 			is_emperor_of_china = yes
 		}
 	}
+	trigger = {
+		OR = {
+			is_emperor_of_china = yes
+		}
+	}
 	modifiers = {
 		max_absolutism = 10
 		meritocracy = -1
@@ -6864,6 +7383,11 @@ permanent_regency_reform = {
 	icon = "asian_scripture"
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			is_emperor_of_china = yes
+		}
+	}
+	trigger = {
 		OR = {
 			is_emperor_of_china = yes
 		}
@@ -6919,21 +7443,34 @@ abolish_clergy_privileges_reform = {
 			has_reform = abolish_clergy_privileges_reform
 		}
 	}
+	trigger = {
+		OR = {
+			tag = SPA
+			has_reform = abolish_clergy_privileges_reform
+		}
+	}
 	modifiers = {
 		administrative_efficiency = 0.05
 		global_tax_modifier = 0.10
-		global_unrest = 1
+		church_influence_modifier = -0.20
+		church_loyalty_modifier = -0.15
 	}
 	ai = {
 		factor = 100
 	}
-	#-20% clergy influence
 }
 
 peters_council_reform = {
 	icon = peter_the_great
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			tag = RUS
+			primary_culture = russian
+			has_reform = peters_council_reform
+		}
+	}
+	trigger = {
 		OR = {
 			tag = RUS
 			primary_culture = russian
@@ -6960,6 +7497,14 @@ nizam_i_jedid_reform = {
 			has_reform = nizam_i_jedid_reform
 		}
 	}
+	trigger = {
+		OR = {
+			tag = TUR
+			tag = RUM
+			primary_culture = turkish
+			has_reform = nizam_i_jedid_reform
+		}
+	}
 	modifiers = {
 		max_absolutism = 10
 		free_adm_policy = 1
@@ -6973,6 +7518,12 @@ commonwealth_of_nations_reform = {
 	icon = map_2
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			primary_culture = english
+			has_reform = commonwealth_of_nations_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = english
 			has_reform = commonwealth_of_nations_reform
@@ -7037,6 +7588,9 @@ feudal_levies_reform = {
 	potential = { 
 		has_estate = estate_nobles
 	}
+	trigger = {
+		has_estate = estate_nobles
+	}
 	modifiers = {
 		war_taxes_cost_modifier = -1
 		nobles_influence_modifier = 0.05
@@ -7073,6 +7627,7 @@ empowered_heavy_knights_reform = {
 		}
 	}
 	trigger = {
+		has_estate = estate_nobles
 		check_variable = {
 			which = Noble_Influence			
 			value = 2
@@ -7293,6 +7848,12 @@ italian_mercenaries_reform = {
 			has_reform = italian_mercenaries_reform
 		}
 	}
+	trigger = {
+		OR = {
+			culture_group = latin
+			has_reform = italian_mercenaries_reform
+		}
+	}
 	modifiers = {
 		mercenary_discipline = 0.05
 		war_exhaustion = -0.01
@@ -7369,6 +7930,7 @@ imperial_circles_reform = {
 		NOT = { tag = SIL }
 	}
 	trigger = {
+		is_part_of_hre = yes
 		total_development = 75
 	}
 	modifiers = {
@@ -7396,6 +7958,12 @@ tatar_mercenaries_reform = {
 		}
 	}
 	potential = {
+		any_neighbor_country = {
+			has_reform = steppe_horde
+			culture_group = tartar	
+		}
+	}
+	trigger = {
 		any_neighbor_country = {
 			has_reform = steppe_horde
 			culture_group = tartar	
@@ -7548,8 +8116,27 @@ abolish_manrent_reform = {
 	potential = {
 		OR = {
 			primary_culture = scottish
-			accepted_culture = scottish
 			has_reform = abolish_manrent_reform
+			AND = {
+				accepted_culture = scottish
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = scottish
+				}
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = scottish
+			has_reform = abolish_manrent_reform
+			AND = {
+				accepted_culture = scottish
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = scottish
+				}
+			}
 		}
 	}
 	modifiers = {
@@ -7577,6 +8164,12 @@ foreign_formation_regiments_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			primary_culture = russian
+			has_reform = foreign_formation_regiments_reform
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = russian
 			has_reform = foreign_formation_regiments_reform
@@ -7615,6 +8208,13 @@ general_war_commissariat_reform = {
 			has_reform = general_war_commissariat_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = prussian
+			primary_culture = saxon
+			has_reform = general_war_commissariat_reform
+		}
+	}
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_regiment_cost = -0.05
@@ -7641,6 +8241,13 @@ gustavan_artillery_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			primary_culture = swedish
+			accepted_culture = swedish
+			has_reform = gustavan_artillery_reform 
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = swedish
 			accepted_culture = swedish
@@ -7677,9 +8284,15 @@ the_black_guard_reform = {
 			has_reform = the_black_guard_reform 
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = danish 
+			has_reform = the_black_guard_reform 
+		}
+	}
 	modifiers = {
 		mercenary_discipline = 0.05
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	ai = {
 		factor = 100
@@ -7702,6 +8315,12 @@ snaphaner_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			primary_culture = danish 
+			has_reform = snaphaner_reform 
+		}
+	}
+	trigger = {
 		OR = {
 			primary_culture = danish 
 			has_reform = snaphaner_reform 
@@ -7742,6 +8361,10 @@ reorganize_the_imperial_army = {
 		}
 	}
 	trigger = {
+		OR = {
+			primary_culture = austrian 
+			has_reform = reorganize_the_imperial_army
+		}
 	}
 	modifiers = {
 		global_regiment_cost = -0.10
@@ -7770,12 +8393,29 @@ arabian_horses_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = al_misr_arabic
-			accepted_culture = al_misr_arabic			
-			has_reform = arabian_horses_reform 
+			primary_culture = al_misr_arabic			
+			has_reform = arabian_horses_reform
+			AND = {
+				accepted_culture = al_misr_arabic
+				num_of_owned_provinces_with = {
+					value = 1
+					culture = al_misr_arabic
+				}
+			}
 		}
 	}
-	trigger = { 
+	trigger = {
+		OR = {
+			primary_culture = al_misr_arabic			
+			has_reform = arabian_horses_reform
+			AND = {
+				accepted_culture = al_misr_arabic
+				num_of_owned_provinces_with = {
+					value = 5
+					culture = al_misr_arabic
+				}
+			}
+		}
 	}
 	modifiers = {
 		cavalry_flanking = 0.5
@@ -7813,15 +8453,20 @@ pospolite_ruszenie_reform = {
 		NOT = { has_reform = polish_constitutionalism_reform }
 	}
 	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish 
+		}
 	}
 	modifiers = {
 		shock_damage = 0.05
 		cavalry_flanking = 1
 	}
-	custom_attributes = {
-		enables_grand_captain = yes # Free buffed 'request additional manpower'
-		enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
-	}
+	# custom_attributes = {
+		# enables_grand_captain = yes # Free buffed 'request additional manpower'
+		# enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
+	# }
 	ai = {
 		factor = 100
 	}
@@ -7843,6 +8488,14 @@ polish_national_guard_reform = {
 		}
 	}
 	potential = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish 
+		}
+		has_reform = constitution_third_may_reform
+	}
+	trigger = {
 		OR = {
 			tag = POL
 			tag = PLC
@@ -7881,6 +8534,12 @@ henry_reforms_reform = {
 			has_reform = henry_reforms_reform
 		}
 	}
+	trigger = {
+		OR = {
+			primary_culture = english
+			has_reform = henry_reforms_reform
+		}
+	}
 	modifiers = {
 		land_forcelimit_modifier = 0.15
 		naval_forcelimit_modifier = 0.15
@@ -7910,6 +8569,12 @@ redcoats_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			tag = GBR
+			has_reform = redcoats_reform
+		}
+	}
+	trigger = {
 		OR = {
 			tag = GBR
 			has_reform = redcoats_reform
@@ -7952,6 +8617,13 @@ berber_cavalry_reform = {
 		}
 	}
 	trigger = {
+		OR = {
+			AND = {
+				religion_group = muslim
+				culture_group = iberian	
+			}
+			has_reform = berber_cavalry_reform 
+		}
 	}
 	modifiers = {
 		cavalry_power = 0.10
@@ -8122,6 +8794,12 @@ hessian_elite_jaegers_reform = {
 		}
 	}
 	potential = {
+		OR = {
+			has_reform = hessian_elite_jaegers_reform 
+			tag = HES
+		}
+	}
+	trigger = {
 		OR = {
 			has_reform = hessian_elite_jaegers_reform 
 			tag = HES

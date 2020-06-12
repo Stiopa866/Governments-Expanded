@@ -1129,6 +1129,7 @@ nepotism_reform = {
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
+		}
 	}
 	effect = {
 		change_variable = {
@@ -1145,7 +1146,6 @@ nepotism_reform = {
 	modifiers = {
 		candidate_random_bonus = 1
 	}
-
 	custom_attributes = {
 		enables_nepotism = yes
 	}

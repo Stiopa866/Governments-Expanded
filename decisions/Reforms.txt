@@ -87,7 +87,10 @@ country_decisions = {
 	reforms_me_habsburg_monarchy = {
 		major = yes
 		potential ={
-			has_reform = arch_duchy_reform
+			OR = {
+				has_reform = arch_duchy_reform
+				has_reform = austrian_archduchy_reform
+			}
 		}
 		allow = {
 			OR = {
