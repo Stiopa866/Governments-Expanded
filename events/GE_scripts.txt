@@ -4,6 +4,7 @@ country_event = {
 	title = GE_script_events.1.t
 	desc = GE_script_events.1.d
 	picture = WESTERNISATION_eventPicture
+	hidden = yes
 	
 
 	trigger = {

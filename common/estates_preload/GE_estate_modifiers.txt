@@ -15,8 +15,6 @@ estate_peasants = {
 			has_estate = estate_peasants
 		}
 	}
-}
-vassal_tax = {
 	modifier_definition = {
 		key = vassal_tax_modifier
 		trigger = {
