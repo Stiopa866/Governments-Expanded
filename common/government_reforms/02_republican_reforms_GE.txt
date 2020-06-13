@@ -1017,7 +1017,6 @@ andrea_doria_constitution_reform = {
 			was_tag = GEN
 			has_reform = andrea_doria_constitution_reform
 		}
-		NOT = { has_reform = frequent_elections_reform }
 		NOT = {
 			has_reform = pirate_republic_reform
 		}
