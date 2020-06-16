@@ -85,6 +85,8 @@ monarchy = {
 				solar_kingdom_reform
 				despotate_of_serbia_reform
 				serbian_empire_reform
+				#1.13
+				kingdom_of_sicily_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -155,6 +157,9 @@ monarchy = {
 				mint_towns_reform
 				order_of_the_dragon_reform
 				buddhist_nation_reform
+				#1.13
+				angevin_nobles_reform
+				parliament_of_sicily_reform
 			}
 		}
 		bureaucracy = {
@@ -217,6 +222,8 @@ monarchy = {
 				bangyesurok_reform
 				levy_the_thirthieth_reform
 				vlast_voivodes_reform
+				#1.13
+				customs_house_of_apena_sheep_reform
 			}
 		}
 		military_organisation = {
@@ -271,6 +278,9 @@ monarchy = {
 				five_military_force_reform
 				honor_of_thai_kingdoms_reform
 				form_the_vojstatic_reform
+				#1.13
+				almogavars_reform
+				milizia_nationale_reform
 			}
 		}
 		growth_of_administration = {
@@ -321,6 +331,8 @@ monarchy = {
 				korean_bureaucracy_reform
 				decretum_maius_reform
 				grand_logothete_reform
+				#1.13
+				neapolitan_renaissance_reform
 			}
 		}
 		deliberative_assembly = {
@@ -364,12 +376,15 @@ monarchy = {
 				empowered_divine_blood_reform
 				empowered_monastic_militarism_reform
 				empowered_church_councils_reform
+				empowered_imperial_circles_political_reform
 				ghulam_governates_reform
 				grand_council_reform
 				grand_secretariat_reform
 				sultanate_of_women_reform
 				euijung_bu_seosajae_reform
 				tripartum_reform
+				#1.13
+				theatines_reform
 			}
 		}
 		economic_policy = {
@@ -412,6 +427,8 @@ monarchy = {
 				absolutist_administration_reform
 				permanent_regency_reform
 				tanzimat_reforms_reform
+				#1.13
+				constitution_of_melfi_reform
 			}
 		}
 		separation_of_power = {

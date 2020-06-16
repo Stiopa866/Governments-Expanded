@@ -76,7 +76,7 @@ estate_peasants_voting_rights = {
 estate_peasants_conscription = {
 	icon = privilege_monopoly_of_goods_cloth
 	max_absolutism = -5
-	loyalty = -0.20
+	loyalty = -0.15
 	is_valid = {
 	}
 	can_select = {
@@ -85,7 +85,7 @@ estate_peasants_conscription = {
 		add_yearly_manpower = 4
 		add_estate_loyalty = {
 			estate = estate_peasants
-			loyalty = -15
+			loyalty = -10
 		}
 	}
 	on_revoked = {
@@ -97,11 +97,77 @@ estate_peasants_conscription = {
 	benefits = {
 		manpower_recovery_speed = -0.25
 	}
-	cooldown_years = 10
+	cooldown_years = 20
 	on_cooldown_expires = {
 		country_event = { id = GE_privileges.1 }
 	}
 	ai_will_do = { #having the AI use these could lead to an unstoppable downwards spiral if it can't work out how to get rid of them
+		factor = 0
+	}
+}
+
+estate_peasants_fight_the_elite = {
+	icon = privilege_grant_autonomy
+	influence = 0.05
+	max_absolutism = -5
+	on_granted = {
+		custom_tooltip = GE_fight_the_elite_Tooltip
+	}
+	on_revoked = {
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				government = monarchy
+				war_with = root
+			}
+		}
+		modifier = {
+			peasants_loyalty_modifier = 0.1
+			land_morale = 0.05
+		}
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_bear_arms = {
+	icon = privilege_grant_autonomy
+	influence = 0.05
+	max_absolutism = -5
+	is_valid = {
+		has_government_attribute = enables_bear_arms
+	}
+	can_select = {
+		has_government_attribute = enables_bear_arms
+	}
+	modifier_by_land_ownership = {
+		infantry_cost = -0.20
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			global_unrest = 2
+		}
+	}
+	on_granted = {
+		custom_tooltip = GE_bear_arms_Tooltip
+	}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	ai_will_do = {
 		factor = 0
 	}
 }
@@ -203,6 +269,22 @@ estate_nobles_timariot_privilege = {
 		change_estate_land_share = {
 			estate = estate_nobles
 			share = 2.5
+		}
+		capital_scope = {
+			ROOT = {
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+			ROOT = {
+				cavalry = PREV
+			}
+		}
+		capital_scope = {
+			
 		}
 	}
 	on_revoked = {

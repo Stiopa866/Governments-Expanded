@@ -4,7 +4,17 @@
 ##### GE Government Reform Events #####
 on_five_year_pulse_4 = {
 	random_events = {
-		1000 = 0 #BETA
+		2000 = 0
+		
+		200 = peasants_estate_events.1 #Swedish Peasant Estate
+		300 = peasants_estate_events.2
+		200 = peasants_estate_events.3
+		100 = peasants_estate_events.4
+		100 = peasants_estate_events.5
+		100 = peasants_estate_events.6
+	}
+	random_events = {
+		1000 = 0
 			
 		#Monarchy
 		
@@ -81,10 +91,6 @@ on_five_year_pulse_4 = {
 		100 = GE_reform_cycle.50
 		100 = GE_reform_cycle.51 #general_estates
 		100 = GE_reform_cycle.52
-		200 = peasants_estate_events.1 #Swedish Peasant Estate
-		300 = peasants_estate_events.2
-		200 = peasants_estate_events.3
-		150 = peasants_estate_events.4
 		#T6
 		100 = GE_reform_cycle.53 #Letat
 		100 = GE_reform_cycle.54 

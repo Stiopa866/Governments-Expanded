@@ -868,8 +868,28 @@
  grand_logothete_reform: "Grand Logothete"
  grand_logothete_reform_desc: "Originally a position adopted from the Byzantine Empire, the Grand Logothete held a dualist position as both the chief chancellor of the Serbian Empire and the Serbian Despotate, as well as the second highest authority of matters of the Serbian Orthodox Church."
  
+ #1.13
+ empowered_imperial_circles_political_reform: "Empowered Imperial Circles"
+ empowered_imperial_circles_political_reform_desc: "The Imperial Circles were originally military organizations to form the divisions of the imperial armies. Later they became tools for efficient taxation and division, now let us complete the unification by politically uniting our Imperial Circle!"
  
- 
+ kingdom_of_sicily_reform: "Kingdom of Sicily"
+ kingdom_of_sicily_reform_desc: "The Traditions and Laws of the Normans were used as the foundation of the Kingdom of Sicily, further formalized under the German Hohenstaufen dynasty into a highly centralized and absolute monarchy. Upon supporting Antipope Anacletus ll against Pope Innocentus ll, Ruggeru ll was crowned king the new Kingdom of Sicily."
+ angevin_nobles_reform: "Confirm Angevin Nobles"
+ angevin_nobles_reform_desc: "The French Kings on Anjou decided to grant privileges to the noblemen of the Kingdom, and greatly increase their influence over the judicial system to secure their loyalties after their conquest of the Kingdom over the Hohenstaufer Germans."
+ parliament_of_sicily_reform: "Parramentu Sicilianu"
+ parliament_of_sicily_reform_desc: "The sovereignty of the Kingdom of Sicily (12th to 19th century) was assured by the long-lived Parliament based in Palermo. This is why it is considered by several scholars to be the prototype of the modern European state. The Sicilian parliament is considered one of the oldest in the world (together with that of the Isle of Man, Icelandic and Faroese, which however had no deliberative powers, a circumstance that makes the Sicilian Parliament the first in a modern sense): in 1097 there was the first meeting in Mazara del Vallo convened by the Grand Conte Ruggero I of Sicily, of an initially itinerant parliament. But it was in 1130 with the convening of the Curiae generales by Roger II in Palermo, in the Palazzo dei Normanni for the proclamation of the King of Sicily that we can speak of the first parliament in the modern sense."
+ customs_house_of_apena_sheep_reform: "Customs house of Apena Sheep"
+ customs_house_of_apena_sheep_reform_desc: "Originally a Aragonese Custom, the Customs House was a way of organizing the pastorialists of the region and their herds. This Policy, which forced the shepherds to winter in specially designated neapolitan grazing grounds ensured they remained within the grasp of the kingdom. This ensured additional meat and wool for the cities and the merchants, while helping define the exact borders of the kingdom."
+ neapolitan_renaissance_reform: "Neapolitan Renaissance"
+ neapolitan_renaissance_reform_desc: "Under King Alfonso 1, the Kingdom of Sicily truly opened up and let the renaissance flow throughout its courts and cities. The royal court filled up with many great inventors, artists and humanists. The northern influences brought along with Former King Renato 1 proceeded to sprout their roots and further expand the renaissance."
+ theatines_reform: "Theatines"
+ theatines_reform_desc: "In a reaction of the Catholic refoms of the 16th century, the Theatines founded communities all over the italian peninsula, especially in the more traditional south. These communities would, upon taking vows to poverty, obedience and chastity be granted papal blessings and come to fill a influencial and governmental position within the state."
+ constitution_of_melfi_reform: "Constitution of Melfi"
+ constitution_of_melfi_reform_desc: "The Ancient constitution of Melfi has kept our Kingdom prosperous and our monarchs powerfull throughout the ages. Originally based on the customs and laws of the norman kings and later formalized by the german emperors before being the bedrock of spanish rule. these documents have stood the test of time and will continue to form the bedrock of our future!"
+ almogavars_reform: "Almogavars"
+ almogavars_reform_desc: "The heirs of the bloody reconquista are ready to pick up their arms to join yet another bloody struggle against the heretics, heathens or the enemies of any that pay them. Following the end of the peninsular reconquista they spread out over the mediterean in search of loot and stable employment, let us hire these ruthless veterans and fortune seekers for our wars."
+ milizia_nationale_reform: "Milizia Nationale"
+ milizia_nationale_reform_desc: "Who fights better?, a soldier fighting for his pockets, or a soldier fighting for his prince, land and family!. Let us rely on the strenght of our own arms, our own sons and our own banners instead!."
  
  
  
@@ -1012,7 +1032,8 @@
  mechanic_enables_better_grain_yes: "Hwangog: §G+100.0%§! Trade Value in grain producing provinces"
  mechanic_enables_bureaucracy_autonomy_yes: "Bureaucratic Economy: §G+5.0%§! Production Efficiency and National Tax Modifier while we have our §YAverage autonomy above minimum§! under 30"
  mechanic_enables_korean_bureaucracy_yes: "Korean Bureaucracy: §G-5.0%§! Stability Cost Modifier per 1 level of administrative advisor in employ."
- 
+
+ #GE 1.13
  mechanic_enables_mint_towns_yes: "Mint Towns: §G-25.0%§! state maintenance cost in 20+ development provinces."
  
  mechanic_enables_salt_monopoly_yes: "Salt Monopoly: §G+25%§! Goods Produced and Trade Value in salt and naval supplies provinces."
@@ -1034,7 +1055,7 @@
  mechanic_enables_military_governors_yes: "Military Governors: §G250§! Base Manpower and §G10%§! Local Tax Modifier in provinces with forts."
  mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.25§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 
- #GE 1.12 #1.30
+ #GE 1.13 #1.30
  mechanic_enables_noble_diplomats_yes:0 "Noble Diplomats: Unlock the 'Noble Diplomatis' Privilege for the nobility, Giving a §G10%§! Improve relations and a direct relations boost upon granting."
  mechanic_enables_magnate_law_yes: "Magnate Law: Unlocks the 'Magnate Law' Privilege for the Nobility, granting up to §G-2.5§! National Unrest"
  mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain Access to the infamous 'Imperial Knights' Mercenary Company."
@@ -1042,11 +1063,11 @@
  mechanic_enables_timariots_yes: "Timariots: Unlock the 'Timariot Domains' Privilege for the nobility, Giving extra cavalry and governing capacity in trade for land."
  mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra trade goods produced and reduced development cost depending on land ownership."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Unlock the 'Noble Officers' Privilege for the nobility, Giving excellent generals each generation."
-
-
-
-
-
+ mechanic_enables_bear_arms_yes: "Bear Arms: Unlocks the 'Right to Bear Arms' Privilege for the peasants, Giving higher combat efficiency but more dangerous revolts."
+ mechanic_enables_liber_augustalis_yes: "Liber Augustalis: Increase each estate's Loyalty Equilibrium by §Y5%§! while your legitimacy is over §Y90%§!."
+ mechanic_enables_customs_house_yes: "Customs House: §G+25%§! Goods Produced in Wool and Cloth provinces."
+ mechanic_enables_mary_of_the_purity_yes: "Mary of the Purity: §G-0.025§! yearly corruption per Tolerance of the True Faith over 5 up to a maximum of §G-0.10§!."
+ mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heathens."
 
 
 
@@ -1090,19 +1111,25 @@
  estate_peasants_voting_rights_desc: "Peasant having a say in the republic is sure to increase the fervor of republicanism and spread political discourse over the country."
  estate_peasants_conscription: "Peasant Conscription"
  estate_peasants_conscription_desc: "In times of need the peasantry can be called to arms, although this leaves the farms unattended."
+ estate_peasants_fight_the_elite: "Fight the Elite"
+ estate_peasants_fight_the_elite_desc: "fear the peasantry who in their righteous fury will overthrow the oppressive noble classes."
+ estate_peasants_bear_arms: "Right to Bear Arms"
+ estate_peasants_bear_arms_desc: "Where on earth will we find enough bears to give bear arms to all our people?"
+ 
  estate_nobles_diplomatic_privilege: "Noble Diplomats"
  estate_nobles_diplomatic_privilege_desc: "By sending the most noble of nobles to work as our diplomats to our neighbours we can ensure there will be plenty of friends and prestigious meetings to impart our best wishes on them."
  estate_nobles_magnate_law_privilege: "Magnate Law"
  estate_nobles_magnate_law_privilege_desc: "Through the granting of local autonomy we can please and pacify the nobility to the point of them solving most of the local issues on their own accord."
  estate_nobles_timariot_privilege: "Timariot Domains"
  estate_nobles_timariot_privilege_desc: "Granting lands to our mounted warriors to maintain their equipment and their levies is an excellent way of maintaining our military force on the cheap."
- estate_burghers_town_rights: "Town Rights"
- estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
  estate_nobles_noble_officer_privilege: "Noble Officer Privilege"
  estate_nobles_noble_officer_privilege_desc: "Granting The privilege of leadership to the best and brightest of our noble stock will ensure their loyalty and a steady stream of excellent noble generals."
  estate_nobles_grand_captain_privilege: "Levy Captains"
  estate_nobles_grand_captain_privilege_desc: "Time to levy our forces, let us send captains to raise additional forces for our subjects."
- 
+
+ estate_burghers_town_rights: "Town Rights"
+ estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
+
  
  
  #Mercenaries
@@ -1162,6 +1189,8 @@
  GE_Koprulu_Economy_Event:1 "Get §G10%§! Goods produced in every province producing Grain or Livestock."
  GE_diplomatic_privileges_tooltip:1 "Get §G25§! Opinion with all neighbouring nations you're not at war with."
  GE_Grand_Captains_tt:1 "Each vassal gets §G+25%§! Land Force Limit Modifier and §G-10%§! Land Maintenance."
+ GE_fight_the_elite_Tooltip:1 "Get §G+5%§! Morale of Armies while at war with monarchies."
+ GE_bear_arms_Tooltip:1 "Get §R-2§! Global Unrest while under §Y30%§! loyalty from the peasant estate."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

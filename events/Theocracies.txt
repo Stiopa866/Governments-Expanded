@@ -58,7 +58,7 @@ country_event = {
 		NOT = { has_reform = ajuraan_theocracy_reform }
 		NOT = { has_reform = restore_the_davidic_line_reform }
 		NOT = { has_reform = dynastic_theocracy_reform }
-		NOT = { has_reform = empowered_divine_blood_reform }
+		NOT = { has_government_attribute = enables_divine_blood }
 		NOT = { has_country_flag = in_theocracy_heir_selection }
 		has_government_attribute = heir
 	}

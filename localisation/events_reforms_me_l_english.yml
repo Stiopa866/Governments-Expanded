@@ -122,9 +122,9 @@
  
  #Privileges
  GE_privileges.1.t: "New Generation of Draftees"
- GE_privileges.1.d: "Jay Hates writing localization."
- GE_privileges.1.a: "Once more into the breach."
- GE_privileges.1.b: "Let the farmers stay home."
+ GE_privileges.1.d: "March away from the land of our birth,\nto fly a flag in some foreign earth.\nSend away like our fathers before,\nThese colors don't run from cold bloody war."
+ GE_privileges.1.a: "For the Passion, for the glory!"
+ GE_privileges.1.b: "Bring our boys home."
  GE_privileges.2.t: "Foreign Connections"
  GE_privileges.2.d: "Our noble diplomats have returned from their travels and have aquired many friends and allies, both for themselves and in our name."
  GE_privileges.2.a: "Send them out again."
@@ -141,7 +141,6 @@
  GE_privileges.5.d: "We forced captains onto our subjects and forced them to raise large regiments to support us, they demand the captains be send home and their mobilization to be held in their own hands again."
  GE_privileges.5.a: "We NEED those regiments."
  GE_privileges.5.b: "Send them home."
- 
  
  
  GE_electoral_monarchy.1.t: "Imperial Succession"
@@ -689,6 +688,16 @@
  peasants_estate_events.4.d: "A peasant has invented some new production tools to increase productivity. The local inventor has significantly improved our royal domain and it has led to much higher production. He appears highly ambitious and wishes for money to spread his tools and techniques all around the nation."
  peasants_estate_events.4.a: "Appoint him to the royal domain." 
  peasants_estate_events.4.b: "Give him the funds to spread it to the villages!"
+ 
+ peasants_estate_events.5.t: "Peasants Expand into Crown Lands"
+ peasants_estate_events.5.d: "A group of peasants set up shop in a piece of land that is technically part of the crownlands, we could sell them the land or send in the army to kick them out."
+ peasants_estate_events.5.a: "Get the hell off my lawn."
+ peasants_estate_events.5.b: "We didn't use it anyway."
+ 
+ peasants_estate_events.6.t: "Lease comes up"
+ peasants_estate_events.6.d: "The Lease of a piece of land we granted generations ago came up this year, and the land fell back into state hands, but now the locals have started a petition to reclaim the land."
+ peasants_estate_events.6.a: "I suppose we could extend the lease."
+ peasants_estate_events.6.b: "The lease is up."
  
  ###Monarchies##
  

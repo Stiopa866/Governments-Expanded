@@ -850,11 +850,9 @@ country_event = {
 	option = {
 		name = dhimmi_nobles.17.a
 		
-		every_owned_province = {
-			limit = {
-				has_estate = estate_dhimmi
-			}
-			add_local_autonomy = -5
+		change_estate_land_share = {
+			estate = estate_dhimmi
+			share = -1
 		}
 	}
 	
@@ -901,7 +899,7 @@ country_event = {
 		
 		random_owned_province = {
 			limit = {
-				has_estate = estate_dhimmi
+				religion = orthodox
 			}
 			add_base_tax = 1
 		}
@@ -918,9 +916,6 @@ country_event = {
 		OR = {
 			has_reform = dhimmi_nobles_reform
 		}
-		any_owned_province = {
-			has_estate = estate_dhimmi
-		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -932,11 +927,9 @@ country_event = {
 	option = {
 		name = dhimmi_nobles.18.a
 		
-		every_owned_province = {
-			limit = {
-				has_estate = estate_dhimmi
-			}
-			add_unrest = 5
+		change_estate_land_share = {
+			estate = estate_dhimmi
+			share = 1
 		}
 	}
 	
@@ -1192,11 +1185,9 @@ country_event = {
 			name = "Stop_Centralization"
 			duration = 7300
 		}
-		every_owned_province = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_local_autonomy = 25
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 2.5
 		}
 	}
 	

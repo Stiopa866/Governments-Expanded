@@ -335,8 +335,13 @@
  GE_military_governors: "Military Governors"
  GE_church_policy_tolerance: "Pious Church Policy"
  GE_church_policy_missionary: "Zealous Church Policy"
- 
- 
+ GE_Customs_House: "Customs House"
+ GE_Mary_Of_The_Purity_1: "Mary of the Purity"
+ GE_Mary_Of_The_Purity_2: "Mary of the Purity"
+ GE_Mary_Of_The_Purity_3: "Mary of the Purity"
+ GE_Mary_Of_The_Purity_4: "Mary of the Purity"
+ GE_Fury_Of_The_Reconquista: "Fury of the Reconquista"
+ GE_Liber_Augustalis: "Liber Augustalis"
  
  
  

@@ -980,6 +980,7 @@ kingdom_of_jerusalem_reform = {
 	}
 	custom_attributes = {
 		enables_crusader_order = yes
+		enables_divine_blood = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -1281,6 +1282,37 @@ serbian_empire_reform = {
 	}
     ai = {
         factor = 101
+    }
+}
+
+kingdom_of_sicily_reform = {
+    icon = king
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = kingdom_of_sicily_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = kingdom_of_sicily_reform
+		}
+    }
+    modifiers = {
+		max_absolutism = 5
+		global_autonomy = -0.025
+    }
+	custom_attributes = {
+		enables_liber_augustalis = yes #-10% Estate Influence while you are over 90% Legitimacy
+	}
+    ai = {
+        factor = 100
     }
 }
 
@@ -1622,7 +1654,7 @@ growth_signoria_reform = {
 	modifiers = {
 		stability_cost_modifier = -0.15
 		army_tradition = 0.25
-		nobles_influence_modifier = 0.10
+		nobles_influence_modifier = 0.05
 	}
 	ai = {
 		factor = 10
@@ -2147,7 +2179,7 @@ portuguese_cortes_reform = {
 		}
 	}
 	modifiers = {
-		legitimacy = 1
+		legitimacy = 0.5
 		church_loyalty_modifier = 0.05
 		nobles_loyalty_modifier = 0.05
 		burghers_loyalty_modifier = 0.05
@@ -2415,11 +2447,13 @@ junker_class_reform = {
 	}
 	modifiers = {
 		leader_cost = -0.10
+		nobles_influence_modifier = 0.10
+		nobles_loyalty_modifier = 0.05
 	}
-	custom_attributes = {
-		enables_junker_estate = yes
-		enables_disable_noble_estate = yes
-	}
+	# custom_attributes = {
+		# enables_junker_estate = yes
+		# enables_disable_noble_estate = yes
+	# }
 	ai = {
 		factor = 100
 	}
@@ -2744,6 +2778,7 @@ szlachta_authority_reform = {
 	modifiers = {
 		global_unrest = -1
 		manpower_recovery_speed = 0.10
+		nobles_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 100
@@ -2982,12 +3017,11 @@ old_world_privileges_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.10
 		reduced_liberty_desire = 5
-		nobles_loyalty_modifier = 0.15
+		nobles_loyalty_modifier = 0.10
 	}
 	ai = {
 		factor = 10
 	}
-	#15% Noble Loyalty
 }
 
 franconian_salic_law_reform = {
@@ -3033,14 +3067,13 @@ franconian_salic_law_reform = {
 	}
 	modifiers = {
 		legitimacy = -0.5
-		global_manpower_modifier = 0.25
-		cavalry_cost = -0.15
-		nobles_loyalty_modifier = 0.10
+		global_manpower_modifier = 0.20
+		cavalry_cost = -0.10
+		nobles_loyalty_modifier = 0.05
 	}
 	ai = {
 		factor = 50
 	}
-	#Add 10% Noble Influence
 }
 
 arch_marshal_reform = {
@@ -3183,7 +3216,6 @@ turkic_qasilbash_heirs_reform = {
 	modifiers = {
 		missionary_maintenance_cost = -0.25
 		cav_to_inf_ratio = 0.15
-		cavalry_cost = -0.10 #temp -0.10
 	}
 	removed_effect = {
 		change_variable = {
@@ -3292,6 +3324,7 @@ timariot_domains_reform = {
 	}
 	modifiers = {
 		cavalry_cost = -0.10
+		nobles_loyalty_modifier = 0.05
 	}
 	 custom_attributes = {
 		enables_timariots = yes #Unlocks the 'Timariot Governance' Noble Estate Privilege.
@@ -3463,13 +3496,13 @@ buddhist_nation_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Clergy_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -3506,6 +3539,91 @@ buddhist_nation_reform = {
 		factor = 10
 	}
 }
+
+angevin_nobles_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = angevin_nobles_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = angevin_nobles_reform
+		}
+    }
+    modifiers = {
+		state_maintenance_modifier = -0.25
+		nobles_influence_modifier = 0.10
+		nobles_loyalty_modifier = 0.05
+    }
+	custom_attributes = {
+		enables_magnate_law = yes
+	}
+    ai = {
+        factor = 100
+    }
+}
+
+parliament_of_sicily_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = angevin_nobles_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = angevin_nobles_reform
+		}
+    }
+    modifiers = {
+		stability_cost_modifier = -0.15
+		nobles_influence_modifier = -0.10
+    }
+	custom_attributes = {
+		enables_noble_estate = yes
+	}
+	has_parliament = yes
+    ai = {
+        factor = 100
+    }
+}
+
 
 #############################
 ###########Tier3#############
@@ -3582,7 +3700,7 @@ magnate_govenors_reform = {
 		}
 	}
 	modifiers = {
-		governing_capacity = 100
+		governing_capacity_modifier = 0.10
 		state_maintenance_modifier = -0.25
 		nobles_influence_modifier = 0.10
 	}
@@ -3655,7 +3773,6 @@ ulema_guidance_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty
 }
 
 
@@ -3697,7 +3814,6 @@ faith_in_ancestors_spirits_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty #notapplied
 }
 
 histories_of_the_sky_god_reform = {
@@ -3735,7 +3851,6 @@ histories_of_the_sky_god_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty #notapplied
 }
 
 enforced_caste_system_reform = {
@@ -3772,7 +3887,6 @@ enforced_caste_system_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty #notapplied
 }
 
 teaching_of_guru_Sahib_reform = {
@@ -3810,7 +3924,6 @@ teaching_of_guru_Sahib_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty #notapplied
 }
 
 guidance_of_the_dalai_llama_reform = {
@@ -3849,7 +3962,6 @@ guidance_of_the_dalai_llama_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty #notapplied
 }
 
 enlightened_ethical_teachings_reform = {
@@ -3886,14 +3998,13 @@ enlightened_ethical_teachings_reform = {
 	}
 	modifiers = {
         yearly_harmony = 0.15
-		tolerance_own = 1.5
+		tolerance_own = 1
 		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty #notapplied
 }
 
 state_temple_harmonization_reform = {
@@ -3936,7 +4047,6 @@ state_temple_harmonization_reform = {
 	ai = {
 		factor = 1
 	}
-	#10 Clergy Influence and Loyalty#notapplied
 }
 
 diocletian_reforms_reform = {
@@ -4217,7 +4327,7 @@ millet_reform = {
 		}
 	}
 	modifiers = {
-		num_accepted_cultures = 1
+		promote_culture_cost = -0.25
 	}
 	custom_attributes = {
 		enables_millet_system = yes #-1 Unrest and 15% tax in Accepted Cultures
@@ -4335,7 +4445,6 @@ commoner_officials_reform = {
 	ai = {
 		factor = 100
 	}
-	#-10% Noble Influence
 }
 
 imperial_inquisition_reform = {
@@ -4457,9 +4566,9 @@ re_enforce_magdeburg_rights_reform = {
 	modifiers = {
 		trade_efficiency = 0.10
 	}
-	 custom_attributes = {
-		 enables_town_rights = yes #Unlock Burgher Privilege 'Town Rights', +10% Goods Produced and -20% development cost depending on lands.
-	 }
+	custom_attributes = {
+		enables_town_rights = yes #Unlock Burgher Privilege 'Town Rights', +10% Goods Produced and -20% development cost depending on lands.
+	}
 	ai = {
 		factor = 100
 	}
@@ -5118,6 +5227,47 @@ vlast_voivodes_reform = {
 	}
 }
 
+customs_house_of_apena_sheep_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = customs_house_of_apena_sheep_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = customs_house_of_apena_sheep_reform
+		}
+    }
+    modifiers = {
+		development_cost = -0.05
+		governing_capacity_modifier = 0.05
+    }
+	custom_attributes = {
+		enables_customs_house = yes #+25% Goods produced in Wool and Cloth provinces
+	}
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 ###########Tier4#############
 ############################# 
@@ -5417,6 +5567,7 @@ imperial_circles_administration_reform = {
 	}
 	modifiers = {
 		global_unrest = -1
+		accept_vassalization_reasons = 10
 	}
 	custom_attributes = {
 		enables_town_rights = yes #Unlock Burgher Privilege 'Town Rights', +10% Goods Produced and -20% development cost depending on lands.
@@ -5926,7 +6077,8 @@ empowered_of_noble_bearing_reform = {
 	}
 	modifiers = {
 		leader_cost = -0.1
-		#Extra Loyalty
+		nobles_influence_modifier = 0.10
+		nobles_loyalty_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
@@ -6377,6 +6529,44 @@ grand_logothete_reform = {
 	}
 }
 
+neapolitan_renaissance_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = neapolitan_renaissance_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = neapolitan_renaissance_reform
+		}
+    }
+    modifiers = {
+		idea_cost = -0.10
+		global_institution_spread = 0.25
+    }
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 ###########Tier5#############
 ############################# 
@@ -6602,6 +6792,48 @@ empowered_church_councils_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+}
+
+empowered_imperial_circles_political_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		is_part_of_hre = yes
+		OR = {
+			has_reform = imperial_circles_administration_reform
+			has_reform = imperial_circles_reform
+			has_reform = empowered_imperial_circles_political_reform
+		}
+	}
+	trigger = {
+		has_reform = imperial_circles_administration_reform
+		has_reform = imperial_circles_reform
+		NOT = { is_subject = yes}
+	}
+	effect = {
+		every_neighbor_country = {
+			limit = {
+				NOT = {
+					total_development = ROOT
+					total_development = 75
+					is_elector = yes
+					is_subject = yes
+					was_player = yes
+				}
+				primary_culture = ROOT
+			}
+			ROOT = {
+				vassalize = PREV
+			}
+		}
+	}
+	modifiers = {
+		reduced_liberty_desire = 10
+		accept_vassalization_reasons = 15
+	}
+	ai = {
+		factor = 105
 	}
 }
 
@@ -7169,6 +7401,47 @@ tripartum_reform = {
 	}
 }
 
+theatines_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = theatines_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = theatines_reform
+		}
+    }
+    modifiers = {
+		papal_influence = 1
+		global_missionary_strength = 0.02
+    }
+	custom_attributes = {
+		enables_mary_of_the_purity = yes # -0.025 corruption per year per tolerance of the true faith over 4
+	}
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 ###########Tier6#############
 ############################# 
@@ -7430,6 +7703,46 @@ tanzimat_reforms_reform = {
 	}
 }
 
+constitution_of_melfi_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = constitution_of_melfi_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian 
+			has_reform = constitution_of_melfi_reform
+		}
+    }
+    modifiers = {
+		max_absolutism = 5
+		trade_efficiency = 0.05
+		nobles_influence_modifier = -0.05
+		church_influence_modifier = -0.10
+    }
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 ###########Tier7#############
 ############################# 
@@ -7586,10 +7899,8 @@ feudal_levies_reform = {
 		}
 	}
 	potential = { 
-		has_estate = estate_nobles
 	}
 	trigger = {
-		has_estate = estate_nobles
 	}
 	modifiers = {
 		war_taxes_cost_modifier = -1
@@ -7620,14 +7931,12 @@ empowered_heavy_knights_reform = {
 		}
 	}
 	potential = { 
-		has_estate = estate_nobles
 		check_variable = {
 			which = Noble_Influence			
 			value = 2
 		}
 	}
 	trigger = {
-		has_estate = estate_nobles
 		check_variable = {
 			which = Noble_Influence			
 			value = 2
@@ -7660,7 +7969,9 @@ national_guard_reform = {
 			value = -1
 		}
 	}
-	potential = { }
+	potential = { 
+		NOT = { culture_group = latin }
+	}
 	modifiers = {
 		land_morale = 0.05
 		recover_army_morale_speed = 0.1
@@ -7689,6 +8000,7 @@ mercenary_corps_reform = {
 		}
 	}
 	potential = {
+		NOT = {	culture_group = latin }
 	}
 	modifiers = {
 		mercenary_manpower = 0.25
@@ -7934,7 +8246,7 @@ imperial_circles_reform = {
 		total_development = 75
 	}
 	modifiers = {
-		land_forcelimit_modifier = 0.15
+		vassal_forcelimit_bonus = 1
 		land_maintenance_modifier = -0.05
 	}
 	ai = {
@@ -8460,7 +8772,7 @@ pospolite_ruszenie_reform = {
 		}
 	}
 	modifiers = {
-		shock_damage = 0.05
+		shock_damage = 0.10
 		cavalry_flanking = 1
 	}
 	# custom_attributes = {
@@ -9094,6 +9406,88 @@ form_the_vojstatic_reform = {
 	ai = {
 		factor = 100
 	}
+}
+
+almogavars_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			accepted_culture = catalan
+			has_reform = almogavars_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			accepted_culture = catalan
+			has_reform = almogavars_reform
+		}
+    }
+    modifiers = {
+		mercenary_manpower = 0.25
+		spy_offence = 0.10
+    }
+	custom_attributes = {
+		enables_fury_of_the_reconquista = yes #2.5% mercenary discipline and +5% Morale while at war with heathens
+	}
+    ai = {
+        factor = 100
+    }
+}
+
+milizia_nationale_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = latin
+			has_reform = milizia_nationale_reform
+		}
+	}
+    trigger = {
+		OR = {
+			culture_group = latin
+			has_reform = milizia_nationale_reform
+		}
+    }
+    modifiers = {
+		land_morale = 0.10
+		mercenary_manpower = -0.50
+    }
+	custom_attributes = {
+		enables_patriotism = yes
+	}
+    ai = {
+        factor = 10
+    }
 }
 
 #############################

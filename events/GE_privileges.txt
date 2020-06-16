@@ -112,3 +112,24 @@ country_event = {
 		add_prestige = -5
 	}
 }
+
+country_event = {
+	id = GE_privileges.6
+	title = GE_privileges.6.t
+	desc = GE_privileges.6.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = GE_privileges.6.a
+		every_country = {
+			change_government_reform_progress = 5000
+		}
+	}
+}
+ 

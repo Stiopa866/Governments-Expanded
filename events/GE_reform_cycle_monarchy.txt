@@ -462,17 +462,9 @@ country_event = {
 	option = {
 		name = GE_reform_cycle_monarchy.301.b
 		
-		trigger = {
-			any_owned_province = {
-				has_estate = estate_church
-			}
-		}
-		
-		random_owned_province = {
-			limit = {
-				has_estate = estate_church
-			}
-			remove_estate = estate_church
+		change_estate_land_share = {
+			estate = estate_church
+			share = -1
 		}
 	}
 	
