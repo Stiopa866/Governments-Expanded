@@ -14221,6 +14221,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 1
 				}
@@ -14234,6 +14235,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 2
 				}
@@ -14247,6 +14249,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 3
 				}
@@ -14260,6 +14263,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 4
 				}
@@ -14273,6 +14277,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 5
 				}
@@ -14295,6 +14300,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 1
 				}
@@ -14306,6 +14312,7 @@ country_event = {
 								is_vassal = yes
 								is_lesser_in_union = yes
 							}
+							is_part_of_hre = yes
 						}
 						amount = 2
 					}
@@ -14329,6 +14336,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 2
 				}
@@ -14340,6 +14348,7 @@ country_event = {
 								is_vassal = yes
 								is_lesser_in_union = yes
 							}
+							is_part_of_hre = yes
 						}
 						amount = 3
 					}
@@ -14363,6 +14372,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 3
 				}
@@ -14374,6 +14384,7 @@ country_event = {
 								is_vassal = yes
 								is_lesser_in_union = yes
 							}
+							is_part_of_hre = yes
 						}
 						amount = 4
 					}
@@ -14397,6 +14408,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes
 					}
 					amount = 4
 				}
@@ -14408,6 +14420,7 @@ country_event = {
 								is_vassal = yes
 								is_lesser_in_union = yes
 							}
+							is_part_of_hre = yes
 						}
 						amount = 5
 					}
@@ -14431,6 +14444,7 @@ country_event = {
 							is_vassal = yes
 							is_lesser_in_union = yes
 						}
+						is_part_of_hre = yes 
 					}
 					amount = 5
 				}

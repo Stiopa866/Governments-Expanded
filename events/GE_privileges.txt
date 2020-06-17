@@ -133,4 +133,3 @@ country_event = {
 		add_legitimacy = -10
 	}
 }
- 
