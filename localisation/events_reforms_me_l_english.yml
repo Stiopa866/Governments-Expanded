@@ -141,6 +141,10 @@
  GE_privileges.5.d: "We forced captains onto our subjects and forced them to raise large regiments to support us, they demand the captains be send home and their mobilization to be held in their own hands again."
  GE_privileges.5.a: "We NEED those regiments."
  GE_privileges.5.b: "Send them home."
+ GE_privileges.6.t: "Call of the Cortes"
+ GE_privileges.6.d: "Let us hear the call of the Cortes and see what they have to say."
+ GE_privileges.6.a: "Lets play some politics."
+ GE_privileges.6.b: "let them rot."
  
  
  GE_electoral_monarchy.1.t: "Imperial Succession"

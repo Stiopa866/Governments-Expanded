@@ -178,9 +178,9 @@ noble_court_attendance_reform = {
 		prestige = 0.5
 		global_unrest = -1
 	}
-	custom_attributes = {
-		enables_royal_nobles = yes #10% Legitimacy for "Noble Diet"
-	}
+	# custom_attributes = {
+		# enables_royal_nobles = yes #10% Legitimacy for "Noble Diet"
+	# }
 	ai = {
 		factor = 100
 	}

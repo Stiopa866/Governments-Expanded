@@ -896,7 +896,7 @@
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
- mechanic_enables_cortes_yes:0 "Enable The Cortes Interaction in the Noble Estate."
+ mechanic_enables_cortes_yes:0 "Enable The Cortes Privilege for the Noble Estate, Giving influence and resources depending on who to support."
  mechanic_enables_demedici_yes:0 "De'Medici Influence: Corrupt the electoral system."
  mechanic_enables_holy_war_yes:0 "Enables Holy Wars."
  kingdom_of_god_tooltip:0 "Has established the Kingdom of God."
@@ -1000,9 +1000,6 @@
  mechanic_enables_knightly_privileges_yes: "Knightly Privileges: Unlocks 'grant Knightly Privileges' Noble Estate Interaction."
  mechanic_enables_long_reign_yes: "Powerful Reign: After 10 years of ruling, your ruler gains §G-1§! Unrest and §G-25%§! Stability Cost modifier until the end of his reign."
  
- mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' estate interaction for additional land fire damage."
- mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' estate interaction for reduced autonomy."
- mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
  mechanic_enables_eastern_courts_yes: "Heavenly Court: choose between loyalists and incorruptible courtiers upon ruler ascention."
  mechanic_enables_qing_court_yes: "Qing Council : choose the size of your council upon ruler ascention."
  mechanic_enables_custodian_of_cities_yes: "Custodian of the Cities: §G+1§! Prestige if you control both Mecca and Medina, lose §R-2§! prestige and §R-1§! legitimacy if you do not."
@@ -1064,11 +1061,17 @@
  mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra trade goods produced and reduced development cost depending on land ownership."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Unlock the 'Noble Officers' Privilege for the nobility, Giving excellent generals each generation."
  mechanic_enables_bear_arms_yes: "Bear Arms: Unlocks the 'Right to Bear Arms' Privilege for the peasants, Giving higher combat efficiency but more dangerous revolts."
+ mechanic_enables_imperial_circle_yes: "Representative of the Circle: §G+0.5§! Diplomatic Reputation for each HRE prince under your control, up to a maximum of §G2.5§!." 
+ mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' Privilege for the Ghulams for additional land fire damage."
+ mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' Privilege for the Ghulams for reduced autonomy."
+ mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
+ 
+ 
  mechanic_enables_liber_augustalis_yes: "Liber Augustalis: Increase each estate's Loyalty Equilibrium by §Y5%§! while your legitimacy is over §Y90%§!."
  mechanic_enables_customs_house_yes: "Customs House: §G+25%§! Goods Produced in Wool and Cloth provinces."
  mechanic_enables_mary_of_the_purity_yes: "Mary of the Purity: §G-0.025§! yearly corruption per Tolerance of the True Faith over 5 up to a maximum of §G-0.10§!."
  mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heathens."
-
+ 
 
 
  #Edicts
@@ -1116,6 +1119,19 @@
  estate_peasants_bear_arms: "Right to Bear Arms"
  estate_peasants_bear_arms_desc: "Where on earth will we find enough bears to give bear arms to all our people?"
  
+ estate_ghulams_land_rights: "Ghulam Land Rights"
+ estate_ghulams_land_rights_desc: "Imported or captured from the caucasus, granting these men lands and rights will ensure their investment in the country."
+ estate_ghulams_loyalty_privilege: "Ghulam Palace Guards"
+ estate_ghulams_loyalty_privilege_desc: "Granting the Ghulams the right to stand guard and accompany the Sultan means they have ample time to make their requests and worries heard."
+ estate_ghulams_military_corps: "Ghulam Corps"
+ estate_ghulams_military_corps_desc: "Unlike our regular troops that fight primarily from horseback and use bows, these gunpowder armed forces will supplement our regulars in battle and provide artillery support."
+ estate_ghulams_governor_positions: "Governor Positions"
+ estate_ghulams_governor_positions_desc: "The Ghulams have proven more reliable and less corrupt then the local persian nobility, and as such we shall send several of our chosen ghulams to work as governors in highly corrupt and unruly states."
+ estate_ghulams_trade_privileges: "Caucasus Traders"
+ estate_ghulams_trade_privileges_desc: "Having loyal traders that serve the monarch rather then themselves is an excellent way of ensuring the royal treasury doesn't run out of funds."
+ estate_ghulams_councilor: "Ghulam Council"
+ estate_ghulams_councilor_desc: "Allowing Ghulams to join us on the council is a excellent way we can play them against the other estate's councilors, and we are guarenteed no excesses of any faction escapes notice."
+ 
  estate_nobles_diplomatic_privilege: "Noble Diplomats"
  estate_nobles_diplomatic_privilege_desc: "By sending the most noble of nobles to work as our diplomats to our neighbours we can ensure there will be plenty of friends and prestigious meetings to impart our best wishes on them."
  estate_nobles_magnate_law_privilege: "Magnate Law"
@@ -1126,6 +1142,8 @@
  estate_nobles_noble_officer_privilege_desc: "Granting The privilege of leadership to the best and brightest of our noble stock will ensure their loyalty and a steady stream of excellent noble generals."
  estate_nobles_grand_captain_privilege: "Levy Captains"
  estate_nobles_grand_captain_privilege_desc: "Time to levy our forces, let us send captains to raise additional forces for our subjects."
+ estate_nobles_call_cortez: "Call the Cortes"
+ estate_nobles_call_cortez_desc: "The Cortes is a governing body where the king can gain support or influence and hear demands from the estates."
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
@@ -1174,6 +1192,8 @@
  Royal_Influence: "Royal Court Influence"
  peasants_loyalty_modifier: "Peasants Loyalty"
  peasants_influence_modifier: "Peasants Influence"
+ ghulams_loyalty_modifier: "Ghulam Loyalty"
+ ghulams_influence_modifier: "Ghulam Influence"
  vassal_tax_modifier: "Vassal Tax Income"
  
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
@@ -1190,7 +1210,7 @@
  GE_diplomatic_privileges_tooltip:1 "Get §G25§! Opinion with all neighbouring nations you're not at war with."
  GE_Grand_Captains_tt:1 "Each vassal gets §G+25%§! Land Force Limit Modifier and §G-10%§! Land Maintenance."
  GE_fight_the_elite_Tooltip:1 "Get §G+5%§! Morale of Armies while at war with monarchies."
- GE_bear_arms_Tooltip:1 "Get §R-2§! Global Unrest while under §Y30%§! loyalty from the peasant estate."
+ GE_bear_arms_Tooltip:1 "Get §R+2§! Global Unrest while under §Y30%§! loyalty from the peasant estate."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

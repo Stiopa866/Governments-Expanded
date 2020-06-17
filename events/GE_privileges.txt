@@ -122,14 +122,15 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
 	}
 	
 	option = {
 		name = GE_privileges.6.a
-		every_country = {
-			change_government_reform_progress = 5000
-		}
+		reapply_estate_privilege = { privilege = estate_nobles_call_cortez }
+	}
+	option = {
+		name = GE_privileges.6.b
+		add_legitimacy = -10
 	}
 }
  

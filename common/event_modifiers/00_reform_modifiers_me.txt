@@ -719,8 +719,21 @@ GE_Liber_Augustalis = {
 	church_loyalty_modifier = 0.05
 	burghers_loyalty_modifier = 0.05
 }
-	
-	
+GE_Imperial_Circle_1 = {
+	diplomatic_reputation = 0.5
+}
+GE_Imperial_Circle_2 = {
+	diplomatic_reputation = 1.0
+}
+GE_Imperial_Circle_3 = {
+	diplomatic_reputation = 1.5
+}
+GE_Imperial_Circle_4 = {
+	diplomatic_reputation = 2.0
+}
+GE_Imperial_Circle_5 = {
+	diplomatic_reputation = 2.5
+}
 	
 	
 	

@@ -1308,9 +1308,9 @@ kingdom_of_sicily_reform = {
 		max_absolutism = 5
 		global_autonomy = -0.025
     }
-	custom_attributes = {
-		enables_liber_augustalis = yes #-10% Estate Influence while you are over 90% Legitimacy
-	}
+	# custom_attributes = {
+		# enables_liber_augustalis = yes #-10% Estate Influence while you are over 90% Legitimacy
+	# }
     ai = {
         factor = 100
     }
@@ -2180,13 +2180,10 @@ portuguese_cortes_reform = {
 	}
 	modifiers = {
 		legitimacy = 0.5
-		church_loyalty_modifier = 0.05
-		nobles_loyalty_modifier = 0.05
-		burghers_loyalty_modifier = 0.05
 	}
-	#custom_attributes = {
-	#	enables_cortes = yes #pseudoparliament
-	#}
+	custom_attributes = {
+		enables_cortes = yes #pseudoparliament
+	}#fixdis every option is the same
 	ai = {
 		factor = 100
 	}
@@ -6257,8 +6254,8 @@ foreign_ghulams_reform = {
 		}
 	}
 	modifiers = {
-		advisor_cost = -0.10
 		advisor_pool = 1
+		ghulams_influence_modifier = 0.10
 	}
 	removed_effect = {
 		change_variable = {
@@ -6809,28 +6806,14 @@ empowered_imperial_circles_political_reform = {
 	trigger = {
 		has_reform = imperial_circles_administration_reform
 		has_reform = imperial_circles_reform
-		NOT = { is_subject = yes}
-	}
-	effect = {
-		every_neighbor_country = {
-			limit = {
-				NOT = {
-					total_development = ROOT
-					total_development = 75
-					is_elector = yes
-					is_subject = yes
-					was_player = yes
-				}
-				primary_culture = ROOT
-			}
-			ROOT = {
-				vassalize = PREV
-			}
-		}
 	}
 	modifiers = {
 		reduced_liberty_desire = 10
 		accept_vassalization_reasons = 15
+		vassal_tax_modifier = 0.20
+	}
+	custom_attributes = {
+		enables_imperial_circle = yes #+0.5 Diprep per subject hre prince, up to 2.5 maximum
 	}
 	ai = {
 		factor = 105
@@ -7267,10 +7250,11 @@ ghulam_governates_reform = {
 		global_unrest = 1
 		max_absolutism = 5
 		yearly_absolutism = 0.5
+		ghulams_influence_modifier = 0.05
 	}
-	# custom_attributes = {
-		# enables_ghulam_governors = yes
-	# }#fixdis
+	custom_attributes = {
+		enables_ghulam_governors = yes
+	}
 	ai = {
 		factor = 100
 	}
@@ -7905,11 +7889,11 @@ feudal_levies_reform = {
 	modifiers = {
 		war_taxes_cost_modifier = -1
 		nobles_influence_modifier = 0.05
-		vassal_forcelimit_bonus = 2
+		vassal_forcelimit_bonus = 1
 	}
-	# custom_attributes = {
-		# enables_grand_captain = yes #adds a privilege to add 15% land force limit and -10% land maintenance to subjects.
-	# }#fixdis
+	custom_attributes = {
+		enables_marcher_lords = yes #25% vassal force limit and manpower
+	}
 	ai = {
 		factor = 1
 	}
@@ -8072,8 +8056,8 @@ professional_army_reform = {
 	}
 	potential = {}
 	modifiers = {
-		discipline = 0.05
-		mercenary_discipline = -0.25
+		discipline = 0.025
+		mercenary_discipline = -0.05
 		land_maintenance_modifier = 0.10
 	}
 	custom_attributes = {
@@ -9265,6 +9249,7 @@ reforms_of_abbas_reform = {
 	modifiers = {
 		land_forcelimit_modifier = 0.10
 		artillery_cost = -0.10
+		ghulams_influence_modifier = 0.05
 	}
 	removed_effect = {
 		change_variable = {
