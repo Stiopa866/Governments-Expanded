@@ -869,10 +869,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 1
@@ -882,10 +881,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 2
@@ -895,10 +893,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 3
@@ -908,10 +905,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 4
@@ -921,10 +917,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 5
@@ -943,10 +938,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 1
@@ -954,10 +948,9 @@ country_event = {
 				NOT = {
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 						}
 						amount = 2
@@ -977,10 +970,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 2
@@ -988,10 +980,9 @@ country_event = {
 				NOT = { 				
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 						}
 						amount = 3
@@ -1011,10 +1002,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 3
@@ -1022,10 +1012,9 @@ country_event = {
 				NOT = { 				
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 						}
 						amount = 4
@@ -1045,10 +1034,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 4
@@ -1056,10 +1044,9 @@ country_event = {
 				NOT = { 				
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 						}
 						amount = 5
@@ -1079,10 +1066,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 					}
 					amount = 5
@@ -14216,10 +14202,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14230,10 +14215,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14244,10 +14228,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14258,10 +14241,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14272,10 +14254,9 @@ country_event = {
 			AND = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14295,10 +14276,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14307,10 +14287,9 @@ country_event = {
 				NOT = {
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 							is_part_of_hre = yes
 						}
@@ -14331,10 +14310,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14343,10 +14321,9 @@ country_event = {
 				NOT = { 				
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 							is_part_of_hre = yes
 						}
@@ -14367,10 +14344,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14379,10 +14355,9 @@ country_event = {
 				NOT = { 				
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 							is_part_of_hre = yes
 						}
@@ -14403,10 +14378,9 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
 						is_part_of_hre = yes
 					}
@@ -14415,10 +14389,9 @@ country_event = {
 				NOT = { 				
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_march = yes
-								is_vassal = yes
-								is_lesser_in_union = yes
+							NOT = {
+								is_colonial_nation = yes
+								is_subject_of_type = tributary_state
 							}
 							is_part_of_hre = yes
 						}
@@ -14439,12 +14412,11 @@ country_event = {
 			limit = {
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-							is_lesser_in_union = yes
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
 						}
-						is_part_of_hre = yes 
+						is_part_of_hre = yes
 					}
 					amount = 5
 				}

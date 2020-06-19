@@ -479,7 +479,7 @@ weak_burghers_reform = {
 		NOT = { has_reform = french_absolutism }
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -5
+		war_taxes_cost_modifier = -0.5
 		production_efficiency = 0.10
 	}
 	ai = {

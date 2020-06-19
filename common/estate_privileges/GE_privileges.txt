@@ -473,7 +473,56 @@ estate_nobles_noble_officer_privilege = {
 		has_government_attribute = enables_veteran_general
 	}
 	on_granted = {
-		create_general = { tradition = 60 }
+		custom_tooltip = noble_officer_privilege_tooltip
+		if = {
+			limit = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 75
+				}
+			}
+			create_general = { tradition = 120 }
+		}
+		else_if = {
+			limit = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 60
+				}
+			}
+			create_general = { tradition = 100 }
+		}
+		else_if = {
+			limit = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 50
+				}
+			}
+			create_general = { tradition = 80 }
+		}
+		else_if = {
+			limit = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 40
+				}
+			}
+			create_general = { tradition = 60 }
+		}
+		else_if = {
+			limit = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 20
+				}
+			}
+			create_general = { tradition = 40 }
+		}
+		else = {
+			create_general = { tradition = 20 }
+		}
+		
 	}
 	on_revoked = {
 	}

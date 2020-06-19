@@ -133,3 +133,30 @@ country_event = {
 		add_legitimacy = -10
 	}
 }
+
+country_event = {
+	id = GE_privileges.7
+	title = GE_privileges.7.t
+	desc = GE_privileges.7.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+	option = {
+		name = GE_privileges.7.a
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
+	}
+	option = {
+		name = GE_privileges.7.b
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -5
+		}
+	}
+}

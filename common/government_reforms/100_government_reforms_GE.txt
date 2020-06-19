@@ -127,6 +127,7 @@ beylik = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	nation_designer_cost = 0
 	modifiers = {
 		army_tradition = 0.25
 		unjustified_demands = -0.15
@@ -2283,6 +2284,7 @@ council_of_sheikhs_reform = {
 		}
 	}
 	potential = {
+		religion_group = muslim
 		OR = {
 			culture_group = maghrebi
 			has_reform = council_of_sheikhs_reform 
@@ -2293,6 +2295,7 @@ council_of_sheikhs_reform = {
 		}
 	}
 	trigger = {
+		religion_group = muslim
 		OR = {
 			culture_group = maghrebi
 			has_reform = council_of_sheikhs_reform 
@@ -7943,13 +7946,13 @@ national_guard_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Royal_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Royal_Influence
 			value = -1
 		}
 	}
@@ -7973,18 +7976,17 @@ mercenary_corps_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Burgher_Influence
 			value = -1
 		}
 	}
 	potential = {
-		NOT = {	culture_group = latin }
 	}
 	modifiers = {
 		mercenary_manpower = 0.25
@@ -8004,13 +8006,13 @@ empowered_mercenary_corps_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Clergy_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -8057,7 +8059,7 @@ professional_army_reform = {
 	potential = {}
 	modifiers = {
 		discipline = 0.025
-		mercenary_discipline = -0.05
+		mercenary_discipline = -0.10
 		land_maintenance_modifier = 0.10
 	}
 	custom_attributes = {
@@ -8152,8 +8154,8 @@ italian_mercenaries_reform = {
 	}
 	modifiers = {
 		mercenary_discipline = 0.05
+		mercenary_manpower = 0.50
 		war_exhaustion = -0.01
-		possible_condottieri = 0.25
 	}
 	ai = {
 		factor = 10

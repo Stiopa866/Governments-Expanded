@@ -826,7 +826,7 @@
  mint_towns_reform_desc: "Mint Towns were considered the backbone of the economy of the Bengal Sultanate. These towns were usually important centers of trade or provincial capitals at which Taka coins were produced, hence the name Mint Towns. These coins depicted the status of the Bengali economy, the urban and administrative centers of the country, and were generally used as a form of currency. These towns were scattered all across the Bengali realm and played a pivotal role in its production of Taka coins and in administrating the growing kingdom."
  
  order_of_the_dragon_reform: "Order of the Dragon"
- order_of_the_dragon_reform_desc: "The Order of the Dragon was established by Sigismund of Luxembourg, King of Hungary in 1408, and was a highly prestigious knightly order which sought to fight the enemies of christianity, and specifically to drive the ottoman turks from the Balkans and Asia Minor. As patron of this order, our rallying cry can raise armies, even crusades to crush the enemies of Christ!"
+ order_of_the_dragon_reform_desc: "The Order of the Dragon was established by Sigismund of Luxembourg, King of Hungary in 1408, and was a highly prestigious knightly order which sought to fight the enemies of Christianity, and specifically to drive the ottoman turks from the Balkans and Asia Minor. As patron of this order, our rallying cry can raise armies, even crusades to crush the enemies of Christ!"
  levy_the_thirthieth_reform: "Levy the Thirthieth"
  levy_the_thirthieth_reform_desc: "We need to afford a grand and professional army to face the threat at our borders, traditional taxes and feudal tarifs can not grant us the funds we need to defend our borders and nation from the ottoman threat at our southern border. Let us re-establish the 'Thirtieth', the 'duty to the crown' from our subjects so they may help the war effort!"
  decretum_maius_reform: "Decretum Maius"
@@ -1211,6 +1211,7 @@
  GE_Grand_Captains_tt:1 "Each vassal gets §G+25%§! Land Force Limit Modifier and §G-10%§! Land Maintenance."
  GE_fight_the_elite_Tooltip:1 "Get §G+5%§! Morale of Armies while at war with monarchies."
  GE_bear_arms_Tooltip:1 "Get §R+2§! Global Unrest while under §Y30%§! loyalty from the peasant estate."
+ noble_officer_privilege_tooltip:1 "General Skill Scales with Land Ownership."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."
