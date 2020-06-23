@@ -1254,6 +1254,9 @@
  estate_peasants_herd_cattle_desc: "The Peasantry of [agenda_province.GetName] would like to increase their prosperity, and claim that if we improve their infrastructure, many farmers and herders from the surrounding lands will be more likely to settle in [agenda_province.GetName]."
  estate_peasants_expand_lebensraum: "Liberate Peasantry"
  estate_peasants_expand_lebensraum_desc: "The Peasantry of [agenda_province.GetName] cries out for liberation and to be welcomed into our nation where they have proper rights and representation."
+ estate_peasants_build_wood_workshop: "Build Workshop"
+ estate_peasants_build_wood_workshop_desc: "The Peasantry of [agenda_province.GetName] would like to build a workshop in their city, they already cleared out some land and are willing to reward you handsomely!."
+ 
  
  
  GE_federalists: "Federalists"
