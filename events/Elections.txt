@@ -18,7 +18,10 @@ country_event = {
 		trigger = { has_ruler_flag = leader_has_been_pushed_out }
 		desc = elections.700.d
 	}
-	
+	desc = {
+		trigger = { has_country_flag = caretaker_revolutionary_government }
+		desc = elections.700.caretaker
+	}
 	immediate = {
 		hidden_effect = {
 			if = {

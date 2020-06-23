@@ -421,21 +421,17 @@ estate_nobles_timariot_privilege = {
 			estate = estate_nobles
 			share = 2.5
 		}
-		capital_scope = {
-			ROOT = {
-				cavalry = PREV
-				cavalry = PREV
-				cavalry = PREV
+		custom_tooltip = timariot_privileges_tooltip
+		hidden_effect = {
+			capital_scope = {
+				ROOT = {
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+				}
 			}
-			ROOT = {
-				cavalry = PREV
-			}
-			ROOT = {
-				cavalry = PREV
-			}
-		}
-		capital_scope = {
-			
 		}
 	}
 	on_revoked = {
@@ -450,6 +446,7 @@ estate_nobles_timariot_privilege = {
 	}
 	benefits = {
 		governing_capacity = 50
+		cavalry_power = 0.05
 	}
 	cooldown_years = 25
 	on_cooldown_expires = {

@@ -1099,13 +1099,13 @@ republican_authoritarianism_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -1133,13 +1133,13 @@ nepotism_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1169,13 +1169,13 @@ republicanism_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -1305,13 +1305,13 @@ frequent_elections_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -1335,13 +1335,13 @@ consolidation_of_power_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1375,13 +1375,13 @@ lottery_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -1405,13 +1405,13 @@ provincial_governments_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -1419,9 +1419,9 @@ provincial_governments_reform = {
 		state_maintenance_modifier = -0.25
 		development_cost = -0.10
 	}
-	# custom_attributes = {
-		# enables_town_rights = yes
-	# }
+	custom_attributes = {
+		enables_town_rights = yes
+	}
 	ai = {
 		factor = 1
 	}
@@ -1430,6 +1430,18 @@ provincial_governments_reform = {
 consolidate_power_in_doge_reform = {
 	icon = "consolidate_power_in_doge_reform"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = venice_merchants_reform
@@ -1460,6 +1472,18 @@ consolidate_power_in_doge_reform = {
 consolidate_power_in_cities_reform = {
 	icon = "consolidate_power_in_cities_reform"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			has_reform = venice_merchants_reform
@@ -1523,6 +1547,18 @@ national_constituent_reform = {
 provincial_governments_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		state_maintenance_modifier = -0.25
 	}
@@ -1536,13 +1572,13 @@ administrative_divisions_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1585,13 +1621,13 @@ union_of_states_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -1625,13 +1661,13 @@ presidential_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -1654,6 +1690,18 @@ presidential_reform = {
 imperial_diplomacy_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_reform = free_city
 	}
@@ -1685,6 +1733,18 @@ imperial_diplomacy_reform = {
 municipal_self_defense_reform = {
 	icon = "soldiers_7"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_reform = free_city
 	}

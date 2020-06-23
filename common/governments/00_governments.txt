@@ -542,11 +542,12 @@ monarchy = {
 		quash_noble_power_reform
 	}
 
+	#Effects conflict with each other
 	exclusive_reforms = {
 		mughal_government
 		decentralize_reform
 	}
-	
+
 	color = { 179 25 25 }
 }
 
@@ -673,11 +674,12 @@ republic = {
 		}
 		military_organisation = {
 			reforms = {
-				feudal_levies_reform
-				national_guard_reform
-				mercenary_corps_reform
-				professional_army_reform
-				italian_mercenaries_reform
+				feudal_levies_reform_republic
+				national_guard_reform_republic
+				milizia_nationale_reform_republic
+				mercenary_corps_reform_republic
+				professional_army_reform_republic
+				italian_mercenaries_reform_republic
 				imperial_circles_reform
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
@@ -685,6 +687,34 @@ republic = {
 				portugese_marines_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				foreign_formation_regiments_reform
+				general_war_commissariat_reform
+				gustavan_artillery_reform
+				the_black_guard_reform
+				reorganize_the_imperial_army
+				arabian_horses_reform
+				pospolite_ruszenie_reform
+				polish_national_guard_reform
+				henry_reforms_reform
+				berber_cavalry_reform
+				jinetes_reform
+				miquelet_militia_reform
+				royal_ordinances_reform
+				#expand_the_immortals_reform
+				hessian_elite_jaegers_reform
+				warrior_kings_reform
+				snaphaner_reform
+				redcoats_reform
+				recruit_ronin_reform
+				ashigaru_generals_reform
+				wei_suo_reform
+				reforms_of_abbas_reform
+				sherifan_levies_reform
+				restore_the_komnenoid_army_reform
+				jaeseungbangryak_reform
+				five_military_force_reform
+				honor_of_thai_kingdoms_reform
+				form_the_vojstatic_reform
 				reforms_of_william_3_reform
 				reform_the_condotierri_reform
 				turkoman_gunners_reform
@@ -692,6 +722,9 @@ republic = {
 				subotai_lessons_reform
 				peasant_militia_reform
 				russian_republic_army_reform
+				#1.13
+				almogavars_reform
+				republican_guard_reform_republic
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {

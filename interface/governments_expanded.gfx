@@ -724,5 +724,61 @@ spriteTypes = {
 		name = "government_reform_high_king_of_ireland_reform"
 		texturefile = "gfx//interface//government_reform_icons//high_king_of_ireland_reform.dds"
 	}
+	spriteType = {
+		name = "government_reform_serbian_despotate"
+		texturefile = "gfx//interface//government_reform_icons//serbian_despotate.dds"
+	}
+	spriteType = {
+		name = "government_reform_serbian_empire"
+		texturefile = "gfx//interface//government_reform_icons//serbian_empire.dds"
+	}
+	spriteType = {
+		name = "government_reform_serbian_logothete"
+		texturefile = "gfx//interface//government_reform_icons//serbian_logothete.dds"
+	}
+	spriteType = {
+		name = "government_reform_hungarian_decretum_maius"
+		texturefile = "gfx//interface//government_reform_icons//hungarian_decretum_maius.dds"
+	}
+	spriteType = {
+		name = "government_reform_hungarian_order_of_the_dragon"
+		texturefile = "gfx//interface//government_reform_icons//hungarian_order_of_the_dragon.dds"
+	}
+	spriteType = {
+		name = "government_reform_hungarian_tripartum"
+		texturefile = "gfx//interface//government_reform_icons//hungarian_tripartum.dds"
+	}
+	spriteType = {
+		name = "government_reform_sicily_kingdom_of_sicily"
+		texturefile = "gfx//interface//government_reform_icons//sicily_kingdom_of_sicily.dds"
+	}
+	spriteType = {
+		name = "government_reform_sicily_parliament_of_sicily"
+		texturefile = "gfx//interface//government_reform_icons//sicily_parliament_of_sicily.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_sheep_1"
+		texturefile = "gfx//interface//government_reform_icons//GE_sheep_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_sheep_2"
+		texturefile = "gfx//interface//government_reform_icons//GE_sheep_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_latin_militia"
+		texturefile = "gfx//interface//government_reform_icons//latin_militia.dds"
+	}
+	spriteType = {
+		name = "government_reform_catalan_company"
+		texturefile = "gfx//interface//government_reform_icons//catalan_company.dds"
+	}
+	spriteType = {
+		name = "government_reform_theatines"
+		texturefile = "gfx//interface//government_reform_icons//theatines.dds"
+	}
+	spriteType = {
+		name = "government_reform_sicily_melfi"
+		texturefile = "gfx//interface//government_reform_icons//sicily_melfi.dds"
+	}
 }
 

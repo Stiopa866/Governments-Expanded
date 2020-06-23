@@ -134,6 +134,42 @@ beylik = {
 	}
 }
 
+prussian_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = prussian_monarchy
+			have_had_reform = prussian_monarchy
+		}
+	}
+	trigger = {
+		OR = {
+			is_playing_custom_nation = yes
+			religion = protestant
+			religion = reformed
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+}
+
 kingdom_of_castille_and_leon = {
 	icon = castille_leon
 	allow_normal_conversion = yes
@@ -1231,7 +1267,7 @@ solar_kingdom_reform = {
 }
 
 despotate_of_serbia_reform = {
-    icon = king
+    icon = serbian_despotate
     allow_normal_conversion = yes
     valid_for_nation_designer = yes
     nation_designer_cost = 0
@@ -1259,7 +1295,7 @@ despotate_of_serbia_reform = {
 }
 
 serbian_empire_reform = {
-    icon = king_2
+    icon = serbian_empire
     allow_normal_conversion = yes
     valid_for_nation_designer = yes
     nation_designer_cost = 0
@@ -1287,7 +1323,7 @@ serbian_empire_reform = {
 }
 
 kingdom_of_sicily_reform = {
-    icon = king
+    icon = sicily_kingdom_of_sicily
     allow_normal_conversion = yes
     valid_for_nation_designer = yes
     nation_designer_cost = 0
@@ -3449,7 +3485,7 @@ mint_towns_reform = {
 }
 
 order_of_the_dragon_reform = {
-	icon = soldiers
+	icon = hungarian_order_of_the_dragon
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3468,6 +3504,7 @@ order_of_the_dragon_reform = {
 			has_reform = order_of_the_dragon_reform
 			primary_culture = hungarian
 			primary_culture = romanian
+			primary_culture = serbian
 			accepted_culture = hungarian
 		}
 	}
@@ -3476,6 +3513,7 @@ order_of_the_dragon_reform = {
 			has_reform = order_of_the_dragon_reform
 			primary_culture = hungarian
 			primary_culture = romanian
+			primary_culture = serbian
 			accepted_culture = hungarian
 		}
 	}
@@ -3541,7 +3579,7 @@ buddhist_nation_reform = {
 }
 
 angevin_nobles_reform = {
-    icon = king
+    icon = blood_tax
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -3583,7 +3621,7 @@ angevin_nobles_reform = {
 }
 
 parliament_of_sicily_reform = {
-    icon = king
+    icon = sicily_parliament_of_sicily
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -5188,7 +5226,7 @@ levy_the_thirthieth_reform = {
 }
 
 vlast_voivodes_reform = {
-	icon = szlachta_noble_1
+	icon = march
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -5228,7 +5266,7 @@ vlast_voivodes_reform = {
 }
 
 customs_house_of_apena_sheep_reform = {
-    icon = king
+    icon = GE_sheep_2
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -6452,7 +6490,7 @@ roman_senate_reform = {
 }
 
 decretum_maius_reform = {
-	icon = king
+	icon = hungarian_decretum_maius
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -6481,6 +6519,7 @@ decretum_maius_reform = {
 	modifiers = {
 		global_autonomy = -0.025
 		advisor_pool = 1
+		nobles_influence_modifier = -0.10
 	}
 	custom_attributes = {
 		enables_masked_monarch = yes #-0.10 corruption while at peace
@@ -6491,7 +6530,7 @@ decretum_maius_reform = {
 }
 
 grand_logothete_reform = {
-	icon = soldiers
+	icon = serbian_logothete
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -6530,7 +6569,7 @@ grand_logothete_reform = {
 }
 
 neapolitan_renaissance_reform = {
-    icon = king
+    icon = aragon_alfonso
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -7349,7 +7388,7 @@ sultanate_of_women_reform = {
 }
 
 tripartum_reform = {
-	icon = soldiers
+	icon = hungarian_tripartum
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -7389,7 +7428,7 @@ tripartum_reform = {
 }
 
 theatines_reform = {
-    icon = king
+    icon = theatines
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -7691,7 +7730,7 @@ tanzimat_reforms_reform = {
 }
 
 constitution_of_melfi_reform = {
-    icon = king
+    icon = sicily_melfi
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -7987,6 +8026,7 @@ mercenary_corps_reform = {
 		}
 	}
 	potential = {
+		NOT = { culture_group = latin }
 	}
 	modifiers = {
 		mercenary_manpower = 0.25
@@ -8061,6 +8101,7 @@ professional_army_reform = {
 		discipline = 0.025
 		mercenary_discipline = -0.10
 		land_maintenance_modifier = 0.10
+		drill_decay_modifier = -0.20
 	}
 	custom_attributes = {
 		enables_general_guards = yes #+1.25 AP per General
@@ -9396,7 +9437,7 @@ form_the_vojstatic_reform = {
 }
 
 almogavars_reform = {
-    icon = king
+    icon = catalan_company
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {
@@ -9439,7 +9480,7 @@ almogavars_reform = {
 }
 
 milizia_nationale_reform = {
-    icon = king
+    icon = latin_militia
     allow_normal_conversion = yes
 	effect = {
 		change_variable = {

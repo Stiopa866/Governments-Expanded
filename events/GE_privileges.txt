@@ -159,4 +159,7 @@ country_event = {
 			share = -5
 		}
 	}
+	option = {
+		name = GE_privileges.7.c
+	}
 }

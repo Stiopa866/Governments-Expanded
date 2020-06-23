@@ -734,7 +734,26 @@ GE_Imperial_Circle_4 = {
 GE_Imperial_Circle_5 = {
 	diplomatic_reputation = 2.5
 }
-	
+GE_Republican_Guard_1 = {
+	infantry_power = 0.03
+	manpower_recovery_speed = 0.04
+}
+GE_Republican_Guard_2 = {
+	infantry_power = 0.06
+	manpower_recovery_speed = 0.08
+}
+GE_Republican_Guard_3 = {
+	infantry_power = 0.09
+	manpower_recovery_speed = 0.12
+}
+GE_Republican_Guard_4 = {
+	infantry_power = 0.12
+	manpower_recovery_speed = 0.16
+}
+GE_Republican_Guard_5 = {
+	infantry_power = 0.15
+	manpower_recovery_speed = 0.20
+}
 	
 	
 	
@@ -1133,6 +1152,24 @@ GE_Corrupted_Merchants = {
 }
 	
 	
-	
-	
-	
+#####Estate Agendas
+GE_Peasant_Estate_Growth = {
+	trade_goods_size_modifier = 0.25
+}
+GE_Peasant_Estate_Peace = {
+	manpower_recovery_speed = 0.10
+}
+GE_Peasant_Estate_Fervor = {
+	development_cost = -0.05
+}
+GE_Peasant_Estate_Cattle = {
+	local_development_cost = -0.10
+}
+GE_Peasant_Estate_Lebensraum = {
+	local_autonomy = -0.10
+}
+GE_Peasant_Estate_Construct_Workshop = {
+	local_build_cost = -0.10
+}
+
+

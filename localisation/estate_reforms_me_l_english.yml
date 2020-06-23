@@ -830,7 +830,7 @@
  levy_the_thirthieth_reform: "Levy the Thirthieth"
  levy_the_thirthieth_reform_desc: "We need to afford a grand and professional army to face the threat at our borders, traditional taxes and feudal tarifs can not grant us the funds we need to defend our borders and nation from the ottoman threat at our southern border. Let us re-establish the 'Thirtieth', the 'duty to the crown' from our subjects so they may help the war effort!"
  decretum_maius_reform: "Decretum Maius"
- decretum_maius_reform_desc: "By weakening the noble privileges and strenghtening the royal magistrates, we can reduce the amount of local leeway and immunities locals have, and bring it in line with our national laws and privileges!. The Decretium Maius provides our magistrates with the authority to bring such misdeeds to light and with protection from vengeful nobles angered by this uncovering of abuse and unjust privileges. It is rumored our monarch even takes this job upon himself, disguising himself as a magistrate to root our corruption himself."
+ decretum_maius_reform_desc: "By weakening the noble privileges and strenghtening the royal magistrates, we can reduce the amount of local leeway and immunities locals have, and bring it in line with our national laws and privileges! The Decretium Maius provides our magistrates with the authority to bring such misdeeds to light and with protection from vengeful nobles angered by this uncovering of abuse and unjust privileges. It is rumored our monarch even takes this job upon himself, disguising himself as a magistrate to root our corruption himself."
  tripartum_reform: "Tripartum"
  tripartum_reform_desc: "The Tripartum was a core part of the legal corpus of hungary after the Diet of 1514, where the nobles, disgruntled after a series of strong and domineering kings seized power and created a government where the executive power was split equally between the Nobles and the King. In Addition, the nobles did not need to serve in the kings armies unless the kingdom came under attack from a foreign nation. As well as granting them grant legal privileges for their own domains."
  
@@ -890,6 +890,23 @@
  almogavars_reform_desc: "The heirs of the bloody reconquista are ready to pick up their arms to join yet another bloody struggle against the heretics, heathens or the enemies of any that pay them. Following the end of the peninsular reconquista they spread out over the mediterean in search of loot and stable employment, let us hire these ruthless veterans and fortune seekers for our wars."
  milizia_nationale_reform: "Milizia Nationale"
  milizia_nationale_reform_desc: "Who fights better?, a soldier fighting for his pockets, or a soldier fighting for his prince, land and family!. Let us rely on the strenght of our own arms, our own sons and our own banners instead!."
+ 
+ feudal_levies_reform_republic: "Feudal Levies"
+ feudal_levies_reform_republic_desc: "Our military should rely on our feudal subject's contributions. In addition to strengthening our subject's loyalty, we need to increase their military cooperation with their overlord. This will give us a wider selection of recruits."
+ mercenary_corps_reform_republic: "Mercenary Corps"
+ mercenary_corps_reform_republic_desc: "A military should be built on what makes the world run; gold. We should fill our ranks with mercenaries and give them free reign to loot as they please."
+ professional_army_reform_republic: "Professional Army"
+ professional_army_reform_republic_desc: "A well-trained national army is the way to do things right. We must rely on our national forces to do the job right. Loyalty and discipline are the foundations of a state's armies. We cannot entrust the armament of our nation to faithless soldiers of fortune."
+ italian_mercenaries_reform_republic: "Condottieri Contracts"
+ italian_mercenaries_reform_republic_desc: "Well paid mercenaries perform as well as any national army. Relying on them (and lining their pockets with a bit of extra coin) will give us the edge over nations that must rely on their subjects to fight for them."
+ milizia_nationale_reform_republic: "Milizia Nationale"
+ milizia_nationale_reform_republic_desc: "Who fights better?, a soldier fighting for his pockets, or a soldier fighting for his prince, land and family!. Let us rely on the strenght of our own arms, our own sons and our own banners instead!."
+ national_guard_reform_republic: "National Guard"
+ national_guard_reform_republic_desc: "Our great nation needs an army core not of conscripted peasants or of mercenaries fighting for money. Let our army be build from the noble volunteers that willingly risk their lives for the homeland!"
+
+ republican_guard_reform_republic: "Republican Guard"
+ republican_guard_reform_republic_desc: "If we establish a Republican Guard made up of the most dedicated souls of our populace we can be guarenteed of their fervor in battle, and have this elite corps be readily filled among those inspired by our republic!"
+
  
  
  
@@ -1048,7 +1065,7 @@
 
  mechanic_enables_church_policy_yes: "Church Policy: Upon Ascention, pick a policy for your administration."
  mechanic_enables_royal_levies_yes: "Royal Levies: §G+1§! Land Force Limit and §G5%§! Land Force Limit Modifier for each point of military skill of your monarch."
- mechanic_enables_byzantine_administration_yes: "Byzantime Administration: §G-10%§! Administrative Tech cost and §G+0.5§! yearly legitimacy."
+ mechanic_enables_byzantine_administration_yes: "Byzantime Administration: §G-10%§! Administrative Tech cost and §G+0.5§! yearly legitimacy while Byzantium exists."
  mechanic_enables_military_governors_yes: "Military Governors: §G250§! Base Manpower and §G10%§! Local Tax Modifier in provinces with forts."
  mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.25§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 
@@ -1072,7 +1089,7 @@
  mechanic_enables_mary_of_the_purity_yes: "Mary of the Purity: §G-0.025§! yearly corruption per Tolerance of the True Faith over 5 up to a maximum of §G-0.10§!."
  mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heathens."
  
-
+ mechanic_enables_republican_guard_yes: "Guardians of the Republic: §G+3%§! Infantry Combat Ability and §G+4%§! Manpower Recovery Speed for every §Y10§! Republican Tradition over §Y50§!."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1190,6 +1207,9 @@
  Clergy_Influence: "Clergy Court Influence"
  Burgher_Influence: "Burgher Court Influence"
  Royal_Influence: "Royal Court Influence"
+ Populist_Influence: "Populist Court Influence"
+ Plutocrat_Influence: "Plutocrat Court Influence"
+ Oliarch_Influence: "Oliarch Court Influence"
  peasants_loyalty_modifier: "Peasants Loyalty"
  peasants_influence_modifier: "Peasants Influence"
  ghulams_loyalty_modifier: "Ghulam Loyalty"
@@ -1212,6 +1232,7 @@
  GE_fight_the_elite_Tooltip:1 "Get §G+5%§! Morale of Armies while at war with monarchies."
  GE_bear_arms_Tooltip:1 "Get §R+2§! Global Unrest while under §Y30%§! loyalty from the peasant estate."
  noble_officer_privilege_tooltip:1 "General Skill Scales with Land Ownership."
+ timariot_privileges_tooltip:1 "Call Up 5 Cavalry Units in your Capital."
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."
@@ -1219,6 +1240,21 @@
  elections.EVTOPTA7001:1 "[Root.Ruler.GetName] did a good job, and will continue to rule us for a second term."
  elections.EVTOPTB7001:1 "Let us elect the Federalist candidate."
  elections.EVTOPTC7001:1 "Let us elect the Republican candidate."
+ estate_privileges_and_agendas_events.3.GE: "The Proposal of the Peasants."
+ estate_privileges_and_agendas_events.3.GEE: "The Proposal of the Ghulams."
+
+ estate_peasants_develop_grain: "Increase Grain Production in [agenda_province.GetName]." 
+ estate_peasants_develop_grain_desc: "The Peasantry asks us to clear some land for extra farming lands on the outskirts of [agenda_province.GetName]."
+ estate_peasants_harvest_time: "Desire for peace"
+ estate_peasants_harvest_time_desc: "The people have lost fathers, sons and brothers and are tired of war, allow the common people some respite."
+ estate_peasants_harvest_time_tooltip: "Be at Peace for 5 years."
+ estate_peasants_increase_privileges: "Increase Peasant Lands"
+ estate_peasants_increase_privileges_desc: "The Peasants wish for additional lands to be granted to them, so they can settle in other lands and reduce the population pressure."
+ estate_peasants_herd_cattle: "Attract Herders"
+ estate_peasants_herd_cattle_desc: "The Peasantry of [agenda_province.GetName] would like to increase their prosperity, and claim that if we improve their infrastructure, many farmers and herders from the surrounding lands will be more likely to settle in [agenda_province.GetName]."
+ estate_peasants_expand_lebensraum: "Liberate Peasantry"
+ estate_peasants_expand_lebensraum_desc: "The Peasantry of [agenda_province.GetName] cries out for liberation and to be welcomed into our nation where they have proper rights and representation."
+ 
  
  GE_federalists: "Federalists"
  GE_federalists_influence: "Federalist Influence"
@@ -1297,7 +1333,8 @@
  korean_bureaucracy_advisor_3: "Korean Bureaucracy: Advisor Level 3"
  korean_bureaucracy_advisor_4: "Korean Bureaucracy: Advisor Level 4"
  korean_bureaucracy_advisor_5: "Korean Bureaucracy: Advisor Level 5"
-  
+ 
+ 
  check_empowered_requirements_again_title:1 "Empowered Requirements"
  check_empowered_requirements_again_desc:1 "Did you forget what the Empowered Reforms were?, here is a little refresher!"
  reforms_GE_papal_curia_reform_title:1 "Papal Curia"

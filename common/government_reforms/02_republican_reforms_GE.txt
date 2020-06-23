@@ -287,13 +287,13 @@ independence_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -318,13 +318,13 @@ sovereignity_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -352,13 +352,13 @@ demedici_dynasty_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -385,13 +385,13 @@ hanseatic_ties_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -418,13 +418,13 @@ rule_by_consent_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -451,13 +451,13 @@ support_borghese_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -477,13 +477,13 @@ mixed_republic_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -508,13 +508,13 @@ moedernegotie_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -541,13 +541,13 @@ legacy_of_st_ambrose_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -574,13 +574,13 @@ peasant_council_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -606,13 +606,13 @@ princes_of_novogorod_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -641,13 +641,13 @@ factional_elections_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -674,13 +674,13 @@ captain_and_defender_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -704,13 +704,13 @@ vroedschappen_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -736,13 +736,13 @@ reforms_of_william_3_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -766,13 +766,13 @@ reform_the_condotierri_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -797,13 +797,13 @@ peasant_militia_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -829,13 +829,13 @@ russian_republic_army_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -848,26 +848,257 @@ russian_republic_army_reform = {
 	}
 }
 
-communal_territories_reform = {
-	icon = "map_2"
+republican_guard_reform_republic = {
+	icon = "soldiers"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-			has_reform = communal_territories_reform
+		check_variable ={
+			which = Populist_Influence
+			value = 2
 		}
 	}
+	trigger = {
+		check_variable ={
+			which = Populist_Influence
+			value = 2
+		}
+	}
+	modifiers = {
+		drill_gain_modifier = 0.25
+	}
+	custom_attributes = {
+		enables_republican_guard = yes #+3% ICA and 4% Manpower Recovery for each 10 RT over 50
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+feudal_levies_reform_republic = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = -1
+		}
+	}
+	potential = { 
+	}
+	trigger = {
+	}
+	modifiers = {
+		war_taxes_cost_modifier = -1
+		nobles_influence_modifier = 0.05
+		vassal_forcelimit_bonus = 1
+	}
+	custom_attributes = {
+		enables_marcher_lords = yes #25% vassal force limit and manpower
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+national_guard_reform_republic = {
+	icon = national_guard
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
+	potential = { 
+		NOT = { culture_group = latin }
+	}
+	modifiers = {
+		land_morale = 0.05
+		recover_army_morale_speed = 0.1
+	}
+	custom_attributes = {
+		enables_patriotism = yes #+25% Manpower in primary culture provinces
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+milizia_nationale_reform_republic = {
+    icon = latin_militia
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = latin
+			has_reform = milizia_nationale_reform
+		}
+	}
+    trigger = {
+		OR = {
+			culture_group = latin
+			has_reform = milizia_nationale_reform
+		}
+    }
+    modifiers = {
+		land_morale = 0.10
+		mercenary_manpower = -0.50
+    }
+	custom_attributes = {
+		enables_patriotism = yes
+	}
+    ai = {
+        factor = 10
+    }
+}
+
+mercenary_corps_reform_republic = {
+	icon = landsknecht
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	potential = {
+		NOT = { culture_group = latin }
+	}
+	modifiers = {
+		mercenary_manpower = 0.25
+		reinforce_speed = 0.25
+		merc_maintenance_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+italian_mercenaries_reform_republic = {
+	icon = italian_mercenary
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = latin
+			has_reform = italian_mercenaries_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = latin
+			has_reform = italian_mercenaries_reform
+		}
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.50
+		war_exhaustion = -0.01
+	}
+	ai = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_idea_group = plutocratic_ideas
+		}
+	}
+}
+
+professional_army_reform_republic = {
+	icon = "soldiers"
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = -1
+		}
+	}
+	potential = {}
+	modifiers = {
+		discipline = 0.025
+		mercenary_discipline = -0.10
+		land_maintenance_modifier = 0.10
+		drill_decay_modifier = -0.20
+	}
+	custom_attributes = {
+		enables_general_guards = yes #+1.25 AP per General
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+#####Tier 5#####
+
+communal_territories_reform = {
+	icon = "map_2"
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+			has_reform = communal_territories_reform
 		}
 	}
 	modifiers = {
@@ -882,22 +1113,22 @@ communal_territories_reform = {
 volost_colonies_reform = {
 	icon = merchant
 	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = volost_colonies_reform
-			culture_group = east_slavic
-		}
-	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Populist_Influence
 			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = volost_colonies_reform
+			culture_group = east_slavic
 		}
 	}
 	modifiers = {
@@ -921,13 +1152,13 @@ united_indian_companies_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -952,13 +1183,13 @@ confederation_of_cantons_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -985,13 +1216,13 @@ clergical_administration_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Royal_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1026,13 +1257,13 @@ andrea_doria_constitution_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1063,13 +1294,13 @@ the_consigliere_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1096,13 +1327,13 @@ council_of_petitions_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -1130,13 +1361,13 @@ ware_vrijheid_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Populist_Influence
 			value = -1
 		}
 	}
@@ -1158,17 +1389,16 @@ stadholder_reform = {
 			has_reform = pirate_republic_reform
 		}
 	}
-	trigger = { 
-	}
+	trigger = { }
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Oliarch_Influence
 			value = -1
 		}
 	}
@@ -1238,13 +1468,13 @@ hansa_representatives_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}
@@ -1303,13 +1533,13 @@ empowered_aristocratic_courts_reform = {
 	potential = { 
 		has_estate = estate_nobles
 		check_variable = {
-			which = Noble_Influence			
+			which = Oliarch_Influence			
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Noble_Influence			
+			which = Oliarch_Influence			
 			value = 3
 		}
 	}
@@ -1332,13 +1562,13 @@ empowered_sovereign_trade_companies_reform = {
 	allow_normal_conversion = yes
 	potential = { 
 		check_variable = {
-			which = Burgher_Influence			
+			which = Plutocrat_Influence			
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Burgher_Influence			
+			which = Plutocrat_Influence			
 			value = 3
 		}
 	}
@@ -1360,13 +1590,13 @@ empowered_consolidation_of_power_reform = {
 	allow_normal_conversion = yes
 	potential = { 
 		check_variable = {
-			which = Royal_Influence			
+			which = Populist_Influence			
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Royal_Influence			
+			which = Populist_Influence			
 			value = 3
 		}
 	}
@@ -1430,22 +1660,23 @@ empowered_principle_of_heritage_reform = {
 	potential = {
 		has_estate = estate_nobles
 		check_variable = {
-			which = Noble_Influence			
+			which = Oliarch_Influence			
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Noble_Influence			
+			which = Oliarch_Influence			
 			value = 3
 		}
 	}
 	modifiers = {
 		free_mil_policy = 1
+		nobles_loyalty_modifier = 0.05
 	}
-	custom_attributes = {
-		enables_knightly_privileges = yes
-	}
+	# custom_attributes = {
+		# enables_knightly_privileges = yes
+	# }
 	ai = {
 		factor = 1
 	}
@@ -1456,13 +1687,13 @@ empowered_principle_of_profit_reform = {
 	allow_normal_conversion = yes
 	potential = { 
 		check_variable = {
-			which = Burgher_Influence			
+			which = Plutocrat_Influence			
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Burgher_Influence			
+			which = Plutocrat_Influence			
 			value = 3
 		}
 	}
@@ -1483,13 +1714,13 @@ empowered_principle_of_power_reform = {
 	allow_normal_conversion = yes
 	potential = { 
 		check_variable = {
-			which = Royal_Influence			
+			which = Populist_Influence			
 			value = 3
 		}
 	}
 	trigger = {
 		check_variable = {
-			which = Royal_Influence			
+			which = Populist_Influence			
 			value = 3
 		}
 	}

@@ -2073,7 +2073,9 @@ country_event = {
 			influence = 20
 		}
 		change_statists_vs_orangists = -0.33
-	}	option = {
+	}
+	
+	option = {
 		trigger = { has_reform = dutch_republic }
 		name = elections.720.b
 		define_ruler = {
@@ -2084,32 +2086,62 @@ country_event = {
 
 	option = {
 		trigger = { 
-			NOT = { has_reform = dutch_republic } 
-			NOT = { has_reform = crown_of_saint_wenceslaus }
+			NOT = { 
+				OR = { 
+					has_reform = dutch_republic 
+					has_reform = monastic_elections_reform 
+				} 
+			} 
 		}
 		name = elections.720.c
-		define_ruler = {
-			dynasty = "historic_dynasty" # Will pick one weighted by how many rulers a family has had
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+				tag = FRA
+			}
+			define_ruler = {
+				dynasty = "Bonaparte"
+			}
+		}
+		else_if = {
+			limit = {
+				has_reform = feuillant_reform
+				NOT = { tag = FRA }
+			}
+			define_ruler = {
+			}
+		}
+		else = {
+			define_ruler = {
+				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
+			}
+		}
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+			}
+			add_faction_influence = {
+				faction = rr_royalists
+				influence = 20
+			}
 		}
 		change_statists_vs_orangists = 0.33
 	}
+	
 	option = {
-		trigger = {	has_reform = crown_of_saint_wenceslaus }
-		name = elections.720.d
-		define_ruler = {
-			culture = czech
-			dynasty = "historic_dynasty"
-		}
-		change_statists_vs_orangists = 0.33
-	}
-	option = {
-		trigger = {	has_reform = crown_of_saint_wenceslaus }
 		name = elections.720.e
+		trigger = { has_reform = monastic_elections_reform }
 		define_ruler = {
-			culture = czech
-			religion = catholic
 		}
 		change_statists_vs_orangists = -0.33
+	}
+
+	option = {
+		trigger = { has_reform = monastic_elections_reform }
+		name = elections.720.f
+		define_ruler = {
+		}
+		change_statists_vs_orangists = 0.33
 	}
 }
 
@@ -2122,16 +2154,18 @@ country_event = {
 	}
 	
 	desc = {
-		trigger = { 
-			NOT = { has_reform = dutch_republic } 
-			NOT = { has_reform = crown_of_saint_wenceslaus }
-		}
-		desc = elections.721.db
+		trigger = { has_reform = monastic_elections_reform }
+		desc = elections.721.dc
 	}
 	
 	desc = {
-		trigger = {	has_reform = crown_of_saint_wenceslaus }
-		desc = elections.721.dc	
+		trigger = { has_reform = feuillant_reform }
+		desc = elections.721.de
+	}
+	
+	desc = {
+		trigger = { NOT = { has_reform = dutch_republic } }
+		desc = elections.721.db
 	}
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
@@ -2148,13 +2182,41 @@ country_event = {
 	}
 	
 	option = {
-		trigger = { NOT = { has_reform = crown_of_saint_wenceslaus } }
 		name = elections.720.a
+		trigger = { 
+			NOT = { has_reform = monastic_elections_reform }
+			NOT = { has_reform = feuillant_reform }
+		}
 		define_ruler = {
 		}
 		change_statists_vs_orangists = -0.33
 	
 	}
+	
+	option = {
+		trigger = { has_reform = feuillant_reform }
+		name = elections.720.g
+		define_ruler = {
+		}
+		add_faction_influence = {
+			faction = rr_jacobins
+			influence = 20
+		}
+		change_statists_vs_orangists = -0.33
+	}
+	
+	option = {
+		trigger = { has_reform = feuillant_reform }
+		name = elections.720.h
+		define_ruler = {
+		}
+		add_faction_influence = {
+			faction = rr_girondists
+			influence = 20
+		}
+		change_statists_vs_orangists = -0.33
+	}
+	
 	option = {
 		trigger = { has_reform = dutch_republic }
 		name = elections.720.b
@@ -2166,32 +2228,62 @@ country_event = {
 
 	option = {
 		trigger = { 
-			NOT = { has_reform = dutch_republic } 
-			NOT = { has_reform = crown_of_saint_wenceslaus }
+			NOT = { 
+				OR = { 
+					has_reform = dutch_republic 
+					has_reform = monastic_elections_reform 
+				} 
+			} 
 		}
 		name = elections.720.c
-		define_ruler = {
-			dynasty = "historic_dynasty" # Will pick one weighted by how many rulers a family has had
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+				tag = FRA
+			}
+			define_ruler = {
+				dynasty = "Bonaparte"
+			}
+		}
+		else_if = {
+			limit = {
+				has_reform = feuillant_reform
+				NOT = { tag = FRA }
+			}
+			define_ruler = {
+			}
+		}
+		else = {
+			define_ruler = {
+				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
+			}
+		}
+		if = {
+			limit = {
+				has_reform = feuillant_reform
+			}
+			add_faction_influence = {
+				faction = rr_royalists
+				influence = 20
+			}
 		}
 		change_statists_vs_orangists = 0.33
 	}
+	
 	option = {
-		trigger = {	has_reform = crown_of_saint_wenceslaus }
-		name = elections.720.d
-		define_ruler = {
-			culture = czech
-			dynasty = "historic_dynasty"
-		}
-		change_statists_vs_orangists = 0.33
-	}
-	option = {
-		trigger = {	has_reform = crown_of_saint_wenceslaus }
 		name = elections.720.e
+		trigger = { has_reform = monastic_elections_reform }
 		define_ruler = {
-			culture = czech
-			religion = catholic
 		}
 		change_statists_vs_orangists = -0.33
+	}
+
+	option = {
+		trigger = { has_reform = monastic_elections_reform }
+		name = elections.720.f
+		define_ruler = {
+		}
+		change_statists_vs_orangists = 0.33
 	}
 }
 
@@ -2206,13 +2298,15 @@ country_event = {
 	
 	trigger = {
 		has_government_attribute = lottery_election
+		NOT = { has_disaster =  bonfire_of_the_vanities_disaster }
 	}
 	
 	immediate = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_active_policy = mandatory_service
+					republic_with_female_rulers_trigger = yes
+					NOT = { has_country_flag = ven_new_promissione_ducale }
 				}
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_a_@ROOT
@@ -2220,6 +2314,37 @@ country_event = {
 					min_age = 50
 					max_age = 75
 					adm = 2
+					dip = -1
+					mil = -1
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					republic_with_female_rulers_trigger = yes
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_a_@ROOT
+					random_gender = yes
+					min_age = 50
+					max_age = 75
+					adm = 3
+					dip = -1
+					mil = -1
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { republic_with_female_rulers_trigger = yes }
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_a_@ROOT
+					min_age = 50
+					max_age = 75
+					adm = 3
 					dip = -1
 					mil = -1
 					option = 0
@@ -2238,8 +2363,10 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_active_policy = mandatory_service
+					republic_with_female_rulers_trigger = yes
+					NOT = { has_country_flag = ven_new_promissione_ducale }
 				}
+				
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
@@ -2249,6 +2376,37 @@ country_event = {
 					mil = -1
 					random_gender = yes
 					option = 1
+				}
+			}
+			else_if = {
+				limit = {
+					republic_with_female_rulers_trigger = yes
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_b_@ROOT
+					random_gender = yes
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = 3
+					mil = -1
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { republic_with_female_rulers_trigger = yes }
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_b_@ROOT
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = 3
+					mil = -1
+					option = 0
 				}
 			}
 			else = {
@@ -2264,8 +2422,10 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_active_policy = mandatory_service
+					republic_with_female_rulers_trigger = yes
+					NOT = { has_country_flag = ven_new_promissione_ducale }
 				}
+				
 				define_exiled_ruler = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
@@ -2275,6 +2435,37 @@ country_event = {
 					mil = 2
 					random_gender = yes
 					option = 2
+				}
+			}
+			else_if = {
+				limit = {
+					republic_with_female_rulers_trigger = yes
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_c_@ROOT
+					random_gender = yes
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = -1
+					mil = 3
+					option = 0
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { republic_with_female_rulers_trigger = yes }
+					has_country_flag = ven_new_promissione_ducale
+				}
+				define_exiled_ruler = {
+					exiled_as = lottery_candidate_c_@ROOT
+					min_age = 50
+					max_age = 75
+					adm = -1
+					dip = -1
+					mil = 3
+					option = 0
 				}
 			}
 			else = {
@@ -2429,18 +2620,52 @@ country_event = {
 			has_government_attribute = enables_nepotism
 		}
 		ai_chance = { factor = 10 }
-		add_republican_tradition = -15
 		if = {
-			limit = { has_active_policy = mandatory_service }
+			limit = {
+				has_country_flag = strengthened_signoria_flag
+			}
+			custom_tooltip = strengthened_signoria_election_tt
+			clr_country_flag = strengthened_signoria_flag
+		}
+		else = {
+			add_republican_tradition = -15
+		}
+		if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				NOT = { has_reform = signoria_reform }
+			}
 			define_ruler = {
 				min_age = 30
 				max_age = 50
 				mil = -1
 				adm = -1
 				dip = -1
-				age = 30
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				republic_with_female_rulers_trigger = yes
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { republic_with_female_rulers_trigger = yes }
+				has_reform = signoria_reform
+			}
+			define_ruler = {
+				min_age = 30
+				max_age = 50
+				name = "lastname"
 			}
 		}
 		else = {
@@ -2450,7 +2675,6 @@ country_event = {
 				mil = -1
 				adm = -1
 				dip = -1
-				age = 30
 				name = "lastname"
 			}
 		}

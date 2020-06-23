@@ -1059,7 +1059,7 @@ rajput_kingdom = {
 	}
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
-		army_tradition = 0.5
+		army_tradition = 0.25
 	}
 }
 
@@ -1113,6 +1113,10 @@ enforce_privileges_reform = {
 	# }
 	ai = {
 		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { max_manpower = 12 }
+		}
 	}
 }
 
@@ -1120,7 +1124,7 @@ quash_noble_power_reform = {
 	icon = "king_2"
 	allow_normal_conversion = yes
 	potential = {
-	is_revolutionary = no
+		is_revolutionary = no
 		NOT = { tag = KOR }
 	}	
 	effect = {
@@ -1151,6 +1155,10 @@ quash_noble_power_reform = {
 	}
 	ai = {
 		factor = 1
+		modifier = {
+			factor = 1.5
+			is_in_deficit = yes
+		}
 	}
 }
 
@@ -1338,6 +1346,12 @@ imperial_nobility_reform = {
 centralize_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
 	effect = {
 	is_revolutionary = no
 		change_variable = {
@@ -1363,7 +1377,10 @@ decentralize_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
 	potential = {
-		is_revolutionary = no
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
 	}
 	effect = {
 		change_variable = {
@@ -1461,6 +1478,7 @@ clergy_in_administration_reform = {
 	}
 	modifiers = {
 		free_adm_policy = 1
+		
 		brahmins_hindu_influence_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.05
 
@@ -1475,6 +1493,22 @@ clergy_in_administration_reform = {
 	}
 	ai = {
 		factor = 1
+		modifier = {
+			factor = 0.1
+			OR = {
+				AND = {
+					religion = hinduism
+					estate_influence = {
+						estate = estate_brahmins
+						influence = 90
+					}
+				}
+				estate_influence = {
+					estate = estate_church
+					influence = 90
+				}
+			}
+		}
 	}
 }
 
@@ -1491,6 +1525,20 @@ of_noble_bearing_reform = {
 		OR = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = {
+			AND = {
+				has_estate = estate_maratha
+				technology_group = indian
+				NOT = { has_estate = estate_nobles }
+			}
+		}
+		NOT = {
+			AND = {
+				has_estate = estate_rajput
+				technology_group = indian
+				NOT = { has_estate = estate_nobles }
+			}
 		}
 		OR = {
 			NOT = {
@@ -1510,16 +1558,7 @@ of_noble_bearing_reform = {
 				culture_group = baltic
 			}
 		}
-		#NOT = {
-		#	has_estate = estate_maratha
-		#	technology_group = indian
-		#	NOT = { has_estate = estate_nobles }
-		#}
-		#NOT = {
-		#	has_estate = estate_rajput
-		#	technology_group = indian
-		#	NOT = { has_estate = estate_nobles }
-		#}
+
 	}
 	modifiers = {
 		leader_cost = -0.1
@@ -1708,7 +1747,7 @@ aristocratic_court_reform = {
 		NOT = { has_reform = elective_monarchy_reform }
 	}
 	modifiers = {
-		army_tradition_decay = -0.005
+		army_tradition_decay = -0.003
 	}
 	ai = {
 		factor = 1
@@ -1720,10 +1759,7 @@ states_general_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		is_revolutionary = no
-		NOT = { has_reform = elective_monarchy_reform }
-		NOT = { has_reform = english_monarchy }
 	}
-
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
 		is_emperor = no
@@ -1734,7 +1770,7 @@ states_general_reform = {
 	}
 
 	ai = {
-		factor = 0 # ai_chance should never pick this
+		factor = 0 # AI should never pick this
 	}
 
 	removed_effect = {
@@ -1784,8 +1820,13 @@ general_estates_reform = {
 	}
 	ai = {
 		factor = 1
+		modifier = {
+			factor = 1.2
+			production_income_percentage = 0.25
+		}
 	}
 }
+
 legislative_sejm = {
 	icon = "legislative_sejm_reform"
 	allow_normal_conversion = yes

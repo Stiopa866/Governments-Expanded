@@ -78,13 +78,15 @@ monarchy = {
 				despotate_of_caucasia_reform
 				sharifate_reform
 				rum_eagle_reform
-				high_king_of_ireland_reform
+				#high_king_of_ireland_reform
 				hermit_kingdom_reform
 				consulate_of_the_malay
 				basic_reformed_mandala_reform
 				solar_kingdom_reform
 				despotate_of_serbia_reform
 				serbian_empire_reform
+				#1.13
+				kingdom_of_sicily_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -155,6 +157,9 @@ monarchy = {
 				mint_towns_reform
 				order_of_the_dragon_reform
 				buddhist_nation_reform
+				#1.13
+				angevin_nobles_reform
+				parliament_of_sicily_reform
 			}
 		}
 		bureaucracy = {
@@ -217,6 +222,8 @@ monarchy = {
 				bangyesurok_reform
 				levy_the_thirthieth_reform
 				vlast_voivodes_reform
+				#1.13
+				customs_house_of_apena_sheep_reform
 			}
 		}
 		military_organisation = {
@@ -271,6 +278,9 @@ monarchy = {
 				five_military_force_reform
 				honor_of_thai_kingdoms_reform
 				form_the_vojstatic_reform
+				#1.13
+				almogavars_reform
+				milizia_nationale_reform
 			}
 		}
 		growth_of_administration = {
@@ -321,6 +331,8 @@ monarchy = {
 				korean_bureaucracy_reform
 				decretum_maius_reform
 				grand_logothete_reform
+				#1.13
+				neapolitan_renaissance_reform
 			}
 		}
 		deliberative_assembly = {
@@ -364,12 +376,15 @@ monarchy = {
 				empowered_divine_blood_reform
 				empowered_monastic_militarism_reform
 				empowered_church_councils_reform
+				empowered_imperial_circles_political_reform
 				ghulam_governates_reform
 				grand_council_reform
 				grand_secretariat_reform
 				sultanate_of_women_reform
 				euijung_bu_seosajae_reform
 				tripartum_reform
+				#1.13
+				theatines_reform
 			}
 		}
 		economic_policy = {
@@ -412,6 +427,8 @@ monarchy = {
 				absolutist_administration_reform
 				permanent_regency_reform
 				tanzimat_reforms_reform
+				#1.13
+				constitution_of_melfi_reform
 			}
 		}
 		separation_of_power = {
@@ -656,11 +673,12 @@ republic = {
 		}
 		military_organisation = {
 			reforms = {
-				feudal_levies_reform
-				national_guard_reform
-				mercenary_corps_reform
-				professional_army_reform
-				italian_mercenaries_reform
+				feudal_levies_reform_republic
+				national_guard_reform_republic
+				milizia_nationale_reform_republic
+				mercenary_corps_reform_republic
+				professional_army_reform_republic
+				italian_mercenaries_reform_republic
 				imperial_circles_reform
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
@@ -668,6 +686,34 @@ republic = {
 				portugese_marines_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
+				foreign_formation_regiments_reform
+				general_war_commissariat_reform
+				gustavan_artillery_reform
+				the_black_guard_reform
+				reorganize_the_imperial_army
+				arabian_horses_reform
+				pospolite_ruszenie_reform
+				polish_national_guard_reform
+				henry_reforms_reform
+				berber_cavalry_reform
+				jinetes_reform
+				miquelet_militia_reform
+				royal_ordinances_reform
+				#expand_the_immortals_reform
+				hessian_elite_jaegers_reform
+				warrior_kings_reform
+				snaphaner_reform
+				redcoats_reform
+				recruit_ronin_reform
+				ashigaru_generals_reform
+				wei_suo_reform
+				reforms_of_abbas_reform
+				sherifan_levies_reform
+				restore_the_komnenoid_army_reform
+				jaeseungbangryak_reform
+				five_military_force_reform
+				honor_of_thai_kingdoms_reform
+				form_the_vojstatic_reform
 				reforms_of_william_3_reform
 				reform_the_condotierri_reform
 				turkoman_gunners_reform
@@ -675,6 +721,9 @@ republic = {
 				subotai_lessons_reform
 				peasant_militia_reform
 				russian_republic_army_reform
+				#1.13
+				almogavars_reform
+				republican_guard_reform_republic
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -1091,9 +1140,9 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = constitutional_monarchy
 	}
-	enlightened_despotism_reform = {
+	enlightened_despotism = {
 		government = monarchy
-		legacy_government = enlightened_despotism_reform
+		legacy_government = enlightened_despotism
 	}
 	revolutionary_empire = {
 		government = monarchy
@@ -1258,6 +1307,10 @@ pre_dharma_mapping = {
 	tsardom = {
 		government = monarchy
 		legacy_government = tsardom_legacy
+	}
+	pirate_republic_reform = {
+		government = republic
+		legacy_government = pirate_republic
 	}
 	all_mechanics = {
 		government = monarchy

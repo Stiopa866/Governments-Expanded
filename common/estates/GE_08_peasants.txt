@@ -76,7 +76,12 @@ estate_peasants =
 	}
 
 	agendas = {
-		estate_nobles_develop_x
+		estate_peasants_develop_grain
+		estate_peasants_herd_cattle
+		estate_peasants_build_wood_workshop
+		estate_peasants_harvest_time
+		estate_peasants_increase_privileges
+		estate_peasants_expand_lebensraum
 	}
 	
 	influence_from_dev_modifier = 1.0

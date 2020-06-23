@@ -41,13 +41,13 @@ parliamentary_reform = {
 	}
 	effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Burgher_Influence
+			which = Plutocrat_Influence
 			value = -1
 		}
 	}

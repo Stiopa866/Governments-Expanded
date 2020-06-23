@@ -347,8 +347,11 @@
  GE_Imperial_Circle_3: "Imperial Circle"
  GE_Imperial_Circle_4: "Imperial Circle"
  GE_Imperial_Circle_5: "Imperial Circle"
- 
- 
+ GE_Republican_Guard_1: "Republican Guard"
+ GE_Republican_Guard_2: "Republican Guard"
+ GE_Republican_Guard_3: "Republican Guard"
+ GE_Republican_Guard_4: "Republican Guard"
+ GE_Republican_Guard_5: "Republican Guard"
  
  
  
@@ -553,3 +556,11 @@
  EST_VAL_ABBAS_REFORM_LOY:0 "Abbas's Reforms: §Y$VAL$§!"
  #unsorted
  has_adm_advisor_with_skill: "Has Adm Advisor with skill of at least $skill$"
+ 
+ #####Estate Agendas
+ GE_Peasant_Estate_Growth: "Increased Farming Output"
+ GE_Peasant_Estate_Peace: "Recovering from War"
+ GE_Peasant_Estate_Fervor: "Peasant Settlers"
+ GE_Peasant_Estate_Cattle: "Attracted Herders"
+ GE_Peasant_Estate_Lebensraum: "Open Arms"
+ GE_Peasant_Estate_Construct_Workshop: "Supportive Townspeople"
