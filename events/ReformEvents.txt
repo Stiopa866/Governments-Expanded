@@ -6348,8 +6348,8 @@ country_event = {
 		has_government_attribute = enables_no_crown
 		OR = {
 			AND = {
-				all_ally = {
-					NOT = {
+				NOT = {
+					any_ally = {
 						government = monarchy
 					}
 				}

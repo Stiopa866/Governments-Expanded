@@ -1,3 +1,4 @@
+namespace = GE_script_events
 
 country_event = {
 	id = GE_script_events.1

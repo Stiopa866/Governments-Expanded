@@ -23,7 +23,7 @@ estate_peasants_guild_assembly = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = -10
-	loyalty = 0.10
+	loyalty = 0.0
 	influence = 0.15
 	modifier_by_land_ownership = {
 		global_trade_goods_size_modifier = 0.20
@@ -41,7 +41,7 @@ estate_peasants_manpower_drive = {
 	icon = privilege_grant_autonomy
 	land_share = 0
 	max_absolutism = -10
-	loyalty = 0.10
+	loyalty = 0.0
 	influence = 0.05
 	modifier_by_land_ownership = {
 		global_manpower_modifier = 0.25
@@ -76,7 +76,7 @@ estate_peasants_voting_rights = {
 estate_peasants_conscription = {
 	icon = privilege_monopoly_of_goods_cloth
 	max_absolutism = -5
-	loyalty = -0.15
+	loyalty = -0.10
 	is_valid = {
 	}
 	can_select = {
@@ -145,7 +145,8 @@ estate_peasants_bear_arms = {
 		has_government_attribute = enables_bear_arms
 	}
 	modifier_by_land_ownership = {
-		infantry_cost = -0.20
+		infantry_cost = -0.40
+		infantry_power = 0.15
 	}
 	conditional_modifier = {
 		trigger = {

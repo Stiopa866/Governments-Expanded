@@ -5480,7 +5480,6 @@ szlachta_recruits_reform = {
 			culture_group = west_slavic
 			culture_group = baltic
 		}
-		NOT = { primary_culture = czech }
 	}
 	modifiers = {
 		army_tradition_decay = -0.005

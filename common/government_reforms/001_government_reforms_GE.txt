@@ -560,7 +560,7 @@ papal_law_reform = {
 #T1
 
 eghaevbo_administration_reform = {
-	icon = tribal_federation
+	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -816,7 +816,7 @@ tolerance_of_the_church_reform = {
 }
 
 children_of_osanobua_reform = {
-	icon = tribal_federation
+	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1059,7 +1059,7 @@ tatar_raiders_reform = {
 }
 
 warrior_kings_reform = {
-	icon = tribal_federation
+	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
 		OR = {

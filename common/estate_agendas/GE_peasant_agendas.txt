@@ -24,14 +24,6 @@
 estate_peasants_develop_grain = {
 	selection_weight = {
 		factor = 1
-		modifier = {
-			factor = 2
-			any_owned_province = {
-				is_state_core = root
-				trade_goods = grain
-				NOT = { has_province_modifier = GE_Peasant_Estate_Growth }
-			}
-		}
 	}
 	can_select = {
 		any_owned_province = {
@@ -117,14 +109,6 @@ estate_peasants_develop_grain = {
 estate_peasants_herd_cattle = {
 	selection_weight = {
 		factor = 1
-		modifier = {
-			factor = 2
-			any_owned_province = {
-				is_state_core = root
-				trade_goods = livestock
-				NOT = { has_province_modifier = GE_Peasant_Estate_Cattle }
-			}
-		}
 	}
 	can_select = {
 		any_owned_province = {
@@ -397,7 +381,7 @@ estate_peasants_expand_lebensraum = {
 			NOT = { 
 				has_opinion = {
 					who = root
-					value = 25
+					value = 50
 				}
 			}
 			ROOT = {
@@ -426,7 +410,15 @@ estate_peasants_expand_lebensraum = {
 		}
 	}
 	selection_weight = {
-		factor = 1
+		factor = 0.5
+		modifier = {
+			factor = 2
+			army_size_percentage = 0.75
+		}
+		modifier = {
+			factor = 2
+			army_size_percentage = 1
+		}
 	}
 	pre_effect = {
 		random_neighbor_country = {
@@ -438,7 +430,7 @@ estate_peasants_expand_lebensraum = {
 				NOT = { 
 					has_opinion = {
 						who = root
-						value = 25
+						value = 50
 					}
 				}
 				ROOT = {
