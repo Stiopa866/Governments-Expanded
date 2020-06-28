@@ -87,6 +87,7 @@ monarchy = {
 				serbian_empire_reform
 				#1.13
 				kingdom_of_sicily_reform
+				tsardom_of_bulgaria_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -160,6 +161,7 @@ monarchy = {
 				#1.13
 				angevin_nobles_reform
 				parliament_of_sicily_reform
+				nationalized_cetas_reform
 			}
 		}
 		bureaucracy = {
@@ -224,6 +226,7 @@ monarchy = {
 				vlast_voivodes_reform
 				#1.13
 				customs_house_of_apena_sheep_reform
+				krums_code_reform
 			}
 		}
 		military_organisation = {
@@ -333,6 +336,7 @@ monarchy = {
 				grand_logothete_reform
 				#1.13
 				neapolitan_renaissance_reform
+				drastic_control_of_the_boyars_reform
 			}
 		}
 		deliberative_assembly = {

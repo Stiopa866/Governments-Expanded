@@ -1353,6 +1353,34 @@ kingdom_of_sicily_reform = {
     }
 }
 
+tsardom_of_bulgaria_reform = {
+    icon = russian_principality
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = tsardom_of_bulgaria_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = tsardom_of_bulgaria_reform
+		}
+    }
+    modifiers = {
+		max_absolutism = 10
+		yearly_absolutism = 0.5
+		diplomatic_upkeep = 1
+		global_manpower_modifier = 0.10
+    }
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 #######Tier2/Religious#######
 ############################# 
@@ -3662,6 +3690,32 @@ parliament_of_sicily_reform = {
     }
 }
 
+nationalized_cetas_reform = {
+    icon = szlachta
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = nationalized_cetas_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = nationalized_cetas_reform
+		}
+    }
+    modifiers = {
+		hostile_attrition = 1
+		global_manpower_modifier = 0.10
+    }
+    ai = {
+        factor = 100
+    }
+}
+
 
 #############################
 ###########Tier3#############
@@ -5306,6 +5360,35 @@ customs_house_of_apena_sheep_reform = {
     }
 }
 
+krums_code_reform = {
+    icon = constitution
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = krums_code_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = krums_code_reform
+		}
+    }
+    modifiers = {
+		global_unrest = -1
+		stability_cost_modifier = -0.10
+    }
+	custom_attributes = {
+		enables_codified_law = yes
+	}
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 ###########Tier4#############
 ############################# 
@@ -6599,6 +6682,34 @@ neapolitan_renaissance_reform = {
     modifiers = {
 		idea_cost = -0.10
 		global_institution_spread = 0.25
+    }
+    ai = {
+        factor = 100
+    }
+}
+
+drastic_control_of_the_boyars_reform = {
+    icon = szlachta_noble_2
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = drastic_control_of_the_boyars_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = bulgarian
+			has_reform = drastic_control_of_the_boyars_reform
+		}
+    }
+    modifiers = {
+		global_unrest = -1
+		global_manpower_modifier = 0.10
+		nobles_influence_modifier = -0.10
+		nobles_loyalty_modifier = 0.05
     }
     ai = {
         factor = 100

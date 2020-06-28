@@ -907,8 +907,14 @@
  republican_guard_reform_republic: "Republican Guard"
  republican_guard_reform_republic_desc: "If we establish a Republican Guard made up of the most dedicated souls of our populace we can be guarenteed of their fervor in battle, and have this elite corps be readily filled among those inspired by our republic!"
 
- 
- 
+ tsardom_of_bulgaria_reform: "Tsardom of Bulgaria"
+ tsardom_of_bulgaria_reform_desc: "Bulgaria has declared herself a Tsardom in the past, this was due to the genius of Simeon the Great, now that we have gone past his Empire's borders, we can declare a Tsardom in full. Let us bathe in the glory of Bulgaria and show the Europeans what a Bulgar can do"
+ nationalized_cetas_reform: "Nationalized Cetas"
+ nationalized_cetas_reform_desc: "The Shishmanov family showed us that even in death, Bulgaria could terrorize a nation, we should arrange for the prestigious Noble families to train hadjuks just as skillful as the četa so that if any enemy decides to siege Bulgaria, they're met with fierce resistance"
+ krums_code_reform: "Krum's Code"
+ krums_code_reform_desc: ""While we admire our Christian and Slavic culture, the history of Bulgaria is much more confusing than that, we were once ruled by Khans, one particular Khan, Krum, created the first Bulgarian Written Law,  abiding by his code, we would give subsidies to beggars and state protection to the poor, while severely punishing the criminals of Bulgaria""
+ drastic_control_of_the_boyars_reform: "Drastic Control of the Boyars"
+ drastic_control_of_the_boyars_reform_desc: "The Boyars have been an integral part of our country's history for a long time, sadly as the years pass , it has become more and more evident that reforms are necessary. It is not uncommon, that boyars think about revolting against the rightful ruler of Bulgaria, blinded by greed and power. We will take control of some of their land and repurpose it for the benefit of Bulgaria!"
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1209,11 +1215,13 @@
  Royal_Influence: "Royal Court Influence"
  Populist_Influence: "Populist Court Influence"
  Plutocrat_Influence: "Plutocrat Court Influence"
- Oliarch_Influence: "Oliarch Court Influence"
+ Oliarch_Influence: "Oligarch Court Influence"
  peasants_loyalty_modifier: "Peasants Loyalty"
  peasants_influence_modifier: "Peasants Influence"
+ estate_peasants_ownership: "Peasants Land Ownership"
  ghulams_loyalty_modifier: "Ghulam Loyalty"
  ghulams_influence_modifier: "Ghulam Influence"
+ estate_ghulams_ownership: "Ghulams Land Ownership"
  vassal_tax_modifier: "Vassal Tax Income"
  
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
@@ -1256,6 +1264,23 @@
  estate_peasants_expand_lebensraum_desc: "The Peasantry of [agenda_province.GetName] cries out for liberation and to be welcomed into our nation where they have proper rights and representation."
  estate_peasants_build_wood_workshop: "Build Workshop"
  estate_peasants_build_wood_workshop_desc: "The Peasantry of [agenda_province.GetName] would like to build a workshop in their city, they already cleared out some land and are willing to reward you handsomely!."
+ estate_peasants_inspire_peasants: "Stabilize the Republic"
+ estate_peasants_inspire_peasants_desc: "Let us work to stabilize the republic and increase the political engagement of the peasantry."
+ 
+ estate_ghulams_develop_x: "Increase Tax Efficiency in [agenda_province.GetName]."
+ estate_ghulams_develop_x_desc: "We, the Ghulams, kindly request you invest in the province of [agenda_province.GetName], as we think there is much tax revenue to be gained there."
+ estate_ghulams_reduce_autonomy: "Protect Ghulams"
+ estate_ghulams_reduce_autonomy_desc: "The nobility of [agenda_province.GetName] has stubbornly denied our requests to levy taxes on them, and are coming up with all sorts of excuses, crush this insolense."
+ estate_ghulams_increase_absolutism: "Increase Absolutism"
+ estate_ghulams_increase_absolutism_desc: "As your loyal servants, the ghulams wish to increase the power your majesty holds, and to enforce your will onto the state."
+ estate_ghulams_build_courthouse: "Build Courthouse"
+ estate_ghulams_build_courthouse_desc: "The people of [agenda_province.GetName] have requested we bring the Sultan's justice to [agenda_province.GetName], as the local nobility appears to be oppressing the locals and levying additional taxes."
+ estate_ghulams_diversify_court: "Diversify Court"
+ estate_ghulams_diversify_court_desc: "Sire, if you would allow us to usurp a seat on your advisory council we could provide you a counterbalace against the other estates and ensure your will be done."
+ estate_ghulams_expand_artillery: "Expand the Artillery Corps"
+ estate_ghulams_expand_artillery_desc: "Allow us to expand the royal artillery corps by adding new regiments and re-equipping several existing regiments to match the latest advancements in cannonsmithing."
+ estate_ghulams_restore_order: "Restore Order"
+ estate_ghulams_restore_order_desc: "My Liege, we are losing control and respect because of our instable rule and roving bands of bandits and rebels, we must put these down to restore order and your legitimacy."
  
  
  

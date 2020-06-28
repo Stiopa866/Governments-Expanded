@@ -564,3 +564,10 @@
  GE_Peasant_Estate_Cattle: "Attracted Herders"
  GE_Peasant_Estate_Lebensraum: "Open Arms"
  GE_Peasant_Estate_Construct_Workshop: "Supportive Townspeople"
+ GE_Peasant_Estate_Stabilization: "Stabilization"
+ GE_Peasant_Estate_Stabilized: "Stabilized"
+ 
+ GE_Ghulams_Estate_Brought_Justice: "Brought Justice"
+ GE_Ghulams_Estate_Ghulam_Advisors: "Ghulam Advisors"
+ GE_Ghulams_Estate_New_Cannons: "New Cannons"
+ GE_Ghulams_Estate_Order_Restored: "Order Restored"

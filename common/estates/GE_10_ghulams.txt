@@ -63,7 +63,13 @@ estate_ghulams =
 	}
 
 	agendas = {
-		estate_nobles_develop_x
+		estate_ghulams_develop_x
+		estate_ghulams_reduce_autonomy
+		estate_ghulams_increase_absolutism
+		estate_ghulams_build_courthouse
+		estate_ghulams_diversify_court
+		estate_ghulams_expand_artillery#tempbroken
+		estate_ghulams_restore_order
 	}
 	
 	influence_from_dev_modifier = 1.0

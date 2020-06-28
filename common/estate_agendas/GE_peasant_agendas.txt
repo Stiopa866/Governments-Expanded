@@ -561,3 +561,166 @@ estate_peasants_expand_lebensraum = {
 		}
     }
 }
+
+estate_peasants_inspire_peasants = {
+	can_select = {
+		government = republic
+		NOT = {
+			republican_tradition = 90
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { republican_tradition = 75 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { republican_tradition = 50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { republican_tradition = 25 }
+		} 
+	}
+	pre_effect = {
+		ROOT = {
+			if = {
+				limit = {
+					check_variable = {
+						which = country_republican_tradition
+						value = 1
+					}
+				}
+				set_variable = {
+					which = country_republican_tradition
+					value = 0
+				}
+			}
+			if = {
+				limit = {
+					republican_tradition = 85
+				}
+				change_variable = {
+					which = country_republican_tradition
+					value = 6
+				}
+			}
+			else_if = {
+				limit = {
+					republican_tradition = 70
+				}
+				change_variable = {
+					which = country_republican_tradition
+					value = 5
+				}
+			}
+			else_if = {
+				limit = {
+					republican_tradition = 55
+				}
+				change_variable = {
+					which = country_republican_tradition
+					value = 4
+				}
+			}
+			else_if = {
+				limit = {
+					republican_tradition = 40
+				}
+				change_variable = {
+					which = country_republican_tradition
+					value = 3
+				}
+			}
+			else_if = {
+				limit = {
+					republican_tradition = 25
+				}
+				change_variable = {
+					which = country_republican_tradition
+					value = 2
+				}
+			}
+			else = {
+				change_variable = {
+					which = country_republican_tradition
+					value = 1
+				}
+			}
+		}
+	}
+	immediate_effect = {
+		add_country_modifier = {
+			name = GE_Peasant_Estate_Stabilization
+			duration = 7300
+		}
+	}
+	on_invalid = {
+	}
+	provinces_to_highlight = {
+	}
+	task_requirements = {
+		if = { 
+			limit = {
+				check_variable = { which = country_republican_tradition value = 6 }
+			}
+			republican_tradition = 100
+		}
+		else_if = { 
+			limit = {
+				check_variable = { which = country_republican_tradition value = 5 }
+			}
+			republican_tradition = 85
+		}
+		else_if = { 
+			limit = {
+				check_variable = { which = country_republican_tradition value = 4 }
+			}
+			republican_tradition = 70
+		}
+		else_if = { 
+			limit = {
+				check_variable = { which = country_republican_tradition value = 3 }
+			}
+			republican_tradition = 55
+		}
+		else_if = { 
+			limit = {
+				check_variable = { which = country_republican_tradition value = 2 }
+			}
+			republican_tradition = 40
+		}
+		else = { 
+			limit = {
+				check_variable = { which = country_republican_tradition value = 1 }
+			}
+			republican_tradition = 25
+		}
+	}
+	fail_if = {
+		NOT = {
+			has_country_modifier = GE_Peasant_Estate_Stabilization
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 10
+		}
+		remove_country_modifier = GE_Peasant_Estate_Stabilization
+		add_country_modifier = {
+			name = GE_Peasant_Estate_Stabilized
+			duration = 9125
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_peasants
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

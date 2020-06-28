@@ -82,6 +82,7 @@ estate_peasants =
 		estate_peasants_harvest_time
 		estate_peasants_increase_privileges
 		estate_peasants_expand_lebensraum
+		estate_peasants_inspire_peasants
 	}
 	
 	influence_from_dev_modifier = 1.0

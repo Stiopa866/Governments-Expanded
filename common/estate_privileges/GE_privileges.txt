@@ -20,7 +20,7 @@ estate_peasants_land_rights = {
 }
 
 estate_peasants_guild_assembly = {
-	icon = privilege_grant_autonomy
+	icon = privilege_empty_throne
 	land_share = 0
 	max_absolutism = -10
 	loyalty = 0.0
@@ -38,7 +38,7 @@ estate_peasants_guild_assembly = {
 }
 
 estate_peasants_manpower_drive = {
-	icon = privilege_grant_autonomy
+	icon = privilege_demand_more_troops
 	land_share = 0
 	max_absolutism = -10
 	loyalty = 0.0
@@ -57,11 +57,11 @@ estate_peasants_manpower_drive = {
 }
 
 estate_peasants_voting_rights = {
-	icon = privilege_grant_autonomy
+	icon = privilege_recruit_minister
 	land_share = 0
 	max_absolutism = -10
 	loyalty = 0.10
-	influence = 0.25
+	influence = 0.15
 	penalties = {
 		stability_cost_modifier = 0.50
 	}
@@ -74,7 +74,7 @@ estate_peasants_voting_rights = {
 }
 
 estate_peasants_conscription = {
-	icon = privilege_monopoly_of_goods_cloth
+	icon = privilege_demand_more_troops
 	max_absolutism = -5
 	loyalty = -0.10
 	is_valid = {
@@ -107,7 +107,7 @@ estate_peasants_conscription = {
 }
 
 estate_peasants_fight_the_elite = {
-	icon = privilege_grant_autonomy
+	icon = privilege_supply_arms
 	influence = 0.05
 	max_absolutism = -5
 	on_granted = {
@@ -135,7 +135,7 @@ estate_peasants_fight_the_elite = {
 }
 
 estate_peasants_bear_arms = {
-	icon = privilege_grant_autonomy
+	icon = privilege_spawn_rajput_regiments
 	influence = 0.05
 	max_absolutism = -5
 	is_valid = {
@@ -145,7 +145,7 @@ estate_peasants_bear_arms = {
 		has_government_attribute = enables_bear_arms
 	}
 	modifier_by_land_ownership = {
-		infantry_cost = -0.40
+		infantry_cost = -0.35
 		infantry_power = 0.15
 	}
 	conditional_modifier = {
@@ -240,8 +240,8 @@ estate_ghulams_military_corps = {
 }
 
 estate_ghulams_governor_positions = {
-	icon = privilege_promote_purbias
-	max_absolutism = -5
+	icon = privilege_royal_authority
+	max_absolutism = 0
 	loyalty = 0.00
 	influence = 0.05
 	is_valid = {
@@ -299,7 +299,7 @@ estate_ghulams_trade_privileges = {
 }
 
 estate_ghulams_councilor = {
-	icon = privilege_diplo_power
+	icon = privilege_recruit_minister
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.10
@@ -581,7 +581,7 @@ estate_nobles_grand_captain_privilege = {
 }
 
 estate_nobles_call_cortez = {
-	icon = privilege_grant_autonomy
+	icon = privilege_empty_throne
 	land_share = 0
 	max_absolutism = -15
 	loyalty = 0.00
@@ -616,7 +616,7 @@ estate_nobles_call_cortez = {
 ###############Burgher Privileges###############
 
 estate_burghers_town_rights = {
-	icon = privilege_grant_autonomy
+	icon = privilege_monopoly_of_goods_cloth
 	land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
@@ -658,7 +658,7 @@ estate_burghers_town_rights = {
 
 
 
-estate_ghulams_land_rights = {
+estate_ghulams_land_rights_1 = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
