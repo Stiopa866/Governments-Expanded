@@ -570,7 +570,7 @@ eghaevbo_administration_reform = {
 	}
 	modifiers = {
 		core_creation = -0.10
-		max_states = 3
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 100
@@ -589,7 +589,7 @@ great_law_of_peace_reform = {
 	}
 	modifiers = {
 		global_unrest = -2
-		max_states = 3
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 100
@@ -1104,7 +1104,7 @@ iranian_bureacracy_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 5
+		governing_capacity = 250
 		global_autonomy = -0.025
 	}
 	ai = {
@@ -1169,7 +1169,7 @@ bashqaq_administration_reform = {
 	}
 	modifiers = {
 		global_unrest = -2
-		max_states = 5
+		governing_capacity = 250
 	}
 	ai = {
 		factor = 10

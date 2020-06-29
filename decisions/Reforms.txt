@@ -70,6 +70,7 @@ country_decisions = {
 		potential = {
 			culture_group = east_slavic
 			NOT = { has_reform = russian_republic_republic }
+			was_tag = NOV
 		}
 		allow = {
 			tag = RUS
@@ -269,7 +270,7 @@ country_decisions = {
 			owns = 121
 			owns = 112
 			num_of_light_ship = 100
-			1297 = { # Genoa
+			1298 = { # Genoa
 				is_strongest_trade_power = ROOT
 			}
 			1308 = { # Venice

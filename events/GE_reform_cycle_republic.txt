@@ -396,7 +396,7 @@ country_event = {
 		required_personality = righteous_personality
 		}
 		
-		kill_ruler
+		kill_ruler = yes
 		add_republican_tradition = 12
 	}
 }

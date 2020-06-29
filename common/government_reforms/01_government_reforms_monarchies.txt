@@ -1353,12 +1353,10 @@ centralize_reform = {
 		}
 	}
 	effect = {
-	is_revolutionary = no
 		change_variable = {
 			which = Royal_Influence
 			value = 1
 		}
-	}
 	modifiers = {
 		global_autonomy = -0.05
 	}

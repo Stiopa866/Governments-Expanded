@@ -899,7 +899,7 @@ country_event = {
 		
 		random_owned_province = {
 			limit = {
-				religion = orthodox
+				religion_group = christian
 			}
 			add_base_tax = 1
 		}
@@ -2520,9 +2520,12 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				estate = estate_nobles
+				OR = {
+					trade_goods = livestock
+					trade_goods = grain
+				}
 			}
-			add_province_modifier = {
+			add_province_mo	difier = {
 				name = "Properly_Taxed"
 				duration = 9125
 			}
@@ -2576,6 +2579,7 @@ country_event = {
 			}
 			add_local_autonomy = -25
 		}
+		add_prestige = 5
 	}
 	
 	option = {
@@ -2596,6 +2600,7 @@ country_event = {
 	
 	trigger = {
 		has_absolutism_reform_6 = yes
+		is_absolutism_active = yes
 	}
 
 	is_triggered_only = yes #Pulse
@@ -4766,10 +4771,10 @@ country_event = {
 		custom_tooltip = AVAILABLE_BECAUSE_OF_TOLERANCE10
 		trigger = {
 			tolerance_to_this = 10
-			NOT = { has_country_modifier = Divine_Protection }
+			NOT = { has_country_modifier = Divine_Justice  }
 		}
 		add_country_modifier = {
-			name = "Divine_Protection" #	global_unrest = -2,	global_autonomy = -0.1
+			name = "Divine_Justice " #	global_unrest = -2,	global_autonomy = -0.1
 			duration = -1
 		}
 	}

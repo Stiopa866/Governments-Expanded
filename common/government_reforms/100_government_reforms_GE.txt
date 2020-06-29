@@ -1087,6 +1087,7 @@ sharifate_reform = {
 		global_unrest = -1
 		legitimacy = 0.5
 		tolerance_heretic = -3
+		church_influence_modifier = 0.20
 	}
 	custom_attributes = {
 		enables_custodian_of_cities = yes
@@ -1930,7 +1931,6 @@ support_ghibbelline_reform = {
 	}
 	potential = {
 		culture_group = latin
-		is_part_of_hre = yes
 		NOT = { is_year = 1490 }
 	}
 	trigger = {
@@ -2155,7 +2155,6 @@ support_guelphs_reform = {
 	
 	potential = {
 		culture_group = latin
-		is_part_of_hre = yes
 		NOT = { is_year = 1490 }
 	}
 	trigger = {
@@ -7817,7 +7816,7 @@ tanzimat_reforms_reform = {
 	potential = {
 		OR = {
 			primary_culture = turkish
-			has_reform = tanzimat_reform
+			has_reform = tanzimat_reforms_reform
 		}
 	}
 	trigger = {

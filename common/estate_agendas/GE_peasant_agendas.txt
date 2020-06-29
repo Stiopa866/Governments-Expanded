@@ -480,15 +480,17 @@ estate_peasants_expand_lebensraum = {
 				}
 			}
 			event_target:agenda_province = {
-				limit = {
-					NOT = { is_claim = root }
-					NOT = { is_core = root }
-					OR = {
-						trade_goods = livestock
-						trade_goods = grain
+				if = {
+					limit = {
+						NOT = { is_claim = root }
+						NOT = { is_core = root }
+						OR = {
+							trade_goods = livestock
+							trade_goods = grain
+						}
 					}
+					add_claim = root
 				}
-				add_claim = root
 			}
 		}
 	}
@@ -501,11 +503,13 @@ estate_peasants_expand_lebensraum = {
 				}
 			}
 			event_target:agenda_province = {
-				limit = {
-					is_claim = root
-					NOT = { is_permanent_claim = root }
+				if = {
+					limit = {
+						is_claim = root
+						NOT = { is_permanent_claim = root }
+					}
+					remove_claim = root
 				}
-				remove_claim = root
 			}
 		}
 	}
@@ -552,11 +556,13 @@ estate_peasants_expand_lebensraum = {
 				}
 			}
 			event_target:agenda_province = {
-				limit = {
-					is_claim = root
-					NOT = { is_permanent_claim = root }
+				if = {
+					limit = {
+						is_claim = root
+						NOT = { is_permanent_claim = root }
+					}
+					remove_claim = root
 				}
-				remove_claim = root
 			}
 		}
     }

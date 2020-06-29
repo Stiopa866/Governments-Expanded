@@ -72,7 +72,7 @@ russian_republic_republic = {
 	}
 	legacy_equivalent = veche_republic_legacy
 	modifiers = {
-		max_states = 5
+		governing_capacity = 250
 		global_manpower_modifier = 0.20
 		max_absolutism = -30
 	}
@@ -1239,7 +1239,7 @@ clergical_administration_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 3
+		governing_capacity = 150
 		years_of_nationalism = -5
 	}
 	# custom_attributes = {

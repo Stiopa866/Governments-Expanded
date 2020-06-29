@@ -213,7 +213,7 @@ estate_ghulams_reduce_autonomy = {
 
 estate_ghulams_increase_absolutism = {
 	selection_weight = {
-		factor = 1
+		factor = 5
 	}
 	can_select = {
 		absolutism = 1
@@ -264,7 +264,7 @@ estate_ghulams_increase_absolutism = {
 
 estate_ghulams_build_courthouse = {
 	selection_weight = {
-		factor = 1
+		factor = 2
 	}
 	can_select = {
 		adm_tech = 8
@@ -329,7 +329,7 @@ estate_ghulams_build_courthouse = {
 
 estate_ghulams_diversify_court = {
 	selection_weight = {
-		factor = 1
+		factor = 10
 	}
 	can_select = {
 		any_owned_province = {
@@ -387,7 +387,13 @@ estate_ghulams_diversify_court = {
 
 estate_ghulams_expand_artillery = {
 	selection_weight = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 10
+			NOT = {
+				num_of_artillery = 1
+			}
+		}
 	}
 	can_select = {
 		mil_tech = 7

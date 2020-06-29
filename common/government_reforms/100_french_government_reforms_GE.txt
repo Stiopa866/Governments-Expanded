@@ -39,7 +39,7 @@ ancien_regime_reform = {
 	
 	modifiers = {
 		global_autonomy = -0.025
-		max_states = 3
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 100
@@ -65,7 +65,7 @@ french_absolutism = {
 		enables_royal_council = yes 
 	}
 	modifiers = {
-		max_states = 5
+		governing_capacity = 250
 		max_absolutism = 5
 		global_autonomy = -0.05
 		monarch_admin_power = 1

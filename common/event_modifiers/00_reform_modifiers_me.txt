@@ -992,8 +992,8 @@ Decadent_Decay = {
 	global_manpower_modifier = 0.15
 }
 Militarized_Order = {
-	max_states = -3
-	army_tradition = 0.25
+	governing_capacity = -150
+	army_tradition = 0.5
 }
 Ave_Maria = {
 	development_cost = -0.05

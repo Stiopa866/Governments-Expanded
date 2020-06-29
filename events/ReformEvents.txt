@@ -281,7 +281,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 30825
+		days = 1825
 	}
 	
 	immediate = {
@@ -318,7 +318,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 30825
+		days = 1825
 	}
 	
 	immediate = {
@@ -355,7 +355,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 30825
+		days = 1825
 	}
 	
 	immediate = {
@@ -387,7 +387,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 300950
+		days = 10950
 	}
 	
 	option = {
@@ -425,7 +425,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 300950
+		days = 10950
 	}
 	
 	option = {
@@ -461,7 +461,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 300950
+		days = 10950
 	}
 	
 	option = {
@@ -3071,7 +3071,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 304600
+		days = 14600
 	}
 	
 	immediate = {
@@ -3108,7 +3108,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 304600
+		days = 14600
 	}
 	
 	immediate = {
@@ -3147,7 +3147,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 304600 
+		days = 14600
 	}
 	
 	immediate = {

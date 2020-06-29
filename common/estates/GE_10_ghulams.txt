@@ -68,7 +68,7 @@ estate_ghulams =
 		estate_ghulams_increase_absolutism
 		estate_ghulams_build_courthouse
 		estate_ghulams_diversify_court
-		estate_ghulams_expand_artillery#tempbroken
+		estate_ghulams_expand_artillery
 		estate_ghulams_restore_order
 	}
 	
