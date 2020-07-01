@@ -1,6 +1,6 @@
 estate_ghulams =
 {
-	icon = 11
+	icon = 13
 	
 	# If true, country will get estate
 	trigger = {

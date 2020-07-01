@@ -1357,6 +1357,7 @@ centralize_reform = {
 			which = Royal_Influence
 			value = 1
 		}
+	}
 	modifiers = {
 		global_autonomy = -0.05
 	}
