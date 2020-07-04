@@ -1382,6 +1382,37 @@ tsardom_of_bulgaria_reform = {
     }
 }
 
+united_holy_roman_empire_reform = {
+    icon = GE_HRE
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 200
+	potential = {
+		OR = {
+			tag = HRE
+			has_reform = united_holy_roman_empire_reform
+		}
+	}
+    trigger = {
+		OR = {
+			tag = HRE
+			has_reform = united_holy_roman_empire_reform
+		}
+    }
+    modifiers = {
+		governing_capacity = 500
+		accept_vassalization_reasons = 50
+		max_absolutism = 15
+		
+    }
+	custom_attributes = {
+		enables_royal_council = yes
+	}
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 #######Tier2/Religious#######
 ############################# 
@@ -6849,10 +6880,11 @@ empowered_german_aristocratic_court_reform = {
 	}
 	modifiers = {
 		free_leader_pool = 1
+		army_tradition_decay = -0.005
 	}
-	custom_attributes = {
-		enables_junker_estate = yes
-	}
+	# custom_attributes = {
+		# enables_junker_estate = yes
+	# }
 	ai = {
 		factor = 0
 	}
@@ -7725,6 +7757,7 @@ constitution_third_may_reform = {
 			tag = PLC
 			primary_culture = polish
 		}
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 	}
 	modifiers = {
 		global_unrest = -2

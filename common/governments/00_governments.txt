@@ -88,6 +88,7 @@ monarchy = {
 				#1.13
 				kingdom_of_sicily_reform
 				tsardom_of_bulgaria_reform
+				united_holy_roman_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {

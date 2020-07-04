@@ -46,17 +46,22 @@ estate_cossacks = {
 		NOT = { government = native }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
-		is_nomad = no
-		is_colonial_nation = no
-		NOT = { has_reform = celestial_empire }
-		unit_type = eastern
-		religion_group = christian
-		NOT = { has_reform = revolutionary_empire_reform }
 		OR = {
-			has_estate = estate_cossacks
-			any_owned_province = {
-				has_terrain = steppe
+			AND = {
+				is_nomad = no
+				is_colonial_nation = no
+				NOT = { has_reform = celestial_empire }
+				unit_type = eastern
+				religion_group = christian
+				NOT = { has_reform = revolutionary_empire_reform }
+				OR = {
+					has_estate = estate_cossacks
+					any_owned_province = {
+						has_terrain = steppe
+					}
+				}
 			}
+			has_government_attribute = enables_cossack_estate
 		}
 	}
 

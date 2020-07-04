@@ -780,5 +780,9 @@ spriteTypes = {
 		name = "government_reform_sicily_melfi"
 		texturefile = "gfx//interface//government_reform_icons//sicily_melfi.dds"
 	}
+	spriteType = {
+		name = "government_reform_HRE"
+		texturefile = "gfx//interface//government_reform_icons//HRE.dds"
+	}
 }
 
