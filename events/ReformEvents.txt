@@ -9502,6 +9502,30 @@ country_event = {
 		days = 30
 	}
 
+	option = {
+		name = reform_me_events.1401.b
+		country_event = { 
+			id = reform_me_events.1402
+		}
+	}
+	option = {
+		name = reform_me_events.140.c
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.1402
+	title = reform_me_events.1402.t
+	desc = reform_me_events.1402.d
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
 	#option = {
 	#	name = reform_me_events.140.b
 	#	country_event = { 
@@ -9513,6 +9537,7 @@ country_event = {
 		
 	}
 }
+
 
 country_event = {
 	id = reform_me_events.141
