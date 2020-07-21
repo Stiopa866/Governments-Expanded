@@ -60,7 +60,7 @@ lithuania_warlord_duke = {
 	modifiers = {
 		years_of_nationalism = -5
 		promote_culture_cost = -0.5
-		governing_capacity = 200
+		governing_capacity = 100
 	}
 }
 
@@ -107,7 +107,7 @@ theocratic_autocracy = {
 	nation_designer_cost = 100
 	modifiers = {
 		administrative_efficiency = 0.05
-		governing_capacity = 150
+		governing_capacity = 100
 	}
 	custom_attributes = {
 		enables_roman_empire = yes #Co-Emperor Mechanic
@@ -237,7 +237,7 @@ hispanic_kingdom = {
 	nation_designer_cost = 25
 	modifiers = {
 		tolerance_own = 1
-		governing_capacity = 150
+		governing_capacity = 100
 	}
 	custom_attributes = {
 		enables_crown_of_aragon = yes #25% Autonomy in Aragonese Provinces
@@ -266,7 +266,7 @@ enlightened_despotism_reform = {
 		max_absolutism = 5
 		build_cost = -0.15
 		prestige = 1
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	custom_attributes = {
 		enables_royal_council = yes 
@@ -582,7 +582,7 @@ habsburg_monarchy_reform = {
 	modifiers = {
 		tolerance_own = 1
 		mil_advisor_cost = -0.15
-		governing_capacity = 150
+		governing_capacity = 100
 	}
 	custom_attributes = {
 		enables_religious_domination = yes #+1 tolerance of the true faith in catholic subjects
@@ -618,7 +618,7 @@ austrian_empire_reform = {
 	modifiers = {
 		harsh_treatment_cost = -0.15
 		monarch_diplomatic_power = 1
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	custom_attributes = {
 		enables_germanization = yes
@@ -720,8 +720,7 @@ hessian_militarized_monarchy_reform = {
 	modifiers = {
 		yearly_army_professionalism = 0.0025
 		discipline = 0.025 
-		possible_mercenaries = -0.75
-		possible_condottieri = 2
+		mercenary_discipline = -0.05
 	}
 	custom_attributes = {
 		enables_patriotism = yes
@@ -749,9 +748,8 @@ hessian_modern_militarized_monarchy_reform = {
 	modifiers = {
 		yearly_army_professionalism = 0.005
 		discipline = 0.05
-		possible_mercenaries = -1.25
+		mercenary_discipline = -0.10
 		monarch_military_power = 1
-		possible_condottieri = 5
 	}
 	custom_attributes = {
 		enables_patriotism = yes
@@ -899,7 +897,7 @@ edo_empire_reform = {
 	modifiers = {
 		global_unrest = -2
 		max_absolutism = 5
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 100
@@ -1223,7 +1221,7 @@ basic_reformed_mandala_reform = {
 	}
 	modifiers = {
 		vassal_forcelimit_bonus = 1
-		governing_capacity = 100
+		governing_capacity = 50
 		reduced_liberty_desire_on_same_continent = 5
 	}
 	custom_attributes = {
@@ -1255,7 +1253,7 @@ solar_kingdom_reform = {
     }
     modifiers = {
 		vassal_forcelimit_bonus = 2 
-		governing_capacity = 250
+		governing_capacity = 150
 		diplomatic_upkeep = 1 
     }
 	custom_attributes = {
@@ -1345,6 +1343,7 @@ kingdom_of_sicily_reform = {
     modifiers = {
 		max_absolutism = 5
 		global_autonomy = -0.025
+		primary_development_cost = 0.10
     }
 	# custom_attributes = {
 		# enables_liber_augustalis = yes #-10% Estate Influence while you are over 90% Legitimacy
@@ -1389,20 +1388,21 @@ united_holy_roman_empire_reform = {
     nation_designer_cost = 200
 	potential = {
 		OR = {
-			tag = HRE
+			tag = HLR
 			has_reform = united_holy_roman_empire_reform
 		}
 	}
     trigger = {
 		OR = {
-			tag = HRE
+			tag = HLR
+			tag = HLR
 			has_reform = united_holy_roman_empire_reform
 		}
     }
     modifiers = {
-		governing_capacity = 500
+		governing_capacity = 250
 		accept_vassalization_reasons = 50
-		max_absolutism = 15
+		max_absolutism = 10
 		
     }
 	custom_attributes = {
@@ -1427,8 +1427,8 @@ papal_embassy_reform = {
 		religion = catholic
 	}
 	modifiers = {
-		papal_influence = 1.5
-		church_loyalty_modifier = 0.05
+		papal_influence = 1.0
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	effect = {
@@ -1461,13 +1461,11 @@ metropolian_bishop_reform = {
 		religion = orthodox
 	}
 	modifiers = {
-		prestige_per_development_from_conversion = 0.1
-		state_maintenance_modifier = -0.25
-		church_loyalty_modifier = 0.05
+		yearly_patriarch_authority = 0.005
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	effect = {
-		add_patriarch_authority = 0.10
 		change_variable = {
 			which = Clergy_Influence
 			value = 1
@@ -1520,7 +1518,7 @@ state_church_reform = {
 		tolerance_own = 0.5
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		church_loyalty_modifier = 0.05
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	ai = {
@@ -1559,7 +1557,7 @@ elevated_landed_gentry_reform = {
 		idea_cost = -0.05
 		global_unrest = -1
 		production_efficiency = 0.10
-		church_loyalty_modifier = 0.05
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	ai = {
@@ -1586,12 +1584,52 @@ dhimmi_nobles_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.05
-		dhimmi_loyalty_modifier = 0.10
-		dhimmi_influence_modifier = 0.20
+		dhimmi_loyalty_modifier = 0.05
+		dhimmi_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 10
 	}
+}
+
+hussite_reform = {
+    icon = szlachta
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			religion = hussite
+			has_reform = hussite_reform
+		}
+	}
+    trigger = {
+		OR = {
+			religion = hussite
+			has_reform = hussite_reform
+		}
+    }
+    modifiers = {
+		missionaries = 1
+    }
+	custom_attributes = {
+		enables_four_articles = yes
+	}
+    ai = {
+        factor = 100
+    }
 }
 
 #############################
@@ -3725,6 +3763,18 @@ nationalized_cetas_reform = {
     allow_normal_conversion = yes
     valid_for_nation_designer = yes
     nation_designer_cost = 0
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = bulgarian
@@ -3745,6 +3795,7 @@ nationalized_cetas_reform = {
         factor = 100
     }
 }
+
 
 
 #############################
@@ -3854,7 +3905,6 @@ theocratic_bureacrats_reform = {
 	}
 	modifiers = {
 		tolerance_own = 1
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.05
 	}
 	custom_attributes = {
@@ -3889,7 +3939,6 @@ ulema_guidance_reform = {
 	modifiers = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	ai = {
@@ -3930,7 +3979,6 @@ faith_in_ancestors_spirits_reform = {
 	modifiers = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	ai = {
@@ -3964,7 +4012,6 @@ histories_of_the_sky_god_reform = {
 	}
 	modifiers = {
 		global_missionary_strength = 0.01
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	custom_attributes = {
@@ -4003,7 +4050,6 @@ enforced_caste_system_reform = {
         global_missionary_strength = 0.01
         tolerance_own = 1
         stability_cost_modifier = -0.1
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	ai = {
@@ -4040,7 +4086,6 @@ teaching_of_guru_Sahib_reform = {
         global_missionary_strength = 0.01
         religious_unity = 0.25
         stability_cost_modifier = -0.1
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	ai = {
@@ -4075,7 +4120,6 @@ guidance_of_the_dalai_llama_reform = {
         global_missionary_strength = 0.01
         tolerance_own = 1
 		religious_unity = 0.15
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	custom_attributes = {
@@ -4121,7 +4165,6 @@ enlightened_ethical_teachings_reform = {
 	modifiers = {
         yearly_harmony = 0.15
 		tolerance_own = 1
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	ai = {
@@ -4160,7 +4203,6 @@ state_temple_harmonization_reform = {
 	modifiers = {
         global_missionary_strength = 0.01
 		tolerance_own = 1
-		church_loyalty_modifier = 0.05
 		church_influence_modifier = 0.10
 	}
 	custom_attributes = {
@@ -5395,6 +5437,18 @@ krums_code_reform = {
     allow_normal_conversion = yes
     valid_for_nation_designer = yes
     nation_designer_cost = 0
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = bulgarian
@@ -5414,6 +5468,47 @@ krums_code_reform = {
 	custom_attributes = {
 		enables_codified_law = yes
 	}
+    ai = {
+        factor = 100
+    }
+}
+
+vladislavs_provincial_establishment_reform = {
+    icon = szlachta
+    allow_normal_conversion = yes
+    valid_for_nation_designer = yes
+    nation_designer_cost = 0
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = czech
+			has_reform = vladislavs_provincial_establishment_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = czech
+			has_reform = vladislavs_provincial_establishment_reform
+		}
+    }
+    modifiers = {
+		state_maintenance_modifier = -0.25
+		global_unrest = -1
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.10
+		burghers_influence_modifier = -0.10
+    }
     ai = {
         factor = 100
     }
@@ -5512,12 +5607,9 @@ advanced_bookkeeping_reform = {
 		culture_group = latin
 	}
 	modifiers = {
+		placed_merchant_power = 10
 		interest = -1.0
-		yearly_corruption = -0.05
 	}
-	# custom_attributes = { 
-		# enables_merchant_privileges = yes #+1 merchantilism when you ask for contribution from the burghers.
-	# }
 	ai = {
 		factor = 10
 	}
@@ -6022,11 +6114,11 @@ christian_four_merchantile_reform = {
 	}
 	modifiers = {
 		range = 0.25
-		global_prov_trade_power_modifier = 0.15
+		global_prov_trade_power_modifier = 0.25
 	}
-	effect = {
-		add_mercantilism = 5
-	}
+	# effect = { #stopabusingthis
+		# add_mercantilism = 5
+	# }
 	ai = {
 		factor = 100
 	}
@@ -6320,7 +6412,13 @@ ottonian_handfeste_reform = {
 			which = Royal_Influence
 			value = 1
 		}
-		add_years_of_income = 2.5
+		if = {
+			NOT = {
+				has_country_flag = GE_ottonain_handfeste
+			}
+			set_country_flag = GE_ottonain_handfeste
+			add_years_of_income = 2.5
+		}
 	}
 	removed_effect = {
 		change_variable = {
@@ -6377,7 +6475,7 @@ reestablish_the_kuge_reform = {
 		}
 	}
 	modifiers = {
-		prestige = 1
+		prestige = 0.5
 		global_unrest = -1
 	}
 	ai = {
@@ -6470,7 +6568,7 @@ civil_servant_reform = {
 		}
 	}
 	modifiers = {
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	custom_attributes = {
 		enables_eastern_courts = yes
@@ -6721,8 +6819,18 @@ neapolitan_renaissance_reform = {
 drastic_control_of_the_boyars_reform = {
     icon = szlachta_noble_2
     allow_normal_conversion = yes
-    valid_for_nation_designer = yes
-    nation_designer_cost = 0
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			primary_culture = bulgarian
@@ -6740,6 +6848,43 @@ drastic_control_of_the_boyars_reform = {
 		global_manpower_modifier = 0.10
 		nobles_influence_modifier = -0.10
 		nobles_loyalty_modifier = 0.05
+    }
+    ai = {
+        factor = 100
+    }
+}
+
+german_aristocracy_reform = {
+    icon = szlachta
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = czech
+			has_reform = german_aristocracy_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = czech
+			has_reform = german_aristocracy_reform
+		}
+    }
+    modifiers = {
+		free_mil_policy = 1
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.10
     }
     ai = {
         factor = 100
@@ -6991,7 +7136,6 @@ empowered_imperial_circles_political_reform = {
 		has_reform = imperial_circles_reform
 	}
 	modifiers = {
-		reduced_liberty_desire = 10
 		accept_vassalization_reasons = 15
 		vassal_tax_modifier = 0.20
 	}
@@ -7045,8 +7189,8 @@ king_and_duke_reform = {
 		}
 	}
 	modifiers = {
-		stability_cost_modifier = -0.15
-		yearly_absolutism = 0.20
+		years_of_nationalism = -5
+		reduced_liberty_desire = 10
 	}
 	ai = {
 		factor = 100
@@ -7609,6 +7753,44 @@ theatines_reform = {
     }
 }
 
+restored_land_establishment_reform = {
+    icon = szlachta
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = czech
+			has_reform = restored_land_establishment_reform
+		}
+	}
+    trigger = {
+		OR = {
+			primary_culture = czech
+			has_reform = restored_land_establishment_reform
+		}
+    }
+    modifiers = {
+		max_absolutism = 5
+		global_autonomy = -0.025
+		church_influence_modifier = 0.05
+		nobles_influence_modifier = -0.05
+    }
+    ai = {
+        factor = 100
+    }
+}
+
 #############################
 ###########Tier6#############
 ############################# 
@@ -7677,7 +7859,7 @@ nueva_planta_decrees_reform = {
 	modifiers = {
 		global_autonomy = -0.075
 		global_unrest = -1
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 0 #lets not kill spain with revolts
@@ -8298,7 +8480,7 @@ empowered_royal_guard_reform = {
 	modifiers = {
 		land_forcelimit_modifier = -0.15
 		drill_gain_modifier = 0.25
-		infantry_power = 0.15
+		infantry_power = 0.10
 	}
 	# custom_attributes = {
 		# enables_royal_army_garrisons = yes #+100 Base Manpower in Royal State provinces
@@ -8820,6 +9002,43 @@ snaphaner_reform = {
 	}
 }
 
+strenghten_the_haeren_reform = {
+	icon = danish_army
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = danish 
+			has_reform = strenghten_the_haeren_reform 
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = danish 
+			has_reform = strenghten_the_haeren_reform 
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.10
+		land_forcelimit_modifier = 0.15
+		allowed_marine_fraction = 0.1
+	}
+	ai = {
+		factor = 101
+	}
+}
+
 reorganize_the_imperial_army = {
 	icon = austrian_army
 	allow_normal_conversion = yes
@@ -8848,9 +9067,8 @@ reorganize_the_imperial_army = {
 		}
 	}
 	modifiers = {
-		global_regiment_cost = -0.10
+		global_regiment_cost = -0.15
 		global_supply_limit_modifier = 0.25
-		loot_amount = 0.25
 	}
 	ai = {
 		factor = 100
@@ -9687,9 +9905,11 @@ mercantilism_reform = {
 	effect = {
 		add_mercantilism = 5
 	}
+	removed_effect = {
+		add_mercantilism = -5
+	}
 	modifiers = {
 		global_prov_trade_power_modifier = 0.10
-		trade_steering = 0.20
 		merchants = 1
 	}
 	custom_attributes = {
@@ -9736,9 +9956,7 @@ noble_taxes_reform = {
 	potential = {
 	}
 	modifiers = {
-		vassal_income = 0.25
 		global_tax_modifier = 0.15
-		min_autonomy_in_territories = -0.10
 		diplomatic_upkeep = 1
 	}
 	ai = {
@@ -9869,7 +10087,7 @@ empowered_enlarge_royal_estate_reform = {
 		}
 	}
 	modifiers = {
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	# custom_attributes = {
 		# enables_royal_domain = yes #10% Tax and Manpower in royal estate provinces
@@ -9965,6 +10183,32 @@ caravanserai_reform = {
 		factor = 100
 	}
 }
+
+danske_besiddelser_reform = {
+	icon = paper_money_map
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = danish
+			has_reform = danske_besiddelser_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = danish
+			has_reform = danske_besiddelser_reform
+		}
+	}
+	modifiers = {
+		global_tariffs = 0.20
+		global_foreign_trade_power = 0.15
+		trade_company_investment_cost = -0.15
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 
 hermit_kingdom_reform = {
 	icon = "celestial_empire"

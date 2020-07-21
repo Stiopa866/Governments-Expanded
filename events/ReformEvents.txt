@@ -3682,7 +3682,7 @@ country_event = {
 			}
 			add_estate_influence_modifier = {
 				estate = estate_church
-				desc = EST_VAL_CHURCH_ADVANCES
+				desc = EST_VAL_CLERGY_ADVANCES
 				influence = 10
 				duration = 3650
 			}
@@ -7820,6 +7820,7 @@ country_event = {
 				AND = {
 					OR = {
 						has_building = counting_house 
+						has_building = steam_factory
 					}
 					NOT = { has_province_modifier = Promoted_Industry_v2 }
 				}
@@ -7849,6 +7850,7 @@ country_event = {
 			limit = {
 				OR = {
 					has_building = counting_house 
+					has_building = steam_factory
 				}
 				NOT = {	has_province_modifier = Promoted_Industry_v2 }
             }
@@ -8400,7 +8402,7 @@ country_event = {
 				NOT = { num_of_mercenaries = 10 }
 				has_country_modifier = Foreign_Regiments
             }
-			remove_province_modifier = Foreign_Regiments
+			remove_country_modifier = Foreign_Regiments
 		}
 	}
 	
@@ -8428,7 +8430,7 @@ country_event = {
 	}
 	
 	immediate = {
-		remove_province_modifier = Foreign_Regiments
+		remove_country_modifier = Foreign_Regiments
 	}
 	
 	option = {
@@ -9936,7 +9938,6 @@ country_event = {
 	title = reform_me_events.148.t
 	desc = reform_me_events.148.d
 	picture = WESTERNISATION_eventPicture
-	hidden = yes
 	
 
 	trigger = {
@@ -9979,7 +9980,6 @@ country_event = {
 	title = reform_me_events.149.t
 	desc = reform_me_events.149.d
 	picture = WESTERNISATION_eventPicture
-	hidden = yes
 	
 
 	trigger = {
@@ -12443,6 +12443,45 @@ country_event = {
 	option = {
 		name = reform_me_events.168.a
 		
+	}
+}
+
+country_event = {
+	id = reform_me_events.1680
+	title = reform_me_events.1680.t
+	desc = reform_me_events.1680.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_jurisprudence }
+		OR = {
+			has_country_modifier = Jurisprudence_1
+			has_country_modifier = Jurisprudence_2
+			has_country_modifier = Jurisprudence_3
+			has_country_modifier = Jurisprudence_4
+			has_country_modifier = Jurisprudence_5
+			has_country_modifier = Jurisprudence_6
+			has_country_modifier = Jurisprudence_7
+			has_country_modifier = Jurisprudence_8
+			has_country_modifier = Jurisprudence_9
+			has_country_modifier = Jurisprudence_10
+		}
+	}
+	immediate = {
+		remove_country_modifier = Jurisprudence_1
+		remove_country_modifier = Jurisprudence_2
+		remove_country_modifier = Jurisprudence_3
+		remove_country_modifier = Jurisprudence_4
+		remove_country_modifier = Jurisprudence_5
+		remove_country_modifier = Jurisprudence_6
+		remove_country_modifier = Jurisprudence_7
+		remove_country_modifier = Jurisprudence_8
+		remove_country_modifier = Jurisprudence_9
+		remove_country_modifier = Jurisprudence_10
+	}
+	option = {
 	}
 }
 

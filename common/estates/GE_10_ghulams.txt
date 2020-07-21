@@ -22,7 +22,7 @@ estate_ghulams =
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		ghulams_loyalty_modifier = 0.5
+		ghulams_loyalty_modifier = 0.2
 	}
 
 	province_independence_weight = {

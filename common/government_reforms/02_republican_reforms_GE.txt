@@ -59,16 +59,7 @@ russian_republic_republic = {
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
-			AND = {
-				culture_group = east_slavic
-			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = russian_republic_republic
-			}
-			has_reform = russian_republic_republic
-		}
+		has_reform = russian_republic_republic
 	}
 	legacy_equivalent = veche_republic_legacy
 	modifiers = {
@@ -229,7 +220,7 @@ old_swiss_confederation_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
-		republican_tradition = 0.25
+		republican_tradition = 0.10
 		infantry_cost = -0.10
 		min_autonomy = 10
 		max_absolutism = -50
@@ -1091,6 +1082,75 @@ professional_army_reform_republic = {
 
 #####Tier 5#####
 
+advanced_bookkeeping_reform_republic = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	potential = {
+		culture_group = latin
+		NOT = { primary_culture = venetian }
+	}
+	trigger = {
+		culture_group = latin
+		NOT = { primary_culture = venetian }
+	}
+	modifiers = {
+		placed_merchant_power = 10
+		interest = -1.0
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+advanced_bookkeeping_reform_republic_venice = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = advanced_bookkeeping_reform_republic_venice
+			primary_culture = venetian
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = advanced_bookkeeping_reform_republic_venice
+			primary_culture = venetian
+		}
+	}
+	modifiers = {
+		merchants = 1
+		placed_merchant_power = 10
+		interest = -1.0
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 communal_territories_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
@@ -1317,7 +1377,7 @@ the_consigliere_reform = {
 		}
 	}
 	modifiers = {
-		max_absolutism = 5
+		yearly_absolutism = 1
 		candidate_random_bonus = 1
 	}
 	ai = {
@@ -1612,7 +1672,7 @@ empowered_consolidation_of_power_reform = {
 		}
 	}
 	modifiers = {
-		max_absolutism = 5
+		yearly_absolutism = 1
 		global_autonomy = -0.05
 	}
 	custom_attributes = {

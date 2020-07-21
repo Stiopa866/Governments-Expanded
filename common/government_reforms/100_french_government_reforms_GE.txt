@@ -594,7 +594,7 @@ droit_divine_reform = {
 	}
 	potential = {
 		OR = {
-			primary_culture = cosmopolitan_french
+			culture_group = french
 			has_reform = droit_divine_reform
 		}
 	}
