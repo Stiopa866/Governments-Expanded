@@ -73,3 +73,4 @@ estate_ghulams =
 	}
 	
 	influence_from_dev_modifier = 1.0
+}
