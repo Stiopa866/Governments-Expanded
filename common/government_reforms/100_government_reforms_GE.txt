@@ -4853,7 +4853,7 @@ union_of_italian_states_reform = {
 		culture_group = latin
 	}
 	modifiers = {
-		min_autonomy = 5
+		min_autonomy = 10
 		global_unrest = -2
 		global_spy_defence = 0.20
 	}
@@ -5577,7 +5577,7 @@ integrate_moneyloaners_reform = {
 		interest = -1
 		inflation_reduction = 0.05
 	}
-	# custom_attributes = { 
+	# custom_attributes = { 	
 		# enables_merchant_privileges = yes #+1 merchantilism when you ask for contribution from the burghers.
 	# }
 	ai = {
@@ -7400,7 +7400,7 @@ legacy_of_constitutionalism_reform = {
 	}	
 	modifiers = {
 		max_absolutism = 5
-		yearly_absolutism = 0.10
+		yearly_absolutism = 0.50
 		legitimacy = -0.25
 	}
 	ai = {

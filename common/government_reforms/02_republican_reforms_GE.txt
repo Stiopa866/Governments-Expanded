@@ -577,6 +577,7 @@ peasant_council_reform = {
 	}
 	modifiers = {
 		election_cycle = 1
+		peasants_loyalty_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_peasant_council = yes
@@ -800,6 +801,7 @@ peasant_militia_reform = {
 	}
 	modifiers = {
 		fire_damage_received = -0.10
+		peasants_loyalty_modifier = 0.05
 	}
 	custom_attributes = {
 		enables_bear_arms = yes #privilege, -20% infantry cost and +2 unrest, scaled
