@@ -663,6 +663,7 @@ republic = {
 				support_guelphs_reform
 				legacy_of_st_ambrose_reform
 				hanseatic_ties_reform
+				archdiocese_of_pisa_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -738,6 +739,7 @@ republic = {
 				#1.13
 				almogavars_reform
 				republican_guard_reform_republic
+				crusading_tradition_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -754,6 +756,7 @@ republic = {
 				clergical_administration_reform
 				union_of_italian_states_reform
 				volost_colonies_reform
+				island_republic_reform
 			}
 		}
 		parliamentary_vs_presidential = {

@@ -554,6 +554,36 @@ legacy_of_st_ambrose_reform = {
 	#5% Burgher Influence, 10% Burgher Loyalty
 }
 
+archdiocese_of_pisa_reform = {
+	icon = admiralty_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = PIS
+			has_reform = archdiocese_of_pisa_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		tolerance_own = 0.5
+		republican_tradition = 0.2
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 peasant_council_reform = {
 	icon = peasant_republic
 	allow_normal_conversion = yes
@@ -876,6 +906,39 @@ republican_guard_reform_republic = {
 	}
 	ai = {
 		factor = 1
+	}
+}
+
+crusading_tradition_reform = {
+	icon = admiralty_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = PIS
+			has_reform = crusading_tradition_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Oliarch_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.10
+		siege_blockade_progress = 1	
+	}
+	custom_attributes = {
+		enables_fury_of_the_reconquista = yes #2.5% mercenary discipline and +5% Morale while at war with heathens
+	}
+	ai = {
+		factor = 100
 	}
 }
 
@@ -1208,6 +1271,37 @@ volost_colonies_reform = {
 	modifiers = {
 		production_efficiency = 0.20
 		min_autonomy_in_territories = -0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+island_republic_reform = {
+	icon = admiralty_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = PIS
+			has_reform = island_republic_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		navy_tradition = 1
+		global_ship_trade_power = 0.15
+		naval_forcelimit_modifier = 0.15
 	}
 	ai = {
 		factor = 100
