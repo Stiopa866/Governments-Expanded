@@ -825,6 +825,60 @@ estate_church_four_articles_of_prague = {
 		factor = 0
 	}
 }
+###############Jews Privileges###############
+estate_jews_jewish_quarters = {
+	icon = privilege_monopoly_of_goods_cloth
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					development = 20
+					is_capital = yes
+				}
+			}
+			add_base_tax = 1
+			add_province_modifier = {
+				name = GE_jewish_quarter #+2.5 Base Trade Power, 
+				duration = -1
+			}
+		}
+	}
+	penalties = {
+	}
+	modifier_by_land_ownership = {
+	}
+	benefits = {
+	}
+	on_revoked = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GE_jewish_quarter
+			}
+			add_base_tax = -1
+			remove_province_modifier = GE_jewish_quarter
+		}
+	}
+	on_invalid = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GE_jewish_quarter
+			}
+			add_base_tax = -1
+			remove_province_modifier = GE_jewish_quarter
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
 
 ###############Vassal Privileges###############
 

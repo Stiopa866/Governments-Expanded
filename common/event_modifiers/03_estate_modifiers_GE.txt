@@ -1,0 +1,4 @@
+
+GE_jewish_quarter = {
+	province_trade_power_value = 2.5
+}
