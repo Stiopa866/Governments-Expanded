@@ -8297,6 +8297,7 @@ empowered_heavy_knights_reform = {
 		cavalry_cost = 0.05
 	}
 	custom_attributes = {
+		enables_white_knights = yes
 		enables_noble_knights = yes #5% shock damage if you have aristocratic ideas.
 	}
 	ai = {
@@ -9162,10 +9163,10 @@ pospolite_ruszenie_reform = {
 		shock_damage = 0.10
 		cavalry_flanking = 1
 	}
-	# custom_attributes = {
-		# enables_grand_captain = yes # Free buffed 'request additional manpower'
-		# enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
-	# }
+	custom_attributes = {
+		enables_white_knights = yes # Free buffed 'request additional manpower'
+		enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
+	}
 	ai = {
 		factor = 100
 	}
@@ -9705,9 +9706,9 @@ sherifan_levies_reform = {
 		manpower_recovery_speed = 0.15
 		reinforce_cost_modifier = -0.20
 	}
-	# custom_attributes = {
-		# enables_grand_captain = yes
-	# }#fixdis
+	custom_attributes = {
+		enables_grand_captain = yes
+	}#fixdis
 	ai = {
 		factor = 100
 	}

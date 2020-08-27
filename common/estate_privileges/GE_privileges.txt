@@ -620,6 +620,46 @@ estate_nobles_call_cortez = {
 	}
 }
 
+estate_nobles_white_knights = {
+	icon = privilege_military_power
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_white_knights
+		has_noble_privilege_space = yes
+	}
+	can_select = {
+		has_government_attribute = enables_white_knights
+	}
+	on_granted = {
+		custom_tooltip = GE_white_knights
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+		cavalry_cost = -0.25
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	conditional_modifier = {
+		trigger = {
+			prestige = 50
+		}
+		modifier = {
+			cavalry_power = 0.10
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 ##########Noble Baron Privileges##########
 estate_noble_baron_pensions = {
 	icon = privilege_demand_more_troops
