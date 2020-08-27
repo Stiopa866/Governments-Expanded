@@ -7,7 +7,7 @@ estate_jews =
 		OR = {
 			has_government_attribute = enables_jewish_estate
 			has_country_flag = country_has_jews_yes
-			stability = 1
+			#stability = 1
 		}
 		capital_scope = {
 			OR = {
