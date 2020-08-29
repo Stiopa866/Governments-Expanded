@@ -4515,7 +4515,7 @@ country_event = {
 
 	trigger = {
 		AND = {
-			has_government_attribute = enables_militant_orders
+			has_government_attribute = enables_ _orders
 			at_war_with_religious_enemy = yes
 			NOT = { has_country_modifier = Militant_Orders }
 		}
@@ -4549,7 +4549,7 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
-				at_war_with_religious_enemy = no
+				NOT = { at_war_with_religious_enemy = yes }
 				has_country_modifier = Militant_Orders
 			}
 			AND = {

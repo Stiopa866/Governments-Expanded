@@ -1266,7 +1266,7 @@
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
  born_to_rule_tooltip:1 "[Root.Monarch.GetName] ([Root.Monarch.GetAdm] £adm£ / [Root.Monarch.GetDip] £dip£ / [Root.Monarch.GetMil] £mil£ ) will be elected, as is his birthright."
- decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1 yearly tax§! and §G-5%§! development cost."
+ decentralized_25_a_tooltip:1 "Give each [decentralize_cycle_GE_pos.Culture.GetName] province §G+1§! §YYearly Tax income§! and §G-5%§! development cost for 10 years."
  vetshock_general.tooltip:1 "Gain General with §G60§! tradition and §G1§! extra Shock"
  shock_general.tooltip:1 "Gain General with §G40§! tradition and §G1§! extra Shock"
  Placate_Junkers.tooltip:1 "Get §R25%§! Autonomy in each province owned by the Junkers Estate."

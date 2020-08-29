@@ -8293,12 +8293,13 @@ empowered_heavy_knights_reform = {
 		}
 	}
 	modifiers = {
-		cavalry_power = 0.10
-		cavalry_cost = 0.05
+		noble_privilege_slots = 0.01
+		cavalry_flanking = 0.50
+		cavalry_power = 0.05
 	}
 	custom_attributes = {
 		enables_white_knights = yes
-		enables_noble_knights = yes #5% shock damage if you have aristocratic ideas.
+		#enables_noble_knights = yes #5% shock damage if you have aristocratic ideas.
 	}
 	ai = {
 		factor = 1

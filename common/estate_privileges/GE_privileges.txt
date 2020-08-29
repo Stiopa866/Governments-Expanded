@@ -552,10 +552,10 @@ estate_nobles_grand_captain_privilege = {
 	influence = 0.05
 	is_valid = {
 		has_government_attribute = enables_grand_captain
-		has_noble_privilege_space = yes
 	}
 	can_select = {
 		has_government_attribute = enables_grand_captain
+		has_noble_privilege_space = yes
 	}
 	on_granted = {
 		custom_tooltip = "GE_Grand_Captains_tt"
@@ -628,10 +628,10 @@ estate_nobles_white_knights = {
 	influence = 0.05
 	is_valid = {
 		has_government_attribute = enables_white_knights
-		has_noble_privilege_space = yes
 	}
 	can_select = {
 		has_government_attribute = enables_white_knights
+		has_noble_privilege_space = yes
 	}
 	on_granted = {
 		custom_tooltip = GE_white_knights
