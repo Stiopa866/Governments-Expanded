@@ -1894,7 +1894,7 @@ empowered_principle_of_power_reform = {
 	}
 	modifiers = {
 		election_cycle = 1
-		reelection_cost = -0.25
+		reelection_cost = -0.15
 		republican_tradition = -0.1
 	}
 	custom_attributes = {
