@@ -143,10 +143,89 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = GE_Imperial_Court_Incomes_Tooltip_Number
+				which = GE_Imperial_Court_Incomes
+			}
+		}
 	}
 	
 	option = {
 		name = GE_privileges.7.a
+		if = {
+			limit = {
+				check_variable = {
+					which = GE_Imperial_Court_Incomes
+					value = 1
+				}
+			}
+			custom_tooltip = GE_Imperial_Court_Incomes_Tooltip
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_Imperial_Court_Incomes
+							value = 1
+						}
+					}
+					add_treasury = 1
+					change_variable = {
+						which = GE_Imperial_Court_Incomes
+						value = -1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = GE_Imperial_Court_Incomes
+				value = 0
+			}
+		}
+		set_country_flag = GE_Imperial_Court_Flag
+		every_neighbor_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = {
+					is_emperor = yes
+				}
+			}
+			country_event = {
+				id = GE_privileges.8
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = GE_opinion_abuse_of_imperial_power
+			}
+		}
+	}
+	option = {
+		name = GE_privileges.7.b
+		if = {
+			limit = {
+				check_variable = {
+					which = GE_Imperial_Court_Incomes
+					value = 1
+				}
+			}
+			custom_tooltip = GE_Imperial_Court_Incomes_Tooltip
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_Imperial_Court_Incomes
+							value = 1
+						}
+					}
+					add_treasury = 1
+					change_variable = {
+						which = GE_Imperial_Court_Incomes
+						value = -1
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			set_variable = {
 				which = GE_Imperial_Court_Incomes
@@ -162,6 +241,14 @@ country_event = {
 						tag = ROOT
 					}
 					is_emperor = yes
+					overlord = {
+						tag = ROOT
+					}
+					any_neighbor_country = {
+						overlord = {
+							tag = ROOT
+						}
+					}
 				}
 			}
 			country_event = {
@@ -174,8 +261,32 @@ country_event = {
 		}
 	}
 	option = {
-		name = GE_privileges.7.b
-		add_legitimacy = -5
+		name = GE_privileges.7.c
+		if = {
+			limit = {
+				check_variable = {
+					which = GE_Imperial_Court_Incomes
+					value = 1
+				}
+			}
+			custom_tooltip = GE_Imperial_Court_Incomes_Tooltip
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_Imperial_Court_Incomes
+							value = 1
+						}
+					}
+					add_treasury = 1
+					change_variable = {
+						which = GE_Imperial_Court_Incomes
+						value = -1
+					}
+				}
+			}
+		}
+		add_legitimacy = -10
 		remove_estate_privilege = estate_nobles_imperial_court
 	}
 }
@@ -265,6 +376,8 @@ country_event = {
 	title = GE_privileges.10.t
 	desc = GE_privileges.10.d
 	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
 
 	trigger = {
 		check_variable = {

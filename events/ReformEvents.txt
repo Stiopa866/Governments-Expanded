@@ -14780,3 +14780,72 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.204
+	title = reform_me_events.204.t
+	desc = reform_me_events.204.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_presidental_authority 
+		OR = {
+			OR = {
+				adm = 4
+				NOT = { has_ruler_modifier = GE_Presidential_Adm }
+			}
+			OR = {
+				dip = 4
+				NOT = { has_ruler_modifier = GE_Presidential_Dip }
+			}
+			OR = {
+				mil = 4
+				NOT = { has_ruler_modifier = GE_Presidential_Mil }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				adm = 4
+				NOT = { has_ruler_modifier = GE_Presidential_Adm }
+			}
+			add_ruler_modifier = {
+				name = GE_Presidential_Adm
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				dip = 4
+				NOT = { has_ruler_modifier = GE_Presidential_Dip }
+			}
+			add_ruler_modifier = {
+				name = GE_Presidential_Dip
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				mil = 4
+				NOT = { has_ruler_modifier = GE_Presidential_Mil }
+			}
+			add_ruler_modifier = {
+				name = GE_Presidential_Mil
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.204.a
+		
+	}
+}

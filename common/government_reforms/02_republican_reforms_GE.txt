@@ -545,8 +545,7 @@ legacy_of_st_ambrose_reform = {
 	modifiers = {
 		tolerance_own = 1
 		innovativeness_gain = 0.5
-		burghers_influence_modifier = 0.10
-		burghers_loyalty_modifier = 0.05
+		monarch_lifespan = 0.10
 	}
 	ai = {
 		factor = 100
@@ -1506,7 +1505,7 @@ council_of_petitions_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -2
+		global_unrest = -1
 		reelection_cost = -0.1
 	}
 	ai = {

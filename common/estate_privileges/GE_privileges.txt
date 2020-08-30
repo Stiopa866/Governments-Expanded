@@ -667,10 +667,16 @@ estate_nobles_imperial_court = {
 	loyalty = 0.00
 	influence = 0.00
 	is_valid = {
-		#has_country_flag = GE_HRE_Imperial_Court
+		OR = {
+			has_country_flag = GE_HRE_Imperial_Court
+			tag = ANS
+		}
 	}
 	can_select = {
-		#has_country_flag = GE_HRE_Imperial_Court
+		OR = {
+			has_country_flag = GE_HRE_Imperial_Court
+			tag = ANS
+		}
 		has_noble_privilege_space = yes
 	}
 	on_granted = {
@@ -694,9 +700,7 @@ estate_nobles_imperial_court = {
 	}
 	cooldown_years = 1
 	on_cooldown_expires = {
-		country_event = { 
-			id = GE_privileges.11
-		}
+		reapply_estate_privilege = { privilege = estate_nobles_imperial_court }
 	}
 	ai_will_do = {
 		factor = 0

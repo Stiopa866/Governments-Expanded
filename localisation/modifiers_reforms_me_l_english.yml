@@ -352,7 +352,9 @@
  GE_Republican_Guard_3: "Republican Guard"
  GE_Republican_Guard_4: "Republican Guard"
  GE_Republican_Guard_5: "Republican Guard"
- 
+ GE_Presidential_Adm: "Bureaucratic Stability"
+ GE_Presidential_Dip: "Renowned Diplomat"
+ GE_Presidential_Mil: "Logistical Artisan"
  
  
  

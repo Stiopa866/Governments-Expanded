@@ -160,7 +160,8 @@
  GE_privileges.7.t: "The Imperial Court" 
  GE_privileges.7.d: "The Emperor has bestowed the honor of having our local court be on equal level to the imperial court, and for our jurisdiction to be grand. In addition, our court overrules any local privilege and exemption. We could use this power to press our advantage on our neighbours and force them, with Imperial Authority, to submit to our demands and encroachments upon their lands."
  GE_privileges.7.a: "Bless Emperor [Emperor.Monarch.GetName]!"
- GE_privileges.7.b: "Perhaps we should reconsider."
+ GE_privileges.7.b: "Spare our allies and subjects."
+ GE_privileges.7.c: "Perhaps we should reconsider."
  GE_opinion_abuse_of_imperial_power: "Abuse of Imperial Court Power"
 
  GE_privileges.8.t: "The Imperial Court Demands" 

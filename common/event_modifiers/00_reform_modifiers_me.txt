@@ -1100,7 +1100,15 @@ Enjoying_The_Peace = {
 	stability_cost_modifier = -0.10
 	republican_tradition = 0.1
 }
-
+GE_Presidential_Adm = {
+	stability_cost_modifier = -0.15
+}
+GE_Presidential_Dip = {
+	diplomatic_reputation = 1
+}
+GE_Presidential_Mil = {
+	reinforce_speed = 0.20
+}
 
 ####MONARCHY
 
