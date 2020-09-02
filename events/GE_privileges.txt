@@ -199,6 +199,9 @@ country_event = {
 				modifier = GE_opinion_abuse_of_imperial_power
 			}
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	option = {
 		name = GE_privileges.7.b
@@ -259,6 +262,9 @@ country_event = {
 				modifier = GE_opinion_abuse_of_imperial_power
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = GE_privileges.7.c
@@ -288,6 +294,9 @@ country_event = {
 		}
 		add_legitimacy = -10
 		remove_estate_privilege = estate_nobles_imperial_court
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -314,7 +323,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = GE_Imperial_Court_Tax
-				duration = 3650
+				duration = 365
 			}
 			hidden_effect = {
 				FROM = {
@@ -379,53 +388,163 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		check_variable = {
-			which = GE_Imperial_Court_Incomes
-			value = 1
-		}
-		has_estate_privilege = estate_nobles_imperial_court
-		had_country_flag = {
-			flag = GE_Imperial_Court_Flag
-			days = 365
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	immediate = {
 		hidden_effect = {
-			clr_country_flag = GE_Imperial_Court_Flag
-			set_country_flag = GE_Imperial_Court_Flag
 			set_variable = {
-				which = GE_Imperial_Court_Incomes_Tooltip_Number
-				which = GE_Imperial_Court_Incomes
+				which = GE_Imperial_Marshal_Incomes_Tooltip_Number
+				which = GE_Imperial_Marshal_Incomes
+			}
+			multiply_variable = {
+				which = GE_Imperial_Marshal_Incomes_Tooltip_Number
+				value = 25
 			}
 		}
 	}
 	
 	option = {
 		name = GE_privileges.10.a
-		custom_tooltip = GE_Imperial_Court_Incomes_Tooltip
-		hidden_effect = {
-			while = {
-				limit = {
-					check_variable = {
-						which = GE_Imperial_Court_Incomes
-						value = 1
-					}
+		if = {
+			limit = {
+				check_variable = {
+					which = GE_Imperial_Marshal_Incomes
+					value = 1
 				}
-				add_treasury = 1
-				change_variable = {
-					which = GE_Imperial_Court_Incomes
-					value = -1
+			}
+			custom_tooltip = GE_Imperial_Marshal_Incomes_Tooltip
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+					add_manpower = 0.025
+					change_variable = {
+						which = GE_Imperial_Marshal_Incomes
+						value = -1
+					}
 				}
 			}
 		}
+		hidden_effect = {
+			set_variable = {
+				which = GE_Imperial_Marshal_Incomes
+				value = 0
+			}
+		}
+		set_country_flag = GE_Imperial_Court_Flag
+		every_neighbor_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = {
+					is_emperor = yes
+				}
+			}
+			country_event = {
+				id = GE_privileges.11
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = GE_opinion_abuse_of_imperial_power
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = GE_privileges.10.b
+		if = {
+			limit = {
+				check_variable = {
+					which = GE_Imperial_Marshal_Incomes
+					value = 1
+				}
+			}
+			custom_tooltip = GE_Imperial_Marshal_Incomes_Tooltip
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+					add_manpower = 0.025
+					change_variable = {
+						which = GE_Imperial_Marshal_Incomes
+						value = -1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = GE_Imperial_Marshal_Incomes
+				value = 0
+			}
+		}
+		set_country_flag = GE_Imperial_Court_Flag
+		every_neighbor_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = {
+					any_ally = {
+						tag = ROOT
+					}
+					is_emperor = yes
+					overlord = {
+						tag = ROOT
+					}
+				}
+			}
+			country_event = {
+				id = GE_privileges.11
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = GE_opinion_abuse_of_imperial_power
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = GE_privileges.10.c
+		if = {
+			limit = {
+				check_variable = {
+					which = GE_Imperial_Marshal_Incomes
+					value = 1
+				}
+			}
+			custom_tooltip = GE_Imperial_Marshal_Incomes_Tooltip
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+					add_manpower = 0.025
+					change_variable = {
+						which = GE_Imperial_Marshal_Incomes
+						value = -1
+					}
+				}
+			}
+		}
+		add_legitimacy = -10
+		remove_estate_privilege = estate_nobles_imperial_court
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
+
 country_event = {
 	id = GE_privileges.11
 	title = GE_privileges.11.t
@@ -439,10 +558,173 @@ country_event = {
 	
 	option = {
 		name = GE_privileges.11.a
-		reapply_estate_privilege = { privilege = estate_nobles_imperial_court }
+		every_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					owner = {
+						tag = FROM
+					}
+				}
+			}
+			add_province_modifier = {
+				name = GE_Imperial_Court_Manpower
+				duration = 365
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						base_manpower = 1
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 2
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 3
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 4
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 5
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 6
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 7
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 8
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 9
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						base_manpower = 10
+					}
+					FROM = {
+						change_variable = {
+							which = GE_Imperial_Marshal_Incomes
+							value = 1
+						}
+					}
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 10
+		}
 	}
 	option = {
 		name = GE_privileges.11.b
-		remove_estate_privilege = estate_nobles_imperial_court
+		FROM = {
+			country_event = {
+				id = GE_privileges.12
+			}
+		}
+		ai_chance = { 
+			factor = 1 
+		}
+	}
+}
+
+country_event = {
+	id = GE_privileges.12
+	title = GE_privileges.12.t
+	desc = GE_privileges.12.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = GE_privileges.12.a
+		every_owned_province = {
+			every_neighbor_province = {
+				limit = {
+					owner = {
+						tag = FROM
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	option = {
+		name = GE_privileges.12.b
+		add_legitimacy = 1
 	}
 }

@@ -7603,6 +7603,7 @@ grand_secretariat_reform = {
 	modifiers = {
 		monarch_diplomatic_power = 1
 		yearly_corruption = 0.05
+		advisor_pool = 1
 	}
 	ai = {
 		factor = 100
@@ -7623,6 +7624,7 @@ grand_council_reform = {
 		}
 	}
 	modifiers = {
+		advisor_cost = -0.10
 		advisor_pool = 1
 	}
 	custom_attributes = {

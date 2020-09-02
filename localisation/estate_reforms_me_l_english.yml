@@ -1202,9 +1202,7 @@
  estate_nobles_white_knights: "Noble Knights"
  estate_nobles_white_knights_desc: "By appealing to the nobility of knights and their virtues we can gather them to our banner more easily, and with our prestige inspire them!"
  GE_white_knights: "§G+10%§! Cavalry Combat Ability while over §Y50§! prestige."
- estate_nobles_imperial_court: "Imperial Court Representation"
- estate_nobles_imperial_court_desc: "Our local court has the power to overrule existing privileges and rules at equal level to the imperial chamber court. And we are free to judge in favour of our interests at the expense of our neighbours."
- GE_HRE_Imperial_Court_Tooltip: "Encroach upon every neighbouring HRE province and attempt to seize their property, this will piss off your neighbours."
+
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."

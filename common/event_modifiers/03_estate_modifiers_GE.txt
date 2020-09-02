@@ -5,3 +5,7 @@ GE_jewish_quarter = {
 GE_Imperial_Court_Tax = {
 	tax_income = -1
 }
+
+GE_Imperial_Court_Manpower = {
+	local_manpower_modifier = -1
+}

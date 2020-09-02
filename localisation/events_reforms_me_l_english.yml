@@ -157,28 +157,12 @@
  GE_privileges.6.a: "Lets play some politics."
  GE_privileges.6.b: "let them rot."
  
- GE_privileges.7.t: "The Imperial Court" 
- GE_privileges.7.d: "The Emperor has bestowed the honor of having our local court be on equal level to the imperial court, and for our jurisdiction to be grand. In addition, our court overrules any local privilege and exemption. We could use this power to press our advantage on our neighbours and force them, with Imperial Authority, to submit to our demands and encroachments upon their lands."
- GE_privileges.7.a: "Bless Emperor [Emperor.Monarch.GetName]!"
- GE_privileges.7.b: "Spare our allies and subjects."
- GE_privileges.7.c: "Perhaps we should reconsider."
- GE_opinion_abuse_of_imperial_power: "Abuse of Imperial Court Power"
 
- GE_privileges.8.t: "The Imperial Court Demands" 
- GE_privileges.8.d: "The Emperor has bestowed the honor of representing the Imperial Court upon [From.Monarch.GetName] of [From.Country.GetName], and [From.Monarch.GetName] has decided to encroach upon our borders, force our subjects and lords to submit to him for taxes and sovereinty."
- GE_privileges.8.a: "Better to avoid conflict."
- GE_privileges.8.b: "Just an ordinary robber baron."
- GE_Imperial_Court_Tax: "Imperial Court Tax"
-
- GE_privileges.9.t: "Jurisdiction Denied" 
- GE_privileges.9.d: "[From.Monarch.GetName] of [From.Country.GetName] has refused our demands and has compared us to a mere robber baron.."
- GE_privileges.9.a: "<Vengeance>"
- GE_privileges.9.b: "I suppose hes not too far off."
  
  GE_privileges.10.t: "The Imperial Court Incomes" 
  GE_privileges.10.d: "We are the representative of the imperial court, and over the past year we have encroached upon our neighbour's land and seized many minor holdings. Let us go and collect all the due taxes from our expropriated property!"
  GE_privileges.10.a: "We be rich!"
- GE_Imperial_Court_Incomes_Tooltip: "Gain §G+[Root.GE_Imperial_Court_Incomes_Tooltip_Number.GetValue]§! Ducats from this year's court rulings."
+
  
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."
