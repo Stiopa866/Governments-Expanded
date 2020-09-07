@@ -231,6 +231,9 @@ monarchy = {
 				customs_house_of_apena_sheep_reform
 				krums_code_reform
 				vladislavs_provincial_establishment_reform
+				nahuatl_blood_sacrifices_reform
+				inti_sun_god_centralization_reform
+				inti_huaca_regionalism_reform
 			}
 		}
 		military_organisation = {

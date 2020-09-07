@@ -943,6 +943,14 @@
  island_republic_reform: "Island Republic"
  island_republic_reform_desc: "Separate by miles of blue waters, but united under a single flag and fleet. The people of Pisa have learned to embrace the power of diplomacy through naval means. Wether the pen is mightier than the sword, or wether actions speak louder than words, all fall short to an avalanche of cannonballs."
 
+ nahuatl_blood_sacrifices_reform: "Blood Tributaries"
+ nahuatl_blood_sacrifices_reform_desc: "To protect our prosperity and ensure the continued favor of the Gods, creating and modernizing our method of ensuring enough blood sacrifices is an neccesary reform. The system of blood tributaries will ensure this through the aquiring of sacrifices throught our realms!"
+ inti_sun_god_centralization_reform: "Altars of the Sun God"
+ inti_sun_god_centralization_reform_desc: "The regional shrines and traditions must be stamped out in order to ensure a national awareness and subservience to the high priests and their rituals to please the Sun God."
+ inti_huaca_regionalism_reform: "Huaca Cults"
+ inti_huaca_regionalism_reform_desc: "The regional shrines and traditions must be respected and integrated into our wider pantheon, for while we know the truth of the Sun God, we can not risk the wrath of minor gods by destroying their places of worship. By adding them to our national system of altar maintenances and tributes we can ensure their maintenance and skim off the top."
+ 
+ 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
@@ -1121,13 +1129,16 @@
  mechanic_enables_liber_augustalis_yes: "Liber Augustalis: Increase each estate's Loyalty Equilibrium by §Y5%§! while your legitimacy is over §Y90%§!."
  mechanic_enables_customs_house_yes: "Customs House: §G+25%§! Goods Produced in Wool and Cloth provinces."
  mechanic_enables_mary_of_the_purity_yes: "Mary of the Purity: §G-0.025§! yearly corruption per Tolerance of the True Faith over 5 up to a maximum of §G-0.10§!."
- mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heathens."
+ mechanic_enables_fury_of_the_reconquista_yes: "Fury of the Reconquista: §G+2.5%§! Mercenary Discipline and §G+5%§! Morale of Armies while at war with Heretics or Heathens."
  
  mechanic_enables_republican_guard_yes: "Guardians of the Republic: §G+3%§! Infantry Combat Ability and §G+4%§! Manpower Recovery Speed for every §Y10§! Republican Tradition over §Y50§!."
  mechanic_enables_four_articles_yes: "Four Articles of Prague: Unlocks the 'Four Articles of Prague' Privilege for the Clergy, which modifies tolerance."
  mechanic_enables_white_knights_yes: "Noble Knights: Unlocks the 'Noble Knights' Privilege for the Nobility, which increases cavalry effectiveness."
  mechanic_enables_presidental_authority_yes: "Presidental Authority: §G-15%§! §YStability Cost Modifier§! at 4 admin ruler skill, §G+1§! §YDiplomatic Reputation§! at 4 diplo ruler skill, §G+20%§! §YReinforcement Speed§! at 4 military ruler skill."
 
+ mechanic_enables_blood_sacrifice_yes: "Blood Sacrifices: Unlocks 'Blood Sacrifices', giving a boost in Legitimacy whenever you sacrifice a subject ruler."
+ mechanic_enables_huaca_cults_yes: "Huaca Cults: §G+10%§! Tax in provinces that do not follow the true faith."
+ mechanic_enables_unified_drills_yes: "Unified Drills: §G+10%§! Drill Gain per HRE subject, up to a maximum of §G+50%§!"
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1438,7 +1449,10 @@
  reforms_GE_solar_kingdom_reform_title: "Reform into the Solar Empire"
  reforms_GE_solar_kingdom_reform_desc:1 "The Failure of previous administrations to properly manage our stretched our realm can not be allowed to repeat itself. We shall replace the hereditary chieftainships with appointed governors and abolish the monastic exceptions and instead of being the center of the mandala, become the center of an empire!"
  reforms_me_empire_of_serbia_title: "Reform the Serbian Empire"
- reforms_me_empire_of_serbia_desc:1 "We're gonna reform the Serbian Empire, WIP."
+ reforms_me_empire_of_serbia_desc:1 "To walk in our ancestors steps and revive our empire has long been a goal of ours ever since the empire fell."
+ GE_blood_sacrifice_title: "Blood Sacrifice"
+ GE_blood_sacrifice_desc: "To please the ever thirsting gods, the blood of the weak will no longer suffice in filling the demands of the gods. In order to sathe their thirst we will have to sacrifice some noble blood."
+ GE_has_been_twenty_years: "Has not Sacrificed in the past 20 years."
  
  EST_VAL_NOBILITY_ADVANCES: "The Nobility Advances"
  EST_VAL_BURGHERS_ADVANCE: "The Burghers Advance"

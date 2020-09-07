@@ -4213,6 +4213,122 @@ state_temple_harmonization_reform = {
 	}
 }
 
+nahuatl_blood_sacrifices_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        OR = {
+			religion = nahuatl
+		}
+	}
+	trigger = {
+        OR = {
+			religion = nahuatl
+        }
+	}
+	modifiers = {
+		tolerance_own = 1
+		state_maintenance_modifier = -0.15
+		church_influence_modifier = 0.10
+		legitimacy = -1
+		devotion = -1
+	}
+	custom_attributes = {
+		enables_blood_sacrifice = yes #Sacrifice a subject ruler to get 10 legitimacy/10 devotion.
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+inti_sun_god_centralization_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        OR = {
+			religion = inti
+		}
+	}
+	trigger = {
+        OR = {
+			religion = inti
+        }
+	}
+	modifiers = {
+        global_missionary_strength = 0.01
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_religious_adherence = yes #250 manpower in true faith provinces with temples
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+inti_huaca_regionalism_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
+	potential = {
+        OR = {
+			religion = inti
+			religion = mesoamerican_religion
+		}
+	}
+	trigger = {
+        OR = {
+			religion = inti
+			religion = mesoamerican_religion
+        }
+	}
+	modifiers = {
+		tolerance_heathen = 0.5
+		tolerance_heretic = 0.5
+	}
+	custom_attributes = {
+		enables_huaca_cults = yes #+10% tax in non-believer provinces.
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 diocletian_reforms_reform = {
 	icon = diocletian
 	allow_normal_conversion = yes
@@ -8255,7 +8371,7 @@ feudal_levies_reform = {
 	trigger = {
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -1
+		war_taxes_cost_modifier = -0.5
 		nobles_influence_modifier = 0.05
 		vassal_forcelimit_bonus = 1
 	}
@@ -8523,7 +8639,7 @@ italian_mercenaries_reform = {
 	}
 	modifiers = {
 		mercenary_discipline = 0.05
-		mercenary_manpower = 0.50
+		mercenary_manpower = 0.25
 		war_exhaustion = -0.01
 	}
 	ai = {
@@ -8603,6 +8719,9 @@ imperial_circles_reform = {
 	modifiers = {
 		vassal_forcelimit_bonus = 1
 		land_maintenance_modifier = -0.05
+	}
+	custom_attributes = {
+		enables_unified_drills = yes #+10% Drill Gain for each subject.
 	}
 	ai = {
 		factor = 10
@@ -9832,8 +9951,8 @@ almogavars_reform = {
 		}
     }
     modifiers = {
-		mercenary_manpower = 0.25
-		spy_offence = 0.10
+		spy_offence = 0.15
+		infantry_power = 0.05
     }
 	custom_attributes = {
 		enables_fury_of_the_reconquista = yes #2.5% mercenary discipline and +5% Morale while at war with heathens
