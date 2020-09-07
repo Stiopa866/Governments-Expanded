@@ -949,7 +949,8 @@
  inti_sun_god_centralization_reform_desc: "The regional shrines and traditions must be stamped out in order to ensure a national awareness and subservience to the high priests and their rituals to please the Sun God."
  inti_huaca_regionalism_reform: "Huaca Cults"
  inti_huaca_regionalism_reform_desc: "The regional shrines and traditions must be respected and integrated into our wider pantheon, for while we know the truth of the Sun God, we can not risk the wrath of minor gods by destroying their places of worship. By adding them to our national system of altar maintenances and tributes we can ensure their maintenance and skim off the top."
- 
+ nunziatella_reform: "La Nunziatella"
+ nunziatella_reform_desc: "the 'Reale Accademia Miliare', or Royal Military Academy of the Kingdom of the Two Sicilies is an educational institute with an exceptional track record. Its scions and students make up the bulk of our kingdom's command staff. Granted the nickname of 'La Nunziatella' following the movement of the Academy to an ancient jesuit college, incorporating the baroque 'Church of the Nunziatella'."
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1139,6 +1140,8 @@
  mechanic_enables_blood_sacrifice_yes: "Blood Sacrifices: Unlocks 'Blood Sacrifices', giving a boost in Legitimacy whenever you sacrifice a subject ruler."
  mechanic_enables_huaca_cults_yes: "Huaca Cults: §G+10%§! Tax in provinces that do not follow the true faith."
  mechanic_enables_unified_drills_yes: "Unified Drills: §G+10%§! Drill Gain per HRE subject, up to a maximum of §G+50%§!"
+ mechanic_enables_artillery_academia_yes: "Academy of Artillery: §G+1§! Land Leader Siege while you have 75 or more Army Tradition."
+
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

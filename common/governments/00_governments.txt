@@ -290,6 +290,7 @@ monarchy = {
 				form_the_vojstatic_reform
 				#1.13
 				almogavars_reform
+				nunziatella_reform
 				milizia_nationale_reform
 				strenghten_the_haeren_reform
 			}

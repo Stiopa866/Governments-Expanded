@@ -9962,6 +9962,54 @@ almogavars_reform = {
     }
 }
 
+nunziatella_reform = {
+    icon = king
+    allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			tag = TTS
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			has_reform = nunziatella_reform
+		}
+	}
+    trigger = {
+		OR = {
+			tag = TTS
+			AND = {
+				OR = {
+					primary_culture = neapolitan
+					primary_culture = sicilian
+				}
+				absolutism = 50
+			}
+			has_reform = nunziatella_reform
+		}
+    }
+    modifiers = {
+		artillery_power = 0.10
+		siege_ability = 0.10
+    }
+	custom_attributes = {
+		enables_artillery_academia = yes #+1 Land Leader Siege
+	}
+    ai = {
+        factor = 100
+    }
+}
+
 milizia_nationale_reform = {
     icon = latin_militia
     allow_normal_conversion = yes

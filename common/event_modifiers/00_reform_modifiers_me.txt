@@ -777,6 +777,9 @@ GE_Shared_Drills_4 = {
 GE_Shared_Drills_5 = {
 	drill_gain_modifier = 0.50
 }
+GE_Academy_of_Artillery = {
+	leader_siege = 1
+}
 	
 	
 	
