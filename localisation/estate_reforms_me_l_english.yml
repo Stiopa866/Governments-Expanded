@@ -1139,7 +1139,7 @@
 
  mechanic_enables_blood_sacrifice_yes: "Blood Sacrifices: Unlocks 'Blood Sacrifices', giving a boost in Legitimacy whenever you sacrifice a subject ruler."
  mechanic_enables_huaca_cults_yes: "Huaca Cults: §G+10%§! Tax in provinces that do not follow the true faith."
- mechanic_enables_unified_drills_yes: "Unified Drills: §G+10%§! Drill Gain per HRE subject, up to a maximum of §G+50%§!"
+ mechanic_enables_unified_drills_yes: "Unified Drills: §G+4%§! Manpower Recovery Speed and §G-2%§! Regiment Cost per HRE subject, up to a maximum of five subjects."
  mechanic_enables_artillery_academia_yes: "Academy of Artillery: §G+1§! Land Leader Siege while you have 75 or more Army Tradition."
 
 

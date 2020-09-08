@@ -763,19 +763,24 @@ GE_favor_of_the_gods = {
 	devotion = 2
 }
 GE_Shared_Drills_1 = {
-	drill_gain_modifier = 0.10
+	manpower_recovery_speed = 0.04
+	global_regiment_cost = -0.02
 }
 GE_Shared_Drills_2 = {
-	drill_gain_modifier = 0.20
+	manpower_recovery_speed = 0.08
+	global_regiment_cost = -0.04
 }
 GE_Shared_Drills_3 = {
-	drill_gain_modifier = 0.30
+	manpower_recovery_speed = 0.12
+	global_regiment_cost = -0.06
 }
 GE_Shared_Drills_4 = {
-	drill_gain_modifier = 0.40
+	manpower_recovery_speed = 0.16
+	global_regiment_cost = -0.08
 }
 GE_Shared_Drills_5 = {
-	drill_gain_modifier = 0.50
+	manpower_recovery_speed = 0.20
+	global_regiment_cost = -0.10
 }
 GE_Academy_of_Artillery = {
 	leader_siege = 1

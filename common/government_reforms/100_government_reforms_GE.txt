@@ -8721,7 +8721,7 @@ imperial_circles_reform = {
 		land_maintenance_modifier = -0.05
 	}
 	custom_attributes = {
-		enables_unified_drills = yes #+10% Drill Gain for each subject.
+		enables_unified_drills = yes #-2% Regiment cost and +4% Manpower Recovery Speed
 	}
 	ai = {
 		factor = 10
