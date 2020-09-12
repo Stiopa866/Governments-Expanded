@@ -2733,7 +2733,7 @@ albertine_line_reform = {
 	modifiers = {
 		legitimacy = 0.5
 		global_manpower_modifier = 0.10
-		nobles_loyalty_modifier = 0.05
+		noble_privilege_slots = 0.01
 	}
 	ai = {
 		factor = 100
@@ -9283,11 +9283,11 @@ pospolite_ruszenie_reform = {
 	}
 	modifiers = {
 		shock_damage = 0.10
-		cavalry_flanking = 1
+		cavalry_flanking = 0.5
 	}
 	custom_attributes = {
 		enables_white_knights = yes # Free buffed 'request additional manpower'
-		enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
+		#enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
 	}
 	ai = {
 		factor = 100
