@@ -698,7 +698,7 @@ estate_nobles_imperial_court = {
 	}
 	conditional_modifier = {
 	}
-	cooldown_years = 1
+	cooldown_years = 10
 	on_cooldown_expires = {
 		reapply_estate_privilege = { privilege = estate_nobles_imperial_court }
 	}
@@ -739,13 +739,13 @@ estate_nobles_imperial_marshall = {
 	modifier_by_land_ownership = {
 	}
 	penalties = {
-		manpower_recovery_speed = -0.10
+		land_forcelimit_modifier = 0.10
 	}
 	benefits = {
 	}
 	conditional_modifier = {
 	}
-	cooldown_years = 1
+	cooldown_years = 10
 	on_cooldown_expires = {
 		reapply_estate_privilege = { privilege = estate_nobles_imperial_marshall }
 	}

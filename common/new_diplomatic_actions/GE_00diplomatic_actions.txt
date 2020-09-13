@@ -50,7 +50,7 @@ static_actions = # static_actions is a reserved token.
 	charter_company = 								{ alert_index = 44 alert_tooltip = ICON_CHARTERCOMPANY }
 }
 
-# Create new diplomatic actions like this. AI will currently never send them.
+
 grant_imperial_court = {
 	category = emperor
 
@@ -61,18 +61,29 @@ grant_imperial_court = {
 		is_emperor = yes
 		NOT = {
 			FROM = {
-				has_country_flag = GE_HRE_Imperial_Court
+				OR = {
+					has_country_flag = GE_HRE_Imperial_Court
+					has_country_flag = GE_HRE_Imperial_Marshall
+				}
 			}
 		}
 		FROM = {
 			is_part_of_hre = yes
+		}
+		NOT = {
+			any_country = {
+				has_country_flag = GE_HRE_Imperial_Court
+			}
 		}
 	}
 	is_allowed = {
 		is_emperor = yes
 		NOT = {
 			FROM = {
-				has_country_flag = GE_HRE_Imperial_Court
+				OR = {
+					has_country_flag = GE_HRE_Imperial_Court
+					has_country_flag = GE_HRE_Imperial_Marshall
+				}
 			}
 		}
 		FROM = {
@@ -82,6 +93,23 @@ grant_imperial_court = {
 	on_accept = {
 		FROM = {
 			set_country_flag = GE_HRE_Imperial_Court
+			country_event = {
+				id = GE_privileges.13
+			}
+		}
+		ROOT = {
+			add_ruler_modifier = {
+				name = GE_HRE_Emperor_has_Judge
+				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = {
+						ai = yes
+					}
+				}
+				add_imperial_influence = -5
+			}
 		}
 	}
 	on_decline = {
@@ -92,7 +120,20 @@ grant_imperial_court = {
 
 	ai_will_do = { # this is a trigger
 		FROM = {
-			is_elector = yes
+			calc_true_if = {
+				is_elector = yes
+				any_ally = {
+					tag = ROOT
+				}
+				marriage_with = ROOT
+				ROOT = {				
+					has_opinion = {
+						who = FROM
+						value = 200
+					}
+				}
+				amount = 3
+			}
 		}
 	}
 }
@@ -115,12 +156,35 @@ cancel_imperial_court =  {
 	on_accept = {
 		FROM = {
 			clr_country_flag = GE_HRE_Imperial_Court
+			country_event = {
+				id = GE_privileges.14
+			}
 		}
 	}
 	ai_will_do = {
-		FROM = {
-			NOT = {
-				is_elector = yes
+		OR = {
+			FROM = {
+				NOT = {
+					calc_true_if = {
+						is_elector = yes
+						any_ally = {
+							tag = ROOT
+						}
+						marriage_with = ROOT
+						ROOT = {				
+							has_opinion = {
+								who = FROM
+								value = 200
+							}
+						}
+						amount = 3
+					}
+				}
+			}
+			ROOT = {
+				NOT = {
+					has_ruler_modifier = GE_HRE_Emperor_has_Judge
+				}
 			}
 		}
 	}
@@ -136,18 +200,29 @@ grant_imperial_marshall = {
 		is_emperor = yes
 		NOT = {
 			FROM = {
-				has_country_flag = GE_HRE_Imperial_Marshall
+				OR = {
+					has_country_flag = GE_HRE_Imperial_Court
+					has_country_flag = GE_HRE_Imperial_Marshall
+				}
 			}
 		}
 		FROM = {
 			is_part_of_hre = yes
+		}
+		NOT = {
+			any_country = {
+				has_country_flag = GE_HRE_Imperial_Marshall
+			}
 		}
 	}
 	is_allowed = {
 		is_emperor = yes
 		NOT = {
 			FROM = {
-				has_country_flag = GE_HRE_Imperial_Marshall
+				OR = {
+					has_country_flag = GE_HRE_Imperial_Court
+					has_country_flag = GE_HRE_Imperial_Marshall
+				}
 			}
 		}
 		FROM = {
@@ -157,6 +232,23 @@ grant_imperial_marshall = {
 	on_accept = {
 		FROM = {
 			set_country_flag = GE_HRE_Imperial_Marshall
+			country_event = {
+				id = GE_privileges.15
+			}
+		}
+		ROOT = {
+			add_ruler_modifier = {
+				name = GE_HRE_Emperor_has_Marshall
+				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = {
+						ai = yes
+					}
+				}
+				add_imperial_influence = -5
+			}
 		}
 	}
 	on_decline = {
@@ -167,7 +259,20 @@ grant_imperial_marshall = {
 
 	ai_will_do = { # this is a trigger
 		FROM = {
-			is_elector = yes
+			calc_true_if = {
+				is_elector = yes
+				any_ally = {
+					tag = ROOT
+				}
+				marriage_with = ROOT
+				ROOT = {				
+					has_opinion = {
+						who = FROM
+						value = 200
+					}
+				}
+				amount = 3
+			}
 		}
 	}
 }
@@ -190,12 +295,35 @@ cancel_imperial_marshall =  {
 	on_accept = {
 		FROM = {
 			clr_country_flag = GE_HRE_Imperial_Marshall
+			country_event = {
+				id = GE_privileges.16
+			}
 		}
 	}
 	ai_will_do = {
-		FROM = {
-			NOT = {
-				is_elector = yes
+		OR = {
+			FROM = {
+				NOT = {
+					calc_true_if = {
+						is_elector = yes
+						any_ally = {
+							tag = ROOT
+						}
+						marriage_with = ROOT
+						ROOT = {				
+							has_opinion = {
+								who = FROM
+								value = 200
+							}
+						}
+						amount = 3
+					}
+				}
+			}
+			ROOT = {
+				NOT = {
+					has_ruler_modifier = GE_HRE_Emperor_has_Marshall
+				}
 			}
 		}
 	}

@@ -7,5 +7,11 @@ GE_Imperial_Court_Tax = {
 }
 
 GE_Imperial_Court_Manpower = {
-	local_manpower_modifier = -1
+	local_manpower = -0.5
+}
+GE_HRE_Emperor_has_Judge = {
+	imperial_authority = 0.05
+}
+GE_HRE_Emperor_has_Marshall = {
+	imperial_authority = 0.05
 }

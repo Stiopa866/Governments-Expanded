@@ -138,7 +138,7 @@ country_event = {
 	id = GE_privileges.7
 	title = GE_privileges.7.t
 	desc = GE_privileges.7.d
-	picture = TRADEGOODS_eventPicture
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -147,6 +147,10 @@ country_event = {
 			set_variable = {
 				which = GE_Imperial_Court_Incomes_Tooltip_Number
 				which = GE_Imperial_Court_Incomes
+			}
+			multiply_variable = {
+				which = GE_Imperial_Court_Incomes_Tooltip_Number
+				value = 10
 			}
 		}
 	}
@@ -169,7 +173,7 @@ country_event = {
 							value = 1
 						}
 					}
-					add_treasury = 1
+					add_treasury = 10
 					change_variable = {
 						which = GE_Imperial_Court_Incomes
 						value = -1
@@ -221,7 +225,7 @@ country_event = {
 							value = 1
 						}
 					}
-					add_treasury = 1
+					add_treasury = 10
 					change_variable = {
 						which = GE_Imperial_Court_Incomes
 						value = -1
@@ -284,7 +288,7 @@ country_event = {
 							value = 1
 						}
 					}
-					add_treasury = 1
+					add_treasury = 10
 					change_variable = {
 						which = GE_Imperial_Court_Incomes
 						value = -1
@@ -304,7 +308,7 @@ country_event = {
 	id = GE_privileges.8
 	title = GE_privileges.8.t
 	desc = GE_privileges.8.d
-	picture = TRADEGOODS_eventPicture
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -323,7 +327,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = GE_Imperial_Court_Tax
-				duration = 365
+				duration = 3650
 			}
 			hidden_effect = {
 				FROM = {
@@ -355,7 +359,7 @@ country_event = {
 	id = GE_privileges.9
 	title = GE_privileges.9.t
 	desc = GE_privileges.9.d
-	picture = TRADEGOODS_eventPicture
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -376,7 +380,7 @@ country_event = {
 	}
 	option = {
 		name = GE_privileges.9.b
-		add_legitimacy = 1
+		add_legitimacy = -5
 	}
 }
 
@@ -384,7 +388,7 @@ country_event = {
 	id = GE_privileges.10
 	title = GE_privileges.10.t
 	desc = GE_privileges.10.d
-	picture = TRADEGOODS_eventPicture
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -396,7 +400,7 @@ country_event = {
 			}
 			multiply_variable = {
 				which = GE_Imperial_Marshal_Incomes_Tooltip_Number
-				value = 25
+				value = 250
 			}
 		}
 	}
@@ -419,7 +423,7 @@ country_event = {
 							value = 1
 						}
 					}
-					add_manpower = 0.025
+					add_manpower = 0.25
 					change_variable = {
 						which = GE_Imperial_Marshal_Incomes
 						value = -1
@@ -471,7 +475,7 @@ country_event = {
 							value = 1
 						}
 					}
-					add_manpower = 0.025
+					add_manpower = 0.25
 					change_variable = {
 						which = GE_Imperial_Marshal_Incomes
 						value = -1
@@ -529,7 +533,7 @@ country_event = {
 							value = 1
 						}
 					}
-					add_manpower = 0.025
+					add_manpower = 0.25
 					change_variable = {
 						which = GE_Imperial_Marshal_Incomes
 						value = -1
@@ -549,7 +553,7 @@ country_event = {
 	id = GE_privileges.11
 	title = GE_privileges.11.t
 	desc = GE_privileges.11.d
-	picture = TRADEGOODS_eventPicture
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -568,7 +572,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = GE_Imperial_Court_Manpower
-				duration = 365
+				duration = 3650
 			}
 			hidden_effect = {
 				if = {
@@ -582,105 +586,105 @@ country_event = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						base_manpower = 2
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 3
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 4
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 5
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 6
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 7
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 8
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 9
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						base_manpower = 10
-					}
-					FROM = {
-						change_variable = {
-							which = GE_Imperial_Marshal_Incomes
-							value = 1
-						}
-					}
-				}
+				# if = {
+					# limit = {
+						# base_manpower = 2
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 3
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 4
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 5
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 6
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 7
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 8
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 9
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
+				# if = {
+					# limit = {
+						# base_manpower = 10
+					# }
+					# FROM = {
+						# change_variable = {
+							# which = GE_Imperial_Marshal_Incomes
+							# value = 1
+						# }
+					# }
+				# }
 			}
 		}
 		ai_chance = { 
@@ -704,7 +708,7 @@ country_event = {
 	id = GE_privileges.12
 	title = GE_privileges.12.t
 	desc = GE_privileges.12.d
-	picture = TRADEGOODS_eventPicture
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -725,6 +729,78 @@ country_event = {
 	}
 	option = {
 		name = GE_privileges.12.b
-		add_legitimacy = 1
+		add_legitimacy = -5
+	}
+}
+
+country_event = {
+	id = GE_privileges.13
+	title = GE_privileges.13.t
+	desc = GE_privileges.13.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = GE_privileges.13.a
+		set_estate_privilege = estate_nobles_imperial_court
+	}
+	option = {
+		name = GE_privileges.13.b
+		add_legitimacy = 10
+	}
+}
+
+country_event = {
+	id = GE_privileges.14
+	title = GE_privileges.14.t
+	desc = GE_privileges.14.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = GE_privileges.14.a
+		add_legitimacy = -10
+	}
+}
+
+country_event = {
+	id = GE_privileges.15
+	title = GE_privileges.15.t
+	desc = GE_privileges.15.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = GE_privileges.15.a
+		set_estate_privilege = estate_nobles_imperial_marshall
+	}
+	option = {
+		name = GE_privileges.15.b
+		add_legitimacy = 10
+	}
+}
+
+country_event = {
+	id = GE_privileges.16
+	title = GE_privileges.16.t
+	desc = GE_privileges.16.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = GE_privileges.16.a
+		add_legitimacy = -10
 	}
 }
