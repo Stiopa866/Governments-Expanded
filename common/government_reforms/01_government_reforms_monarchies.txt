@@ -1243,13 +1243,13 @@ sufi_syncretism_reform = {
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Clergy_Influence
 			value = 1
 		}
 	}
 	removed_effect = {
 		change_variable = {
-			which = Noble_Influence
+			which = Clergy_Influence
 			value = -1
 		}
 	}
@@ -1499,6 +1499,18 @@ decentralize_reform = {
 sidhi_recruitment = {
 	icon = "siddhi_recruitment"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		technology_group = indian
@@ -1520,6 +1532,18 @@ sidhi_recruitment = {
 mansabdari_reform = {
 	icon = "noble_muslim"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		tag = MUG
 		NOT = { map_setup = map_setup_random }
@@ -1755,6 +1779,18 @@ meritocratic_focus_reform = {
 dakhni_culture_reform = {
 	icon = "indian_crown"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		technology_group = indian
@@ -1775,6 +1811,18 @@ dakhni_culture_reform = {
 zabt_reform = {
 	icon = "general_eastern_administrative"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Royal_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		tag = MUG
