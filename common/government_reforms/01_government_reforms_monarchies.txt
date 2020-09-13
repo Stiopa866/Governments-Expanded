@@ -1166,6 +1166,18 @@ quash_noble_power_reform = {
 enforce_trader_privileges_reform = {
 	icon = "paper_money_map"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		is_reform_available = plutocratic_reform
 		OR = {
@@ -1200,6 +1212,18 @@ enforce_trader_privileges_reform = {
 bengali_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		primary_culture = bengali
@@ -1217,6 +1241,18 @@ bengali_reform = {
 sufi_syncretism_reform = {
 	icon = "muslim"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		primary_culture = bengali
@@ -1234,6 +1270,18 @@ sufi_syncretism_reform = {
 poligar_reform = {
 	icon = "indian_crown"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		technology_group = indian
@@ -1255,6 +1303,18 @@ poligar_reform = {
 khalsa_reform = {
 	icon = "strength_of_the_khalsa"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Clergy_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		religion = sikhism
@@ -1272,6 +1332,18 @@ khalsa_reform = {
 deccani_society_reform = {
 	icon = "noble_indian"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		is_revolutionary = no
@@ -1293,6 +1365,18 @@ deccani_society_reform = {
 black_army_reform = {
 	icon = "black_army_reform"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		tag = HUN
 		has_country_flag = black_army_reform_flag
@@ -1359,14 +1443,14 @@ centralize_reform = {
 			value = 1
 		}
 	}
-	modifiers = {
-		global_autonomy = -0.05
-	}
 	removed_effect = {
 		change_variable = {
 			which = Royal_Influence
 			value = -1
 		}
+	}
+	modifiers = {
+		global_autonomy = -0.05
 	}
 	ai = {
 		factor = 1
