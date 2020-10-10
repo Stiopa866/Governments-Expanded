@@ -393,7 +393,7 @@
  royal_electors_reform: "Royal Electors"
  royal_electors_reform_desc: "The only ones that deserve to elect the next ruler is our royal dynasty, as only we know what its like to wear the crown."
  parliamental_electors_reform: "Parliamental Electors"
- parliamental_electors_reform_desc: "We rule the people, so who better to elect our king than the people themselves?"
+ parliamental_electors_reform_desc: "We, The Parliament, rule the people, so who better to elect our king than us?"
  papal_electors_reform: "Papal Electors"
  papal_electors_reform_desc: "Crowned by god, for He is the only one that can truly know who deserves to rule."
  curia_regis_reform: "Curia Regis"
@@ -860,11 +860,11 @@
  despotate_of_serbia_reform: "Despotate of Serbia"
  despotate_of_serbia_reform_desc: "After the fall of the Serbian Empire the despotate of Serbia rose from the ashes to unite and defend as much of their formerly held lands from the Ottoman Turk menace. While nominally a Byzantine subject, in practice this was primarily used as a governmental basis and a source of legitimacy. This didn't stop them from aligning with, and militarily supporting, the Ottomans or the Hungarians depending on what was advantageous."
  serbian_empire_reform: "Serbian Empire"
- serbian_empire_reform_desc: "Serbian Empire Description is WIP."
+ serbian_empire_reform_desc: "The Serbian empire once covered much of the Balkan peninsula, vassalizing the Bulgarian empire, the Greek states and coming within an arms reach of the Byzantine capital of Constantinople. We truly have much to be proud of!"
  vlast_voivodes_reform: "Vlast Voivodes"
  vlast_voivodes_reform_desc: "By empowering the voivodes through the reorganization of the country in so called 'Vlasts', The voivodes that were granted governorship of these districts had absolute authority on everything related to both military and civilian matters."
  form_the_vojstatic_reform: "Form the Vojstatic"
- form_the_vojstatic_reform_desc: "Following the collapse of the Serbian Empire, the Despotate in its rough lands had a much reduced pool of wealth and manpower, to maintain combat effectiveness against the Turks and Hungarians we will create the Vojstatic. This modern, cannon equipped standing army raised from our own citizens shall defend our castles and cities from any invaders. Further Strenghtened by strenghtened by numerous mercenary companies."
+ form_the_vojstatic_reform_desc: "Following the collapse of the Serbian Empire, the Despotate in its rough lands had a much reduced pool of wealth and manpower, to maintain combat effectiveness against the Turks and Hungarians we will create the Vojstatic. This modern, cannon equipped standing army raised from our own citizens shall defend our castles and cities from any invaders. Further strenghtened by numerous mercenary companies."
  grand_logothete_reform: "Grand Logothete"
  grand_logothete_reform_desc: "Originally a position adopted from the Byzantine Empire, the Grand Logothete held a dualist position as both the chief chancellor of the Serbian Empire and the Serbian Despotate, as well as the second highest authority of matters of the Serbian Orthodox Church."
  
@@ -951,6 +951,25 @@
  inti_huaca_regionalism_reform_desc: "The regional shrines and traditions must be respected and integrated into our wider pantheon, for while we know the truth of the Sun God, we can not risk the wrath of minor gods by destroying their places of worship. By adding them to our national system of altar maintenances and tributes we can ensure their maintenance and skim off the top."
  nunziatella_reform: "La Nunziatella"
  nunziatella_reform_desc: "the 'Reale Accademia Miliare', or Royal Military Academy of the Kingdom of the Two Sicilies is an educational institute with an exceptional track record. Its scions and students make up the bulk of our kingdom's command staff. Granted the nickname of 'La Nunziatella' following the movement of the Academy to an ancient jesuit college, incorporating the baroque 'Church of the Nunziatella'."
+ 
+ #1.14
+ duchy_of_luxembourg_reform: "Duchy of Lëtzebuerg"
+ duchy_of_luxembourg_reform_desc: "Created by the Holy Roman Emperor in 1354, the county of Letzebuerg was elevated to the status of a duchy, empowering Wenceslaus of Luxembourg by absorbing neighbouring margraviates and counties, growing in both size and prestige. The new duchy would later give rise to multiple emperors!"
+ gibraltar_of_the_north_reform: "Gibraltar of the North"
+ gibraltar_of_the_north_reform_desc: "From its very roots, the city of Lëtzeburg was a fortress to be reckoned with, its name meaning 'Little Castle', but throughout the ages its position between the low countries, the Holy Roman Empire, the Kingdom of France and the Burgundian dukes, it has grown into a fortress dubbed the 'Gibralter of the North' for its impressive defences, bringing peace and security to our people. Let us expand our knowledge of building efficient forts to all corners of our lands!"
+ crossroads_of_cultures_reform: "Crossroads of Cultures"
+ crossroads_of_cultures_reform_desc: "From its classical position between Germanic, Gallic and Belgea tribes to its position between the great Frankish kingdoms to the melting pot of French, Dutch and German peoples. The Luxembourger identity is one steeped in cultural mixing, taking the best ideas that come from each region and incorporating it into a highly succesfull and productive people."
+ hof_van_brabant_reform: "Hof van Brabant"
+ hof_van_brabant_reform_desc: "The 'Hof van Brabant' was the name given to the Southern Netherlands following the secession of the 'Unie van Utrecht' whereby the Northern protestant provinces became independent. Its courts became overwhelmingly Catholic and filled with artists and writers."
+ army_of_flanders_reform: "Army of Flanders"
+ army_of_flanders_reform_desc: "The Army of Flanders is a mercenary army comprised of Italian condotierre, Spanish criminals, German princely forces and Walloon levies. This army is infamous for its size, plundering and for its loyalty to be completely dependent on whether or not the months pay arrived on time."
+ 
+ common_republic_reform: "Common Republic"
+ common_republic_reform_desc: "After a great lot of struggle and effort these courageous peasants have gained a bit of Influence after fighting their oppression, it is now up to our Ruler to decide how to continue. But we must be careful lest they take an entire hand when we offer a finger.."
+ representative_electors_reform: "Representative Electors"
+ representative_electors_reform_desc: "He who sits atop the pyramid of power should take care that every one of the blocks is aligned under him, and by giving even the lowest serf the right to vote for his monarch, he is sure to have  confidence in the monarch's leadership."
+ 
+ 
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1108,14 +1127,14 @@
  mechanic_enables_church_policy_yes: "Church Policy: Upon Ascention, pick a policy for your administration."
  mechanic_enables_royal_levies_yes: "Royal Levies: §G+1§! Land Force Limit and §G5%§! Land Force Limit Modifier for each point of military skill of your monarch."
  mechanic_enables_byzantine_administration_yes: "Byzantime Administration: §G-10%§! Administrative Tech cost and §G+0.5§! yearly legitimacy while Byzantium exists."
- mechanic_enables_military_governors_yes: "Military Governors: §G250§! Base Manpower and §G10%§! Local Tax Modifier in provinces with forts."
- mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.25§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
+ mechanic_enables_military_governors_yes: "Military Governors: §G500§! Base Manpower and §G-10%§! Local Development Cost in provinces with forts."
+ mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.5§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 
  #GE 1.13 #1.30
  mechanic_enables_noble_diplomats_yes:0 "Noble Diplomats: Unlock the 'Noble Diplomatis' Privilege for the nobility, Giving a §G10%§! Improve relations and a direct relations boost upon granting."
  mechanic_enables_magnate_law_yes: "Magnate Law: Unlocks the 'Magnate Law' Privilege for the Nobility, granting up to §G-2.5§! National Unrest"
  mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain Access to the infamous 'Imperial Knights' Mercenary Company."
- mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Company."
+ mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Compa ny."
  mechanic_enables_timariots_yes: "Timariots: Unlock the 'Timariot Domains' Privilege for the nobility, Giving extra cavalry and governing capacity in trade for land."
  mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra trade goods produced and reduced development cost depending on land ownership."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Unlock the 'Noble Officers' Privilege for the nobility, Giving excellent generals each generation."
@@ -1125,7 +1144,7 @@
  mechanic_enables_fire_ghulams_yes: "Expand the Ghulam Corps: Unlocks the 'Expand the Ghulam Corps' Privilege for the Ghulams for additional land fire damage."
  mechanic_enables_ghulam_governors_yes: "Ghulam Governors: Unlocks the 'Ghulam Governors' Privilege for the Ghulams for reduced autonomy."
  mechanic_enables_silk_traders_yes: "Armenian Silk Traders: get a §G+15%§! Trade Efficiency bonus if you are trading in silk."
- 
+                                                      
  
  mechanic_enables_liber_augustalis_yes: "Liber Augustalis: Increase each estate's Loyalty Equilibrium by §Y5%§! while your legitimacy is over §Y90%§!."
  mechanic_enables_customs_house_yes: "Customs House: §G+25%§! Goods Produced in Wool and Cloth provinces."
@@ -1141,6 +1160,13 @@
  mechanic_enables_huaca_cults_yes: "Huaca Cults: §G+10%§! Tax in provinces that do not follow the true faith."
  mechanic_enables_unified_drills_yes: "Unified Drills: §G+4%§! Manpower Recovery Speed and §G-2%§! Regiment Cost per HRE subject, up to a maximum of five subjects."
  mechanic_enables_artillery_academia_yes: "Academy of Artillery: §G+1§! Land Leader Siege while you have 75 or more Army Tradition."
+ 
+ #GE 1.14
+ mechanic_enables_cultural_inspiration_yes: "Cultural Inspiration: §G+5%§! Production Efficiency and §G-2%§! Technology Cost per accepted culture, up to a maximum of five accepted cultures."
+ mechanic_enables_coin_over_crown_yes: "Coin over Crown: §G+5%§! Mercenary Discipline while you do not have loans."
+ mechanic_enables_union_of_arras_yes: "Union of Arras: §G+2§! Papal Influence if you have 3 catholic advisors."
+ mechanic_enables_grand_leader_yes: "Grand Leader: Gain between §R-10%§! to §G+20%§! Land Force Limit depending on your monarch military skill."
+ mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+1%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occational mercenary captains from those lands to train your troops." #
 
 
  #Edicts
