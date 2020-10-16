@@ -968,7 +968,8 @@
  common_republic_reform_desc: "After a great lot of struggle and effort these courageous peasants have gained a bit of Influence after fighting their oppression, it is now up to our Ruler to decide how to continue. But we must be careful lest they take an entire hand when we offer a finger.."
  representative_electors_reform: "Representative Electors"
  representative_electors_reform_desc: "He who sits atop the pyramid of power should take care that every one of the blocks is aligned under him, and by giving even the lowest serf the right to vote for his monarch, he is sure to have  confidence in the monarch's leadership."
- 
+ emirate_of_andalusia_reform: "Emirate of Andalucia"
+ emirate_of_andalusia_reform_desc: "WIP"
  
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
@@ -1167,7 +1168,7 @@
  mechanic_enables_union_of_arras_yes: "Union of Arras: §G+2§! Papal Influence if you have 3 catholic advisors."
  mechanic_enables_grand_leader_yes: "Grand Leader: Gain between §R-10%§! to §G+20%§! Land Force Limit depending on your monarch military skill."
  mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+1%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occational mercenary captains from those lands to train your troops." #
-
+ mechanic_enables_iberian_harem_yes: "Iberian Harem: Elect a suitable heir from among your sons."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

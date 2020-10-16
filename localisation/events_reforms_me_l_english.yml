@@ -139,6 +139,24 @@
  reform_me_events.218.a: "A Reasonable Price."
  reform_me_events.218.b: "We are not interested in your services."
  
+ reform_me_events.222.t: "A new Heir Apparent"
+ reform_me_events.222.d: "The time has come to select a new heir from amongst my children, but who among them deserves to inherit the vast lands of the Emirate of Andalucia?"
+ reform_me_events.222.a: "The bold one taken from my fierce Castillian wife."
+ GE_Iberian_Harem_Castillian_TT: "The Nobility approves of this choice."
+ reform_me_events.222.b: "The pious one born from a proper Andalucian woman."
+ GE_Iberian_Harem_Andalucian_TT: "The Clergy and poets eagerly await his reign."
+ reform_me_events.222.c: "The visionary one born of my dreamer of the West."
+ GE_Iberian_Harem_Portugese_TT: "Who knows where his gaze might lead our ships."
+ reform_me_events.222.e: "The crafty one raised by a thrifty Catalonian bride."
+ GE_Iberian_Harem_Catalan_TT: "Beloved by the Craftsmen and Burghers."
+ reform_me_events.223.t: "Deep Roots"
+ reform_me_events.223.d: "I will never forget the lessons my teachers and my mother taught me, and i shall not abandon that which is most important in life!"
+ reform_me_events.223.a: "Glory on the Battlefield!"
+ reform_me_events.223.b: "Peace and Wisdom!"
+ reform_me_events.223.c: "Fame and Exotic Riches!"
+ reform_me_events.223.e: "Money and Trade!"
+
+ 
  
  #Privileges
  GE_privileges.1.t: "New Generation of Draftees"

@@ -850,7 +850,7 @@ GE_Foreign_Experts_5 = {
 	mercenary_discipline = 0.05
 }
 GE_Foreign_Experts_German = {
-	cavalry_fire = 0.5
+	cavalry_fire = 0.25
 }
 GE_Foreign_Experts_Catalan = {
 	infantry_power = 0.10
@@ -862,6 +862,23 @@ GE_Foreign_Experts_Serbian = {
 GE_Foreign_Experts_Italian = {
 	mil_tech_cost_modifier = -0.10
 	leader_cost = -0.10
+}
+
+GE_Iberian_Harem_Castillian = {
+	army_tradition = 0.5
+	nobles_loyalty_modifier = 0.10
+}
+GE_Iberian_Harem_Andalucian = {
+	technology_cost = -0.05
+	church_loyalty_modifier = 0.10
+}
+GE_Iberian_Harem_Portugese = {
+	naval_forcelimit_modifier = 0.15
+	navy_tradition = 0.5
+}
+GE_Iberian_Harem_Catalan = {
+	placed_merchant_power = 10
+	burghers_loyalty_modifier = 0.10
 }
 	
 	

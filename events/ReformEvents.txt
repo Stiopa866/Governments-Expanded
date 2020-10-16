@@ -16491,3 +16491,161 @@ country_event = {
 		set_country_flag = GE_Foreign_Experts_Denied
 	}
 }
+
+country_event = {
+	id = reform_me_events.222
+	title = reform_me_events.222.t
+	desc = reform_me_events.222.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		has_government_attribute = enables_iberian_harem
+		NOT = {
+			OR = {
+				has_heir = yes
+				has_country_flag = GE_Iberian_Harem_Flag
+			}
+		}
+		ruler_age = 30
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	immediate = {
+		set_country_flag = GE_Iberian_Harem_Flag
+	}
+	
+	option = {
+		name = reform_me_events.222.a
+		define_heir = {
+			culture = castillian 
+			adm = -1
+			dip = -1
+			mil = 3
+		}
+		set_heir_flag = GE_Iberian_Harem_Castillian
+		custom_tooltip = GE_Iberian_Harem_Castillian_TT
+	}
+	option = {
+		name = reform_me_events.222.b
+		define_heir = {
+			culture = andalucian 
+			adm = 3
+			dip = -1
+			mil = -1
+		}
+		set_heir_flag = GE_Iberian_Harem_Andalucian
+		custom_tooltip = GE_Iberian_Harem_Andalucian_TT
+	}
+	option = {
+		name = reform_me_events.222.c
+		define_heir = {
+			culture = portugese 
+			adm = -1
+			dip = 3
+			mil = -1
+		}
+		set_heir_flag = GE_Iberian_Harem_Portugese
+		custom_tooltip = GE_Iberian_Harem_Portugese_TT
+	}
+	option = {
+		name = reform_me_events.222.e
+		define_heir = {
+			culture = catalan 
+			adm = -1
+			dip = 3
+			mil = -1
+		}
+		set_heir_flag = GE_Iberian_Harem_Catalan
+		custom_tooltip = GE_Iberian_Harem_Catalan_TT
+	}
+	
+	after = {
+		clr_country_flag = GE_Iberian_Harem_Flag
+	}
+}
+
+country_event = {
+	id = reform_me_events.223
+	title = reform_me_events.223.t
+	desc = reform_me_events.223.d
+	picture = WESTERNISATION_eventPicture
+
+	trigger = {
+		has_government_attribute = enables_iberian_harem
+		OR = {
+			AND = {
+				has_ruler_flag = GE_Iberian_Harem_Castillian
+				NOT = {
+					has_country_modifier = GE_Iberian_Harem_Castillian
+				}
+			}
+			AND = {
+				has_ruler_flag = GE_Iberian_Harem_Andalucian
+				NOT = {
+					has_country_modifier = GE_Iberian_Harem_Andalucian
+				}
+			}
+			AND = {
+				has_ruler_flag = GE_Iberian_Harem_Portugese
+				NOT = {
+					has_country_modifier = GE_Iberian_Harem_Portugese
+				}
+			}
+			AND = {
+				has_ruler_flag = GE_Iberian_Harem_Catalan
+				NOT = {
+					has_country_modifier = GE_Iberian_Harem_Catalan
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = reform_me_events.223.a
+		trigger = {
+			has_ruler_flag = GE_Iberian_Harem_Castillian
+		}
+		add_ruler_modifier = {
+			name = GE_Iberian_Harem_Castillian
+			duration = -1
+		}
+	}
+	option = {
+		name = reform_me_events.223.b
+		trigger = {
+			has_ruler_flag = GE_Iberian_Harem_Andalucian
+		}
+		add_ruler_modifier = {
+			name = GE_Iberian_Harem_Andalucian
+			duration = -1
+		}
+	}
+	option = {
+		name = reform_me_events.223.c
+		trigger = {
+			has_ruler_flag = GE_Iberian_Harem_Portugese
+		}
+		add_ruler_modifier = {
+			name = GE_Iberian_Harem_Portugese
+			duration = -1
+		}
+	}
+	option = {
+		name = reform_me_events.223.e
+		trigger = {
+			has_ruler_flag = GE_Iberian_Harem_Catalan
+		}
+		add_ruler_modifier = {
+			name = GE_Iberian_Harem_Catalan
+			duration = -1
+		}
+	}
+}
