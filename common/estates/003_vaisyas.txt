@@ -172,6 +172,8 @@ estate_vaisyas = {
 		estate_vaisyas_monopoly_of_dyes
 		estate_vaisyas_monopoly_of_glass
 		estate_vaisyas_monopoly_of_paper
+		#GE
+		estate_vaisyas_land_privileges
 	}
 
 	agendas = {
