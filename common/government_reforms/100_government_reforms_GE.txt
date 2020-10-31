@@ -9160,7 +9160,7 @@ general_war_commissariat_reform = {
 	modifiers = {
 		global_tax_modifier = 0.10
 		global_regiment_cost = -0.05
-		global_autonomy = -0.025
+		monthly_militarized_society = 0.03
 	}
 	ai = {
 		factor = 100

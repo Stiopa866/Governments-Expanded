@@ -481,7 +481,7 @@ estate_nobles_noble_officer_privilege = {
 			limit = {
 				estate_territory = {
 					estate = estate_nobles
-					territory = 60
+					territory = 50
 				}
 			}
 			create_general = { tradition = 120 }
@@ -490,7 +490,7 @@ estate_nobles_noble_officer_privilege = {
 			limit = {
 				estate_territory = {
 					estate = estate_nobles
-					territory = 50
+					territory = 40
 				}
 			}
 			create_general = { tradition = 100 }
@@ -499,7 +499,7 @@ estate_nobles_noble_officer_privilege = {
 			limit = {
 				estate_territory = {
 					estate = estate_nobles
-					territory = 40
+					territory = 30
 				}
 			}
 			create_general = { tradition = 80 }
@@ -508,7 +508,7 @@ estate_nobles_noble_officer_privilege = {
 			limit = {
 				estate_territory = {
 					estate = estate_nobles
-					territory = 30
+					territory = 20
 				}
 			}
 			create_general = { tradition = 60 }
@@ -517,7 +517,7 @@ estate_nobles_noble_officer_privilege = {
 			limit = {
 				estate_territory = {
 					estate = estate_nobles
-					territory = 20
+					territory = 10
 				}
 			}
 			create_general = { tradition = 40 }
