@@ -714,7 +714,7 @@ emirate_of_andalusia_reform = {
 				religion_group = muslim
 				culture_group = iberian	
 			}
-			#has_reform = emirate_of_andalusia_reform
+			has_reform = emirate_of_andalusia_reform
 			OR = {
 				development = 300
 				tag = ADU
@@ -8630,7 +8630,7 @@ mercenary_corps_reform = {
 	modifiers = {
 		mercenary_manpower = 0.25
 		reinforce_speed = 0.25
-		merc_maintenance_modifier = -0.25
+		merc_maintenance_modifier = -0.15
 	}
 	custom_attributes = {
 		#enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
