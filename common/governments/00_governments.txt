@@ -610,7 +610,7 @@ republic = {
 		military_dictatorship
 		signoria
 		protectorate_parliament_legacy
-		prussian_republic
+		prussian_republic_reform
 		united_cantons_legacy
 		# ME Legacy Governments:
 		caliphate_sunni_legacy
