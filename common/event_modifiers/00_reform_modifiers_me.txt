@@ -880,6 +880,24 @@ GE_Iberian_Harem_Catalan = {
 	placed_merchant_power = 10
 	burghers_loyalty_modifier = 0.10
 }
+
+GE_Influencial_Ties_1 = {
+	diplomatic_reputation = 0.5
+}
+GE_Influencial_Ties_2 = {
+	diplomatic_reputation = 1
+}
+GE_Influencial_Ties_3 = {
+	diplomatic_reputation = 1.5
+}
+GE_Influencial_Ties_4 = {
+	diplomatic_reputation = 2
+}
+GE_Influencial_Ties_5 = {
+	diplomatic_reputation = 2.5
+}
+
+	
 	
 	
 #Cortez

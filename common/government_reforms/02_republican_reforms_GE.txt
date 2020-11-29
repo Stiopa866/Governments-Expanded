@@ -406,9 +406,11 @@ demedici_dynasty_reform = {
 	}
 	modifiers = {
 		max_absolutism = 5
+		republican_tradition = -0.1
 	}
 	custom_attributes = {
 		enables_demedici = yes
+		enables_influencial_ties = yes
 	}
 	ai = {
 		factor = 100

@@ -321,7 +321,7 @@ monarchy = {
 				sulu_administration_reform
 				academy_of_science_reform
 				koprulu_dynasty_reform
-				fredrickan_reforms_reform
+				kreditwerk_reform
 				#conseil_du_roi_reform #FRA
 				parisian_court_reform
 				corps_diplomatique_reform
@@ -430,6 +430,7 @@ monarchy = {
 				caravanserai_reform
 				reinforce_the_hwangog_reform
 				bureaucratic_economy_reform
+				fredrickan_reforms_reform
 				#1.13
 				danske_besiddelser_reform
 			}

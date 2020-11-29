@@ -156,39 +156,18 @@ country_event = {
 		}
 		custom_tooltip = remains_ruler
 		add_absolutism = 2.5
-		if = {
-			limit = {
-				has_government_attribute = enables_demedici
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		random_list = {
+			10 = {
+				add_adm_power = 50
 			}
-			random_list = {
-				10 = {
-					change_adm = 1
-					add_adm_power = 75
-				}
-				10 = {
-					change_dip = 1
-					add_dip_power = 75
-				}
-				10 = {
-					change_mil = 1
-					add_mil_power = 75
-				}
+			10 = {
+				add_dip_power = 50
 			}
-		}
-		else = {
-			change_adm = 1
-			change_dip = 1
-			change_mil = 1
-			random_list = {
-				10 = {
-					add_adm_power = 50
-				}
-				10 = {
-					add_dip_power = 50
-				}
-				10 = {
-					add_mil_power = 50
-				}
+			10 = {
+				add_mil_power = 50
 			}
 		}
 		if = {
@@ -760,6 +739,7 @@ country_event = {
 		add_scaled_republican_tradition = -5
 
 		define_ruler = {
+			dip = 1
 			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"
@@ -1519,6 +1499,7 @@ country_event = {
 		add_scaled_republican_tradition = -5
 
 		define_ruler = {
+			dip = 1
 			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"
@@ -2722,9 +2703,9 @@ country_event = {
 		add_republican_tradition = -15
 
 		define_ruler = {
-			mil = 0
-			adm = 0
-			dip = 0
+			mil = 1
+			adm = 1
+			dip = 1
 			min_age = 45
 			max_age = 55
 			dynasty = "de' Medici"

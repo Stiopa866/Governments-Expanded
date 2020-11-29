@@ -6200,18 +6200,6 @@ koprulu_dynasty_reform = {
 fredrickan_reforms_reform = {
 	icon = frederick
 	allow_normal_conversion = yes
-	effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = 1
-		}
-	}
-	removed_effect = {
-		change_variable = {
-			which = Burgher_Influence
-			value = -1
-		}
-	}
 	potential = {
 		OR = {
 			tag = BRA
@@ -6230,6 +6218,47 @@ fredrickan_reforms_reform = {
 		development_cost = -0.05
 		build_cost = -0.10
 		interest = -0.5
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+kreditwerk_reform = {
+	icon = paper_money_map
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			tag = BRA
+			has_reform = kreditwerk_reform
+			primary_culture = prussian
+		}
+	}
+	trigger = {
+		OR = {
+			tag = BRA
+			has_reform = kreditwerk_reform
+			primary_culture = prussian
+		}
+	}
+	modifiers = {
+		governing_capacity = 100
+		nobles_influence_modifier = 0.10
+	}
+	custom_attributes = {
+		enables_kreditwerk_appointments = yes
 	}
 	ai = {
 		factor = 100

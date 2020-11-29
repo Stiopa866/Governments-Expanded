@@ -974,14 +974,15 @@
  representative_electors_reform_desc: "He who sits atop the pyramid of power should take care that every one of the blocks is aligned under him, and by giving even the lowest serf the right to vote for his monarch, he is sure to have  confidence in the monarch's leadership."
  emirate_of_andalusia_reform: "Emirate of Andalucia"
  emirate_of_andalusia_reform_desc: "WIP"
- 
+ kreditwerk_reform: "Reformed Kreditwerk"
+ kreditwerk_reform_desc: "In the mid-16th century, the margraves of Brandenburg had become highly dependent on the estates (counts, lords, knights and towns).The margraviate's liabilities and tax income as well as the margrave's finances were controlled by the Kreditwerk, an institution not controlled by the elector, and the Großer Ausschuß 'Great Committee' of the estates."
 
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
  mechanic_enables_cortes_yes:0 "Enable The Cortes Privilege for the Noble Estate, Giving influence and resources depending on who to support."
- mechanic_enables_demedici_yes:0 "De'Medici Influence: Corrupt the electoral system."
+ mechanic_enables_demedici_yes:0 "De'Medici Influence: Always be able to elect a De'Medici Scion."
  mechanic_enables_holy_war_yes:0 "Enables Holy Wars."
  kingdom_of_god_tooltip:0 "Has established the Kingdom of God."
  mechanic_enables_unrestricted_diplomats_yes:0 "Grants a permanent §G25§! opinion boost with all known countries."
@@ -1174,7 +1175,9 @@
  mechanic_enables_grand_leader_yes: "Grand Leader: Gain between §R-10%§! to §G+20%§! Land Force Limit depending on your monarch military skill."
  mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+1%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occational mercenary captains from those lands to train your troops." #
  mechanic_enables_iberian_harem_yes: "Iberian Harem: Elect a suitable heir from among your sons."
-
+ mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
+ mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
+ 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -1248,7 +1251,8 @@
  estate_nobles_white_knights: "Noble Knights"
  estate_nobles_white_knights_desc: "By appealing to the nobility of knights and their virtues we can gather them to our banner more easily, and with our prestige inspire them!"
  GE_white_knights: "§G+10%§! Cavalry Combat Ability while over §Y50§! prestige."
-
+ estate_nobles_kreditwerk_appointment: "Kreditwerk Appointment"
+ estate_nobles_kreditwerk_appointment_desc: "By appointing the local nobility to function as our tax collectors, we ensure their loyalty and guarenteed incomes from their lands."
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
