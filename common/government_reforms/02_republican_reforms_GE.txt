@@ -412,6 +412,7 @@ demedici_dynasty_reform = {
 		enables_demedici = yes
 		enables_influencial_ties = yes
 	}
+	royal_marriage = yes
 	ai = {
 		factor = 100
 	}

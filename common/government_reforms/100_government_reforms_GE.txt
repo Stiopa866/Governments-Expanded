@@ -5663,7 +5663,7 @@ krums_code_reform = {
 		}
     }
     modifiers = {
-		global_unrest = -1
+		legitimacy = 0.25
 		stability_cost_modifier = -0.10
     }
 	custom_attributes = {
@@ -7281,7 +7281,7 @@ empowered_monastic_militarism_reform = {
 		max_absolutism = -5
 	}
 	custom_attributes = {
-		enables_militant_orders = yes #20% manpower and 0.5AT during war with heretics n heathens
+		enables_militant_orders = yes #25% manpower recovery and 1AT during war with heretics n heathens
 	}
 	ai = {
 		factor = 10
