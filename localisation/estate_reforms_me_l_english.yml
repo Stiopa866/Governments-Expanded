@@ -1044,7 +1044,7 @@
  mechanic_enables_burgher_council_yes: "Burgher Council: Choose a Economic Policy during a monarch's reign."
  mechanic_enables_peasant_council_yes: "Peasant Council: §G+2§! Candidate Random Bonus if you have 3 advisors."
  mechanic_enables_local_bishoprics_yes: "Local Bishoprics: §G-25%§! State Maintenance in States with a province owned by the clergy."
- mechanic_enables_no_crown_yes: "Recognize No Crown: §G0.25§! RT if you don't have any Monarchies as allies."
+ mechanic_enables_no_crown_yes: "Recognize No Crown: §+G0.25§! Republican Tradition only have two or more non-monarchy allies."
  mechanic_enables_return_to_sender_yes: "Return to Sender: §G+25%§! Trade Value in coastal Burgher Estate provinces."
  mechanic_enables_attracting_academics_yes: "Hansa Academics: §G+12.5%§! Innovativeness Gain for every 20 prestige. Up to a maximum of §G50%§! Innovativeness Gain."
  mechanic_enables_military_exports_yes: "Military-Industrial Complex: §G2%§! Goods Produced per 10% Army Professionalism.  Up to a maximum of §G20%§! Goods Produced."
@@ -1133,7 +1133,7 @@
 
  mechanic_enables_church_policy_yes: "Church Policy: Upon Ascention, pick a policy for your administration."
  mechanic_enables_royal_levies_yes: "Royal Levies: §G+1§! Land Force Limit and §G5%§! Land Force Limit Modifier for each point of military skill of your monarch."
- mechanic_enables_byzantine_administration_yes: "Byzantime Administration: §G-10%§! Administrative Tech cost and §G+0.5§! yearly legitimacy while Byzantium exists."
+ mechanic_enables_byzantine_administration_yes: "Byzantine Administration: §G-10%§! Administrative Tech cost and §G+0.5§! yearly legitimacy while Byzantium exists."
  mechanic_enables_military_governors_yes: "Military Governors: §G500§! Base Manpower and §G-10%§! Local Development Cost in provinces with forts."
  mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.5§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 

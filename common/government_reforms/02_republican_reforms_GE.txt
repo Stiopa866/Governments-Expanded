@@ -2217,7 +2217,6 @@ empowered_aristocratic_courts_reform = {
 	icon = judge
 	allow_normal_conversion = yes
 	potential = { 
-		has_estate = estate_nobles
 		check_variable = {
 			which = Oliarch_Influence			
 			value = 3
