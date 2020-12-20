@@ -1262,7 +1262,7 @@
  estate_church_land_privileges:  "Guaranteed Church Independence"
  estate_church_land_privileges_desc: "Guarantee the integrity of the lands held by the church."
  estate_noble_land_privileges: "Guaranteed Noble Independence"
- estate_church_land_privileges_desc: "Guarantee the integrity of the lands held by the nobles."
+ estate_noble_land_privileges_desc: "Guarantee the integrity of the lands held by the nobility."
  estate_burghers_land_privileges: "Guaranteed Burgher Independence"
  estate_burghers_land_privileges_desc: "Guarantee the integrity of the lands held by the burghers."
  estate_rajput_land_privileges: "Guaranteed Rajput Independence"

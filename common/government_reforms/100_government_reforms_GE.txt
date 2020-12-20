@@ -7139,6 +7139,7 @@ german_aristocracy_reform = {
     }
     modifiers = {
 		free_mil_policy = 1
+		ae_impact = -0.10
 		nobles_loyalty_modifier = 0.05
 		nobles_influence_modifier = 0.10
     }

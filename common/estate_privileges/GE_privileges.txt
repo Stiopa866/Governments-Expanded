@@ -6,6 +6,7 @@ estate_peasants_land_rights = {
 	loyalty = 0.05
 	influence = 0.10
 	can_select = {
+		has_peasants_privilege_space = yes
 	}
 	on_granted = {
 	}
@@ -25,6 +26,9 @@ estate_peasants_guild_assembly = {
 	max_absolutism = -10
 	loyalty = 0.0
 	influence = 0.15
+	can_select = {
+		has_peasants_privilege_space = yes
+	}
 	modifier_by_land_ownership = {
 		global_trade_goods_size_modifier = 0.20
 	}
@@ -43,6 +47,9 @@ estate_peasants_manpower_drive = {
 	max_absolutism = -10
 	loyalty = 0.0
 	influence = 0.05
+	can_select = {
+		has_peasants_privilege_space = yes
+	}
 	modifier_by_land_ownership = {
 		global_manpower_modifier = 0.25
 	}
@@ -62,6 +69,9 @@ estate_peasants_voting_rights = {
 	max_absolutism = -10
 	loyalty = 0.05
 	influence = 0.10
+	can_select = {
+		has_peasants_privilege_space = yes
+	}
 	penalties = {
 		stability_cost_modifier = 0.50
 		reelection_cost = 0.15
@@ -81,6 +91,7 @@ estate_peasants_conscription = {
 	is_valid = {
 	}
 	can_select = {
+		has_peasants_privilege_space = yes
 	}
 	on_granted = {
 		add_yearly_manpower = 4
@@ -111,6 +122,9 @@ estate_peasants_fight_the_elite = {
 	icon = privilege_supply_arms
 	influence = 0.05
 	max_absolutism = -5
+	can_select = {
+		has_peasants_privilege_space = yes
+	}
 	on_granted = {
 		custom_tooltip = GE_fight_the_elite_Tooltip
 	}
@@ -143,6 +157,7 @@ estate_peasants_bear_arms = {
 		has_government_attribute = enables_bear_arms
 	}
 	can_select = {
+		has_peasants_privilege_space = yes
 		has_government_attribute = enables_bear_arms
 	}
 	modifier_by_land_ownership = {
@@ -183,6 +198,7 @@ estate_ghulams_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		has_ghulam_privilege_space = yes
 	}
 	on_granted = {
 	}
@@ -201,6 +217,9 @@ estate_ghulams_loyalty_privilege = {
 	max_absolutism = -10
 	loyalty = 0.1
 	influence = 0.1
+	can_select = {
+		has_ghulam_privilege_space = yes
+	}
 	penalties = {
 	}
 	benefits = {
@@ -220,6 +239,9 @@ estate_ghulams_military_corps = {
 	max_absolutism = -5
 	loyalty = 0.00
 	influence = 0.05
+	can_select = {
+		has_ghulam_privilege_space = yes
+	}
 	is_valid = {
 		has_government_attribute = enables_fire_ghulams
 	}
@@ -249,6 +271,7 @@ estate_ghulams_governor_positions = {
 		has_government_attribute = enables_ghulam_governors
 	}
 	can_select = {
+		has_ghulam_privilege_space = yes
 		has_government_attribute = enables_ghulam_governors
 	}
 	penalties = {
@@ -276,9 +299,10 @@ estate_ghulams_trade_privileges = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	is_valid = {
-	}
 	can_select = {
+		has_ghulam_privilege_space = yes
+	}
+	is_valid = {
 	}
 	penalties = {
 		burghers_loyalty_modifier = -0.10
@@ -307,6 +331,7 @@ estate_ghulams_councilor = {
 	is_valid = {
 	}
 	can_select = {
+		has_ghulam_privilege_space = yes
 	}
 	penalties = {
 		stability_cost_modifier = 0.15
@@ -525,7 +550,6 @@ estate_nobles_noble_officer_privilege = {
 		else = {
 			create_general = { tradition = 20 }
 		}
-		
 	}
 	on_revoked = {
 	}
@@ -778,6 +802,173 @@ estate_nobles_kreditwerk_appointment = {
 	}
 	penalties = {
 		global_autonomy = 0.05
+	}
+	benefits = {
+	}
+	conditional_modifier = {
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_nobles_blood_tax = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -10
+	loyalty = 0.00
+	influence = 0.10
+	is_valid = {
+		#has_government_attribute = enables_blood_tax_privilege
+	}
+	can_select = {
+		#has_government_attribute = enables_blood_tax_privilege
+		has_noble_privilege_space = yes
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+	}
+	conditional_modifier = {
+		trigger = {
+			calc_true_if = {
+				all_subject_country = {
+					NOT = {
+						is_colonial_nation = yes
+						is_subject_of_type = tributary_state
+					}
+				}
+				amount = 1
+			}
+			NOT = {
+				calc_true_if = {
+					all_subject_country = {
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+		modifier = {
+			global_manpower_modifier = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			calc_true_if = {
+				all_subject_country = {
+					NOT = {
+						is_colonial_nation = yes
+						is_subject_of_type = tributary_state
+					}
+				}
+				amount = 2
+			}
+			NOT = {
+				calc_true_if = {
+					all_subject_country = {
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
+						}
+					}
+					amount = 3
+				}
+			}
+		}
+		modifier = {
+			global_manpower_modifier = 0.10
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			calc_true_if = {
+				all_subject_country = {
+					NOT = {
+						is_colonial_nation = yes
+						is_subject_of_type = tributary_state
+					}
+				}
+				amount = 3
+			}
+			NOT = {
+				calc_true_if = {
+					all_subject_country = {
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
+						}
+					}
+					amount = 4
+				}
+			}
+		}
+		modifier = {
+			global_manpower_modifier = 0.15
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			calc_true_if = {
+				all_subject_country = {
+					NOT = {
+						is_colonial_nation = yes
+						is_subject_of_type = tributary_state
+					}
+				}
+				amount = 4
+			}
+			NOT = {
+				calc_true_if = {
+					all_subject_country = {
+						NOT = {
+							is_colonial_nation = yes
+							is_subject_of_type = tributary_state
+						}
+					}
+					amount = 5
+				}
+			}
+		}
+		modifier = {
+			global_manpower_modifier = 0.20
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			calc_true_if = {
+				all_subject_country = {
+					NOT = {
+						is_colonial_nation = yes
+						is_subject_of_type = tributary_state
+					}
+				}
+				amount = 5
+			}
+			# NOT = {
+				# calc_true_if = {
+					# all_subject_country = {
+						# NOT = {
+							# is_colonial_nation = yes
+							# is_subject_of_type = tributary_state
+						# }
+					# }
+					# amount = 2
+				# }
+			# }
+		}
+		modifier = {
+			global_manpower_modifier = 0.25
+		}
+	}
+	penalties = {
 	}
 	benefits = {
 	}
