@@ -993,7 +993,7 @@
  mechanic_enables_regent_investments_yes:0 "Enables Regent Investments in Dutch provinces over 20 Development, giving §G1§! Additional building slot and §G-10%§! local development cost."
  mechanic_enables_independent_nobles_yes:0 "Independent Nobles: Noble Estate provinces have an additional §G15%§! more manpower."
  mechanic_enables_elective_monarchy_yes: "Elective Monarchy: Calls for an election upon a monarchs death."
- mechanic_enables_blood_tax_yes: "Blood Tax: Gain §G5%§! Manpower per vassal state. Up to a maximum of §G25%§! Manpower."
+ mechanic_enables_blood_tax_yes: "Blood Tax: Gain access to a privilege that grants §G5%§! Manpower per vassal state. Up to a maximum of §G25%§! Manpower."
  mechanic_enables_religious_domination_yes: "Religious Domination: §G+1§! Tolerance of the Catholic Faith in subjects."
  mechanic_enables_germanization_yes: "Germanization: Slowly diffuses our primary culture to our states."
  mechanic_enables_mountain_towns_yes: "Mountain Towns: §G-25%§! development cost in mountains and hills."
@@ -1138,7 +1138,7 @@
  mechanic_enables_royal_mining_monopoly_yes: "Mining Monopolies: §G0.5§! Goods produced and §G-0.05§! Autonomy in Mining Provinces."
 
  #GE 1.13 #1.30
- mechanic_enables_noble_diplomats_yes:0 "Noble Diplomats: Unlock the 'Noble Diplomatis' Privilege for the nobility, Giving a §G10%§! Improve relations and a direct relations boost upon granting."
+ mechanic_enables_noble_diplomats_yes:0 "Noble Diplomats: Unlock the 'Noble Diplomatis' Privilege for the nobility, Giving a direct relations boost upon granting."
  mechanic_enables_magnate_law_yes: "Magnate Law: Unlocks the 'Magnate Law' Privilege for the Nobility, granting up to §G-2.5§! National Unrest"
  mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain Access to the infamous 'Imperial Knights' Mercenary Company."
  mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Compa ny."
@@ -1253,6 +1253,9 @@
  GE_white_knights: "§G+10%§! Cavalry Combat Ability while over §Y50§! prestige."
  estate_nobles_kreditwerk_appointment: "Kreditwerk Appointment"
  estate_nobles_kreditwerk_appointment_desc: "By appointing the local nobility to function as our tax collectors, we ensure their loyalty and guarenteed incomes from their lands."
+ estate_nobles_blood_tax: "Blood Tax"
+ estate_nobles_blood_tax_desc: "By paying their dues in blood rather then gold, these men of the realm will serve us well!"
+
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
@@ -1331,6 +1334,7 @@
  burgher_privilege_slots: "[Country.GetBurghersName] Privilege Slots"
  church_privilege_slots: "[Country.GetClergyName] Privilege Slots"
  
+ 
  estate_diplomat.tooltip:1 "Recruit Noble Diplomats, granting §G10%§! Improve Relations for 15 years"
  tax_peasants_tooltip:1 "Get §G0.5§! yearly tax and §G10%§! tax efficiency in each province owned by the Peasant Estate."
  register_peasants_tooltip:1 "Get §G100§! max manpower and §G10%§! Manpower in each province owned by the Peasant Estate."
@@ -1350,7 +1354,19 @@
  timariot_privileges_tooltip:1 "Call Up 5 Cavalry Units in your Capital."
  GE_not_enough_noble_slots_tooltip:1 "Not enough [Root.GetNobilityName] Privilege Slots."
  GE_not_enough_burgher_slots_tooltip:1 "Not enough [Root.GetBurghersName] Privilege Slots."
- GE_not_enough_church_slots_tooltip:1 "not enough [Root.GetClergyName] Privilege Slots."
+ GE_not_enough_church_slots_tooltip:1 "Not enough [Root.GetClergyName] Privilege Slots."
+ GE_not_enough_brahmins_slots_tooltip:1 "Not enough Brahmin Privilege Slots."
+ GE_not_enough_maratha_slots_tooltip:1 "Not enough Maratha Privilege Slots."
+ GE_not_enough_vaisyas_slots_tooltip:1 "Not enough Vaisyas Privilege Slots."
+ GE_not_enough_cossacks_slots_tooltip:1 "Not enough Cossack Privilege Slots."
+ GE_not_enough_tribes_slots_tooltip:1 "Not enough Tribe Privilege Slots."
+ GE_not_enough_dhimmi_slots_tooltip:1 "Not enough Dhimmi Privilege Slots."
+ GE_not_enough_jains_slots_tooltip:1 "Not enough Jains Privilege Slots."
+ GE_not_enough_rajput_slots_tooltip:1 "Not enough Rajput Privilege Slots."
+ GE_not_enough_peasants_slots_tooltip:1 "Not enough Peasant Privilege Slots."
+ GE_not_enough_ghulam_slots_tooltip:1 "Not enough Ghulam Privilege Slots."
+ 
+ 
  
  elections.EVTNAME7001:1 "American Elections"
  elections.EVTDESCA7001:1 "The term is up, Time for another election."

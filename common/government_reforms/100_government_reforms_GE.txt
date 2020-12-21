@@ -1477,7 +1477,7 @@ papal_embassy_reform = {
 	}
 	modifiers = {
 		papal_influence = 1.0
-		church_privilege_slots = 0.01
+		church_privilege_slots = 0.25
 		church_influence_modifier = 0.05
 	}
 	effect = {
@@ -1511,7 +1511,7 @@ metropolian_bishop_reform = {
 	}
 	modifiers = {
 		yearly_patriarch_authority = 0.005
-		church_privilege_slots = 0.01
+		church_privilege_slots = 0.25
 		church_influence_modifier = 0.05
 	}
 	effect = {
@@ -1567,7 +1567,7 @@ state_church_reform = {
 		tolerance_own = 0.5
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		church_privilege_slots = 0.01
+		church_privilege_slots = 0.25
 		church_influence_modifier = 0.05
 	}
 	ai = {
@@ -1606,7 +1606,7 @@ elevated_landed_gentry_reform = {
 		idea_cost = -0.05
 		global_unrest = -1
 		production_efficiency = 0.10
-		church_privilege_slots = 0.01
+		church_privilege_slots = 0.25
 		church_influence_modifier = 0.05
 	}
 	ai = {
@@ -1717,7 +1717,6 @@ diplomatic_positions_reform = {
 	custom_attributes = {
 		enables_noble_diplomats = yes #privileges for 25 opinion//10% improve relation
 	}
-
 	ai = {
 		factor = 1
 	}
@@ -2792,7 +2791,7 @@ albertine_line_reform = {
 	modifiers = {
 		legitimacy = 0.5
 		global_manpower_modifier = 0.10
-		noble_privilege_slots = 0.01
+		noble_privilege_slots = 0.25
 	}
 	ai = {
 		factor = 100
@@ -4135,7 +4134,7 @@ enforced_caste_system_reform = {
 	modifiers = {
         global_missionary_strength = 0.01
         tolerance_own = 1
-        church_privilege_slots = 0.01
+        church_privilege_slots = 0.25
 	}
 	ai = {
 		factor = 1
@@ -8596,7 +8595,7 @@ empowered_heavy_knights_reform = {
 		}
 	}
 	modifiers = {
-		noble_privilege_slots = 0.01
+		noble_privilege_slots = 0.25
 		cavalry_flanking = 0.50
 		cavalry_power = 0.05
 	}

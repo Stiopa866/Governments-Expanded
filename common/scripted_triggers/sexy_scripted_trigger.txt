@@ -944,7 +944,7 @@ has_tribes_privilege_space = {
 
 has_dhimmi_privilege_space = {
 	custom_trigger_tooltip = {
-		tooltip = GE_not_enough_cossacks_slots_tooltip
+		tooltip = GE_not_enough_dhimmi_slots_tooltip
 		OR = {
 			#####Estate Dhimmi#####
 			AND = {

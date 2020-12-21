@@ -819,10 +819,10 @@ estate_nobles_blood_tax = {
 	loyalty = 0.00
 	influence = 0.10
 	is_valid = {
-		#has_government_attribute = enables_blood_tax_privilege
+		has_government_attribute = enables_blood_tax
 	}
 	can_select = {
-		#has_government_attribute = enables_blood_tax_privilege
+		has_government_attribute = enables_blood_tax
 		has_noble_privilege_space = yes
 	}
 	on_granted = {
@@ -952,30 +952,18 @@ estate_nobles_blood_tax = {
 				}
 				amount = 5
 			}
-			# NOT = {
-				# calc_true_if = {
-					# all_subject_country = {
-						# NOT = {
-							# is_colonial_nation = yes
-							# is_subject_of_type = tributary_state
-						# }
-					# }
-					# amount = 2
-				# }
-			# }
 		}
 		modifier = {
 			global_manpower_modifier = 0.25
 		}
 	}
 	penalties = {
+		vassal_income = -1
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-	}
 	ai_will_do = {
-		factor = 1000
+		factor = 1
 	}
 }
 
