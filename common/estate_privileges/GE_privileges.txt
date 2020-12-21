@@ -958,7 +958,7 @@ estate_nobles_blood_tax = {
 		}
 	}
 	penalties = {
-		vassal_income = -1
+		vassal_income = -0.25
 	}
 	benefits = {
 	}
