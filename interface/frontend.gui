@@ -551,14 +551,22 @@ guiTypes = {
 					}
 
 					windowType = {
+<<<<<<< HEAD
 						name = "flavour_and_events_expanded"
+=======
+						name = "dynamic_names_expanded"
+>>>>>>> 1.30
 						position = { x = 157 y = 270 }
 						size = { x = 147 y = 26 }
 
 						iconType = {
 							name = "mod_icon"
 							position = { x = 0 y = 1 }
+<<<<<<< HEAD
 							spriteType = "GFX_mod_icon_flavour_and_events_expanded"
+=======
+							spriteType = "GFX_mod_icon_dynamic_names_expanded"
+>>>>>>> 1.30
 							scale = 0.5
 						}
 
@@ -573,7 +581,11 @@ guiTypes = {
 							position = { x = 26 y = 6 }
 							format = center
 							font = "Main_16"
+<<<<<<< HEAD
 							text = "MOD_TEXT_FLAVOUR_AND_EVENTS_EXPANDED"
+=======
+							text = "MOD_TEXT_DYNAMIC_NAMES_EXPANDED"
+>>>>>>> 1.30
 							maxWidth = 120
 							maxHeight = 20
 							alwaystransparent = yes
@@ -581,14 +593,22 @@ guiTypes = {
 					}
 
 					windowType = {
+<<<<<<< HEAD
 						name = "formables_expanded"
+=======
+						name = "flavour_and_events_expanded"
+>>>>>>> 1.30
 						position = { x = 157 y = 296 }
 						size = { x = 147 y = 26 }
 
 						iconType = {
 							name = "mod_icon"
 							position = { x = 0 y = 1 }
+<<<<<<< HEAD
 							spriteType = "GFX_mod_icon_formables_expanded"
+=======
+							spriteType = "GFX_mod_icon_flavour_and_events_expanded"
+>>>>>>> 1.30
 							scale = 0.5
 						}
 
@@ -603,7 +623,11 @@ guiTypes = {
 							position = { x = 26 y = 6 }
 							format = center
 							font = "Main_16"
+<<<<<<< HEAD
 							text = "MOD_TEXT_FORMABLES_EXPANDED"
+=======
+							text = "MOD_TEXT_FLAVOUR_AND_EVENTS_EXPANDED"
+>>>>>>> 1.30
 							maxWidth = 120
 							maxHeight = 20
 							alwaystransparent = yes
