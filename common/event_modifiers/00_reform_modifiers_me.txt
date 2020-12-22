@@ -896,7 +896,9 @@ GE_Influencial_Ties_4 = {
 GE_Influencial_Ties_5 = {
 	diplomatic_reputation = 2.5
 }
-
+GE_restored_themes = {
+	local_manpower_modifier = 0.25
+}
 	
 	
 	
