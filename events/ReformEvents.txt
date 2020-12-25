@@ -10304,8 +10304,6 @@ country_event = {
 	
 	option = {
 		name = reform_me_events.165.a
-		
-		change_adm = 1
 		add_country_modifier = {
 			name = GE_Roman_Empire_Administration #-15% State Maintenance
 			duration = 9125
@@ -10318,8 +10316,6 @@ country_event = {
 	
 	option = {
 		name = reform_me_events.165.b
-		
-		change_dip = 1
 		add_country_modifier = {
 			name = GE_Roman_Empire_Corruption #-0.05 Corruption
 			duration = 9125
@@ -10332,8 +10328,6 @@ country_event = {
 	
 	option = {
 		name = reform_me_events.165.c
-		
-		change_mil = 1
 		add_country_modifier = {
 			name = GE_Roman_Empire_Drill #25% Drill
 			duration = 9125

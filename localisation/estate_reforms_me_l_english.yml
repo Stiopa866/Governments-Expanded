@@ -1258,7 +1258,7 @@
  estate_nobles_anatolian_theme: "Anatolian Theme"
  estate_nobles_anatolian_theme_desc: "Restore the Anatolian Themes and granting them privileges will weigh on our administration, but the recruits gained from it will flow across the empire!"
  GE_anatolian_theme: "§G+10%§! Manpower Recovery while Anatolia has no devastation."
- GE_anatolian_theme_manpower: "§G+25%§! Local Manpower Modifier in each Anatolian Province."
+ GE_anatolian_theme_manpower: "§G+20%§! Local Manpower Modifier in each Anatolian Province."
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
