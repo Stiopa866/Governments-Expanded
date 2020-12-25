@@ -197,6 +197,33 @@ florentine_republic = {
 		is_merchant_republic = yes
 	}
 }
+mantua_house_of_gonzaga_reform = {
+	icon = mantua_house_of_gonzaga
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = MAN
+			has_reform = mantua_house_of_gonzaga_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MAN
+			has_reform = mantua_house_of_gonzaga_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		diplomatic_reputation = 1
+	}
+	custom_attributes = {
+		enables_marriage_policies = yes #+5% improve relations for every +1 diplomatic reputation (capped at 25%)
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 #Tier 2
 angevin_nobles_reform = {
@@ -602,6 +629,34 @@ crusading_tradition_reform = {
 		factor = 100
 	}
 }
+mantua_knightly_orders_reform = {
+	icon = mantua_knightly_orders
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = MAN
+			has_reform = mantua_knightly_orders_reform
+		}
+	}
+	trigger = {
+		religion = catholic
+		OR = {
+			tag = MAN
+			has_reform = mantua_knightly_orders_reform
+		}
+	}
+	modifiers = {
+		cavalry_cost = -0.10
+		prestige = 0.5
+	}
+	custom_attributes = {
+		enables_ordine_cordone_giallo = yes #+12 yearly tax for every 5% idea cost
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 #Tier 5
 neapolitan_renaissance_reform = {
@@ -702,6 +757,34 @@ communal_territories_reform = {
 	modifiers = {
 		years_of_nationalism = -5
 		min_autonomy_in_territories = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+mantua_mecenatismo_mantovano_reform = {
+	icon = mantua_mecenatismo_mantovano
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = MAN
+			has_reform = mantua_mecenatismo_mantovano_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MAN
+			has_reform = mantua_mecenatismo_mantovano_reform
+		}
+	}
+	modifiers = {
+		idea_cost = -0.05
+		global_institution_spread = 0.10
+		advisor_pool = 1
+	}
+	custom_attributes = {
+		#enables_galleria_celeste = yes #+12 yearly tax for every 5% idea cost
 	}
 	ai = {
 		factor = 100

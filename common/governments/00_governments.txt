@@ -92,6 +92,7 @@ monarchy = {
 				#1.14
 				duchy_of_luxembourg_reform
 				emirate_of_andalusia_reform
+				mantua_house_of_gonzaga_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -301,6 +302,7 @@ monarchy = {
 				strenghten_the_haeren_reform
 				#1.14
 				army_of_flanders_reform
+				mantua_knightly_orders_reform
 			}
 		}
 		growth_of_administration = {
@@ -357,6 +359,7 @@ monarchy = {
 				german_aristocracy_reform
 				#1.14
 				hof_van_brabant_reform
+				mantua_mecenatismo_mantovano_reform
 			}
 		}
 		deliberative_assembly = {
