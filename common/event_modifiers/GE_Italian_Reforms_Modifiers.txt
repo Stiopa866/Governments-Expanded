@@ -17,18 +17,18 @@ GE_Mantua_Marriage_Policies_5 = {
 
 #Mantua Knightly Orders reform modifier
 GE_Mantua_Knightly_Orders_1 = {
-	cavalry_power = 0.025
-	papal_influence = 0.75
+	cavalry_power = 0.05
+	papal_influence = 1.0
 }
 GE_Mantua_Knightly_Orders_2 = {
-	cavalry_power = 0.050
-	papal_influence = 1.5
+	cavalry_power = 0.10
+	papal_influence = 2.0
 }
 GE_Mantua_Knightly_Orders_3 = {
-	cavalry_power = 0.075
-	papal_influence = 2.25
+	cavalry_power = 0.15
+	papal_influence = 3.0
 }
 GE_Mantua_Knightly_Orders_4 = {
-	cavalry_power = 0.10
-	papal_influence = 3.0
+	cavalry_power = 0.20
+	papal_influence = 4.0
 }

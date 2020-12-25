@@ -143,23 +143,10 @@ country_event = {
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 5
-					}
-				}
-				NOT = { has_country_modifier = GE_Mantua_Knightly_Orders_1 }
-			}
-			AND = {
-				has_global_modifier_value = {
-					which = tolerance_own
-					value = 5
-				}
-				NOT = {
-					has_global_modifier_value = {
-						which = tolerance_own
 						value = 6
 					}
 				}
-				NOT = { has_country_modifier = GE_Mantua_Knightly_Orders_2 }
+				NOT = { has_country_modifier = GE_Mantua_Knightly_Orders_1 }
 			}
 			AND = {
 				has_global_modifier_value = {
@@ -169,7 +156,20 @@ country_event = {
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 7
+						value = 8
+					}
+				}
+				NOT = { has_country_modifier = GE_Mantua_Knightly_Orders_2 }
+			}
+			AND = {
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 8
+				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 10
 					}
 				}
 				NOT = { has_country_modifier = GE_Mantua_Knightly_Orders_3 }
@@ -177,7 +177,7 @@ country_event = {
 			AND = {
 				has_global_modifier_value = {
 					which = tolerance_own
-					value = 7
+					value = 10
 				}
 				NOT = { has_country_modifier = GE_Mantua_Knightly_Orders_4 }
 			}

@@ -10,7 +10,7 @@
 
  mechanic_enables_marriage_policies_yes: "Marriage Policies: §G+5%§! §YImprove Relations§! for every 1 point of positive diplomatic reputation, up to §G25%§!"
  mechanic_enables_galleria_celeste_yes: "Galleria Celeste: §G+12§! §YYearly Tax§! for every 5% of idea cost"
- mechanic_enables_ordine_cordone_giallo_yes: "Ordine del Cordone Giallo: §G+2.5%§! Cavalry Combat Ability and §G+0.75§! Papal Influence for every §Y+1§! Tolerance of the True Faith over 4"
+ mechanic_enables_ordine_cordone_giallo_yes: "Ordine del Cordone Giallo: §G+5%§! Cavalry Combat Ability and §G+1§! Papal Influence for every §Y+2§! Tolerance of the True Faith over 4"
 
  # Modifiers
  GE_Mantua_Marriage_Policies_1: "Gonzaga Marriage Policies"
