@@ -976,7 +976,9 @@
  emirate_of_andalusia_reform_desc: "WIP"
  kreditwerk_reform: "Reformed Kreditwerk"
  kreditwerk_reform_desc: "In the mid-16th century, the margraves of Brandenburg had become highly dependent on the estates (counts, lords, knights and towns).The margraviate's liabilities and tax income as well as the margrave's finances were controlled by the Kreditwerk, an institution not controlled by the elector, and the Großer Ausschuß 'Great Committee' of the estates."
-
+ 
+ city_privileges_reform: "City Privileges"
+ city_privileges_reform_desc: "Let us improve the position of the cities by allowing them to develop themselves and become major centers of commerce!"
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1177,6 +1179,9 @@
  mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
  mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
  
+ #GE 1.15
+ mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the 'Burgher Autonomy' Privilege, which grants §R+25%§! Minimum Autonomy and §G+1§! production development in each province with an urban trade good every 25 years."
+ 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -1262,6 +1267,8 @@
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
+ estate_burghers_burgher_autonomy: "Burgher Autonomy"
+ estate_burghers_burgher_autonomy_desc: "Guarenteeing the self-sufficiency and economic regulation of our burgher-dominate cities will lead to an increase in goods produced but a reduction in our immediate income."
  estate_church_four_articles_of_prague: "Four Articles of Prague"
  estate_church_four_articles_of_prague_desc: "Enforce the Four Articles of Prague on the people regardless of creed."
  

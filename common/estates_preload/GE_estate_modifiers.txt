@@ -22,6 +22,30 @@ estate_peasants = {
 		}
 	}
 	modifier_definition = {
+		key = rural_goods_produced_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		key = urban_goods_produced_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		key = mining_goods_produced_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		key = plantage_goods_produced_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
 		key = primary_development_cost
 		trigger = {
 			always = yes

@@ -125,7 +125,10 @@
  reform_me_events.223.c: "Fame and Exotic Riches!"
  reform_me_events.223.e: "Money and Trade!"
 
- 
+ reform_me_events.226.t: "The matter of Burgher Autonomy"
+ reform_me_events.226.d: "With our decision to grant the burghers additional liberties and growth, they have become greedy and demand we guarentee their rights for the coming decades. Something about pig cyclones and return on investments leads them to promise us golden mountains if we will agree to this."
+ reform_me_events.226.a: "Just tell me where i need to sign."
+ reform_me_events.226.b: "Mere citizens dare to restrict my ability to revoke their privileges?"
  
  #Privileges
  GE_privileges.1.t: "New Generation of Draftees"

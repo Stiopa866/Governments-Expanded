@@ -170,6 +170,8 @@ monarchy = {
 				hussite_reform
 				#1.14
 				gibraltar_of_the_north_reform
+				#1.15
+				city_privileges_reform
 			}
 		}
 		bureaucracy = {

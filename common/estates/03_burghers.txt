@@ -253,6 +253,7 @@ estate_burghers =
 		#GE
 		estate_burghers_town_rights
 		estate_burghers_land_privileges
+		estate_burghers_burgher_autonomy
 	}
 
 	agendas = {

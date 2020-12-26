@@ -15198,3 +15198,31 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.226
+	title = reform_me_events.226.t
+	desc = reform_me_events.226.d
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = reform_me_events.226.a
+		every_owned_province = {
+			limit = {
+				has_urban_goods = yes
+			}
+			add_base_production = 1
+			add_province_modifier = {
+				name = GE_Burgher_Autonomy
+				duration = 9125
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.226.b
+		remove_estate_privilege = estate_burghers_burgher_autonomy
+	}
+}

@@ -902,7 +902,9 @@ GE_Influencial_Ties_5 = {
 GE_restored_themes = {
 	local_manpower_modifier = 0.20
 }
-	
+GE_Burgher_Autonomy = {
+	min_local_autonomy = 25
+}
 	
 	
 #Cortez
