@@ -136,6 +136,20 @@ country_event = {
 		has_government_attribute = enables_ordine_cordone_giallo
 		OR = {
 			AND = {
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 4
+					}
+				}
+				OR = {
+					has_country_modifier = GE_Mantua_Knightly_Orders_1
+					has_country_modifier = GE_Mantua_Knightly_Orders_2
+					has_country_modifier = GE_Mantua_Knightly_Orders_3
+					has_country_modifier = GE_Mantua_Knightly_Orders_4
+				}
+			}
+			AND = {
 				has_global_modifier_value = {
 					which = tolerance_own
 					value = 4
@@ -191,6 +205,20 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 4
+					}
+				}
+			}
+			remove_country_modifier = GE_Mantua_Knightly_Orders_1
+			remove_country_modifier = GE_Mantua_Knightly_Orders_2
+			remove_country_modifier = GE_Mantua_Knightly_Orders_3
+			remove_country_modifier = GE_Mantua_Knightly_Orders_4
+		}
+		if = {
+			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
 					value = 4
@@ -198,7 +226,7 @@ country_event = {
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 5
+						value = 6
 					}
 				}
 			}
@@ -215,12 +243,12 @@ country_event = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
-					value = 5
+					value = 6
 				}
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 6
+						value = 8
 					}
 				}
 			}
@@ -237,12 +265,12 @@ country_event = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
-					value = 6
+					value = 8
 				}
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 7
+						value = 10
 					}
 				}
 			}
@@ -259,7 +287,7 @@ country_event = {
 			limit = {
 				has_global_modifier_value = {
 					which = tolerance_own
-					value = 7
+					value = 10
 				}
 			}
 			add_country_modifier = {
