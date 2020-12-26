@@ -1180,7 +1180,7 @@
  mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
  
  #GE 1.15
- mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the 'Burgher Autonomy' Privilege, which grants §R+25%§! Minimum Autonomy and §G+1§! production development in each province with an urban trade good every 25 years."
+ mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the §YBurgher Autonomy§! Privilege, granting §G+1§! base production and §R+25%§! Minimum Autonomy for §Y25 years§! in each province with an urban trade good. \nThis privilege can be reused every §Y25 years§!."
  
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
