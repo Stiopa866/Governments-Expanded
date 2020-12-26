@@ -22,9 +22,6 @@ kingdom_of_sicily_reform = {
 		global_autonomy = -0.025
 		primary_development_cost = 0.10
 	}
-	# custom_attributes = {
-		# enables_liber_augustalis = yes #-10% Estate Influence while you are over 90% Legitimacy
-	# }
 	ai = {
 		factor = 100
 	}
@@ -911,6 +908,9 @@ constitution_of_melfi_reform = {
 		trade_efficiency = 0.05
 		nobles_influence_modifier = -0.05
 		church_influence_modifier = -0.10
+	}
+	custom_attributes = {
+		enables_liber_augustalis = yes #-10% Estate Loyalty while you are over 90% Legitimacy
 	}
 	ai = {
 		factor = 100
