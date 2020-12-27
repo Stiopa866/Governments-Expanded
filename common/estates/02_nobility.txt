@@ -371,6 +371,7 @@ estate_nobles =
 		estate_noble_land_privileges
 		estate_nobles_kreditwerk_appointment
 		estate_nobles_blood_tax
+		estate_nobles_establish_serfdom
 		#ME
 		estate_nobles_anatolian_theme
 		#HRE

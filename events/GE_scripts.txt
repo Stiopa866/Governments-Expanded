@@ -7,17 +7,18 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
+	is_triggered_only = yes
 
-	trigger = {
-		has_global_modifier_value = {
-			which = vassal_tax_modifier 
-			value = 0.05
-		}
-	}
+	# trigger = {
+	# 	has_global_modifier_value = {
+	# 		which = vassal_tax_modifier 
+	# 		value = 0.05
+	# 	}
+	# }
 	
-	mean_time_to_happen = {
-		days = 100
-	}
+	# mean_time_to_happen = {
+	# 	days = 100
+	# }
 	
 	immediate = {
 		if = {
@@ -493,20 +494,21 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
+	is_triggered_only = yes
 
-	trigger = {
-		OR = {
-			has_global_modifier_value = {
-				which = primary_development_cost 
-				value = 0.05
-			}
-			has_country_flag = GE_primary_development_cost_performance_flag
-		}
-	}
+	# trigger = {
+	# 	OR = {
+	# 		has_global_modifier_value = {
+	# 			which = primary_development_cost 
+	# 			value = 0.05
+	# 		}
+	# 		has_country_flag = GE_primary_development_cost_performance_flag
+	# 	}
+	# }
 	
-	mean_time_to_happen = {
-		days = 100
-	}
+	# mean_time_to_happen = {
+	# 	days = 100
+	# }
 
 	immediate = {
 		set_country_flag = GE_primary_development_cost_performance_flag
@@ -1034,27 +1036,28 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
+	is_triggered_only = yes
 
-	trigger = {
-		OR = {
-			NOT = {
-				has_global_modifier_value = {
-					which = rural_goods_produced_modifier 
-					value = -0.04
-				}
-			}
-			AND = {
-				has_global_modifier_value = {
-						which = rural_goods_produced_modifier 
-						value = 0.05
-				}
-			}
-		}
-	}
+	# trigger = {
+	# 	OR = {
+	# 		NOT = {
+	# 			has_global_modifier_value = {
+	# 				which = rural_goods_produced_modifier 
+	# 				value = -0.04
+	# 			}
+	# 		}
+	# 		AND = {
+	# 			has_global_modifier_value = {
+	# 					which = rural_goods_produced_modifier 
+	# 					value = 0.05
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
-	mean_time_to_happen = {
-		days = 30
-	}
+	# mean_time_to_happen = {
+	# 	days = 30
+	# }
 	
 	immediate = {
 	}
@@ -1837,25 +1840,26 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
-
-	trigger = {
-		OR = {
-			has_global_modifier_value = {
-				which = urban_goods_produced_modifier 
-				value = 0.05
-			}
-			NOT = {
-				has_global_modifier_value = {
-					which = urban_goods_produced_modifier
-					value = -0.04
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 	
-	mean_time_to_happen = {
-		days = 30
-	}
+	# trigger = {
+	# 	OR = {
+	# 		has_global_modifier_value = {
+	# 			which = urban_goods_produced_modifier 
+	# 			value = 0.05
+	# 		}
+	# 		NOT = {
+	# 			has_global_modifier_value = {
+	# 				which = urban_goods_produced_modifier
+	# 				value = -0.04
+	# 			}
+	# 		}
+	# 	}
+	# }
+	
+	# mean_time_to_happen = {
+	# 	days = 30
+	# }
 	
 	immediate = {
 	}
@@ -2638,25 +2642,26 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
-
-	trigger = {
-		OR = {
-			has_global_modifier_value = {
-				which = mining_goods_produced_modifier 
-				value = 0.05
-			}
-			NOT = {
-				has_global_modifier_value = {
-					which = mining_goods_produced_modifier
-					value = -0.04
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 	
-	mean_time_to_happen = {
-		days = 30
-	}
+	# trigger = {
+	# 	OR = {
+	# 		has_global_modifier_value = {
+	# 			which = mining_goods_produced_modifier 
+	# 			value = 0.05
+	# 		}
+	# 		NOT = {
+	# 			has_global_modifier_value = {
+	# 				which = mining_goods_produced_modifier
+	# 				value = -0.04
+	# 			}
+	# 		}
+	# 	}
+	# }
+	
+	# mean_time_to_happen = {
+	# 	days = 30
+	# }
 	
 	immediate = {
 	}
@@ -3402,25 +3407,26 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 	
-
-	trigger = {
-		OR = {
-			has_global_modifier_value = {
-				which = plantage_goods_produced_modifier 
-				value = 0.05
-			}
-			NOT = {
-				has_global_modifier_value = {
-					which = plantage_goods_produced_modifier
-					value = -0.04
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 	
-	mean_time_to_happen = {
-		days = 30
-	}
+	# trigger = {
+	# 	OR = {
+	# 		has_global_modifier_value = {
+	# 			which = plantage_goods_produced_modifier 
+	# 			value = 0.05
+	# 		}
+	# 		NOT = {
+	# 			has_global_modifier_value = {
+	# 				which = plantage_goods_produced_modifier
+	# 				value = -0.04
+	# 			}
+	# 		}
+	# 	}
+	# }
+	
+	# mean_time_to_happen = {
+	# 	days = 30
+	# }
 	
 	immediate = {
 	}

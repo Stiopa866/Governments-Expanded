@@ -87,10 +87,10 @@
  iranian_bureacracy_reform: "Iranian Bureacracy"
  iranian_bureacracy_reform_desc: "Our domination of the persian peoples and their native administration is highly efficient, we should expand their system and adopt it as our own."
  
- casa_de_contraction_reform: "Casa de Contraction"
+ casa_de_contraction_reform: "Casa de Contratación"
  casa_de_contraction_reform_desc: "By establishing the House of Trade and the Indies we can organize everything that comes in or out of the country in a single place, allowing us to better tax our traders, and provide more support to our subjects that are looking for a better life in the colonies."
- casa_de_india_reform: "Casa de India"
- casa_de_india_reform_desc: "Originally established to oversee the Iberian and Maroccan trade routes, the Casa de India has been left in a sorry state, we should revive it and expand our trade routes to include the west indies, the gold mines of africa and the far eastern provinces, which are sure to be profitable."
+ casa_de_india_reform: "Casa da India"
+ casa_de_india_reform_desc: "Originally established to oversee the Iberian and Moroccan trade routes, the Casa da India has been left in a sorry state, we should revive it and expand our trade routes to include the west indies, the gold mines of africa and the far eastern provinces, which are sure to be profitable."
  kyoho_reforms_reform: "The Kyouhou Reforms"
  kyoho_reforms_reform_desc: "The Kyouhou Reforms included an emphasis on frugality, as well as the formation of merchant guilds that allowed greater control and taxation."
  theocratic_bureacrats_reform: "Theocratic Bureaucrats"
@@ -980,6 +980,7 @@
  city_privileges_reform: "City Privileges"
  city_privileges_reform_desc: "Let us improve the position of the cities by allowing them to develop themselves and become major centers of commerce!"
  
+ 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
@@ -1145,7 +1146,7 @@
  mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain Access to the infamous 'Imperial Knights' Mercenary Company."
  mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain Access to the zealous 'Qizilbash' Mercenary Compa ny."
  mechanic_enables_timariots_yes: "Timariots: Unlock the 'Timariot Domains' Privilege for the nobility, Giving extra cavalry and governing capacity in trade for land."
- mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra trade goods produced and reduced development cost depending on land ownership."
+ mechanic_enables_town_rights_yes: "Town Rights: Unlock the 'Town Rights' Privilege for the burghers, Giving extra urban trade goods produced and reduced development cost depending on land ownership."
  mechanic_enables_veteran_general_yes: "Veteran Generals: Unlock the 'Noble Officers' Privilege for the nobility, Giving excellent generals each generation."
  mechanic_enables_veteran_general: "Veteran Generals"
  mechanic_enables_bear_arms_yes: "Bear Arms: Unlocks the 'Right to Bear Arms' Privilege for the peasants, Giving higher combat efficiency but more dangerous revolts."
@@ -1181,7 +1182,9 @@
  
  #GE 1.15
  mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the §YBurgher Autonomy§! Privilege, granting §G+1§! base production and §R+25%§! Minimum Autonomy for §Y25 years§! in each province with an urban trade good. \nThis privilege can be reused every §Y25 years§!."
- 
+ mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+10%§!."
+ mechanic_enables_colonial_plantations_yes: "Colonial Plantations: §G+15%§! Plantation Goods Produced in your colonial subjects."
+
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -1264,6 +1267,9 @@
  estate_nobles_anatolian_theme_desc: "Restore the Anatolian Themes and granting them privileges will weigh on our administration, but the recruits gained from it will flow across the empire!"
  GE_anatolian_theme: "§G+10%§! Manpower Recovery while Anatolia has no devastation."
  GE_anatolian_theme_manpower: "§G+20%§! Local Manpower Modifier in each Anatolian Province."
+ estate_nobles_establish_serfdom: "Establish Serfdom"
+ estate_nobles_establish_serfdom_desc: "By establishing serfdom we can ensure that people will remain on their land and that our supply of food and rural goods remains stable, although diminished."
+
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
@@ -1571,8 +1577,8 @@
  AVAILABLE_BECAUSE_OF_REFORM_STATE_CHURCH: "Available due to §YState Church§! ."
  AVAILABLE_BECAUSE_OF_REFORM_METROPOLIAN_BISHOP: "Available due to §YMetropolian Bishops§! ."
  AVAILABLE_BECAUSE_OF_REFORM_COUNCIL_OF_THE_INDIES: "Available due to the §YCouncil of the Indies§! ."
- AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_INDIA: "Available due to the §YCasa de India§! ."
- AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_CONTRACTION: "Available due to the §YCasa de Contraction§! ."
+ AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_INDIA: "Available due to the §YCasa da India§! ."
+ AVAILABLE_BECAUSE_OF_REFORM_CASA_DE_CONTRACTION: "Available due to the §YCasa de Contratación§! ."
  AVAILABLE_BECAUSE_OF_REFORM_DECENTRALIZE: "Available due to §YDecentralized Bureaucracy§! ."
  AVAILABLE_BECAUSE_OF_REFORM_REGIONAL_FORTS: "Available due to §YRegional Forts§! ."
  AVAILABLE_BECAUSE_OF_REFORM_FEUDAL_LEVIES: "Available due to §YFeudal Levies§! ."
