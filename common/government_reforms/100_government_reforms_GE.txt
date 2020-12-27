@@ -8,10 +8,6 @@ elective_monarchy_reform = {
 	#has_term_election = yes
 	#duration = 100
 	potential = {
-		OR = {
-			have_had_reform = feudalism_reform
-			has_reform = feudalism_reform
-		}
 		NOT = { tag = POL }
 	}
 	modifiers = {
@@ -19,7 +15,6 @@ elective_monarchy_reform = {
 	}
 	custom_attributes = {
 		enables_elective_monarchy = yes
-		enables_grand_leader = yes
 	}
 }
 
@@ -187,7 +182,7 @@ kingdom_of_castille_and_leon = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		production_efficiency = -0.10
+		rural_goods_produced_modifier = -0.05
 		global_manpower_modifier = 0.05
 		nobles_influence_modifier = 0.05
 	}
@@ -1446,7 +1441,7 @@ papal_embassy_reform = {
 	}
 	modifiers = {
 		papal_influence = 1.0
-		church_privilege_slots = 0.25
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	effect = {
@@ -1480,7 +1475,7 @@ metropolian_bishop_reform = {
 	}
 	modifiers = {
 		yearly_patriarch_authority = 0.005
-		church_privilege_slots = 0.25
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	effect = {
@@ -1536,7 +1531,7 @@ state_church_reform = {
 		tolerance_own = 0.5
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		church_privilege_slots = 0.25
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	ai = {
@@ -1575,7 +1570,7 @@ elevated_landed_gentry_reform = {
 		idea_cost = -0.05
 		global_unrest = -1
 		production_efficiency = 0.10
-		church_privilege_slots = 0.25
+		church_privilege_slots = 0.01
 		church_influence_modifier = 0.05
 	}
 	ai = {
@@ -1681,7 +1676,7 @@ city_privileges_reform = {
 	}
 	modifiers = {
 		urban_goods_produced_modifier = 0.15
-		burgher_privilege_slots = 0.25
+		burgher_privilege_slots = 0.01
 	}
 	custom_attributes = {
 		enables_burgher_autonomy = yes #+1 development and +25% min autonomy in each province with an urban trade good every 25 years.
@@ -2316,7 +2311,7 @@ albertine_line_reform = {
 	modifiers = {
 		legitimacy = 0.5
 		global_manpower_modifier = 0.10
-		noble_privilege_slots = 0.25
+		noble_privilege_slots = 0.01
 	}
 	ai = {
 		factor = 100
@@ -3575,7 +3570,7 @@ enforced_caste_system_reform = {
 	modifiers = {
         global_missionary_strength = 0.01
         tolerance_own = 1
-        church_privilege_slots = 0.25
+        church_privilege_slots = 0.01
 	}
 	ai = {
 		factor = 1
@@ -7787,7 +7782,7 @@ empowered_heavy_knights_reform = {
 		}
 	}
 	modifiers = {
-		noble_privilege_slots = 0.25
+		noble_privilege_slots = 0.01
 		cavalry_flanking = 0.50
 		cavalry_power = 0.05
 	}

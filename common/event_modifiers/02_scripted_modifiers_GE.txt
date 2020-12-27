@@ -179,6 +179,37 @@ rural_goods_produced_19 = {
 rural_goods_produced_20 = {
 	trade_goods_size_modifier = 1.00
 }
+rural_goods_produced_001 = {
+	trade_goods_size_modifier = -0.05
+}
+rural_goods_produced_002 = {
+	trade_goods_size_modifier = -0.10
+}
+rural_goods_produced_003 = {
+	trade_goods_size_modifier = -0.15
+}
+rural_goods_produced_004 = {
+	trade_goods_size_modifier = -0.20
+}
+rural_goods_produced_005 = {
+	trade_goods_size_modifier = -0.25
+}
+rural_goods_produced_006 = {
+	trade_goods_size_modifier = -0.30
+}
+rural_goods_produced_007 = {
+	trade_goods_size_modifier = -0.35
+}
+rural_goods_produced_008 = {
+	trade_goods_size_modifier = -0.40
+}
+rural_goods_produced_009 = {
+	trade_goods_size_modifier = -0.45
+}
+rural_goods_produced_010 = {
+	trade_goods_size_modifier = -0.50
+}
+
 
 urban_goods_produced_1 = {
 	trade_goods_size_modifier = 0.05
@@ -239,6 +270,36 @@ urban_goods_produced_19 = {
 }
 urban_goods_produced_20 = {
 	trade_goods_size_modifier = 1.00
+}
+urban_goods_produced_001 = {
+	trade_goods_size_modifier = -0.05
+}
+urban_goods_produced_002 = {
+	trade_goods_size_modifier = -0.10
+}
+urban_goods_produced_003 = {
+	trade_goods_size_modifier = -0.15
+}
+urban_goods_produced_004 = {
+	trade_goods_size_modifier = -0.20
+}
+urban_goods_produced_005 = {
+	trade_goods_size_modifier = -0.25
+}
+urban_goods_produced_006 = {
+	trade_goods_size_modifier = -0.30
+}
+urban_goods_produced_007 = {
+	trade_goods_size_modifier = -0.35
+}
+urban_goods_produced_008 = {
+	trade_goods_size_modifier = -0.40
+}
+urban_goods_produced_009 = {
+	trade_goods_size_modifier = -0.45
+}
+urban_goods_produced_010 = {
+	trade_goods_size_modifier = -0.50
 }
 
 mining_goods_produced_1 = {
@@ -301,6 +362,36 @@ mining_goods_produced_19 = {
 mining_goods_produced_20 = {
 	trade_goods_size_modifier = 1.00
 }
+mining_goods_produced_001 = {
+	trade_goods_size_modifier = -0.05
+}
+mining_goods_produced_002 = {
+	trade_goods_size_modifier = -0.10
+}
+mining_goods_produced_003 = {
+	trade_goods_size_modifier = -0.15
+}
+mining_goods_produced_004 = {
+	trade_goods_size_modifier = -0.20
+}
+mining_goods_produced_005 = {
+	trade_goods_size_modifier = -0.25
+}
+mining_goods_produced_006 = {
+	trade_goods_size_modifier = -0.30
+}
+mining_goods_produced_007 = {
+	trade_goods_size_modifier = -0.35
+}
+mining_goods_produced_008 = {
+	trade_goods_size_modifier = -0.40
+}
+mining_goods_produced_009 = {
+	trade_goods_size_modifier = -0.45
+}
+mining_goods_produced_010 = {
+	trade_goods_size_modifier = -0.50
+}
 
 plantage_goods_produced_1 = {
 	trade_goods_size_modifier = 0.05
@@ -362,7 +453,36 @@ plantage_goods_produced_19 = {
 plantage_goods_produced_20 = {
 	trade_goods_size_modifier = 1.00
 }
-
+plantage_goods_produced_001 = {
+	trade_goods_size_modifier = -0.05
+}
+plantage_goods_produced_002 = {
+	trade_goods_size_modifier = -0.10
+}
+plantage_goods_produced_003 = {
+	trade_goods_size_modifier = -0.15
+}
+plantage_goods_produced_004 = {
+	trade_goods_size_modifier = -0.20
+}
+plantage_goods_produced_005 = {
+	trade_goods_size_modifier = -0.25
+}
+plantage_goods_produced_006 = {
+	trade_goods_size_modifier = -0.30
+}
+plantage_goods_produced_007 = {
+	trade_goods_size_modifier = -0.35
+}
+plantage_goods_produced_008 = {
+	trade_goods_size_modifier = -0.40
+}
+plantage_goods_produced_009 = {
+	trade_goods_size_modifier = -0.45
+}
+plantage_goods_produced_010 = {
+	trade_goods_size_modifier = -0.50
+}
 
 
 

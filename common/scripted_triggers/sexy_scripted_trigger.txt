@@ -439,7 +439,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -451,7 +451,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -463,7 +463,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -475,7 +475,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -504,7 +504,7 @@ has_burgher_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = burgher_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -516,7 +516,7 @@ has_burgher_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = burgher_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -528,7 +528,7 @@ has_burgher_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = burgher_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -540,7 +540,7 @@ has_burgher_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = burgher_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -568,7 +568,7 @@ has_church_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -580,7 +580,7 @@ has_church_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -592,7 +592,7 @@ has_church_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -604,7 +604,7 @@ has_church_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -633,7 +633,7 @@ has_brahmins_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -645,7 +645,7 @@ has_brahmins_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -657,7 +657,7 @@ has_brahmins_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -669,7 +669,7 @@ has_brahmins_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -698,7 +698,7 @@ has_maratha_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -710,7 +710,7 @@ has_maratha_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -722,7 +722,7 @@ has_maratha_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -734,7 +734,7 @@ has_maratha_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -763,7 +763,7 @@ has_vaisyas_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -775,7 +775,7 @@ has_vaisyas_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -787,7 +787,7 @@ has_vaisyas_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -799,7 +799,7 @@ has_vaisyas_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -828,7 +828,7 @@ has_cossacks_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -840,7 +840,7 @@ has_cossacks_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -852,7 +852,7 @@ has_cossacks_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -864,7 +864,7 @@ has_cossacks_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -893,7 +893,7 @@ has_tribes_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -905,7 +905,7 @@ has_tribes_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -917,7 +917,7 @@ has_tribes_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -929,7 +929,7 @@ has_tribes_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -958,7 +958,7 @@ has_dhimmi_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -970,7 +970,7 @@ has_dhimmi_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -982,7 +982,7 @@ has_dhimmi_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -994,7 +994,7 @@ has_dhimmi_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1023,7 +1023,7 @@ has_jains_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1035,7 +1035,7 @@ has_jains_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1047,7 +1047,7 @@ has_jains_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1059,7 +1059,7 @@ has_jains_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1088,7 +1088,7 @@ has_rajput_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1100,7 +1100,7 @@ has_rajput_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1112,7 +1112,7 @@ has_rajput_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1124,7 +1124,7 @@ has_rajput_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1153,7 +1153,7 @@ has_peasants_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1165,7 +1165,7 @@ has_peasants_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1177,7 +1177,7 @@ has_peasants_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1189,7 +1189,7 @@ has_peasants_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1218,7 +1218,7 @@ has_ghulam_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.25
+					value = 0.01
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1230,7 +1230,7 @@ has_ghulam_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.50
+					value = 0.02
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1242,7 +1242,7 @@ has_ghulam_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 0.75
+					value = 0.03
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -1254,7 +1254,7 @@ has_ghulam_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = church_privilege_slots
-					value = 1.00
+					value = 0.04
 				}
 				NOT = {
 					num_of_estate_privileges = {

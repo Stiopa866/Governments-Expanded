@@ -443,9 +443,9 @@ country_event = {
 }
 
 country_event = {
-	id = GE_script_events.2
-	title = GE_script_events.2.t
-	desc = GE_script_events.2.d
+	id = GE_script_events.2000
+	title = GE_script_events.2000.t
+	desc = GE_script_events.2000.d
 	picture = WESTERNISATION_eventPicture
 	hidden = yes
 
@@ -1036,9 +1036,19 @@ country_event = {
 	
 
 	trigger = {
-		has_global_modifier_value = {
-			which = rural_goods_produced_modifier 
-			value = 0.05
+		OR = {
+			NOT = {
+				has_global_modifier_value = {
+					which = rural_goods_produced_modifier 
+					value = -0.04
+				}
+			}
+			AND = {
+				has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = 0.05
+				}
+			}
 		}
 	}
 	
@@ -1052,6 +1062,278 @@ country_event = {
 	option = {
 		name = GE_script_events.2.a
 		if = {
+			limit = {
+				NOT = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.04
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.09
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_001"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.14
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_002"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.19
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.14
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_003"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.24
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.19
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_004"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.29
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.24
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_005"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.34
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.29
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_006"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.39
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.34
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_007"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.44
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.39
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_008"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.49
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.44
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_009"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_modifier_value = {
+						which = rural_goods_produced_modifier 
+						value = -0.49
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_rural_goods = yes
+					}
+					remove_rural_goods_produced = yes
+					add_province_modifier = {
+						name = "rural_goods_produced_010"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_modifier_value = {
+					which = rural_goods_produced_modifier 
+					value = 0.05
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_rural_goods = yes
+				}
+				remove_rural_goods_produced = yes
+			}
+		}
+		else_if = {
 			limit = {
 				has_global_modifier_value = {
 					which = rural_goods_produced_modifier 
@@ -1557,9 +1839,17 @@ country_event = {
 	
 
 	trigger = {
-		has_global_modifier_value = {
-			which = urban_goods_produced_modifier 
-			value = 0.05
+		OR = {
+			has_global_modifier_value = {
+				which = urban_goods_produced_modifier 
+				value = 0.05
+			}
+			NOT = {
+				has_global_modifier_value = {
+					which = urban_goods_produced_modifier
+					value = -0.04
+				}
+			}
 		}
 	}
 	
@@ -1572,6 +1862,262 @@ country_event = {
 	
 	option = {
 		name = GE_script_events.2.a
+		if = {
+			limit = {
+				NOT = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.04
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.09
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_001"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.14
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_002"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.19
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.14
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_003"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.24
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.19
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_004"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.29
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.24
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_005"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.34
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.29
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_006"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.39
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.34
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_007"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.44
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.39
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_008"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.49
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.44
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_009"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_modifier_value = {
+						which = urban_goods_produced_modifier 
+						value = -0.49
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_urban_goods = yes
+					}
+					remove_urban_goods_produced = yes
+					add_province_modifier = {
+						name = "urban_goods_produced_010"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -2094,9 +2640,17 @@ country_event = {
 	
 
 	trigger = {
-		has_global_modifier_value = {
-			which = mining_goods_produced_modifier 
-			value = 0.05
+		OR = {
+			has_global_modifier_value = {
+				which = mining_goods_produced_modifier 
+				value = 0.05
+			}
+			NOT = {
+				has_global_modifier_value = {
+					which = mining_goods_produced_modifier
+					value = -0.04
+				}
+			}
 		}
 	}
 	
@@ -2109,6 +2663,241 @@ country_event = {
 	
 	option = {
 		name = GE_script_events.2.a
+		if = {
+			limit = {
+				NOT = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.04
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.09
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_001"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.14
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_002"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.19
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.14
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_003"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.24
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.19
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_004"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.29
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.24
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_005"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.34
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.29
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_006"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.39
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.34
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_007"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.44
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.39
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_008"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.49
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = mining_goods_produced_modifier 
+						value = -0.44
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_mining_goods = yes
+					}
+					remove_mining_goods_produced = yes
+					add_province_modifier = {
+						name = "mining_goods_produced_009"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
 		if = {
 			limit = {
 				has_global_modifier_value = {
@@ -2615,9 +3404,17 @@ country_event = {
 	
 
 	trigger = {
-		has_global_modifier_value = {
-			which = plantage_goods_produced_modifier 
-			value = 0.05
+		OR = {
+			has_global_modifier_value = {
+				which = plantage_goods_produced_modifier 
+				value = 0.05
+			}
+			NOT = {
+				has_global_modifier_value = {
+					which = plantage_goods_produced_modifier
+					value = -0.04
+				}
+			}
 		}
 	}
 	
@@ -2630,6 +3427,241 @@ country_event = {
 	
 	option = {
 		name = GE_script_events.2.a
+		if = {
+			limit = {
+				NOT = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.04
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.09
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_001"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.14
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.04
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_002"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.19
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.14
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_003"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.24
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.19
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_004"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.29
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.24
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_005"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.34
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.29
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_006"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.39
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.34
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_007"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.44
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.39
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_008"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.49
+					}
+					NOT = {
+						has_global_modifier_value = {
+						which = plantage_goods_produced_modifier 
+						value = -0.44
+						}
+					}
+				}
+				every_owned_province = {
+					limit = {
+						has_plantage_goods = yes
+					}
+					remove_plantage_goods_produced = yes
+					add_province_modifier = {
+						name = "plantage_goods_produced_009"
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
 		if = {
 			limit = {
 				has_global_modifier_value = {
