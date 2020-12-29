@@ -255,7 +255,7 @@ angevin_nobles_reform = {
 	modifiers = {
 		state_maintenance_modifier = -0.25
 		nobles_influence_modifier = 0.10
-		nobles_loyalty_modifier = 0.05
+		noble_privilege_slots = 0.01
 	}
 	custom_attributes = {
 		enables_magnate_law = yes

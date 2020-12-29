@@ -2018,8 +2018,8 @@
 		modifiers = {
 			legitimacy = 0.5
 			manpower_recovery_speed = 0.20
-			nobles_loyalty_modifier = 0.05
-			church_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
+			church_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 10
@@ -2101,7 +2101,7 @@
 		modifiers = {
 			papal_influence = 1
 			prestige = 0.5
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 100
@@ -2158,7 +2158,7 @@
 		modifiers = {
 			leader_cost = -0.10
 			nobles_influence_modifier = 0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		# custom_attributes = {
 			# enables_junker_estate = yes
@@ -2199,7 +2199,7 @@
 		modifiers = {
 			prestige = 0.5
 			leader_cost = -0.20
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 100
@@ -2236,7 +2236,7 @@
 		modifiers = {
 			diplomatic_upkeep = 1
 			global_manpower_modifier = 0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 100
@@ -2488,7 +2488,7 @@
 		modifiers = {
 			global_unrest = -1
 			manpower_recovery_speed = 0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 100
@@ -2727,7 +2727,7 @@
 		modifiers = {
 			global_manpower_modifier = 0.10
 			reduced_liberty_desire = 5
-			nobles_loyalty_modifier = 0.10
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 10
@@ -2779,7 +2779,7 @@
 			legitimacy = -0.5
 			global_manpower_modifier = 0.20
 			cavalry_cost = -0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 50
@@ -3034,7 +3034,7 @@
 		}
 		modifiers = {
 			cavalry_cost = -0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		custom_attributes = {
 			enables_timariots = yes #Unlocks the 'Timariot Governance' Noble Estate Privilege.
@@ -3193,7 +3193,7 @@
 		}
 		modifiers = {
 			prestige = 0.5
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		custom_attributes = {
 			enables_militant_orders = yes 
@@ -5065,7 +5065,7 @@
 		modifiers = {
 			state_maintenance_modifier = -0.25
 			global_unrest = -1
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 			nobles_influence_modifier = 0.10
 			burghers_influence_modifier = -0.10
 		}
@@ -5909,7 +5909,7 @@
 		modifiers = {
 			leader_cost = -0.1
 			nobles_influence_modifier = 0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		custom_attributes = {
 			enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
@@ -6397,7 +6397,7 @@
 			global_unrest = -1
 			global_manpower_modifier = 0.10
 			nobles_influence_modifier = -0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 100
@@ -6434,7 +6434,7 @@
 		modifiers = {
 			free_mil_policy = 1
 			ae_impact = -0.10
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 			nobles_influence_modifier = 0.10
 		}
 		ai = {
@@ -6791,7 +6791,7 @@
 		}
 		modifiers = {
 			diplomats = 1
-			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 			burghers_loyalty_modifier = 0.05
 			church_loyalty_modifier = 0.05
 		}

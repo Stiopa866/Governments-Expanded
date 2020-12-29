@@ -1665,7 +1665,7 @@ of_noble_bearing_reform = {
 		nobles_influence_modifier = 0.1
 		maratha_exclusive_influence_modifier = 0.1
 		rajput_exclusive_influence_modifier = 0.1
-		nobles_loyalty_modifier = 0.05
+		noble_privilege_slots = 0.01
 		maratha_exclusive_loyalty_modifier = 0.05
 		rajput_exclusive_loyalty_modifier = 0.05
 	}
