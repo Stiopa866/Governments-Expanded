@@ -130,6 +130,9 @@
  reform_me_events.226.a: "Just tell me where i need to sign."
  reform_me_events.226.b: "Mere citizens dare to restrict my ability to revoke their privileges?"
  
+ reform_me_events.228.a: "[Root.GE_Minority_Exploitation_Counter.GetValue]"
+ GE_Minority_Exploitation_Counter_Tooltip: "Gain §G+[Root.GE_Minority_Exploitation_Counter.GetValue]§! Manpower from this year's foreign recruitment efforts."
+
  #Privileges
  GE_privileges.1.t: "New Generation of Draftees"
  GE_privileges.1.d: "March away from the land of our birth,\nto fly a flag in some foreign earth.\nSend away like our fathers before,\nThese colors don't run from cold bloody war."

@@ -737,9 +737,9 @@ estate_nobles_imperial_court = {
 	modifier_by_land_ownership = {
 	}
 	penalties = {
-		ae_impact = -0.05
-	}
+	} 
 	benefits = {
+		ae_impact = -0.05
 	}
 	conditional_modifier = {
 	}
@@ -788,9 +788,9 @@ estate_nobles_imperial_marshall = {
 	modifier_by_land_ownership = {
 	}
 	penalties = {
-		land_forcelimit_modifier = 0.10
 	}
 	benefits = {
+		land_forcelimit_modifier = 0.10
 	}
 	conditional_modifier = {
 	}

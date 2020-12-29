@@ -991,7 +991,7 @@
  mechanic_enables_unrestricted_diplomats_yes:0 "Grants a permanent §G25§! opinion boost with all known countries."
  mechanic_enables_davidic_line_yes:0 "Restores the Davidic Line."
  mechanic_enables_hereditary_theocracy_yes:0 "Enables Hereditary Theocracy."
- mechanic_enables_deposition_yes:0 "Enables Depositions."
+ mechanic_enables_deposition_yes:0 "Enables Depositions; Frequent armed insurrections demanding a new election or for their leader to be enthroned."
  mechanic_enables_disables_deposition_yes:0 "Disables Depositions."
  mechanic_enables_regent_investments_yes:0 "Enables Regent Investments in Dutch provinces over 20 Development, giving §G1§! Additional building slot and §G-10%§! local development cost."
  mechanic_enables_independent_nobles_yes:0 "Independent Nobles: Noble Estate provinces have an additional §G15%§! more manpower."
