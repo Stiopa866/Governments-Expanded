@@ -979,7 +979,10 @@
  
  city_privileges_reform: "City Privileges"
  city_privileges_reform_desc: "Let us improve the position of the cities by allowing them to develop themselves and become major centers of commerce!"
- 
+ regional_kasbah_reform: "Regional Kasbahs"
+ regional_kasbah_reform_desc: "Traditionally we have used Kasbahs as a way to protect our settlements from rivals looking to plunder them. As the demand for our exotic produce has grown amongst foreign traders so has it grown amongst bandits and raiders in the region, this has made harvesting these resources inefficient due to raiding. We can work against this threat by establishing a regional system of walled citadels within important hubs of trade."
+ landsknecht_captains_reform: "Landsknecht Captains"
+ landsknecht_captains_reform_desc: "During the Imperial wars with the french, turks and heretics, the imperials have raised massive armies of Landsknechts to fight their battles for them. If we were to hire veterans from these conflicts to serve as our captains and sergeants we can use their experience in raising armies and training our troops in the style of the landsknechts!"
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1098,7 +1101,7 @@
  mechanic_enables_janissary_guards_yes: "Janissary Guards: §G+5%§! Discipline for Janissaries as long as you have less then 20% Janissaries."
  mechanic_enables_koprulu_dynasty_yes: "Koprulu Viziers: Allows your vizier to focus on an area every 25 years."
  mechanic_enables_public_works_yes: "Public Works: §G-10%§! Local Development Cost and §G-2§! Unrest in provinces with a Courthouse."
- mechanic_enables_caravanserai_yes: "Caravanserai: §G+5§! Trade power in Centers of Trade with Forts."
+ mechanic_enables_caravanserai_yes: "Fortified Trade Posts: §G+5§! Trade power in Centers of Trade with Forts."
  
  #GE 1.12
  
@@ -1184,6 +1187,9 @@
  mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the §YBurgher Autonomy§! Privilege, granting §G+1§! base production and §R+25%§! Minimum Autonomy for §Y25 years§! in each province with an urban trade good. \nThis privilege can be reused every §Y25 years§!."
  mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+10%§!."
  mechanic_enables_colonial_plantations_yes: "Colonial Plantations: §G+15%§! Plantation Goods Produced in your colonial subjects."
+ mechanic_enables_landsknecht_sergeants_yes: "Landsknecht Sergeants: §G+10%§! Infantry Combat Ability while you employ mercenaries."
+
+
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

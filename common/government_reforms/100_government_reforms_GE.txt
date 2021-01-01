@@ -3339,6 +3339,7 @@
 		}
 		potential = {
 			NOT = { technology_group = eastern }
+			NOT = { culture_group = maghrebi }
 		}
 		modifiers = {
 			garrison_size = 0.15
@@ -3362,6 +3363,45 @@
 					amount = 1
 				}
 			}
+		}
+	}
+
+	regional_kasbah_reform = {
+		icon = mamluk_noble
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				culture_group = maghrebi
+				has_reform = regional_kasbah_reform
+			}
+		}
+		trigger = {
+			OR = {
+				culture_group = maghrebi
+				has_reform = regional_kasbah_reform
+			}
+		}
+		modifiers = {
+			defensiveness = 0.10
+			plantage_goods_produced_modifier = 0.10
+		}
+		custom_attributes = {
+			enables_caravanserai = yes #+5 Trade Power in Centers of Trade with Forts
+		}
+		ai = {
+			factor = 10
 		}
 	}
 		
@@ -7843,6 +7883,7 @@
 		}
 		potential = {
 			NOT = { culture_group = latin }
+			NOT = { culture_group = germanic }
 		}
 		modifiers = {
 			mercenary_manpower = 0.25
@@ -7855,6 +7896,41 @@
 		}
 		ai = {
 			factor = 1
+		}
+	}
+
+	landsknecht_captains_reform = {
+		icon = landsknecht
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = -1
+			}
+		}
+		potential = {
+			culture_group = germanic
+		}
+		trigger = {
+			culture_group = germanic
+		}
+		modifiers = {
+			mercenary_manpower = 0.25
+			land_forcelimit_modifier = 0.10
+		}
+		custom_attributes = {
+			#enables_foreign_worship = yes #10% Religious Unity if you employ mercenaries
+			#enables_foreign_experts = yes #+1% Mercenary Disciple for each ally of a foreign culturegroup you have.
+			enables_landsknecht_sergeants = yes #+10% ICA if you employ mercenaries
+		}
+		ai = {
+			factor = 10
 		}
 	}
 

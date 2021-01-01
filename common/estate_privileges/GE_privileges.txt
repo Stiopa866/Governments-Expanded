@@ -1317,6 +1317,12 @@ estate_burghers_burgher_autonomy = {
 		}
 	}
 	on_invalid = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GE_Burgher_Autonomy
+			}
+			add_base_production = -1
+		}
 	}
 	penalties = {
 		global_autonomy = 0.025
@@ -1325,7 +1331,7 @@ estate_burghers_burgher_autonomy = {
 	}
 	cooldown_years = 25
 	on_cooldown_expires = {
-		reapply_estate_privilege = estate_burghers_burgher_autonomy
+		reapply_estate_privilege = { privilege = estate_burghers_burgher_autonomy }
 	}
 	ai_will_do = {
 		factor = 0

@@ -188,7 +188,9 @@ monarchy = {
 				#tur_reform_beylerbeys
 				#tur_reform_eyalets
 				#GE
+				#Generics
 				regional_forts_reform
+				regional_kasbah_reform
 				theocratic_bureacrats_reform
 				ulema_guidance_reform 
 				state_temple_harmonization_reform
@@ -250,6 +252,7 @@ monarchy = {
 				feudal_levies_reform
 				national_guard_reform
 				mercenary_corps_reform
+				landsknecht_captains_reform
 				professional_army_reform
 				empowered_royal_guard_reform
 				empowered_mercenary_corps_reform
