@@ -660,6 +660,7 @@ republic = {
 				russian_republic_republic
 				caucasian_republic
 				common_republic_reform
+				lombardy_venetia_reform
 			}
 		}
 		republican_virtues = {
@@ -765,6 +766,7 @@ republic = {
 				almogavars_reform
 				republican_guard_reform_republic
 				crusading_tradition_reform
+				teulie_reform_republic_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {

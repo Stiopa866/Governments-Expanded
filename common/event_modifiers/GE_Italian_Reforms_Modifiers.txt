@@ -54,3 +54,24 @@ GE_Naples_Liber_Augustalis = {
 	vaisyas_loyalty_modifier = 0.05
 	vaisyas_non_muslim_loyalty_modifier = 0.05
 }
+
+GE_Teulie_1 = {
+	infantry_power = 0.03
+	galley_power = 0.03
+}
+GE_Teulie_2 = {
+	infantry_power = 0.06
+	galley_power = 0.06
+}
+GE_Teulie_3 = {
+	infantry_power = 0.09
+	galley_power = 0.09
+}
+GE_Teulie_4 = {
+	infantry_power = 0.12
+	galley_power = 0.12
+}
+GE_Teulie_5 = {
+	infantry_power = 0.15
+	galley_power = 0.15
+}
