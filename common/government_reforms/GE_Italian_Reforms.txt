@@ -221,6 +221,44 @@ mantua_house_of_gonzaga_reform = {
 		factor = 100
 	}
 }
+lombardy_venetia_reform = {
+	icon = "signoria_reform"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			OR = {
+				has_country_flag = lvn_without_fe
+				tag = LVN
+			}
+			has_reform = lombardy_venetia_reform
+		}
+	}
+	trigger = {
+		OR = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = GE_FORMED_LVN_WITHOUT_FE
+					has_country_flag = lvn_without_fe
+				}
+				tag = LVN
+			}
+			has_reform = lombardy_venetia_reform
+		}
+	}
+	custom_attributes = {
+		enables_nepotism = yes
+	}
+	modifiers = {
+		max_absolutism = -30
+		republican_tradition = 0.5
+		army_tradition = 0.15
+		navy_tradition = 0.15
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 #Tier 2
 angevin_nobles_reform = {
@@ -670,6 +708,49 @@ mantua_knightly_orders_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+teulie_reform_republic_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = GE_FORMED_LVN_WITHOUT_FE
+				has_country_flag = lvn_without_fe
+			}
+			OR = {
+				tag = LVN
+				AND = {
+					was_tag = LVN
+					tag = ITA
+				}
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = GE_FORMED_LVN_WITHOUT_FE
+				has_country_flag = lvn_without_fe
+			}
+			OR = {
+				tag = LVN
+				AND = {
+					was_tag = LVN
+				}
+			}
+		}
+	}
+	modifiers = {
+		infantry_cost = 0.15
+		galley_cost = 0.15
+	}
+	custom_attributes = {
+		enables_teulie = yes #+3% ICA and +3% Galley Power for each 10 RT over 50
+	}
+	ai = {
+		factor = 1
 	}
 }
 

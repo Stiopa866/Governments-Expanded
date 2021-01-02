@@ -8,9 +8,19 @@
  mantua_knightly_orders_reform: "Knightly Orders"
  mantua_knightly_orders_reform_desc: "As evidence of their great religious faith, the Gonzagas established numerous knightly orders, the Order of the Yellow Cord was the oldest knightly order of the Gonzaga family. Established in 1580 by Ludovico Gonzaga-Nevers, Duke of Nevers and Rethel on the occasion of the birth of his eldest son Charles I, it was reconfirmed by him in 1599 on the occasion of his marriage with Catherine of Lorraine."
 
+ teulie_reform_republic_reform: "Teulie"
+ teulie_reform_republic_reform_desc: "\"Iterum Alte Volat\" (Fly high once more)\nThe blue Samnite shield has in the center a rostral eagle, armed with gold and loaded on the chest by the elliptical silver shield to the red cross; at the base of the claws a bifida list in gold color, with the motto "ITERUM ALTE VOLAT" in black capital letters. The turreted crown is gold in color. \nThe institute is dedicated to General Pietro Teulié who, during his stay in the Ministry of War, put his hand to the project of a military orphanage, in the current location of the school."
+
+ lombardy_venetia_reform: "Lombardy Venetia"
+ lombardy_venetia_reform_desc: "The constitution of an union of the proudest people in northern Italy was but a start of the creation of a superpower in Northern Italy able to rival the houses of the Dolphins and the Imperial Eagles. March forth my brave brothers, il Moscato Piemontese ed il Pesto Genovese will be in our hands when we will dine in the vast plains of the Emilia tomorrow."
+
  mechanic_enables_marriage_policies_yes: "Marriage Policies: §G+5%§! §YImprove Relations§! for every 1 point of positive diplomatic reputation, up to §G25%§!"
  mechanic_enables_galleria_celeste_yes: "Galleria Celeste: §G+12§! §YYearly Tax§! for every 5% of idea cost"
  mechanic_enables_ordine_cordone_giallo_yes: "Ordine del Cordone Giallo: §G+5%§! Cavalry Combat Ability and §G+1§! Papal Influence for every §Y+2§! Tolerance of the True Faith over 4"
+ mechanic_enables_teulie_yes: "Teulè: §G+3.0%§! Infantry Combat Ability and §G+3%§! Galley Combat Ability for every §Y10§! Republican Tradition over §Y50§!."
+
+ #̀Tooltips
+ GE_FORMED_LVN_WITHOUT_FE: "Has United the Lombard and Venetians under a common flag"
 
  # Modifiers
  GE_Mantua_Marriage_Policies_1: "Gonzaga Marriage Policies"
@@ -25,3 +35,9 @@
  GE_Mantua_Knightly_Orders_4: "Ordine del Cordone Giallo"
 
  GE_Naples_Liber_Augustalis: "Liber Augustalis"
+
+ GE_Teulie_1: "Teuliè"
+ GE_Teulie_2: "Teuliè"
+ GE_Teulie_3: "Teuliè"
+ GE_Teulie_4: "Teuliè"
+ GE_Teulie_5: "Teuliè"
