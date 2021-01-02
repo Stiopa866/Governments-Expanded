@@ -1394,6 +1394,35 @@ estate_burghers_burgher_autonomy = {
 	}
 }
 
+estate_burghers_saharan_outposts = {
+	icon = privilege_monopoly_of_goods_cloth
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_saharan_outposts
+	}
+	can_select = {
+		has_government_attribute = enables_saharan_outposts
+		has_burgher_privilege_space = yes
+	}
+	modifier_by_land_ownership = {
+		trade_steering = 0.5
+	}
+	on_granted = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+		merchants = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
 
 ###############Church Privileges###############
 

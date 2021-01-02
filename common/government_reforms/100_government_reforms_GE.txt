@@ -9479,7 +9479,7 @@
 			}
 		}
 		modifiers = {
-			land_forcelimit_modifier = 0.10
+			#land_forcelimit_modifier = 0.10
 			fire_damage = 0.05
 		}
 		custom_attributes = {
@@ -9836,12 +9836,13 @@
 		}
 		modifiers = {
 			placed_merchant_power = 10
-			trade_efficiency = 0.10
-			merchant = 1 #temp
+			#trade_efficiency = 0.10
+			#merchant = 1 #temp
 		}
-		# custom_attributes = {
-		# 	enables_saharan_outposts = yes #privilege that gives +1 merchant and +50% scaling trade steering
-		# }
+		custom_attributes = {
+			enables_saharan_outposts = yes #privilege that gives +1 merchant and +50% scaling trade steering
+		}
+		can_use_trade_post = yes
 		ai = {
 			factor = 10
 		}

@@ -254,6 +254,7 @@ estate_burghers =
 		estate_burghers_town_rights
 		estate_burghers_land_privileges
 		estate_burghers_burgher_autonomy
+		estate_burghers_saharan_outposts
 	}
 
 	agendas = {
