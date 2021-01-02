@@ -983,7 +983,15 @@
  regional_kasbah_reform_desc: "Traditionally we have used Kasbahs as a way to protect our settlements from rivals looking to plunder them. As the demand for our exotic produce has grown amongst foreign traders so has it grown amongst bandits and raiders in the region, this has made harvesting these resources inefficient due to raiding. We can work against this threat by establishing a regional system of walled citadels within important hubs of trade."
  landsknecht_captains_reform: "Landsknecht Captains"
  landsknecht_captains_reform_desc: "During the Imperial wars with the french, turks and heretics, the imperials have raised massive armies of Landsknechts to fight their battles for them. If we were to hire veterans from these conflicts to serve as our captains and sergeants we can use their experience in raising armies and training our troops in the style of the landsknechts!"
- 
+ wattasid_viziers_reform: "Wattasid Viziers"
+ wattasid_viziers_reform_desc: "By aligning the powerfull Wattasid Family with us we can ensure that the northern coasts will remain loyal. Furthermore we can use their relations with the berber tribes to ensure their complicance and support."
+ doctrines_of_al_jazuli_reform: "Doctrines of Al Jazuli"
+ doctrines_of_al_jazuli_reform_desc: "The teachings and prayers of Imam Al Jazuli are some of the most popular and widespread Islamic books within our realm, and many lesser nobles are aligning themselves with his teachings and using his tomb as a gathering place to debate theology and politics. By embracing this doctrine we ensure our presence and alignment with this movement and prevent a critical mass of disgruntled nobles rallying behind a single goal."
+ jayish_al_malik_reform: "Jayish al Malik"
+ jayish_al_malik_reform_desc: "Following the Battle of the Three Kings and the coronation of Ahmad Al Mansur as the sole ruler of Morocco, the need for a modern standing army became apparent, as the victorious tribesmen were increasingly hard to control. To acquire the weapons, training and recruits needed for this new army, the sultan chose to preserve his independence by not drawing these resources from a single source and thereby weakening his negotiating position. Leading to an army which was build on Ottoman traditions like the beylerbey and sipahis, English weapons and ammunition and Andalusian recruits."
+ expand_the_trans_saharan_trade_reform: "Expand the Trans-Saharan Trade"
+ expand_the_trans_saharan_trade_reform_desc: "To maintain our trade balance with the european powers we should increase the flow of gold that comes north across the Sahara. through the establishment of outposts along the way, merchant privileges across the Sahara and by aligning the local tribes we can stabilize and expand these trade routes!."
+
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."
@@ -1188,7 +1196,8 @@
  mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+10%§!."
  mechanic_enables_colonial_plantations_yes: "Colonial Plantations: §G+15%§! Plantation Goods Produced in your colonial subjects."
  mechanic_enables_landsknecht_sergeants_yes: "Landsknecht Sergeants: §G+10%§! Infantry Combat Ability while you employ mercenaries."
-
+ mechanic_enables_foreign_drill_masters_yes: "Foreign Drill Masters: §G+10%§! Drill Gain and §G-5%§! Military Technology Cost for each ally with more development or discipline, up to a maximum of 5 allies."
+ mechanic_enables_berber_guides_yes: "Berber autonomy; Unlocks the §YBerber Autonomy§! Privilege, granting §G-15%§! land attrition while the noble estate has over §Y60§! Loyalty, as well as §G-10%§! cavalry cost."
 
 
  #Edicts
@@ -1275,7 +1284,9 @@
  GE_anatolian_theme_manpower: "§G+20%§! Local Manpower Modifier in each Anatolian Province."
  estate_nobles_establish_serfdom: "Establish Serfdom"
  estate_nobles_establish_serfdom_desc: "By establishing serfdom we can ensure that people will remain on their land and that our supply of food and rural goods remains stable, although diminished."
-
+ estate_nobles_berber_guides: "Berber Autonomy"
+ estate_nobles_berber_guides_desc: "By granting the Berber tribes autonomy we can ensure they will not raid our armies supply caravans and serve as scouts."
+ GE_Berber_Guides: "§G-15%§! Land Attrition while over §Y60§! Noble Loyalty."
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."

@@ -911,6 +911,26 @@ GE_colonial_plantations = {
 GE_Landsknecht_Sergeants = {
 	infantry_power = 0.10
 }
+GE_Foreign_Drill_Masters_1 = {
+	drill_gain_modifier = 0.10
+	mil_tech_cost_modifier = -0.05
+}
+GE_Foreign_Drill_Masters_2 = {
+	drill_gain_modifier = 0.20
+	mil_tech_cost_modifier = -0.10
+}
+GE_Foreign_Drill_Masters_3 = {
+	drill_gain_modifier = 0.30
+	mil_tech_cost_modifier = -0.15
+}
+GE_Foreign_Drill_Masters_4 = {
+	drill_gain_modifier = 0.40
+	mil_tech_cost_modifier = -0.20
+}
+GE_Foreign_Drill_Masters_5 = {
+	drill_gain_modifier = 0.50
+	mil_tech_cost_modifier = -0.25
+}
 	
 	
 #Cortez

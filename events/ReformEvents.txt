@@ -14118,36 +14118,6 @@ country_event = {
 	
 	option = {
 		name = reform_me_events.216.a
-		if = {
-			limit = {
-				calc_true_if = {
-					all_ally = {
-						NOT = {
-							culture_group = ROOT
-						}
-					}
-					value = 1
-				}
-				NOT = {
-					calc_true_if = {
-						all_ally = {
-							NOT = {
-								culture_group = ROOT
-							}
-						}
-						value = 2
-					}
-				}
-			}
-			add_country_modifier = {
-				name = GE_Foreign_Experts_1
-				duration = -1
-			}
-			remove_country_modifier = GE_Foreign_Experts_2
-			remove_country_modifier = GE_Foreign_Experts_3
-			remove_country_modifier = GE_Foreign_Experts_4
-			remove_country_modifier = GE_Foreign_Experts_5
-		}
 	}
 }
 
@@ -14443,7 +14413,7 @@ country_event = {
 country_event = {
 	id = reform_me_events.218
 	title = reform_me_events.218.t
-	desc = reform_me_events.218.German
+	desc = reform_me_events.218.d
 	picture = WESTERNISATION_eventPicture
 	
 
@@ -15517,8 +15487,312 @@ country_event = {
 	}
 }
 
-
-
+country_event = {
+	id = reform_me_events.231
+	title = reform_me_events.231.t
+	desc = reform_me_events.231.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				has_government_attribute = enables_foreign_drill_masters
+				OR = {
+					AND = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									total_development = ROOT 
+									tech_difference = 1
+								}
+							}
+							amount = 1
+						}
+						NOT = {
+							calc_true_if = {
+								amount = 2
+								all_ally = {
+									OR = {
+										total_development = ROOT 
+										tech_difference = 1
+									}
+								}
+							}
+						}
+						NOT = { has_country_modifier = GE_Foreign_Drill_Masters_1 }
+					}
+					AND = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									total_development = ROOT 
+									tech_difference = 1
+								}
+							}
+							amount = 2
+						}
+						NOT = {
+							calc_true_if = {
+								all_ally = {
+									OR = {
+										total_development = ROOT 
+										tech_difference = 1
+									}
+								}
+								amount = 3
+							}
+						}
+						NOT = { has_country_modifier = GE_Foreign_Drill_Masters_2 }
+					}
+					AND = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									total_development = ROOT 
+									tech_difference = 1
+								}
+							}
+							amount = 3
+						}
+						NOT = {
+							calc_true_if = {
+								all_ally = {
+									OR = {
+										total_development = ROOT 
+										tech_difference = 1
+									}
+								}
+								amount = 4
+							}
+						}
+						NOT = { has_country_modifier = GE_Foreign_Drill_Masters_3 }
+					}
+					AND = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									total_development = ROOT 
+									tech_difference = 1
+								}
+							}
+							amount = 4
+						}
+						NOT = {
+							calc_true_if = {
+								all_ally = {
+									OR = {
+										total_development = ROOT 
+										tech_difference = 1
+									}
+								}
+								amount = 5
+							}
+						}
+						NOT = { has_country_modifier = GE_Foreign_Drill_Masters_4 }
+					}
+					AND = {
+						calc_true_if = {
+							all_ally = {
+								OR = {
+									total_development = ROOT 
+									tech_difference = 1
+								}
+							}
+							amount = 5
+						}
+						NOT = { has_country_modifier = GE_Foreign_Drill_Masters_5 }
+					}
+				}
+			}
+			AND = {
+				OR = {
+					has_country_modifier = GE_Foreign_Drill_Masters_1
+					has_country_modifier = GE_Foreign_Drill_Masters_2
+					has_country_modifier = GE_Foreign_Drill_Masters_3
+					has_country_modifier = GE_Foreign_Drill_Masters_4
+					has_country_modifier = GE_Foreign_Drill_Masters_5
+				}
+				NOT = { 
+					has_government_attribute = enables_foreign_drill_masters
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				calc_true_if = {
+					all_ally = {
+						OR = {
+							total_development = ROOT 
+							tech_difference = 1
+						}
+					}
+					amount = 1
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							OR = {
+								total_development = ROOT 
+								tech_difference = 1
+							}
+						}
+						amount = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = GE_Foreign_Drill_Masters_1
+				duration = -1
+ 
+			}
+			remove_country_modifier = GE_Foreign_Drill_Masters_2
+			remove_country_modifier = GE_Foreign_Drill_Masters_3
+			remove_country_modifier = GE_Foreign_Drill_Masters_4
+			remove_country_modifier = GE_Foreign_Drill_Masters_5
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_ally = {
+						OR = {
+							total_development = ROOT 
+							tech_difference = 1
+						}
+					}
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							OR = {
+								total_development = ROOT 
+								tech_difference = 1
+							}
+						}
+						amount = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = GE_Foreign_Drill_Masters_2
+				duration = -1
+ 
+			}
+			remove_country_modifier = GE_Foreign_Drill_Masters_1
+			remove_country_modifier = GE_Foreign_Drill_Masters_3
+			remove_country_modifier = GE_Foreign_Drill_Masters_4
+			remove_country_modifier = GE_Foreign_Drill_Masters_5
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_ally = {
+						OR = {
+							total_development = ROOT 
+							tech_difference = 1
+						}
+					}
+					amount = 3
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							OR = {
+								total_development = ROOT 
+								tech_difference = 1
+							}
+						}
+						amount = 4
+					}
+				}
+			}
+			add_country_modifier = {
+				name = GE_Foreign_Drill_Masters_3
+				duration = -1
+ 
+			}
+			remove_country_modifier = GE_Foreign_Drill_Masters_1
+			remove_country_modifier = GE_Foreign_Drill_Masters_2
+			remove_country_modifier = GE_Foreign_Drill_Masters_4
+			remove_country_modifier = GE_Foreign_Drill_Masters_5
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_ally = {
+						OR = {
+							total_development = ROOT 
+							tech_difference = 1
+						}
+					}
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+						all_ally = {
+							OR = {
+								total_development = ROOT 
+								tech_difference = 1
+							}
+						}
+						amount = 5
+					}
+				}
+			}
+			add_country_modifier = {
+				name = GE_Foreign_Drill_Masters_4
+				duration = -1
+ 
+			}
+			remove_country_modifier = GE_Foreign_Drill_Masters_1
+			remove_country_modifier = GE_Foreign_Drill_Masters_2
+			remove_country_modifier = GE_Foreign_Drill_Masters_3
+			remove_country_modifier = GE_Foreign_Drill_Masters_5
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_ally = {
+						OR = {
+							total_development = ROOT 
+							tech_difference = 1
+						}
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = {
+				name = GE_Foreign_Drill_Masters_5
+				duration = -1
+ 
+			}
+			remove_country_modifier = GE_Foreign_Drill_Masters_1
+			remove_country_modifier = GE_Foreign_Drill_Masters_2
+			remove_country_modifier = GE_Foreign_Drill_Masters_3
+			remove_country_modifier = GE_Foreign_Drill_Masters_4
+		}
+		else = {
+			remove_country_modifier = GE_Foreign_Drill_Masters_1
+			remove_country_modifier = GE_Foreign_Drill_Masters_2
+			remove_country_modifier = GE_Foreign_Drill_Masters_3
+			remove_country_modifier = GE_Foreign_Drill_Masters_4
+			remove_country_modifier = GE_Foreign_Drill_Masters_5
+		}
+	}
+	
+	option = {
+		name = reform_me_events.217.a
+		
+	}
+}
 
 
 

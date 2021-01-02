@@ -399,7 +399,7 @@ estate_nobles_diplomatic_privilege = {
 		country_event = { id = GE_privileges.2 }
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -748,7 +748,7 @@ estate_nobles_imperial_court = {
 		reapply_estate_privilege = { privilege = estate_nobles_imperial_court }
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -799,7 +799,7 @@ estate_nobles_imperial_marshall = {
 		reapply_estate_privilege = { privilege = estate_nobles_imperial_marshall }
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -1120,6 +1120,62 @@ estate_nobles_establish_serfdom = {
 		factor = 1
 	}
 }
+
+estate_nobles_berber_guides = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_berber_guides
+	}
+	can_select = {
+		has_government_attribute = enables_berber_guides
+		has_noble_privilege_space = yes
+	}
+	on_granted = {
+		custom_tooltip = GE_Berber_Guides
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+	}
+	conditional_modifier = {
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		modifier = {
+			attrition = -0.15
+		}
+	}
+	penalties = {
+		global_autonomy = 0.025
+	}
+	benefits = {
+		cavalry_cost = -0.10
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##########Noble Baron Privileges##########
 estate_noble_baron_pensions = {

@@ -3294,6 +3294,18 @@
 		icon = GE_luxembourg_2
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
+		effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = -1
+			}
+		}
 		potential = {
 			OR = {
 				primary_culture = wallonian 
@@ -3312,6 +3324,44 @@
 		}
 		custom_attributes = {
 			enables_fortified_settlements = yes #-10% dev cost in fortified states
+		}
+		ai = {
+			factor = 101
+		}
+	}
+	wattasid_viziers_reform = {
+		icon = mamluk_noble
+		allow_normal_conversion = yes
+		valid_for_nation_designer = no
+		effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = moroccan 
+				has_reform = wattasid_viziers_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = moroccan 
+				has_reform = wattasid_viziers_reform
+			}
+		}
+		modifiers = {
+			adm_advisor_cost = -0.15
+		}
+		custom_attributes = {
+			enables_berber_guides = yes #privilege to give get -15% land attrition and -10 cav cost
 		}
 		ai = {
 			factor = 101
@@ -7361,6 +7411,43 @@
 		}
 	}
 
+	doctrines_of_al_jazuli_reform = {
+		icon = szlachta
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Clergy_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Clergy_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = moroccan
+				has_reform = doctrines_of_al_jazuli_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = moroccan
+				has_reform = doctrines_of_al_jazuli_reform
+			}
+		}
+		modifiers = {
+			tolerance_own = 1
+			legitimacy = 0.5
+			church_privilege_slots = 0.01
+		}
+		ai = {
+			factor = 100
+		}
+	}
+
 	#############################
 	###########Tier6#############
 	############################# 
@@ -9329,6 +9416,18 @@
 	army_of_flanders_reform = {
 		icon = army_of_flanders
 		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Royal_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Royal_Influence
+				value = -1
+			}
+		}
 		potential = {
 			OR = {
 				primary_culture = wallonian 
@@ -9347,6 +9446,44 @@
 		}
 		custom_attributes = {
 			enables_coin_over_crown = yes #+5% mercenary discipline while not in debt
+		}
+		ai = {
+			factor = 101
+		}
+	}
+	jayish_al_malik_reform = {
+		icon = mamluk_noble
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Royal_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Royal_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = moroccan 
+				has_reform = jayish_al_malik_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = moroccan 
+				has_reform = jayish_al_malik_reform
+			}
+		}
+		modifiers = {
+			land_forcelimit_modifier = 0.10
+			fire_damage = 0.05
+		}
+		custom_attributes = {
+			enables_foreign_drill_masters = yes #-5% mil-tech cost and +10% drill gain per ally with more development or discipline.
 		}
 		ai = {
 			factor = 101
@@ -9680,6 +9817,33 @@
 		}
 		ai = {
 			factor = 100
+		}
+	}
+	expand_the_trans_saharan_trade_reform = {
+		icon = mamluk_noble_2
+		allow_normal_conversion = yes
+		potential = {
+			OR = {
+				culture_group = maghrebi
+				has_reform = expand_the_trans_saharan_trade_reform
+			}
+		}
+		trigger = {
+			OR = {
+				culture_group = maghrebi
+				has_reform = expand_the_trans_saharan_trade_reform
+			}
+		}
+		modifiers = {
+			placed_merchant_power = 10
+			trade_efficiency = 0.10
+			merchant = 1 #temp
+		}
+		# custom_attributes = {
+		# 	enables_saharan_outposts = yes #privilege that gives +1 merchant and +50% scaling trade steering
+		# }
+		ai = {
+			factor = 10
 		}
 	}
 #}

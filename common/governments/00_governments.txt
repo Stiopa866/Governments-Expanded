@@ -172,6 +172,7 @@ monarchy = {
 				gibraltar_of_the_north_reform
 				#1.15
 				city_privileges_reform
+				wattasid_viziers_reform
 			}
 		}
 		bureaucracy = {
@@ -190,7 +191,6 @@ monarchy = {
 				#GE
 				#Generics
 				regional_forts_reform
-				regional_kasbah_reform
 				theocratic_bureacrats_reform
 				ulema_guidance_reform 
 				state_temple_harmonization_reform
@@ -245,6 +245,8 @@ monarchy = {
 				inti_huaca_regionalism_reform
 				#1.14
 				crossroads_of_cultures_reform
+				#1.15
+				regional_kasbah_reform
 			}
 		}
 		military_organisation = {
@@ -307,6 +309,8 @@ monarchy = {
 				strenghten_the_haeren_reform
 				#1.14
 				army_of_flanders_reform
+				#1.15
+				jayish_al_malik_reform
 				mantua_knightly_orders_reform
 			}
 		}
@@ -364,6 +368,8 @@ monarchy = {
 				german_aristocracy_reform
 				#1.14
 				hof_van_brabant_reform
+				#1.15
+				doctrines_of_al_jazuli_reform
 				mantua_mecenatismo_mantovano_reform
 			}
 		}
@@ -441,6 +447,8 @@ monarchy = {
 				fredrickan_reforms_reform
 				#1.13
 				danske_besiddelser_reform
+				#1.15
+				expand_the_trans_saharan_trade_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
