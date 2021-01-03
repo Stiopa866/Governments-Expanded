@@ -977,6 +977,7 @@
  kreditwerk_reform: "Reformed Kreditwerk"
  kreditwerk_reform_desc: "In the mid-16th century, the margraves of Brandenburg had become highly dependent on the estates (counts, lords, knights and towns).The margraviate's liabilities and tax income as well as the margrave's finances were controlled by the Kreditwerk, an institution not controlled by the elector, and the Großer Ausschuß 'Great Committee' of the estates."
  
+ #1.15
  city_privileges_reform: "City Privileges"
  city_privileges_reform_desc: "Let us improve the position of the cities by allowing them to develop themselves and become major centers of commerce!"
  regional_kasbah_reform: "Regional Kasbahs"
@@ -991,6 +992,10 @@
  jayish_al_malik_reform_desc: "Following the Battle of the Three Kings and the coronation of Ahmad Al Mansur as the sole ruler of Morocco, the need for a modern standing army became apparent, as the victorious tribesmen were increasingly hard to control. To acquire the weapons, training and recruits needed for this new army, the sultan chose to preserve his independence by not drawing these resources from a single source and thereby weakening his negotiating position. Leading to an army which was build on Ottoman traditions like the beylerbey and sipahis, English weapons and ammunition and Andalusian recruits."
  expand_the_trans_saharan_trade_reform: "Expand the Trans-Saharan Trade"
  expand_the_trans_saharan_trade_reform_desc: "To maintain our trade balance with the european powers we should increase the flow of gold that comes north across the Sahara. through the establishment of outposts along the way, merchant privileges across the Sahara and by aligning the local tribes we can stabilize and expand these trade routes!."
+ nomad_councils_reform: "Noble Councils"
+ nomad_councils_reform_desc: "With the continued interference of the Berber and Bedouin tribes into the political and social life of our nation, we are forced to bring them to the councils and try to integrate them into our government in order to disarm them."
+ 
+ 
 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1401,7 +1406,8 @@
  GE_not_enough_rajput_slots_tooltip:1 "Not enough Rajput Privilege Slots."
  GE_not_enough_peasants_slots_tooltip:1 "Not enough Peasant Privilege Slots."
  GE_not_enough_ghulam_slots_tooltip:1 "Not enough Ghulam Privilege Slots."
- 
+ GE_Killing_the_Wattasids_tooltip:1 "Permanently Removes the §YWattasid Viziers§! reform."
+ GE_Killed_The_Wattasids_Tooltip:1 "Not available if you executed the Wattasid Dynasty."
  
  
  elections.EVTNAME7001:1 "American Elections"

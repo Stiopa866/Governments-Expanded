@@ -3330,7 +3330,7 @@
 		}
 	}
 	wattasid_viziers_reform = {
-		icon = mamluk_noble
+		icon = Wattasid_Dynasty
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		effect = {
@@ -3355,6 +3355,10 @@
 			OR = {
 				primary_culture = moroccan 
 				has_reform = wattasid_viziers_reform
+			}
+			custom_trigger_tooltip = {
+				tooltip = GE_Killed_The_Wattasids_Tooltip
+				NOT = { has_country_flag = Killed_the_Wattasids }
 			}
 		}
 		modifiers = {
@@ -3417,7 +3421,7 @@
 	}
 
 	regional_kasbah_reform = {
-		icon = mamluk_noble
+		icon = Kasbah
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -6557,6 +6561,42 @@
 			factor = 101
 		}
 	}
+	doctrines_of_al_jazuli_reform = {
+		icon = al_jazuli
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Clergy_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Clergy_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = moroccan
+				has_reform = doctrines_of_al_jazuli_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = moroccan
+				has_reform = doctrines_of_al_jazuli_reform
+			}
+		}
+		modifiers = {
+			tolerance_own = 1
+			legitimacy = 0.5
+			church_privilege_slots = 0.01
+		}
+		ai = {
+			factor = 100
+		}
+	}
 #}
 #############################
 ###########Tier5#############
@@ -7411,37 +7451,25 @@
 		}
 	}
 
-	doctrines_of_al_jazuli_reform = {
-		icon = szlachta
+	nomad_councils_reform = {
+		icon = mamluk_horse
 		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
 		potential = {
 			OR = {
-				primary_culture = moroccan
-				has_reform = doctrines_of_al_jazuli_reform
+				culture_group = maghrebi
+				has_reform = nomad_councils_reform
 			}
 		}
 		trigger = {
 			OR = {
-				primary_culture = moroccan
-				has_reform = doctrines_of_al_jazuli_reform
+				culture_group = maghrebi
+				has_reform = nomad_councils_reform
 			}
 		}
 		modifiers = {
-			tolerance_own = 1
-			legitimacy = 0.5
-			church_privilege_slots = 0.01
+			stability_cost_modifier = -0.15
+			nobles_loyalty_modifier = 0.05
+			noble_privilege_slots = 0.01
 		}
 		ai = {
 			factor = 100
@@ -9452,7 +9480,7 @@
 		}
 	}
 	jayish_al_malik_reform = {
-		icon = mamluk_noble
+		icon = al_mansur
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -9820,7 +9848,7 @@
 		}
 	}
 	expand_the_trans_saharan_trade_reform = {
-		icon = mamluk_noble_2
+		icon = saharan_trade
 		allow_normal_conversion = yes
 		potential = {
 			OR = {

@@ -425,6 +425,8 @@ monarchy = {
 				theatines_reform
 				restored_land_establishment_reform
 				representative_electors_reform
+				#1.15
+				nomad_councils_reform
 			}
 		}
 		economic_policy = {
