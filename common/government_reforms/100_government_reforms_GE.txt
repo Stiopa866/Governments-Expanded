@@ -5,8 +5,7 @@
 		valid_for_nation_designer = yes
 		nation_designer_cost = 10
 		election_on_death = yes
-		#has_term_election = yes
-		#duration = 100
+		queen = no
 		potential = {
 			NOT = { tag = POL }
 		}

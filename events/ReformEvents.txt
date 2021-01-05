@@ -560,9 +560,16 @@ country_event = {
 			random_neighbor_country = {
 				limit = {
 					government = monarchy
+					NOT = {
+						AND = {
+							is_subject_of = ROOT
+							is_lesser_in_union = no
+						}
+					}
 				}
 				save_event_target_as = noble_candidate
 			}
+			
 			if = {
 				limit = {
 					has_government_attribute = enables_papal_favor
@@ -581,6 +588,7 @@ country_event = {
 		
 		trigger = {
 			ruler_age = 15
+			has_regency = no
 		}
 		
 		add_legitimacy = 10
@@ -612,7 +620,7 @@ country_event = {
 		name = "reform_me_events.11.b"	# A Pretender
 		
 		trigger = {
-			ruler_age = 15
+			#ruler_age = 15
 		}
 		
 		define_ruler = {
