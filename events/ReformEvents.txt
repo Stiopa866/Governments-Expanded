@@ -15194,15 +15194,68 @@ country_event = {
 	
 	option = {
 		name = reform_me_events.226.a
-		every_owned_province = {
-			limit = {
-				is_state = yes
-				has_urban_goods = yes
-			}
+		set_country_flag = GE_burgher_autonomy_AI
+		custom_tooltip = GE_burgher_autonomy_event
+		tooltip = {
 			add_base_production = 1
 			add_province_modifier = {
 				name = GE_Burgher_Autonomy
-				duration = 9000
+				duration = 9125
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { 
+					calc_true_if = {
+						any_province = {
+							#is_state = yes
+							has_urban_goods = yes
+						}
+					}
+				}
+				set_variable = {
+					which = GE_burgher_counter
+					value = 5
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_burgher_counter
+							value = 1
+						}
+					}
+					change_variable = {
+						which = GE_burgher_counter
+						value = -1
+					}
+					random_owned_province = {
+						limit = {
+							#is_state = yes
+							has_urban_goods = yes
+							NOT = {
+								has_province_modifier = GE_Burgher_Autonomy
+							}
+						}
+						add_base_production = 1
+						add_province_modifier = {
+							name = GE_Burgher_Autonomy
+							duration = 9125
+						}
+					}
+				}
+			}
+			else = {
+				every_owned_province = {
+					limit = {
+						#is_state = yes
+						has_urban_goods = yes
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = GE_Burgher_Autonomy
+						duration = 9125
+					}
+				}
 			}
 		}
 	}
@@ -15851,7 +15904,123 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = reform_me_events.233
+	title = reform_me_events.233.t
+	desc = reform_me_events.233.d
+	picture = ACCUSATION_eventPicture
+	hidden = yes
 
+	trigger = {
+		has_government_attribute = enables_burgher_autonomy
+		OR = {
+			AND = {
+				had_country_flag = {
+					flag = GE_burgher_autonomy_AI
+					days = 9125
+				}
+				has_country_flag = GE_burgher_autonomy_AI
+			}
+			NOT = { has_country_flag = GE_burgher_autonomy_AI }
+		}
+		ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
 
+	option = {
+		name = reform_me_events.233.a
+		set_country_flag = GE_burgher_autonomy_AI
+		if = {
+			limit = { 
+				calc_true_if = {
+					any_province = {
+						#is_state = yes
+						has_urban_goods = yes
+					}
+				}
+			}
+			set_variable = {
+				which = GE_burgher_counter
+				value = 5
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = GE_burgher_counter
+						value = 1
+					}
+				}
+				change_variable = {
+					which = GE_burgher_counter
+					value = -1
+				}
+				random_owned_province = {
+					limit = {
+						#is_state = yes
+						has_urban_goods = yes
+						NOT = {
+							has_province_modifier = GE_Burgher_Autonomy
+						}
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = GE_Burgher_Autonomy
+						duration = 9125
+					}
+				}
+			}
+		}
+		else = {
+			every_owned_province = {
+				limit = {
+					#is_state = yes
+					has_urban_goods = yes
+				}
+				add_base_production = 1
+				add_province_modifier = {
+					name = GE_Burgher_Autonomy
+					duration = 9125
+				}
+			}
+		}
+	}
+}
 
+country_event = {
+	id = reform_me_events.234
+	title = reform_me_events.234.t
+	desc = reform_me_events.234.d
+	picture = ACCUSATION_eventPicture
+	hidden = yes
 
+	trigger = {
+		OR = {
+			has_country_modifier = GE_Tunisian_Grain_Trade
+			has_country_modifier = GE_Tunisian_Grain_Production
+		}
+		NOT = {
+			any_ally = {
+				OR = {
+					has_country_modifier = GE_Tunisian_Grain_Trade
+					has_country_modifier = GE_Tunisian_Grain_Production
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		remove_country_modifier= GE_Tunisian_Grain_Trade
+		remove_country_modifier = GE_Tunisian_Grain_Production
+	}
+
+	option = {
+		name = reform_me_events.234.a
+	}
+}

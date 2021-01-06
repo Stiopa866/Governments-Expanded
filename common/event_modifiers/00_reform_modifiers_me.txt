@@ -931,6 +931,12 @@ GE_Foreign_Drill_Masters_5 = {
 	drill_gain_modifier = 0.50
 	mil_tech_cost_modifier = -0.20
 }
+GE_Tunisian_Grain_Trade = {
+	trade_efficiency = 0.10
+}
+GE_Tunisian_Grain_Production = {
+	rural_goods_produced_modifier = 0.20
+}
 	
 	
 #Cortez

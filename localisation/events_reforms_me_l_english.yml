@@ -128,6 +128,7 @@
  reform_me_events.226.t: "The matter of Burgher Autonomy"
  reform_me_events.226.d: "With our decision to grant the burghers additional liberties and growth, they have become greedy and demand we guarentee their rights for the coming decades. Something about pig cyclones and return on investments leads them to promise us golden mountains if we will agree to this."
  reform_me_events.226.a: "Just tell me where I need to sign."
+ GE_burgher_autonomy_event: "Every owned province with §MUrban Trade Goods§! (up to 5) will gain:"
  reform_me_events.226.b: "Mere citizens dare to restrict my ability to revoke their privileges?"
  
  reform_me_events.228.a: "[Root.GE_Minority_Exploitation_Counter.GetValue]"

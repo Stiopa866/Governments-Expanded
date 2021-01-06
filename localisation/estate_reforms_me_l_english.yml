@@ -995,7 +995,12 @@
  nomad_councils_reform: "Noble Councils"
  nomad_councils_reform_desc: "With the continued interference of the Berber and Bedouin tribes into the political and social life of our nation, we are forced to bring them to the councils and try to integrate them into our government in order to disarm them."
  
- 
+ tribal_tribute_reform: "Tribal Tribute"
+ tribal_tribute_reform_desc: "In order to pacify the inland Berber and Bedouin tribes and prevent them from destabilizing our realm, we will shower them with gifts and titles! This way any insurgency will get stopped by those that gain more from our continued patronage and will not risk their comfortable positions."
+ exiled_qaids_reform: "Exiled Qaids"
+ exiled_qaids_reform_desc: "By granting exiled European Christians the position of qaid, or governor, we can ensure they remain loyal to us, for we guarentee their position. And distrust of the Europeans will ensure they will not be able to form permanent bonds."
+ italian_merchants_reform: "Italian Merchants"
+ italian_merchants_reform_desc: "Piracy and hostility will only weaken our state and relations, By inviting Italian merchants to our court and through granting them right of free passage and export rights we can send our plentyfull grain across the mediterean and bring fortune and prestige to our bountifull nation."
 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1120,7 +1125,7 @@
  
  mechanic_enables_kiwi_support_yes: "Kiwi Support: §G+5%§! Ship Trade Power for each merchant you have. Up to a maximum of §G50%§! Ship Trade Power."
  mechanic_enables_rajput_law_yes: "Rajput Law: §G-2§! Unrest and §G+10%§! Manpower in every province owned by the Rajput Estate."
- mechanic_enables_marcher_lords_yes: "Marcher Lord Privileges: §G+25%§! Force Limit and Manpower in your vassals."
+ mechanic_enables_marcher_lords_yes: "Marcher Lord Privileges: Your non-colonial subjects get §G+25%§! Land Force Limit Modifier and §G+25%§! National Manpower Modifier."
  mechanic_enables_unite_the_malay_yes: "Unite the Malay: §G+5%§! Naval Force Limit and Sailors for each Accepted Malay Culture. Up to a maximum of §G40%§! Naval Force Limit and Sailors."
  mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost in states with forts."
  mechanic_enables_jurisprudence_yes: "Jurisprudence: Up to §G-10%§! Idea cost and §G-20%§! Admin Technology Cost depending on your average Autonomy."
@@ -1204,6 +1209,7 @@
  mechanic_enables_foreign_drill_masters_yes: "Foreign Drill Masters: §G+10%§! Drill Gain and §G-4%§! Military Technology Cost for each ally with more development or technology, up to a maximum of 5 allies."
  mechanic_enables_berber_guides_yes: "Berber autonomy: Unlocks the §YBerber Autonomy§! Privilege, granting §G-15%§! land attrition while the noble estate has over §Y60§! Loyalty, as well as §G-10%§! cavalry cost."
  mechanic_enables_saharan_outposts_yes: "Saharan Outposts: Unlocks the §YSaharan Outposts§! Privilege, granting §G+1§! Merchant and a Scaling amount of Trade Steering, up to §G+50%§!"
+ mechanic_enables_italian_grain_treaties_yes: "Italian Grain Treaties: Allows you to diplomatically offer an Italian Ally a §YTrade Deal§ to increase your rural good production by §G20%§.
 
 
  #Edicts
@@ -1567,6 +1573,17 @@
  GE_blood_sacrifice_desc: "To please the ever thirsting gods, the blood of the weak will no longer suffice in filling the demands of the gods. In order to sathe their thirst we will have to sacrifice some noble blood."
  GE_has_been_twenty_years: "Has not Sacrificed in the past 20 years."
  
+ offer_trade_deal_tunisian_italian: "Offer Trade Deal"
+ offer_trade_deal_tunisian_italian_title: "Offer Trade Deal"
+ offer_trade_deal_tunisian_italian_desc: "We can offer [From.GetName] a trade deal to increase our rural goods produced modifier by §G20%§! and increase their trade efficiency by §G10%§!."
+ offer_trade_deal_tunisian_italian_tooltip: "Offering a trade deal can benefit us both."
+ offer_trade_deal_tunisian_italian_alert_tooltip: "can you even see this?"
+ cancel_trade_deal_tunisian_italian: "Cancel Trade Deal"
+ cancel_trade_deal_tunisian_italian_title: "Cancel Trade Deal"
+ cancel_trade_deal_tunisian_italian_desc: "By cancelling our trade deal we will no longer supply [From.GetName] with our grain, which will reduce our rural goods produced modifier by §R20%§!, while also decreasing their trade efficiency by §R10%§!."
+ cancel_trade_deal_tunisian_italian_tooltip: "Cancelling this trade deal will remove our increased exports."
+ cancel_trade_deal_tunisian_italian_alert_tooltip: "can you even see this?"
+
  EST_VAL_NOBILITY_ADVANCES: "The Nobility Advances"
  EST_VAL_BURGHERS_ADVANCE: "The Burghers Advance"
  EST_VAL_CLERGY_ADVANCES: "The Clergy Advances"

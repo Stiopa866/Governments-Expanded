@@ -173,6 +173,7 @@ monarchy = {
 				#1.15
 				city_privileges_reform
 				wattasid_viziers_reform
+				tribal_tribute_reform
 			}
 		}
 		bureaucracy = {
@@ -247,6 +248,7 @@ monarchy = {
 				crossroads_of_cultures_reform
 				#1.15
 				regional_kasbah_reform
+				exiled_qaids_reform
 			}
 		}
 		military_organisation = {
@@ -371,6 +373,7 @@ monarchy = {
 				#1.15
 				doctrines_of_al_jazuli_reform
 				mantua_mecenatismo_mantovano_reform
+				italian_merchants_reform
 			}
 		}
 		deliberative_assembly = {

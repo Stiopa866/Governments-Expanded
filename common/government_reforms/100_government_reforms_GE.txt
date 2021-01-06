@@ -3370,6 +3370,42 @@
 			factor = 101
 		}
 	}
+	tribal_tribute_reform = {
+		icon = horde_riding
+		allow_normal_conversion = yes
+		valid_for_nation_designer = no
+		effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Noble_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = tunisian 
+				has_reform = tribal_tribute_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = tunisian 
+				has_reform = tribal_tribute_reform
+			}
+		}
+		modifiers = {
+			global_unrest = -1
+			reduced_liberty_desire = 10			
+		}
+		ai = {
+			factor = 101
+		}
+	}
 #}
 #############################
 ###########Tier3#############
@@ -5193,6 +5229,41 @@
 			factor = 101
 		}
 	}
+	exiled_qaids_reform = {
+		icon = nobleman
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Royal_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Royal_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = tunisian
+				has_reform = exiled_qaids_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = tunisian
+				has_reform = exiled_qaids_reform
+			}
+		}
+		modifiers = {
+			core_creation = -0.1
+			state_governing_cost = -0.05
+		}
+		ai = {
+			factor = 101
+		}
+	}
 #}
 #############################
 ###########Tier4#############
@@ -6596,6 +6667,32 @@
 			factor = 100
 		}
 	}
+	italian_merchants_reform = {
+		icon = paper_money_map
+		allow_normal_conversion = yes
+		potential = {
+			OR = {
+				primary_culture = tunisian
+				has_reform = italian_merchants_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = tunisian
+				has_reform = italian_merchants_reform
+			}
+		}
+		modifiers = {
+			merchants = 1
+		}
+		custom_attributes = {
+			enables_italian_grain_treaties = yes #+20% rural trade goods deal with italians.
+			enables_magnate_law = yes
+		}
+		ai = {
+			factor = 101
+		}
+	}
 #}
 #############################
 ###########Tier5#############
@@ -7474,6 +7571,7 @@
 			factor = 100
 		}
 	}
+	
 
 	#############################
 	###########Tier6#############
@@ -9864,7 +9962,7 @@
 		modifiers = {
 			placed_merchant_power = 10
 			#trade_efficiency = 0.10
-			#merchant = 1 #temp
+			#merchants = 1 #temp
 		}
 		custom_attributes = {
 			enables_saharan_outposts = yes #privilege that gives +1 merchant and +50% scaling trade steering
