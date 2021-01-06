@@ -387,7 +387,7 @@ country_event = {
 	hidden = yes	
 
 	trigger = {
-		has_government_attribute = enables_republican_guard
+		has_government_attribute = teulie_reform_republic_reform
 		OR = {
 			AND = {
 				republican_tradition = 60
