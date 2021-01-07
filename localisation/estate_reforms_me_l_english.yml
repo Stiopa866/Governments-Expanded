@@ -1586,7 +1586,7 @@
  cancel_trade_deal_tunisian_italian_alert_tooltip: "can you even see this?"
  cancel_trade_deal_tunisian_italian_dialog: "[From.GetName] decided to end their trade deal with us."
 
- GE_base_italian_trade: "Base Reluctance"
+ GE_base_italian_trade: "Base Acceptance"
  GE_diplomatic_reputation: "Diplomatic Reputation"
  ICON_GE_TD:0 "A §YTrade Deal§W Offer"
 
