@@ -15992,38 +15992,38 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = reform_me_events.234
-	title = reform_me_events.234.t
-	desc = reform_me_events.234.d
-	picture = ACCUSATION_eventPicture
-	hidden = yes
+# country_event = {
+# 	id = reform_me_events.234
+# 	title = reform_me_events.234.t
+# 	desc = reform_me_events.234.d
+# 	picture = ACCUSATION_eventPicture
+# 	hidden = yes
 
-	trigger = {
-		OR = {
-			has_country_modifier = GE_Tunisian_Grain_Trade
-			has_country_modifier = GE_Tunisian_Grain_Production
-		}
-		NOT = {
-			any_ally = {
-				OR = {
-					has_country_modifier = GE_Tunisian_Grain_Trade
-					has_country_modifier = GE_Tunisian_Grain_Production
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		OR = {
+# 			has_country_modifier = GE_Tunisian_Grain_Trade
+# 			has_country_modifier = GE_Tunisian_Grain_Production
+# 		}
+# 		NOT = {
+# 			any_ally = {
+# 				OR = {
+# 					has_country_modifier = GE_Tunisian_Grain_Trade
+# 					has_country_modifier = GE_Tunisian_Grain_Production
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 30
-	}
+# 	mean_time_to_happen = {
+# 		days = 30
+# 	}
 
-	immediate = {
-		remove_country_modifier= GE_Tunisian_Grain_Trade
-		remove_country_modifier = GE_Tunisian_Grain_Production
-	}
+# 	immediate = {
+# 		remove_country_modifier = GE_Tunisian_Grain_Trade
+# 		remove_country_modifier = GE_Tunisian_Grain_Production
+# 	}
 
-	option = {
-		name = reform_me_events.234.a
-	}
-}
+# 	option = {
+# 		name = reform_me_events.234.a
+# 	}
+# }

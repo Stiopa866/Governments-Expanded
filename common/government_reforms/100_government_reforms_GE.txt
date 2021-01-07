@@ -6687,7 +6687,6 @@
 		}
 		custom_attributes = {
 			enables_italian_grain_treaties = yes #+20% rural trade goods deal with italians.
-			enables_magnate_law = yes
 		}
 		ai = {
 			factor = 101
