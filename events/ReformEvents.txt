@@ -15195,12 +15195,10 @@ country_event = {
 	option = {
 		name = reform_me_events.226.a
 		set_country_flag = GE_burgher_autonomy_AI
-		
-		
 			if = {
 				limit = { 
 					calc_true_if = {
-						any_owned_province = {
+						all_owned_province = {
 							#is_state = yes
 							has_urban_goods = yes
 						}
@@ -15249,15 +15247,17 @@ country_event = {
 				}
 			}
 			else = {
-				every_owned_province = {
-					limit = {
-						#is_state = yes
-						has_urban_goods = yes
-					}
-					add_base_production = 1
-					add_province_modifier = {
-						name = GE_Burgher_Autonomy
-						duration = 9125
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							#is_state = yes
+							has_urban_goods = yes
+						}
+						add_base_production = 1
+						add_province_modifier = {
+							name = GE_Burgher_Autonomy
+							duration = 9125
+						}
 					}
 				}
 			}
@@ -15940,7 +15940,7 @@ country_event = {
 		if = {
 			limit = { 
 				calc_true_if = {
-					any_owned_province = {
+					all_owned_province = {
 						#is_state = yes
 						has_urban_goods = yes
 					}
