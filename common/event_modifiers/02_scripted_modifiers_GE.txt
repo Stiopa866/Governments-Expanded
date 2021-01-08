@@ -484,8 +484,36 @@ plantage_goods_produced_010 = {
 	trade_goods_size_modifier = -0.50
 }
 
+GE_trade_deal_imports_1 = {
+	trade_efficiency = 0.05
+}
+GE_trade_deal_imports_2 = {
+	trade_efficiency = 0.10
+}
+GE_trade_deal_imports_3 = {
+	trade_efficiency = 0.15
+}
+GE_trade_deal_imports_4 = {
+	trade_efficiency = 0.20
+}
+GE_trade_deal_imports_5 = {
+	trade_efficiency = 0.25
+}
 
-
+GE_rural_trade_deal_exports_1 = {
+	rural_goods_produced_modifier = 0.10
+}
+GE_rural_trade_deal_exports_2 = {
+	rural_goods_produced_modifier = 0.20
+}
+GE_rural_trade_deal_exports_3 = {
+	rural_goods_produced_modifier = 0.30
+}
+GE_rural_trade_deal_exports_4 = {
+	rural_goods_produced_modifier = 0.40
+}
+GE_rural_trade_deal_exports_5 = {
+	rural_goods_produced_modifier = 0.50
 
 
 

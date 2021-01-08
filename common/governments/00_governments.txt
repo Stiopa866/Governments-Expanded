@@ -430,6 +430,7 @@ monarchy = {
 				representative_electors_reform
 				#1.15
 				nomad_councils_reform
+				office_of_kanzler_reform
 			}
 		}
 		economic_policy = {

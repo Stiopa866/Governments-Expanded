@@ -983,7 +983,7 @@
  regional_kasbah_reform: "Regional Kasbahs"
  regional_kasbah_reform_desc: "Traditionally we have used Kasbahs as a way to protect our settlements from rivals looking to plunder them. As the demand for our exotic produce has grown amongst foreign traders so has it grown amongst bandits and raiders in the region, this has made harvesting these resources inefficient due to raiding. We can work against this threat by establishing a regional system of walled citadels within important hubs of trade."
  landsknecht_captains_reform: "Landsknecht Captains"
- landsknecht_captains_reform_desc: "During the Imperial wars with the french, turks and heretics, the imperials have raised massive armies of Landsknechts to fight their battles for them. If we were to hire veterans from these conflicts to serve as our captains and sergeants we can use their experience in raising armies and training our troops in the style of the landsknechts!"
+ landsknecht_captains_reform_desc: "During the Imperial wars with the French, Turks and heretics, the Imperials have raised massive armies of Landsknechts to fight their battles for them. If we were to hire veterans from these conflicts to serve as our captains and sergeants we can use their experience in raising armies and training our troops in the style of the landsknechts!"
  wattasid_viziers_reform: "Wattasid Viziers"
  wattasid_viziers_reform_desc: "By aligning the powerfull Wattasid Family with us we can ensure that the northern coasts will remain loyal. Furthermore we can use their relations with the berber tribes to ensure their complicance and support."
  doctrines_of_al_jazuli_reform: "Doctrines of Al Jazuli"
@@ -1001,6 +1001,10 @@
  exiled_qaids_reform_desc: "By granting exiled European Christians the position of qaid, or governor, we can ensure they remain loyal to us, for we guarentee their position. And distrust of the Europeans will ensure they will not be able to form permanent bonds."
  italian_merchants_reform: "Italian Merchants"
  italian_merchants_reform_desc: "Piracy and hostility will only weaken our state and relations, By inviting Italian merchants to our court and through granting them right of free passage and export rights we can send our plentyfull grain across the mediterean and bring fortune and prestige to our bountifull nation."
+ 
+ office_of_kanzler_reform: "Office of Kanzler"
+ office_of_kanzler_reform_desc: "Centuries ago, monks used to work in the Wurttemberger court. They handled the documents, legal obligations and preside over local affairs or disputes. By re-establishing this position of the so called 'Kanzler' or Chancellor we can use the best and brightest of our realm to help us bring prosperity and justice to our people."
+ 
 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1210,7 +1214,7 @@
  mechanic_enables_berber_guides_yes: "Berber autonomy: Unlocks the §YBerber Autonomy§! Privilege, granting §G-15%§! land attrition while the noble estate has over §Y60§! Loyalty, as well as §G-10%§! cavalry cost."
  mechanic_enables_saharan_outposts_yes: "Saharan Outposts: Unlocks the §YSaharan Outposts§! Privilege, granting §G+1§! Merchant and a Scaling amount of Trade Steering, up to §G+50%§!"
  mechanic_enables_italian_grain_treaties_yes: "Italian Grain Treaties: Allows you to diplomatically offer an Italian Ally a §YTrade Deal§! to increase your rural goods produced by §G20%§."
-
+ mechanic_enables_office_of_chancellor_yes: "Office of Chancellor: Enables you to appoint a chancellor from among the Burgher Estate, granting you §G+1§! monthly monarch power while the Burghers have over §G60%§! Loyalty."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1306,6 +1310,9 @@
  estate_burghers_burgher_autonomy_desc: "Guarenteeing the self-sufficiency and economic regulation of our burgher-dominate cities will lead to an increase in goods produced but a reduction in our immediate income."
  estate_burghers_saharan_outposts: "Saharan Outposts"
  estate_burghers_saharan_outposts_desc: "By establishing Trade Posts and a network of aligned merchants we canchange the very nature of the markets of the sahara!"
+ estate_burghers_office_of_chancellor: "Office of Chancellor"
+ estate_burghers_office_of_chancellor_desc: "The Chancellor was exclusively chosen from among the university educated burghers of the realm and provided a bridge between the influencial commoners and the noble elite."
+
  estate_church_four_articles_of_prague: "Four Articles of Prague"
  estate_church_four_articles_of_prague_desc: "Enforce the Four Articles of Prague on the people regardless of creed."
  
@@ -1414,6 +1421,7 @@
  GE_not_enough_ghulam_slots_tooltip:1 "Not enough Ghulam Privilege Slots."
  GE_Killing_the_Wattasids_tooltip:1 "Permanently Removes the §YWattasid Viziers§! reform."
  GE_Killed_The_Wattasids_Tooltip:1 "Not available if you executed the Wattasid Dynasty."
+ GE_office_of_chancellor_tooltip:1 "§G+1§! Monthly Admin Power while you have over §G60%§! Burgher Loyalty."
  
  
  elections.EVTNAME7001:1 "American Elections"
@@ -1586,9 +1594,21 @@
  cancel_trade_deal_tunisian_italian_alert_tooltip: "can you even see this?"
  cancel_trade_deal_tunisian_italian_dialog: "[From.GetName] decided to end their trade deal with us."
 
- GE_base_italian_trade: "Base Acceptance"
+ offer_trade_deal_generic: "Offer Trade Deal"
+ offer_trade_deal_generic_title: "Offer Trade Deal"
+ offer_trade_deal_generic_desc: "We can offer [From.GetName] an export trade deal to increase our Rural Goods Produced Modifier by §G10%§! and increase their Trade Efficiency by §G5%§!."
+ offer_trade_deal_generic_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to purchase Rural Goods at a premium, allowing us to gain §G+5%§! Trade Efficiency while the trade deal lasts."
+ offer_trade_deal_generic_tooltip: "By offering trade deals we can increase our and our allies economic productivity!"
+ cancel_trade_deal_generic: "Cancel Trade Deal"
+ cancel_trade_deal_generic_title: "Cancel Trade Deal"
+ cancel_trade_deal_generic_desc: "By cancelling our trade deal we will no longer supply [From.GetName] with our grain, which will reduce our rural goods produced modifier by §R10%§!, while also decreasing their trade efficiency by §R-5%§!."
+  cancel_trade_deal_generic_tooltip: "By offering trade deals we can decrease our reliance on foreign powers."
+
+ GE_base_acceptance: "Base Acceptance"
  GE_diplomatic_reputation: "Diplomatic Reputation"
  ICON_GE_TD:0 "A §YTrade Deal§W Offer"
+ GE_not_enough_trade_deals_slots_tooltip: "Not enough available trade deals"
+ trade_deals_slots: "Number of Available Trade Deals"
 
  EST_VAL_NOBILITY_ADVANCES: "The Nobility Advances"
  EST_VAL_BURGHERS_ADVANCE: "The Burghers Advance"

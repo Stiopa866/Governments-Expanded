@@ -576,7 +576,19 @@
  plantage_goods_produced_008: "plantation Goods Produced"
  plantage_goods_produced_009: "plantation Goods Produced"
  plantage_goods_produced_010: "plantation Goods Produced"
+
+ GE_trade_deal_imports_1: "Trade Deal Imports"
+ GE_trade_deal_imports_2: "Trade Deal Imports"
+ GE_trade_deal_imports_3: "Trade Deal Imports"
+ GE_trade_deal_imports_4: "Trade Deal Imports"
+ GE_trade_deal_imports_5: "Trade Deal Imports"
  
+ GE_rural_trade_deal_exports_1: "Rural Trade Deal Exports"
+ GE_rural_trade_deal_exports_2: "Rural Trade Deal Exports"
+ GE_rural_trade_deal_exports_3: "Rural Trade Deal Exports"
+ GE_rural_trade_deal_exports_4: "Rural Trade Deal Exports"
+ GE_rural_trade_deal_exports_5: "Rural Trade Deal Exports"
+
  
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"

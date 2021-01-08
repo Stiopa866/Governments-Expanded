@@ -1676,6 +1676,7 @@
 		modifiers = {
 			urban_goods_produced_modifier = 0.15
 			burgher_privilege_slots = 0.01
+			trade_deals_slots = 0.01
 		}
 		custom_attributes = {
 			enables_burgher_autonomy = yes #+1 development and +25% min autonomy in each province with an urban trade good every 25 years.
@@ -1711,6 +1712,7 @@
 		}
 		modifiers = {
 			diplomatic_reputation = 1
+			trade_deals_slots = 0.02
 		}
 		custom_attributes = {
 			enables_noble_diplomats = yes #privileges for 25 opinion//10% improve relation
@@ -7565,6 +7567,31 @@
 			stability_cost_modifier = -0.15
 			nobles_loyalty_modifier = 0.05
 			noble_privilege_slots = 0.01
+		}
+		ai = {
+			factor = 100
+		}
+	}
+	office_of_kanzler_reform = {
+		icon = swabia_eberhard
+		allow_normal_conversion = yes
+		potential = {
+			OR = {
+				primary_culture = swabian
+				has_reform = office_of_kanzler_reform
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = swabian
+				has_reform = office_of_kanzler_reform
+			}
+		}
+		modifiers = {
+			state_maintenance_modifier = -0.15
+		}
+		custom_attributes = {
+			enables_office_of_chancellor = yes #privilege to give +1 monthly admin power while the burghers have over 60% loyalty
 		}
 		ai = {
 			factor = 100

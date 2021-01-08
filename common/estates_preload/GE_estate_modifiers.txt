@@ -69,6 +69,12 @@ estate_peasants = {
 			always = yes
 		}
 	}
+	modifier_definition = {
+		key = trade_deals_slots
+		trigger = {
+			always = yes
+		}
+	}
 }
 estate_ghulams = {
 	modifier_definition = {
