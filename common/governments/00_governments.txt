@@ -609,7 +609,7 @@ republic = {
 	legacy_government = {
 		bureaucratic_despotism
 		revolutionary_republic
-		constitutional_republic
+		#constitutional_republic
 		republican_dictatorship
 		administrative_republic
 		noble_republic
@@ -675,7 +675,7 @@ republic = {
 				caucasian_republic
 				common_republic_reform
 				lombardy_venetia_reform
-				constitutional_republic_reform
+				#constitutional_republic_reform
 			}
 		}
 		republican_virtues = {

@@ -488,7 +488,10 @@ offer_trade_deal_generic = {
 	require_acceptance = yes
 
 	is_visible = {
-		trade_deals_slots = 0.01
+		has_global_modifier_value = {
+			which = trade_deals_slots
+			value = 0.01
+		}
 		NOT = {
 			OR = {
 				AND = {
