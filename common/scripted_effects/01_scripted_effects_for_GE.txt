@@ -478,8 +478,78 @@ add_import_effect = {
 			}
 		}
 		remove_country_modifier = GE_trade_deal_imports_4
+		remove_country_modifier = GE_trade_deal_imports_6
 		add_country_modifier = {
 			name = GE_trade_deal_imports_5
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = GE_num_of_incoming_trade
+				value = 6
+			}
+		}
+		remove_country_modifier = GE_trade_deal_imports_5
+		remove_country_modifier = GE_trade_deal_imports_7
+		add_country_modifier = {
+			name = GE_trade_deal_imports_6
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = GE_num_of_incoming_trade
+				value = 7
+			}
+		}
+		remove_country_modifier = GE_trade_deal_imports_6
+		remove_country_modifier = GE_trade_deal_imports_8
+		add_country_modifier = {
+			name = GE_trade_deal_imports_7
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = GE_num_of_incoming_trade
+				value = 8
+			}
+		}
+		remove_country_modifier = GE_trade_deal_imports_7
+		remove_country_modifier = GE_trade_deal_imports_9
+		add_country_modifier = {
+			name = GE_trade_deal_imports_8
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = GE_num_of_incoming_trade
+				value = 9
+			}
+		}
+		remove_country_modifier = GE_trade_deal_imports_8
+		remove_country_modifier = GE_trade_deal_imports_10
+		add_country_modifier = {
+			name = GE_trade_deal_imports_9
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = GE_num_of_incoming_trade
+				value = 10
+			}
+		}
+		remove_country_modifier = GE_trade_deal_imports_9
+		add_country_modifier = {
+			name = GE_trade_deal_imports_10
 			duration = -1
 		}
 	}

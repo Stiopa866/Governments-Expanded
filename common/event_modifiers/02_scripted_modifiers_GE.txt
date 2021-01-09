@@ -499,6 +499,21 @@ GE_trade_deal_imports_4 = {
 GE_trade_deal_imports_5 = {
 	trade_efficiency = 0.25
 }
+GE_trade_deal_imports_6 = {
+	trade_efficiency = 0.30
+}
+GE_trade_deal_imports_7 = {
+	trade_efficiency = 0.35
+}
+GE_trade_deal_imports_8 = {
+	trade_efficiency = 0.40
+}
+GE_trade_deal_imports_9 = {
+	trade_efficiency = 0.45
+}
+GE_trade_deal_imports_10 = {
+	trade_efficiency = 0.50
+}
 
 GE_rural_trade_deal_exports_1 = {
 	rural_goods_produced_modifier = 0.10
@@ -514,7 +529,7 @@ GE_rural_trade_deal_exports_4 = {
 }
 GE_rural_trade_deal_exports_5 = {
 	rural_goods_produced_modifier = 0.50
-
+}
 
 
 
