@@ -917,7 +917,6 @@ cancel_trade_deal_generic = {
 				add_import_effect = yes
 				clr_country_flag = GE_Trade_Deal_From_@From
 			}
-			clr_country_flag = GE_Trade_Deal_From_@From
 		}
 	}
 	ai_will_do = { # this is a trigger
