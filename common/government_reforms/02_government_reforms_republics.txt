@@ -36,6 +36,7 @@ oligarchy_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 		max_absolutism = -40
+		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -144,6 +145,7 @@ merchants_reform = {
 	modifiers = {
 		max_absolutism = -50
 		merchants = 1
+		trade_deals_slots = 0.03
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -301,6 +303,7 @@ noble_elite_reform = {
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
+		trade_deals_slots = 0.01
 	}
 	duration = 8
 
@@ -530,6 +533,7 @@ peasants_republic = {
 		production_efficiency = 0.1
 		land_morale = 0.05
 		max_absolutism = -50
+		trade_deals_slots = 0.01
 	}
 	effect = {
 		hidden_effect = {
@@ -576,6 +580,7 @@ free_city = {
 		development_cost = -0.1
 		max_absolutism = -20
 		burghers_influence_modifier = 0.15
+		trade_deals_slots = 0.02
 	}
 	fixed_rank = 1
 
@@ -607,6 +612,7 @@ trading_city = {
 		max_absolutism = -20
 		global_trade_power = 0.1
 		max_absolutism = -20
+		trade_deals_slots = 0.03
 	}
 
 	custom_attributes = {
@@ -659,6 +665,7 @@ ambrosian_republic = {
 		land_morale = 0.05
 		governing_capacity = 50
 		max_absolutism = -30
+		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -689,6 +696,7 @@ veche_republic = {
 		merchants = 1
 		governing_capacity = 50
 		max_absolutism = -50
+		trade_deals_slots = 0.01
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -921,6 +929,7 @@ dutch_republic = {
 		trade_efficiency = 0.1
 		governing_capacity = 50
 		max_absolutism = -30
+		trade_deals_slots = 0.02
 	}
 
 	removed_effect = {
@@ -1547,6 +1556,7 @@ union_of_states_reform = {
 	modifiers = {
 		global_trade_power = 0.1
 		merchants = 1
+		trade_deals_slots = 0.01
 	}
 	ai = {
 		factor = 1
