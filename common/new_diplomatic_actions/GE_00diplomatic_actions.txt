@@ -518,7 +518,10 @@ offer_trade_deal_generic = {
 		FROM = {
 			OR = {
 				alliance_with = ROOT
-				is_trade_league_leader = yes
+				AND = {
+					is_trade_league_leader = yes
+					is_in_trade_league_with = ROOT
+				}
 			}
 		}
 		hidden_trigger = {
