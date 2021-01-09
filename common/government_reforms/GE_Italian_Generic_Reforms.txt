@@ -16,6 +16,7 @@ signoria_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 		max_absolutism = -30
+		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
