@@ -81,67 +81,7 @@ genoan_republic_reform = {
 		is_merchant_republic = yes
 	}
 }
-venice_merchants_reform = {
-	icon = "trading_city"
-	allow_normal_conversion = yes
-	modifiers = {
-		max_absolutism = -50
-		merchants = 1
-		yearly_corruption = -0.1
-		trade_deals_slots = 0.03
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 40
-	legacy_equivalent = venetian_merchant_republic
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		OR = {
-			tag = VEN
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = venice_merchants_reform
-			}
-		}
-	}
-	boost_income = yes
-	factions = {
-		mr_aristocrats
-		mr_traders
-		mr_guilds
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			NOT = { has_dlc = "Mare Nostrum" }
-		}
-		can_use_trade_post = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-		lottery_election = yes
-		election_on_death = yes
-		is_merchant_republic = yes
-	}
-	has_term_election = no
-}
+
 florentine_republic = {
 	icon = florentine_republic
 	allow_normal_conversion = yes
@@ -504,64 +444,7 @@ customs_house_of_apena_sheep_reform = {
 		factor = 100
 	}
 }
-consolidate_power_in_doge_reform = {
-	icon = "consolidate_power_in_doge_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	trigger = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	modifiers = {
-		governing_capacity = 250
-	}
-	has_term_election = no
-	ai = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = {
-				num_of_cities = 25
-			}
-		}
-	}
-}
-consolidate_power_in_cities_reform = {
-	icon = "consolidate_power_in_cities_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	trigger = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	modifiers = {
-		diplomatic_upkeep = 1
-		global_foreign_trade_power = 0.1
-	}
-	has_term_election = yes
-	duration = 4
-	ai = {
-		factor = 10
-		modifier = {
-			factor = 0
-			num_of_cities = 25
-		}
-	}
-}
+
 
 #Tier 4
 nunziatella_reform = {
