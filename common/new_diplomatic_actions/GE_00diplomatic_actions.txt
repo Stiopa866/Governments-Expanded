@@ -516,7 +516,10 @@ offer_trade_deal_generic = {
 	is_allowed = {
 		Trade_Deals_Allowed = yes
 		FROM = {
-			alliance_with = ROOT
+			OR = {
+				alliance_with = ROOT
+				is_trade_league_leader = yes
+			}
 		}
 		hidden_trigger = {
 			NOT = {
@@ -614,7 +617,10 @@ offer_trade_deal_generic = {
 
 	ai_will_do = { # this is a trigger
 		FROM = {
-			alliance_with = ROOT
+			OR = {
+				alliance_with = ROOT
+				is_trade_league_leader = yes
+			}
 		}
 	}
 }
@@ -726,7 +732,10 @@ cancel_trade_deal_generic = {
 	ai_will_do = { # this is a trigger
 		NOT = {
 			FROM = {
-				alliance_with = ROOT
+				OR = {
+					alliance_with = ROOT
+					is_trade_league_leader = yes
+				}
 			}
 		}
 	}
