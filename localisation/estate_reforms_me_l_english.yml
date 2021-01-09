@@ -1594,11 +1594,18 @@
  cancel_trade_deal_tunisian_italian_alert_tooltip: "can you even see this?"
  cancel_trade_deal_tunisian_italian_dialog: "[From.GetName] decided to end their trade deal with us."
 
- offer_trade_deal_generic: "Offer Trade Deal"
- offer_trade_deal_generic_title: "Offer Trade Deal"
- offer_trade_deal_generic_desc: "We can offer [From.GetName] an export trade deal to increase our Rural Goods Produced Modifier by §G10%§! and increase their Trade Efficiency by §G5%§!."
- offer_trade_deal_generic_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to purchase Rural Goods at a premium, allowing us to gain §G+5%§! Trade Efficiency while the trade deal lasts."
- offer_trade_deal_generic_tooltip: "By offering trade deals we can increase our and our allies economic productivity!"
+ offer_trade_deal_rural_exports: "Offer Rural Exports"
+ offer_trade_deal_rural_exports_title: "Offer Rural Exports"
+ offer_trade_deal_rural_exports_desc: "We can offer [From.GetName] an export trade deal to increase our Rural Goods Produced Modifier by §G10%§! and increase their Trade Efficiency by §G5%§!."
+ offer_trade_deal_rural_exports_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to export Rural Goods at a premium, allowing us to gain §G+5%§! Trade Efficiency while the trade deal lasts."
+ offer_trade_deal_rural_exports_tooltip: "By offering trade deals we can increase our and our allies economic productivity!"
+
+ offer_trade_deal_rural_imports: "Offer Rural Imports"
+ offer_trade_deal_rural_imports_title: "Offer Rural Imports"
+ offer_trade_deal_rural_imports_desc: "We can offer [From.GetName] an import trade deal to increase our Trade Efficiency by §G5%§! and increase their Rural Goods Produced Modifier by §G10%§!."
+ offer_trade_deal_rural_imports_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to export Rural Goods at a premium, allowing us to gain Rural Goods Produced Modifier by §G10%§! while the trade deal lasts."
+ offer_trade_deal_rural_imports_tooltip: "By offering trade deals we can increase our and our allies economic productivity!"
+
  cancel_trade_deal_generic: "Cancel Trade Deal"
  cancel_trade_deal_generic_title: "Cancel Trade Deal"
  cancel_trade_deal_generic_desc: "By cancelling our trade deal we will no longer supply [From.GetName] with our grain, which will reduce our rural goods produced modifier by §R10%§!, while also decreasing their trade efficiency by §R-5%§!."
