@@ -63,7 +63,6 @@ signoria_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 		max_absolutism = -30
-		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -1399,64 +1398,7 @@ lottery_reform = {
 	}
 }
 
-consolidate_power_in_doge_reform = {
-	icon = "consolidate_power_in_doge_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	trigger = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	modifiers = {
-		governing_capacity = 250
-	}
-	has_term_election = no
-	ai = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = {
-				num_of_cities = 25
-			}
-		}
-	}
-}
-consolidate_power_in_cities_reform = {
-	icon = "consolidate_power_in_cities_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	trigger = {
-		OR = {
-			has_reform = venice_merchants_reform
-			has_reform = merchants_reform
-		}
-	}
-	modifiers = {
-		diplomatic_upkeep = 1
-		global_foreign_trade_power = 0.1
-	}
-	has_term_election = yes
-	duration = 4
-	ai = {
-		factor = 10
-		modifier = {
-			factor = 0
-			num_of_cities = 25
-		}
-	}
-}
+
 
 #Federalism vs Unitarianism vs Confederacy
 

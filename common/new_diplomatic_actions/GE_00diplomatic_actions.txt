@@ -715,6 +715,10 @@ cancel_trade_deal_generic = {
 					which = GE_num_of_incoming_trade
 					value = -1
 				}
+				change_variable = {
+					which = GE_num_of_total_trade
+					value = -1
+				}
 				add_import_effect = yes
 				clr_country_flag = GE_Trade_Deal_With_@From
 			}
@@ -724,6 +728,10 @@ cancel_trade_deal_generic = {
 				}
 				change_variable = {
 					which = GE_num_of_incoming_trade
+					value = -1
+				}
+				change_variable = {
+					which = GE_num_of_total_trade
 					value = -1
 				}
 				add_import_effect = yes
