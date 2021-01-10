@@ -480,9 +480,9 @@ cancel_trade_deal_tunisian_italian = {
 }
 
 offer_trade_deal_rural_exports = {
-	category = relation
+	category = economy
 
-    alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
 	
 	require_acceptance = yes
@@ -560,14 +560,15 @@ offer_trade_deal_rural_exports = {
 				which = GE_num_of_incoming_trade
 				value = 1
 			}
-			change_variable = {
-				which = GE_num_of_total_trade
-				value = 1
-			}
+			# change_variable = {
+			# 	which = GE_num_of_total_trade
+			# 	value = 1
+			# }
 			add_import_effect = yes
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_From_@From
+			set_country_flag = GE_Initiated_Trade_Deal_With_@From
 			change_variable = {
 				which = GE_num_of_outgoing_trade
 				value = 1
@@ -584,33 +585,87 @@ offer_trade_deal_rural_exports = {
 
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
-		# add_entry = {
-		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
+		add_entry = {
+			name = GE_diplomatic_reputation    # The localisation key to display for this factor
 			
-		# 	# ai_value MUST always be created within an entry first.
-		# 	export_to_variable = {
-		# 		variable_name = ai_value
-		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
-		# 		with = FROM                     # Who the ai_value is for
-		# 	}
-		# 	multiply_variable = {
-		# 		which = ai_value
-		# 		value = 5
-		# 	}
-		# 	# You can then change ai_value with effects such as multiply_variable, etc
-		# }
-		# add_entry = {
-		# 	name = GE_base_acceptance
-		# 	export_to_variable = {
-		# 		variable_name = ai_value
-		# 		value = 10      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
-		# 		with = FROM                     # Who the ai_value is for
-		# 	}
-		# }
+			# ai_value MUST always be created within an entry first.
+			export_to_variable = {
+				variable_name = ai_value
+				value = modifier:diplomatic_reputation      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 3
+			}
+			# You can then change ai_value with effects such as multiply_variable, etc
+		}
+		add_entry = {
+			name = GE_opinion_modifier
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.1
+			}
+		}
 		add_entry = {
 			name = GE_base_acceptance
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10 #10
+			}
+		}
+		add_entry = {
+			name = GE_not_willing
+			limit = {
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = {
+			name = GE_merchant_republic
+			limit = {
+				FROM = {
+					has_government_attribute = is_merchant_republic
+				}
+			}
 			export_to_variable = {
 				variable_name = ai_value
 				value = 1      # Which exportable value to export
@@ -619,7 +674,7 @@ offer_trade_deal_rural_exports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 10
+				value = 5
 			}
 		}
 	}
@@ -644,9 +699,9 @@ offer_trade_deal_rural_exports = {
 }
 
 offer_trade_deal_rural_imports = {
-	category = relation
+	category = economy
 
-    alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_index = 34 #27             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
 	
 	require_acceptance = yes
@@ -724,14 +779,15 @@ offer_trade_deal_rural_imports = {
 				which = GE_num_of_outgoing_trade
 				value = 1
 			}
-			change_variable = {
-				which = GE_num_of_total_trade
-				value = 1
-			}
+			# change_variable = {
+			# 	which = GE_num_of_total_trade
+			# 	value = 1
+			# }
 			add_export_effect = yes	
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_With_@From
+			set_country_flag = GE_Initiated_Trade_Deal_With_@From
 			change_variable = {
 				which = GE_num_of_incoming_trade
 				value = 1
@@ -748,42 +804,96 @@ offer_trade_deal_rural_imports = {
 
 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 		ai_value = 1
-		# add_entry = {
-		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
-		# 	# ai_value MUST always be created within an entry first.
-		# 	export_to_variable = {
-		# 		variable_name = ai_value
-		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
-		# 		with = FROM                     # Who the ai_value is for
-		# 	}
-		# 	multiply_variable = {
-		# 		which = ai_value
-		# 		value = 5
-		# 	}
-		# 	# You can then change ai_value with effects such as multiply_variable, etc
-		# }
-		# add_entry = {
-		# 	name = GE_base_acceptance
-		# 	export_to_variable = {
-		# 		variable_name = ai_value
-		# 		value = 10      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
-		# 		with = FROM                     # Who the ai_value is for
-		# 	}
-		# }
 		add_entry = {
-			name = GE_base_acceptance
+			name = GE_diplomatic_reputation    # The localisation key to display for this factor
+			
+			# ai_value MUST always be created within an entry first.
 			export_to_variable = {
 				variable_name = ai_value
-				value = 1      # Which exportable value to export
+				value = modifier:diplomatic_reputation      # Which exportable value to export
 				who = ROOT                      # Who to export the value from
 				with = FROM                     # Who the ai_value is for
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 10
+				value = 3
+			}
+			# You can then change ai_value with effects such as multiply_variable, etc
+		}
+		add_entry = {
+			name = GE_opinion_modifier
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.1
+			}
+		}
+		add_entry = {
+			name = GE_base_acceptance
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10 #10
+			}
+		}
+		add_entry = {
+			name = GE_not_willing
+			limit = {
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = {
+			name = GE_merchant_republic
+			limit = {
+				FROM = {
+					has_government_attribute = is_merchant_republic
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 5
 			}
 		}
 	}
@@ -808,7 +918,7 @@ offer_trade_deal_rural_imports = {
 }
 
 cancel_trade_deal_generic = {
-	category = relation
+	category = economy
 	require_acceptance = no
 	is_visible = {
 		OR = {
@@ -862,10 +972,10 @@ cancel_trade_deal_generic = {
 					which = GE_num_of_incoming_trade
 					value = -1
 				}
-				change_variable = {
-					which = GE_num_of_total_trade
-					value = -1
-				}
+				# change_variable = {
+				# 	which = GE_num_of_total_trade
+				# 	value = -1
+				# }
 				add_import_effect = yes
 				clr_country_flag = GE_Trade_Deal_With_@Root
 			}
@@ -877,14 +987,23 @@ cancel_trade_deal_generic = {
 					which = GE_num_of_outgoing_trade
 					value = -1
 				}
+				# change_variable = {
+				# 	which = GE_num_of_total_trade
+				# 	value = -1
+				# }
+				add_export_effect = yes
+				clr_country_flag = GE_Trade_Deal_From_@Root
+			}	
+			if = {
+				limit = {
+					has_country_flag = GE_Initiated_Trade_Deal_With_@Root
+				}
 				change_variable = {
 					which = GE_num_of_total_trade
 					value = -1
 				}
-				add_export_effect = yes
-				clr_country_flag = GE_Trade_Deal_From_@Root
-			}	
-			
+				clr_country_flag = GE_Initiated_Trade_Deal_With_@Root
+			}
 		}
 		ROOT = {
 			if = {
@@ -895,10 +1014,10 @@ cancel_trade_deal_generic = {
 					which = GE_num_of_incoming_trade
 					value = -1
 				}
-				change_variable = {
-					which = GE_num_of_total_trade
-					value = -1
-				}
+				# change_variable = {
+				# 	which = GE_num_of_total_trade
+				# 	value = -1
+				# }
 				add_import_effect = yes
 				clr_country_flag = GE_Trade_Deal_With_@From
 			}
@@ -907,15 +1026,25 @@ cancel_trade_deal_generic = {
 					has_country_flag = GE_Trade_Deal_From_@From
 				}
 				change_variable = {
-					which = GE_num_of_incoming_trade
+					which = GE_num_of_outgoing_trade
 					value = -1
+				}
+				# change_variable = {
+				# 	which = GE_num_of_total_trade
+				# 	value = -1
+				# }
+				add_export_effect = yes
+				clr_country_flag = GE_Trade_Deal_From_@From
+			}
+			if = {
+				limit = {
+					has_country_flag = GE_Initiated_Trade_Deal_With_@From
 				}
 				change_variable = {
 					which = GE_num_of_total_trade
 					value = -1
 				}
-				add_import_effect = yes
-				clr_country_flag = GE_Trade_Deal_From_@From
+				clr_country_flag = GE_Initiated_Trade_Deal_With_@From
 			}
 		}
 	}

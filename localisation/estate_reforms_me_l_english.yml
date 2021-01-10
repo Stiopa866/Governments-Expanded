@@ -1213,7 +1213,7 @@
  mechanic_enables_foreign_drill_masters_yes: "Foreign Drill Masters: §G+10%§! Drill Gain and §G-4%§! Military Technology Cost for each ally with more development or technology, up to a maximum of 5 allies."
  mechanic_enables_berber_guides_yes: "Berber autonomy: Unlocks the §YBerber Autonomy§! Privilege, granting §G-15%§! land attrition while the noble estate has over §Y60§! Loyalty, as well as §G-10%§! cavalry cost."
  mechanic_enables_saharan_outposts_yes: "Saharan Outposts: Unlocks the §YSaharan Outposts§! Privilege, granting §G+1§! Merchant and a Scaling amount of Trade Steering, up to §G+50%§!"
- mechanic_enables_italian_grain_treaties_yes: "Italian Grain Treaties: Allows you to diplomatically offer an Italian Ally a §YTrade Deal§! to increase your rural goods produced by §G20%§."
+ mechanic_enables_italian_grain_treaties_yes: "Italian Grain Treaties: Allows you to diplomatically offer an Italian Ally a §YTrade Deal§! to increase your rural goods produced by §G20%§!."
  mechanic_enables_office_of_chancellor_yes: "Office of Chancellor: Enables you to appoint a chancellor from among the Burgher Estate, granting you §G+1§! monthly monarch power while the Burghers have over §G60%§! Loyalty."
 
  #Edicts
@@ -1603,7 +1603,7 @@
  offer_trade_deal_rural_imports: "Offer Rural Imports"
  offer_trade_deal_rural_imports_title: "Offer Rural Imports"
  offer_trade_deal_rural_imports_desc: "We can offer [From.GetName] an import trade deal to increase our Trade Efficiency by §G5%§! and increase their Rural Goods Produced Modifier by §G10%§!."
- offer_trade_deal_rural_imports_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to export Rural Goods at a premium, allowing us to gain Rural Goods Produced Modifier by §G10%§! while the trade deal lasts."
+ offer_trade_deal_rural_imports_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to import Rural Goods at a premium, allowing us to gain Rural Goods Produced Modifier by §G10%§! while the trade deal lasts."
  offer_trade_deal_rural_imports_tooltip: "By offering trade deals we can increase our and our allies economic productivity!"
 
  cancel_trade_deal_generic: "Cancel Trade Deal"
@@ -1613,9 +1613,12 @@
 
  GE_base_acceptance: "Base Acceptance"
  GE_diplomatic_reputation: "Diplomatic Reputation"
+ GE_opinion_modifier: "Their opinion of us"
+ GE_not_willing: "Not allied with us"
+ GE_merchant_republic: "Is a merchantile nation"
  ICON_GE_TD:0 "A §YTrade Deal§W Offer"
- GE_not_enough_trade_deals_slots_tooltip: "Not enough available trade deals"
- trade_deals_slots: "Number of Available Trade Deals"
+ GE_not_enough_trade_deals_slots_tooltip: "Not enough Possible Trade Deals"
+ trade_deals_slots: "Possible Trade Deals"
 
  EST_VAL_NOBILITY_ADVANCES: "The Nobility Advances"
  EST_VAL_BURGHERS_ADVANCE: "The Burghers Advance"
