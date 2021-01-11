@@ -14707,7 +14707,8 @@ country_event = {
 	option = {
 		name = reform_me_events.222.a
 		define_heir = {
-			culture = castillian 
+			culture = castillian
+			dynasty = root
 			adm = -1
 			dip = -1
 			mil = 3
@@ -14718,7 +14719,8 @@ country_event = {
 	option = {
 		name = reform_me_events.222.b
 		define_heir = {
-			culture = andalucian 
+			culture = andalucian
+			dynasty = root
 			adm = 3
 			dip = -1
 			mil = -1
@@ -14729,7 +14731,8 @@ country_event = {
 	option = {
 		name = reform_me_events.222.c
 		define_heir = {
-			culture = portugese 
+			culture = portugese
+			dynasty = root
 			adm = -1
 			dip = 3
 			mil = -1
@@ -14740,7 +14743,8 @@ country_event = {
 	option = {
 		name = reform_me_events.222.e
 		define_heir = {
-			culture = catalan 
+			culture = catalan
+			dynasty = root
 			adm = -1
 			dip = 3
 			mil = -1
@@ -15992,38 +15996,32 @@ country_event = {
 	}
 }
 
-# country_event = {
-# 	id = reform_me_events.234
-# 	title = reform_me_events.234.t
-# 	desc = reform_me_events.234.d
-# 	picture = ACCUSATION_eventPicture
-# 	hidden = yes
+country_event = {
+	id = reform_me_events.234
+	title = reform_me_events.234.t
+	desc = reform_me_events.234.d
+	picture = ACCUSATION_eventPicture
+	hidden = yes
 
-# 	trigger = {
-# 		OR = {
-# 			has_country_modifier = GE_Tunisian_Grain_Trade
-# 			has_country_modifier = GE_Tunisian_Grain_Production
-# 		}
-# 		NOT = {
-# 			any_ally = {
-# 				OR = {
-# 					has_country_modifier = GE_Tunisian_Grain_Trade
-# 					has_country_modifier = GE_Tunisian_Grain_Production
-# 				}
-# 			}
-# 		}
-# 	}
+	trigger = {
+		NOT = {
+			has_country_flag = GE_TE_fired
+		}
+	}
 	
-# 	mean_time_to_happen = {
-# 		days = 30
-# 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 
-# 	immediate = {
-# 		remove_country_modifier = GE_Tunisian_Grain_Trade
-# 		remove_country_modifier = GE_Tunisian_Grain_Production
-# 	}
+	immediate = {
+		set_country_flag = GE_TE_fired
+		hidden_effect = {
+			GE_calculate_goods_produced_effect = yes
+		}
+	}
 
-# 	option = {
-# 		name = reform_me_events.234.a
-# 	}
-# }
+	option = {
+		name = reform_me_events.234.a
+		#add_stability = 1
+	}
+}

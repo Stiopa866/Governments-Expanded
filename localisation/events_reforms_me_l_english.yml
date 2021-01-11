@@ -139,6 +139,8 @@
  reform_me_events.232.a: "Ignore these Rumors, they are our loyal viziers."
  reform_me_events.232.b: "Order the execution of these would-be traitors."
 
+ reform_me_events.234.d: "You got §Y[Root.GE_percentage_of_rural_goods.GetValue]%§! Rural Goods Production\nYou got §Y[Root.GE_percentage_of_urban_goods.GetValue]%§! Urban Goods Production\nYou got §Y[Root.GE_percentage_of_mining_goods.GetValue]%§! Mining Goods Production\nYou got §Y[Root.GE_percentage_of_plantation_goods.GetValue]%§! Plantation Goods Production"
+
  #Privileges
  GE_privileges.1.t: "New Generation of Draftees"
  GE_privileges.1.d: "March away from the land of our birth,\nto fly a flag in some foreign earth.\nSend away like our fathers before,\nThese colors don't run from cold bloody war."

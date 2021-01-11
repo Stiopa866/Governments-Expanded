@@ -594,6 +594,48 @@
  GE_rural_trade_deal_exports_4: "Rural Trade Deal Exports"
  GE_rural_trade_deal_exports_5: "Rural Trade Deal Exports"
 
+ GE_urban_trade_deal_exports_1: "Urban Trade Deal Exports"
+ GE_urban_trade_deal_exports_2: "Urban Trade Deal Exports"
+ GE_urban_trade_deal_exports_3: "Urban Trade Deal Exports"
+ GE_urban_trade_deal_exports_4: "Urban Trade Deal Exports"
+ GE_urban_trade_deal_exports_5: "Urban Trade Deal Exports"
+
+ GE_mining_trade_deal_exports_1: "Mining Trade Deal Exports"
+ GE_mining_trade_deal_exports_2: "Mining Trade Deal Exports"
+ GE_mining_trade_deal_exports_3: "Mining Trade Deal Exports"
+ GE_mining_trade_deal_exports_4: "Mining Trade Deal Exports"
+ GE_mining_trade_deal_exports_5: "Mining Trade Deal Exports"
+
+ GE_plantation_trade_deal_exports_1: "Plantation Trade Deal Exports"
+ GE_plantation_trade_deal_exports_2: "Plantation Trade Deal Exports"
+ GE_plantation_trade_deal_exports_3: "Plantation Trade Deal Exports"
+ GE_plantation_trade_deal_exports_4: "Plantation Trade Deal Exports"
+ GE_plantation_trade_deal_exports_5: "Plantation Trade Deal Exports"
+
+ GE_rural_trade_deal_imports_1: "Rural Trade Deal Imports"
+ GE_rural_trade_deal_imports_2: "Rural Trade Deal Imports"
+ GE_rural_trade_deal_imports_3: "Rural Trade Deal Imports"
+ GE_rural_trade_deal_imports_4: "Rural Trade Deal Imports"
+ GE_rural_trade_deal_imports_5: "Rural Trade Deal Imports"
+
+ GE_urban_trade_deal_imports_1: "Urban Trade Deal Imports"
+ GE_urban_trade_deal_imports_2: "Urban Trade Deal Imports"
+ GE_urban_trade_deal_imports_3: "Urban Trade Deal Imports"
+ GE_urban_trade_deal_imports_4: "Urban Trade Deal Imports"
+ GE_urban_trade_deal_imports_5: "Urban Trade Deal Imports"
+
+ GE_mining_trade_deal_imports_1: "Mining Trade Deal Imports"
+ GE_mining_trade_deal_imports_2: "Mining Trade Deal Imports"
+ GE_mining_trade_deal_imports_3: "Mining Trade Deal Imports"
+ GE_mining_trade_deal_imports_4: "Mining Trade Deal Imports"
+ GE_mining_trade_deal_imports_5: "Mining Trade Deal Imports"
+
+ GE_plantation_trade_deal_imports_1: "Plantation Trade Deal Imports"
+ GE_plantation_trade_deal_imports_2: "Plantation Trade Deal Imports"
+ GE_plantation_trade_deal_imports_3: "Plantation Trade Deal Imports"
+ GE_plantation_trade_deal_imports_4: "Plantation Trade Deal Imports"
+ GE_plantation_trade_deal_imports_5: "Plantation Trade Deal Imports"
+
  
  Russian_Manorialism: "Manorial Maintenance"
  Stop_Centralization: "Halted Centralization"
