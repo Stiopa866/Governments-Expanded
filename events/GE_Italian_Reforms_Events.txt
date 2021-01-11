@@ -390,29 +390,10 @@ country_event = {
 		has_government_attribute = teulie_reform_republic_reform
 		OR = {
 			AND = {
-				republican_tradition = 60
-				NOT = { republican_tradition = 70 }
+				republican_tradition = 75
 				NOT = { has_country_modifier = GE_Teulie_1 }
 			}
 			AND = {
-				republican_tradition = 70
-				NOT = { republican_tradition = 80 }
-				NOT = { has_country_modifier = GE_Teulie_2 }
-			}
-			AND = {
-				republican_tradition = 80
-				NOT = { republican_tradition = 90 }
-				NOT = { has_country_modifier = GE_Teulie_3 }
-			}
-			AND = {
-				republican_tradition = 90
-				NOT = { republican_tradition = 100 }
-				NOT = { has_country_modifier = GE_Teulie_4 }
-			}
-			AND = {
-				republican_tradition = 100
-				NOT = { has_country_modifier = GE_Teulie_5 }
-			}
 		}
 	}
 	
@@ -423,8 +404,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				republican_tradition = 60
-				NOT = { republican_tradition = 70 }
+				republican_tradition = 75
 				NOT = { has_country_modifier = GE_Teulie_1 }
 			}
 			add_country_modifier = {
@@ -432,73 +412,13 @@ country_event = {
 				duration = -1
 				hidden = yes
 			}
-			remove_country_modifier = GE_Teulie_2
-			remove_country_modifier = GE_Teulie_3
-			remove_country_modifier = GE_Teulie_4
-			remove_country_modifier = GE_Teulie_5
 		}
 		if = {
 			limit = {
-				republican_tradition = 70
-				NOT = { republican_tradition = 80 }
-				NOT = { has_country_modifier = GE_Teulie_2 }
-			}
-			add_country_modifier = {
-				name = GE_Teulie_2
-				duration = -1
-				hidden = yes
+				NOT = { republican_tradition = 75 }
+				has_country_modifier = GE_Teulie_1
 			}
 			remove_country_modifier = GE_Teulie_1
-			remove_country_modifier = GE_Teulie_3
-			remove_country_modifier = GE_Teulie_4
-			remove_country_modifier = GE_Teulie_5
-		}
-		if = {
-			limit = {
-				republican_tradition = 80
-				NOT = { republican_tradition = 90 }
-				NOT = { has_country_modifier = GE_Teulie_3}
-			}
-			add_country_modifier = {
-				name = GE_Teulie_3
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Teulie_1
-			remove_country_modifier = GE_Teulie_2
-			remove_country_modifier = GE_Teulie_4
-			remove_country_modifier = GE_Teulie_5
-		}
-		if = {
-			limit = {
-				republican_tradition = 90
-				NOT = { republican_tradition = 100 }
-				NOT = { has_country_modifier = GE_Teulie_4}
-			}
-			add_country_modifier = {
-				name = GE_Teulie_4
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Teulie_1
-			remove_country_modifier = GE_Teulie_2
-			remove_country_modifier = GE_Teulie_3
-			remove_country_modifier = GE_Teulie_5
-		}
-		if = {
-			limit = {
-				republican_tradition = 100
-				NOT = { has_country_modifier = GE_Teulie_5 }
-			}
-			add_country_modifier = {
-				name = GE_Teulie_5
-				duration = -1
-				hidden = yes
-			}
-			remove_country_modifier = GE_Teulie_1
-			remove_country_modifier = GE_Teulie_2
-			remove_country_modifier = GE_Teulie_3
-			remove_country_modifier = GE_Teulie_4
 		}
 	}
 	

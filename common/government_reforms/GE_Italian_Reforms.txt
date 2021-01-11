@@ -629,11 +629,11 @@ teulie_reform_republic_reform = {
 		}
 	}
 	modifiers = {
-		infantry_cost = 0.15
-		galley_cost = 0.15
+		infantry_cost = -0.10
+		galley_cost = -0.10
 	}
 	custom_attributes = {
-		enables_teulie = yes #+3% ICA and +3% Galley Power for each 10 RT over 50
+		enables_teulie = yes #+1 land leader manuver and 1 naval leader fire when over 75 RT
 	}
 	ai = {
 		factor = 1
