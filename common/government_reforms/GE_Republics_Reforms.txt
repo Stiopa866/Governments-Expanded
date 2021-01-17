@@ -123,7 +123,7 @@ institutionalized_repbulican_army_reform = {
 	modifiers = {
 		army_tradition = 0.5
 		land_forcelimit_modifier = 0.20
-		yearly_army_professionalism = 0.05
+		yearly_army_professionalism = 0.005
 	}
 	custom_attributes = {
 		enables_loyal_republican_army = yes #+1% discipline for every 10 points of RT above 50
