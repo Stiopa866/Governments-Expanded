@@ -757,6 +757,7 @@
 			yearly_army_professionalism = 0.0025
 			discipline = 0.025 
 			mercenary_discipline = -0.05
+			governing_capacity_modifier = -0.1
 		}
 		custom_attributes = {
 			enables_patriotism = yes
@@ -785,6 +786,7 @@
 			discipline = 0.05
 			mercenary_discipline = -0.10
 			monarch_military_power = 1
+			governing_capacity_modifier = -0.25
 		}
 		custom_attributes = {
 			enables_patriotism = yes
@@ -6201,6 +6203,10 @@
 		}
 		modifiers = {
 			global_tax_modifier = 0.10
+			max_absolutism = -5
+			nobles_influence_modifier = 0.10
+			burghers_influence_modifier = 0.10
+			church_influence_modifier = 0.10
 		}
 		ai = {
 			factor = 50

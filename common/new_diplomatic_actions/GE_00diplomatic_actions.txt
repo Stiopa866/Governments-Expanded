@@ -328,157 +328,158 @@ cancel_imperial_marshall =  {
 		}
 	}
 }
+#{
+	# offer_trade_deal_tunisian_italian = {
+	# 	category = relation
 
-offer_trade_deal_tunisian_italian = {
-	category = relation
+	# 	alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+	# 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
+		
+	# 	require_acceptance = yes
 
-    alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-	
-	require_acceptance = yes
+	# 	is_visible = {
+	# 		has_government_attribute = enables_italian_grain_treaties
+	# 		always = no
+	# 		FROM = {
+	# 			culture_group = latin
+	# 		}
+	# 		NOT = {
+	# 			FROM = {
+	# 				has_country_modifier = GE_Tunisian_Grain_Trade
+	# 			}
+	# 		}
+	# 	}
+	# 	is_allowed = {
+	# 		has_government_attribute = enables_italian_grain_treaties
+	# 		FROM = {
+	# 			culture_group = latin
+	# 			alliance_with = ROOT
+	# 		}
+	# 		# NOT = {
+	# 		# 	FROM = {
+	# 		# 		has_country_modifier = GE_Tunisian_Grain_Trade
+	# 		# 	}
+	# 		# }
+	# 	}
+	# 	on_accept = {
+	# 		FROM = {
+	# 			add_country_modifier = {
+	# 				name = GE_Tunisian_Grain_Trade
+	# 				duration = -1
+	# 			}
+	# 		}
+	# 		ROOT = {
+	# 			add_country_modifier = {
+	# 				name = GE_Tunisian_Grain_Production
+	# 				duration = -1
+	# 			}
+	# 		}
+	# 	}
+	# 	on_decline = {
+	# 	}
 
-	is_visible = {
-		has_government_attribute = enables_italian_grain_treaties
-		always = no
-		FROM = {
-			culture_group = latin
-		}
-		NOT = {
-			FROM = {
-				has_country_modifier = GE_Tunisian_Grain_Trade
-			}
-		}
-	}
-	is_allowed = {
-		has_government_attribute = enables_italian_grain_treaties
-		FROM = {
-			culture_group = latin
-			alliance_with = ROOT
-		}
-		# NOT = {
-		# 	FROM = {
-		# 		has_country_modifier = GE_Tunisian_Grain_Trade
-		# 	}
-		# }
-	}
-	on_accept = {
-		FROM = {
-			add_country_modifier = {
-				name = GE_Tunisian_Grain_Trade
-				duration = -1
-			}
-		}
-		ROOT = {
-			add_country_modifier = {
-				name = GE_Tunisian_Grain_Production
-				duration = -1
-			}
-		}
-	}
-	on_decline = {
-	}
+	# 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
+	# 		ai_value = 1
+	# 		# add_entry = {
+	# 		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
+				
+	# 		# 	# ai_value MUST always be created within an entry first.
+	# 		# 	export_to_variable = {
+	# 		# 		variable_name = ai_value
+	# 		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
+	# 		# 		who = ROOT                      # Who to export the value from
+	# 		# 		with = FROM                     # Who the ai_value is for
+	# 		# 	}
+	# 		# 	multiply_variable = {
+	# 		# 		which = ai_value
+	# 		# 		value = 5
+	# 		# 	}
+	# 		# 	# You can then change ai_value with effects such as multiply_variable, etc
+	# 		# }
+	# 		# add_entry = {
+	# 		# 	name = GE_base_acceptance
+	# 		# 	export_to_variable = {
+	# 		# 		variable_name = ai_value
+	# 		# 		value = 10      # Which exportable value to export
+	# 		# 		who = ROOT                      # Who to export the value from
+	# 		# 		with = FROM                     # Who the ai_value is for
+	# 		# 	}
+	# 		# }
+	# 		add_entry = {
+	# 			name = GE_base_acceptance
+	# 			export_to_variable = {
+	# 				variable_name = ai_value
+	# 				value = 1      # Which exportable value to export
+	# 				who = ROOT                      # Who to export the value from
+	# 				with = FROM                     # Who the ai_value is for
+	# 			}
+	# 			multiply_variable = {
+	# 				which = ai_value
+	# 				value = 10
+	# 			}
+	# 		}
+	# 	}
 
-	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
-		ai_value = 1
-		# add_entry = {
-		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
-			
-		# 	# ai_value MUST always be created within an entry first.
-		# 	export_to_variable = {
-		# 		variable_name = ai_value
-		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
-		# 		with = FROM                     # Who the ai_value is for
-		# 	}
-		# 	multiply_variable = {
-		# 		which = ai_value
-		# 		value = 5
-		# 	}
-		# 	# You can then change ai_value with effects such as multiply_variable, etc
-		# }
-		# add_entry = {
-		# 	name = GE_base_acceptance
-		# 	export_to_variable = {
-		# 		variable_name = ai_value
-		# 		value = 10      # Which exportable value to export
-		# 		who = ROOT                      # Who to export the value from
-		# 		with = FROM                     # Who the ai_value is for
-		# 	}
-		# }
-		add_entry = {
-			name = GE_base_acceptance
-			export_to_variable = {
-				variable_name = ai_value
-				value = 1      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
-			}
-			multiply_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-	}
-
-	ai_will_do = { # this is a trigger
-		# FROM = {
-		# 	culture_group = latin
-		# 	alliance_with = ROOT
-		# }
-		always = yes
-	}
-}
-cancel_trade_deal_tunisian_italian = {
-	category = relation
-	require_acceptance = no
-	is_visible = {
-		FROM = {
-			OR = {
-				has_country_modifier = GE_Tunisian_Grain_Trade
-				has_country_modifier = GE_Tunisian_Grain_Production
-			}
-		}
-		ROOT = {
-			OR = {
-				has_country_modifier = GE_Tunisian_Grain_Trade
-				has_country_modifier = GE_Tunisian_Grain_Production
-			}
-		}
-	}
-	is_allowed = {
-		FROM = {
-			OR = {
-				has_country_modifier = GE_Tunisian_Grain_Trade
-				has_country_modifier = GE_Tunisian_Grain_Production
-			}
-		}
-		ROOT = {
-			OR = {
-				has_country_modifier = GE_Tunisian_Grain_Trade
-				has_country_modifier = GE_Tunisian_Grain_Production
-			}
-		}
-	}
-	on_accept = {
-		FROM = {
-			remove_country_modifier = GE_Tunisian_Grain_Trade
-			remove_country_modifier = GE_Tunisian_Grain_Production\
-			add_stability = -1
-		}
-		ROOT = {
-			remove_country_modifier = GE_Tunisian_Grain_Trade
-			remove_country_modifier = GE_Tunisian_Grain_Production
-			add_stability = -1
-		}
-	}
-	ai_will_do = { # this is a trigger
-		NOT = {
-			FROM = {
-				alliance_with = ROOT
-			}
-		}
-	}
-}
+	# 	ai_will_do = { # this is a trigger
+	# 		# FROM = {
+	# 		# 	culture_group = latin
+	# 		# 	alliance_with = ROOT
+	# 		# }
+	# 		always = yes
+	# 	}
+	# }
+	# cancel_trade_deal_tunisian_italian = {
+	# 	category = relation
+	# 	require_acceptance = no
+	# 	is_visible = {
+	# 		FROM = {
+	# 			OR = {
+	# 				has_country_modifier = GE_Tunisian_Grain_Trade
+	# 				has_country_modifier = GE_Tunisian_Grain_Production
+	# 			}
+	# 		}
+	# 		ROOT = {
+	# 			OR = {
+	# 				has_country_modifier = GE_Tunisian_Grain_Trade
+	# 				has_country_modifier = GE_Tunisian_Grain_Production
+	# 			}
+	# 		}
+	# 	}
+	# 	is_allowed = {
+	# 		FROM = {
+	# 			OR = {
+	# 				has_country_modifier = GE_Tunisian_Grain_Trade
+	# 				has_country_modifier = GE_Tunisian_Grain_Production
+	# 			}
+	# 		}
+	# 		ROOT = {
+	# 			OR = {
+	# 				has_country_modifier = GE_Tunisian_Grain_Trade
+	# 				has_country_modifier = GE_Tunisian_Grain_Production
+	# 			}
+	# 		}
+	# 	}
+	# 	on_accept = {
+	# 		FROM = {
+	# 			remove_country_modifier = GE_Tunisian_Grain_Trade
+	# 			remove_country_modifier = GE_Tunisian_Grain_Production\
+	# 			add_stability = -1
+	# 		}
+	# 		ROOT = {
+	# 			remove_country_modifier = GE_Tunisian_Grain_Trade
+	# 			remove_country_modifier = GE_Tunisian_Grain_Production
+	# 			add_stability = -1
+	# 		}
+	# 	}
+	# 	ai_will_do = { # this is a trigger
+	# 		NOT = {
+	# 			FROM = {
+	# 				alliance_with = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# }
+#}
 
 offer_trade_deal_rural_exports = {
 	category = trade
@@ -521,7 +522,7 @@ offer_trade_deal_rural_exports = {
 				tooltip = GE_ROOT_produces_enough_rural_goods
 				check_variable = {
 					which = GE_percentage_of_rural_goods
-					value = 40
+					value = 50
 				}
 			}
 		}
@@ -581,6 +582,10 @@ offer_trade_deal_rural_exports = {
 				which = GE_num_of_outgoing_rural_trade
 				value = 1
 			}
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_export_effect = yes
 		}
 	}
@@ -615,7 +620,7 @@ offer_trade_deal_rural_exports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -631,9 +636,12 @@ offer_trade_deal_rural_exports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -649,6 +657,62 @@ offer_trade_deal_rural_exports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -743,7 +807,7 @@ offer_trade_deal_rural_imports = {
 				tooltip = GE_FROM_produces_enough_rural_goods
 				check_variable = {
 					which = GE_percentage_of_rural_goods
-					value = 40
+					value = 50
 				}
 			}
 		}
@@ -797,10 +861,14 @@ offer_trade_deal_rural_imports = {
 		}
 		ROOT = {
 			set_country_flag = GE_Trade_Deal_With_@From
-			set_country_flag = GE_Rural_Trade_Deal_With_@Root
+			set_country_flag = GE_Rural_Trade_Deal_With_@From
 			set_country_flag = GE_Initiated_Trade_Deal_With_@From
 			change_variable = {
 				which = GE_num_of_incoming_rural_trade
+				value = 1
+			}
+			change_variable = {
+				which = GE_num_of_total_trade
 				value = 1
 			}
 			add_import_effect = yes
@@ -837,7 +905,7 @@ offer_trade_deal_rural_imports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -853,9 +921,12 @@ offer_trade_deal_rural_imports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not Allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -871,6 +942,62 @@ offer_trade_deal_rural_imports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -965,7 +1092,7 @@ offer_trade_deal_urban_exports = {
 				tooltip = GE_ROOT_produces_enough_urban_goods
 				check_variable = {
 					which = GE_percentage_of_urban_goods
-					value = 20
+					value = 40
 				}
 			}
 		}
@@ -1025,6 +1152,10 @@ offer_trade_deal_urban_exports = {
 				which = GE_num_of_outgoing_urban_trade
 				value = 1
 			}
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_export_effect = yes
 		}
 	}
@@ -1059,7 +1190,7 @@ offer_trade_deal_urban_exports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -1075,9 +1206,12 @@ offer_trade_deal_urban_exports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -1093,6 +1227,62 @@ offer_trade_deal_urban_exports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -1187,7 +1377,7 @@ offer_trade_deal_urban_imports = {
 				tooltip = GE_FROM_produces_enough_urban_goods
 				check_variable = {
 					which = GE_percentage_of_urban_goods
-					value = 20
+					value = 40
 				}
 			}
 		}
@@ -1247,6 +1437,10 @@ offer_trade_deal_urban_imports = {
 				which = GE_num_of_incoming_urban_trade
 				value = 1
 			}
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_import_effect = yes
 		}
 	}
@@ -1281,7 +1475,7 @@ offer_trade_deal_urban_imports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -1297,9 +1491,12 @@ offer_trade_deal_urban_imports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not Allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -1315,6 +1512,62 @@ offer_trade_deal_urban_imports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -1409,7 +1662,7 @@ offer_trade_deal_mining_exports = {
 				tooltip = GE_ROOT_produces_enough_mining_goods
 				check_variable = {
 					which = GE_percentage_of_mining_goods
-					value = 10
+					value = 20
 				}
 			}
 		}
@@ -1469,7 +1722,10 @@ offer_trade_deal_mining_exports = {
 				which = GE_num_of_outgoing_mining_trade
 				value = 1
 			}
-
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_export_effect = yes
 		}
 	}
@@ -1504,7 +1760,7 @@ offer_trade_deal_mining_exports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -1520,9 +1776,12 @@ offer_trade_deal_mining_exports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -1538,6 +1797,62 @@ offer_trade_deal_mining_exports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -1632,7 +1947,7 @@ offer_trade_deal_mining_imports = {
 				tooltip = GE_FROM_produces_enough_mining_goods
 				check_variable = {
 					which = GE_percentage_of_mining_goods
-					value = 10
+					value = 20
 				}
 			}
 		}
@@ -1677,6 +1992,10 @@ offer_trade_deal_mining_imports = {
 				which = GE_num_of_incoming_mining_trade
 				value = 1
 			}
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_import_effect = yes
 		}
 	}
@@ -1711,7 +2030,7 @@ offer_trade_deal_mining_imports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -1727,9 +2046,12 @@ offer_trade_deal_mining_imports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not Allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -1745,6 +2067,62 @@ offer_trade_deal_mining_imports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -1884,7 +2262,10 @@ offer_trade_deal_plantation_exports = {
 				which = GE_num_of_outgoing_plantation_trade
 				value = 1
 			}
-
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_export_effect = yes
 		}
 	}
@@ -1919,7 +2300,7 @@ offer_trade_deal_plantation_exports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -1935,9 +2316,12 @@ offer_trade_deal_plantation_exports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -1953,6 +2337,62 @@ offer_trade_deal_plantation_exports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -2091,6 +2531,10 @@ offer_trade_deal_plantation_imports = {
 				which = GE_num_of_incoming_plantation_trade
 				value = 1
 			}
+			change_variable = {
+				which = GE_num_of_total_trade
+				value = 1
+			}
 			add_import_effect = yes
 		}
 	}
@@ -2125,7 +2569,7 @@ offer_trade_deal_plantation_imports = {
 			}
 			multiply_variable = {
 				which = ai_value
-				value = 0.2
+				value = 0.1
 			}
 		}
 		add_entry = { #-10 base acceptance
@@ -2141,9 +2585,12 @@ offer_trade_deal_plantation_imports = {
 				value = 10 #10
 			}
 		}
-		add_entry = { #-100 if not Allied
+		add_entry = { #-10 if not Allied Player
 			name = GE_not_willing
 			limit = {
+				ROOT = {
+					ai = no
+				}
 				NOT = {
 					FROM = {
 						OR = {
@@ -2159,6 +2606,62 @@ offer_trade_deal_plantation_imports = {
 								is_in_trade_league_with = ROOT
 							}
 						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = { #-100 if not Allied AI
+			name = GE_not_willing
+			limit = {
+				ROOT = {
+					ai = yes
+				}
+				NOT = {
+					FROM = {
+						OR = {
+							alliance_with = ROOT
+							AND = {
+								is_trade_league_leader = yes
+								is_in_trade_league_with = ROOT
+							}
+							AND = {
+								ROOT = {
+									is_trade_league_leader = yes
+								}
+								is_in_trade_league_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = -1      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 100
+			}
+		}
+		add_entry = { #-100 if broken trade treaty
+			name = GE_angry_merchants
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = GE_Cancel_Trade_Deal_Angry
 					}
 				}
 			}
@@ -2379,6 +2882,10 @@ cancel_trade_deal_generic = {
 				clr_country_flag = GE_Plantation_Trade_Deal_With_@ROOT
 				add_import_effect = yes
 			}
+			add_opinion = {
+				who = ROOT
+				modifier = GE_Cancel_Trade_Deal_Angry
+			}
 		}
 		ROOT = {
 			if = {
@@ -2512,11 +3019,42 @@ cancel_trade_deal_generic = {
 		}
 	}
 	ai_will_do = { # this is a trigger
-		NOT = {
-			FROM = {
-				OR = {
-					alliance_with = ROOT
-					is_in_trade_league_with = ROOT
+		variable_arithmetic_trigger = {
+			export_to_variable = {
+				variable_name = GE_Cancel_Trade_Deal_DipRep
+				value = modifier:diplomatic_reputation      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+			}
+			export_to_variable = {
+				variable_name = GE_Cancel_Trade_Deal_Opinion
+				value = opinion      # Which exportable value to export
+				who = ROOT                      # Who to export the value from
+				with = FROM                     # Who the ai_value is for
+			}
+			multiply_variable = {
+				which = GE_Cancel_Trade_Deal_DipRep
+				value = 3
+			}
+			multiply_variable = {
+				which = GE_Cancel_Trade_Deal_Opinion
+				value = 0.1
+			}
+			export_to_variable = {
+				variable_name = GE_Cancel_Trade_Deal_Total
+				value = 0
+			}
+			set_variable = {
+				which = GE_Cancel_Trade_Deal_Total
+				which = GE_Cancel_Trade_Deal_DipRep
+			}
+			change_variable = {
+				which = GE_Cancel_Trade_Deal_Total
+				which = GE_Cancel_Trade_Deal_Opinion
+			}
+			NOT = {
+				check_variable = {
+					which = GE_Cancel_Trade_Deal_Total
+					value = 20
 				}
 			}
 		}

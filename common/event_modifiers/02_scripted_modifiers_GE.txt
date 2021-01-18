@@ -596,19 +596,19 @@ GE_rural_trade_deal_imports_5 = {
 }
 
 GE_urban_trade_deal_imports_1 = {
-	technology_cost = 0.02
+	technology_cost = -0.02
 }
 GE_urban_trade_deal_imports_2 = {
-	technology_cost = 0.04
+	technology_cost = -0.04
 }
 GE_urban_trade_deal_imports_3 = {
-	technology_cost = 0.06
+	technology_cost = -0.06
 }
 GE_urban_trade_deal_imports_4 = {
-	technology_cost = 0.08
+	technology_cost = -0.08
 }
 GE_urban_trade_deal_imports_5 = {
-	technology_cost = 0.10
+	technology_cost = -0.10
 }
 
 GE_mining_trade_deal_imports_1 = {

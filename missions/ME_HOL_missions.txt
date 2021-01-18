@@ -1,0 +1,346 @@
+ME_HOL_slot_3_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		always = yes
+	}
+	potential = {
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		OR = {
+			tag = HOL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ME_HOL_Hanseatic_Wars = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Burgundian_Development }
+		position = 2
+		completed_by = 1460.1.1
+		
+		provinces_to_highlight = {
+			id = 45
+		}
+		
+		trigger = {
+			OR = {
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Wealth of Nations"
+							has_dlc = "El Dorado"
+							has_dlc = "Mare Nostrum"
+							has_dlc = "Golden Century"
+						}
+					}
+					45 = { #Lubeck
+						privateer_power = {
+							country = FROM
+							share = 10
+						}
+					}
+				}
+				else = {
+					trade_embargoing = HSA
+				}
+				NOT = {
+					exists = HSA
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					exists = HSA
+				}
+				HSA = {
+					country_event = {
+						id = ME_HOL_events.4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					45 = {
+						owned_by = ROOT
+					}
+				}
+				add_dip_power = 100
+			}
+			else = {
+				add_prestige = 10
+			}
+		}
+	}
+}
+
+ME_HOL_slot_4_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		always = yes
+	}
+	potential = {
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		OR = {
+			tag = HOL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ME_HOL_Burgundian_Development = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { }
+		position = 1
+		completed_by = 1460.1.1
+		
+		provinces_to_highlight = {
+			owner = {
+				tag = BUR
+			}
+		}
+		
+		trigger = {
+			OR = {
+				reverse_has_opinion = {
+					who = BUR
+					value = 150
+				}
+				navy_size_percentage = 1
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					navy_size_percentage = 1
+				}
+				add_country_modifier = {
+					name = ME_HOL_A_Dutch_Navy
+					duration = 9125
+				}
+			}
+			else = {
+				97 = {
+					add_province_modifier = {
+						name = "ME_HOL_Burgundian_Shipwrights"
+						duration = 9125
+					}
+				}
+				4383 = {
+					add_province_modifier = {
+						name = "ME_HOL_Burgundian_Shipwrights"
+						duration = 9125
+					}
+				}
+				96 = {
+					add_province_modifier = {
+						name = "ME_HOL_Burgundian_Shipwrights"
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+
+	ME_HOL_Compete_With_The_Hansa = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Burgundian_Development }
+		position = 2
+		completed_by = 1460.1.1
+		
+		provinces_to_highlight = {
+			owner = {
+				tag = HSA
+			}
+		}
+		
+		trigger = {
+			45 = { #Lubeck
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = governments_expanded_mod_active
+				}
+				add_country_modifier = {
+					name = ME_HOL_Baltic_Expedition_GE
+					duration = 9125
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = ME_HOL_Baltic_Expedition
+					duration = 9125
+				}
+			}
+			country_event = {
+				id = ME_HOL_events.1
+				days = 30
+			}
+		}
+	}
+}
+
+ME_HOL_slot_5_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		always = yes
+	}
+	potential = {
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		OR = {
+			tag = HOL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ME_HOL_Expansion_Of_Amsterdam = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Burgundian_Development }
+		position = 2
+		completed_by = 1470.1.1
+		
+		provinces_to_highlight = {
+			id = 97
+		}
+		
+		trigger = {
+			97 = {
+				development = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = ME_HOL_Amsterdam_Merchants
+				duration = 9125
+			}
+		}
+	
+	}
+	ME_HOL_baltic_trade = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Compete_With_The_Hansa }
+		position = 3
+		completed_by = 1480.1.1
+		
+		provinces_to_highlight = {
+			region = baltic_region
+			region = scandinavia
+		}
+		
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = ME_HOL_Baltic_Trade_TT
+					any_country = {
+						any_owned_province = {
+							OR = {
+								region = baltic_region
+								region = scandinavia
+							}
+						}
+						OR = {
+							has_country_flag = GE_Rural_Trade_Deal_From_HOL
+							has_country_flag = GE_Rural_Trade_Deal_From_NED
+						}
+					}
+				}
+				45 = { #Lubeck
+					trade_share = {
+						country = ROOT
+						share = 25
+					}
+				}
+				1926 = { #Baltic
+					trade_share = {
+						country = ROOT
+						share = 25
+					}
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = governments_expanded_mod_active
+				}
+				add_country_modifier = {
+					name = ME_HOL_Baltic_Trade_modifier_1
+					duration = -1
+				}
+			}
+			else = {
+				97 = {
+					add_province_modifier = {
+						name = "ME_HOL_Baltic_Trade_modifier_2"
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+	ME_HOL_Mother_Of_All_Trade = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_baltic_trade }
+		position = 3
+		completed_by = 1480.1.1
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = ME_HOL_Grain_Imports_TT
+					check_variable = {
+						which = GE_num_of_incoming_rural_trade
+						value = 2
+					}
+				}
+				1926 = { #Baltic
+					is_strongest_trade_power = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = governments_expanded_mod_active
+				}
+				add_government_reform = guild_dominance_reform
+			}
+			else_if = {
+				limit = {
+					has_global_flag = governments_expanded_mod_active
+					has_government_reform = guild_dominance_reform
+				}
+				change_government_reform_progress = 25
+				add_years_of_income = 1
+			}
+			else = {
+				add_country_modifier = {
+					name = ME_HOL_Mother_Of_All_Trade_modifier #10% Provincial Trade and 0.5 NT
+					duration = -1
+				}
+			}
+		}
+	}
+}
