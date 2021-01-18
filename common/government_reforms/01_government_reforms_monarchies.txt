@@ -1140,7 +1140,6 @@ quash_noble_power_reform = {
 		nobles_influence_modifier = -0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
-		trade_deals_slots = 0.01
 	}
 	removed_effect = {
 		change_variable = {
@@ -1187,7 +1186,7 @@ enforce_trader_privileges_reform = {
 	modifiers = {
 		trade_range_modifier = 0.3
 		trade_efficiency = 0.05
-		trade_deals_slots = 0.02
+		trade_deals_slots = 0.01
 	}
 	ai = {
 		factor = 2

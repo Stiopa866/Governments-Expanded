@@ -36,7 +36,6 @@ oligarchy_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 		max_absolutism = -40
-		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -64,7 +63,6 @@ signoria_reform = {
 	modifiers = {
 		global_tax_modifier = 0.05
 		max_absolutism = -30
-		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -391,7 +389,6 @@ noble_elite_reform = {
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
-		trade_deals_slots = 0.01
 	}
 	duration = 8
 
@@ -621,7 +618,6 @@ peasants_republic = {
 		production_efficiency = 0.1
 		land_morale = 0.05
 		max_absolutism = -50
-		trade_deals_slots = 0.01
 	}
 	effect = {
 		hidden_effect = {
@@ -700,7 +696,6 @@ trading_city = {
 		max_absolutism = -20
 		global_trade_power = 0.1
 		max_absolutism = -20
-		trade_deals_slots = 0.03
 	}
 
 	custom_attributes = {
@@ -753,7 +748,6 @@ ambrosian_republic = {
 		land_morale = 0.05
 		governing_capacity = 50
 		max_absolutism = -30
-		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -784,7 +778,7 @@ veche_republic = {
 		merchants = 1
 		governing_capacity = 50
 		max_absolutism = -50
-		trade_deals_slots = 0.01
+		trade_deals_slots = 0.02
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40

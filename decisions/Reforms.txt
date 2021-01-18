@@ -531,4 +531,21 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	GE_time_to_pray = {
+		major = no
+		potential = {
+			government = monarchy
+			uses_devotion = yes
+		}
+		allow = {
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_devotion = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
