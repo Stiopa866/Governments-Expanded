@@ -406,6 +406,7 @@
  GE_Foreign_Drill_Masters_5: "Foreign Drill Masters"
  GE_Tunisian_Grain_Trade: "Tunisian Grain Imports"
  GE_Tunisian_Grain_Production: "Tunisian Grain Exports"
+ GE_Italian_Grain_Treaties: "Italian Grain Exports"
  
  GE_vassal_tax_script_1: "Vassal Tax Income"
  GE_vassal_tax_script_2: "Vassal Tax Income"

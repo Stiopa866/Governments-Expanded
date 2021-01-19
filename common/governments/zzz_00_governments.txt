@@ -39,6 +39,9 @@ monarchy = {
 				caliphate_reform_sunni
 				west_slavic_monarchy
 				#GE
+				#Generics
+				elective_monarchy_reform
+				arch_monarchy_reform
 				french_feudalism
 				#french_reformed_feudalism
 				ancien_regime_reform
@@ -60,8 +63,6 @@ monarchy = {
 				crown_of_saint_wenceslaus_2
 				office_of_lord_regent_reform
 				arch_king_reform
-				elective_monarchy_reform
-				arch_monarchy_reform
 				arch_duchy_reform
 				habsburg_monarchy_reform
 				austrian_empire_reform
@@ -98,8 +99,6 @@ monarchy = {
 		}
 		hereditary_vs_nobility = {
 			reforms = {
-				nobi_jongmobub_reform
-				nobi_jongbubub_reform
 				enforce_privileges_reform
 				quash_noble_power_reform
 				enforce_trader_privileges_reform
@@ -115,11 +114,16 @@ monarchy = {
 				#ME
 				sharia_reform
 				#GE
+				#Religous
 				papal_embassy_reform
 				state_church_reform
 				metropolian_bishop_reform
 				elevated_landed_gentry_reform
-				diplomatic_positions_reform
+				#Generic
+				city_privileges_reform #1.15
+				nobi_jongmobub_reform
+				nobi_jongbubub_reform
+				#diplomatic_positions_reform
 				lithuania_law_reform
 				guild_dominance_reform
 				growth_signoria_reform
@@ -172,7 +176,6 @@ monarchy = {
 				#1.14
 				gibraltar_of_the_north_reform
 				#1.15
-				city_privileges_reform
 				wattasid_viziers_reform
 				tribal_tribute_reform
 			}
@@ -278,7 +281,7 @@ monarchy = {
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
 				gustavan_artillery_reform
-				the_black_guard_reform
+				#the_black_guard_reform
 				reorganize_the_imperial_army
 				arabian_horses_reform
 				pospolite_ruszenie_reform
@@ -315,6 +318,7 @@ monarchy = {
 				#1.15
 				jayish_al_malik_reform
 				mantua_knightly_orders_reform
+				bedouin_reserves_reform
 			}
 		}
 		growth_of_administration = {

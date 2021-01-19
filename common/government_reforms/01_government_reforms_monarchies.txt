@@ -1672,9 +1672,9 @@ of_noble_bearing_reform = {
 		maratha_exclusive_loyalty_modifier = 0.05
 		rajput_exclusive_loyalty_modifier = 0.05
 	}
-	custom_attributes = {
-		enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
-	}
+	#custom_attributes = {
+		#enables_general_connections = yes # 0.1 Army Tradition per General, 0.1 Naval Tradition per Admiral
+	#}
 	removed_effect = {
 		change_variable = {
 			which = Noble_Influence

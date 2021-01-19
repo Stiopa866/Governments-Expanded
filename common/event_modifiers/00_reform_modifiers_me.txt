@@ -937,6 +937,9 @@ GE_Tunisian_Grain_Trade = {
 GE_Tunisian_Grain_Production = {
 	rural_goods_produced_modifier = 0.20
 }
+GE_Italian_Grain_Treaties = {
+	trade_efficiency = 0.10
+}
 	
 	
 #Cortez

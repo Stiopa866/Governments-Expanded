@@ -832,4 +832,9 @@ spriteTypes = {
 		name = "government_reform_swabia_eberhard"
 		texturefile = "gfx//interface//government_reform_icons//swabia_eberhard.dds"
 	}
+	spriteType = {
+		name = "government_reform_bedouin_warrior"
+		texturefile = "gfx//interface//government_reform_icons//bedouin_warrior.dds"
+	}
+	
 }
