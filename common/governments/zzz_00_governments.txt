@@ -95,6 +95,7 @@ monarchy = {
 				emirate_of_andalusia_reform
 				#1.15
 				mantua_house_of_gonzaga_reform
+				tanistry_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -253,6 +254,7 @@ monarchy = {
 				#1.15
 				regional_kasbah_reform
 				exiled_qaids_reform
+				kingdom_of_cities_reform
 			}
 		}
 		military_organisation = {
@@ -436,6 +438,7 @@ monarchy = {
 				#1.15
 				nomad_councils_reform
 				office_of_kanzler_reform
+				diamond_of_the_earth_reform
 			}
 		}
 		economic_policy = {
@@ -460,6 +463,7 @@ monarchy = {
 				danske_besiddelser_reform
 				#1.15
 				expand_the_trans_saharan_trade_reform
+				customs_duties_reform
 			}
 		}
 		absolute_rule_vs_constitutional = {
