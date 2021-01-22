@@ -614,9 +614,9 @@ offer_trade_deal_rural_exports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -899,9 +899,9 @@ offer_trade_deal_rural_imports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1469,9 +1469,9 @@ offer_trade_deal_urban_imports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -1754,9 +1754,9 @@ offer_trade_deal_mining_exports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2024,9 +2024,9 @@ offer_trade_deal_mining_imports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2294,9 +2294,9 @@ offer_trade_deal_plantation_exports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -2563,9 +2563,9 @@ offer_trade_deal_plantation_imports = {
 			name = GE_opinion_modifier
 			export_to_variable = {
 				variable_name = ai_value
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
+				value = opinion
+				who = FROM 
+				with = ROOT  
 			}
 			multiply_variable = {
 				which = ai_value
@@ -3019,44 +3019,105 @@ cancel_trade_deal_generic = {
 		}
 	}
 	ai_will_do = { # this is a trigger
-		variable_arithmetic_trigger = {
-			export_to_variable = {
-				variable_name = GE_Cancel_Trade_Deal_DipRep
-				value = modifier:diplomatic_reputation      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-			}
-			export_to_variable = {
-				variable_name = GE_Cancel_Trade_Deal_Opinion
-				value = opinion      # Which exportable value to export
-				who = ROOT                      # Who to export the value from
-				with = FROM                     # Who the ai_value is for
-			}
-			multiply_variable = {
-				which = GE_Cancel_Trade_Deal_DipRep
-				value = 3
-			}
-			multiply_variable = {
-				which = GE_Cancel_Trade_Deal_Opinion
-				value = 0.1
-			}
-			export_to_variable = {
-				variable_name = GE_Cancel_Trade_Deal_Total
-				value = 0
-			}
-			set_variable = {
-				which = GE_Cancel_Trade_Deal_Total
-				which = GE_Cancel_Trade_Deal_DipRep
-			}
-			change_variable = {
-				which = GE_Cancel_Trade_Deal_Total
-				which = GE_Cancel_Trade_Deal_Opinion
+		AND = {
+			NOT = {
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
 			}
 			NOT = {
-				check_variable = {
-					which = GE_Cancel_Trade_Deal_Total
-					value = 20
+				FROM = {
+					OR = {
+						alliance_with = ROOT
+						AND = {
+							is_trade_league_leader = yes
+							is_in_trade_league_with = ROOT
+						}
+						AND = {
+							ROOT = {
+								is_trade_league_leader = yes
+							}
+							is_in_trade_league_with = ROOT
+						}
+					}
 				}
 			}
 		}
+		# variable_arithmetic_trigger = {
+		# 	export_to_variable = {
+		# 		variable_name = GE_Cancel_Trade_Deal_DipRep
+		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
+		# 		who = ROOT                      # Who to export the value from
+		# 	}
+		# 	export_to_variable = {
+		# 		variable_name = GE_Cancel_Trade_Deal_Opinion
+		# 		value = opinion
+		# 		who = FROM 
+		# 		with = ROOT  
+		# 	}
+		# 	multiply_variable = {
+		# 		which = GE_Cancel_Trade_Deal_DipRep
+		# 		value = 3
+		# 	}
+		# 	multiply_variable = {
+		# 		which = GE_Cancel_Trade_Deal_Opinion
+		# 		value = 0.1
+		# 	}
+		# 	export_to_variable = {
+		# 		variable_name = GE_Cancel_Trade_Deal_Total
+		# 		value = 0
+		# 	}
+		# 	if = { #ALLY
+		# 		limit = {
+		# 			FROM = {
+		# 				OR = {
+		# 					alliance_with = ROOT
+		# 					AND = {
+		# 						is_trade_league_leader = yes
+		# 						is_in_trade_league_with = ROOT
+		# 					}
+		# 					AND = {
+		# 						ROOT = {
+		# 							is_trade_league_leader = yes
+		# 						}
+		# 						is_in_trade_league_with = ROOT
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		change_variable = {
+		# 			which = GE_Cancel_Trade_Deal_Total
+		# 			value = 10
+		# 		}
+		# 	}
+		# 	if = { #MR
+		# 		limit = {
+		# 			FROM = {
+		# 				has_government_attribute = is_merchant_republic
+		# 			}
+		# 		}
+		# 		change_variable = {
+		# 			which = GE_Cancel_Trade_Deal_Total
+		# 			value = 5
+		# 		}
+		# 	}
+		# 	change_variable = {
+		# 		which = GE_Cancel_Trade_Deal_Total
+		# 		which = GE_Cancel_Trade_Deal_DipRep
+		# 	}
+		# 	change_variable = {
+		# 		which = GE_Cancel_Trade_Deal_Total
+		# 		which = GE_Cancel_Trade_Deal_Opinion
+		# 	}
+		# 	NOT = { #under 20 = cancel
+		# 		check_variable = {
+		# 			which = GE_Cancel_Trade_Deal_Total
+		# 			value = 20
+		# 		}
+		# 	}
+		# }
 	}
 }
