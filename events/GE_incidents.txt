@@ -1,0 +1,26 @@
+namespace = GE_incidents
+
+country_event = {
+	id = GE_incidents.1
+	title = GE_incidents.1.t
+	desc = GE_incidents.1.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+	option = {
+		name = GE_incidents.1.a
+		set_country_flag = GE_incidents_1_stole_wife
+	}
+	option = {
+		name = GE_incidents.1.b
+		set_country_flag = GE_incidents_1_returned_wife
+	}
+	option = {
+		name = GE_incidents.1.c
+		set_country_flag = GE_incidents_1_killed_wife
+	}
+}

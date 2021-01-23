@@ -1,0 +1,11 @@
+﻿l_english:
+ 
+ GE_incidents.1.t: "The Farmer's Wife"
+ GE_incidents.1.d: "A local dispute between a man and his wife has ended with the wife returning home to her family and the man demanding justice be done."
+ GE_incidents.1.a: "Shes kinda cute."
+ GE_incidents.1.b: "Return her."
+ GE_incidents.1.c: "Begone THOT."
+ 
+ estate_nobles_farmers_wife: "Farmer's Wife"
+ estate_nobles_farmers_wife_desc: "A local dispute between a man and his wife has ended with the wife returning home to her family and the man demanding justice be done."
+ GE_incidents.1.TT:0 "Depending on your choice you may gain a wife, loyalty or unrest."
