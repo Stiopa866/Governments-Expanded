@@ -15199,68 +15199,67 @@ country_event = {
 	option = {
 		name = reform_me_events.226.a
 		set_country_flag = GE_burgher_autonomy_AI
-			if = {
-				limit = { 
-					calc_true_if = {
-						all_owned_province = {
-							#is_state = yes
-							has_urban_goods = yes
-						}
-						amount = 5
+		if = {
+			limit = { 
+				calc_true_if = {
+					all_owned_province = {
+						#is_state = yes
+						has_urban_goods = yes
+					}
+					amount = 5
+				}
+			}
+			custom_tooltip = GE_burgher_autonomy_event
+				tooltip = {
+					add_base_production = 1
+					add_province_modifier = {
+						name = GE_Burgher_Autonomy
+						duration = 9125
 					}
 				}
-				custom_tooltip = GE_burgher_autonomy_event
-					tooltip = {
+			hidden_effect = {
+				set_variable = {
+					which = GE_burgher_counter
+					value = 5
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = GE_burgher_counter
+							value = 1
+						}
+					}
+					change_variable = {
+						which = GE_burgher_counter
+						value = -1
+					}
+					random_owned_province = {
+						limit = {
+							#is_state = yes
+							has_urban_goods = yes
+							NOT = {
+								has_province_modifier = GE_Burgher_Autonomy
+							}
+						}
 						add_base_production = 1
 						add_province_modifier = {
 							name = GE_Burgher_Autonomy
 							duration = 9125
 						}
 					}
-				hidden_effect = {
-					set_variable = {
-						which = GE_burgher_counter
-						value = 5
-					}
-					while = {
-						limit = {
-							check_variable = {
-								which = GE_burgher_counter
-								value = 1
-							}
-						}
-						change_variable = {
-							which = GE_burgher_counter
-							value = -1
-						}
-						random_owned_province = {
-							limit = {
-								#is_state = yes
-								has_urban_goods = yes
-								NOT = {
-									has_province_modifier = GE_Burgher_Autonomy
-								}
-							}
-							add_base_production = 1
-							add_province_modifier = {
-								name = GE_Burgher_Autonomy
-								duration = 9125
-							}
-						}
-					}
 				}
 			}
-			else = {
-				every_owned_province = {
-					limit = {
-						#is_state = yes
-						has_urban_goods = yes
-					}
-					add_base_production = 1
-					add_province_modifier = {
-						name = GE_Burgher_Autonomy
-						duration = 9125
-					}
+		}
+		else = {
+			every_owned_province = {
+				limit = {
+					#is_state = yes
+					has_urban_goods = yes
+				}
+				add_base_production = 1
+				add_province_modifier = {
+					name = GE_Burgher_Autonomy
+					duration = 9125
 				}
 			}
 		}

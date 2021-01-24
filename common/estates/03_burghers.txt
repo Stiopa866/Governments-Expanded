@@ -290,6 +290,8 @@ estate_burghers =
 		estate_burghers_protect_against_piracy
 		estate_burghers_hire_advisor
 		estate_burghers_fire_advisor
+		#IE
+		estate_burghers_workshops_investments
 	}
 
 	influence_from_dev_modifier = 1.0
