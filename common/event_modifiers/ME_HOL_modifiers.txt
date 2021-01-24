@@ -34,3 +34,7 @@ ME_HOL_Mother_Of_All_Trade_modifier = {
 ME_HOL_Treaty_Of_Copenhagen = {
 	privateer_efficiency = -1
 }
+ME_HOL_hook_preparations = {
+	land_forcelimit_modifier = 0.25
+	diplomatic_reputation = 1
+}

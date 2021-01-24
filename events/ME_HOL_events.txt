@@ -230,3 +230,105 @@ country_event = {
 		ai_chance = { factor = 50 }
 	}
 }
+
+#Cod Appeal
+country_event = {
+	id = ME_HOL_events.7
+	title = ME_HOL_events.7.t
+	desc = ME_HOL_events.7.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_HOL_events.7.a 
+		country_event = {
+			id = ME_HOL_events.10
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = ME_HOL_events.7.b
+		add_stability = 1
+		ai_chance = { factor = 50 }
+	}
+}
+
+#Hook Preparations
+country_event = {
+	id = ME_HOL_events.8
+	title = ME_HOL_events.8.t
+	desc = ME_HOL_events.8.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_HOL_events.8.a 
+		add_country_modifier = {
+			name = ME_HOL_hook_preparations
+			duration = 9125
+		}
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = ME_HOL_events.8.b
+		add_stability = 1
+		ai_chance = { factor = 50 }
+	}
+}
+
+#Pick Your Hook or Cod
+country_event = {
+	id = ME_HOL_events.9
+	title = ME_HOL_events.9.t
+	desc = ME_HOL_events.9.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_HOL_events.9.a 
+		country_event = {
+			id = ME_HOL_events.7
+		}
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = ME_HOL_events.9.b
+		country_event = {
+			id = ME_HOL_events.8
+		}
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = ME_HOL_events.10
+	title = ME_HOL_events.10.t
+	desc = ME_HOL_events.10.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_HOL_events.10.a 
+		if = {
+			limit = {
+				91 = {
+					owned_by = BUR
+				}
+			}
+			91 = {
+				add_core = HOL
+				cede_province = HOL
+			}
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = ME_HOL_events.10.b
+		add_stability = 1
+		ai_chance = { factor = 0 }
+	}
+}

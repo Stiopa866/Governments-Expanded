@@ -1,3 +1,171 @@
+ME_HOL_slot_1_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		always = yes
+	}
+	potential = {
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		OR = {
+			tag = HOL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ME_HOL_Bishop_Of_Utrecht = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Hook_And_Cod_Legacy }
+		position = 2
+		completed_by = 1460.1.1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			reverse_has_opinion = {
+				who = PAP
+				value = 100
+			}
+			papal_influence = 50
+		}
+		effect = {
+			#ROOT = {
+				UTR = {
+					define_ruler = {
+						dynasty = ROOT
+						culture = ROOT
+						religion = ROOT
+					}
+				}
+			#}
+		}
+	}
+
+	ME_HOL_Alignment_Of_Utrecht = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Bishop_Of_Utrecht }
+		position = 2
+		completed_by = 1460.1.1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				UTR = {
+					dynasty = HOL
+				}
+				98 = {
+					OR = {
+						owned_by = HOL
+						owner = {
+							is_subject_of = HOL
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			vassalize = UTR
+		}
+	}
+}
+
+ME_HOL_slot_2_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		always = yes
+	}
+	potential = {
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		OR = {
+			tag = HOL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ME_HOL_Hook_And_Cod_Legacy = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { }
+		position = 1
+		completed_by = 1460.1.1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				reverse_has_opinion = {
+					who = BUR
+					value = 150
+				}
+				army_size_percentage = 1
+			}
+		}
+		effect = {
+			custom_tooltip = ME_HOL_Hook_And_Cod_TT_1
+			tooltip = {
+				country_event = {
+					id = ME_HOL_events.7
+				}
+			}
+			custom_tooltip = ME_HOL_Hook_And_Cod_TT_2
+			tooltip = {
+				country_event = {
+					id = ME_HOL_events.8
+				}
+			}
+			custom_tooltip = ME_HOL_Hook_And_Cod_TT_3
+			tooltip = {
+				country_event = {
+					id = ME_HOL_events.9
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						army_size_percentage = 1
+						NOT = {
+							reverse_has_opinion = {
+								who = BUR
+								value = 150
+							}
+						}
+					}
+					country_event = {
+						id = ME_HOL_events.7
+					}
+				}
+				if = {
+					limit = {
+						army_size_percentage = 1
+						NOT = {
+							reverse_has_opinion = {
+								who = BUR
+								value = 150
+							}
+						}
+					}
+					country_event = {
+						id = ME_HOL_events.8
+					}
+				}
+				else_if = {
+					limit = {
+						army_size_percentage = 1
+						reverse_has_opinion = {
+							who = BUR
+							value = 150
+						}
+					}
+					country_event = {
+						id = ME_HOL_events.9
+					}
+				}
+			}
+		}
+	}
+}
+
 ME_HOL_slot_3_branch = {
 	slot = 3
 	generic = no
@@ -98,13 +266,11 @@ ME_HOL_slot_4_branch = {
 		required_missions = { }
 		position = 1
 		completed_by = 1460.1.1
-		
 		provinces_to_highlight = {
 			owner = {
 				tag = BUR
 			}
 		}
-		
 		trigger = {
 			OR = {
 				reverse_has_opinion = {
@@ -114,7 +280,6 @@ ME_HOL_slot_4_branch = {
 				navy_size_percentage = 1
 			}
 		}
-		
 		effect = {
 			if = {
 				limit = {

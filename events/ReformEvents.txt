@@ -15264,7 +15264,6 @@ country_event = {
 			}
 		}
 	}
-	
 	option = {
 		name = reform_me_events.226.b
 		remove_estate_privilege = estate_burghers_burgher_autonomy

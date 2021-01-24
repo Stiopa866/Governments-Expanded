@@ -1,5 +1,29 @@
 ﻿l_english:
 
+ ME_HOL_Bishop_Of_Utrecht_title: "Bishopric of Utrecht"
+ ME_HOL_Bishop_Of_Utrecht_desc: "The bishops of Utrecht have long been a thorn in our side, and have sided against us in many wars throughout our history. Following the Burgundian incursion into the low counties, they have even been bought and replaced with the very bastards of Burgundy. Let us return the favor and attempt to unseat this least holy of states."
+
+ ME_HOL_Alignment_Of_Utrecht_title: "Alignment of Utrecht"
+ ME_HOL_Alignment_Of_Utrecht_desc: "The bishops of Utrecht have long been a thorn in our side, and have sided against us in many wars throughout our history. Following the Burgundian incursion into the low counties, they have even been bought and replaced with the very bastards of Burgundy. Let us return the favor and attempt to unseat this least holy of states."
+ 
+ ME_HOL_Hook_And_Cod_Legacy_title: "Hook and Cod Legacy"
+ ME_HOL_Hook_And_Cod_Legacy_desc: "Following the Hook and Cod wars in the county of holland, the burgundians were able to seize control of our county. Yet the unrest has not been fully quelled, and Cod nobles and Hook cities are still not quite content with the burgundian overlordship. By fueling one of these factions we can spur them into action and attempt to use them to our advantage"
+ ME_HOL_Hook_And_Cod_TT_1: "If you have 100% of your land force limit:"
+ ME_HOL_Hook_And_Cod_TT_2: "If Burgundy has over 150 opinion of you:"
+ ME_HOL_Hook_And_Cod_TT_3: "If both triggers are met:"
+
+
+
+
+
+
+
+
+
+
+
+
+
  ME_HOL_Hanseatic_Wars_title: "Hanseatic Wars"
  ME_HOL_Hanseatic_Wars_desc: "The Hansa has attempted to block our expansion into their trade routes and have placed an embargo on us. By raiding their shipping lanes and attacking their outposts we can weaken them and force them to end the embargo and allow us to trade in these rich waters."
  
@@ -65,3 +89,23 @@
  ME_HOL_events.6.a: "Pocket the reparations"
  ME_HOL_events.6.b: "Very Well"
  ME_HOL_Treaty_Of_Copenhagen: "Treaty of Copenhagen"
+
+ ME_HOL_events.7.t: "The Cod Appeal"
+ ME_HOL_events.7.d: "With the Burgundian lordship over the county of holland, it is only right that he restores the county of holland to its former glory and reunite us with our cousins in Hainout. After all, many of our lords have holdings in these lands, and we should remind the Duke of the fact that is was the Cod invitiation that led to his lordship over our lands!"
+ ME_HOL_events.7.a: "Demand the restoration of Hainaut"
+ ME_HOL_events.7.b: "Respect Burgundian lordship"
+
+ ME_HOL_events.8.t: "The Hook Demands"
+ ME_HOL_events.8.d: "The Burgundians came and defeated our armies, abused our countess, stole her lands and razed our cities. Followed by the entrenchment of the Cod lords as our privileged lieges, This is unacceptable and will not stand!, we should rise up and demand our independence from this expansionist tyrant!"
+ ME_HOL_events.8.a: "Prepare for another uprising!"
+ ME_HOL_events.8.b: "We will bide our time"
+
+ ME_HOL_events.9.t: "Hook or Cods"
+ ME_HOL_events.9.d: "WIP pick one"
+ ME_HOL_events.9.a: "Cods"
+ ME_HOL_events.9.b: "Hooks"
+
+ ME_HOL_events.10.t: "The Cod Appeal"
+ ME_HOL_events.10.d: "The lords of Holland have send us an appeal, they wish for Haunaut to be restored to the County of Holland, as a reward for their support during the Hook and Cod wars that granted us control over these lands."
+ ME_HOL_events.10.a: "Very Well" 
+ ME_HOL_events.10.b: "They are united in my person are they not?"
