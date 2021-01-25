@@ -27,17 +27,14 @@ ME_HOL_slot_1_branch = {
 				value = 100
 			}
 			papal_influence = 50
+			UTR = {
+				religion = ROOT
+			}
 		}
 		effect = {
-			#ROOT = {
-				UTR = {
-					define_ruler = {
-						dynasty = ROOT
-						culture = ROOT
-						religion = ROOT
-					}
-				}
-			#}
+			country_event = {
+				id = ME_HOL_events.11
+			}
 		}
 	}
 
@@ -64,7 +61,26 @@ ME_HOL_slot_1_branch = {
 			}
 		}
 		effect = {
-			vassalize = UTR
+			if = {
+				limit = {
+					98 = {
+						OR = {
+							owned_by = HOL
+							owner = {
+								is_subject_of = HOL
+							}
+						}
+					}
+				}
+				98 = {
+					add_core = ROOT
+				}
+			}
+			else = {
+				country_event = {
+					id = ME_HOL_events.13
+				}
+			}
 		}
 	}
 }
@@ -164,6 +180,222 @@ ME_HOL_slot_2_branch = {
 			}
 		}
 	}
+
+	ME_HOL_Unite_The_Low_Counties = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Hook_And_Cod_Legacy }
+		position = 2
+		completed_by = 1480.1.1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 3
+				ROOT = {
+					OR = {
+						advisor = statesman
+						advisor = diplomat
+					}
+					OR = {
+						advisor = army_reformer
+						advisor = grand_captain
+					}
+					years_of_income = 2.5
+					manpower_percentage = 0.75
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = ME_HOL_Unite_The_Low_Counties_TT_1
+			tooltip = {
+				add_country_modifier = {
+					name = ME_HOL_diplomatic_approach
+					duration = 3650
+				}
+			}
+			custom_tooltip = ME_HOL_Unite_The_Low_Counties_TT_2
+			tooltip = {
+				add_country_modifier = {
+					name = ME_HOL_military_approach
+					duration = 3650
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							advisor = statesman
+							advisor = diplomat
+						}
+						years_of_income = 2.5
+					}
+					add_country_modifier = {
+						name = ME_HOL_diplomatic_approach
+						duration = 9125
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							advisor = army_reformer
+							advisor = grand_captain
+						}
+						manpower_percentage = 0.75
+					}
+					add_country_modifier = {
+						name = ME_HOL_military_approach
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+
+	ME_HOL_County_Of_Flanders = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Unite_The_Low_Counties }
+		position = 3
+		completed_by = 1500.1.1
+		provinces_to_highlight = {
+			area = flanders_area
+		}
+		trigger = {
+			OR = {
+				reverse_has_opinion = {
+					who = FLA
+					value = 150
+				}
+				flanders_area = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = ME_HOL_County_Of_Flanders_TT_1
+			if = {
+				limit = {
+					has_global_flag = governments_expanded_mod_active
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = ME_HOL_GE_County_Of_Flanders
+						duration = 9125
+					}
+				}
+			}
+			else = {
+				custom_tooltip = ME_HOL_County_Of_Flanders_TT_1
+				tooltip = {
+					add_country_modifier = {
+						name = ME_HOL_County_Of_Flanders
+						duration = 9125
+					}
+				}
+			}
+			custom_tooltip = ME_HOL_County_Of_Flanders_TT_2
+			tooltip = {
+				country_event = {
+					id = ME_HOL_events.15
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						flanders_area = {
+							type = all
+							owned_by = ROOT
+						}
+						has_global_flag = governments_expanded_mod_active
+					}
+					add_country_modifier = {
+						name = ME_HOL_GE_County_Of_Flanders
+						duration = 9125
+					}
+				}
+				else_if = {
+					limit = {
+						flanders_area = {
+							type = all
+							owned_by = ROOT
+						}
+						has_country_flag = governments_expanded_mod_active
+					}
+					add_country_modifier = {
+						name = ME_HOL_County_Of_Flanders
+						duration = 9125
+					}
+				}
+				else_if = {
+					limit = {
+						reverse_has_opinion = {
+							who = FLA
+							value = 150
+						}
+					}
+					country_event = {
+						id = ME_HOL_events.15
+					}
+				}
+			}
+		}
+	}
+
+	ME_HOL_Dutch_Independence = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_County_Of_Flanders }
+		position = 3
+		completed_by = 1500.1.1
+		provinces_to_highlight = {
+			owned_by = BUR
+		}
+		trigger = {
+			OR = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = BUR
+					casus_belli = cb_independence_war
+				}
+				NOT = {
+					exists = BUR
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = BUR
+				}
+				BUR = {
+					every_rival_country = { 
+						country_event = {
+							id = ME_HOL_events.19
+						}
+					}
+				}
+				GEL = {
+					country_event = {
+						id = ME_HOL_events.19
+					}
+				}
+				LIE = {
+					country_event = {
+						id = ME_HOL_events.19
+					}
+				}
+				hidden_effect = {
+					country_event = {
+						id = ME_HOL_events.21
+						days = 50
+						random = 15
+					}
+				}
+			}
+			else = {
+				add_prestige = 10
+			}
+		}
+	}
 }
 
 ME_HOL_slot_3_branch = {
@@ -240,6 +472,79 @@ ME_HOL_slot_3_branch = {
 			}
 			else = {
 				add_prestige = 10
+			}
+		}
+	}
+	ME_HOL_Duchy_Of_Brabant = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Unite_The_Low_Counties }
+		position = 3
+		completed_by = 1500.1.1
+		provinces_to_highlight = {
+			area = north_brabant_area
+			area = brabant_area
+		}
+		trigger = {
+			OR = {
+				reverse_has_opinion = {
+					who = BRB
+					value = 150
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					OR = {
+						area = north_brabant_area
+						area = brabant_area
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = ME_HOL_Duchy_Of_Brabant_TT_1
+			if = {
+				limit = {
+					has_global_flag = governments_expanded_mod_active
+				}
+				tooltip = {
+					lorraine_area = {
+						type = all
+						add_claim = ROOT
+					}
+				}
+			}
+			custom_tooltip = ME_HOL_Duchy_Of_Brabant_TT_2
+			tooltip = {
+				country_event = {
+					id = ME_HOL_events.17
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 3
+							OR = {
+								area = north_brabant_area
+								area = brabant_area
+							}
+						}
+					}
+					lorraine_area = {
+						type = all
+						add_claim = ROOT
+					}
+				}
+				else_if = {
+					limit = {
+						reverse_has_opinion = {
+							who = BRB
+							value = 150
+						}
+					}
+					country_event = {
+						id = ME_HOL_events.17
+					}
+				}
 			}
 		}
 	}

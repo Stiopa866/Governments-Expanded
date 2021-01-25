@@ -1229,7 +1229,7 @@
  mechanic_enables_office_of_chancellor_yes: "Office of Chancellor: Enables you to appoint a chancellor from among the Burgher Estate, granting you §G+1§! monthly monarch power while the Burghers have over §G60%§! Loyalty."
  mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir from amongst your extended family."
  mechanic_enables_disputed_heir_yes: "Disputed Succession: Causes your heir to face challenges while being groomed for the throne."
-
+ mechanic_enables_elite_regiments_yes: "Elite Guards: Unlocks the 'Elite Guards' Privilege, granting access to §YElite Regiments§!, which have more discipline."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
@@ -1318,6 +1318,8 @@
  estate_nobles_berber_guides: "Berber Autonomy"
  estate_nobles_berber_guides_desc: "By granting the Berber tribes autonomy we can ensure they will not raid our armies supply caravans and serve as scouts."
  GE_Berber_Guides: "§G-15%§! Land Attrition while over §Y60§! Noble Loyalty."
+ estate_nobles_elite_guards: "Elite Guards"
+ estate_nobles_elite_guards_desc: "By establishing a Elite Guard of troops loyal to the king, we can ensure that their training and loyalty is without doubt!"
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
@@ -1745,5 +1747,13 @@
  
  
  AVAILABLE_BECAUSE_OF_TAG_NED: "Available due to being the §YNetherlands§ ."
+
+ RAJPUT_REGIMENT:0 "Elite Regiment\n$EFFECT$"
+ ONLY_RAJPUT_MODIFIER:0 "§YAffects only Elite Regiments§!"
+ enables_rajput_regiments:0 "Elite Regiments"
+ RAJPUT_FORCELIMIT:0 "We can recruit up $VAL|%Y$ of our force-limit as §GElites§! of $FL$ due to:\n"
+ REGCAT_rajput:0 "Elite"
+ RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Elites"
+
 
  theocratic_idea_groups_expanded: "Theocratic Ideas"

@@ -2945,6 +2945,13 @@ estate_rajput_rajput_regiments = {
 		has_rajput_privilege_space = yes
 	}
 	on_granted = {
+		add_country_modifier = {
+			name = GE_rajput_regiments
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = GE_rajput_regiments
 	}
 	modifier_by_land_ownership = {
 		special_unit_forcelimit = 0.5
@@ -2952,7 +2959,7 @@ estate_rajput_rajput_regiments = {
 	penalties = {
 	}
 	benefits = {
-
+		infantry_cost = -0.10
 	}
 	mechanics = {
 		enables_rajput_regiments

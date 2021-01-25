@@ -255,8 +255,20 @@ estate_ghulams_military_corps = {
 	}
 	benefits = {
 	}
+	on_granted = {
+		add_country_modifier = {
+			name = GE_ghulam_regiments
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = GE_ghulam_regiments
+	}
 	modifier_by_land_ownership = {
-		fire_damage = 0.20
+		special_unit_forcelimit = 0.5
+	}
+	mechanics = {
+		enables_rajput_regiments
 	}
 	ai_will_do = {
 		factor = 10
@@ -1165,7 +1177,45 @@ estate_nobles_berber_guides = {
 	}
 }
 
-
+estate_nobles_elite_guards = {
+	icon = privilege_promote_purbias
+	max_absolutism = -5
+	loyalty = 0.00
+	influence = 0.05
+	can_select = {
+		has_nobles_privilege_space = yes
+	}
+	is_valid = {
+		has_government_attribute = enables_elite_regiments
+	}
+	can_select = {
+		has_government_attribute = enables_elite_regiments
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.10
+		nobles_influence_modifier = -0.10
+	}
+	benefits = {
+		special_unit_forcelimit = 0.10
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = GE_guards_regiments
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = GE_guards_regiments
+	}
+	modifier_by_land_ownership = {
+	}
+	mechanics = {
+		enables_rajput_regiments
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
 
 
 
