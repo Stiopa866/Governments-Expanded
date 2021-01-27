@@ -54,3 +54,7 @@ ME_HOL_GE_County_Of_Flanders = {
 ME_HOL_County_Of_Flanders = {
 	global_trade_goods_size_modifier = 0.1
 }
+ME_HOL_Early_Netherlandish_Painting = {
+	prestige = 0.5
+	idea_cost = -0.05
+}

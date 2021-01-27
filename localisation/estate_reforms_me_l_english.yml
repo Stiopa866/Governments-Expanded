@@ -758,7 +758,7 @@
  absolutist_administration_reform: "Absolutist Administration"
  absolutist_administration_reform_desc: "When the Hongwu Emperor was alive, he hoped to create a stable society with submissive subjects. Such an Empire needs to be led by a strong and benevolent son, not a group of literati."
  permanent_regency_reform: "Permanent Regency"
- permanent_regency_reform_desc: "Taoism believes that great monarch rules by well by doing nothing. To do so, he must retreat behind the scenes and hand over political affairs to the First and Second cabinets, as well as civil literary scholars who are not only capable in confucian classic, but also ambitious."
+ permanent_regency_reform_desc: "Taoism believes that a great monarch rules well by doing nothing. To do so, he must retreat behind the scenes and hand over political affairs to the First and Second cabinets, as well as civil literary scholars who are not only capable in confucian classic, but also ambitious."
  
  sharifate_reform: "Sharifate"
  sharifate_reform_desc: "Akin to European feudal nobility, Ashraf were essentially wealthy, hereditary landowners, but differed in their methods of rule. Sharifates were highly centralized around religious centers such as Mecca or Medina, and thus ruled with a heavy dependency on theological principles, with heavy emphasis on Islamic law and punishment."
@@ -1645,7 +1645,7 @@
 
  offer_trade_deal_mining_imports: "Request Mining Imports"
  offer_trade_deal_mining_imports_title: "Request Mining Imports"
- offer_trade_deal_mining_imports_desc: "We can offer [From.GetName] an import trade deal to decrease their Inflation by §G0.05§! monthly and increase their Mining Goods Produced Modifier by §G10%§!."
+ offer_trade_deal_mining_imports_desc: "We can offer [From.GetName] an import trade deal to decrease our Inflation by §G0.05§! monthly and increase their Mining Goods Produced Modifier by §G10%§!."
  offer_trade_deal_mining_imports_dialog: "[Root.GetName] has offered us a trade deal where we will get the opportunity to import mining Goods at a premium, allowing us to gain mining Goods Produced Modifier by §G10%§! while the trade deal lasts."
  offer_trade_deal_mining_imports_tooltip: "By offering trade deals we can increase our and our allies economic productivity!"
 

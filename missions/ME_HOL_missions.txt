@@ -13,7 +13,6 @@ ME_HOL_slot_1_branch = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
 	ME_HOL_Bishop_Of_Utrecht = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Hook_And_Cod_Legacy }
@@ -37,7 +36,6 @@ ME_HOL_slot_1_branch = {
 			}
 		}
 	}
-
 	ME_HOL_Alignment_Of_Utrecht = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Bishop_Of_Utrecht }
@@ -100,7 +98,6 @@ ME_HOL_slot_2_branch = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
 	ME_HOL_Hook_And_Cod_Legacy = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { }
@@ -180,7 +177,6 @@ ME_HOL_slot_2_branch = {
 			}
 		}
 	}
-
 	ME_HOL_Unite_The_Low_Counties = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Hook_And_Cod_Legacy }
@@ -250,7 +246,6 @@ ME_HOL_slot_2_branch = {
 			}
 		}
 	}
-
 	ME_HOL_County_Of_Flanders = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Unite_The_Low_Counties }
@@ -340,7 +335,6 @@ ME_HOL_slot_2_branch = {
 			}
 		}
 	}
-
 	ME_HOL_Dutch_Independence = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_County_Of_Flanders }
@@ -413,7 +407,6 @@ ME_HOL_slot_3_branch = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
 	ME_HOL_Hanseatic_Wars = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Burgundian_Development }
@@ -565,7 +558,6 @@ ME_HOL_slot_4_branch = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
 	ME_HOL_Burgundian_Development = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { }
@@ -617,7 +609,6 @@ ME_HOL_slot_4_branch = {
 			}
 		}
 	}
-
 	ME_HOL_Compete_With_The_Hansa = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Burgundian_Development }
@@ -660,48 +651,6 @@ ME_HOL_slot_4_branch = {
 				days = 30
 			}
 		}
-	}
-}
-
-ME_HOL_slot_5_branch = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential_on_load = {
-		always = yes
-	}
-	potential = {
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		OR = {
-			tag = HOL
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	ME_HOL_Expansion_Of_Amsterdam = {
-		icon = ME_HOL_dutch_ship
-		required_missions = { ME_HOL_Burgundian_Development }
-		position = 2
-		completed_by = 1470.1.1
-		
-		provinces_to_highlight = {
-			id = 97
-		}
-		
-		trigger = {
-			97 = {
-				development = 20
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = ME_HOL_Amsterdam_Merchants
-				duration = 9125
-			}
-		}
-	
 	}
 	ME_HOL_baltic_trade = {
 		icon = ME_HOL_dutch_ship
@@ -810,6 +759,98 @@ ME_HOL_slot_5_branch = {
 					name = ME_HOL_Mother_Of_All_Trade_modifier #10% Provincial Trade and 0.5 NT
 					duration = -1
 				}
+			}
+		}
+	}
+}
+
+ME_HOL_slot_5_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		always = yes
+	}
+	potential = {
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		OR = {
+			tag = HOL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ME_HOL_Expansion_Of_Amsterdam = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Burgundian_Development }
+		position = 2
+		completed_by = 1470.1.1
+		
+		provinces_to_highlight = {
+			id = 97
+		}
+		
+		trigger = {
+			97 = {
+				development = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = ME_HOL_Amsterdam_Merchants
+				duration = 9125
+			}
+		}
+	
+	}
+	ME_HOL_Embrace_The_Renaissance = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Expansion_Of_Amsterdam  }
+		position = 3
+		completed_by = 1470.1.1
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			capital_scope = {
+				renaissance = 50
+				has_building = marketplace
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_next_institution_embracement = 50
+			}
+			define_advisor = {
+				type = artist
+				name = "Hieronymus Bosch"
+				skill = 2
+				culture = dutch
+				religion = catholic
+				cost_multiplier = 0.50
+			}
+		}
+	}
+	ME_HOL_Dutch_Renaissance = {
+		icon = ME_HOL_dutch_ship
+		required_missions = { ME_HOL_Embrace_The_Renaissance ME_HOL_Mother_Of_All_Trade }
+		position = 3
+		completed_by = 1470.1.1
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			has_institution = renaissance
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = ME_HOL_Early_Netherlandish_Painting
+				duration = 36500
 			}
 		}
 	}
