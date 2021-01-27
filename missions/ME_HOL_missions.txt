@@ -347,7 +347,7 @@ ME_HOL_slot_2_branch = {
 			OR = {
 				is_in_war = {
 					attacker_leader = ROOT
-					defender_leader = BUR
+					#defender_leader = BUR
 					casus_belli = cb_independence_war
 				}
 				NOT = {
@@ -806,7 +806,7 @@ ME_HOL_slot_5_branch = {
 	}
 	ME_HOL_Embrace_The_Renaissance = {
 		icon = ME_HOL_dutch_ship
-		required_missions = { ME_HOL_Expansion_Of_Amsterdam  }
+		required_missions = { } #{ ME_HOL_Expansion_Of_Amsterdam  }
 		position = 3
 		completed_by = 1470.1.1
 		
@@ -837,7 +837,7 @@ ME_HOL_slot_5_branch = {
 	ME_HOL_Dutch_Renaissance = {
 		icon = ME_HOL_dutch_ship
 		required_missions = { ME_HOL_Embrace_The_Renaissance ME_HOL_Mother_Of_All_Trade }
-		position = 3
+		position = 5
 		completed_by = 1470.1.1
 		
 		provinces_to_highlight = {

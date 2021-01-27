@@ -73,6 +73,11 @@
  ME_HOL_Grain_Imports_TT:0 "Have at least 2 trade deals to import rural trade goods."
  ME_HOL_Mother_Of_All_Trade_modifier: "Mother of All Trade"
 
+ ME_HOL_Embrace_The_Renaissance_title: "Embrace the Renaissance"
+
+ ME_HOL_Dutch_Renaissance_title: "Dutch Renaissance"
+ ME_HOL_Early_Netherlandish_Painting: "Early Netherlandish Painting"
+
 ##Events##
  ME_HOL_events.EVTNAME1: "Expedition to Danzig"
  ME_HOL_events.EVTDESC1: "We are finding increasingly harsh resistance the further we get past the öresund and into the baltic, perhaps we should send an expedition to danzig. It is rumored they are among the hanseatic cities that is most discontented with the way Lubeck acts. Perhaps they could be convinced into an alliance or to trade with us?"
