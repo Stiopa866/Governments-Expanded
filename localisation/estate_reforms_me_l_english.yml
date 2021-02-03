@@ -32,7 +32,9 @@
  ancien_regime_reform_desc: "The administration of France has become increasingly corrupt under the current Ancien Régime. It is in the states interest to implement an intendancy system to centralize our realm and to root out the influence of those who are not loyal to the crown."
  guild_dominance_reform: "Dutch Guilds"
  guild_dominance_reform_desc: "The Dutch guilds always had a lot of power, by granting them access to the government through official channels we will be able to let our guilds expand their trade networks into the Hansa or embark on voyages to the orient"
- the_holy_office_reform: "The Holy Office"
+ guild_dominance_reform_upgrade: "United Dutch Guilds"
+ guild_dominance_reform_upgrade_desc: "The Dutch guilds always had a lot of power, by granting them access to the government through official channels we will be able to let our guilds expand their trade networks into the Hansa or embark on voyages to the orient"
+the_holy_office_reform: "The Holy Office"
  the_holy_office_reform_desc: "With the proclamation of the Licet ab initio, the creation of the Supreme Sacred Congregation of the Roman and Universal Inquisition, we shall defend Catholic Doctrine and root out heresy."
  margrave_reform: "Margrave"
  margrave_reform_desc: "The greater exposure of a border province to military invasion mandated that the margrave be provided with military forces and autonomy of action (political as well as military) greater than those accorded other lords of the realm. As a military governor, the margrave's authority often extended over a territory larger than the province proper, because of border expansion subsequent to royal wars."
@@ -907,6 +909,10 @@
  support_ghibbelline_republic_reform_desc: "Italy is a chaotic and disunified region, and we weep seeing the constant bloodshed between squabbling city-states. We must aid the Holy Roman Emperor in reining in, and ultimately bringing peace to Italy. Let us join the Ghibelline faction and help bring order and peace to Italy."
  support_guelphs_republic_reform: "Support Guelphs"
  support_guelphs_republic_reform_desc: "There are those who believe that the Emperor has a higher authority than the pope. This is bordering on heresy, and they must realize the folly of their ways. The Guelph faction seeks to drive out the German "Emperor" from our wonderful Italy, and we will rally our merchants and clergymen in their support."
+ permanent_marathas_council_reform_republic: "Permanent Marathas Council"
+ permanent_marathas_council_reform_republic_desc: "Maratha generals and civic leaders are an important part of the balance of power in our nation. We should formalize their assemblies and establish a permanent council of the Marathas to guide our nation."
+ governmental_purbias_register_reform_republic: "Governmental Purbias Register"
+ governmental_purbias_register_reform_republic_desc: "The state is taking measures to attract elite Rajput warriors from all over India. Steps should be taken to organize these warriors into cohesive regiments upon arrival so that they can be deployed more effectively."
 
  republican_guard_reform_republic: "Republican Guard"
  republican_guard_reform_republic_desc: "If we establish a Republican Guard made up of the most dedicated souls of our populace we can be guarenteed of their fervor in battle, and have this elite corps be readily filled among those inspired by our republic!"
@@ -1229,7 +1235,8 @@
  mechanic_enables_office_of_chancellor_yes: "Office of Chancellor: Enables you to appoint a chancellor from among the Burgher Estate, granting you §G+1§! monthly monarch power while the Burghers have over §G60%§! Loyalty."
  mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir from amongst your extended family."
  mechanic_enables_disputed_heir_yes: "Disputed Succession: Causes your heir to face challenges while being groomed for the throne."
- mechanic_enables_elite_regiments_yes: "Elite Guards: Unlocks the 'Elite Guards' Privilege, granting access to §YElite Regiments§!, which have more discipline."
+ mechanic_enables_elite_regiments_yes: "Elite Guards: Unlocks the 'Elite Guards' Privilege, granting access to §YElite Regiments§!, which have more discipline." 
+ mechanic_enables_baltic_sea_trade_yes: "Baltic Sea Trade: Gain §G+0.25%§! Naval Tradition for each trade deal with a nation within the Baltic trade Node, up to a maximum of 4 trade deals."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

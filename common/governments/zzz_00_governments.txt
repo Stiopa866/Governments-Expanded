@@ -179,6 +179,7 @@ monarchy = {
 				#1.15
 				wattasid_viziers_reform
 				tribal_tribute_reform
+				guild_dominance_reform_upgrade
 			}
 		}
 		bureaucracy = {
@@ -723,8 +724,8 @@ republic = {
 				consolidation_of_power_reform
 				consolidate_power_in_doge_reform
 				consolidate_power_in_cities_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
+				#permanent_marathas_council_reform
+				#governmental_purbias_register_reform
 				lottery_reform
 				council_of_the_indies_reform
 				legislative_assembly_reform
@@ -750,8 +751,8 @@ republic = {
 				tatar_mercenaries_reform
 				south_east_asian_elephants_reform
 				portugese_marines_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
+				permanent_marathas_council_reform_republic
+				governmental_purbias_register_reform_republic
 				foreign_formation_regiments_reform
 				general_war_commissariat_reform
 				gustavan_artillery_reform

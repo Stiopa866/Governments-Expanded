@@ -133,6 +133,8 @@ institutionalized_repbulican_army_reform = {
 	}
 }
 
+
+
 #T5
 federalism_reform = {
 	icon = "protectorate_parliament_reform"
