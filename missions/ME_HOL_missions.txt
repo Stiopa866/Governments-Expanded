@@ -725,7 +725,8 @@ ME_HOL_slot_4_branch = {
 		}
 		
 		trigger = {
-			OR = {
+			calc_true_if = {
+				amount = 2
 				custom_trigger_tooltip = {
 					tooltip = ME_HOL_Grain_Imports_TT
 					check_variable = {
@@ -736,23 +737,27 @@ ME_HOL_slot_4_branch = {
 				1926 = { #Baltic
 					is_strongest_trade_power = ROOT
 				}
+				has_reform = guild_dominance_reform
 			}
 		}
 		
 		effect = {
+			custom_tooltip = ME_HOL_Mother_Of_All_Trade_TT_1
 			if = {
 				limit = {
 					has_global_flag = governments_expanded_mod_active
+					has_reform = guild_dominance_reform
 				}
-				add_government_reform = guild_dominance_reform
+				add_government_reform = guild_dominance_reform_upgrade
 			}
 			else_if = {
 				limit = {
 					has_global_flag = governments_expanded_mod_active
-					has_government_reform = guild_dominance_reform
 				}
-				change_government_reform_progress = 25
-				add_years_of_income = 1
+				add_country_modifier = {
+					name = ME_HOL_Mother_Of_All_Trade_modifier #10% Provincial Trade and 0.5 NT
+					duration = 9125
+				}
 			}
 			else = {
 				add_country_modifier = {

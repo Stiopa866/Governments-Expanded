@@ -71,6 +71,7 @@
  ME_HOL_Mother_Of_All_Trade_title: "Mother of All Trade"
  ME_HOL_Mother_Of_All_Trade_desc: "The 'Mother of all Trade' was the nickname given by the Dutch to the trade with the Baltic seas, and many a veteran sailor made his first journey as a deckhand sailing to the Baltic and coming back with a hold full of grain, wood and tar!"
  ME_HOL_Grain_Imports_TT:0 "Have at least 2 trade deals to import rural trade goods."
+ ME_HOL_Mother_Of_All_Trade_TT_1:0 "If you have the §YDutch Guilds§! reform, Upgrade them to the §YUnited Dutch Guilds§!."
  ME_HOL_Mother_Of_All_Trade_modifier: "Mother of All Trade"
 
  ME_HOL_Embrace_The_Renaissance_title: "Embrace the Renaissance"
@@ -85,7 +86,7 @@
  ME_HOL_events.EVTOPT2: "Sounds like a waste of time and money"
 
  ME_HOL_events_2.t: "A Dutch Expedition"
- ME_HOL_events_2.d: "dhe Dutch have send an expedition to us in regards to an alliance between them and the merchants of Danzig, they believe that by defying the Hanseatic league we can increase our merchantile prospects and sell our raw resources and food at a higher price. They do require us to support their attempts at building ships themselves and to supply them with technology and wood."
+ ME_HOL_events_2.d: "The Dutch have send an expedition to us in regards to an alliance between them and the merchants of Danzig, they believe that by defying the Hanseatic league we can increase our merchantile prospects and sell our raw resources and food at a higher price. They do require us to support their attempts at building ships themselves and to supply them with technology and wood."
  ME_HOL_events_2.a: "Allow Danzig to trade with the Dutch"
  ME_HOL_events_2.b: "Deny the expedition access to Danzig"
 
