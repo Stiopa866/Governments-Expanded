@@ -6,7 +6,8 @@ constitutional_republic_reform = {
 	potential = {
 		OR = {
 			#current_age = age_of_absolutism
-			#current_age = age_of_revolutions
+			#current_age = age_of_revolutions`
+			always = yes
 		}
 	}
 	trigger = {

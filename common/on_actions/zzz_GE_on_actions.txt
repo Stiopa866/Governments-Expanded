@@ -313,7 +313,7 @@ on_monarch_death = {
 		ME_Reform_Events.1
 		ME_Korea_Events.6
         ME_Korea_Events.8
-        
+        reform_me_events.240
 		#GE_electoral_monarchy.1
 	}
 	if = {
