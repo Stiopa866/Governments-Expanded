@@ -1120,9 +1120,17 @@ country_event = {
 	option = {
 		name = order_of_the_swan.22.b
 		
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+		else = {
+			add_prestige = -15
 		}
 	}
 }

@@ -23,7 +23,7 @@
 
 estate_nobles_farmers_wife = {
 	selection_weight = {
-		factor = 1
+		factor = 0
 		modifier = {
 			factor = 1
 			NOT = {
@@ -95,7 +95,7 @@ estate_nobles_farmers_wife = {
 
 estate_nobles_noble_inheritance = {
 	selection_weight = {
-		factor = 1
+		factor = 0
 		modifier = {
 			factor = 1000
 			NOT = {
@@ -191,7 +191,7 @@ estate_nobles_noble_inheritance = {
 
 estate_burghers_workshops_investments = {
 	selection_weight = {
-		factor = 1
+		factor = 0
 		modifier = {
 			factor = 1000
 			NOT = {
