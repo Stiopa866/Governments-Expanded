@@ -6920,7 +6920,7 @@
 			culture_group = germanic
 			check_variable = {
 				which = Noble_Influence
-				value = 4
+				value = 3
 			}
 			NOT = { has_reform = elective_monarchy_reform }
 		}
@@ -6928,7 +6928,7 @@
 			culture_group = germanic
 			check_variable = {
 				which = Noble_Influence
-				value = 4
+				value = 3
 			}
 		}
 		modifiers = {
@@ -6949,7 +6949,7 @@
 		potential = {
 			check_variable = {
 				which = Noble_Influence
-				value = 4
+				value = 3
 			}
 			NOT = { culture_group = germanic }
 			NOT = { has_reform = elective_monarchy_reform }
@@ -6957,7 +6957,7 @@
 		trigger = {
 			check_variable = {
 				which = Noble_Influence
-				value = 4
+				value = 3
 			}
 		}
 		modifiers = {
