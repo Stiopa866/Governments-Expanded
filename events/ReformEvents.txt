@@ -17671,3 +17671,90 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = reform_me_events.240
+	title = reform_me_events.240.t
+	desc = reform_me_events.240.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		has_government_attribute = enables_cultural_supremacy
+		OR = {
+			any_owned_province = {
+				culture = ROOT
+				NOT = { has_province_modifier = GE_cultural_supremacy }
+			}
+			any_owned_province = {
+				NOT = { culture = ROOT }
+				has_province_modifier = GE_cultural_supremacy
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				culture = ROOT
+				NOT = { has_province_modifier = GE_cultural_supremacy }
+            }
+			add_province_modifier = {
+				name = "GE_cultural_supremacy"
+				duration = -1
+				hidden = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { culture = ROOT }
+				has_province_modifier = GE_cultural_supremacy
+            }
+			remove_province_modifier = GE_cultural_supremacy
+		}
+	}
+	
+	option = {
+		name = reform_me_events.240.a
+		
+	}
+}
+
+country_event = {
+	id = reform_me_events.241
+	title = reform_me_events.241.t
+	desc = reform_me_events.241.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+	
+
+	trigger = {
+		NOT = { has_government_attribute = enables_cultural_supremacy }
+		any_owned_province = {
+			has_province_modifier = GE_cultural_supremacy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = GE_cultural_supremacy
+            }
+			remove_province_modifier = GE_cultural_supremacy
+		}
+	}
+	
+	option = {
+		name = reform_me_events.241.a
+		
+	}
+}

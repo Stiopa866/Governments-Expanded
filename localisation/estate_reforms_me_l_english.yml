@@ -1045,6 +1045,15 @@ the_holy_office_reform: "The Holy Office"
  farari_commanders_reform_desc: "Farari, or brave men, were cavalry captains that led a company of cavalry and directed several companies of infantrymen during campaigns and battles. These infantrymen, led by a 'Kele-koun', or war-heads, were freemen equipped by their local custom or by their commander in case of poverty."
  gbara_reform: "Gbara"
  gbara_reform_desc: "The 'Gbara', or Great Assembly, functioned as the deliberative body following the foundation of the Mali empire by Sundiata Keita. With 32 seats for representatives from 29 clans, and spread over four factions. It was a highly diverse and capable advisatory organ."
+ 
+ national_principle_reform: "Nationalist Principle"
+ national_principle_reform_desc: "The guiding principle of our nation should be the preservation of our people and securing a future for our culture in these tumultuous times. A strong army is neccesary to guarentee this!"
+ one_man_one_vote_reform: "One Man One Vote"
+ one_man_one_vote_reform_desc: "Each of our nations inhabitants deserves to have their voices heard, by granting electoral power to every man we can ensure that our nation will remain strong and united behind our leadership!"
+ supreme_court_reform: "Supreme Court"
+ supreme_court_reform_desc: "By establishing a supreme court to oversee our government and hold them to the laws of our nation, we can ensure that the government never becomes tyranical, and that the laws of our nation are upheld. Even in the face of disaster, upheaval or despair."
+ cultural_judges_reform: "Cultural Judges"
+ cultural_judges_reform_desc: "By granting judistical powers to the judges from our capital to spread our law to the borderlands we can ensure that our traditional laws will be accepted across the lands."
 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1263,6 +1272,8 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_foreign_students_yes: "Foreign Students: Gain §G-5%§! Administrative Advisor Cost for each accepted culture, up to a maximum of 5 cultures."
  mechanic_enables_disputed_succession_yes: "Disputed Succession: Spawn pretenders upon the death of your monarch."
  mechanic_enables_disputed_succession_no: "Puts an end to the 'Disputed Succession' pretender uprisings."
+ mechanic_enables_emergency_power_yes: "Emergency Powers; Can empower the ruler with emergency powers, granting him a temporary §G20§! Absolutism bonus for 10 years at the cost of Republican Tradition."
+ mechanic_enables_cultural_supremacy_yes: "Cultural Supremacy: Provinces of your primary culture cost §G-15%§! less Governing Capacity."
 
 
  #Edicts
@@ -1633,6 +1644,8 @@ the_holy_office_reform: "The Holy Office"
  GE_has_been_twenty_years: "Has not Sacrificed in the past 20 years."
  GE_time_to_pray_title: "Lead the nation in Prayer"
  GE_time_to_pray_desc: "To the nation in prayer is sure to bring people away from the darkness and back into Gods light!"
+ GE_emergency_powers_title: "Enact Emergency Powers"
+ GE_emergency_powers_desc: "Let us empower our leader with temporary powers so that he may solve the crisis at hand!"
  
  offer_trade_deal_tunisian_italian: "Offer Trade Deal"
  offer_trade_deal_tunisian_italian_title: "Offer Trade Deal"

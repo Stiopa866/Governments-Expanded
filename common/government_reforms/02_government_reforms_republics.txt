@@ -1184,7 +1184,7 @@ republicanism_reform = {
 		}
 	}
 	modifiers = {
-		republican_tradition = 0.2
+		republican_tradition = 0.25
 	}
 	ai = {
 		factor = 1.5
@@ -1886,6 +1886,9 @@ broaden_executive_powers_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		stability_cost_modifier = -0.15
+	}
+	custom_attributes = {
+		enables_emergency_power = yes
 	}
 	ai = {
 		factor = 1

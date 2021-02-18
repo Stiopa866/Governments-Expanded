@@ -24,6 +24,7 @@ support_borghese_reform = {
 	}
 	modifiers = {
 		republican_tradition = 0.3
+		burghers_influence_modifier = 0.10
 	}
 	ai = {
 		factor = 10

@@ -1224,6 +1224,41 @@ hansa_representatives_reform = {
 
 #T6
 
+supreme_court_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		country_admin_power = 1
+		max_absolutism = -10
+		advisor_pool = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+cultural_judges_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		culture_conversion_cost = -0.15
+		#same_culture_advisor_cost = -0.10
+		global_unrest = 1
+	}
+	custom_attributes = {
+		enables_cultural_supremacy = yes #-15% governing cap cost for primary culture provinces
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 confederation_of_states_reform = {
 	icon = confederation_of_states
 	allow_normal_conversion = yes
@@ -1350,6 +1385,21 @@ empowered_consolidation_of_power_reform = {
 
 #T7
 
+national_principle_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		free_mil_policy = 1
+		possible_mil_policy = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 tolerant_principle_reform = {
 	icon = dutch_tolerance
 	allow_normal_conversion = yes
@@ -1406,13 +1456,12 @@ empowered_principle_of_heritage_reform = {
 		}
 	}
 	modifiers = {
-		possible_mil_policy = 1
-		free_mil_policy = 1
+		noble_privilege_slots = 0.01
 		nobles_loyalty_modifier = 0.05
 	}
-	# custom_attributes = {
-		# enables_knightly_privileges = yes
-	# }
+	custom_attributes = {
+		enables_veteran_general = yes
+	}
 	ai = {
 		factor = 1
 	}
@@ -1476,6 +1525,21 @@ empowered_principle_of_power_reform = {
 
 #T8
 
+one_man_one_vote_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		global_unrest = -1
+		promote_culture_cost = -0.50
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 regents_reform = {
 	icon = regents
 	allow_normal_conversion = yes
@@ -1516,6 +1580,8 @@ peasantry_reform = {
 		factor = 100
 	}
 }
+
+#T9
 
 raadspensionaris_reform = {
 	icon = raadspensionaris

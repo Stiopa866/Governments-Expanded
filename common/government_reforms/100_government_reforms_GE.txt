@@ -5425,7 +5425,7 @@
 		}
 		modifiers = {
 			interest = -0.5
-			#inflation_reduction = 0.05
+			inflation_reduction = 0.05
 			trade_deals_slots = 0.01
 		}
 		# custom_attributes = { 	

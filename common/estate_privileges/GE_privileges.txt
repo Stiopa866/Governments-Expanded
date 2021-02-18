@@ -583,6 +583,7 @@ estate_nobles_noble_officer_privilege = {
 	penalties = {
 	}
 	benefits = {
+		army_tradition_from_battle = 0.5
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
