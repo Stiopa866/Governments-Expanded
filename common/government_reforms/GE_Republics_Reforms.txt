@@ -7,7 +7,7 @@ constitutional_republic_reform = {
 		OR = {
 			#current_age = age_of_absolutism
 			#current_age = age_of_revolutions`
-			always = yes
+			always = no
 		}
 	}
 	trigger = {
