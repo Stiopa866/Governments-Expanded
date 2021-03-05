@@ -171,7 +171,7 @@
 		potential = {
 			OR = {
 				tag = CAS
-				tag = LEO
+				tag = LON
 				has_reform = kingdom_of_castille_and_leon
 			}
 		}
@@ -1549,7 +1549,7 @@
 			OR = {
 				religion = reformed
 				religion = protestant
-				religion = angilican
+				religion = anglican
 				religion = hussite
 			}
 		}
@@ -1557,7 +1557,7 @@
 			OR = {
 				religion = reformed
 				religion = protestant
-				religion = angilican
+				religion = anglican
 				religion = hussite
 			}
 		}
@@ -2692,14 +2692,14 @@
 		potential = {
 			OR = {
 				AND = {
-					religion_group = zoroastrian
+					religion_group = zoroastrian_group
 					culture_group = iranian	
 				}
 			}
 		}
 		trigger = {
 			AND = {
-				religion_group = zoroastrian
+				religion_group = zoroastrian_group
 				culture_group = iranian	
 			}
 		}
@@ -6267,8 +6267,10 @@
 				value = 1
 			}
 			if = {
-				NOT = {
-					has_country_flag = GE_ottonain_handfeste
+				limit = {
+					NOT = {
+						has_country_flag = GE_ottonain_handfeste
+					}
 				}
 				set_country_flag = GE_ottonain_handfeste
 				add_years_of_income = 2.5

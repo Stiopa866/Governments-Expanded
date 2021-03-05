@@ -415,7 +415,10 @@ parisian_court_reform = {
 			primary_culture = cosmopolitan_french
 			has_reform = parisian_court_reform
 		}
-		has_reform = french_feudalism
+		OR = {
+			has_reform = french_feudalism
+			has_reform = ancien_regime_reform
+		}
 	}
 	modifiers = {
 		advisor_pool = 1
