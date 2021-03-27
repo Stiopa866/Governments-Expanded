@@ -5902,10 +5902,13 @@ country_event = {
 		has_government_attribute = enables_no_crown
 		OR = {
 			AND = {
-				NOT = {
-					any_ally = {
-						government = monarchy
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							government = monarchy
+						}
 					}
+					amount = 2
 				}
 				NOT = { has_country_modifier = Recognize_No_Crown }
 			}
@@ -5925,10 +5928,13 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = {
-					any_ally = {
-						government = monarchy
+				calc_true_if = {
+					all_ally = {
+						NOT = {
+							government = monarchy
+						}
 					}
+					amount = 2
 				}
 			}
 			add_country_modifier = {
@@ -17684,11 +17690,11 @@ country_event = {
 		has_government_attribute = enables_cultural_supremacy
 		OR = {
 			any_owned_province = {
-				culture = ROOT
+				culture_group = ROOT
 				NOT = { has_province_modifier = GE_cultural_supremacy }
 			}
 			any_owned_province = {
-				NOT = { culture = ROOT }
+				NOT = { culture_group = ROOT }
 				has_province_modifier = GE_cultural_supremacy
 			}
 		}
@@ -17701,7 +17707,7 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				culture = ROOT
+				culture_group = ROOT
 				NOT = { has_province_modifier = GE_cultural_supremacy }
             }
 			add_province_modifier = {
@@ -17712,7 +17718,7 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { culture = ROOT }
+				NOT = { culture_group = ROOT }
 				has_province_modifier = GE_cultural_supremacy
             }
 			remove_province_modifier = GE_cultural_supremacy
