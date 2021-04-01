@@ -198,6 +198,7 @@ pious_merchants_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_trade_power = 0.05
+		trade_deals_slots = 0.01
 		maratha_muslim_influence_modifier = 0.1
 		rajput_muslim_influence_modifier = 0.1
 		burghers_influence_modifier = 0.1
