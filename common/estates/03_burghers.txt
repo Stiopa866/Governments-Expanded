@@ -250,6 +250,9 @@ estate_burghers =
 		estate_burghers_enforced_interfaith_dialogue
 		estate_burghers_prussian_confederation
 		estate_burghers_statutory_rights
+		estate_burghers_khmer_irrigation
+		estate_burghers_tropical_nation
+		estate_burghers_orang_laut_alliances
 		#GE
 		estate_burghers_town_rights
 		estate_burghers_land_privileges
