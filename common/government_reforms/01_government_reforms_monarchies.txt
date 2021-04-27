@@ -1154,7 +1154,6 @@ confucian_bureaucracy = {
 			primary_culture = vietnamese
 		}
 	}
-	valid_for_nation_designer = yes
 	modifiers = {
 		advisor_cost = -0.1
 	}
@@ -1180,7 +1179,6 @@ sakdina_system_reform = {
 			primary_culture = northern_thai
 		}
 	}
-	valid_for_nation_designer = no
 	modifiers = {
 		stability_cost_modifier = -0.05
 		global_unrest = -2
@@ -1203,7 +1201,6 @@ uparaja_reform = {
 		religion = buddhism
 		technology_group = chinese
 	}
-	valid_for_nation_designer = no
 	modifiers = {
 		monthly_heir_claim_increase = 0.05
 		legitimacy = 0.5
