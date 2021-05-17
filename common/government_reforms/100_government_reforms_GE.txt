@@ -1256,6 +1256,7 @@
 		custom_attributes = {
 			enables_mandala_periphery = yes #15% tax in subjects
 		}
+		free_concentrate_development = yes
 		ai = {
 			factor = 101
 		}
@@ -1288,6 +1289,7 @@
 			enables_blood_tax = yes #5% Manpower Per vassal up to 25% Manpower
 			enables_solar_periphery = yes #Vassals Gain 15% Tax AND 15% Manpower
 		}
+		free_concentrate_development = yes
 		ai = {
 			factor = 102
 		}

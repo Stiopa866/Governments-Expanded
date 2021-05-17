@@ -32,6 +32,8 @@ monarchy = {
 				austrian_archduchy_reform
 				siamese_absolutism
 				confucian_bureaucracy
+				#Special
+				polynesian_kingdom
 				#ME
 				crusader_kingdom
 				khaganate
@@ -1007,6 +1009,8 @@ tribal = {
 				gond_kingdom
 				great_mongol_state_reform
 				stateless_society
+				polynesian_kingdom
+				polynesian_tribe
 				# GE Reforms:
 				eghaevbo_administration_reform
 			}

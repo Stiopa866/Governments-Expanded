@@ -521,7 +521,6 @@ country_decisions = {
 		major = no
 		potential = {
 			was_player = yes
-			always = no
 		}
 		allow = {
 		}
