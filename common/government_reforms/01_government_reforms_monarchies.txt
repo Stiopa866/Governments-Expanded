@@ -243,6 +243,7 @@ daimyo = {
 		NOT = { has_country_flag = formed_japan_flag }
 		overlord = { has_reform = shogunate }
 	}
+	replacement_on_independence_war = indep_daimyo
 	legacy_equivalent = daimyo_legacy
 	fixed_rank = 1
 	maintain_dynasty = yes
@@ -355,7 +356,7 @@ celestial_empire = {
 		church_influence_modifier = -0.1
 		nobles_influence_modifier = -0.1
 		burghers_influence_modifier = -0.1
-		governing_capacity = 300
+		governing_capacity = 470
 	}
 	
 	ai = {
@@ -989,6 +990,10 @@ mandala_reform = {
 			religion = animism
 		}
 		technology_group = chinese
+		OR = {
+			has_dlc = "Leviathan"
+			has_dlc = "Dharma"
+		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -1001,6 +1006,10 @@ mandala_reform = {
 			religion_group = muslim
 		}
 		technology_group = chinese
+		OR = {
+			has_dlc = "Leviathan"
+			has_dlc = "Dharma"
+		}
 	}
 	legacy_equivalent = despotic_monarchy
 	modifiers = {
@@ -1154,6 +1163,7 @@ confucian_bureaucracy = {
 			primary_culture = vietnamese
 		}
 	}
+	valid_for_nation_designer = yes
 	modifiers = {
 		advisor_cost = -0.1
 	}
@@ -1163,7 +1173,7 @@ confucian_bureaucracy = {
 }
 
 sakdina_system_reform = {
-	icon = "warrior_monks_reform" #TODO
+	icon = "sakdina_system_reform"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1179,6 +1189,7 @@ sakdina_system_reform = {
 			primary_culture = northern_thai
 		}
 	}
+	valid_for_nation_designer = no
 	modifiers = {
 		stability_cost_modifier = -0.05
 		global_unrest = -2
@@ -1189,7 +1200,7 @@ sakdina_system_reform = {
 }
 
 uparaja_reform = {
-	icon = "warrior_monks_reform" #TODO
+	icon = "uparaja_reform"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1201,6 +1212,7 @@ uparaja_reform = {
 		religion = buddhism
 		technology_group = chinese
 	}
+	valid_for_nation_designer = no
 	modifiers = {
 		monthly_heir_claim_increase = 0.05
 		legitimacy = 0.5

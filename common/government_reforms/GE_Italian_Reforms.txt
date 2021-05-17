@@ -119,7 +119,7 @@ florentine_republic = {
 			has_dlc = "Mare Nostrum"
 			NOT = { has_dlc = "Res Publica" }
 		}
-		can_form_trade_league = yes
+		#can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
 	conditional = {
@@ -128,13 +128,13 @@ florentine_republic = {
 			has_dlc = "Mare Nostrum"
 		}
 		can_use_trade_post = yes
-		can_form_trade_league = yes
+		#can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		is_merchant_republic = yes
+		#is_merchant_republic = yes
 	}
 }
 mantua_house_of_gonzaga_reform = {

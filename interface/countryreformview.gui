@@ -88,7 +88,7 @@ guiTypes = {
 			clicksound = click
 			text = ""
 		}
-		
+
 		instantTextBoxType = {
 			name = "reform_upgrades_next"
 			position = { x=194 y=270 }
@@ -128,7 +128,7 @@ guiTypes = {
 			maxHeight = 32
 			format = center
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		smoothListboxType = {
@@ -184,6 +184,7 @@ guiTypes = {
 	################################################################################################
 	### --- Select REFORMS interface - Reform level (available reforms + details on current one) ---
 	### --- 1-line Version
+
 	windowType = {
 		name = "gov_view_reform_level_entry_1"
 		backGround=""
@@ -1236,7 +1237,7 @@ guiTypes = {
 			spriteType = "GFX_reform_selected_frame"
 			position = { x=0 y=10 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 	}
 
