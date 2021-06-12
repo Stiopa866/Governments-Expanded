@@ -385,7 +385,12 @@ country_decisions = {
 
     reforms_GE_solar_kingdom_reform = {
 		potential = {
-			has_reform = basic_reformed_mandala_reform
+			government = monarchy
+			OR = {
+                culture_group = burman
+                culture_group = southeastasian_group
+			}
+			NOT = { has_reform = solar_kingdom_reform }
 		}
 		
 		allow = {
