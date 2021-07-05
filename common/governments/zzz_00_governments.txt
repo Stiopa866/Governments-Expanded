@@ -711,7 +711,7 @@ republic = {
 				caucasian_republic
 				common_republic_reform
 				lombardy_venetia_reform
-				#constitutional_republic_reform
+				constitutional_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -741,7 +741,7 @@ republic = {
 				legacy_of_st_ambrose_reform
 				hanseatic_ties_reform
 				archdiocese_of_pisa_reform
-				#republican_virtues_reform
+				republican_virtues_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -819,8 +819,8 @@ republic = {
 				republican_guard_reform_republic
 				crusading_tradition_reform
 				teulie_reform_republic_reform
-				#citizen_soldiers_reform
-				#institutionalized_repbulican_army_reform
+				citizen_soldiers_reform
+				institutionalized_repbulican_army_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -838,8 +838,8 @@ republic = {
 				union_of_italian_states_reform
 				volost_colonies_reform
 				island_republic_reform
-				#federalism_reform
-				#supremacy_constitution_reform
+				federalism_reform
+				supremacy_constitution_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -863,8 +863,8 @@ republic = {
 				council_of_petitions_reform
 				hansa_representatives_reform
 				council_of_lords_reform
-				#primacy_legislature_reform
-				#judicial_review_reform
+				primacy_legislature_reform
+				judicial_review_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -880,8 +880,8 @@ republic = {
 				empowered_aristocratic_courts_reform
 				empowered_sovereign_trade_companies_reform
 				empowered_consolidation_of_power_reform
-				#imperial_executive_branch_power_reform
-				#federal_governorship_reform
+				imperial_executive_branch_power_reform
+				federal_governorship_reform
 			}
 		}
 		guiding_principle_of_administration = {
@@ -898,7 +898,7 @@ republic = {
 				empowered_principle_of_heritage_reform
 				empowered_principle_of_profit_reform
 				empowered_principle_of_power_reform
-				#amendable_constitution_reform
+				amendable_constitution_reform
 			}
 		}
 		electorate = {
@@ -913,8 +913,8 @@ republic = {
 				one_man_one_vote_reform
 				regents_reform
 				peasantry_reform
-				#electoral_college_reform
-				#direct_majority_rule_reform
+				electoral_college_reform
+				direct_majority_rule_reform
 			}
 		}
 		office_selection = {
@@ -926,8 +926,8 @@ republic = {
 				cultural_judges_reform
 				raadspensionaris_reform
 				hansa_universities_reform
-				#vice_presidential_system_reform
-				#legislative_office_selection_reform
+				vice_presidential_system_reform
+				legislative_office_selection_reform
 			}
 		}
 		question_of_dictatorship = {
