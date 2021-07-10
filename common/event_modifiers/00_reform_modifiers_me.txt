@@ -995,14 +995,14 @@ Cortes_Navy = {
 
 #Royal Council
 Bad_Admin = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 Decent_Admin = {
-	development_cost = -0.10
+	development_cost = -0.05
 	adm_advisor_cost = -0.05
 }
 Good_Admin = {
-	development_cost = -0.15
+	development_cost = -0.075
 	adm_advisor_cost = -0.10
 	global_trade_goods_size_modifier = 0.05
 }

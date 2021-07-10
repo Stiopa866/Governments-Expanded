@@ -1054,7 +1054,11 @@ the_holy_office_reform: "The Holy Office"
  supreme_court_reform_desc: "By establishing a supreme court to oversee our government and hold them to the laws of our nation, we can ensure that the government never becomes tyranical, and that the laws of our nation are upheld. Even in the face of disaster, upheaval or despair."
  cultural_judges_reform: "Cultural Judges"
  cultural_judges_reform_desc: "By granting judistical powers to the judges from our capital to spread our law to the borderlands we can ensure that our traditional laws will be accepted across the lands."
-
+ 
+ generic_nobles_priests_reform: "Enshrine Clerical Influence"
+ generic_nobles_priests_reform_desc: "Through the enshrinement of clerical powers in our state we can ensure the support of the clergy where we need it. Furthermore it creates a bond between the royal goal of teaching the peasants to respect us, and the clerical goal of teaching them to respect the divine. This symbiosis will prove to be a fertile soil for the stability and prestige of our realm."
+ 
+ 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."

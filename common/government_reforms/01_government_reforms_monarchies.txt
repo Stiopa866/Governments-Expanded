@@ -726,13 +726,20 @@ feudal_theocracy = {
 				has_reform = feudal_theocracy
 			}
 			AND = {
+				religion = zoroastrian
+				has_reform = feudal_theocracy
+			}
+			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = feudal_theocracy
 			}
 		}
 	}
 	nation_designer_trigger = {
-		religion_group = muslim
+		OR = {
+			religion_group = muslim
+			religion = zoroastrian
+		}
 	}
 	legacy_equivalent = feudal_theocracy_legacy
 	valid_for_nation_designer = yes

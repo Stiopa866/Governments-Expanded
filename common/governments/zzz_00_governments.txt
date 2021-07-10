@@ -190,6 +190,8 @@ monarchy = {
 				#1.16
 				slave_farmer_reform
 				carriers_of_the_quiver_reform
+				#1.17
+				generic_nobles_priests_reform
 			}
 		}
 		bureaucracy = {
