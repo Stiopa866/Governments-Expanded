@@ -1057,7 +1057,8 @@ the_holy_office_reform: "The Holy Office"
  
  generic_nobles_priests_reform: "Enshrine Clerical Influence"
  generic_nobles_priests_reform_desc: "Through the enshrinement of clerical powers in our state we can ensure the support of the clergy where we need it. Furthermore it creates a bond between the royal goal of teaching the peasants to respect us, and the clerical goal of teaching them to respect the divine. This symbiosis will prove to be a fertile soil for the stability and prestige of our realm."
- 
+ inca_mountain_farms: "Terrace Farms"
+ inca_mountain_farms_desc: "The Terrace Farms allow us to survive, and through great effort of our people and state, make a home in these harsh lands!" #WIP
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1256,11 +1257,11 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+1%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occasional mercenary captains from those lands to train your troops." #
  mechanic_enables_iberian_harem_yes: "Iberian Harem: Elect a suitable heir from among your sons."
  mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
- mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
+ #mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
  
  #GE 1.15
  mechanic_enables_burgher_autonomy_yes: "Burgher Autonomy: Unlocks the §YBurgher Autonomy§! Privilege, granting §G+1§! base production and §R+25%§! Minimum Autonomy for §Y25 years§! in each province with an urban trade good. \nThis privilege can be reused every §Y25 years§!."
- mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+10%§!."
+ mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+15%§!."
  mechanic_enables_colonial_plantations_yes: "Colonial Plantations: §G+15%§! Plantation Goods Produced in your colonial subjects."
  mechanic_enables_landsknecht_sergeants_yes: "Landsknecht Sergeants: §G+10%§! Infantry Combat Ability while you employ mercenaries."
  mechanic_enables_foreign_drill_masters_yes: "Foreign Drill Masters: §G+10%§! Drill Gain and §G-4%§! Military Technology Cost for each ally with more development or technology, up to a maximum of 5 allies."
@@ -1279,6 +1280,11 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_emergency_power_yes: "Emergency Powers; Can empower the ruler with emergency powers, granting him a temporary §G20§! Absolutism bonus for 10 years at the cost of Republican Tradition."
  mechanic_enables_cultural_supremacy_yes: "Cultural Supremacy: Provinces of your culture group cost §G-15%§! less Governing Capacity."
 
+ #GE 1.17
+ mechanic_enables_expansion_of_junker_privileges_yes: "Expansion of Junker Privileges: Increased Levies gives §G+5%§! National Manpower Modifier for every §Y20%§! crownland they posses."
+ mechanic_enables_expansion_of_noble_privileges_yes: "Expansion of Noble Privileges: Increased Levies give an additional §G+10%§! National Manpower Modifier and an additional §R-10%§! National Tax Modifier."
+ mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: §G+20%§! Tax in provinces with 10 or more Base Tax."
+ mechanic_enables_immigrant_settlements_yes: "Immigrant Settlements: §G-10%§! Local Development Cost in Provinces with Rural Goods."
 
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"

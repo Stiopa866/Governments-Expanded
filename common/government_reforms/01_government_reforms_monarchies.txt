@@ -1622,7 +1622,7 @@ decentralize_reform = {
 	}
 	modifiers = {
 		num_accepted_cultures = 2
-		governing_capacity_modifier = 0.10
+		governing_capacity_modifier = 0.05
 	}
 	removed_effect = {
 		change_variable = {

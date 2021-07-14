@@ -6,21 +6,21 @@ country_decisions = {
 		}
 		allow = {
 			OR = {
-				has_reform_level = 5
+				has_reform = weak_burghers_reform
 				AND = {
 					monthly_income = 40
 					land_forcelimit = 60
-					NOT = {
-						estate_influence = {
-							estate = estate_nobles
-							influence = 60
-						}
-					}
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 40
-					}
 				}
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 60
+				}
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 40
 			}
 		}
 		effect = {

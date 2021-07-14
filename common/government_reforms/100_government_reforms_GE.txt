@@ -2590,7 +2590,6 @@
 			NOT = { has_reform = polish_constitutionalism_reform }
 		}
 		modifiers = {
-			global_unrest = -1
 			manpower_recovery_speed = 0.10
 			noble_privilege_slots = 0.01
 		}
@@ -4268,8 +4267,8 @@
 			}
 		}
 		modifiers = {
-			unjustified_demands = -0.10
-			global_autonomy = -0.025
+			global_unrest = -1
+			unjustified_demands = -0.25
 		}
 		ai = {
 			factor = 100
@@ -4306,7 +4305,7 @@
 			}
 		}
 		modifiers = {
-			global_autonomy = -0.025
+			#global_autonomy = -0.025
 			yearly_corruption = -0.05
 			nobles_influence_modifier = -0.10
 		}
@@ -4642,8 +4641,8 @@
 			has_reform = polish_constitutionalism_reform
 		}
 		modifiers = {
-			global_autonomy = -0.025
 			governing_capacity = 150
+			nobles_influence_modifier = -0.10
 		}
 		ai = {
 			factor = 101
@@ -5410,6 +5409,45 @@
 			factor = 101
 		}
 	}
+	inca_mountain_farms = {
+		icon = "native_land_tradition_reform"
+		allow_normal_conversion = yes
+		potential = {
+			OR = {
+				culture_group = andean_group
+				has_reform = inca_mountain_farms
+			}
+		}
+		trigger = {
+			OR = {
+				culture_group = andean_group
+				has_reform = inca_mountain_farms
+			}
+		}
+		effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = 1
+			}
+		}
+		modifiers = {
+			global_trade_goods_size_modifier = 0.15
+			state_maintenance_modifier = 0.50
+			build_cost = 0.10
+		}
+		removed_effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = -1
+			}
+		}
+		custom_attributes = {
+			enables_mountain_towns = yes #-25% development cost in hills and mountains
+		}
+		ai = {
+			factor = 100
+		}
+	}
 #}
 #############################
 ###########Tier4#############
@@ -5859,9 +5897,12 @@
 			}
 		}
 		modifiers = {
-			development_cost = -0.05
 			build_cost = -0.10
-			interest = -0.5
+			build_speed = -0.10
+			rural_goods_produced_modifier = 0.20
+		}
+		custom_attributes = {
+			enables_immigrant_settlements = yes
 		}
 		ai = {
 			factor = 100
@@ -5898,8 +5939,11 @@
 			}
 		}
 		modifiers = {
-			governing_capacity = 100
+			#governing_capacity = 100
+			nobles_loyalty_modifier = 0.05
 			nobles_influence_modifier = 0.10
+			church_influence_modifier = 0.05
+			burghers_influence_modifier = 0.05
 		}
 		custom_attributes = {
 			enables_kreditwerk_appointments = yes
@@ -5943,7 +5987,7 @@
 		modifiers = {
 			army_tradition_from_battle = 0.5
 			naval_tradition_from_battle = 0.5
-			governing_capacity = 150
+			governing_capacity_modifier = 0.05
 		}
 		ai = {
 			factor = 100
@@ -6414,6 +6458,7 @@
 		modifiers = {
 			advisor_pool = 1
 			ghulams_influence_modifier = 0.10
+			ghulams_loyalty_modifier = 0.05
 		}
 		removed_effect = {
 			change_variable = {
@@ -7245,7 +7290,7 @@
 		}
 		modifiers = {
 			monthly_support_heir_gain = 0.10
-			global_spy_defence = 0.15
+			global_spy_defence = 0.25
 			same_culture_advisor_cost = -0.1
 		}
 		ai = {
@@ -7524,7 +7569,6 @@
 			}
 		}
 		modifiers = {
-			global_unrest = 1
 			max_absolutism = 5
 			yearly_absolutism = 0.5
 			ghulams_influence_modifier = 0.05
@@ -7876,7 +7920,7 @@
 			}
 		}
 		modifiers = {
-			tolerance_heathen = 1
+			religious_unity = 0.15
 			build_cost = -0.10
 			state_maintenance_modifier = -0.20
 		}
@@ -8212,6 +8256,7 @@
 		}
 		custom_attributes = {
 			enables_marcher_lords = yes #25% vassal force limit and manpower
+			enables_expansion_of_noble_privileges = yes
 		}
 		ai = {
 			factor = 1
@@ -8798,7 +8843,7 @@
 			}
 		}
 		modifiers = {
-			discipline = 0.025
+			yearly_army_professionalism = 0.20
 			drill_gain_modifier = 0.25
 			mil_tech_cost_modifier = -0.05
 		}
@@ -8841,6 +8886,9 @@
 			global_tax_modifier = 0.10
 			global_regiment_cost = -0.05
 			monthly_militarized_society = 0.03
+		}
+		custom_attributes = {
+			enables_expansion_of_junker_privileges = yes
 		}
 		ai = {
 			factor = 100
@@ -9151,7 +9199,7 @@
 				tag = PLC
 				primary_culture = polish 
 			}
-			has_reform = constitution_third_may_reform
+			has_reform = polish_constitutionalism_reform
 		}
 		trigger = {
 			OR = {
@@ -9159,7 +9207,7 @@
 				tag = PLC
 				primary_culture = polish 
 			}
-			has_reform = constitution_third_may_reform
+			has_reform = polish_constitutionalism_reform
 		}
 		modifiers = {
 			reinforce_speed = 0.33

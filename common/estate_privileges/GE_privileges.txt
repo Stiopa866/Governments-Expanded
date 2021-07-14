@@ -161,7 +161,7 @@ estate_peasants_bear_arms = {
 	}
 	can_select = {
 		has_peasants_privilege_space = yes
-		has_government_attribute = enables_bear_arms
+		has_reform = peasant_militia_reform
 	}
 	modifier_by_land_ownership = {
 		infantry_cost = -0.35
@@ -297,6 +297,7 @@ estate_ghulams_governor_positions = {
 		global_autonomy = -0.05
 	}
 	modifier_by_land_ownership = {
+		governing_capacity_modifier = 0.25
 	}
 	ai_will_do = {
 		factor = 10
@@ -325,7 +326,7 @@ estate_ghulams_trade_privileges = {
 		merchants = 1
 	}
 	modifier_by_land_ownership = {
-		trade_efficiency = 0.10
+		trade_efficiency = 0.20
 	}
 	ai_will_do = {
 		factor = 10
@@ -1125,7 +1126,7 @@ estate_nobles_establish_serfdom = {
 		rural_goods_produced_modifier = -0.10
 	}
 	benefits = {
-		governing_capacity_modifier = 0.10
+		governing_capacity_modifier = 0.15
 	}
 	conditional_modifier = {
 	}

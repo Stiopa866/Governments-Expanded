@@ -566,7 +566,6 @@ continental_system_reform = {
 		}
 	}
 	modifiers = {
-		prestige = 0.5
 		embargo_efficiency = 0.25
 		global_prov_trade_power_modifier = 0.15
 		trade_deals_slots = 0.01
