@@ -1222,6 +1222,37 @@ hansa_representatives_reform = {
 	}
 }
 
+confederate_nations_reform = {
+	icon = peasant_republic
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
+	}
+	modifiers = {
+		num_accepted_cultures = 2
+	}
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
+	custom_attributes = {
+		enables_nations_of_the_republic = yes #-10%GC for accepted cultures&+15% tax
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #T6
 
 supreme_court_reform = {
@@ -1381,7 +1412,30 @@ empowered_consolidation_of_power_reform = {
 		factor = 1
 	}
 }
-
+empowered_senate_reform = {
+	icon = judge
+	allow_normal_conversion = yes
+	potential = { 
+		check_variable = {
+			which = Populist_Influence			
+			value = 3
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = Populist_Influence			
+			value = 3
+		}
+	}
+	modifiers = {
+		max_absolutism = -10
+		free_dip_policy = 1
+		yearly_corruption = -0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
 
 #T7
 

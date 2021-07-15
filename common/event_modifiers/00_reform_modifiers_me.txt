@@ -967,6 +967,10 @@ GE_Kreditwork = {
 GE_immigrant_settlements = {
 	local_development_cost = -0.10
 }
+GE_nations_of_the_republic = {
+	local_governing_cost = -0.10
+	local_tax_modifier = 0.15
+}
 
 
 	

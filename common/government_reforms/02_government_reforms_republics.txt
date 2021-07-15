@@ -1215,6 +1215,18 @@ republican_authoritarianism_reform = {
 			NOT = { has_dlc = "Emperor" }
 		}
 	}
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		global_unrest = -1
 		harsh_treatment_cost = -0.10

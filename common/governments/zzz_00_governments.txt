@@ -833,6 +833,7 @@ republic = {
 				provincial_governments_reform
 				administrative_divisions_reform
 				union_of_states_reform
+				confederate_nations_reform
 				penal_colonies_reform
 				advanced_bookkeeping_reform_republic
 				advanced_bookkeeping_reform_republic_venice
@@ -885,6 +886,7 @@ republic = {
 				empowered_aristocratic_courts_reform
 				empowered_sovereign_trade_companies_reform
 				empowered_consolidation_of_power_reform
+				empowered_senate_reform
 				imperial_executive_branch_power_reform
 				federal_governorship_reform
 			}

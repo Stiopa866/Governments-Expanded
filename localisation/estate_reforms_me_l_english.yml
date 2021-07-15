@@ -1059,6 +1059,10 @@ the_holy_office_reform: "The Holy Office"
  generic_nobles_priests_reform_desc: "Through the enshrinement of clerical powers in our state we can ensure the support of the clergy where we need it. Furthermore it creates a bond between the royal goal of teaching the peasants to respect us, and the clerical goal of teaching them to respect the divine. This symbiosis will prove to be a fertile soil for the stability and prestige of our realm."
  inca_mountain_farms: "Terrace Farms"
  inca_mountain_farms_desc: "The Terrace Farms allow us to survive, and through great effort of our people and state, make a home in these harsh lands!" #WIP
+ confederate_nations_reform: "Confederate Nations"
+ confederate_nations_reform_desc: "By recognizing each of the nations in our borders we can rule each according to their own laws and customs."
+ empowered_senate_reform: "Empowered Senate"
+ empowered_senate_reform_desc: "Through the empowerment of the legislature we ensure that our nations laws are written fairly and are beyond corruption or abuse"
  
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1285,7 +1289,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_expansion_of_noble_privileges_yes: "Expansion of Noble Privileges: Increased Levies give an additional §G+10%§! National Manpower Modifier and an additional §R-10%§! National Tax Modifier."
  mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: §G+20%§! Tax in provinces with 10 or more Base Tax."
  mechanic_enables_immigrant_settlements_yes: "Immigrant Settlements: §G-10%§! Local Development Cost in Provinces with Rural Goods."
-
+ mechanic_enables_nations_of_the_republic_yes: "Nations of the Republic: §G-10%§! Governing Cost and §G-15%§! Tax in Provinces with Accepted Cultures."
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
