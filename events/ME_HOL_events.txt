@@ -182,7 +182,7 @@ country_event = {
 				}
 			}
 		}
-		random_country = {
+		every_country = {
 			limit = {
 				45 = { #Lubeck
 					trade_share = {

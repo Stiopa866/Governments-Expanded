@@ -1276,7 +1276,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_tanistry_yes: "Tanistry Elective: Enables you to elect an heir from amongst your extended family."
  mechanic_enables_disputed_heir_yes: "Disputed Succession: Causes your heir to face challenges while being groomed for the throne."
  mechanic_enables_elite_regiments_yes: "Elite Guards: Unlocks the 'Elite Guards' Privilege, granting access to §YElite Regiments§!, which have more discipline." 
- mechanic_enables_baltic_sea_trade_yes: "Baltic Sea Trade: Gain §G+0.25%§! Naval Tradition for each trade deal with a nation within the Baltic trade Node, up to a maximum of 4 trade deals."
+ mechanic_enables_baltic_sea_trade_yes: "Baltic Sea Trade: Gain §G+0.25§! Naval Tradition for each trade deal with a nation within the Baltic trade Node, up to a maximum of 4 trade deals."
  #GE 1.16
  mechanic_enables_foreign_students_yes: "Foreign Students: Gain §G-5%§! Administrative Advisor Cost for each accepted culture, up to a maximum of 5 cultures."
  mechanic_enables_disputed_succession_yes: "Disputed Succession: Spawn pretenders upon the death of your monarch."
