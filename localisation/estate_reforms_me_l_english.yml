@@ -1063,7 +1063,14 @@ the_holy_office_reform: "The Holy Office"
  confederate_nations_reform_desc: "By recognizing each of the nations in our borders we can rule each according to their own laws and customs."
  empowered_senate_reform: "Empowered Senate"
  empowered_senate_reform_desc: "Through the empowerment of the legislature we ensure that our nations laws are written fairly and are beyond corruption or abuse"
- 
+
+ siberian_tribal_confederation_reform: "Siberian Tribal Confederation"
+ siberian_tribal_confederation_reform_desc: "The land we have called home for countless generations is nothing short of a frosted-over wasteland for most foreigners. There are some who know these lands similar to us, but they are few and far between and won't be the ones who come to threaten our lands. The ones who do threaten the Koryak people will find that they are throwing men and materials into an merciless and hopeless campaign against nature itself. Whichever survive the iced-over winter months we will beat back against the backdrop of snow covered forests."
+ snow_life_reform: "Snow Life"
+ snow_life_reform_desc: "Thanks to our efforts to build up not only Koryak communities throughout the massive amounts of taiga and tundra we control, we are seeing Siberian trade flourish all across our state. Whilst we are still in the early days of cultivating proper trade routes through our state (chopping trees and setting down firm roads takes a lot of time and effort), we are already seeing the fruits of our past labor. Soon enough, the Koryak people will be seeing hefty amounts of profit going toward investments in up-and-coming towns."
+ one_on_high_reform: "One on High"
+ one_on_high_reform_desc: "Though our land is vast and open, it is not without its people who are closed off to outsiders, suspicious of how they act and what they might do. In an effort to help open up Evenk society and to encourage acceptance on both sides, we should encourage the view of these lands of ours being a family home of sorts. Welcoming others into it and meeting them halfway in the form of accommodations and spaces to live (since we have so much of it) can be the start of things; helping educate Evenk people on just who exactly is in the Evenk state can be the start of the other side of things."
+
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
  mechanic_enables_moneyloaners_yes:0 "Enable the 'Procure a Loan' Burgher Estate Interaction, Granting a heavily discounted loan."

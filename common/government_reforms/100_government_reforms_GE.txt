@@ -9657,7 +9657,7 @@
 			}
 		}
 		modifiers = {
-			land_forcelimit_modifier = 0.10
+			special_unit_forcelimit = 0.10
 			artillery_cost = -0.10
 			ghulams_influence_modifier = 0.05
 		}

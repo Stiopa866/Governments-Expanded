@@ -1020,6 +1020,7 @@ tribal = {
 				polynesian_tribe
 				# GE Reforms:
 				eghaevbo_administration_reform
+				siberian_tribal_confederation_reform
 			}
 		}
 		tribal_cultural_values = {
@@ -1035,6 +1036,7 @@ tribal = {
 				herders_of_the_steppe
 				legacy_of_pax_mongolia
 				three_jurchen_tribes_reform
+				snow_life_reform
 			}
 		}
 		tribal_religion = {
@@ -1049,6 +1051,7 @@ tribal = {
 				maintain_charade_reform
 				tolerance_of_the_church_reform
 				children_of_osanobua_reform
+				one_on_high_reform
 			}
 		}
 		military_organisation = {

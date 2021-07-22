@@ -578,6 +578,33 @@ eghaevbo_administration_reform = {
 	#-10 Noble Influence
 }
 
+siberian_tribal_confederation_reform = {
+	icon = generic_people
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = evenks
+		}
+		NOT = { primary_culture = manchu}
+	}
+	trigger = {
+		OR = {
+			culture_group = evenks
+		}
+		NOT = { primary_culture = manchu}
+	}
+	modifiers = {
+		land_attrition = -0.15
+		stability_cost_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_siberian_tribe = yes #-25% Development Cost in Glacial provinces
+	}
+	ai = {
+		factor = 100
+	}
+	#-10 Noble Influence
+}
 
 #T2
 
@@ -695,6 +722,31 @@ three_jurchen_tribes_reform = {
 		global_trade_goods_size_modifier = 0.05
 		global_tax_modifier = 0.05
 		land_attrition = -0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+snow_life_reform = {
+	icon = native_seasonal_travel_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = evenks
+		}
+		NOT = { primary_culture = manchu}
+	}
+	trigger = {
+		OR = {
+			culture_group = evenks
+		}
+		NOT = { primary_culture = manchu}
+	}
+	modifiers = {
+		movement_speed = 0.10
+		native_uprising_chance = -0.50
+		rural_goods_produced_modifier = 0.25
 	}
 	ai = {
 		factor = 10
@@ -830,6 +882,36 @@ children_of_osanobua_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+one_on_high_reform = {
+	icon = strength_of_the_khalsa
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = evenks
+		}
+		OR = {
+			religion = tengri_pagan_reformed
+    		religion = animism
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = evenks
+		}
+		OR = {
+			religion = tengri_pagan_reformed
+    		religion = animism
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+		cavalry_shock = 1
+	}
+	ai = {
+		factor = 10
 	}
 }
 
