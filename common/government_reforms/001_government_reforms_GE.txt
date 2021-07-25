@@ -583,13 +583,19 @@ siberian_tribal_confederation_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			culture_group = evenks
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
 	}
 	trigger = {
 		OR = {
-			culture_group = evenks
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
 	}
@@ -733,13 +739,19 @@ snow_life_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			culture_group = evenks
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
 	}
 	trigger = {
 		OR = {
-			culture_group = evenks
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
 		}
 		NOT = { primary_culture = manchu}
 	}
@@ -890,8 +902,12 @@ one_on_high_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			culture_group = evenks
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
 		}
+		NOT = { primary_culture = manchu}
 		OR = {
 			religion = tengri_pagan_reformed
     		religion = animism
@@ -899,8 +915,12 @@ one_on_high_reform = {
 	}
 	trigger = {
 		OR = {
-			culture_group = evenks
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
 		}
+		NOT = { primary_culture = manchu}
 		OR = {
 			religion = tengri_pagan_reformed
     		religion = animism
