@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  french_feudalism: "French Feudalism"
  french_feudalism_desc: "Since the days of Charlemagne, our nation has practiced a loose form of feudalism, a system where nobles reign over vast swathes of land, in return for service as heavy cavalry during times of war."
  french_reformed_feudalism: "French Reformed Feudalism"
@@ -1297,6 +1297,9 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: §G+20%§! Tax in provinces with 10 or more Base Tax."
  mechanic_enables_immigrant_settlements_yes: "Immigrant Settlements: §G-10%§! Local Development Cost in Provinces with Rural Goods."
  mechanic_enables_nations_of_the_republic_yes: "Nations of the Republic: §G-10%§! Governing Cost and §G-15%§! Tax in Provinces with Accepted Cultures."
+
+ #GE Don't Know
+ mechanic_enables_siberian_tribe_yes: "Siberian Tribe: §G-25%§! Development Cost in §YGlacial§! or §YArctic§! owned provinces"
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
