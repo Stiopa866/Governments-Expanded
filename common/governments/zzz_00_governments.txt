@@ -102,6 +102,8 @@ monarchy = {
 				tanistry_reform
 				#1.16
 				kingdom_of_gao_reform
+				#1.18
+				klever_union_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -275,6 +277,8 @@ monarchy = {
 				farba_system_reform
 				#1.17
 				inca_mountain_farms
+				#1.18
+				renaissance_forts_reform
 			}
 		}
 		military_organisation = {
@@ -344,6 +348,8 @@ monarchy = {
 				#1.16
 				slave_soldiers_reform
 				farari_commanders_reform
+				#1.18
+				wacht_am_rhein_reform
 			}
 		}
 		growth_of_administration = {
@@ -407,6 +413,8 @@ monarchy = {
 				italian_merchants_reform
 				#1.16
 				graduates_from_timbuktu_reform
+				#1.18
+				via_media_reform
 			}
 		}
 		deliberative_assembly = {
