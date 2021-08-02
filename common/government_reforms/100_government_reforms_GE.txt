@@ -784,7 +784,7 @@
 			absolutism = 50
 		}
 		modifiers = {
-			yearly_army_professionalism = 0.005
+			yearly_army_professionalism = 0.0025
 			discipline = 0.05
 			mercenary_discipline = -0.10
 			monarch_military_power = 1
@@ -8958,7 +8958,7 @@
 			}
 		}
 		modifiers = {
-			yearly_army_professionalism = 0.20
+			yearly_army_professionalism = 0.0020
 			drill_gain_modifier = 0.25
 			mil_tech_cost_modifier = -0.05
 		}
@@ -10039,7 +10039,7 @@
 		}
 		modifiers = {
 			land_forcelimit_modifier = 0.10
-			fort_maintenance_modifier = -0.10
+			defensiveness = 0.10
 		}
 		custom_attributes = {
 			enables_patriotism = yes #+25% Manpower in primary culture provinces
