@@ -148,6 +148,13 @@ dynastic_theocracy_reform = {
 	heir = yes
 	royal_marriage = yes
 	maintain_dynasty = yes
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = reform_me_events.83
+			}
+		}
+	}
 	modifiers = {
 		devotion = 0.25
 	}
