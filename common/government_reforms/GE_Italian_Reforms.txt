@@ -164,39 +164,29 @@ mantua_house_of_gonzaga_reform = {
 		factor = 100
 	}
 }
-lombardy_venetia_reform = {
-	icon = "signoria_reform"
+kingdom_of_sardinia_reform = {
+	icon = kingdom_of_sardinia
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
 		OR = {
-			OR = {
-				has_country_flag = lvn_without_fe
-				tag = LVN
-			}
-			has_reform = lombardy_venetia_reform
+			primary_culture = sardinian
+			primary_culture = piedmontese
+			has_reform = kingdom_of_sardinia_reform
 		}
 	}
 	trigger = {
+		tag = SPI
 		OR = {
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = GE_FORMED_LVN_WITHOUT_FE
-					has_country_flag = lvn_without_fe
-				}
-				tag = LVN
-			}
-			has_reform = lombardy_venetia_reform
+			primary_culture = sardinian
+			primary_culture = piedmontese
+			has_reform = kingdom_of_sardinia_reform
 		}
 	}
-	custom_attributes = {
-		enables_nepotism = yes
-	}
 	modifiers = {
-		max_absolutism = -30
-		republican_tradition = 0.5
-		army_tradition = 0.15
-		navy_tradition = 0.15
+		max_absolutism = 5
+		state_maintenance_modifier = -0.10
+		primary_development_cost = 0.10
 	}
 	ai = {
 		factor = 100
@@ -403,6 +393,34 @@ rule_by_consent_reform = {
 	}
 }
 
+genoa_merchants_reform = {
+	icon = "merchant"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		NOT = { has_reform = pirate_republic_reform }
+	}
+	trigger = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+	}
+	modifiers = {
+		trade_range_modifier = 0.20
+		envoy_travel_time = -0.15
+	}
+	custom_attributes = {
+		enables_ianuensis_ergo_mercator = yes #10 global settler per every 30% Trade Efficiency
+	}
+	ai = {
+		factor = 100
+	}
+}
+
 #Tier 3
 customs_house_of_apena_sheep_reform = {
 	icon = GE_sheep_2
@@ -594,49 +612,6 @@ mantua_knightly_orders_reform = {
 	}
 	ai = {
 		factor = 100
-	}
-}
-teulie_reform_republic_reform = {
-	icon = "soldiers"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			custom_trigger_tooltip = {
-				tooltip = GE_FORMED_LVN_WITHOUT_FE
-				has_country_flag = lvn_without_fe
-			}
-			OR = {
-				tag = LVN
-				AND = {
-					was_tag = LVN
-					tag = ITA
-				}
-			}
-		}
-	}
-	trigger = {
-		OR = {
-			custom_trigger_tooltip = {
-				tooltip = GE_FORMED_LVN_WITHOUT_FE
-				has_country_flag = lvn_without_fe
-			}
-			OR = {
-				tag = LVN
-				AND = {
-					was_tag = LVN
-				}
-			}
-		}
-	}
-	modifiers = {
-		infantry_cost = -0.10
-		galley_cost = -0.10
-	}
-	custom_attributes = {
-		enables_teulie = yes #+1 land leader manuver and 1 naval leader fire when over 75 RT
-	}
-	ai = {
-		factor = 1
 	}
 }
 

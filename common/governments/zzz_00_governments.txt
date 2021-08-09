@@ -102,6 +102,7 @@ monarchy = {
 				tanistry_reform
 				#1.16
 				kingdom_of_gao_reform
+				kingdom_of_sardinia_reform
 				#1.18
 				klever_union_reform
 			}
@@ -723,7 +724,6 @@ republic = {
 				russian_republic_republic
 				caucasian_republic
 				common_republic_reform
-				lombardy_venetia_reform
 				constitutional_republic_reform
 			}
 		}
@@ -754,6 +754,7 @@ republic = {
 				legacy_of_st_ambrose_reform
 				hanseatic_ties_reform
 				archdiocese_of_pisa_reform
+				genoa_merchants_reform
 				republican_virtues_reform
 			}
 		}
@@ -831,7 +832,6 @@ republic = {
 				almogavars_reform
 				republican_guard_reform_republic
 				crusading_tradition_reform
-				teulie_reform_republic_reform
 				citizen_soldiers_reform
 				institutionalized_repbulican_army_reform
 			}
