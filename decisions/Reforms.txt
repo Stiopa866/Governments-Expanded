@@ -336,7 +336,7 @@ country_decisions = {
 				1357 = { # Moluccas
 					is_strongest_trade_power = ROOT
 				}
-				4358 = { # Philiphines
+				1397 = { # Philiphines
 					is_strongest_trade_power = ROOT
 				}
 				amount = 2
