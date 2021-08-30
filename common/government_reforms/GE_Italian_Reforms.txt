@@ -81,7 +81,6 @@ genoan_republic_reform = {
 		is_merchant_republic = yes
 	}
 }
-
 florentine_republic = {
 	icon = florentine_republic
 	allow_normal_conversion = yes
@@ -144,12 +143,14 @@ mantua_house_of_gonzaga_reform = {
 	potential = {
 		OR = {
 			tag = MAN
+			was_tag = MAN
 			has_reform = mantua_house_of_gonzaga_reform
 		}
 	}
 	trigger = {
 		OR = {
 			tag = MAN
+			was_tag = MAN
 			has_reform = mantua_house_of_gonzaga_reform
 		}
 	}
@@ -400,6 +401,10 @@ genoa_merchants_reform = {
 		OR = {
 			tag = GEN
 			was_tag = GEN
+			AND = {
+				tag = ITA
+				owns_core_province = 101
+			}
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
@@ -407,6 +412,10 @@ genoa_merchants_reform = {
 		OR = {
 			tag = GEN
 			was_tag = GEN
+			AND = {
+				tag = ITA
+				owns_core_province = 101
+			}
 		}
 	}
 	modifiers = {
@@ -593,6 +602,11 @@ mantua_knightly_orders_reform = {
 	potential = {
 		OR = {
 			tag = MAN
+			was_tag = MAN
+			AND = {
+				tag = ITA
+				owns_core_province = 109
+			}
 			has_reform = mantua_knightly_orders_reform
 		}
 	}
@@ -600,6 +614,11 @@ mantua_knightly_orders_reform = {
 		religion = catholic
 		OR = {
 			tag = MAN
+			was_tag = MAN
+			AND = {
+				tag = ITA
+				owns_core_province = 109
+			}
 			has_reform = mantua_knightly_orders_reform
 		}
 	}
