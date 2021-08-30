@@ -908,6 +908,7 @@ republic = {
 				imperial_principle_reform
 				#GE
 				national_principle_reform
+				liberal_principle_reform
 				tolerant_principle_reform
 				independent_principle_reform
 				empowered_principle_of_heritage_reform

@@ -1026,8 +1026,8 @@ milizia_nationale_reform = {
 		}
     }
     modifiers = {
-		land_morale = 0.10
-		mercenary_manpower = -0.50
+		land_morale = 0.05
+		global_manpower_modifier = -0.10
     }
 	custom_attributes = {
 		enables_patriotism = yes
@@ -1064,8 +1064,8 @@ milizia_nationale_reform_republic = {
 		}
     }
     modifiers = {
-		land_morale = 0.10
-		mercenary_manpower = -0.50
+		land_morale = 0.05
+		global_manpower_modifier = -0.10
     }
 	custom_attributes = {
 		enables_patriotism = yes

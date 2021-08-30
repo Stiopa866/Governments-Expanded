@@ -922,7 +922,7 @@
 	}
 
 	edo_empire_reform = {
-		icon = tribal_federation
+		icon = crown
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		potential = {
@@ -943,7 +943,7 @@
 	}
 
 	gorkha_kingdom_reform = {
-		icon = tribal_federation
+		icon = crown
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		potential = {
@@ -964,7 +964,7 @@
 	}
 
 	maharajadhiraja_reform = {
-		icon = tribal_federation
+		icon = crown
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		potential = {
@@ -8430,7 +8430,7 @@
 		}
 		modifiers = {
 			land_morale = 0.05
-			recover_army_morale_speed = 0.1
+			army_tradition_decay = 0.01
 		}
 		custom_attributes = {
 			enables_patriotism = yes #+25% Manpower in primary culture provinces

@@ -1080,6 +1080,8 @@ the_holy_office_reform: "The Holy Office"
  via_media_reform_desc: "Via Media, or Middle Path, was the religious policy of the United Duchies, and it balanced good relations with other princes and religious unions. It seeks to avoid religious persecution by allowing many of the churches to function as they please, but limits their autonomy."
  renaissance_forts_reform: "Renaissance Forts"
  renaissance_forts_reform_desc: "By developing the forts in a modern style we guarentee a strong defence for our people, and their reputation will deter enemy aggression. furthermore it will attract people to live safely under the shade they provide."
+ liberal_principle_reform: "Liberal Principle"
+ liberal_principle_reform_desc: "Under the principle of liberalism we will embrace this ideal on both a civil, as well as on an economic level!"
 
  mechanic_enable_factional_elections_yes:0 "Factional Elections: Enables bribes during Elections."
  mechanic_enables_grand_captain_yes:0 "Grand Assembly: 'Raise Additional Levies' costs no loyalty, and grants additional Manpower and a Advisor."
@@ -1310,6 +1312,8 @@ the_holy_office_reform: "The Holy Office"
 
  #GE Don't Know
  mechanic_enables_siberian_tribe_yes: "Siberian Tribe: §G-25%§! Development Cost in §YGlacial§! or §YArctic§! owned provinces"
+ mechanic_enables_capitalism_yes: "Laissez Faire Capitalism: §G+2.5%§! Goods Produced Modifier and §R-10%§! National Tax Modifier for each §Y10%§! Total Liberalism up to §Y100%§! Total Liberalism"
+
  #Edicts
  edict_expanded_theme_system: "Expanded Theme System"
  edict_expanded_theme_system_desc: "Our Expanded Theme system will increase the reach of our recruitment drives."
@@ -1774,6 +1778,15 @@ the_holy_office_reform: "The Holy Office"
  EST_VAL_NOBILITY_ADVANCES: "The Nobility Advances"
  EST_VAL_BURGHERS_ADVANCE: "The Burghers Advance"
  EST_VAL_CLERGY_ADVANCES: "The Clergy Advances"
+
+ total_liberalism_modifier: "Total Liberalism"
+
+ confederacy_name: "Confederacy"
+ confederacy_desc: "Confederacy of States, bound by a union and common goal, these nations will maintain eachothers independence to their last breath!"
+
+ GE_become_confederacy_title: "Create a Confederacy of Independent States!"
+ GE_become_confederacy_desc: "beep boop"
+
  
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§! influence and loyalty ."
  AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY: "Available due to high §YBurgher§1 influence and loyalty ."
