@@ -1209,6 +1209,9 @@ estate_nobles_elite_guards = {
 	on_revoked = {
 		remove_country_modifier = GE_guards_regiments
 	}
+	on_invalid = {
+		remove_country_modifier = GE_guards_regiments
+	}
 	modifier_by_land_ownership = {
 	}
 	mechanics = {

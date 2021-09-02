@@ -1277,7 +1277,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_coin_over_crown_yes: "Coin over Crown: §G+5%§! Mercenary Discipline while you do not have loans."
  mechanic_enables_union_of_arras_yes: "Union of Arras: §G+2§! Papal Influence if you have 3 catholic advisors."
  mechanic_enables_grand_leader_yes: "Grand Leader: Gain between §R-10%§! to §G+20%§! Land Force Limit depending on your monarch military skill."
- mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+1%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occasional mercenary captains from those lands to train your troops." #
+ mechanic_enables_foreign_experts_yes: "Foreign Experts: §G+2%§! Mercenary Discipline for each alliance with a different culture group, up to a maximum of 5 foreign allies.\nOffers occasional mercenary captains from those lands to train your troops." #
  mechanic_enables_iberian_harem_yes: "Iberian Harem: Elect a suitable heir from among your sons."
  mechanic_enables_influencial_ties_yes: "Influencial Ties: §G+0.5§! Diplomatic Reputation for each Great Power, Emperor or Pope you're allied with, up to a maximum of five allies"
  #mechanic_enables_kreditwerk_appointments_yes: "Kreditwerk Appointments: Unlocks the 'Kreditwerk Appointments' Privilege for the Nobility, which allows us to increase tax efficiency."
@@ -1300,7 +1300,7 @@ the_holy_office_reform: "The Holy Office"
  mechanic_enables_foreign_students_yes: "Foreign Students: Gain §G-5%§! Administrative Advisor Cost for each accepted culture, up to a maximum of 5 cultures."
  mechanic_enables_disputed_succession_yes: "Disputed Succession: Spawn pretenders upon the death of your monarch."
  mechanic_enables_disputed_succession_no: "Puts an end to the 'Disputed Succession' pretender uprisings."
- mechanic_enables_emergency_power_yes: "Emergency Powers; Can empower the ruler with emergency powers, granting him a temporary §G20§! Absolutism bonus for 10 years at the cost of Republican Tradition."
+ mechanic_enables_emergency_power_yes: "Emergency Powers; Can empower the ruler with emergency powers, granting him a temporary §G20§! Absolutism bonus and §G-5%§! All Power Cost for 10 years at the cost of Republican Tradition."
  mechanic_enables_cultural_supremacy_yes: "Cultural Supremacy: Provinces of your culture group cost §G-15%§! less Governing Capacity."
 
  #GE 1.17

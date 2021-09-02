@@ -838,19 +838,19 @@ GE_Grand_Leader_6 = {
 	land_forcelimit_modifier = 0.20
 }
 GE_Foreign_Experts_1 = {
-	mercenary_discipline = 0.01
-}
-GE_Foreign_Experts_2 = {
 	mercenary_discipline = 0.02
 }
-GE_Foreign_Experts_3 = {
-	mercenary_discipline = 0.03
-}
-GE_Foreign_Experts_4 = {
+GE_Foreign_Experts_2 = {
 	mercenary_discipline = 0.04
 }
+GE_Foreign_Experts_3 = {
+	mercenary_discipline = 0.06
+}
+GE_Foreign_Experts_4 = {
+	mercenary_discipline = 0.08
+}
 GE_Foreign_Experts_5 = {
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.10
 }
 GE_Foreign_Experts_German = {
 	cavalry_fire = 0.25
@@ -957,6 +957,7 @@ GE_Foreign_Students_5 = {
 }
 GE_emergency_powers_modifier = {
 	max_absolutism = 20
+	all_power_cost = -0.05
 }
 GE_cultural_supremacy = {
 	local_governing_cost = -0.15
