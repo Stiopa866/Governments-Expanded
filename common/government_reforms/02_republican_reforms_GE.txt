@@ -1499,6 +1499,14 @@ liberal_principle_reform = {
 	potential = {
 		always = yes
 	}
+	effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
+	}
+	removed_effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
+	}
 	modifiers = {
 		total_liberalism_modifier = 0.20
 	}
