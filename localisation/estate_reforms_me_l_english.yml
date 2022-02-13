@@ -1403,6 +1403,8 @@ the_holy_office_reform: "The Holy Office"
  GE_Berber_Guides: "§G-15%§! Land Attrition while over §Y60§! Noble Loyalty."
  estate_nobles_elite_guards: "Elite Guards"
  estate_nobles_elite_guards_desc: "By establishing a Elite Guard of troops loyal to the king, we can ensure that their training and loyalty is without doubt!"
+ estate_nobles_baksariyas: "Establish Baksariyas"
+ estate_nobles_baksariyas_desc: "Many Peasant Militias have become out of work, due to the relative peace of the region, forcing them to seek naukri, often for our enemies. We have asked the zamindars to standardise these militias for our own use, but in return, they ask for even greater control over their peasants."
 
  estate_burghers_town_rights: "Town Rights"
  estate_burghers_town_rights_desc: "Granting town rights to many of our cities will increase their productivity and growth."
