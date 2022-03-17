@@ -1,0 +1,19 @@
+country_decisions = {
+	GE_become_confederacy = {
+		major = yes
+		potential = {
+			has_reform = crown_of_aragon
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			change_government = confederacy
+			change_government_reform_progress = 10000
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

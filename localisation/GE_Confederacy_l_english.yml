@@ -1,0 +1,6 @@
+l_english:
+ confederacy_name: "Confederacy"
+ confederacy_desc: "Confederacy of States, bound by a union and common goal, these nations will maintain eachothers independence to their last breath!"
+
+ GE_become_confederacy_title: "Create a Confederacy of Independent States!"
+ GE_become_confederacy_desc: "beep boop"
