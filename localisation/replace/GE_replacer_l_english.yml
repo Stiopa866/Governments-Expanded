@@ -1,0 +1,7 @@
+﻿l_english:
+ RAJPUT_REGIMENT:0 "Elite Regiment\n$EFFECT$"
+ ONLY_RAJPUT_MODIFIER:0 "§YAffects only Elite Regiments§!"
+ enables_rajput_regiments:0 "Elite Regiments"
+ RAJPUT_FORCELIMIT:0 "We can recruit up $VAL|%Y$ of our force-limit as §GElites§! of $FL$ due to:\n"
+ REGCAT_rajput:0 "Elite"
+ RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Elites"
