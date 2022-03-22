@@ -1056,6 +1056,18 @@ mongol_ties_reform = {
 subotai_lessons_reform = {
 	icon = feudal_theocracy
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			culture_group = altaic 
