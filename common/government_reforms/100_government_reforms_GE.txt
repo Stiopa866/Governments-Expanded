@@ -8436,45 +8436,6 @@
 		}
 	}
 
-	redcoats_reform = {
-		icon = england_redcoat
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = GBR
-				has_reform = redcoats_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = GBR
-				has_reform = redcoats_reform
-			}
-		}
-		modifiers = {
-			fire_damage = 0.05
-			infantry_power = 0.05
-		}
-		custom_attributes = {
-			enables_patriotism = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	berber_cavalry_reform = {
 		icon = berber_warrior
 		allow_normal_conversion = yes
