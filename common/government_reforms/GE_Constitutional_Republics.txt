@@ -45,7 +45,6 @@ republican_virtues_reform = {
 		has_reform = constitutional_republic_reform
 	}
 	modifiers = {
-		max_absolutism = -20
 		global_unrest = -2
 		num_accepted_cultures = 2
 		years_of_nationalism = -5
