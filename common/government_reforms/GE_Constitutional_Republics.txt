@@ -161,7 +161,6 @@ primacy_legislature_reform = {
 		free_adm_policy = 1
 		free_dip_policy = 1
 		free_mil_policy = 1
-		reelection_cost = -0.15
 	}
 	ai = {
 		factor = 10
@@ -180,6 +179,7 @@ judicial_review_reform = {
 	modifiers = {
 		stability_cost_modifier = -0.20
 		yearly_corruption = -0.02
+		reelection_cost = -0.15
 	}
 	ai = {
 		factor = 10
