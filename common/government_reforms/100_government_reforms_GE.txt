@@ -2513,44 +2513,7 @@
 		}
 	}
 
-	turkic_qasilbash_heirs_reform = {
-		icon = "persia_qizilbash"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			missionary_maintenance_cost = -0.25
-			cav_to_inf_ratio = 0.15
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_qizilbash_company = yes #unlocks qizilbash mercenaries
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	sayyid_privileges_reform = {
 		icon = hejaz_sayyid
@@ -4232,48 +4195,6 @@
 		}
 	}
 
-	tajik_administration_reform = {
-		icon = "iranian_bureaucracy"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				accepted_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				accepted_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			governing_capacity = 150
-			num_accepted_cultures = 1
-			nobles_influence_modifier = -0.10
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_mountain_towns = yes #-25% development cost in hills and mountains
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	dual_city_administration_reform = {
 		icon = hejaz_custodian
 		allow_normal_conversion = yes
@@ -5576,45 +5497,7 @@
 		}
 	}
 
-	foreign_ghulams_reform = {
-		icon = "mamluk_noble"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			advisor_pool = 1
-			ghulams_influence_modifier = 0.10
-			ghulams_loyalty_modifier = 0.05
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_ghulams_estate = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	eunich_administration_reform = {
 		icon = "asian_scripture"
@@ -6625,33 +6508,7 @@
 		}
 	}
 
-	ghulam_governates_reform = {
-		icon = "mamluk_veteran"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		modifiers = {
-			max_absolutism = 5
-			yearly_absolutism = 0.5
-			ghulams_influence_modifier = 0.05
-		}
-		custom_attributes = {
-			enables_ghulam_governors = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	grand_secretariat_reform = {
 		icon = "asian_scripture"
@@ -7098,30 +6955,7 @@
 		}
 	}
 
-	principle_of_fiqh_reform = {
-		icon = "noble_muslim"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		modifiers = {
-			global_unrest = -1
-			tolerance_own = 1
-			max_absolutism = 5
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 #}
 #############################
 ###########Tier3.5###########
@@ -8205,45 +8039,7 @@
 		}
 	}
 
-	reforms_of_abbas_reform = {
-		icon = "persia_abbas"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			special_unit_forcelimit = 0.10
-			artillery_cost = -0.10
-			ghulams_influence_modifier = 0.05
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_fire_ghulams = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	sherifan_levies_reform = {
 		icon = hejaz_cavalry
@@ -8759,36 +8555,6 @@
 			factor = 10
 		}
 	}
-
-	armenian_silk_traders_reform = {
-		icon = "GE_trader"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		modifiers = {
-			build_cost = -0.15
-			caravan_power = 0.25
-			trade_deals_slots = 0.01
-		}
-		custom_attributes = {
-			enables_silk_traders = yes #15% trade efficiency if trading in silk
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	
 
 	danske_besiddelser_reform = {
 		icon = paper_money_map
