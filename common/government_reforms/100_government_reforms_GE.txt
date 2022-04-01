@@ -2642,42 +2642,7 @@
 			factor = 101
 		}
 	}
-	tribal_tribute_reform = {
-		icon = horde_riding
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = tunisian 
-				has_reform = tribal_tribute_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian 
-				has_reform = tribal_tribute_reform
-			}
-		}
-		modifiers = {
-			global_unrest = -1
-			reduced_liberty_desire = 10			
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 #}
 #############################
 ###########Tier3#############
@@ -4099,41 +4064,7 @@
 			factor = 101
 		}
 	}
-	exiled_qaids_reform = {
-		icon = nobleman
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = exiled_qaids_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = exiled_qaids_reform
-			}
-		}
-		modifiers = {
-			core_creation = -0.1
-			state_governing_cost = -0.05
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 	kingdom_of_cities_reform = {
 		icon = arabic_scripture
 		allow_normal_conversion = yes
@@ -5413,43 +5344,7 @@
 			factor = 100
 		}
 	}
-	italian_merchants_reform = {
-		icon = paper_money_map
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = italian_merchants_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = italian_merchants_reform
-			}
-		}
-		modifiers = {
-			trade_deals_slots = 0.01
-		}
-		custom_attributes = {
-			enables_italian_grain_treaties = yes #+10% Trade efficiency if you got an italian trade partner.
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 	via_media_reform = {
 		icon = crown
 		allow_normal_conversion = yes
@@ -7601,29 +7496,7 @@
 			factor = 101
 		}
 	}
-	bedouin_reserves_reform = {
-		icon = bedouin_warrior
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = bedouin_reserves_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = bedouin_reserves_reform
-			}
-		}
-		modifiers = {
-			hostile_attrition = 1
-			manpower_recovery_speed = 0.20
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 	wacht_am_rhein_reform = {
 		icon = national_guard
 		allow_normal_conversion = yes
