@@ -215,31 +215,7 @@
 		}
 	}
 
-	office_of_lord_regent_reform = {
-		icon = sten_sture
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		potential = {
-			OR = {
-				primary_culture = swedish
-				has_reform = office_of_lord_regent_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish
-				has_reform = office_of_lord_regent_reform
-			}
-		}
-		modifiers = {
-			legitimacy = 0.5
-			prestige = 0.5
-			war_exhaustion = -0.025
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	arch_king_reform = {
 		icon = crown_highlighted
@@ -1695,42 +1671,7 @@
 
 	
 
-	house_of_knights_reform = {
-		icon = house_of_knights
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = house_of_knights_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = house_of_knights_reform
-			}
-		}
-		modifiers = {
-			prestige = 0.5
-			leader_cost = -0.20
-			noble_privilege_slots = 0.01
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	constitutio_valdemariana_reform = {
 		icon = nobleman
@@ -3341,39 +3282,7 @@
 
 	
 
-	the_red_book_reform = {
-		icon = swedish_church_ordinance
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish
-				has_reform = the_red_book_reform 
-			}
-		}
-		trigger = {
-			NOT = { religion = catholic }
-		}
-		modifiers = {
-			manpower_recovery_speed = 0.10
-			tolerance_heretic = 0.5
-			church_loyalty_modifier = 0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	commoner_officials_reform = {
 		icon = peasants
@@ -4617,41 +4526,7 @@
 		}
 	}
 
-	the_judicature_ordinance_reform = {
-		icon = gustavus_adolphus
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = the_judicature_ordinance_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = the_judicature_ordinance_reform
-			}
-		}
-		modifiers = {
-			reform_progress_growth = 0.10
-			global_unrest = -1
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	christian_four_merchantile_reform = {
 		icon = merchant_ship
@@ -5637,31 +5512,7 @@
 		}
 	}
 
-	parliamentary_order_reform = {
-		icon = parliament_highlighted
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = swedish
-				has_reform = parliamentary_order_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish
-				has_reform = parliamentary_order_reform
-			}
-		}
-		modifiers = {
-			stability_cost_modifier = -0.10
-		}
-		custom_attributes = {
-			enables_peasant_estate = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	king_and_duke_reform = {
 		icon = assembly_hall
@@ -6883,47 +6734,6 @@
 			yearly_army_professionalism = 0.0020
 			drill_gain_modifier = 0.25
 			mil_tech_cost_modifier = -0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-
-	
-
-	gustavan_artillery_reform = {
-		icon = gustavan_artillery
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish
-				accepted_culture = swedish
-				has_reform = gustavan_artillery_reform 
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish
-				accepted_culture = swedish
-				has_reform = gustavan_artillery_reform 
-			}
-		}
-		modifiers = {
-			movement_speed = 0.10
-			artillery_power = 0.05
 		}
 		ai = {
 			factor = 100
