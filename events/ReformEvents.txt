@@ -286,16 +286,13 @@ country_event = {
 	
 	immediate = {
 		define_heir = {
-			dynasty = "Garen"
-			age = 0
-			adm = 0
-			dip = 0
-			mil = 0
-			claim = 100
-			male = yes
-			religion = ROOT
-			culture = ROOT
-		}
+            dynasty = "Garen"
+            age = 0
+            claim = 100
+            male = yes
+            religion = ROOT
+            culture = ROOT
+        }
 	}
 	
 	option = {
