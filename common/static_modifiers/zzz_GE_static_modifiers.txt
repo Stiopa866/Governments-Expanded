@@ -1,6 +1,0 @@
-null_modifier = {
-}
-
-rajput_regiment = {
-	
-}
