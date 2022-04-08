@@ -684,5 +684,172 @@ spriteTypes = {
 		name = "government_reform_empowered_royal_estate"
 		texturefile = "gfx//interface//government_reform_icons//empowered_royal_estate.dds"
 	}
+	spriteType = {
+		name = "government_reform_persia_qizilbash"
+		texturefile = "gfx//interface//government_reform_icons//persia_qizilbash.dds"
+	}
+	spriteType = {
+		name = "government_reform_persia_abbas"
+		texturefile = "gfx//interface//government_reform_icons//persia_abbas.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_sharif"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_sharif.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_sayyid"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_sayyid.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_custodian"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_custodian.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_cavalry"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_cavalry.dds"
+	}
+	spriteType = {
+		name = "government_reform_hejaz_ministers"
+		texturefile = "gfx//interface//government_reform_icons//hejaz_ministers.dds"
+	}
+	spriteType = {
+		name = "government_reform_turks_sultanate_of_women"
+		texturefile = "gfx//interface//government_reform_icons//turks_sultanate_of_women.dds"
+	}
+	spriteType = {
+		name = "government_reform_clans_of_ireland"
+		texturefile = "gfx//interface//government_reform_icons//clans_of_ireland.dds"
+	}
+	spriteType = {
+		name = "government_reform_high_king_of_ireland_reform"
+		texturefile = "gfx//interface//government_reform_icons//high_king_of_ireland_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_serbian_despotate"
+		texturefile = "gfx//interface//government_reform_icons//serbian_despotate.dds"
+	}
+	spriteType = {
+		name = "government_reform_serbian_empire"
+		texturefile = "gfx//interface//government_reform_icons//serbian_empire.dds"
+	}
+	spriteType = {
+		name = "government_reform_serbian_logothete"
+		texturefile = "gfx//interface//government_reform_icons//serbian_logothete.dds"
+	}
+	spriteType = {
+		name = "government_reform_hungarian_decretum_maius"
+		texturefile = "gfx//interface//government_reform_icons//hungarian_decretum_maius.dds"
+	}
+	spriteType = {
+		name = "government_reform_hungarian_order_of_the_dragon"
+		texturefile = "gfx//interface//government_reform_icons//hungarian_order_of_the_dragon.dds"
+	}
+	spriteType = {
+		name = "government_reform_hungarian_tripartum"
+		texturefile = "gfx//interface//government_reform_icons//hungarian_tripartum.dds"
+	}
+	spriteType = {
+		name = "government_reform_sicily_kingdom_of_sicily"
+		texturefile = "gfx//interface//government_reform_icons//sicily_kingdom_of_sicily.dds"
+	}
+	spriteType = {
+		name = "government_reform_sicily_parliament_of_sicily"
+		texturefile = "gfx//interface//government_reform_icons//sicily_parliament_of_sicily.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_sheep_1"
+		texturefile = "gfx//interface//government_reform_icons//GE_sheep_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_sheep_2"
+		texturefile = "gfx//interface//government_reform_icons//GE_sheep_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_latin_militia"
+		texturefile = "gfx//interface//government_reform_icons//latin_militia.dds"
+	}
+	spriteType = {
+		name = "government_reform_catalan_company"
+		texturefile = "gfx//interface//government_reform_icons//catalan_company.dds"
+	}
+	spriteType = {
+		name = "government_reform_theatines"
+		texturefile = "gfx//interface//government_reform_icons//theatines.dds"
+	}
+	spriteType = {
+		name = "government_reform_sicily_melfi"
+		texturefile = "gfx//interface//government_reform_icons//sicily_melfi.dds"
+	}
+	spriteType = {
+		name = "government_reform_HRE"
+		texturefile = "gfx//interface//government_reform_icons//HRE.dds"
+	}
+	spriteType = {
+		name = "government_reform_danish_army"
+		texturefile = "gfx//interface//government_reform_icons//danish_army.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_luxembourg_0"
+		texturefile = "gfx//interface//government_reform_icons//GE_luxembourg_0.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_luxembourg_1"
+		texturefile = "gfx//interface//government_reform_icons//GE_luxembourg_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_luxembourg_2"
+		texturefile = "gfx//interface//government_reform_icons//GE_luxembourg_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_GE_luxembourg_3"
+		texturefile = "gfx//interface//government_reform_icons//GE_luxembourg_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_army_of_flanders"
+		texturefile = "gfx//interface//government_reform_icons//army_of_flanders.dds"
+	}
+	spriteType = {
+		name = "government_reform_Wattasid_Dynasty"
+		texturefile = "gfx//interface//government_reform_icons//Wattasid_Dynasty.dds"
+	}
+	spriteType = {
+		name = "government_reform_Kasbah"
+		texturefile = "gfx//interface//government_reform_icons//Kasbah.dds"
+	}
+	spriteType = {
+		name = "government_reform_al_jazuli"
+		texturefile = "gfx//interface//government_reform_icons//al_jazuli.dds"
+	}
+	spriteType = {
+		name = "government_reform_al_mansur"
+		texturefile = "gfx//interface//government_reform_icons//al_mansur.dds"
+	}
+	spriteType = {
+		name = "government_reform_saharan_trade"
+		texturefile = "gfx//interface//government_reform_icons//saharan_trade.dds"
+	}
+	spriteType = {
+		name = "government_reform_swabia_eberhard"
+		texturefile = "gfx//interface//government_reform_icons//swabia_eberhard.dds"
+	}
+	spriteType = {
+		name = "government_reform_bedouin_warrior"
+		texturefile = "gfx//interface//government_reform_icons//bedouin_warrior.dds"
+	}
+	spriteType = {
+		name = "government_reform_west_africa_tomb"
+		texturefile = "gfx//interface//government_reform_icons//west_africa_tomb.dds"
+	}
+	spriteType = {
+		name = "government_reform_west_africa_slaves"
+		texturefile = "gfx//interface//government_reform_icons//west_africa_slaves.dds"
+	}
+	spriteType = {
+		name = "government_reform_west_africa_archer_statue"
+		texturefile = "gfx//interface//government_reform_icons//west_africa_archer_statue.dds"
+	}
+	spriteType = {
+		name = "government_reform_west_africa_horseman"
+		texturefile = "gfx//interface//government_reform_icons//west_africa_horseman.dds"
+	}
 }
-

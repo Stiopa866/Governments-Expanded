@@ -84,11 +84,11 @@ country_event = {
 			estate = estate_peasants
 			loyalty = 10
 		}
-		every_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-			}
-			add_local_autonomy = 25
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = -10
+			duration = 3650
 		}
 	}
 }
@@ -120,15 +120,9 @@ country_event = {
 		
 		add_years_of_income = -1
 		random_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-			}
 			add_base_production = 1
 		}
 		random_owned_province = {
-			limit = {
-				has_estate = estate_peasants
-			}
 			add_base_production = 1
 		}
 		if = {
@@ -139,23 +133,85 @@ country_event = {
 				}
 			}
 			random_owned_province = {
-				limit = {
-					has_estate = estate_peasants
-				}
 				add_base_production = 1
 			}
 			random_owned_province = {
-				limit = {
-					has_estate = estate_peasants
-				}
 				add_base_production = 1
 			}
 			random_owned_province = {
-				limit = {
-					has_estate = estate_peasants
-				}
 				add_base_production = 1
 			}
+		}
+	}
+}
+
+country_event = {
+	id = peasants_estate_events.5 #peasants expand into farms
+	title = peasants_estate_events.5.t
+	desc = peasants_estate_events.5.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {
+		has_estate = estate_peasants
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = peasants_estate_events.5.a 
+		
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -10
+		}
+	}
+	
+	option = {
+		name = peasants_estate_events.5.b 
+		
+		add_years_of_income = 0.15
+		change_estate_land_share = {
+			estate = estate_peasants
+			share = 2.5
+		}
+	}
+}
+
+country_event = {
+	id = peasants_estate_events.6 #peasant lease up
+	title = peasants_estate_events.6.t
+	desc = peasants_estate_events.6.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {
+		has_estate = estate_peasants
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = peasants_estate_events.6.a 
+		
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 10
+		}
+	}
+	
+	option = {
+		name = peasants_estate_events.6.b 
+		
+		change_estate_land_share = {
+			estate = estate_peasants
+			share = -2.5
 		}
 	}
 }

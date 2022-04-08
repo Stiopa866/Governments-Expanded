@@ -10,6 +10,9 @@ tax_peasants = {
 	local_tax_modifier = 0.10
 	tax_income = 0.6
 }
+Clans_Leader = {
+	free_leader_pool = 1
+}
 
 #Reforms
 
@@ -45,19 +48,19 @@ Blood_Tax_5 = {
 	global_manpower_modifier = 0.25
 }
 Arabian_Horses_1 = {
-	cavalry_power = 0.05
+	cavalry_power = 0.03
 }
 Arabian_Horses_2 = {
-	cavalry_power = 0.10
+	cavalry_power = 0.06
 }
 Arabian_Horses_3 = {
-	cavalry_power = 0.15
+	cavalry_power = 0.09
 }
 Arabian_Horses_4 = {
-	cavalry_power = 0.20
+	cavalry_power = 0.12
 }
 Arabian_Horses_5 = {
-	cavalry_power = 0.25
+	cavalry_power = 0.15
 }
 Mercenary_Markets_1 = {
 	manpower_recovery_speed = 0.02
@@ -251,8 +254,8 @@ Trade_Princes = {
 	merchants = 1
 }
 Militant_Orders = {
-	manpower_recovery_speed = 0.20
-	army_tradition = 0.5
+	manpower_recovery_speed = 0.25
+	army_tradition = 1
 }
 Crusader_Order_1 = {
 	infantry_power = 0.01
@@ -388,35 +391,38 @@ Abolished_Noble_Exception = {
 Promoted_Industry = {
 	trade_goods_size = 0.2
 }
+Promoted_Industry_v2 = {
+	trade_goods_size = 0.4
+}
 Home_Market_1 = {
-	trade_efficiency = 0.025
+	trade_efficiency = 0.015
 }
 Home_Market_2 = {
-	trade_efficiency = 0.05
+	trade_efficiency = 0.03
 }
 Home_Market_3 = {
-	trade_efficiency = 0.075
+	trade_efficiency = 0.045
 }
 Home_Market_4 = {
-	trade_efficiency = 0.10
+	trade_efficiency = 0.06
 }
 Home_Market_5 = {
-	trade_efficiency = 0.125
+	trade_efficiency = 0.075
 }
 Home_Market_6 = {
-	trade_efficiency = 0.150
+	trade_efficiency = 0.090
 }
 Home_Market_7 = {
-	trade_efficiency = 0.175
+	trade_efficiency = 0.105
 }
 Home_Market_8 = {
-	trade_efficiency = 0.200
+	trade_efficiency = 0.120
 }
 Home_Market_9 = {
-	trade_efficiency = 0.225
+	trade_efficiency = 0.135
 }
 Home_Market_10 = {
-	trade_efficiency = 0.250
+	trade_efficiency = 0.150
 }
 French_Ordonnance = {
 	global_trade_goods_size_modifier = 0.10
@@ -482,8 +488,496 @@ Hansa_Ties_5 = {
 Royal_Army_Garrison = {
 	local_manpower = 0.1
 }
-	
+Kiwi_Rights_1 = {
+	global_ship_trade_power = 0.05
+}
+Kiwi_Rights_2 = {
+	global_ship_trade_power = 0.10
+}
+Kiwi_Rights_3 = {
+	global_ship_trade_power = 0.15
+}
+Kiwi_Rights_4 = {
+	global_ship_trade_power = 0.20
+}
+Kiwi_Rights_5 = {
+	global_ship_trade_power = 0.25
+}
+Kiwi_Rights_6 = {
+	global_ship_trade_power = 0.30
+}
+Kiwi_Rights_7 = {
+	global_ship_trade_power = 0.35
+}
+Kiwi_Rights_8 = {
+	global_ship_trade_power = 0.40
+}
+Kiwi_Rights_9 = {
+	global_ship_trade_power = 0.45
+}
+Kiwi_Rights_10 = {
+	global_ship_trade_power = 0.50
+}
+GE_Rajput_Law = {
+	local_unrest = -2
+	local_manpower_modifier = 0.1
+}
+GE_Marcher_Lords = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.25
+}
+Malay_Sailors_1 = {
+	global_sailors_modifier = 0.10
+	naval_forcelimit_modifier = 0.10
+}
+Malay_Sailors_2 = {
+	global_sailors_modifier = 0.15
+	naval_forcelimit_modifier = 0.15
+}
+Malay_Sailors_3 = {
+	global_sailors_modifier = 0.20
+	naval_forcelimit_modifier = 0.20
+}
+Malay_Sailors_4 = {
+	global_sailors_modifier = 0.25
+	naval_forcelimit_modifier = 0.25
+}
+Malay_Sailors_5 = {
+	global_sailors_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+}
+Malay_Sailors_6 = {
+	global_sailors_modifier = 0.35
+	naval_forcelimit_modifier = 0.35
+}
+Malay_Sailors_7 = {
+	global_sailors_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+}
+GE_Roman_Empire_Administration = {
+	country_admin_power = 1
+	state_maintenance_modifier = -0.15
+}
+GE_Roman_Empire_Corruption = {
+	country_diplomatic_power = 1
+	yearly_corruption = -0.05
+}
+GE_Roman_Empire_Drill = {
+	country_military_power = 1
+	drill_gain_modifier = 0.25
+}
+GE_Fortified_Settlement = {
+	local_development_cost = -0.10
+}
+Jurisprudence_1 = {
+	idea_cost = -0.10
+	adm_tech_cost_modifier = -0.20
+}
+Jurisprudence_2 = {
+	idea_cost = -0.09
+	adm_tech_cost_modifier = -0.18
+}
+Jurisprudence_3 = {
+	idea_cost = -0.08
+	adm_tech_cost_modifier = -0.16
+}
+Jurisprudence_4 = {
+	idea_cost = -0.07
+	adm_tech_cost_modifier = -0.14
+}
+Jurisprudence_5 = {
+	idea_cost = -0.06
+	adm_tech_cost_modifier = -0.12
+}
+Jurisprudence_6 = {
+	idea_cost = -0.05
+	adm_tech_cost_modifier = -0.10
+}
+Jurisprudence_7 = {
+	idea_cost = -0.04
+	adm_tech_cost_modifier = -0.08
+}
+Jurisprudence_8 = {
+	idea_cost = -0.03
+	adm_tech_cost_modifier = -0.06
+}
+Jurisprudence_9 = {
+	idea_cost = -0.02
+	adm_tech_cost_modifier = -0.04
+}
+Jurisprudence_10 = {
+	idea_cost = -0.01
+	adm_tech_cost_modifier = -0.02
+}
+GE_Varangian_Guard = {
+	shock_damage = 0.05
+}
+GE_Codified_Law = {
+	local_unrest = -2
+}
+Hermit_five = {
+	development_cost = -0.05
+}
+Hermit_ten = {
+	development_cost = -0.1
+}
+Hermit_fifteen = {
+	development_cost = -0.15
+}
+Mint_Towns = {
+	local_state_maintenance_modifier = -0.25
+}
+Salt_Monopoly = {
+	trade_goods_size_modifier = 0.25
+	trade_value_modifier = 0.25
+}
+Masked_Monarch = {
+	yearly_corruption = -0.10
+}
+Noble_Service = {
+	global_manpower_modifier = 0.33
+	land_morale = 0.10
+}
+GE_Religious_Adherence = {
+	local_manpower = 0.250
+}
+GE_People_Under_Tengri = {
+	local_manpower = 0.500
+	local_unrest = -2
+}
+GE_Elephant_Cavalry_1 = {
+	siege_ability = 0.03
+}
+GE_Elephant_Cavalry_2 = {
+	siege_ability = 0.06
+}
+GE_Elephant_Cavalry_3 = {
+	siege_ability = 0.09
+}
+GE_Elephant_Cavalry_4 = {
+	siege_ability = 0.12
+}
+GE_Elephant_Cavalry_5 = {
+	siege_ability = 0.15
+}
+siamese_national_pride = {
+	infantry_power = 0.05
+}
+siamese_national_shame = {
+	global_unrest = 2
+}
+GE_Religious_Fervor = {
+	global_manpower_modifier = 0.20
+}
+GE_Mandala_Periphery = {
+	global_tax_modifier = 0.15
+}
+GE_Solar_Periphery = {
+	global_manpower_modifier = 0.15
+	global_tax_modifier = 0.15
+}
+GE_byzantine_administration = {
+	adm_tech_cost_modifier = -0.10
+	legitimacy = 0.5
+}
+GE_Mining_Monopoly = {
+	trade_goods_size = 0.5
+	local_autonomy = -0.05
+}
+GE_military_governors = {
+	local_manpower = 0.50
+	local_development_cost = -0.10
+}
+GE_church_policy_tolerance = {
+	advisor_cost = -0.05
+	advisor_pool = 1
+}
+GE_church_policy_missionary = {
+	tolerance_own = 1
+	global_missionary_strength = 0.02
+}
+GE_Grand_Captains = {
+	land_forcelimit_modifier = 0.15
+	land_maintenance_modifier = -0.10
+}
+GE_Customs_House = {
+	trade_goods_size_modifier = 0.25
+}
+GE_Mary_Of_The_Purity_1 = {
+	yearly_corruption = -0.025
+}
+GE_Mary_Of_The_Purity_2 = {
+	yearly_corruption = -0.05
+}
+GE_Mary_Of_The_Purity_3 = {
+	yearly_corruption = -0.075
+}
+GE_Mary_Of_The_Purity_4 = {
+	yearly_corruption = -0.10
+}
+GE_Fury_Of_The_Reconquista = {
+	mercenary_discipline = 0.025
+	land_morale = 0.05
+}
+GE_Liber_Augustalis = {
+	nobles_loyalty_modifier = 0.05
+	church_loyalty_modifier = 0.05
+	burghers_loyalty_modifier = 0.05
+}
+GE_Imperial_Circle_1 = {
+	diplomatic_reputation = 0.5
+}
+GE_Imperial_Circle_2 = {
+	diplomatic_reputation = 1.0
+}
+GE_Imperial_Circle_3 = {
+	diplomatic_reputation = 1.5
+}
+GE_Imperial_Circle_4 = {
+	diplomatic_reputation = 2.0
+}
+GE_Imperial_Circle_5 = {
+	diplomatic_reputation = 2.5
+}
+GE_Republican_Guard_1 = {
+	infantry_power = 0.03
+	manpower_recovery_speed = 0.04
+}
+GE_Republican_Guard_2 = {
+	infantry_power = 0.06
+	manpower_recovery_speed = 0.08
+}
+GE_Republican_Guard_3 = {
+	infantry_power = 0.09
+	manpower_recovery_speed = 0.12
+}
+GE_Republican_Guard_4 = {
+	infantry_power = 0.12
+	manpower_recovery_speed = 0.16
+}
+GE_Republican_Guard_5 = {
+	infantry_power = 0.15
+	manpower_recovery_speed = 0.20
+}
+GE_Huaca_Cults = {
+	local_tax_modifier = 0.10
+}
+GE_favor_of_the_gods = {
+	manpower_recovery_speed = 0.10
+	legitimacy = 2
+	devotion = 2
+}
+GE_Shared_Drills_1 = {
+	manpower_recovery_speed = 0.04
+	global_regiment_cost = -0.02
+}
+GE_Shared_Drills_2 = {
+	manpower_recovery_speed = 0.08
+	global_regiment_cost = -0.04
+}
+GE_Shared_Drills_3 = {
+	manpower_recovery_speed = 0.12
+	global_regiment_cost = -0.06
+}
+GE_Shared_Drills_4 = {
+	manpower_recovery_speed = 0.16
+	global_regiment_cost = -0.08
+}
+GE_Shared_Drills_5 = {
+	manpower_recovery_speed = 0.20
+	global_regiment_cost = -0.10
+}
+GE_Academy_of_Artillery = {
+	leader_siege = 1
+}
+GE_Union_of_Arras = {
+	papal_influence = 2
+}
+GE_Cultural_Inspiration_1 = {
+	production_efficiency = 0.05
+	technology_cost = -0.02
+}
+GE_Cultural_Inspiration_2 = {
+	production_efficiency = 0.10
+	technology_cost = -0.04
+}
+GE_Cultural_Inspiration_3 = {
+	production_efficiency = 0.15
+	technology_cost = -0.06
+}
+GE_Cultural_Inspiration_4 = {
+	production_efficiency = 0.20
+	technology_cost = -0.08
+}
+GE_Cultural_Inspiration_1 = {
+	production_efficiency = 0.25
+	technology_cost = -0.10
+}
+GE_Coin_over_Crown = {
+	mercenary_discipline = 0.05
+}
+GE_Grand_Leader_0 = {
+	land_forcelimit_modifier = -0.10
+}
+GE_Grand_Leader_1 = {
+	land_forcelimit_modifier = -0.05
+}
+GE_Grand_Leader_2 = {
+	land_forcelimit = 1
+}
+GE_Grand_Leader_3 = {
+	land_forcelimit_modifier = 0.05
+}
+GE_Grand_Leader_4 = {
+	land_forcelimit_modifier = 0.10
+}
+GE_Grand_Leader_5 = {
+	land_forcelimit_modifier = 0.15
+}
+GE_Grand_Leader_6 = {
+	land_forcelimit_modifier = 0.20
+}
+GE_Foreign_Experts_1 = {
+	mercenary_discipline = 0.02
+}
+GE_Foreign_Experts_2 = {
+	mercenary_discipline = 0.04
+}
+GE_Foreign_Experts_3 = {
+	mercenary_discipline = 0.06
+}
+GE_Foreign_Experts_4 = {
+	mercenary_discipline = 0.08
+}
+GE_Foreign_Experts_5 = {
+	mercenary_discipline = 0.10
+}
+GE_Foreign_Experts_German = {
+	cavalry_fire = 0.25
+}
+GE_Foreign_Experts_Catalan = {
+	infantry_power = 0.10
+}
+GE_Foreign_Experts_Serbian = {
+	movement_speed = 0.10
+	cavalry_cost = -0.10
+}
+GE_Foreign_Experts_Italian = {
+	mil_tech_cost_modifier = -0.10
+	leader_cost = -0.10
+}
 
+GE_Iberian_Harem_Castillian = {
+	army_tradition = 0.5
+	nobles_loyalty_modifier = 0.10
+}
+GE_Iberian_Harem_Andalucian = {
+	technology_cost = -0.05
+	church_loyalty_modifier = 0.10
+}
+GE_Iberian_Harem_Portugese = {
+	naval_forcelimit_modifier = 0.15
+	navy_tradition = 0.5
+}
+GE_Iberian_Harem_Catalan = {
+	placed_merchant_power = 10
+	burghers_loyalty_modifier = 0.10
+}
+
+GE_Influencial_Ties_1 = {
+	diplomatic_reputation = 0.5
+}
+GE_Influencial_Ties_2 = {
+	diplomatic_reputation = 1
+}
+GE_Influencial_Ties_3 = {
+	diplomatic_reputation = 1.5
+}
+GE_Influencial_Ties_4 = {
+	diplomatic_reputation = 2
+}
+GE_Influencial_Ties_5 = {
+	diplomatic_reputation = 2.5
+}
+GE_restored_themes = {
+	local_manpower_modifier = 0.20
+}
+GE_Burgher_Autonomy = {
+	min_local_autonomy = 25
+}
+GE_colonial_plantations = {
+	plantage_goods_produced_modifier = 0.15
+}
+GE_Landsknecht_Sergeants = {
+	infantry_power = 0.10
+}
+GE_Foreign_Drill_Masters_1 = {
+	drill_gain_modifier = 0.10
+	mil_tech_cost_modifier = -0.04
+}
+GE_Foreign_Drill_Masters_2 = {
+	drill_gain_modifier = 0.20
+	mil_tech_cost_modifier = -0.08
+}
+GE_Foreign_Drill_Masters_3 = {
+	drill_gain_modifier = 0.30
+	mil_tech_cost_modifier = -0.12
+}
+GE_Foreign_Drill_Masters_4 = {
+	drill_gain_modifier = 0.40
+	mil_tech_cost_modifier = -0.16
+}
+GE_Foreign_Drill_Masters_5 = {
+	drill_gain_modifier = 0.50
+	mil_tech_cost_modifier = -0.20
+}
+GE_Tunisian_Grain_Trade = {
+	trade_efficiency = 0.10
+}
+GE_Tunisian_Grain_Production = {
+	rural_goods_produced_modifier = 0.20
+}
+GE_Italian_Grain_Treaties = {
+	trade_efficiency = 0.10
+}
+GE_Foreign_Students_1 = {
+	adm_advisor_cost = -0.05
+}
+GE_Foreign_Students_2 = {
+	adm_advisor_cost = -0.10
+}
+GE_Foreign_Students_3 = {
+	adm_advisor_cost = -0.15
+}
+GE_Foreign_Students_4 = {
+	adm_advisor_cost = -0.20
+}
+GE_Foreign_Students_5 = {
+	adm_advisor_cost = -0.25
+}
+GE_emergency_powers_modifier = {
+	max_absolutism = 20
+	all_power_cost = -0.05
+}
+GE_cultural_supremacy = {
+	local_governing_cost = -0.15
+}
+GE_Kreditwork = {
+	local_tax_modifier = 0.20
+}
+GE_immigrant_settlements = {
+	local_development_cost = -0.10
+}
+GE_nations_of_the_republic = {
+	local_governing_cost = -0.10
+	local_tax_modifier = 0.15
+}
+GE_Siberian_Tribe = {
+	local_development_cost = -0.25
+}
+
+
+	
 #Cortez
 Cortes_Piety = {
 	tolerance_own = 1
@@ -512,151 +1006,18 @@ Cortes_Navy = {
 }
 
 
-Adm_Stabcost = {
-	stability_cost_modifier = -0.15
-}
-Adm_Advisor = {
-	advisor_cost = -0.10
-}
-Dip_Trade = {
-	trade_efficiency = 0.05
-	global_trade_power = 0.05
-}
-Dip_Invest = {
-	build_cost = -0.1
-	interest = -0.5
-}
-Mil_Infantry = {
-	infantry_cost = -0.05
-}
-Adm_2_Dev = {
-	development_cost = -0.1
-}
-Adm_2_Tax = {
-	global_tax_modifier = 0.10
-}
-Dip_2_Trade = {
-	global_prov_trade_power_modifier = 0.1
-}
-Dip_2_Ship = {
-	global_ship_trade_power = 0.2
-}
-Mil_2_Main = {
-	land_maintenance_modifier = -0.05
-}
-Mil_2_Leader = {
-	general_cost = -0.2
-}
 
-#Russian Republic
-VP_Tax = {
-	global_tax_modifier = 0.10
-}
-VP_Pious = {
-	tolerance_own = 1
-}
-VP_Production = {
-	production_efficiency = 0.10
-}
-VP_Trade = {
-	trade_efficiency = 0.05
-}
-VP_Diprep = {
-	diplomatic_reputation = 1
-}
-VP_Claims = {
-	fabricate_claims_cost = -0.15
-}
-VP_Boyar = {
-	mil_advisor_cost = -0.20
-}
-VP_Endurance = {
-	war_exhaustion = -0.025
-}
-VP_Core = {
-	core_creation = -0.10
-}
-VP_Missionary = {
-	global_missionary_strength = 0.01
-}
-VP_Merchant = {
-	placed_merchant_power = 8
-}
-VP_Goods = {
-	global_trade_goods_size_modifier = 0.10
-}
-VP_Trade_power = {
-	global_trade_power = 0.15
-}
-VP_Warscore = {
-	province_warscore_cost = -0.05
-}
-VP_YOS = {
-	local_years_of_nationalism = -5
-}
-VP_AE = {
-	ae_impact = -0.05
-}
-
-#Milan
-
-Sforza_Lifetime = {
-	election_cycle = 100
-}
-
-#Japan
-Council_of_Kyoto = {
-	global_unrest = -2
-}
-Shogun_Drill = {
-	drill_gain_modifier = 0.25
-}
-Shogun_Manpower = {
-	global_manpower_modifier = 0.15
-}
-Shogun_Tradition = {
-	army_tradition = 0.5
-}
-Shogun_Infantry = {
-	infantry_power = 0.05
-}
-Imperial_Advisors = {
-	advisor_cost = -0.10
-}
-Imperial_Incorruptibility = {
-	yearly_corruption = -0.05
-}
-Imperial_Stability = {
-	stability_cost_modifier = -0.15
-}
-Imperial_Modernization = {
-	reform_progress_growth  = 0.10
-}
-
-#Rome
-Coalition_Popular = {
-	global_unrest = -1
-}
-Coalition_Trade = {
-	trade_efficiency = 0.10
-}
-Coalition_Piety = {
-	missionary_maintenance_cost = -0.25
-}
-Coalition_Veteran = {
-	army_tradition = 0.5
-}
 
 #Royal Council
 Bad_Admin = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 Decent_Admin = {
-	development_cost = -0.10
+	development_cost = -0.05
 	adm_advisor_cost = -0.05
 }
 Good_Admin = {
-	development_cost = -0.15
+	development_cost = -0.075
 	adm_advisor_cost = -0.10
 	global_trade_goods_size_modifier = 0.05
 }
@@ -847,8 +1208,8 @@ Decadent_Decay = {
 	global_manpower_modifier = 0.15
 }
 Militarized_Order = {
-	max_states = -3
-	army_tradition = 0.25
+	governing_capacity = -150
+	army_tradition = 0.5
 }
 Ave_Maria = {
 	development_cost = -0.05
@@ -955,7 +1316,15 @@ Enjoying_The_Peace = {
 	stability_cost_modifier = -0.10
 	republican_tradition = 0.1
 }
-
+GE_Presidential_Adm = {
+	stability_cost_modifier = -0.15
+}
+GE_Presidential_Dip = {
+	diplomatic_reputation = 1
+}
+GE_Presidential_Mil = {
+	reinforce_speed = 0.20
+}
 
 ####MONARCHY
 
@@ -976,3 +1345,98 @@ Demoralized_Army = {
 Absent_Noble = {
 	global_manpower_modifier = -0.10
 }
+Shuffled_Populations = {
+	culture_conversion_cost = -0.25
+}
+All_Creatures_Of_God = {
+	religious_unity = 0.10
+}
+Pious_People = {
+	tolerance_own = 1
+}
+Unified_Purpose = {
+	stability_cost_modifier = -0.10
+}
+Engineers_Present = {
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.10
+}
+GE_Improved_Defences = {
+	defensiveness = 0.15
+}
+Cultural_Acceptance = {
+	promote_culture_cost = -0.33
+}
+GE_Unified_Army = {
+	manpower_recovery_speed = 0.10
+	land_morale = 0.10
+}
+GE_Corrupted_Merchants = {
+	yearly_corruption = 0.02
+}
+	
+	
+#####Estate Agendas
+GE_Peasant_Estate_Growth = {
+	trade_goods_size_modifier = 0.25
+}
+GE_Peasant_Estate_Peace = {
+	manpower_recovery_speed = 0.10
+}
+GE_Peasant_Estate_Fervor = {
+	development_cost = -0.05
+}
+GE_Peasant_Estate_Cattle = {
+	local_development_cost = -0.10
+}
+GE_Peasant_Estate_Lebensraum = {
+	local_autonomy = -0.10
+}
+GE_Peasant_Estate_Construct_Workshop = {
+	local_build_cost = -0.10
+}
+GE_Peasant_Estate_Stabilization = {
+	stability_cost_modifier = -0.10
+}
+GE_Peasant_Estate_Stabilized = {
+	stability_cost_modifier = -0.20
+	republican_tradition = 0.1
+}
+GE_Ghulams_Estate_Brought_Justice = {
+	local_unrest = -2
+	local_tax_modifier = 0.25
+}
+GE_Ghulams_Estate_Ghulam_Advisors = {
+	advisor_cost = -0.05
+	yearly_corruption = -0.10
+}
+GE_Ghulams_Estate_New_Cannons = {
+	artillery_power = 0.05
+	siege_ability = 0.10
+}
+GE_Ghulams_Estate_Order_Restored = {
+	legitimacy = 1
+	prestige = 0.5
+}
+GE_rajput_regiments = {
+	drill_decay_modifier = -0.25
+	reinforce_cost_modifier = -0.5
+	land_morale = 0.05
+	is_rajput_modifier = yes
+}
+GE_ghulam_regiments = {
+	drill_gain_modifier = 0.25
+	infantry_fire = 0.5
+	is_rajput_modifier = yes
+}
+GE_guards_regiments = {
+	land_maintenance_modifier = 1
+	reinforce_speed = -0.50
+	discipline = 0.05
+	is_rajput_modifier = yes
+}
+
+
+
+
+

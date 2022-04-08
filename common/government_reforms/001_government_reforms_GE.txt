@@ -1,77 +1,3 @@
-teuton_navy = {
-	icon = "soldiers_5"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {	
-			tag = TEU
-			tag = LIV
-		}
-	}
-	modifiers = {
-		galley_power = 0.10
-		galley_cost = -0.15
-		ship_durability = 0.05
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-teuton_army = {
-	icon = Teuton_2
-	allow_normal_conversion = yes
-	potential = {
-		OR = {	
-			tag = TEU
-			tag = LIV
-		}
-	}
-	modifiers = {
-		infantry_power = 0.05
-		discipline = 0.025
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-teuton_drill = {
-	icon = Teuton_1
-	allow_normal_conversion = yes
-	potential = {
-		OR = {	
-			tag = TEU
-			tag = LIV
-		}
-	}
-	modifiers = {
-		infantry_power = 0.05
-		warscore_cost_vs_other_religion = -0.10
-		drill_gain_modifier = 0.20
-	}
-	ai = {
-		factor = 1
-	}
-}
-
-teuton_priest = {
-	icon = Teuton_3
-	allow_normal_conversion = yes
-	potential = {
-		OR = {	
-			tag = TEU
-			tag = LIV
-		}
-	}
-	modifiers = {
-		global_missionary_strength = 0.02
-		missionary_maintenance_cost = -0.25
-	}
-	ai = {
-		factor = 1
-	}
-}
-
 expel_heathens_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
@@ -148,6 +74,13 @@ dynastic_theocracy_reform = {
 	heir = yes
 	royal_marriage = yes
 	maintain_dynasty = yes
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = reform_me_events.83
+			}
+		}
+	}
 	modifiers = {
 		devotion = 0.25
 	}
@@ -242,14 +175,16 @@ papal_curia_reform = {
 		tag = PAP
 	}
 	trigger = {
-		tag = PAP
-		custom_trigger_tooltip = {
-			tooltip = "kingdom_of_god_tooltip"
-			has_country_modifier = kingdom_of_god
+		OR ={
+			AND = {
+				tag = PAP
+				has_reform = kingdom_of_god_reform
+			}
+			has_reform = papal_curia_reform
 		}
 	}
 	modifiers = {
-		advisor_cost = -0.20
+		advisor_cost = -0.15
 		prestige = 1
 		diplomatic_upkeep = 1
 	}
@@ -295,7 +230,7 @@ brothers_in_arms_reform = {
 	
 	modifiers = {
 		mercenary_discipline = 0.025
-		leader_cost = -0.15
+		mercenary_manpower = 0.25
 	}
 	ai = {
 		factor = 1
@@ -558,7 +493,7 @@ papal_law_reform = {
 #T1
 
 eghaevbo_administration_reform = {
-	icon = tribal_federation
+	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -568,7 +503,7 @@ eghaevbo_administration_reform = {
 	}
 	modifiers = {
 		core_creation = -0.10
-		max_states = 3
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 100
@@ -576,6 +511,39 @@ eghaevbo_administration_reform = {
 	#-10 Noble Influence
 }
 
+siberian_tribal_confederation_reform = {
+	icon = generic_people
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
+		}
+		NOT = { primary_culture = manchu}
+	}
+	trigger = {
+		OR = {
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
+		}
+		NOT = { primary_culture = manchu}
+	}
+	modifiers = {
+		land_attrition = -0.15
+		stability_cost_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_siberian_tribe = yes #-25% Development Cost in Glacial provinces
+	}
+	ai = {
+		factor = 100
+	}
+	#-10 Noble Influence
+}
 
 #T2
 
@@ -587,7 +555,7 @@ great_law_of_peace_reform = {
 	}
 	modifiers = {
 		global_unrest = -2
-		max_states = 3
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 100
@@ -678,15 +646,52 @@ three_jurchen_tribes_reform = {
 	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		} 
 	}
 	trigger = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	modifiers = {
 		global_trade_goods_size_modifier = 0.05
 		global_tax_modifier = 0.05
 		land_attrition = -0.10
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+snow_life_reform = {
+	icon = native_seasonal_travel_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
+		}
+		NOT = { primary_culture = manchu}
+	}
+	trigger = {
+		OR = {
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
+		}
+		NOT = { primary_culture = manchu}
+	}
+	modifiers = {
+		movement_speed = 0.10
+		native_uprising_chance = -0.50
+		rural_goods_produced_modifier = 0.25
 	}
 	ai = {
 		factor = 10
@@ -769,10 +774,16 @@ maintain_charade_reform = {
 	icon = arabic_scripture
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	trigger = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	modifiers = {
 		diplomatic_reputation = 1
@@ -802,7 +813,7 @@ tolerance_of_the_church_reform = {
 }
 
 children_of_osanobua_reform = {
-	icon = tribal_federation
+	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -819,6 +830,44 @@ children_of_osanobua_reform = {
 	}
 }
 
+one_on_high_reform = {
+	icon = strength_of_the_khalsa
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
+		}
+		NOT = { primary_culture = manchu}
+		OR = {
+			religion = tengri_pagan_reformed
+    		religion = animism
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = evenk
+			primary_culture = buryat
+			primary_culture = yukagyr 
+			primary_culture = kamchatkan
+		}
+		NOT = { primary_culture = manchu}
+		OR = {
+			religion = tengri_pagan_reformed
+    		religion = animism
+		}
+	}
+	modifiers = {
+		tolerance_own = 1
+		cavalry_shock = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 #T3.5
 
 traditionalist_reform = {
@@ -828,8 +877,8 @@ traditionalist_reform = {
 	}
 	modifiers = {
 		shock_damage = 0.05
-		cavalry_cost = -0.10
-		cav_to_inf_ratio = 0.10
+		cavalry_cost = -0.15
+		nomadic_tribes_loyalty_modifier = 0.05
 	}
 	#+10% Tribe Loyalty
 	ai = {
@@ -851,7 +900,8 @@ gunpowder_weapons_reform = {
 	}
 	modifiers = {
 		fire_damage = 0.05
-		infantry_cost = -0.10
+		mil_tech_cost_modifier = -0.10
+		nomadic_tribes_loyalty_modifier = -0.05
 	}
 	#-10% Tribe Loyalty
 	ai = {
@@ -984,12 +1034,14 @@ mongol_ties_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			culture_group = evenks 
+			culture_group = evenks
+			primary_culture = manchu_new
 		}
 	}
 	trigger = {
 		OR = {
-			culture_group = evenks 
+			culture_group = evenks
+			primary_culture = manchu_new
 		}
 	}
 	modifiers = {
@@ -1004,6 +1056,18 @@ mongol_ties_reform = {
 subotai_lessons_reform = {
 	icon = feudal_theocracy
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
 	potential = {
 		OR = {
 			culture_group = altaic 
@@ -1043,7 +1107,7 @@ tatar_raiders_reform = {
 }
 
 warrior_kings_reform = {
-	icon = tribal_federation
+	icon = generic_people
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -1088,7 +1152,7 @@ iranian_bureacracy_reform = {
 		}
 	}
 	modifiers = {
-		max_states = 5
+		governing_capacity = 250
 		global_autonomy = -0.025
 	}
 	ai = {
@@ -1122,10 +1186,16 @@ birth_of_the_manchu_reform = {
 	icon = asian_scripture
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	trigger = {
-		culture_group = evenks 
+		OR = {
+			culture_group = evenks
+			primary_culture = manchu_new
+		}
 	}
 	modifiers = {
 		culture_conversion_cost = -0.20
@@ -1147,7 +1217,7 @@ bashqaq_administration_reform = {
 	}
 	modifiers = {
 		global_unrest = -2
-		max_states = 5
+		governing_capacity = 250
 	}
 	ai = {
 		factor = 10
@@ -1166,12 +1236,12 @@ recruit_cossacks_reform = {
 		culture_group = tartar
 	}
 	modifiers = {
-		reinforce_cost_modifier = 0.20
-		reinforce_speed = -0.15
+		reinforce_cost_modifier = -0.25
+		reinforce_speed = 0.25
 	}
-	custom_attributes = {
-		enables_cossack_estate = yes
-	}
+	# custom_attributes = {
+		# enables_cossack_estate = yes
+	# }
 	ai = {
 		factor = 1
 	}
