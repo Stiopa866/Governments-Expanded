@@ -1782,13 +1782,6 @@ the_holy_office_reform: "The Holy Office"
  EST_VAL_CLERGY_ADVANCES: "The Clergy Advances"
 
  total_liberalism_modifier: "Total Liberalism"
-
- confederacy_name: "Confederacy"
- confederacy_desc: "Confederacy of States, bound by a union and common goal, these nations will maintain eachothers independence to their last breath!"
-
- GE_become_confederacy_title: "Create a Confederacy of Independent States!"
- GE_become_confederacy_desc: "beep boop"
-
  
  AVAILABLE_BECAUSE_OF_CLERGY_LOYALTY: "Available due to high §YClergy§! influence and loyalty ."
  AVAILABLE_BECAUSE_OF_BURGHER_LOYALTY: "Available due to high §YBurgher§1 influence and loyalty ."

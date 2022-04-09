@@ -165,247 +165,6 @@
 		}
 	}
 
-	kingdom_of_castille_and_leon = {
-		icon = castille_leon
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = CAS
-				tag = LON
-				has_reform = kingdom_of_castille_and_leon
-			}
-		}
-		trigger = {
-			has_reform = kingdom_of_castille_and_leon
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 0
-		modifiers = {
-			rural_goods_produced_modifier = -0.10
-			global_manpower_modifier = 0.05
-			nobles_influence_modifier = 0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	crown_of_castille = {
-		icon = castille_isabelle
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = CAS
-				tag = SPA
-				has_reform = crown_of_castille
-			}
-		}
-		trigger = {
-			has_reform = crown_of_castille
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 10
-		modifiers = {
-			diplomatic_upkeep = 1
-		}
-		custom_attributes = {
-			enables_trade_princes = yes #1 Merchant if you got a aragonese of catalan vassal
-		}
-		ai = {
-			factor = 101
-		}
-	}
-
-	hispanic_kingdom = {
-		icon = spain_charles
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = SPA
-				has_reform = hispanic_kingdom
-			}
-		}
-		trigger = {
-			has_reform = hispanic_kingdom
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 25
-		modifiers = {
-			tolerance_own = 1
-			governing_capacity = 100
-		}
-		custom_attributes = {
-			enables_crown_of_aragon = yes #25% Autonomy in Aragonese Provinces
-		}
-		ai = {
-			factor = 102
-		}
-	}
-
-	enlightened_despotism_reform = {
-		icon = spain_bourbon
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = SPA
-				has_reform = enlightened_despotism_reform
-				have_had_reform = enlightened_despotism_reform
-			}
-		}
-		trigger = {
-			absolutism = 50
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 70
-		modifiers = {
-			max_absolutism = 5
-			build_cost = -0.15
-			prestige = 1
-			governing_capacity = 150
-		}
-		custom_attributes = {
-			enables_royal_council = yes 
-		}
-		ai = {
-			factor = 103
-		}
-	}
-
-	crown_of_aragon = {
-		icon = aragon_alfonso
-		allow_normal_conversion = yes
-		effect = {
-		}
-		potential = {
-			OR = {
-				tag = ARA
-				has_reform = crown_of_aragon
-			}
-		}
-		trigger = {
-			has_reform = crown_of_aragon
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 0
-		modifiers = {
-			min_autonomy = 10
-			global_unrest = -1
-		}
-		custom_attributes = {
-			enables_kingdom_of_aragon = yes
-			enables_principality_of_catalonia = yes
-			enables_city_of_valencia = yes
-			enables_kingdom_of_sicily = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	kingdom_of_portugal = {
-		icon = kingdom_of_portugal
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = POR
-				has_reform = kingdom_of_portugal
-			}
-		}
-		trigger = {
-			NOT = { is_year = 1481 }
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 20
-		modifiers = {
-			min_autonomy = 10
-			papal_influence = 1.0
-			land_morale = 0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	kingdom_of_portugal_and_azures = {
-		icon = portuguese_thassalocracy
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = POR
-				has_reform = kingdom_of_portugal_and_azures
-			}
-		}
-		trigger = {
-			is_year = 1481
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 25
-		modifiers = {
-			global_autonomy = -0.025
-			trade_steering = 0.10
-			navy_tradition = 1
-			trade_deals_slots = 0.01
-		}
-		ai = {
-			factor = 101	
-		}
-	}
-
-	portuguese_empire_reform = {
-		icon = king
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = POR
-				has_reform = portuguese_empire_reform
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = portuguese_empire_reform
-				AND = {
-					has_reform = kingdom_of_portugal_and_azures
-					absolutism = 50
-				}
-			}
-		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 60
-		modifiers = {
-			trade_efficiency = 0.10
-			num_accepted_cultures = 2
-			trade_company_investment_cost = -0.25
-			navy_tradition = 1
-			trade_deals_slots = 0.02
-		}
-		custom_attributes = {
-			enables_kingdom_of_brazil = yes
-		}
-		ai = {
-			factor = 102
-		}
-	}
-
-	consulate_of_the_sea = {
-		icon = GE_trader
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		potential = {
-			has_reform = consulate_of_the_sea
-		}
-		modifiers = {
-			merchants = 1
-			galley_power = 0.20
-			global_trade_power = 0.15
-			global_sailors_modifier = 0.15
-			naval_forcelimit_modifier = 0.20
-			trade_deals_slots = 0.01
-		}
-		ai = {
-			factor = 10
-		}
-	}
-
 	crown_of_saint_wenceslaus = {
 		icon = crown_of_saint_wenceslaus
 		allow_normal_conversion = no
@@ -456,31 +215,7 @@
 		}
 	}
 
-	office_of_lord_regent_reform = {
-		icon = sten_sture
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		potential = {
-			OR = {
-				primary_culture = swedish
-				has_reform = office_of_lord_regent_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish
-				has_reform = office_of_lord_regent_reform
-			}
-		}
-		modifiers = {
-			legitimacy = 0.5
-			prestige = 0.5
-			war_exhaustion = -0.025
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	arch_king_reform = {
 		icon = crown_highlighted
@@ -621,35 +356,7 @@
 		}
 	}
 
-	polish_constitutionalism_reform = {
-		icon = poland_constitution_painting
-		allow_normal_conversion = yes
-		lock_level_when_selected = yes
-		valid_for_nation_designer = no
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				has_reform = polish_constitutionalism_reform
-			}
-		}
-		trigger = {
-			has_reform = polish_constitutionalism_reform
-		}
-		modifiers = {
-			monarch_admin_power = 1
-			administrative_efficiency = 0.05
-			max_absolutism = -10
-		}
-		has_parliament = yes
-		custom_attributes = {
-			enables_national_strenghtening_project = yes #+15% Manpower, -0.05 monthly devastation and -10 Hostile Movement Speed in provinces with accepted culture.
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
+	
 	granadan_iqta_reform = {
 		icon = granada_iqta
 		allow_normal_conversion = yes
@@ -738,65 +445,7 @@
 		}
 	}
 
-	hessian_militarized_monarchy_reform = {
-		icon = hesse_monarchy
-		allow_normal_conversion = yes
-		valid_for_nation_designer = yes
-		nation_designer_cost = 50
-		potential = {
-			OR = {
-				tag = HES
-				has_reform = hessian_militarized_monarchy_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = HES
-				has_reform = hessian_militarized_monarchy_reform
-			}
-		}
-		modifiers = {
-			yearly_army_professionalism = 0.0025
-			discipline = 0.025 
-			mercenary_discipline = -0.05
-			governing_capacity_modifier = -0.1
-		}
-		custom_attributes = {
-			enables_patriotism = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	hessian_modern_militarized_monarchy_reform = {
-		icon = hesse_modern
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		potential = {
-			OR = {
-				tag = HES
-				has_reform = hessian_modern_militarized_monarchy_reform
-			}
-		}
-		trigger = {
-			has_reform = hessian_modern_militarized_monarchy_reform
-			absolutism = 50
-		}
-		modifiers = {
-			yearly_army_professionalism = 0.0025
-			discipline = 0.05
-			mercenary_discipline = -0.10
-			monarch_military_power = 1
-			governing_capacity_modifier = -0.25
-		}
-		custom_attributes = {
-			enables_patriotism = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	achaemenid_empire_reform = {
 		icon = king
@@ -1295,62 +944,7 @@
 		}
 	}
 
-	despotate_of_serbia_reform = {
-		icon = serbian_despotate
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		potential = {
-			OR = {
-				primary_culture = serbian
-				has_reform = despotate_of_serbia_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = serbian
-				has_reform = despotate_of_serbia_reform
-			}
-		}
-		modifiers = {
-			diplomatic_reputation = 1
-			legitimacy = 0.5
-		}
-		custom_attributes = {
-			enables_byzantine_administration = yes #-10% admin tech cost and 0.5 legitimacy while byzantium exists
-		} 
-		ai = {
-			factor = 100
-		}
-	}
-
-	serbian_empire_reform = {
-		icon = serbian_empire
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		potential = {
-			OR = {
-				primary_culture = serbian
-				has_reform = serbian_empire_reform
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = serbian_empire_reform
-			}
-		}
-		modifiers = {
-			max_absolutism = 5
-			unjustified_demands = -0.25
-			monarch_military_power = 1
-		}
-		custom_attributes = {
-			enables_royal_mining_monopoly = yes #0.5 Goods produced and -0.05 Autonomy in all Stated Mining Provinces.
-			#enables_grand_leader = yes #+5% landforcelimit per ruler mil stat
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 
 	tsardom_of_bulgaria_reform = {
 		icon = russian_principality
@@ -1986,125 +1580,6 @@
 		}
 	}
 
-	portuguese_cortes_reform = {
-		icon = assembly_hall
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = POR
-				primary_culture = portugese
-				has_reform = portuguese_cortes_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = POR
-				primary_culture = portugese
-				has_reform = portuguese_cortes_reform
-			}
-		}
-		modifiers = {
-			legitimacy = 0.5
-		}
-		custom_attributes = {
-			enables_cortes = yes #pseudoparliament
-		}#fixdis every option is the same
-		ai = {
-			factor = 100
-		}
-	}
-
-	respect_union_reform = {
-		icon = Spanish_Crown
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = CAS
-				tag = SPA
-				tag = ARA
-				has_reform = respect_union_reform
-			}
-		}
-		modifiers = {
-			diplomatic_upkeep = 1
-			num_accepted_cultures = 1
-		}
-		ai = {
-			factor = 10
-		}
-	}
-
-	trade_princes_reform = {
-		icon = GE_trader
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = ARA
-				primary_culture = aragonese
-				accepted_culture = aragonese
-				primary_culture = catalan 
-				accepted_culture = catalan  
-				has_reform = trade_princes_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = ARA
-				primary_culture = aragonese
-				accepted_culture = aragonese
-				primary_culture = catalan 
-				accepted_culture = catalan 
-				has_reform = trade_princes_reform
-			}
-		}
-		modifiers = {
-			placed_merchant_power = 5
-			merchants = 1
-			burghers_loyalty_modifier = 0.05
-			trade_deals_slots = 0.01
-		}
-		can_use_trade_post = yes
-		ai = {
-			factor = 100
-		}
-	}
-
 	council_of_sheikhs_reform = {
 		icon = mamluk_government
 		allow_normal_conversion = yes
@@ -2194,144 +1669,9 @@
 		}
 	}
 
-	order_of_the_swan_reform = {
-		icon = order_of_swan
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = BRA
-				primary_culture = prussian
-				has_reform = order_of_the_swan_reform
-			}
-			religion = catholic
-		}
-		trigger = {
-			OR = {
-				tag = BRA
-				primary_culture = prussian
-				has_reform = order_of_the_swan_reform
-			}
-			religion = catholic
-		}
-		modifiers = {
-			papal_influence = 1
-			prestige = 0.5
-			noble_privilege_slots = 0.01
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
-	junker_class_reform = {
-		icon = szlachta_noble_2
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = BRA
-				tag = PRU
-				primary_culture = prussian
-				has_reform = junker_class_reform
-				AND = {
-					accepted_culture = prussian
-					num_of_owned_provinces_with = {
-						value = 1
-						culture = prussian
-					}
-				}
-			}
-			NOT = { religion = catholic }
-		}
-		trigger = {
-			OR = {
-				tag = BRA
-				tag = PRU
-				primary_culture = prussian
-				has_reform = junker_class_reform
-				AND = {
-					accepted_culture = prussian
-					num_of_owned_provinces_with = {
-						value = 5
-						culture = prussian
-					}
-				}
-			}
-			NOT = { religion = catholic }
-		}
-		modifiers = {
-			leader_cost = -0.10
-			nobles_influence_modifier = 0.10
-			noble_privilege_slots = 0.01
-		}
-		# custom_attributes = {
-			# enables_junker_estate = yes
-			# enables_disable_noble_estate = yes
-		# }
-		ai = {
-			factor = 100
-		}
-	}
-
-	house_of_knights_reform = {
-		icon = house_of_knights
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = house_of_knights_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = house_of_knights_reform
-			}
-		}
-		modifiers = {
-			prestige = 0.5
-			leader_cost = -0.20
-			noble_privilege_slots = 0.01
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	constitutio_valdemariana_reform = {
 		icon = nobleman
@@ -2567,136 +1907,9 @@
 		}
 	}
 
-	szlachta_authority_reform = {
-		icon = szlachta_noble_1
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-				AND = {
-					accepted_culture = polish
-					num_of_owned_provinces_with = {
-						value = 1
-						culture = polish
-					}
-				}
-			}
-			NOT = { has_reform = polish_constitutionalism_reform }
-		}
-		trigger = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-				AND = {
-					accepted_culture = polish
-					num_of_owned_provinces_with = {
-						value = 5
-						culture = polish
-					}
-				}
-			}
-			NOT = { has_reform = polish_constitutionalism_reform }
-		}
-		modifiers = {
-			manpower_recovery_speed = 0.10
-			noble_privilege_slots = 0.01
-		}
-		ai = {
-			factor = 100
-		}
-		#5% Noble Loyalty
-	}
+	
 
-	every_man_a_noble_reform = {
-		icon = szlachta_noble_2
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		trigger = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		modifiers = {
-			manpower_recovery_speed = 0.10
-			global_trade_goods_size_modifier = 0.05
-		}
-		ai = {
-			factor = 101
-		}
-	}
-
-	curia_regis_reform = {
-		icon = england_curia_regis
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = english
-				has_reform = curia_regis_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				has_reform = curia_regis_reform
-			}
-		}
-		modifiers = {
-			global_tax_modifier = 0.15
-			spy_offence = 0.1
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	taha_divisions_reform = {
 		icon = granada_taha
@@ -3028,44 +2241,7 @@
 		}
 	}
 
-	turkic_qasilbash_heirs_reform = {
-		icon = "persia_qizilbash"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			missionary_maintenance_cost = -0.25
-			cav_to_inf_ratio = 0.15
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_qizilbash_company = yes #unlocks qizilbash mercenaries
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	sayyid_privileges_reform = {
 		icon = hejaz_sayyid
@@ -3117,97 +2293,7 @@
 		}
 	}
 
-	timariot_domains_reform = {
-		icon = horde_riding
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish
-				AND = {
-					accepted_culture = turkish
-					num_of_owned_provinces_with = {
-						value = 1
-						culture = turkish
-					}
-				}
-				has_reform = timariot_domains_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish	
-				AND = {
-					accepted_culture = turkish
-					num_of_owned_provinces_with = {
-						value = 5
-						culture = turkish
-					}
-				}
-				has_reform = timariot_domains_reform
-			}
-		}
-		modifiers = {
-			cavalry_cost = -0.10
-			noble_privilege_slots = 0.01
-		}
-		custom_attributes = {
-			enables_timariots = yes #Unlocks the 'Timariot Governance' Noble Estate Privilege.
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	qadi_authority_reform = {
-		icon = muslim
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish	
-				has_reform = qadi_authority_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish	
-				has_reform = qadi_authority_reform
-			}
-		}
-		modifiers = {
-			tolerance_own = 1
-			church_loyalty_modifier = 0.05
-		}
-		custom_attributes = {
-			enables_qadi_authority = yes #-15% state maintenance in islamic provinces
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	clans_of_ireland_reform = {
 		icon = clans_of_ireland
@@ -3497,42 +2583,7 @@
 			factor = 101
 		}
 	}
-	tribal_tribute_reform = {
-		icon = horde_riding
-		allow_normal_conversion = yes
-		valid_for_nation_designer = no
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = tunisian 
-				has_reform = tribal_tribute_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian 
-				has_reform = tribal_tribute_reform
-			}
-		}
-		modifiers = {
-			global_unrest = -1
-			reduced_liberty_desire = 10			
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 #}
 #############################
 ###########Tier3#############
@@ -4187,80 +3238,9 @@
 		}
 	}
 
-	casa_de_contraction_reform = {
-		icon = casa_de_contraction
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = CAS
-				tag = SPA
-				has_reform = casa_de_contraction_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = CAS
-				tag = SPA
-				has_reform = casa_de_contraction_reform
-			}
-		}
-		modifiers = {
-			global_ship_trade_power = 0.2
-			global_colonial_growth = 10
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
-	casa_de_india_reform = {
-		icon = casa_de_india
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = casa_de_india_reform
-				primary_culture = portugese
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = casa_de_india_reform
-				primary_culture = portugese
-			}
-		}
-		modifiers = {
-			global_prov_trade_power_modifier = 0.15
-			plantage_goods_produced_modifier = 0.15
-			trade_deals_slots = 0.01
-		}
-		ai = {
-			factor = 100
-		}
-	}	
+	
 
 	oprichnina_reform = {
 		icon = oprichnina
@@ -4298,172 +3278,11 @@
 		}
 	}
 
-	constitutio_joachimica_reform = {
-		icon = constitutio_joachimica
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = BRA
-				primary_culture = prussian
-				has_reform = constitutio_joachimica_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = BRA
-				primary_culture = prussian
-				has_reform = constitutio_joachimica_reform
-			}
-		}
-		modifiers = {
-			#global_autonomy = -0.025
-			yearly_corruption = -0.05
-			nobles_influence_modifier = -0.10
-		}
-		custom_attributes = {
-			enables_codified_law = yes #-2 Unrest in provinces with less then 50% Autonomy.
-		}
-		ai = {
-			factor = 100
-		}
-		#-10 influence nobles
-	}
+	
 
-	millet_reform = {
-		icon = millet_system
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish
-				AND = {
-					accepted_culture = turkish
-					num_of_owned_provinces_with = {
-						value = 1
-						culture = turkish
-					}
-				}
-				has_reform = millet_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				AND = {
-					accepted_culture = turkish
-					num_of_owned_provinces_with = {
-						value = 5
-						culture = turkish
-					}
-				}
-				has_reform = millet_reform
-			}
-		}
-		modifiers = {
-			promote_culture_cost = -0.25
-		}
-		custom_attributes = {
-			enables_millet_system = yes #-1 Unrest and 15% tax in Accepted Cultures
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
-	kaza_system_reform = {
-		icon = hejaz_sayyid
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish
-				has_reform = kaza_system_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				has_reform = kaza_system_reform
-			}
-		}
-		modifiers = {
-			governing_capacity = 100
-		}
-		custom_attributes = {
-			enables_kaza_system = yes #1% Trade Efficiency per 10% Sunni provinces
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	the_red_book_reform = {
-		icon = swedish_church_ordinance
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish
-				has_reform = the_red_book_reform 
-			}
-		}
-		trigger = {
-			NOT = { religion = catholic }
-		}
-		modifiers = {
-			manpower_recovery_speed = 0.10
-			tolerance_heretic = 0.5
-			church_loyalty_modifier = 0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	commoner_officials_reform = {
 		icon = peasants
@@ -4630,47 +3449,7 @@
 		}
 	}
 
-	revoke_magnate_estates_reform = {
-		icon = magnates_2
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-				has_reform = revoke_magnate_estates_reform 
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		trigger = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-				has_reform = revoke_magnate_estates_reform 
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		modifiers = {
-			governing_capacity = 150
-			nobles_influence_modifier = -0.10
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 
 	integrate_tatars_reform = {
 		icon = Tatar_raid
@@ -4717,46 +3496,6 @@
 		}
 		ai = {
 			factor = 10
-		}
-	}
-
-	abolish_bastard_feudalism_reform = {
-		icon = feudalism
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = english
-				accepted_culture = english
-				has_reform = abolish_bastard_feudalism_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				accepted_culture = english
-				has_reform = abolish_bastard_feudalism_reform
-			}
-		}
-		modifiers = {
-			global_manpower_modifier = -0.05
-			global_autonomy = -0.05
-			global_unrest = -1
-			nobles_influence_modifier = -0.10
-		}
-		ai = {
-			factor = 100
 		}
 	}
 
@@ -4840,47 +3579,6 @@
 		}
 		custom_attributes = {
 			enables_satrapies = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	hessian_military_complex_reform = {
-		icon = hesse_military
-		allow_normal_conversion = yes
-		valid_for_nation_designer = yes
-		nation_designer_cost = 0
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = HES
-				has_reform = hessian_military_complex_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = HES
-				has_reform = hessian_military_complex_reform
-			}
-		}
-		modifiers = {
-			development_cost = -0.05
-			build_cost = -0.10
-		}
-		custom_attributes = {
-			enables_military_exports = yes #2% Goods Produced per 10% Army Professionalism
 		}
 		ai = {
 			factor = 100
@@ -5076,48 +3774,6 @@
 		}
 	}
 
-	tajik_administration_reform = {
-		icon = "iranian_bureaucracy"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				accepted_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				accepted_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			governing_capacity = 150
-			num_accepted_cultures = 1
-			nobles_influence_modifier = -0.10
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_mountain_towns = yes #-25% development cost in hills and mountains
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	dual_city_administration_reform = {
 		icon = hejaz_custodian
 		allow_normal_conversion = yes
@@ -5203,46 +3859,6 @@
 		}
 		custom_attributes = {
 			enables_salt_monopoly = yes #25% Trade Value and Goods produced on salt and naval supplies
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	vlast_voivodes_reform = {
-		icon = march
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = vlast_voivodes_reform
-				primary_culture = serbian
-				accepted_culture = serbian
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = vlast_voivodes_reform
-				primary_culture = serbian
-				accepted_culture = serbian
-			}
-		}
-		modifiers = {
-			global_tax_modifier = 0.10
-		}
-		custom_attributes = {
-			enables_military_governors = yes #500 base manpower and -10% development cost in provinces with forts
 		}
 		ai = {
 			factor = 100
@@ -5357,41 +3973,7 @@
 			factor = 101
 		}
 	}
-	exiled_qaids_reform = {
-		icon = nobleman
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = exiled_qaids_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = exiled_qaids_reform
-			}
-		}
-		modifiers = {
-			core_creation = -0.1
-			state_governing_cost = -0.05
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 	kingdom_of_cities_reform = {
 		icon = arabic_scripture
 		allow_normal_conversion = yes
@@ -5899,118 +4481,9 @@
 		}
 	}
 
-	koprulu_dynasty_reform = {
-		icon = koprulu_dynasty
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish
-				has_reform = koprulu_dynasty_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				has_reform = koprulu_dynasty_reform
-			}
-		}
-		modifiers = {
-			same_culture_advisor_cost = -0.10
-			advisor_pool = 1
-		}
-		custom_attributes = {
-			enables_koprulu_dynasty = yes #allows your vizier to focus on a specific task every 25 years.
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
-	fredrickan_reforms_reform = {
-		icon = frederick
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = BRA
-				has_reform = fredrickan_reforms_reform
-				primary_culture = prussian
-			}
-		}
-		trigger = {
-			OR = {
-				tag = BRA
-				has_reform = fredrickan_reforms_reform
-				primary_culture = prussian
-			}
-		}
-		modifiers = {
-			build_cost = -0.10
-			build_speed = -0.10
-			rural_goods_produced_modifier = 0.20
-		}
-		custom_attributes = {
-			enables_immigrant_settlements = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	kreditwerk_reform = {
-		icon = paper_money_map
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = BRA
-				has_reform = kreditwerk_reform
-				primary_culture = prussian
-			}
-		}
-		trigger = {
-			OR = {
-				tag = BRA
-				has_reform = kreditwerk_reform
-				primary_culture = prussian
-			}
-		}
-		modifiers = {
-			#governing_capacity = 100
-			nobles_loyalty_modifier = 0.05
-			nobles_influence_modifier = 0.10
-			church_influence_modifier = 0.05
-			burghers_influence_modifier = 0.05
-		}
-		custom_attributes = {
-			enables_kreditwerk_appointments = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	table_of_ranks_reform = {
 		icon = table_of_ranks
@@ -6053,41 +4526,7 @@
 		}
 	}
 
-	the_judicature_ordinance_reform = {
-		icon = gustavus_adolphus
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = the_judicature_ordinance_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish 
-				has_reform = the_judicature_ordinance_reform
-			}
-		}
-		modifiers = {
-			reform_progress_growth = 0.10
-			global_unrest = -1
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	christian_four_merchantile_reform = {
 		icon = merchant_ship
@@ -6200,43 +4639,7 @@
 		}
 	}
 
-	supreme_govenor_reform = {
-		icon = england_elizabeth
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = english
-				accepted_culture = english
-				has_reform = supreme_govenor_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				accepted_culture = english
-				has_reform = supreme_govenor_reform
-			}
-		}
-		modifiers = {
-			tolerance_heretic = 1
-			expel_minorities_cost = -0.15
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	cultural_investment_reform = {
 		icon = granada_trader
@@ -6372,42 +4775,6 @@
 		}
 	}
 
-	found_the_rothschilds_reform = {
-		icon = hesse_rothschild
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = found_the_rothschilds_reform 
-				tag = HES
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = found_the_rothschilds_reform 
-				tag = HES
-			}
-		}
-		modifiers = {
-			inflation_reduction = 0.05
-			interest = -1
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	ottonian_handfeste_reform = {
 		icon = king
 		allow_normal_conversion = yes
@@ -6493,45 +4860,7 @@
 		}
 	}
 
-	foreign_ghulams_reform = {
-		icon = "mamluk_noble"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			advisor_pool = 1
-			ghulams_influence_modifier = 0.10
-			ghulams_loyalty_modifier = 0.05
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_ghulams_estate = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	eunich_administration_reform = {
 		icon = "asian_scripture"
@@ -6751,43 +5080,7 @@
 		}
 	}
 
-	grand_logothete_reform = {
-		icon = serbian_logothete
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = grand_logothete_reform
-				primary_culture = serbian
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = grand_logothete_reform
-				primary_culture = serbian
-			}
-		}
-		modifiers = {
-			advisor_cost = -0.05
-		}
-		custom_attributes = {
-			enables_church_policy = yes #pick a church policy for this administration.
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	drastic_control_of_the_boyars_reform = {
 		icon = szlachta_noble_2
@@ -6926,43 +5219,7 @@
 			factor = 100
 		}
 	}
-	italian_merchants_reform = {
-		icon = paper_money_map
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = italian_merchants_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = italian_merchants_reform
-			}
-		}
-		modifiers = {
-			trade_deals_slots = 0.01
-		}
-		custom_attributes = {
-			enables_italian_grain_treaties = yes #+10% Trade efficiency if you got an italian trade partner.
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 	via_media_reform = {
 		icon = crown
 		allow_normal_conversion = yes
@@ -7255,31 +5512,7 @@
 		}
 	}
 
-	parliamentary_order_reform = {
-		icon = parliament_highlighted
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = swedish
-				has_reform = parliamentary_order_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish
-				has_reform = parliamentary_order_reform
-			}
-		}
-		modifiers = {
-			stability_cost_modifier = -0.10
-		}
-		custom_attributes = {
-			enables_peasant_estate = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	king_and_duke_reform = {
 		icon = assembly_hall
@@ -7369,123 +5602,6 @@
 		}
 		custom_attributes = {
 			enables_mercenary_markets = yes #-1% Infantry Cost and 2% Manpower Recovery per merchant
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	reform_the_sejm_reform = {
-		icon = poland_sejm
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			NOT = { has_reform = polish_constitutionalism_reform }
-		}
-		trigger = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			NOT = { has_reform = polish_constitutionalism_reform }
-		}
-		modifiers = {
-			monthly_support_heir_gain = 0.10
-			global_spy_defence = 0.25
-			same_culture_advisor_cost = -0.1
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	abolish_the_sejm_reform = {
-		icon = poland_sejm
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		trigger = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		modifiers = {
-			global_spy_defence = 0.25
-			advisor_cost = -0.10
-			promote_culture_cost = -0.50
-		}
-		ai = {
-			factor = 101
-		}
-	}
-
-	union_of_crowns_reform = {
-		icon = england_james
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = english
-				has_reform = union_of_crowns_reform
-			}
-		}
-		trigger = {
-			OR = {
-				SCO = {
-					OR = {
-						vassal_of = ROOT
-						junior_union_with = ROOT
-					}
-				}
-				tag = GBR	
-			}
-		}
-		modifiers = {
-			legitimacy = 0.5
-			diplomatic_reputation = 1
-		}
-		custom_attributes = {
-			enables_pride_of_the_navy = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	declaration_of_breda_reform = {
-		icon = england_declaration_of_breda
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = english
-				has_reform = declaration_of_breda_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				has_reform = declaration_of_breda_reform
-			}
-		}
-		modifiers = {
-			religious_unity = 0.15
-			war_exhaustion = -0.025
-		}
-		custom_attributes = {
-			enables_pride_of_the_navy = yes
 		}
 		ai = {
 			factor = 100
@@ -7659,33 +5775,7 @@
 		}
 	}
 
-	ghulam_governates_reform = {
-		icon = "mamluk_veteran"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		modifiers = {
-			max_absolutism = 5
-			yearly_absolutism = 0.5
-			ghulams_influence_modifier = 0.05
-		}
-		custom_attributes = {
-			enables_ghulam_governors = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	grand_secretariat_reform = {
 		icon = "asian_scripture"
@@ -7735,44 +5825,7 @@
 		}
 	}
 
-	sultanate_of_women_reform = {
-		icon = turks_sultanate_of_women
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish
-				has_reform = sultanate_of_women_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				has_reform = sultanate_of_women_reform
-			}
-		}
-		modifiers = {
-			female_advisor_chance = 0.25
-			prestige = 0.5
-		}
-		custom_attributes = {
-			enables_public_works = yes #-10% development cost and -2 unrest in provinces with a courthouse.
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	tripartum_reform = {
 		icon = hungarian_tripartum
@@ -8061,65 +6114,9 @@
 		}
 	}
 
-	constitution_third_may_reform = {
-		icon = poland_constitution_paper
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-		}
-		trigger = {
-			OR = {
-				have_had_reform = reform_the_sejm_reform
-				has_reform = reform_the_sejm_reform
-			}
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish
-			}
-			NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		}
-		modifiers = {
-			global_unrest = -2
-			legitimacy = 1
-			max_absolutism = -10
-		}
-		effect = {
-			add_government_reform = polish_constitutionalism_reform
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
-	bill_of_rights_reform = {
-		icon = england_bill_of_rights
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = english
-				has_reform = bill_of_rights_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				has_reform = bill_of_rights_reform
-			}
-		}
-		modifiers = {
-			global_unrest = -2
-			manpower_recovery_speed = 0.10 #right to arm bears
-			max_absolutism = -5
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	absolutist_administration_reform = {
 		icon = "asian_scripture"
@@ -8167,33 +6164,7 @@
 		}
 	}
 
-	tanzimat_reforms_reform = {
-		icon = arabic_scripture
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = turkish
-				has_reform = tanzimat_reforms_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				has_reform = tanzimat_reforms_reform
-			}
-		}
-		modifiers = {
-			global_unrest = -2
-			max_absolutism = -5
-			global_institution_spread = 0.25
-		}
-		custom_attributes = {
-			enables_patriotism = yes #+25% Manpower in Own Culture Provinces.
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 #}
 #############################
 ###########Tier7#############
@@ -8251,85 +6222,7 @@
 		}
 	}
 
-	nizam_i_jedid_reform = {
-		icon = selim_3
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				tag = TUR
-				tag = RUM
-				primary_culture = turkish
-				has_reform = nizam_i_jedid_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = TUR
-				tag = RUM
-				primary_culture = turkish
-				has_reform = nizam_i_jedid_reform
-			}
-		}
-		modifiers = {
-			max_absolutism = 10
-			free_adm_policy = 1
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	commonwealth_of_nations_reform = {
-		icon = map_2
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = english
-				has_reform = commonwealth_of_nations_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				has_reform = commonwealth_of_nations_reform
-			}
-		}
-		modifiers = {
-			vassal_forcelimit_bonus = 1.0
-			reduced_liberty_desire = 5
-		}
-		custom_attributes = {
-			enables_such_waste_of_life = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	principle_of_fiqh_reform = {
-		icon = "noble_muslim"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		modifiers = {
-			global_unrest = -1
-			tolerance_own = 1
-			max_absolutism = 5
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 #}
 #############################
 ###########Tier3.5###########
@@ -8557,55 +6450,7 @@
 		}
 	}
 
-	professional_army_reform = {
-		icon = "soldiers"
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_estate_privilege = estate_nobles_elite_guards
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {}
-		modifiers = {
-			drill_gain_modifier = 0.25
-			yearly_army_professionalism = 0.001
-		}
-		custom_attributes = {
-			#enables_general_guards = yes #+1.25 AP per General
-			enables_elite_regiments = yes #Elite Regiments, +50% Drill gain, -50% reinforcement speed, +10% ICA
-		}
-		ai = {
-			factor = 1
-			modifier = {
-				factor = 1
-				NOT = { has_idea_group = quantity_ideas }
-			}
-			modifier = {
-				factor = 10
-				has_idea_group = quantity_ideas
-			}
-			modifier = {
-				factor = 1
-				OR = {
-					tag = PRU
-					tag = BRA
-				}
-			}
-		}
-	}
+	
 
 	empowered_royal_guard_reform = {
 		icon = "hesse_jaegers"
@@ -8647,44 +6492,7 @@
 		}
 	}
 
-	expanded_devshirme_reform = {
-		icon = Turkish_iqta
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = turkish
-				has_reform = expanded_devshirme_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				has_reform = expanded_devshirme_reform
-			}
-		}
-		modifiers = {
-			manpower_recovery_speed = 0.10
-		}
-		custom_attributes = {
-			enables_devshirme = yes #25% Manpower in Orthodox Provinces
-			enables_janissary_guards = yes #5% Janissary Discipline if under 20% Janissaries
-		}
-		ai = {
-			factor = 10
-		}
-	}
+	
 
 	imperial_circles_reform = {
 		icon = "imperial_army"
@@ -8843,42 +6651,7 @@
 		}
 	}
 
-	portugese_marines_reform = {
-		icon = "soldiers_5"
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {	
-				primary_culture = portugese 
-				has_reform = portugese_marines_reform
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = kingdom_of_portugal_and_azures
-				has_reform = portuguese_empire_reform 
-			}
-		}
-		modifiers = {
-			discipline = 0.025
-			shock_damage_received = -0.05
-			fire_damage_received = -0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	abolish_manrent_reform = {
 		icon = manrent
@@ -8961,87 +6734,6 @@
 			yearly_army_professionalism = 0.0020
 			drill_gain_modifier = 0.25
 			mil_tech_cost_modifier = -0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-
-	general_war_commissariat_reform = {
-		icon = "king"
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = prussian
-				primary_culture = saxon
-				has_reform = general_war_commissariat_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = prussian
-				primary_culture = saxon
-				has_reform = general_war_commissariat_reform
-			}
-		}
-		modifiers = {
-			global_tax_modifier = 0.10
-			global_regiment_cost = -0.05
-			monthly_militarized_society = 0.03
-		}
-		custom_attributes = {
-			enables_expansion_of_junker_privileges = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	gustavan_artillery_reform = {
-		icon = gustavan_artillery
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = swedish
-				accepted_culture = swedish
-				has_reform = gustavan_artillery_reform 
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = swedish
-				accepted_culture = swedish
-				has_reform = gustavan_artillery_reform 
-			}
-		}
-		modifiers = {
-			movement_speed = 0.10
-			artillery_power = 0.05
 		}
 		ai = {
 			factor = 100
@@ -9250,169 +6942,6 @@
 		}
 	}
 
-	pospolite_ruszenie_reform = {
-		icon = national_guard
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish 
-			}
-			NOT = { has_reform = polish_constitutionalism_reform }
-		}
-		trigger = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish 
-			}
-		}
-		modifiers = {
-			shock_damage = 0.10
-			cavalry_flanking = 0.5
-		}
-		custom_attributes = {
-			enables_white_knights = yes # Free buffed 'request additional manpower'
-			#enables_rallied_for_war = yes # +5 Morale and 10% Morale Recovery for 5 years 
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	polish_national_guard_reform = {
-		icon = national_guard
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = { 
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish 
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		trigger = {
-			OR = {
-				tag = POL
-				tag = PLC
-				primary_culture = polish 
-			}
-			has_reform = polish_constitutionalism_reform
-		}
-		modifiers = {
-			reinforce_speed = 0.33
-			reinforce_cost_modifier = -0.20
-			recover_army_morale_speed = 0.1
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	henry_reforms_reform = {
-		icon = england_henry_8
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = english
-				has_reform = henry_reforms_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = english
-				has_reform = henry_reforms_reform
-			}
-		}
-		modifiers = {
-			land_forcelimit_modifier = 0.15
-			naval_forcelimit_modifier = 0.15
-		}
-		custom_attributes = {
-			enables_device_forts = yes #25% Fort Defence in British Forts
-			enables_longbow_training = yes #15% Manpower in English Islander provinces.
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	redcoats_reform = {
-		icon = england_redcoat
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = GBR
-				has_reform = redcoats_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = GBR
-				has_reform = redcoats_reform
-			}
-		}
-		modifiers = {
-			fire_damage = 0.05
-			infantry_power = 0.05
-		}
-		custom_attributes = {
-			enables_patriotism = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	berber_cavalry_reform = {
 		icon = berber_warrior
 		allow_normal_conversion = yes
@@ -9459,108 +6988,6 @@
 		}
 	}
 
-	jinetes_reform = {
-		icon = spain_jinite
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = kingdom_of_castille_and_leon
-				has_reform = crown_of_castille
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = kingdom_of_castille_and_leon
-				has_reform = crown_of_castille
-			}
-		}
-		modifiers = {
-			cavalry_power = 0.15
-			cavalry_cost = -0.10
-			cavalry_flanking = 0.5
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	miquelet_militia_reform = {
-		icon = spain_tercio
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = hispanic_kingdom
-			}
-		}
-		trigger = {
-			has_reform = hispanic_kingdom
-		}
-		modifiers = {
-			infantry_cost = -0.10
-			infantry_power = 0.05
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	royal_ordinances_reform = {
-		icon = king
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = enlightened_despotism_reform
-			}
-		}
-		trigger = {
-			has_reform = enlightened_despotism_reform
-		}
-		modifiers = {
-			mil_tech_cost_modifier = -0.15
-			artillery_cost = -0.10
-			drill_gain_modifier = 0.25
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	expand_the_immortals_reform = {
 		icon = king
 		allow_normal_conversion = yes
@@ -9593,43 +7020,6 @@
 		modifiers = {
 			reinforce_speed = 1
 			drill_gain_modifier = 0.50
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	hessian_elite_jaegers_reform = {
-		icon = hesse_jaegers
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = hessian_elite_jaegers_reform 
-				tag = HES
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = hessian_elite_jaegers_reform 
-				tag = HES
-			}
-		}
-		modifiers = {
-			fire_damage = 0.05
-			infantry_power = 0.10
-			global_regiment_cost = 0.10
 		}
 		ai = {
 			factor = 100
@@ -9750,45 +7140,7 @@
 		}
 	}
 
-	reforms_of_abbas_reform = {
-		icon = "persia_abbas"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			special_unit_forcelimit = 0.10
-			artillery_cost = -0.10
-			ghulams_influence_modifier = 0.05
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_fire_ghulams = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
+	
 
 	sherifan_levies_reform = {
 		icon = hejaz_cavalry
@@ -9878,45 +7230,6 @@
 		}
 	}
 
-	form_the_vojstatic_reform = {
-		icon = szlachta_noble_1
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				has_reform = form_the_vojstatic_reform
-				primary_culture = serbian
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = form_the_vojstatic_reform
-				primary_culture = serbian
-			}
-		}
-		modifiers = {
-			fire_damage = 0.05
-			mercenary_cost = -0.10
-		}
-		custom_attributes = {
-			enables_grand_leader = yes #+5% landforcelimit per ruler mil stat
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	army_of_flanders_reform = {
 		icon = army_of_flanders
 		allow_normal_conversion = yes
@@ -9993,29 +7306,7 @@
 			factor = 101
 		}
 	}
-	bedouin_reserves_reform = {
-		icon = bedouin_warrior
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = bedouin_reserves_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = tunisian
-				has_reform = bedouin_reserves_reform
-			}
-		}
-		modifiers = {
-			hostile_attrition = 1
-			manpower_recovery_speed = 0.20
-		}
-		ai = {
-			factor = 101
-		}
-	}
+	
 	wacht_am_rhein_reform = {
 		icon = national_guard
 		allow_normal_conversion = yes
@@ -10305,62 +7596,6 @@
 		}
 	}
 
-	armenian_silk_traders_reform = {
-		icon = "GE_trader"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = azerbaijani
-				tag = PER
-			}
-		}
-		modifiers = {
-			build_cost = -0.15
-			caravan_power = 0.25
-			trade_deals_slots = 0.01
-		}
-		custom_attributes = {
-			enables_silk_traders = yes #15% trade efficiency if trading in silk
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
-	caravanserai_reform = {
-		icon = paper_money_map
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = turkish
-				has_reform = caravanserai_reform
-			}
-		}
-		trigger = {
-			OR = {
-				primary_culture = turkish
-				has_reform = caravanserai_reform
-			}
-		}
-		modifiers = {
-			caravan_power = 0.25
-			merchants = 1
-			trade_deals_slots = 0.01
-		}
-		custom_attributes = {
-			enables_caravanserai = yes #+5 Trade Power in provinces with centers of trade and a fort
-		}
-		ai = {
-			factor = 100
-		}
-	}
-
 	danske_besiddelser_reform = {
 		icon = paper_money_map
 		allow_normal_conversion = yes
@@ -10443,325 +7678,4 @@
 		}
 	}
 #}
-#Korea {
-	hermit_kingdom_reform = {
-		icon = "celestial_empire"
-		allow_normal_conversion = no
-		valid_for_nation_designer = yes
-		nation_designer_cost = 30
-		potential = {
-			OR = {
-				primary_culture = korean 
-				has_reform = hermit_kingdom_reform
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = hermit_kingdom_reform
-				primary_culture = korean
-			}
-		}
-		modifiers = {
-			defensiveness = 0.2
-		}
-		custom_attributes = {
-			enables_peace_development_reduction = yes
-		}
-	}
-	nobi_jongbubub_reform= {
-		icon = "people_walking"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = korean
-				has_reform = nobi_jongbubub_reform
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = nobi_jongbubub_reform
-				primary_culture = korean
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			stability_cost_modifier = -0.15
-			global_trade_goods_size_modifier = 0.05
-		}
-		removed_effect = {
-			change_variable = {
-				which = Noble_Influence
-				value = -1
-			}
-		}
-		ai = {
-			factor = 1
-		}
-	}
-	nobi_jongmobub_reform = {
-		icon = "king_2"
-		allow_normal_conversion = yes
-		potential = {
-			OR = {
-				primary_culture = korean
-				has_reform = nobi_jongmobub_reform
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = nobi_jongmobub_reform
-				primary_culture = korean
-			}
-		}
-		effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = 1
-			}
-		}
-		modifiers = {
-			global_tax_modifier = 0.1
-		}
-		custom_attributes = {
-			#enables_abolish_noble_customs = yes # +15% Local Trade Power and Production Efficiency in noble estate provinces
-		}
-		removed_effect = {
-			change_variable = {
-				which = Royal_Influence
-				value = -1
-			}
-		}
-		ai = {
-			factor = 1
-		}
-	}
-	bangyesurok_reform = {
-		icon = "king"
-		allow_normal_conversion = yes
-		effect = {
-			#change_variable = {
-			#	which = Royal_Influence
-			#	value = 1
-			#}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -10
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-		}
-		removed_effect = {
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 5
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 5
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 5
-			}
-		}
-		potential = {
-			OR = {
-				primary_culture = korean
-				has_reform = bangyesurok_reform 
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = bangyesurok_reform
-				primary_culture = korean
-			}
-		}
-		modifiers = {
-			yearly_corruption = -0.1	
-		}
-		custom_attributes = {
-			enables_global_tax_modifier_buff = yes
-		}
-		ai = {
-			factor = 100
-		}
-	}
-	euijung_bu_seosajae_reform= {
-		icon = "asian_scripture"
-		allow_normal_conversion = yes
-		modifiers = {
-			advisor_pool = 1
-			advisor_cost = -0.2
-			max_absolutism = -5
-		}
-		potential = {
-			OR = {
-				has_reform = euijung_bu_seosajae_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = euijung_bu_seosajae_reform
-				primary_culture = korean
-			}
-		}
-	}
-	jaeseungbangryak_reform = {
-		icon = "fort"
-		allow_normal_conversion = yes
-		modifiers = {
-			movement_speed = 0.2
-			#regiment_recruit_speed = -0.2
-		}
-		potential = {
-			OR = {
-				has_reform = jaeseungbangryak_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = jaeseungbangryak_reform
-				primary_culture = korean
-			}
-		}
-		custom_attributes = {
-			enables_central_army_conscription = yes
-		}
-		effect = {
-			if = {
-				limit = {
-					has_country_flag = KOR_GE_refund
-				}
-				change_government_reform_progress = 75
-				clr_country_flag = KOR_GE_refund
-			}
-		}
-	}
-	five_military_force_reform = {
-		icon = "hesse_jaegers"
-		allow_normal_conversion = yes
-		modifiers = {
-			fire_damage = 0.1
-			land_maintenance_modifier = -0.05
-		}
-		potential = {
-			OR = {
-				has_reform = five_military_force_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = five_military_force_reform
-				primary_culture = korean
-			}
-		}
-	}
-	reinforce_the_hwangog_reform = {
-		icon = "banker"
-		allow_normal_conversion = yes
-		effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						trade_goods = grain
-						NOT = { has_province_modifier = GE_hwangog }
-					}
-					add_province_modifier = {
-						name = GE_hwangog
-						duration = -1
-					}
-				}
-			}
-		}
-		removed_effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						has_province_modifier = GE_hwangog
-					}
-					remove_province_modifier = GE_hwangog
-				}
-			}
-		}
-		modifiers = {
-			stability_cost_modifier = -0.2
-			global_tax_modifier = 0.15
-		}
-		potential = {
-			OR = {
-				has_reform = reinforce_the_hwangog_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = reinforce_the_hwangog_reform
-				primary_culture = korean
-			}
-		}
-		custom_attributes = {
-			enables_better_grain = yes
-		}
-	}
-	bureaucratic_economy_reform = {
-		icon = "asian_scripture"
-		allow_normal_conversion = yes
-		modifiers = {
-			trade_efficiency = -0.05
-			production_efficiency = 0.1
-			global_tax_modifier = 0.1
-		}
-		potential = {
-			OR = {
-				has_reform = bureaucratic_economy_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = bureaucratic_economy_reform
-				primary_culture = korean
-			}
-		}
-		custom_attributes = {
-			enables_bureaucracy_autonomy = yes
-		}
-	}
-	korean_bureaucracy_reform = {
-		icon = "celestial_empire"
-		allow_normal_conversion = yes
-		modifiers = {
-			global_autonomy = -0.1
-		}
-		potential = {
-			OR = {
-				has_reform = korean_bureaucracy_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = korean_bureaucracy_reform
-				primary_culture = korean
-			}
-		}
-		custom_attributes = {
-			enables_korean_bureaucracy = yes
-			#enables_jurisprudence = yes
-		}
-	}
-#}
+
