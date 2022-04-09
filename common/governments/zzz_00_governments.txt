@@ -288,6 +288,7 @@ monarchy = {
 				inca_mountain_farms
 				#1.18
 				renaissance_forts_reform
+				bng_mal_jasmani #ME
 			}
 		}
 		military_organisation = {
