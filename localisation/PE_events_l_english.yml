@@ -40,6 +40,6 @@
  estate_noble_baron_titles: "Baronies for Sale"
  estate_noble_baron_titles_desc: "The right for nobles to sell their noble titles within our realm means we have little control over who inherits positions, or to stave off the inevitable corruption that it spawns."
  
- estate_noble_absolute_taxation: "Levy additional Taxes"
- estate_noble_absolute_taxation_desc: "beep boop, pay up nibba"
+ estate_noble_absolute_taxation: "Levy Additional Taxes"
+ estate_noble_absolute_taxation_desc: ""
  estate_noble_absolute_taxation_tooltip: "-5 Noble Loyalty if your ruler's mil skill is 3 or lower, -5 Noble Loyalty is your ruler's mil skill is 1 or lower."
