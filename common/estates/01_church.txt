@@ -11,8 +11,8 @@ estate_church =
 			NOT = { has_estate = estate_brahmins }
 		}
 		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = veche_republic }
+		#NOT = { has_government_attribute = is_merchant_republic } #allows Venice, Genoa and others to have it
+		#NOT = { has_reform = veche_republic } #Allows Novgorod to have it
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { has_reform = siberian_tribe }
