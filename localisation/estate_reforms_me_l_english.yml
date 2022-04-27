@@ -1327,6 +1327,8 @@ the_holy_office_reform: "The Holy Office"
  
  military_organisation: "Military Organisation"
  economic_policy: "Economic Policy"
+
+ candidates_for_election: "Candidates"
  
  opinion_diplomatic_positions:0 "Succesfull Noble Diplomats"
  opinion_diplomatic_positions_negative:0 "Failed Noble Diplomats"

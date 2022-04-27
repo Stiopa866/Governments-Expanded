@@ -372,6 +372,15 @@ on_monarch_death = {
 		majapahit.8 # Majapahit pretenders
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
+	
+		ME_Spain_Events.8
+		ME_Reform_Events.1
+		ME_Korea_Events.6
+        ME_Korea_Events.8
+		#reform_me_events.11
+		GE_electoral_monarchy.4
+        reform_me_events.240
+		#GE_electoral_monarchy.1
 	}
 	if = {
 		limit = {
@@ -380,21 +389,6 @@ on_monarch_death = {
 		ROOT = {
 			country_event = { id = ME_Timurid_Princes_Event.11 }
 		}
-	}
-	events = {
-		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
-		flavor_nav.4 # Navarra succession event
-		flavor_sax.8 # Treaty of Leipzig
-		flavor_pap.16 # Borgia Pope
-		flavor_pap.19 # death of borgia pope
-		flavor_tus.22 # Medici Pope
-		flavor_tus.24 # death of the Medici Pope
-		ME_Spain_Events.8
-		ME_Reform_Events.1
-		ME_Korea_Events.6
-        ME_Korea_Events.8
-        reform_me_events.240
-		#GE_electoral_monarchy.1
 	}
 	if = {
 		limit = {

@@ -9,6 +9,9 @@
 		potential = {
 			NOT = { tag = POL }
 		}
+		effect = {
+			change_government = elective_monarchy
+		}
 		modifiers = {
 			heir_chance = 1.0
 		}

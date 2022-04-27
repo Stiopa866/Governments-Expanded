@@ -567,4 +567,25 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	GE_Test = {
+		major = no
+		potential = {
+			always = no
+		}
+		allow = {
+			government = monarchy
+			has_government_attribute = enables_yo_momma
+			government = republic
+			government = elective_monarchy
+			has_government_attribute = enables_elective_monarchy
+			has_government_attribute = enables_royal_electors
+			has_government_attribute = enables_papal_favor
+			has_government_attribute = enables_noble_electors
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

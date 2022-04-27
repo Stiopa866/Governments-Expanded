@@ -19,14 +19,7 @@
  reform_me_events.9.d: "A coalition within the nation's nobility has brought forth a proposition: dispose of my current heir and proclaim my support for their chosen candidate, or die trying. This doesn't seem to be a proposition as much as it is a threat. Such threats are not uncommon, but this time they seem to be serious."
  reform_me_events.9.a: "Peace over justice."
  reform_me_events.9.b: "I guess you'll have to take no as an answer."
- reform_me_events.11.t: "The King is Dead, Long Live the King"
- reform_me_events.11.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
- reform_me_events.11.a: "The Prince of course!"
- reform_me_events.11.b: "One of the late king's brothers."
- reform_me_events.11.c: "A member of a foreign dynasty."
- reform_me_events.11.e: "Appoint a regency council untill $HEIR$'s majority."
- reform_me_events.11.f: "An Influencial Noble."
- reform_me_events.11.g: "A Distant Relative."
+
  reform_me_events.41.t: "Dissenting Nobles"
  reform_me_events.41.d: "A influential noble has gone on a trip recently, and appears to be stirring up otherwise passive nobles to go and agitate for a candidate of his liking. This man has a silver tongue and knows how to use it."
  reform_me_events.41.a: "By cutting a man's tongue, you're only proving you fear his words."
@@ -188,7 +181,20 @@
  GE_electoral_monarchy.3.d: "As the light dimmed out and the priest voice softened the entire room was full of a silent heavy dread, our kind has passed away, and while we will never regret the deeds he accomplished in his life, the entire country will weep with sorrow after another great ruler has finally reached the Allfather. Despite tears still weeping from the eyes of the relatives and the dearest present we need to move on and choose who will lead the future of our kingdom, in the current Tanistry a few men stand above all the others, a strong and influential kinsman as well as the oldest son of our king"
  GE_electoral_monarchy.3.a: "The son of our king"
  GE_electoral_monarchy.3.b: "One of our influencial cousins"
+
+ GE_electoral_monarchy.4.t: "The King is Dead, Long Live the King"
+ GE_electoral_monarchy.4.d: "The King has passed on, and we have called the traditional council to elect a new king. Who shall have the right to rule?"
+ GE_electoral_monarchy.4.a: "The Prince of course!"
+ GE_electoral_monarchy.4.b: "One of the late king's brothers."
+ GE_electoral_monarchy.4.c: "A member of a foreign dynasty."
+ GE_electoral_monarchy.4.e: "Appoint a regency council untill $HEIR$'s majority."
+ GE_electoral_monarchy.4.f: "An Influencial Noble."
+ GE_electoral_monarchy.4.g: "A Distant Relative."
  
+
+
+
+
  #GE Reform Cycle
  metropolian_bishop_reform.1.t: "Seek First His Kingdom"
  metropolian_bishop_reform.1.d: "A preacher of firey ambition and fanatical temperament has approached us with a promise: In exchange for being made a Patriarch, he will bring a zeal to the church, and an increased devotion to the population."
