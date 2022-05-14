@@ -162,7 +162,7 @@ fredrickan_reforms_reform = {
 	}
 	modifiers = {
 		build_cost = -0.10
-		build_speed = -0.10
+		build_time = -0.10
 		rural_goods_produced_modifier = 0.20
 	}
 	custom_attributes = {
