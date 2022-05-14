@@ -519,7 +519,7 @@ country_event = {
 		add_government_reform = presidential_despot_reform
 		define_ruler = {
 			name = general_coup
-			MIL = 3
+			change_MIL = 3
 			attach_leader = general_coup
 		}
 		hidden_effect = { add_ruler_personality = bold_fighter_personality }
@@ -586,7 +586,7 @@ country_event = {
 				add_government_reform = presidential_despot_reform
 				define_ruler = {
 					name = general_coup
-					MIL = 3
+					change_MIL = 3
 					attach_leader = general_coup
 				}
 				hidden_effect = { add_ruler_personality = bold_fighter_personality }

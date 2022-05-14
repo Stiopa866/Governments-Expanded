@@ -350,9 +350,9 @@ country_event = {
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
-				mil = -1
-				adm = 1
-				dip = -1
+				change_mil = -1
+				change_adm = 1
+				change_dip = -1
 				min_age = 40
 				max_age = 60
 			}
@@ -452,9 +452,9 @@ country_event = {
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
-				mil = -1
-				adm = -1
-				dip = 1			
+				change_mil = -1
+				change_adm = -1
+				change_dip = 1			
 				min_age = 40
 				max_age = 60
 			}
@@ -549,9 +549,9 @@ country_event = {
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
-				mil = 1
-				adm = -1
-				dip = -1		
+				change_mil = 1
+				change_adm = -1
+				change_dip = -1		
 				min_age = 40
 				max_age = 60
 			}
@@ -660,9 +660,9 @@ country_event = {
 				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -691,9 +691,9 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -739,7 +739,7 @@ country_event = {
 		add_scaled_republican_tradition = -5
 
 		define_ruler = {
-			dip = 1
+			change_dip = 1
 			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"
@@ -789,7 +789,7 @@ country_event = {
 		add_republican_tradition = -25
 
 		define_ruler = {
-			mil = 2
+			change_mil = 2
 			min_age = 30
 			max_age = 50
 		}
@@ -1137,9 +1137,9 @@ country_event = {
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
-				mil = -1
-				adm = 1
-				dip = -1
+				change_mil = -1
+				change_adm = 1
+				change_dip = -1
 				min_age = 40
 				max_age = 60
 			}
@@ -1226,9 +1226,9 @@ country_event = {
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
-				mil = -1
-				adm = -1
-				dip = 1			
+				change_mil = -1
+				change_adm = -1
+				change_dip = 1			
 				min_age = 40
 				max_age = 60
 			}
@@ -1317,9 +1317,9 @@ country_event = {
 		if = {
 			limit = { has_government_attribute = enables_veche_parties }
 			define_ruler = {
-				mil = 1
-				adm = -1
-				dip = -1		
+				change_mil = 1
+				change_adm = -1
+				change_dip = -1		
 				min_age = 40
 				max_age = 60
 			}
@@ -1423,9 +1423,9 @@ country_event = {
 				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -1457,9 +1457,9 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -1499,7 +1499,7 @@ country_event = {
 		add_scaled_republican_tradition = -5
 
 		define_ruler = {
-			dip = 1
+			change_dip = 1
 			min_age = 40
 			max_age = 50
 			dynasty = "de' Medici"
@@ -1524,7 +1524,7 @@ country_event = {
 		add_republican_tradition = -20
 
 		define_ruler = {
-			mil = 2
+			change_mil = 2
 			min_age = 30
 			max_age = 50
 		}
@@ -2644,9 +2644,9 @@ country_event = {
 			define_ruler = {
 				min_age = 30
 				max_age = 50
-				mil = -1
-				adm = -1
-				dip = -1
+				change_mil = -1
+				change_adm = -1
+				change_dip = -1
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
 			}
@@ -2678,9 +2678,9 @@ country_event = {
 			define_ruler = {
 				min_age = 30
 				max_age = 50
-				mil = -1
-				adm = -1
-				dip = -1
+				change_mil = -1
+				change_adm = -1
+				change_dip = -1
 				name = "lastname"
 			}
 		}
@@ -2703,9 +2703,9 @@ country_event = {
 		add_republican_tradition = -15
 
 		define_ruler = {
-			mil = 1
-			adm = 1
-			dip = 1
+			change_mil = 1
+			change_adm = 1
+			change_dip = 1
 			min_age = 45
 			max_age = 55
 			dynasty = "de' Medici"
