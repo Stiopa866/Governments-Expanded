@@ -255,14 +255,14 @@ parliament_of_sicily_reform = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian 
-			has_reform = angevin_nobles_reform
+			has_reform = parliament_of_sicily_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian 
-			has_reform = angevin_nobles_reform
+			has_reform = parliament_of_sicily_reform
 		}
 	}
 	modifiers = {
