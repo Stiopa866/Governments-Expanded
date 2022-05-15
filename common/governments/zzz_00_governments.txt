@@ -112,6 +112,7 @@ monarchy = {
 				kingdom_of_sardinia_reform
 				#1.18
 				klever_union_reform
+				life_on_the_plateau_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -358,6 +359,7 @@ monarchy = {
 				farari_commanders_reform
 				#1.18
 				wacht_am_rhein_reform
+				monastic_temples_reform
 			}
 		}
 		growth_of_administration = {
@@ -1221,7 +1223,7 @@ theocracy = {
 				colonial_mission_reform
 				mission_to_civilize_reform
 				mission_to_kill_pirates_reform
-				yak_provvision_reform
+				#yak_provvision_reform
 			}
 		}
 		divine_cause = {
