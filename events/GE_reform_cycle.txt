@@ -3813,7 +3813,6 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = external_mission_reform
-			has_reform = teuton_army
 		}
 		at_war_with_religious_enemy = yes
 	}
@@ -3848,7 +3847,6 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = external_mission_reform
-			has_reform = teuton_army
 		}
 		has_border_with_religious_enemy = yes
 		is_at_war = no
@@ -3894,7 +3892,6 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = safeguard_holy_sites_reform
-			has_reform = teuton_priest
 		}
 	}
 
@@ -3943,7 +3940,6 @@ country_event = {
 	trigger = {
 		OR = {
 			has_reform = safeguard_holy_sites_reform
-			has_reform = teuton_priest
 		}
 	}
 

@@ -44,7 +44,6 @@ monarchy = {
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate
-				portuguese_reform
 				athenian_monarchy
 				german_kaiserreich
 				caliphate_reform_sunni
@@ -288,7 +287,6 @@ monarchy = {
 				inca_mountain_farms
 				#1.18
 				renaissance_forts_reform
-				bng_mal_jasmani #ME
 			}
 		}
 		military_organisation = {
@@ -1213,6 +1211,7 @@ theocracy = {
 				united_cantons_reform
 				ajuraan_theocracy_reform
 				dynastic_theocracy_reform
+				life_on_the_plateau_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -1222,7 +1221,7 @@ theocracy = {
 				colonial_mission_reform
 				mission_to_civilize_reform
 				mission_to_kill_pirates_reform
-				#teuton_drill
+				yak_provvision_reform
 			}
 		}
 		divine_cause = {
@@ -1233,8 +1232,8 @@ theocracy = {
 				guru_advisors_reform
 				kingdom_of_god_reform
 				the_holy_office_reform
-				teuton_priest
 				fighting_for_israel_reform
+				monastic_temples_reform
 			}
 		}
 		clergy_in_administration = {
@@ -1307,7 +1306,6 @@ theocracy = {
 				the_bishops_army_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
-				teuton_army
 				mamluk_soldiers_reform
 				tradition_of_masada_and_bar_kochba_reform
 				turkoman_gunners_reform
@@ -1321,7 +1319,6 @@ theocracy = {
 				holy_claims_reform
 				network_of_faithful_allies_reform
 				the_bishops_diplomacy_reform
-				teuton_navy
 				yeshiva_scholarship_reform
 			}
 		}

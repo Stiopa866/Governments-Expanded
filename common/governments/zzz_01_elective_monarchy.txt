@@ -43,7 +43,6 @@ elective_monarchy = {
 				#####BeginMEReforms#####
 				crusader_kingdom
 				khaganate
-				portuguese_reform
 				athenian_monarchy
 				german_kaiserreich
 				caliphate_reform_sunni
