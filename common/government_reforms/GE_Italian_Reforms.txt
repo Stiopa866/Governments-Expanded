@@ -95,12 +95,11 @@ florentine_republic = {
 	nation_designer_cost = 20
 	modifiers = { 
 		trade_efficiency = 0.1
-		build_cost = -0.10
 		max_absolutism = -30
-		trade_deals_slots = 0.02
+		trade_deals_slots = 0.01
 	}
 	boost_income = yes
-	duration = 4
+	duration = 6
 	factions = {
 		mr_aristocrats
 		mr_traders

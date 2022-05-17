@@ -2,115 +2,8 @@ elective_monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
-				#####BeginOfVanillaReforms#####
 				feudalism_reform
-				autocracy_reform
-				plutocratic_reform
-				indian_sultanate_reform
-				nayankara_reform
-				misl_confederacy_reform
-				rajput_kingdom
-				negusa_nagast
-				solomonic_empire
-				#Specific:
-				chinese_warlord
-				grand_duchy_reform
-				daimyo
-				indep_daimyo
-				elective_monarchy
-				iqta
-				ottoman_government
-				prussian_monarchy
-				austrian_dual_monarchy
-				principality
-				tsardom
-				mamluk_government
-				feudal_theocracy
-				celestial_empire
-				shogunate
-				english_monarchy
-				mandala_reform
-				revolutionary_empire_reform
-				holy_state_reform
-				austrian_archduchy_reform
-				siamese_absolutism
-				confucian_bureaucracy
-				musa_rule
-				mossi_federal_kingdom
-				#Special
-				polynesian_kingdom
-				#####EndOfVanillaReforms#####
-				#####BeginMEReforms#####
-				crusader_kingdom
-				khaganate
-				athenian_monarchy
-				german_kaiserreich
-				caliphate_reform_sunni
-				west_slavic_monarchy
-				#####EndOfMEReforms#####
-				#GE
-				#Generics
 				elective_monarchy_reform
-				arch_monarchy_reform
-				french_feudalism
-				#french_reformed_feudalism
-				ancien_regime_reform
-				french_absolutism
-				lithuania_warlord_duke
-				theocratic_autocracy
-				beylik
-				kingdom_of_portugal
-				kingdom_of_portugal_and_azures
-				portuguese_empire_reform
-				crown_of_aragon
-				kingdom_of_castille_and_leon
-				crown_of_castille
-				hispanic_kingdom
-				enlightened_despotism_reform
-				margrave_reform
-				consulate_of_the_sea
-				crown_of_saint_wenceslaus
-				crown_of_saint_wenceslaus_2
-				office_of_lord_regent_reform
-				arch_king_reform
-				arch_duchy_reform
-				habsburg_monarchy_reform
-				austrian_empire_reform
-				polish_constitutionalism_reform
-				granadan_iqta_reform 
-				#achaemenid_empire_reform
-				hessian_militarized_monarchy_reform
-				hessian_modern_militarized_monarchy_reform
-				edo_empire_reform
-				gorkha_kingdom_reform
-				maharajadhiraja_reform
-				empire_of_japan_reform
-				kingdom_of_jerusalem_reform 
-				despotate_of_caucasia_reform
-				sharifate_reform
-				rum_eagle_reform
-				#high_king_of_ireland_reform
-				hermit_kingdom_reform
-				consulate_of_the_malay
-				basic_reformed_mandala_reform
-				solar_kingdom_reform
-				despotate_of_serbia_reform
-				serbian_empire_reform
-				#1.13
-				kingdom_of_sicily_reform
-				tsardom_of_bulgaria_reform
-				united_holy_roman_empire_reform
-				#1.14
-				duchy_of_luxembourg_reform
-				emirate_of_andalusia_reform
-				#1.15
-				mantua_house_of_gonzaga_reform
-				tanistry_reform
-				#1.16
-				kingdom_of_gao_reform
-				kingdom_of_sardinia_reform
-				#1.18
-				klever_union_reform
 			}
 		}
 		candidates_for_election = {
@@ -434,64 +327,64 @@ elective_monarchy = {
 				via_media_reform
 			}
 		}
-		deliberative_assembly = {
-			reforms = {
-				parliamentary_reform
-				royal_decree_reform
-				aristocratic_court_reform
-				general_estates_reform
-				states_general_reform
-				legislative_sejm
-				integrated_sejmiks
-				feuillant_reform
-				two_chamber_reform
-				imperial_decree_reform
+		# deliberative_assembly = {
+		# 	reforms = {
+		# 		parliamentary_reform
+		# 		royal_decree_reform
+		# 		aristocratic_court_reform
+		# 		general_estates_reform
+		# 		states_general_reform
+		# 		legislative_sejm
+		# 		integrated_sejmiks
+		# 		feuillant_reform
+		# 		two_chamber_reform
+		# 		imperial_decree_reform
 				
-				#GE
-				haudenosaunee_reform
-				parliamentary_order_reform
-				king_and_duke_reform
-				diverse_estates_reform
-				foreign_recruitment_reform
-				reform_the_sejm_reform
-				abolish_the_sejm_reform
-				weak_burghers_reform
-				society_of_agriculture_reform
-				bourgeoisie_aristocracy_reform
-				union_of_crowns_reform
-				declaration_of_breda_reform
-				royal_society_reform
-				legacy_of_constitutionalism_reform
-				freie_landtage_reform
-				#preeminent_padishah_reform
-				empowered_aristocratic_court_reform
-				empowered_german_aristocratic_court_reform
-				empowered_royal_decree_reform
-				empowered_general_estates_reform
-				empowered_divine_blood_reform
-				empowered_monastic_militarism_reform
-				empowered_church_councils_reform
-				empowered_imperial_circles_political_reform
-				ghulam_governates_reform
-				grand_council_reform
-				grand_secretariat_reform
-				sultanate_of_women_reform
-				euijung_bu_seosajae_reform
-				tripartum_reform
-				table_of_ranks_reform
-				#1.13
-				theatines_reform
-				restored_land_establishment_reform
-				representative_electors_reform
-				#1.15
-				nomad_councils_reform
-				office_of_kanzler_reform
-				diamond_of_the_earth_reform
-				#1.16
-				secure_the_succession_reform
-				gbara_reform
-			}
-		}
+		# 		#GE
+		# 		haudenosaunee_reform
+		# 		parliamentary_order_reform
+		# 		king_and_duke_reform
+		# 		diverse_estates_reform
+		# 		foreign_recruitment_reform
+		# 		reform_the_sejm_reform
+		# 		abolish_the_sejm_reform
+		# 		weak_burghers_reform
+		# 		society_of_agriculture_reform
+		# 		bourgeoisie_aristocracy_reform
+		# 		union_of_crowns_reform
+		# 		declaration_of_breda_reform
+		# 		royal_society_reform
+		# 		legacy_of_constitutionalism_reform
+		# 		freie_landtage_reform
+		# 		#preeminent_padishah_reform
+		# 		empowered_aristocratic_court_reform
+		# 		empowered_german_aristocratic_court_reform
+		# 		empowered_royal_decree_reform
+		# 		empowered_general_estates_reform
+		# 		empowered_divine_blood_reform
+		# 		empowered_monastic_militarism_reform
+		# 		empowered_church_councils_reform
+		# 		empowered_imperial_circles_political_reform
+		# 		ghulam_governates_reform
+		# 		grand_council_reform
+		# 		grand_secretariat_reform
+		# 		sultanate_of_women_reform
+		# 		euijung_bu_seosajae_reform
+		# 		tripartum_reform
+		# 		table_of_ranks_reform
+		# 		#1.13
+		# 		theatines_reform
+		# 		restored_land_establishment_reform
+		# 		representative_electors_reform
+		# 		#1.15
+		# 		nomad_councils_reform
+		# 		office_of_kanzler_reform
+		# 		diamond_of_the_earth_reform
+		# 		#1.16
+		# 		secure_the_succession_reform
+		# 		gbara_reform
+		# 	}
+		# }
 		economic_policy = {
 			reforms = {
 				strenghten_industry_reform

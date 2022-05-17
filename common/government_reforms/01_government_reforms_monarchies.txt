@@ -28,6 +28,9 @@ feudalism_reform = {
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
 	}
+	effect = {
+		change_government = monarchy
+	}
 	ai = {
 		factor = 0.5 #generic
 	}
