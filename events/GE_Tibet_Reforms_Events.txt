@@ -9,8 +9,8 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		has_government_attribute = enables_monastic_temples
 		OR = {
-			has_government_attribute = enables_monastic_temples
 			AND = {
 				any_owned_province = {
 					has_tax_building_trigger = yes
