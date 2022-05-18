@@ -1299,17 +1299,10 @@
 			has_estate = estate_dhimmi
 		}
 		trigger = {
-			OR = {
-				any_owned_province = {
-					religion_group = christian
-				}
-				any_owned_province = {
-					religion_group = dharmic
-				}
-			}
+			religion_group = muslim
 		}
 		modifiers = {
-			global_tax_modifier = 0.05
+			idea_cost = -0.05
 			dhimmi_loyalty_modifier = 0.05
 			dhimmi_influence_modifier = 0.10
 		}
@@ -5999,7 +5992,9 @@
 		potential = {}
 		modifiers = {
 			tolerance_heathen = 1
+			tolerance_of_heathen_capacity = 1
 			tolerance_heretic = 1
+			tolerance_of_heretics_capacity = 1
 		}
 		ai = {
 			factor = 1
@@ -6294,7 +6289,7 @@
 		}
 		modifiers = {
 			noble_privilege_slots = 0.01
-			cavalry_flanking = 0.50
+			shock_damage = 0.05
 			cavalry_power = 0.05
 		}
 		custom_attributes = {
@@ -6326,7 +6321,7 @@
 		}
 		modifiers = {
 			land_morale = 0.05
-			army_tradition_decay = 0.01
+			army_tradition_decay = 0.003
 		}
 		custom_attributes = {
 			enables_patriotism = yes #+25% Manpower in primary culture provinces
@@ -7355,7 +7350,7 @@
 		}
 		modifiers = {
 			global_tax_modifier = -0.10
-			build_cost = -0.1
+			# build_cost = -0.1
 		}
 		custom_attributes = {
 			enables_industrialism = yes #+0.2 Goods produced in workshops
@@ -7368,14 +7363,14 @@
 	mercantilism_reform = {
 		icon = economy_trade
 		allow_normal_conversion = yes
-		effect = {
-			add_mercantilism = 5
-		}
-		removed_effect = {
-			add_mercantilism = -5
-		}
+		# effect = {
+		# 	add_mercantilism = 5
+		# }
+		# removed_effect = {
+		# 	add_mercantilism = -5
+		# }
 		modifiers = {
-			global_prov_trade_power_modifier = 0.10
+			# global_prov_trade_power_modifier = 0.10
 			merchants = 1
 			trade_deals_slots = 0.01
 		}
@@ -7424,8 +7419,8 @@
 		}
 		modifiers = {
 			global_tax_modifier = 0.15
-			diplomatic_annexation_cost = -0.10
-			diplomatic_upkeep = 1
+			yearly_corruption = -0.10
+			build_cost = -0.10
 		}
 		ai = {
 			factor = 1
@@ -7557,6 +7552,8 @@
 		}
 		modifiers = {
 			governing_capacity = 150
+			diplomatic_annexation_cost = -0.10
+			diplomatic_upkeep = 1
 		}
 		# custom_attributes = {
 			# enables_royal_domain = yes #10% Tax and Manpower in royal estate provinces
