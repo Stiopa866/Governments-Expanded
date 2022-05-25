@@ -238,6 +238,25 @@ estate_nobles =
 	
 	#Alternative naming of estates
 	custom_name = {
+		desc = estate_oyo_mesi
+		trigger = {
+			tag = OYO
+		}
+	}
+	custom_name = {
+		desc = estate_nakomse
+		trigger = {
+			primary_culture = mossi
+			religion = shamanism
+		}
+	}
+	custom_name = {
+		desc = estate_chieftains
+		trigger = {
+			has_reform = tribal_confederacy
+		}
+	}
+	custom_name = {
 		desc = estate_beys
 		trigger = {
 			technology_group = ottoman
@@ -383,6 +402,22 @@ estate_nobles =
 				tag = VNL
 			}
 			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_warriors
+		trigger = {
+			OR = {
+				government = native
+				has_reform = siberian_tribe
+				has_reform = native_basic_reform
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_mani
+		trigger = {
+			tag = KON
 		}
 	}
 	
