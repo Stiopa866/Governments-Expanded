@@ -6583,6 +6583,7 @@ estate_rajput_monopoly_of_gems = {
 			custom_tooltip = MONOPOLY_INCOME_GEMS_DESC
 		}
 		custom_tooltip = estate_rajput_monopoly_of_gems_effect_tooltip
+	}
 	on_granted_province = {
 		if = {
 			limit = {
