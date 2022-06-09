@@ -6,12 +6,14 @@ life_on_the_plateau_reform = {
 	potential = {
 		OR = {
 			primary_culture = tibetan
+			primary_culture = tibetan_new
 			has_reform = life_on_the_plateau_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = tibetan
+			primary_culture = tibetan_new
 			has_reform = life_on_the_plateau_reform
 		}
 	}
@@ -43,12 +45,14 @@ yak_provvision_reform = {
 	potential = {
 		OR = {
 			primary_culture = tibetan
+			primary_culture = tibetan_new
 			has_reform = yak_provvision_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = tibetan
+			primary_culture = tibetan_new
 			has_reform = yak_provvision_reform
 		}
 	}
@@ -70,12 +74,14 @@ monastic_temples_reform = {
 	potential = {
 		OR = {
 			primary_culture = tibetan
+			primary_culture = tibetan_new
 			has_reform = monastic_temples_reform
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = tibetan
+			primary_culture = tibetan_new
 			has_reform = monastic_temples_reform
 		}
 	}
