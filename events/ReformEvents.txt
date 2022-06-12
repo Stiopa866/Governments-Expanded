@@ -4832,18 +4832,12 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				AND = {
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
+					has_tax_building_trigger = yes
 					NOT = { has_province_modifier = Church_Poorhouses }
 				}
 				AND = {
 					NOT = { 
-						OR = {
-							has_building = temple
-							has_building = cathedral
-						} 
+						has_tax_building_trigger = yes
 					}
 					has_province_modifier = Church_Poorhouses
 				}
@@ -4858,24 +4852,18 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 				NOT = {	has_province_modifier = Church_Poorhouses }
             }
 			add_province_modifier = {
-				name = "Town_Rights"
+				name = Church_Poorhouses
 				duration = -1
 			}
 		}
 		every_owned_province = {
 			limit = {
 				NOT = { 
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					} 
+					has_tax_building_trigger = yes 
 				}
 				has_province_modifier = Church_Poorhouses
             }
